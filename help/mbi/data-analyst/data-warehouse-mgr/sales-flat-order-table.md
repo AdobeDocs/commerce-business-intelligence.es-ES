@@ -2,9 +2,9 @@
 title: tabla sales_order
 description: Aprenda a trabajar con la tabla sales_order.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 73373924b7adaffabf643b65bd290ce2d9408574
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Esta tabla incluye todos los pedidos de los clientes, independientemente de si e
 | `customer_group_id` | Clave externa asociada con la variable `customer_group` tabla. Unirse a `customer_group.customer_group_id` para determinar el grupo de clientes asociado a la solicitud |
 | `customer_id` | `Foreign key` asociado con la variable `customer_entity` , si el cliente está registrado. Unirse a `customer_entity.entity_id` para determinar los atributos del cliente asociados al pedido. Si el pedido se realizó a través del cierre de compra del invitado, este campo se `NULL` |
 | `entity_id` (PK) | Identificador único de la tabla y que normalmente se utiliza en las combinaciones con otras tablas dentro de la instancia de comercio |
-| `increment_id` | Identificador único de un pedido y denominado comúnmente como `order_id` en Magento. La variable `increment_id` se utiliza con mayor frecuencia para conexiones a fuentes externas, como [!DNL Google Ecommerce] |
+| `increment_id` | Identificador único de un pedido y denominado comúnmente como `order_id` en Adobe Commerce. La variable `increment_id` se utiliza con mayor frecuencia para conexiones a fuentes externas, como [!DNL Google Ecommerce] |
 | `shipping_address_id` | Clave externa asociada con la variable `sales_order_address` tabla. Unirse a `sales_order_address.entity_id` para determinar los detalles de dirección de envío asociados con el pedido |
 | `status` | Estado del pedido. Puede devolver valores como &quot;completo&quot;, &quot;procesado&quot;, &quot;cancelado&quot;, &quot;reembolsado&quot;, así como cualquier estado personalizado implementado en la instancia de Commerce. Sujeto a cambios a medida que se procesa el pedido |
 | `store_id` | `Foreign key` asociado con la variable `store` tabla. Unirse a `store`.`store_id` para determinar qué vista del almacén de comercio está asociada al pedido |

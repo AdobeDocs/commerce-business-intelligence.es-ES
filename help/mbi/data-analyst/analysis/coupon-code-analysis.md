@@ -2,9 +2,9 @@
 title: Rendimiento del cupón
 description: Obtenga más información sobre el análisis del rendimiento del cupón.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -512,4 +512,4 @@ Columnas adicionales que crear si los pedidos de invitados NO son compatibles:
 
 Después de compilar todos los informes, puede organizarlos en el panel como desee. El resultado final puede ser similar a la imagen situada en la parte superior de la página.
 
-Si tiene alguna pregunta al crear este análisis, o simplemente desea contactar con nuestro equipo de servicios profesionales, [póngase en contacto con el servicio de asistencia técnica](../../guide-overview.md).
+Si tiene alguna pregunta al crear este análisis, o simplemente desea contactar con nuestro equipo de servicios profesionales, [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

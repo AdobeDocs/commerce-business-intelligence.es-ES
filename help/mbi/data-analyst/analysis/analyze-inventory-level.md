@@ -2,16 +2,16 @@
 title: Análisis de Niveles de Inventario
 description: Aprenda a analizar los niveles de inventario.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # Analizar niveles de inventario
 
-En este tema se explica cómo configurar un tablero que proporcione perspectivas sobre el inventario actual. Este tema contiene instrucciones para los clientes sobre la arquitectura heredada o la nueva arquitectura. Está en la arquitectura heredada si no tiene la variable **[!UICONTROL Data Warehouse Views]** en la **[!UICONTROL Manage Data]** ). Si está en la arquitectura heredada, envíe un [nueva solicitud de asistencia](../../guide-overview.md) con el asunto **[!UICONTROL INVENTORY ANALYSIS]** una vez que llegue a la sección designada en la _Columnas calculadas_ instrucciones a continuación.
+En este tema se explica cómo configurar un tablero que proporcione perspectivas sobre el inventario actual. Este tema contiene instrucciones para los clientes sobre la arquitectura heredada o la nueva arquitectura. Está en la arquitectura heredada si no tiene la variable **[!UICONTROL Data Warehouse Views]** en la **[!UICONTROL Manage Data]** ). Si está en la arquitectura heredada, envíe un [nueva solicitud de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) con el asunto **[!UICONTROL INVENTORY ANALYSIS]** una vez que llegue a la sección designada en la _Columnas calculadas_ instrucciones a continuación.
 
 ## Columnas para rastrear:
 
@@ -240,4 +240,4 @@ En este tema se explica cómo configurar un tablero que proporcione perspectivas
       [!UICONTROL Chart type]: `Table`
 
 
-Si tiene alguna pregunta al crear este análisis, o simplemente desea contactar con nuestro equipo de servicios profesionales, [póngase en contacto con el servicio de asistencia técnica](../../guide-overview.md).
+Si tiene alguna pregunta al crear este análisis, o simplemente desea contactar con nuestro equipo de servicios profesionales, [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

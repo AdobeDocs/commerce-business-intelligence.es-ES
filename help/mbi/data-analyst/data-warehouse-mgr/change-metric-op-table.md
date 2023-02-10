@@ -2,9 +2,9 @@
 title: Cambiar la tabla operativa de una métrica
 description: Obtenga información sobre cómo cambiar la tabla de datos que utiliza una métrica para realizar su operación.
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ En algunos casos, puede decidir cambiar la tabla de datos que utiliza una métri
 
    ![](../../assets/change-metrics-2.png)
 
-1. Si no tiene una columna coincidente en la nueva tabla, puede: **crearlo en la tabla de datos** o [póngase en contacto con el servicio de asistencia técnica](../../guide-overview.md) si se trata de una columna o dimensión de cálculo realizada por [!DNL MBI]), o simplemente **eliminar la dimensión de la métrica**. Para eliminar una dimensión que ya no necesite, simplemente vuelva al editor de la métrica y seleccione las dimensiones que desea eliminar en `Dimensions`.
+1. Si no tiene una columna coincidente en la nueva tabla, puede: **crearlo en la tabla de datos** o [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) si se trata de una columna o dimensión de cálculo realizada por [!DNL MBI]), o simplemente **eliminar la dimensión de la métrica**. Para eliminar una dimensión que ya no necesite, simplemente vuelva al editor de la métrica y seleccione las dimensiones que desea eliminar en `Dimensions`.
 
    ![](../../assets/change-metrics-3.png)

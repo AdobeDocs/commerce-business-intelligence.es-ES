@@ -2,9 +2,9 @@
 title: Comprender y crear análisis básicos
 description: Aprenda a comprender y crear análisis básicos.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '3142'
+source-wordcount: '3153'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Si algunos de estos cálculos no existen actualmente en la base de datos, cualqu
 
 **¿Aceptas pedidos de invitados?**
 
-*Si es así, es posible que esta tabla no contenga todos los clientes. Póngase en contacto con [equipo de asistencia](https://support.magento.com/hc/en-us/articles/360016503692) para asegurarse de que los análisis del cliente incluyan a todos los clientes.*
+*Si es así, es posible que esta tabla no contenga todos los clientes. Póngase en contacto con [equipo de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para asegurarse de que los análisis del cliente incluyan a todos los clientes.*
 
 *¿No está seguro de si acepta pedidos de invitados? Consulte [este tema](../data-warehouse-mgr/guest-orders.md) para obtener más información.*
 
@@ -58,7 +58,7 @@ En esta tabla, cada fila representa un pedido. Las columnas de esta tabla contie
 * **[!UICONTROL Created_at]**: La fecha en la que se creó o colocó el pedido.
 * **[!UICONTROL Customer_email]**: La dirección de correo electrónico del cliente que realizó el pedido. También puede ser el identificador único del cliente.
 * **[!UICONTROL Customer's lifetime number of orders]**: Una copia de la columna con el mismo nombre en su `Customers` tabla.
-* **[!UICONTROL Customer's order number]**: El número de pedido secuencial del cliente asociado al pedido. Por ejemplo, si la fila que está viendo es el primer pedido de un cliente, esta columna es &quot;1&quot;; pero, si este fue el decimoquinto pedido del cliente, esta columna muestra &quot;15&quot; para este pedido. Si esta dimensión no existe en su `Customers` mesa, consulte nuestra [equipo de asistencia](https://support.magento.com/hc/en-us/articles/360016503692) para ayudarle a construirlo.
+* **[!UICONTROL Customer's order number]**: El número de pedido secuencial del cliente asociado al pedido. Por ejemplo, si la fila que está viendo es el primer pedido de un cliente, esta columna es &quot;1&quot;; pero, si este fue el decimoquinto pedido del cliente, esta columna muestra &quot;15&quot; para este pedido. Si esta dimensión no existe en su `Customers` mesa, consulte nuestra [equipo de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para ayudarle a construirlo.
 * **[!UICONTROL Customer's order number (previous-current)]**: Una concatenación de dos valores en la variable **[!UICONTROL Customer's order number]** para abrir el Navegador. Se utiliza en un informe de muestra a continuación para mostrar el tiempo transcurrido entre dos pedidos cualesquiera. Por ejemplo, la hora entre la fecha del primer pedido de un cliente y la fecha del segundo pedido se representa como &quot;1-2&quot; con este cálculo.
 * **[!UICONTROL Coupon_code]**: Muestra qué cupones se utilizaron en cada pedido.
 * **[!UICONTROL Seconds since previous order]**: Tiempo (en segundos) entre los pedidos de un cliente.
@@ -73,7 +73,7 @@ En esta tabla, cada fila representa un artículo vendido. Esta tabla contiene in
 * **[!UICONTROL Order_id]**: La clave de referencia de su `Orders` tabla que indica qué artículos se compraron en el mismo pedido. Si un pedido contiene varios elementos, este valor se repite.
 * **[!UICONTROL Product_id]**: Si desea información sobre el producto específico comprado (como color, tamaño, etc.), utilice esta columna para extraer esa información de la tabla de productos.
 * **[!UICONTROL Order's created_at]**: La marca de tiempo en la que se realizó el pedido, normalmente se copia en el `order line items` de `Orders` tabla.
-* **[!UICONTROL Order's coupon_code]**: Similar a la variable `Order's created_at` , esta columna se copia de la tabla pedidos.
+* **[!UICONTROL Order's coupon_code]**: Similar a la variable `Order's created_at` , esta columna se copia de la tabla de pedidos.
 
 ## Tabla de suscripciones
 
@@ -86,7 +86,7 @@ Esta tabla se utiliza para administrar la información de suscripción, como el 
 
 ## Tabla de gasto de marketing
 
-Al analizar su gasto en marketing, puede incluir [!DNL Facebook], [!DNL Google AdWords], u otras fuentes de los análisis. Si tiene varias fuentes de gasto en marketing, póngase en contacto con nuestra [Equipo de servicios](https://business.adobe.com/products/magento/fully-managed-service.html) para obtener ayuda sobre la configuración de una tabla consolidada para sus campañas de marketing.
+Al analizar su gasto en marketing, puede incluir [!DNL Facebook], [!DNL Google AdWords], u otras fuentes de los análisis. Si tiene varias fuentes de gasto en marketing, póngase en contacto con nuestra [Equipo de Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) para obtener ayuda sobre la configuración de una tabla consolidada para sus campañas de marketing.
 
 **Dimension**
 
@@ -535,7 +535,7 @@ A continuación se muestran algunos ejemplos comunes de informes y métricas que
 
 >[!NOTE]
 >
->Puede asignar a la fórmula el título &quot;ROI&quot; y ocultar todas las métricas. Además, puede ajustar los filtros en las métricas para analizar fuentes y medios alternativos. Además, consulte [este artículo](../analysis/roi-ad-camp.md) para obtener más información sobre CAC, LTV y ROI.
+>Puede asignar a la fórmula el título &quot;ROI&quot; y ocultar todas las métricas. Además, puede ajustar los filtros en las métricas para analizar fuentes y medios alternativos. Además, consulte [este tema](../analysis/roi-ad-camp.md) para obtener más información sobre CAC, LTV y ROI.
 
 ![ROI 1](../../assets/ROI_1.png)<!--{: width="929"}-->
 

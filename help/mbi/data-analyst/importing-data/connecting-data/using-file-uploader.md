@@ -2,9 +2,9 @@
 title: Uso de la carga de archivos
 description: Aprenda a colocar todos los datos en un único almacén de datos.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Usemos campañas publicitarias como ejemplo. Si está ejecutando campañas en l�
 ## Restricciones y requisitos {#require}
 
 1. **El único formato admitido para las cargas de archivos es `CSV` o`comma separated values`**. Si está trabajando en Excel, puede utilizar la función Guardar como para guardar el archivo en `.csv` formato.
-1. **`CSV`los archivos deben utilizar`UTF-8 encoding`**. La mayoría de las veces, esto no será un problema. Si se produce este error al cargar un archivo, [consulte este artículo de asistencia](https://support.magento.com/hc/en-us/articles/360016730591).
+1. **`CSV`los archivos deben utilizar`UTF-8 encoding`**. La mayoría de las veces, esto no será un problema. Si se produce este error al cargar un archivo, [consulte este artículo de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
 1. **Los archivos no pueden superar los 100 MB**. Si el archivo es más grande que esto, separe la tabla en fragmentos y guárdela como archivos individuales. Puede utilizar anexar los datos después de cargar el archivo inicial.
 1. **Todas las tablas deben tener un`primary key`**. Debe haber al menos una columna en la tabla que pueda utilizarse como `primary key`o un identificador único para cada fila de la tabla. Cualquier columna designada como `primary key` can *never* sea nulo. A `primary key` puede ser tan sencillo como agregar una columna que da un número a cada fila, o puede ser de dos columnas concatenadas para crear una columna de valores únicos (por ejemplo, `campaign name` y `date`).
 

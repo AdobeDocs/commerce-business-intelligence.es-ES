@@ -5,7 +5,7 @@ exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ Este tema describe el propósito y los usos del `Date Difference` la columna cal
 
 **Explicación**
 
-La variable `Date Difference` tipo de columna: encuentra el tiempo entre dos eventos que pertenecen a un único registro, en función de las marcas de tiempo del evento. El valor sin procesar calculado en esta columna se expresa en segundos, pero se convertirá automáticamente en minutos, horas, días, etc. para mostrarlo en los informes. Sin embargo, cuando se usa como filtro o grupo por, se recomienda utilizar el valor en segundos.
+La variable `Date Difference` tipo de columna: encuentra el tiempo entre dos eventos que pertenecen a un único registro, en función de las marcas de tiempo del evento. El valor sin procesar calculado en esta columna se expresa en segundos, pero se convertirá automáticamente en minutos, horas, días, etc. para que se muestre en los informes. Sin embargo, cuando se usa como filtro o grupo por, se recomienda utilizar el valor en segundos.
 
 A `date difference` la columna calculada se puede usar para crear una métrica que calcule el tiempo promedio o medio entre dos eventos, como el tiempo promedio entre el registro del cliente y sus primeros pedidos.
 
@@ -23,8 +23,8 @@ A `date difference` la columna calculada se puede usar para crear una métrica q
 
 | **`id`** | **`timestamp_1`** | **`timestamp_2`** | **`Seconds between timestamp_2 and timestamp_1`** |
 |--- |--- |--- |--- |
-| `A` | 01-01-2015:00:00 | 2015-01-01 12:30:00 | 45000 |
-| `B` | 01-01-2015:00:00 | 2015-01-01 11:00:00 | 7200 |
+| `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
+| `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
 {style=&quot;table-layout:auto&quot;}
 

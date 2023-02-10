@@ -2,9 +2,9 @@
 title: Datos esperados de los paneles mixtos
 description: Explore las tablas de datos principales que puede importar desde Mixpanel a su [!DNL MBI] cuenta.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ En este artículo, exploramos las principales tablas de datos desde las que pued
 ## Documentación relacionada
 
 * [Conexión [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Reautenticación de integraciones](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [Reautenticación de integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

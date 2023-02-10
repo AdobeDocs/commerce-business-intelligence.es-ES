@@ -2,9 +2,9 @@
 title: Uso del Report Builder SQL
 description: Conozca los detalles de uso del Report Builder SQL.
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1501'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 >
 >Requiere [Permisos de administrador](../../administrator/user-management/user-management.md) para crear y editar gráficos SQL. `Standard` los usuarios pueden reorganizar estos gráficos en tableros, y `Read-only` los usuarios tendrán la misma experiencia que tienen con los gráficos tradicionales. Además, `Read-only` los usuarios no tienen acceso al texto de la consulta.
 
-Consulte nuestra [vídeo de formación](https://support.magento.com/hc/en-us/articles/360016730131) para obtener más información.
+Consulte nuestra [vídeo de formación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) para obtener más información.
 
 `SQL`, o Lenguaje de consulta estructurado, es un lenguaje de programación utilizado para comunicarse con bases de datos. En [!DNL MBI], SQL se utiliza para consultar o recuperar datos del almacén de datos. Eche un vistazo a los informes de su tablero: entre bastidores, cada uno de ellos cuenta con la tecnología de una consulta SQL.
 
 Puede usar la variable [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) para consultar directamente el almacén de datos, vea los resultados y transformarlos en un gráfico. Puede empezar a crear un informe con la variable `SQL Report Builder` navegando a **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
-Consulte nuestra [vídeo de formación](https://support.magento.com/hc/en-us/articles/360016730131-Training-Video-SQL-Report-Builder) para obtener más información.
+Consulte nuestra [vídeo de formación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) para obtener más información.
 
-La variable `SQL Report Builder` permite consultar directamente el almacén de datos, ver los resultados y transformarlos rápidamente en un gráfico. Lo mejor de usar SQL para generar informes es que [no es necesario esperar en los ciclos de actualización para iterar en las columnas](https://support.magento.com/hc/en-us/articles/360016506212) cree. Si los resultados no parecen correctos, puede editar y volver a ejecutar la consulta rápidamente hasta que las cosas coincidan con sus expectativas.
+La variable `SQL Report Builder` permite consultar directamente el almacén de datos, ver los resultados y transformarlos rápidamente en un gráfico. La mejor parte sobre el uso de SQL para crear informes es que no necesita esperar en los ciclos de actualización para iterar en las columnas que crea. Si los resultados no parecen correctos, puede editar y volver a ejecutar la consulta rápidamente hasta que las cosas coincidan con sus expectativas.
 
 En este artículo, le explicamos cómo usar la variable `SQL Report Builder`. Una vez que sepa cómo moverse, consulte nuestro tutorial de SQL para visualizaciones o intente optimizar algunas de las consultas que ha escrito.
 
@@ -131,9 +131,9 @@ Nos gustaría mencionar que las columnas calculadas creadas con SQL no dependen 
 
 La mayoría de las veces, las diferencias en los resultados pueden atribuirse a los ciclos de actualización. If [!DNL MBI] está en proceso de replicar datos de la base de datos en la Data Warehouse, puede que vea resultados diferentes incluso cuando utilice la misma consulta.
 
-Los problemas de conexión también pueden provocar discrepancias. Vaya a la `Connections` página haciendo clic en **[!DNL Manage Data** > **Connections]**) para comprobarlo: ¿hay algún error para la integración de la base de datos en cuestión? Si es así, es posible que tenga que [volver a autenticar la integración](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations) para que las cosas vuelvan a funcionar.
+Los problemas de conexión también pueden provocar discrepancias. Vaya a la `Connections` página haciendo clic en **[!DNL Manage Data** > **Connections]**) para comprobarlo: ¿hay algún error para la integración de la base de datos en cuestión? Si es así, es posible que tenga que [volver a autenticar la integración](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en) para que las cosas vuelvan a funcionar.
 
-Si todas las integraciones están conectadas correctamente y no se encuentra en medio de un ciclo de actualización, puede que falte algo más. Intente usar la variable [guías de solución de discrepancias de datos](https://support.magento.com/hc/en-us/sections/360003074492) en nuestro sitio de asistencia para identificar el problema.
+Si todas las integraciones están conectadas correctamente y no se encuentra en medio de un ciclo de actualización, puede que falte algo más.
 
 #### ¿Al eliminar un informe SQL también se eliminan las columnas subyacentes de mi Data Warehouse?
 

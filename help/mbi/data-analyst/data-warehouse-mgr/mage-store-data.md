@@ -2,16 +2,16 @@
 title: Almacenamiento de datos en el comercio
 description: Descubra cómo se generan los datos, qué hace que se inserte una nueva fila en una de las tablas de comercio principales y cómo se registran acciones como realizar una compra o crear una cuenta en la base de datos de comercio.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 0%
+source-wordcount: '960'
+ht-degree: 3%
 
 ---
 
-# Almacenamiento de datos en [!DNL Magento]
+# Almacenamiento de datos en [!DNL Adobe Commerce]
 
-La plataforma Commerce registra y organiza una amplia variedad de datos de comercio valiosos en cientos de tablas. En este tema, aprenderá cómo se generan esos datos, qué hace exactamente que se inserte una nueva fila en una de las [Tablas de comercio principales](../data-warehouse-mgr/common-mage-tables.md), y cómo se registran acciones como realizar una compra o crear una cuenta en la base de datos de Commerce. Para explicar estos conceptos, consulte el siguiente ejemplo:
+La plataforma Adobe Commerce registra y organiza una amplia variedad de datos de comercio valiosos en cientos de tablas. En este tema, aprenderá cómo se generan esos datos, qué hace exactamente que se inserte una nueva fila en una de las [Tablas de comercio principales](../data-warehouse-mgr/common-mage-tables.md), y cómo se registran acciones como realizar una compra o crear una cuenta en la base de datos de Commerce. Para explicar estos conceptos, consulte el siguiente ejemplo:
 
 `Clothes4U` es un comerciante de ropa con presencia en línea, de ladrillo y de mortero. Utiliza un Magento Open Source detrás de su sitio web para recopilar y organizar datos.
 
@@ -23,22 +23,22 @@ Satisfecho con todos los ajustes de `Throwback Bellbottoms`, el empleado hace cl
 
 | **`entity\_id`** | **`entity\_type\_id`** | **`attribute\_set\_id`** | **`sku`** | **`created\_at`** |
 |---|---|---|---|---|
-| 205 | 4 | 8 | Pantalones10 | 2016/09/22 09:15:43 |
-| 206 | 4 | 8 | Pantalones11 | 2016/09/22 09:18:17 |
-| 207 | 4 | 12 | Camisas6 | 2016/09/22 09:24:02 |
+| 205 | 4 | 8 | Pants10 | 2016/09/22 09:15:43 |
+| 206 | 4 | 8 | Pants11 | 2016/09/22 09:18:17 |
+| 207 | 4 | 12 | Shirts6 | 2016/09/22 09:24:02 |
 
 * `entity_id` - Esta es la clave principal del `catalog_product_entity` tabla, lo que significa que cada fila de la tabla debe tener un `entity_id`. Cada `entity_id` en esta tabla solo puede asociarse con un producto, y cada producto solo puede asociarse con uno `entity_id`
    * La línea superior de la tabla anterior, `entity_id` = 205, es la nueva fila creada para &quot;Throwback Bellbotoms&quot;. Donde quiera `entity_id` = 205 aparece en la plataforma de comercio; se referirá al producto &quot;Throwback Bellbotoms&quot;
 * `entity_type_id` - Comercio tiene varias categorías de objetos (como clientes, direcciones y productos por nombrar algunos), y esta columna se utiliza para indicar la categoría a la que pertenece esta fila en particular.
-   * Esta es la `catalog_product_entity` tabla, cada fila tiene el mismo tipo de entidad: producto. En Magento, la variable `entity_type_id` para el producto es 4, por lo que los tres nuevos productos creados devuelven 4 para esta columna.
+   * Esta es la `catalog_product_entity` tabla, cada fila tiene el mismo tipo de entidad: producto. En Adobe Commerce, la variable `entity_type_id` para el producto es 4, por lo que los tres nuevos productos creados devuelven 4 para esta columna.
 * `attribute_set_id` - Los conjuntos de atributos se utilizan para identificar productos que tienen el mismo tipo de descriptores.
    * Las dos filas superiores de la tabla son la `Throwback Bellbottoms` y `Straight Leg Jeans` productos, ambos pantalones. Estos productos tendrían los mismos descriptores (por ejemplo, nombre, nombre, línea de espera) y, por lo tanto, tienen los mismos `attribute_set_id`. El tercer punto, `V-Neck T-Shirt` tiene un `attribute_set_id` porque no tendría los mismos descriptores que los pantalones; las camisas no tienen cintura ni inseams.
-* `sku` : son valores únicos asignados a cada producto por el usuario al crear un nuevo producto en el Magento.
+* `sku` : son valores únicos que el usuario asigna a cada producto al crear un nuevo producto en Adobe Commerce.
 * `created_at` - Esta columna devuelve la marca de tiempo de cuando se creó cada producto
 
 ## `customer\_entity`
 
-Poco después de la adición de los tres nuevos productos, un nuevo cliente, `Sammy Customer`, visitas `Clothes4U`por primera vez. Since `Clothes4U` no [permitir pedidos de invitado](https://support.magento.com/hc/en-us/articles/360016729951-Common-Magento-Misconceptions), `Sammy Customer` primero debe crear una cuenta en el sitio web. Ella introduce sus credenciales y hace clic en enviar, lo que resulta en la siguiente nueva entrada en la [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
+Poco después de la adición de los tres nuevos productos, un nuevo cliente, `Sammy Customer`, visitas `Clothes4U`por primera vez. Since `Clothes4U` no permite pedidos de invitados, `Sammy Customer` primero debe crear una cuenta en el sitio web. Ella introduce sus credenciales y hace clic en enviar, lo que resulta en la siguiente nueva entrada en la [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
 
 | **`entity id`** | **`entity type id`** | **`email`** | **`created at`** |
 |---|---|---|---|
@@ -57,7 +57,7 @@ Con la creación de su cuenta finalizada, `Sammy Customer` está lista para empe
 
 | **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
 |---|---|---|---|
-| 227 | 214 | 94,85 | 23/09/2016 15:41:39 |
+| 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 
 * `entity_id` - esta es la clave principal del `sales_flat_order` tabla.
    * Cuando el cliente de Sammy realizó este pedido y la fila anterior se escribió en la variable `sales_flat_order` tabla, orden asignada `entity_id` = 227.
@@ -73,8 +73,8 @@ Además de la fila única en la `Sales\_flat\_order` cuando `Sammy Customer` env
 
 | **`item\_id`** | **`name`** | **`product\_id`** | **`order\_id`** | **`qty\_ordered`** | **`price`** |
 |---|---|---|---|---|---|
-| 822 | `Throwback Bellbottoms` | 205 | 227 | 2 | 39,95 |
-| 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14,95 |
+| 822 | `Throwback Bellbottoms` | 205 | 227 | 2 | 39.95 |
+| 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14.95 |
 
 * `item_id` - Esta columna es la clave principal del `sales_flat_order_item` tabla
    * `Sammy Customer`El pedido de ha creado dos líneas en esta tabla porque su pedido contenía dos productos distintos

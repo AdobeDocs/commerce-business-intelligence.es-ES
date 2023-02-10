@@ -5,7 +5,7 @@ exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -102,9 +102,9 @@ A continuación se muestran algunos meses comunes > segundas conversiones, pero 
 
 | **Months** | **Segundos** |
 |---|---|
-| 3 | 7.776.000 |
-| 6 | 15.552.000 |
-| 9 | 23.328.000 |
-| 12 | 31.104.000 |
+| 3 | 7,776,000 |
+| 6 | 15,552,000 |
+| 9 | 23,328,000 |
+| 12 | 31,104,000 |
 
 Después de compilar todos los informes, puede organizarlos en el panel como desee. El resultado final puede ser similar al panel de muestra anterior.

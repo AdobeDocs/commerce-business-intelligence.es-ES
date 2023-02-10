@@ -2,16 +2,16 @@
 title: tabla comillas_elementos
 description: Aprenda a trabajar con la tabla de elementos de comillas.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # Tabla de comillas_elementos
 
-La variable `quote_item` tabla (`sales_flat_quote_item` en [!DNL Magento] 1) contiene registros de cada artículo agregado a un carro de compras, ya sea que el carro de compras se haya abandonado o se haya convertido en una compra. Cada fila representa un artículo del carro de compras. Debido al tamaño potencial de esta tabla, le recomendamos que elimine registros periódicamente si se cumplen ciertos criterios, como si hay algún carro de compras no convertido de más de 60 días.
+La variable `quote_item` tabla (`sales_flat_quote_item` en M1) 1) contiene registros de cada artículo que se agregó a un carro de compras, tanto si el carro de compras se abandonó como si se convirtió en una compra. Cada fila representa un artículo del carro de compras. Debido al tamaño potencial de esta tabla, le recomendamos que elimine registros periódicamente si se cumplen ciertos criterios, como si hay algún carro de compras no convertido de más de 60 días.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ La variable `quote_item` tabla (`sales_flat_quote_item` en [!DNL Magento] 1) co
 
 `quote_item`
 
-* Unirse a `quote_item` para crear nuevas columnas que asocien detalles del SKU principal configurable o del paquete con el producto simple. Tenga en cuenta que deberá [póngase en contacto con el servicio de asistencia técnica](../../guide-overview.md) para obtener ayuda sobre la configuración de estos cálculos, si se crea en el administrador de Datas Warehouse.
+* Unirse a `quote_item` para crear nuevas columnas que asocien detalles del SKU principal configurable o del paquete con el producto simple. Tenga en cuenta que deberá [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obtener ayuda sobre la configuración de estos cálculos, si se crea en el administrador de Datas Warehouse.
    * Ruta: `quote_item.parent_item_id` (muchos) => `quote_item.item_id` (1)
 
 `store`

@@ -2,7 +2,7 @@
 title: Asignar nombres a informes y elementos en MBI
 description: Conozca las prácticas recomendadas para nombrar informes y elementos en [!DNL MBI].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
@@ -101,4 +101,4 @@ Ingresos (enviados\_at) Ingresos (creados\_at)
 
 ## Ajuste {#wrapup}
 
-El establecimiento temprano de convenciones de estilo y nomenclatura le ayudará a configurar su [!DNL MBI] cuenta. Recuerde Las Tres Cs: claridad, coherencia y credibilidad.
+El establecimiento temprano de convenciones de estilo y nomenclatura le ayudará a configurar su [!DNL MBI] cuenta. Recuerde los tres C: claridad, coherencia y credibilidad.

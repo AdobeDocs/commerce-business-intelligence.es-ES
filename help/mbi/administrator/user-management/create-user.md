@@ -2,9 +2,9 @@
 title: Agregar o editar un nuevo usuario
 description: Obtenga información sobre cómo agregar una nueva [!DNL MBI] y cómo actualizar su nombre de usuario o contraseña.
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 0%
    >Para ver, agregar o cambiar la información de facturación de la cuenta, debe tener `Billing` permisos. [Los permisos se establecen usuario por usuario](../../administrator/user-management/user-management.md) cuando se crean cuentas de usuario. Si necesita `Billing` permisos, póngase en contacto con el administrador de su cuenta.
 
 1. Haga clic en **[!UICONTROL Save]**.
-1. El nuevo usuario recibirá un correo electrónico con información de inicio de sesión y contraseña.
+
+El nuevo usuario recibirá un correo electrónico con información de inicio de sesión y contraseña.
 
 >[!NOTE]
 >
@@ -37,4 +38,4 @@ Si necesita volver a enviar la invitación al nuevo usuario, en la [página de i
 
 >[!IMPORTANT]
 >
->Cada cuenta tiene un número de licencias o asientos contratado. Si alcanza su límite o desea obtener más información, [enviar un ticket de asistencia](../../guide-overview.md).
+>Cada cuenta tiene un número de licencias o asientos contratado. Si alcanza su límite o desea obtener más información, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

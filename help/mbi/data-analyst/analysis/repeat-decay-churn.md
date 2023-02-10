@@ -2,9 +2,9 @@
 title: 'Análisis de la probabilidad de repetición: declive y pérdida'
 description: Conozca y comprenda cómo transcurre el tiempo entre los pedidos y cuándo se espera que se produzcan los clientes.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Cuando analice la disminución y la pérdida de la probabilidad de repetición, 
 
 ### Probabilidad de pedido de repetición inicial
 
-Esta medida se define como el número total de pedidos repetidos, como un porcentaje del total de pedidos. En otras palabras, es probable que una orden sea seguida por otra orden. Cuando esta probabilidad es superior al 50%, implica que más de la mitad de todos los pedidos van seguidos de un pedido posterior.
+Esta medida se define como el número total de pedidos repetidos, como un porcentaje del total de pedidos. En otras palabras, es probable que una orden sea seguida por otra orden. Cuando esta probabilidad es superior al 50 por ciento, implica que más de la mitad de todos los pedidos son seguidos por un pedido posterior.
 
 ### Probabilidad de pedido de repetición a partir de meses desde el pedido
 
@@ -76,7 +76,7 @@ Después de crear el análisis anterior y determinar un umbral de pérdida, pued
 
 Si ofrece más de un producto, probablemente se pregunte cómo se comportan los clientes que compran un producto específico de forma diferente a lo largo del tiempo en comparación con otros clientes. ¿Quieres saber más? Consulte este tutorial para explorar el comportamiento de compra de las cohortes de clientes en función de los productos específicos que han comprado.
 
-Esta práctica recomendada la proporciona [!DNL MBI] Servicios de análisis de datos (DAS). Esperamos poder responder a sus preguntas comerciales específicas. [Contacto con el servicio de asistencia](../../guide-overview.md) para obtener más información.
+Esta práctica recomendada la proporciona [!DNL MBI] Servicios de análisis de datos (DAS). Esperamos poder responder a sus preguntas comerciales específicas. [Contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obtener más información.
 
 ### Relacionado
 

@@ -2,9 +2,9 @@
 title: Datos de comercio esperados
 description: Explorar las principales tablas de datos que los usuarios de Comercio importan en MBI
 exl-id: b481c8fc-41b6-4094-8901-17d57f26bfc0
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -27,5 +27,5 @@ En este artículo, exploramos las principales tablas de datos en las que importa
 
 ## Relacionado
 
-* [Conexión [!DNL Magento]](../integrations/magento.md)
-* [Reautenticación de integraciones](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Conexión [!DNL Adobe Commerce]](../integrations/magento.md)
+* [Reautenticación de integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

@@ -2,9 +2,9 @@
 title: Conectar Google Analytics Almacén
 description: Aprenda a rastrear cómo los visitantes utilizan el sitio, qué contenido es atractivo, dónde abandonan los visitantes, etc.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Con la variable [!DNL Google Analytics Live] integración, por otro lado, cada [
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] es `Premium` Integración. [Contacto con el servicio de asistencia](../../../guide-overview.md) si tiene interés en añadir esta integración a su suscripción.
+>[!DNL Google Analytics Warehoused] es `Premium` Integración. [Contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) si tiene interés en añadir esta integración a su suscripción.
 
 1. Vaya a la `Connections` página debajo de **[!UICONTROL Admin** > **Integrations]**.
 1. Haga clic en **[!UICONTROL Add a Add Integration]**, situado en el lado derecho de la pantalla.
@@ -61,8 +61,7 @@ Para identificar el [!DNL Google Analytics] ID de perfil:
 
 ## Documentación relacionada
 
-* [Reautenticación de integraciones](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticación de integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Conexión [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Análisis de la actividad del sitio web y las tasas de conversión de los clientes](../../analysis/web-act-cust-conversion.md)
 * [Seguimiento de datos de adquisición de usuarios mediante [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)
-* [Seguimiento de datos de dispositivos y exploradores de usuario mediante [!DNL Google Analytics] cookies](https://support.magento.com/hc/en-us/articles/360016732911)

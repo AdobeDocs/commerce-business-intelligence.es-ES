@@ -2,9 +2,9 @@
 title: Conectar banda
 description: Obtenga información sobre cómo administrar y realizar un seguimiento de los datos de pagos y facturas de su empresa.
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Después de hacer clic en **[!UICONTROL Connect with Stripe]**, aparece una pág
 Si eres un poco más experto en tecnología, [[!DNL Stripe] Documentación de API](https://stripe.com/docs/api) puede ser un recurso útil para obtener más información sobre cómo [!DNL Stripe] está integrado con [!DNL MBI].
 
 * [Esperado [!DNL Stripe] data](../integrations/stripe-data.md)
-* [Reautenticación de integraciones](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticación de integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

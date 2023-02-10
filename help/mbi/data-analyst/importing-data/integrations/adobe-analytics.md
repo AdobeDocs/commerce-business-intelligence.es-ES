@@ -2,9 +2,9 @@
 title: Conectar Adobe Analytics
 description: Aprenda a unir el enfoque de recorrido del cliente de extremo a extremo de [!DNL Adobe Analytics] y el enfoque del comercio electrónico del que confía [!DNL MBI].
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---

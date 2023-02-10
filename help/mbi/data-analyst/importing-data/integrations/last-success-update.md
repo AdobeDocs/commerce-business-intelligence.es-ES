@@ -2,9 +2,9 @@
 title: Comprender los resultados entre Database y SQL Editor
 description: Aprenda a comprender los resultados entre la base de datos y el editor SQL.
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ El último punto de datos para una integración en particular se determina media
 Para comprobar la actualización de los datos de *tablas específicas*, le recomendamos que cree un [Informe SQL](../../dev-reports/sql-rpt-bldr.md) que realiza una `MAX(timestamp)` en la tabla más importante de su cuenta. Comparación de esta marca de tiempo con la variable `Last Data Point` indicará si el problema afectó a toda la cuenta o a un subconjunto de las tablas. Se recomienda hacer esto para tres a cuatro tablas importantes de uso común.
 
 - Si la variable `MAX(timestamp)` los valores son más recientes que `Last Data Point Received`, significa que un subconjunto de las tablas se vio afectado, pero el ciclo de actualización general de la cuenta es estable.
-- Si la variable `MAX(timestamp)` los valores son iguales o anteriores a `Last Data Point Received`, significa que el ciclo de actualización de la cuenta se vio afectado. En esta situación, [enviar un ticket de asistencia](../../../guide-overview.md).
+- Si la variable `MAX(timestamp)` los valores son iguales o anteriores a `Last Data Point Received`, significa que el ciclo de actualización de la cuenta se vio afectado. En esta situación, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

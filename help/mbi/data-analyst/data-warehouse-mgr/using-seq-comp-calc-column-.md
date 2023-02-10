@@ -5,7 +5,7 @@ exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,11 +25,11 @@ La variable `Sequential Comparison` tipo de columna: encuentra la diferencia ent
 
 | **`event_id`** | **`owner_id`** | **`timestamp`** | **`Seconds since owner's previous event`** |
 |--- |--- |--- |--- |
-| **`1`** | A | 01-01-2015:00:00 | NULL |
-| **`2`** | B | 01-01-2015:30:00 | NULL |
-| **`3`** | A | 01-01-2015:00:00 | 7200 |
-| **`4`** | A | 2015-01-02 14:00:00 | 126000 |
-| **`5`** | B | 2015-01-03 14:00:00 | 217800 |
+| **`1`** | A | 2015-01-01 00:00:00 | NULL |
+| **`2`** | B | 2015-01-01 00:30:00 | NULL |
+| **`3`** | A | 2015-01-01 02:00:00 | 7200 |
+| **`4`** | A | 2015-01-02 13:00:00 | 126000 |
+| **`5`** | B | 2015-01-03 13:00:00 | 217800 |
 
 En el ejemplo anterior, `Seconds since owner's previous event` es la variable `Sequential Comparison` columna calculada. Para la variable `owner_id = A`, primero identifica una secuencia basada en la variable `timestamp` y, a continuación, resta el valor de `timestamp` desde la marca de tiempo del evento actual. En la tercera fila de la tabla: la segunda fila de `owner_id A` - el valor de `Seconds since owner's previous event` es el número de segundos entre &quot;2015-01-01 02:00&quot; y &quot;2015-01-01 00:00:00&quot;. Esta diferencia es igual a 2 horas = 7200 segundos.
 

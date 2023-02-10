@@ -2,9 +2,9 @@
 title: Conectar adwords de Google
 description: Aprenda a medir el ROI de la campaña casando su coste publicitario con el valor de duración de clientes (CLV) de los usuarios adquiridos en sus campañas.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,9 @@ Es posible que tenga varios sitios web conectados a una sola [!DNL Google Analyt
 
 ## Relacionado
 
-* [Reautenticación de integraciones](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticación de integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Rastrear la fuente de referencia de pedidos a través de [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Seguimiento del origen de referencia del usuario en la base de datos](../../analysis/google-track-user-acq.md)
-* [Seguimiento de datos de dispositivos de usuario, exploradores y sistemas operativos en la base de datos](https://support.magento.com/hc/en-us/articles/360016732911)
 * [Descubra las fuentes y canales de adquisición más valiosos](../../analysis/most-value-source-channel.md)
 * [Aumento del ROI en las campañas publicitarias](../../analysis/roi-ad-camp.md)
 * [¿Cómo [!DNL Google Analytics] ¿Funciona la atribución de UTM?](../../analysis/utm-attributes.md)

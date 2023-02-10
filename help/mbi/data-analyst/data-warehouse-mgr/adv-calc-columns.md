@@ -2,10 +2,10 @@
 title: Tipos de columnas calculadas avanzadas
 description: Conozca los conceptos básicos de la mayoría de los casos de columnas de uso, pero puede que desee una columna calculada que sea un poco más compleja de lo que puede crear el Administrador de Datas Warehouse.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 4%
 
 ---
 
@@ -37,11 +37,11 @@ Este es un ejemplo:
 
 | **`event\_id`** | **`owner\_id`** | **`timestamp`** | **`Owner's event number`** |
 |-----|-----|-----|-----|
-| 1 | `A` | 01-01-2015:00:00 | 1 |
-| 2 | `B` | 01-01-2015:30:00 | 1 |
-| 3 | `A` | 01-01-2015:00:00 | 2 |
-| 4 | `A` | 2015-01-02 14:00:00 | 3 |
-| 5 | `B` | 2015-01-03 14:00:00 | 2 |
+| 1 | `A` | 2015-01-01 00:00:00 | 1 |
+| 2 | `B` | 2015-01-01 00:30:00 | 1 |
+| 3 | `A` | 2015-01-01 02:00:00 | 2 |
+| 4 | `A` | 2015-01-02 13:00:00 | 3 |
+| 5 | `B` | 2015-01-03 13:00:00 | 2 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -67,8 +67,8 @@ Este es un ejemplo:
 
 | `id` | `timestamp\_1` | `timestamp\_2` | `Seconds between timestamp\_2 and timestamp\_1` |
 |-----|-----|-----|-----|
-| `A` | 01-01-2015:00:00 | 2015-01-01 12:30:00 | 45000 |
-| `B` | 01-01-2015:00:00 | 2015-01-01 11:00:00 | 7200 |
+| `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
+| `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -91,11 +91,11 @@ Este es un ejemplo:
 
 | **`event\_id`** | **`owner\_id`** | **`timestamp`** | **`Seconds since owner's previous event`** |
 |-----|-----|-----|-----|
-| 1 | `A` | 01-01-2015:00:00 | NULL |
-| 2 | `B` | 01-01-2015:30:00 | NULL |
-| 3 | `A` | 01-01-2015:00:00 | 7720 |
-| 4 | `A` | 2015-01-02 14:00:00 | 126000 |
-| 5 | `B` | 2015-01-03 14:00:00 | 217800 |
+| 1 | `A` | 2015-01-01 00:00:00 | NULL |
+| 2 | `B` | 2015-01-01 00:30:00 | NULL |
+| 3 | `A` | 2015-01-01 02:00:00 | 7720 |
+| 4 | `A` | 2015-01-02 13:00:00 | 126000 |
+| 5 | `B` | 2015-01-03 13:00:00 | 217800 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -119,8 +119,8 @@ Este es un ejemplo:
 
 | **`id`** | **`timestamp`** | **`transaction\_value\_EUR`** | **`transaction\_value\_USD`** |
 |-----|-----|-----|-----|
-| `1` | 01-01-2015:00:00 | 30 | 33,57 |
-| `2` | 2015-01-02 00:00:00 | 50 | 55,93 |
+| `1` | 2015-01-01 00:00:00 | 30 | 33.57 |
+| `2` | 2015-01-02 00:00:00 | 50 | 55.93 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -141,8 +141,8 @@ Este es un ejemplo:
 
 | **`id`** | **`timestamp\_UTC`** | **`timestamp\_ET`** |
 |-----|-----|-----|
-| `1` | 01-01-2015:00:00 | 2014-12-31 19:00:00 |
-| `2` | 2015-01-01 12:00:00 | 01-01-2015:00:00 |
+| `1` | 2015-01-01 00:00:00 | 2014-12-31 19:00:00 |
+| `2` | 2015-01-01 12:00:00 | 2015-01-01 07:00:00 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -159,7 +159,7 @@ Para crear este tipo de columna calculada, es necesario saber:
 
 No hay que preocuparse. Solo porque no esté listado aquí no significa que no sea posible. Nuestro equipo de analistas de Data Warehouse le ha cubierto.
 
-Para definir una nueva columna calculada, [enviar un ticket de asistencia](../../guide-overview.md) con detalles sobre exactamente lo que desea crear.
+Para definir una nueva columna calculada, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) con detalles sobre exactamente lo que desea crear.
 
 ## Documentación relacionada
 

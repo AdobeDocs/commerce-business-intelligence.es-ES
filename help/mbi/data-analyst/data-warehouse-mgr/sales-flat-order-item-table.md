@@ -2,16 +2,16 @@
 title: tabla sales_order_item
 description: Aprenda a trabajar con la tabla sales_order_item .
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: c0892aa046c80f90561b4a178525ef9ed05b435a
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # `sales_order_item` Tabla
 
-La variable `sales_order_item` tabla (`sales_flat_order_item` en [!DNL Magento] 1) contiene registros de todos los productos que se compraron en un pedido. Cada fila representa un `sku` incluido en un pedido. La cantidad de unidades compradas para un `sku` se representa con mayor frecuencia por la variable `qty_ordered` campo .
+La variable `sales_order_item` tabla (`sales_flat_order_item` en M1 1) contiene registros de todos los productos que se compraron en un pedido. Cada fila representa un `sku` incluido en un pedido. La cantidad de unidades compradas para un `sku` se representa con mayor frecuencia por la variable `qty_ordered` campo .
 
 ## Tipos de productos
 
@@ -82,7 +82,7 @@ Por lo tanto, es posible informar sobre las ventas de productos tanto en el nive
 
 `sales_order_item`
 
-* Unirse a `sales_order_item` para crear nuevas columnas que asocien detalles del SKU principal configurable o del paquete con el producto simple. Tenga en cuenta que deberá [póngase en contacto con el servicio de asistencia técnica](../../guide-overview.md) para obtener ayuda sobre la configuración de estos cálculos, si se crea en el administrador de Datas Warehouse.
+* Unirse a `sales_order_item` para crear nuevas columnas que asocien detalles del SKU principal configurable o del paquete con el producto simple. Tenga en cuenta que deberá [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obtener ayuda sobre la configuración de estos cálculos, si se crea en el administrador de Datas Warehouse.
    * Ruta: `sales_order_item.parent_item_id` (muchos) => `sales_order_item.item_id` (1)
 
 `store`

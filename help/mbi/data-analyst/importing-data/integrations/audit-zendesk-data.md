@@ -2,9 +2,9 @@
 title: Auditoría de datos de Zendesk
 description: Conozca los pasos para exportar sus datos de Zendesk.
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Encontré algo extraño en tu [[!DNL Zendesk] data](../integrations/exp-zendesk-
 
 ## Habilitación de la exportación de datos
 
-Actualmente, la exportación de datos no está habilitada para todos [!DNL Zendesk] cuentas. Para activar esta función, [enviar un ticket de asistencia](../../../guide-overview.md), mencionando su [!DNL Zendesk] nombre de subdominio.
+Actualmente, la exportación de datos no está habilitada para todos [!DNL Zendesk] cuentas. Para activar esta función, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en), mencionando su [!DNL Zendesk] nombre de subdominio.
 
 >[!NOTE]
 >
@@ -36,6 +36,6 @@ Una vez habilitada la exportación de datos, solo los administradores de un domi
 
    Este vínculo de descarga es válido durante al menos tres días.
 
-Este proceso crea un archivo XML que contiene toda la información almacenada en la [!DNL Zendesk] cuenta, incluidos datos de ticket (con comentarios), datos de usuario y datos de cuenta. En este punto, puede [enviar un ticket de asistencia](../../../guide-overview.md) (asegúrese de adjuntar este archivo). así que podemos echar un vistazo a sus datos. Si el archivo es demasiado grande, compártalo con el [!DNL MBI] equipo via [!DNL Dropbox] o [!DNL Google Drive].
+Este proceso crea un archivo XML que contiene toda la información almacenada en la [!DNL Zendesk] cuenta, incluidos datos de ticket (con comentarios), datos de usuario y datos de cuenta. En este punto, puede [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (asegúrese de adjuntar este archivo). así que podemos echar un vistazo a sus datos. Si el archivo es demasiado grande, compártalo con el [!DNL MBI] equipo via [!DNL Dropbox] o [!DNL Google Drive].
 
-Para obtener más información, consulte [!DNL Zendesk] exportaciones de archivos, consulte la [[!DNL Zendesk] documentación de exportación](https://support.zendesk.com/entries/23002207-Exporting-data-to-a-CSV-or-XML-file-Plus-and-Enterprise-).
+Para obtener más información, consulte [!DNL Zendesk] exportaciones de archivos, consulte la [[!DNL Zendesk] documentación de exportación](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

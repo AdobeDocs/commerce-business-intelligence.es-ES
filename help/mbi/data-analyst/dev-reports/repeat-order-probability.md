@@ -2,9 +2,9 @@
 title: Informe de probabilidad de repetición de pedido
 description: Conozca y comprenda el informe de probabilidad de repetición de pedido.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Si se agregara un filtro que utilice una dimensión que no sea igual para todos 
 
 En algunos casos, es posible que podamos convertir un `order-specific` dimensión en un `user-specific` dimensión que se agregará como filtro en la `Repeat Order Probability` gráfico. En estos casos, se devolverá el atributo de pedido del primer pedido o del último pedido de un usuario (por ejemplo, el nombre de región de pedido del usuario).
 
-Si desea crear una dimensión nueva de este tipo, [póngase en contacto con el servicio de asistencia técnica](../../guide-overview.md).
+Si desea crear una dimensión nueva de este tipo, [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## Comparación de la probabilidad de repetición de pedidos con atributos diferentes
 

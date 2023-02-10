@@ -2,9 +2,9 @@
 title: Filtros
 description: Aprenda a utilizar filtros.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Se pueden agregar uno o más filtros para limitar los datos que se usan para gen
 >
 >Un informe puede tener un máximo de 3500 puntos de datos. Para reducir el número de puntos de datos, utilice un filtro para reducir la cantidad de datos que se utiliza para generar el informe.
 
-MBI incluye una selección de filtros que puede usar &quot;predeterminados&quot; o modificar para adaptarlos a sus necesidades. No hay límite en el número de filtros que se pueden crear.
+MBI incluye una selección de filtros que puede utilizar &quot;fuera de la caja (OOTB)&quot; o modificarlos para adaptarlos a sus necesidades. No hay límite en el número de filtros que se pueden crear.
 
 ## Para agregar un filtro:
 

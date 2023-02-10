@@ -2,9 +2,9 @@
 title: Definir la pérdida de clientes
 description: Aprenda a configurar un tablero que le ayude a definir la pérdida para sus clientes transaccionales.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: 3557e6370fae637cd74550b2806847bebe61d5d3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -136,4 +136,4 @@ Una vez que haya creado su panel, la pregunta más común que recibimos es: ¿C�
 
 Después de compilar todos los informes, puede organizarlos en el panel como desee. El resultado final puede ser similar a la imagen de la parte superior de la página
 
-Si tiene alguna pregunta al crear este análisis, o simplemente desea contactar con nuestro equipo de servicios profesionales, [póngase en contacto con el servicio de asistencia técnica](../../guide-overview.md).
+Si tiene alguna pregunta al crear este análisis, o simplemente desea contactar con nuestro equipo de servicios profesionales, [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

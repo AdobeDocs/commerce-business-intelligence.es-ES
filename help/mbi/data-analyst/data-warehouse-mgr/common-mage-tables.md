@@ -2,7 +2,7 @@
 title: Tablas de comercio común
 description: Obtenga información sobre algunas de las tablas más comunes que [!DNL MBI] los clientes utilizan .
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -31,4 +31,4 @@ A continuación se muestra una lista de algunas de las tablas más comunes que [
 
 ## Documentación relacionada
 
-[[!DNL Magento] Diagramas de relación de entidades](../data-warehouse-mgr/entity-rel-diag.md)
+[Diagramas de relación de entidades](../data-warehouse-mgr/entity-rel-diag.md)

@@ -2,9 +2,9 @@
 title: Optimización de las consultas SQL
 description: Aprenda a optimizar las consultas SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 El Report Builder SQL permite realizar consultas e iterar en esas consultas en un momento determinado. Esto resulta útil cuando necesita modificar una consulta sin tener que esperar a que finalice un ciclo de actualización antes de darse cuenta de que una columna o informe que ha creado necesita actualizarse.
 
-Antes de ejecutar una consulta, [[!DNL MBI] calcula su coste](https://support.magento.com/hc/en-us/articles/360016730391). El coste tiene en cuenta el tiempo y el número de recursos necesarios para ejecutar una consulta. Si ese coste se considera demasiado alto o si el número de filas devueltas supera nuestros límites, la consulta no se ejecutará. Hemos creado una lista de recomendaciones para consultar el almacén de datos, que le asegurarán que está escribiendo las consultas más optimizadas posibles.
+Antes de ejecutar una consulta, [[!DNL MBI] calcula su coste](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). El coste tiene en cuenta el tiempo y el número de recursos necesarios para ejecutar una consulta. Si ese coste se considera demasiado alto o si el número de filas devueltas supera nuestros límites, la consulta no se ejecutará. Hemos creado una lista de recomendaciones para consultar el almacén de datos, que le asegurarán que está escribiendo las consultas más optimizadas posibles.
 
 ## Uso de SELECT o de la selección de todas las columnas
 

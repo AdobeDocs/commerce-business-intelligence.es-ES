@@ -2,10 +2,10 @@
 title: Análisis del impacto de cupones
 description: Aprenda a analizar el impacto de los cupones en la adquisición y retención de clientes.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 0%
+source-wordcount: '1392'
+ht-degree: 2%
 
 ---
 
@@ -46,8 +46,8 @@ Veamos algunos datos de ejemplo para métricas de adquisición de cupones frente
 
 | **Adquisición de cliente** | **Número de clientes nuevos** | **Ingresos medios de duración** | **Número de pedidos repetidos** | **Número de pedidos repetidos con cupón** | **% de pedidos repetidos con cupón** |
 |-----|-----|-----|-----|-----|-----|
-| Cupón | 1.206 | 356,91 $ | 2.570 | 1.248 | 48,56 % |
-| No cupón | 11.561 | 498,30 $ | 20.145 | 3.251 | 16,14 % |
+| Cupón | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
+| No cupón | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -109,9 +109,9 @@ Ahora, veamos un ejemplo que implica tres cupones diferentes utilizados para los
 
 | **Cupón** | **Pedidos por primera vez (FTO)** | **Ingresos brutos procedentes de FTO** | **Descuentos aplicados a FTO** | **Ingresos netos de FTO** | **Valor de pedido promedio para FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25% de descuento en $100 o más** | 56 | 8.531,04 $ | 2.132,76 $ | 6.398,28 $ | 152,34 $ |
-| **$10 de descuento** | 87 | 3.707,07 $ | 426,10 $ | 3.280,97 $ | 42,61 $ |
-| **20 % de descuento** | 145 | 10 975,05 $ | 2.195,01 $ | 8.780,04 $ | 75,69 $ |
+| **25% de descuento en $100 o más** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
+| **$10 de descuento** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
+| **20 % de descuento** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -137,9 +137,9 @@ Ahora que hemos visto los pedidos en sí, echemos un vistazo a los clientes que 
 
 | **Cupón de primer pedido del cliente** | **Número de clientes** | **Cantidad promedio de pedidos acumulados** | **Ingresos medios de duración** |
 |-----|-----|-----|-----|
-| **25% de descuento en $100 o más** | 56 | 2,8 | 554,54 $ |
-| **$10 de descuento** | 87 | 1,9 | 115,50 $ |
-| **20 % de descuento** | 145 | 1,3 | 103,75 $ |
+| **25% de descuento en $100 o más** | 56 | 2.8 | $554.54 |
+| **$10 de descuento** | 87 | 1.9 | $115.50 |
+| **20 % de descuento** | 145 | 1.3 | $103.75 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -149,4 +149,4 @@ El mayor número de clientes se adquirió mediante el cupón del &quot;20 % de d
 
 ## Ajuste {#wrapup}
 
-Puede crear una multitud de análisis para comprender mejor cómo utilizan los cupones los clientes. ¿Alguna vez ha pensado en analizar cómo utilizan sus clientes sus cupones o el tiempo que tardan los cupones en utilizarse? ¿Qué sucede si se encuentra la cantidad de descuento óptima? ¿Qué cantidad fomenta la repetición de compradores, un mayor valor de pedido promedio y mayores ingresos de por vida? Para obtener ayuda con este tipo de preguntas, [póngase en contacto con el servicio de asistencia técnica](../../guide-overview.md).
+Puede crear una multitud de análisis para comprender mejor cómo utilizan los cupones los clientes. ¿Alguna vez ha pensado en analizar cómo utilizan sus clientes sus cupones o el tiempo que tardan los cupones en utilizarse? ¿Qué sucede si se encuentra la cantidad de descuento óptima? ¿Qué cantidad fomenta la repetición de compradores, un mayor valor de pedido promedio y mayores ingresos de por vida? Para obtener ayuda con este tipo de preguntas, [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

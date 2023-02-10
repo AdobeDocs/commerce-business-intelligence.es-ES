@@ -2,9 +2,9 @@
 title: Usar opciones de tiempo en el Report Builder visual
 description: Aprenda a analizar los datos del informe para un período de tiempo específico.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Ahora podemos ver cuán impactante fue cada mes el año pasado:
 
 ## Comparación de la misma métrica en diferentes intervalos de tiempo {#difftimerange}
 
-Este ejemplo utiliza una dimensión personalizada llamada `Day number of the month`. Si desea crear este informe y no tiene ya esta dimensión en la Data Warehouse, [póngase en contacto con el servicio de asistencia técnica](../guide-overview.md) para obtener ayuda.
+Este ejemplo utiliza una dimensión personalizada llamada `Day number of the month`. Si desea crear este informe y no tiene ya esta dimensión en la Data Warehouse, [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obtener ayuda.
 
 Los dos ejemplos más comunes de esta categoría son (1) la comparación de métricas de crecimiento (ingresos año tras año o mes tras mes) y (2) una mejor comprensión de las tendencias recientes de ventas de artículos o inventarios.
 
@@ -143,4 +143,3 @@ Este ejemplo demuestra que los niveles de inventario actuales estaban bien situa
 
 Como los clientes se comportan de forma diferente a lo largo del tiempo, al realizar análisis puede esperar ver variaciones en los datos. La configuración de opciones de tiempo personalizadas permite crear rápidamente análisis complejos, lo que permite tomar decisiones basadas en datos que influyen en las tendencias históricas.
 
-Consulte nuestra [vídeo de formación](https://support.magento.com/hc/en-us/articles/360016730071-Training-Video-Time-Options-in-the-Visual-Report-Builder) para obtener más información.

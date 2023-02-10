@@ -25,24 +25,24 @@ Estos permisos permiten a los usuarios realizar determinadas acciones o acceder 
 
 |  | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
-| **Crear/administrar usuarios** | š |  |  |
-| **Crear resúmenes de correo electrónico** | š | š |  |
-| **Crear/editar/compartir tableros** | š | š |  |
-| **Ver tableros** | š | š | š |
-| **Creación, edición o eliminación de informes visuales** | š | š* |  |
-| **Crear/editar/eliminar informes SQL** | š |  |  |
-| **Clonar tableros** | š |  |  |
-| **Agregar y administrar integraciones** | š |  |  |
-| **Acceso al Administrador de Datas Warehouse** | š |  |  |
-| **Tablas y columnas de sincronización/dessincronización** | š |  |  |
-| **Crear/editar métricas** | š |  |  |
-| **Crear/editar conjuntos de filtros** | š |  |  |
-| **Crear/editar columnas calculadas** | š |  |  |
-| **Crear lista de informes dependientes** | š |  |  |
-| **Resumen del sistema de acceso** | š |  |  |
-| **Acceso a la configuración de zona horaria** | š |  |  |
-| **Acceso a la facturación** | š | Invoice** |  |
-| **Contacto con el servicio de asistencia** | š | š | š |
+| **Crear/administrar usuarios** | ✔ |  |  |
+| **Crear resúmenes de correo electrónico** | ✔ | ✔ |  |
+| **Crear/editar/compartir tableros** | ✔ | ✔ |  |
+| **Ver tableros** | ✔ | ✔ | ✔ |
+| **Creación, edición o eliminación de informes visuales** | ✔ | ✔* |  |
+| **Crear/editar/eliminar informes SQL** | ✔ |  |  |
+| **Clonar tableros** | ✔ |  |  |
+| **Agregar y administrar integraciones** | ✔ |  |  |
+| **Acceso al Administrador de Datas Warehouse** | ✔ |  |  |
+| **Tablas y columnas de sincronización/dessincronización** | ✔ |  |  |
+| **Crear/editar métricas** | ✔ |  |  |
+| **Crear/editar conjuntos de filtros** | ✔ |  |  |
+| **Crear/editar columnas calculadas** | ✔ |  |  |
+| **Crear lista de informes dependientes** | ✔ |  |  |
+| **Resumen del sistema de acceso** | ✔ |  |  |
+| **Acceso a la configuración de zona horaria** | ✔ |  |  |
+| **Acceso a la facturación** | ✔ | ✔** |  |
+| **Contacto con el servicio de asistencia** | ✔ | ✔ | ✔ |
 
 {style=&quot;table-layout:auto&quot;}
 

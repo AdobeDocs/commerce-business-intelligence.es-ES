@@ -2,9 +2,9 @@
 title: Aumento del ROI en las campañas publicitarias
 description: Obtenga información sobre varios métodos diferentes para evaluar el rendimiento de la campaña.
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Los análisis (1) y (2) anteriores se exploran en un tutorial independiente sobr
 >
 >Asumiremos que todos los costes de campaña se utilizaron exclusivamente para generar compras de productos específicos. Suponiendo que todo el coste se gastó en la generación de compras, el ROI resultante representará el peor escenario (el mayor coste por compra), por lo que puede estar seguro de que el ROI real es mayor que este cálculo. Ejemplo: Suponiendo que haya gastado 20 dólares en una campaña que generó 10 usuarios nuevos y 10 compras, el coste real por compra es de 1 dólar, pero asumiendo que todo el coste se destinó a adquirir nuevos usuarios, el coste por compra es de 2 dólares).*
 
-Antes de empezar, [enviar un ticket de asistencia](../../guide-overview.md) para unir las siguientes dimensiones a la tabla de elementos de línea (`sales\_flat\_order\_item, order\_item`):
+Antes de empezar, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para unir las siguientes dimensiones a la tabla de elementos de línea (`sales\_flat\_order\_item, order\_item`):
 
 * Origen del pedido (si solo rastrea el origen de referencia a nivel de usuario, únase al origen del usuario)
 * Campaña del pedido (si solo realiza el seguimiento del origen de referencia a nivel de usuario, únase a la campaña del usuario)

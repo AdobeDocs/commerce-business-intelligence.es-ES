@@ -2,10 +2,10 @@
 title: 'Google Analytics: información general sobre el seguimiento de la fuente de datos de adquisición de usuarios'
 description: Obtenga información sobre cómo segmentar los datos por fuente de adquisición de usuario.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 0%
+source-wordcount: '837'
+ht-degree: 1%
 
 ---
 
@@ -69,10 +69,10 @@ Supongamos que estamos utilizando una base de datos SQL y tenemos una `users` co
 
 | ID | CORREO ELECTRÓNICO | JOIN_DATE | ACQ_SOURCE | ACQ_MEDIUM |
 |--- |--- |--- |--- |--- |
-| 1 | john@abc.com | 24-01-2012 | google | orgánico |
-| 2 | jim@abc.com | 24-01-2012 | google | cpc |
-| 3 | joe@def.com | 25-01-2012 | direct | - |
-| 4 | jess@ghi.com | 26-01-2012 | referente | techcrunch.com |
+| 1 | john@abc.com | 2012-01-24 | google | orgánico |
+| 2 | jim@abc.com | 2012-01-24 | google | cpc |
+| 3 | joe@def.com | 2012-01-25 | direct | - |
+| 4 | jess@ghi.com | 2012-01-26 | referente | techcrunch.com |
 | 5 | jen@ghi.net | 2012-01-30 | other | orgánico |
 | ... | ... | ... | ... | ... |
 
@@ -93,7 +93,6 @@ Esto es interesante, pero de uso limitado. Lo que realmente nos gustaría saber 
 
 ### Relacionado
 
-* **[Seguimiento de datos de dispositivos de usuario, exploradores y sistemas operativos en la base de datos](https://support.magento.com/hc/en-us/articles/360016732911)**
 * **[Descubra las fuentes y canales de adquisición más valiosos](../analysis/most-value-source-channel.md)**
 * **[Conecte su [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)**
 * **[Aumento del ROI en las campañas publicitarias](../analysis/roi-ad-camp.md)**

@@ -2,9 +2,9 @@
 title: Eliminar o reactivar un usuario
 description: Obtenga información sobre cómo eliminar una [!DNL MBI] usuario.
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -24,5 +24,5 @@ Puede reactivar el usuario creando un nuevo usuario con la misma dirección de c
 Si solo necesita que los tableros de ese usuario se inserten en una cuenta de usuario diferente, haga lo siguiente:
 
 1. Utilice la dirección de correo electrónico del usuario eliminado para crear una nueva [!DNL MBI] usuario.
-1. [Notificar al servicio de asistencia](../../guide-overview.md) después de crear el usuario. El servicio de asistencia técnica transferirá los tableros a su cuenta.
+1. [Notificar al servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) después de crear el usuario. El servicio de asistencia técnica transferirá los tableros a su cuenta.
 1. Una vez que el equipo de asistencia le haya notificado la transferencia, puede volver a eliminar el usuario.

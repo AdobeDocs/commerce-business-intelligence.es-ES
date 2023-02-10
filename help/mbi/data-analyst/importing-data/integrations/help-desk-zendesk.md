@@ -2,9 +2,9 @@
 title: Informes del servicio de asistencia técnica de Zendesk
 description: Conozca sus canales de referencia más valiosos.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Esto solo está disponible para los clientes que se encuentran en la variable `Pro` planifique y utilice la nueva arquitectura. Usted está en el [nueva arquitectura](https://support.magento.com/hc/en-us/articles/360016503052-New-Architecture-FAQ) si tiene la variable `Data Warehouse Views` sección disponible después de seleccionar `Manage Data` de la barra de herramientas principal.
+>Esto solo está disponible para los clientes que se encuentran en la variable `Pro` planifique y utilice la nueva arquitectura. Está en la nueva arquitectura si tiene la variable `Data Warehouse Views` sección disponible después de seleccionar `Manage Data` de la barra de herramientas principal.
 
 Consolidar su [!DNL Zendesk] los datos de su base de datos transaccional son una excelente manera de comprender mejor cómo interactúan sus clientes con los equipos de ventas o éxito de los clientes y qué tipo de clientes están utilizando su plataforma de asistencia. En este artículo, demostramos cómo configurar un tablero para obtener informes granulares sobre su [!DNL Zendesk] rendimiento y tiempo en sus clientes transaccionales.
 
@@ -196,7 +196,7 @@ Antes de comenzar, debe conectar con su [[!DNL Zendesk]](../integrations/zendesk
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-      *`Datatype` - `String`
+      *`Datatype` – `String`
 
 
 * **`customer_entity`** tabla
@@ -221,7 +221,7 @@ Antes de comenzar, debe conectar con su [[!DNL Zendesk]](../integrations/zendesk
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` - `String`
+      * `Datatype` – `String`
 
 * **`[Zendesk] Tickets`** tabla
    * Seleccione una definición: `Joined Column`

@@ -2,9 +2,9 @@
 title: Análisis del valor de duración esperado (LTV) (básico)
 description: Aprenda a crear análisis para comprender el valor de duración de sus clientes actuales y prevea cómo el valor de duración aumentará con más pedidos.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,6 @@ Una vez creada la métrica, puede **crear un tablero** haciendo esto:
 * Aquí es donde creamos y agregamos todos los informes.
 
 ## Creación de informes
-
-* Si aún no lo ha hecho, consulte [este vídeo](https://fast.wistia.net/embed/iframe/24zz7wmjrt) acerca del uso de **[!UICONTROL Visual Report Builder] para crear gráficos, tablas y valores escalares.
 
 >[!NOTE]
 >

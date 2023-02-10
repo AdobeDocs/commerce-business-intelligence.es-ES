@@ -2,9 +2,9 @@
 title: Connect [!DNL MongoDB] a través del túnel SSH
 description: Aprenda a conectar [!DNL MongoDB] a través del túnel SSH.
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -145,4 +145,4 @@ En el `SSH Connection` sección:
 
 ### Relacionado
 
-* [Reautenticación de integraciones](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticación de integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

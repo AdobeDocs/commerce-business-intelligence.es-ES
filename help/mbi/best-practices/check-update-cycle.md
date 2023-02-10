@@ -2,9 +2,9 @@
 title: Comprobación del estado del ciclo de actualización
 description: Obtenga información sobre cómo comprobar el estado del ciclo de actualización.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Cuando inicie sesión en su [!DNL MBI] tablero, hay varias formas de comprobar e
 
 ## ¿Por qué debería comprobar el estado del ciclo de actualización?
 
-La comprobación del ciclo de actualización de estado es útil cuando audita los datos en su [!DNL MBI] cuenta. Si ve [resultados que no satisfacen sus expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por ejemplo, ventas diarias en [!DNL MBI] no coinciden con lo que está viendo en su plataforma de comercio electrónico o en su [[!DNL Google] ingresos por comercio electrónico](https://support.magento.com/hc/en-us/articles/360016505232) puede comprobar el último punto de datos para ver si el problema se resolverá una vez completada la actualización.
+La comprobación del ciclo de actualización de estado es útil cuando audita los datos en su [!DNL MBI] cuenta. Si ve [resultados que no satisfacen sus expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por ejemplo, ventas diarias en [!DNL MBI] no coinciden con lo que está viendo en su plataforma de comercio electrónico o en su [[!DNL Google] ingresos por comercio electrónico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) puede comprobar el último punto de datos para ver si el problema se resolverá una vez completada la actualización.
 
 ## [!UICONTROL Read-Only] y [!UICONTROL Standard]** Usuarios
 

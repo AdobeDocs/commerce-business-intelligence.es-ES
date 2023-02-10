@@ -5,9 +5,9 @@ breadcrumb-title: Información general de guía
 seo-title: MBI User Guide
 seo-description: Describes how to use the MBI features used to gain insights from Adobe Commerce or Magento Open Source data.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Acceda a nuestro equipo de asistencia si tiene alguna duda o desea aprovechar al
 
 ### Políticas de servicio
 
-Consulte una [lista de los servicios que proporciona nuestro equipo de asistencia al cliente](https://support.magento.com/hc/en-us/articles/360016730811).
+Consulte una [lista de los servicios que proporciona nuestro equipo de asistencia al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### Envío de un ticket de asistencia
 
-¿Necesita ayuda para crear una columna calculada avanzada? ¿Se ha encontrado un defecto o un problema de conexión? Si necesita ponerse en contacto con nuestro equipo de asistencia, le pedimos que use nuestra [directrices de ticket de soporte](https://support.magento.com/hc/en-us/articles/360016730351). Estas directrices describen las necesidades del Adobe de información para resolver el problema.
+¿Necesita ayuda para crear una columna calculada avanzada? ¿Se ha encontrado un defecto o un problema de conexión? Si necesita ponerse en contacto con nuestro equipo de asistencia, le pedimos que use nuestra [directrices de ticket de soporte] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en). Estas directrices describen las necesidades del Adobe de información para resolver el problema.
 
 ## Documentación disponible
 

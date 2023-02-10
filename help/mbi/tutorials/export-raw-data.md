@@ -2,16 +2,16 @@
 title: Exportar datos sin procesar
 description: Aprenda a exportar registros de su [!DNL MBI] Data Warehouse para obtener una visión más detallada de lo que alimenta su tablero.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
 
 # Exportar datos sin procesar
 
-Con las exportaciones de datos sin procesar, puede exportar registros desde [!DNL MBI] Data Warehouse para obtener una visión más detallada de lo que alimenta su tablero. Además, las exportaciones de datos sin procesar pueden ayudarle [detectar discrepancias de datos](https://support.magento.com/hc/en-us/articles/360016730631).
+Con las exportaciones de datos sin procesar, puede exportar registros desde [!DNL MBI] Data Warehouse para obtener una visión más detallada de lo que alimenta su tablero. Además, las exportaciones de datos sin procesar pueden ayudarle [detectar discrepancias de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
 
 Las exportaciones de datos sin procesar proporcionan acceso a columnas y dimensiones adicionales generadas mediante la desnormalización y la preagregación de métricas relevantes. Por ejemplo, `User's first order date` es una dimensión que puede exportar para cada usuario de [!DNL MBI], aunque es posible que no esté disponible en la base de datos.
 

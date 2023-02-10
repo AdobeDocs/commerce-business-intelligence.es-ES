@@ -2,9 +2,9 @@
 title: Conectar Google ECommerce
 description: Conozca sus canales de referencia más valiosos.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Para identificar el [!DNL Google Analytics] ID de perfil:
 ## Relacionado:
 
 * [Esperado [!DNL Google ECommerce] data](../integrations/google-ecommerce-data.md)
-* [Reautenticación de integraciones](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticación de integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Configuración [!DNL Google ECommerce] seguimiento](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Descubra las fuentes y canales de adquisición más valiosos](../../analysis/most-value-source-channel.md)
 * [Aumento del ROI en las campañas publicitarias](../../analysis/roi-ad-camp.md)

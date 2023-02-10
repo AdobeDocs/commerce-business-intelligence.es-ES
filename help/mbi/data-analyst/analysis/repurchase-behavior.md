@@ -2,10 +2,10 @@
 title: Análisis del comportamiento de recompra de clientes
 description: Obtenga información sobre cómo analizar el comportamiento de recompra de clientes.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
@@ -46,9 +46,9 @@ Teniendo en cuenta las métricas anteriores, echemos un vistazo a un ejemplo que
 
 | **Nombre del producto** | **Probabilidad de repetición de pedido** | **Promedio de pedidos acumulados** | **Promedio de ingresos de por vida** | **Mediana del tiempo hasta el siguiente pedido** |
 |-----|-----|-----|-----|-----|
-| Cafetera de una sola taza | 94,98 % | 7,92 | 549,82 $ | 57,01 días |
-| Cápsulas de café | 93,82 % | 8,68 | 479,98 $ | 63,48 días |
-| Vainas para café | 41,92 % | 6,07 | 99,82 $ | 27,31 días |
+| Cafetera de una sola taza | 94.98% | 7.92 | $549.82 | 57,01 días |
+| Cápsulas de café | 93.82% | 8.68 | $479.98 | 63,48 días |
+| Vainas para café | 41.92% | 6.07 | $99.82 | 27,31 días |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -80,4 +80,4 @@ Además de analizar el comportamiento de recompra de sus clientes, también pued
 
 Una vez que haya identificado el motivo por el que se está produciendo la pérdida, puede utilizar el análisis para crear un `reactivation` campaña. Con estos datos se puede identificar a los usuarios que se han vuelto inactivos, cuánto tiempo han transcurrido desde su última visita, cuál fue su última compra, etc. Esto le permitirá tomar decisiones útiles que incitarán a sus clientes a regresar.
 
-Para obtener ayuda con el análisis, [póngase en contacto con el servicio de asistencia técnica](../../guide-overview.md).
+Para obtener ayuda con el análisis, [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

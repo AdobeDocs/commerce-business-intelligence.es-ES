@@ -2,9 +2,9 @@
 title: Conexión de datos externos mediante una integración
 description: Obtenga información sobre las integraciones disponibles que puede utilizar para conectar varias fuentes de datos externas a [!DNL MBI].
 exl-id: b80f6f77-15f7-4d20-83fe-c6d758f9b0f8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '92'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ Una integración es una fuente de datos. Las integraciones son aplicaciones y ba
 
 En esta sección, presentamos las integraciones disponibles que puede utilizar para conectar varias fuentes de datos externas a [!DNL MBI].
 
-Para eliminar una conexión o integración, póngase en contacto con [support](../../../guide-overview.md) e incluya el nombre de la conexión o integración que se va a eliminar.
+Para eliminar una conexión o integración, [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) e incluya el nombre de la conexión o integración que se va a eliminar.

@@ -2,9 +2,9 @@
 title: Tableros incluidos
 description: Aprenda a comprobar el estado de las métricas esenciales, como los ingresos acumulados por el usuario, el número de compras repetidas y más, creando así una base sólida para la exploración futura.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 3557e6370fae637cd74550b2806847bebe61d5d3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Como parte de nuestros servicios, ofrecemos comercio electrónico y `SaaS` Paque
 >
 >La disponibilidad de algunos tableros depende del conjunto de datos.
 
-Si tiene alguna pregunta o está interesado en agregar un paquete a su cuenta, envíe un [ticket de asistencia](../../guide-overview.md) para obtener ayuda.
+Si tiene alguna pregunta o está interesado en agregar un paquete a su cuenta, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obtener ayuda.
 
 ## Información general sobre el ejecutivo
 
@@ -63,7 +63,7 @@ En este ejemplo, la probabilidad de pedidos repetidos de los clientes que han re
 
 La variable `Customer LTV growth` tablero incluye un conjunto de gráficos que encuentra el ingreso promedio por usuario. Los gráficos se segmentan en función de los ingresos promedio que se generan durante los primeros 30, 60, 90 o 365 días después del registro.  
 
-La fila inferior de gráficos muestra estos promedios segmentados por fuentes de adquisición o demografía para revelar qué grupos de usuarios generan la mayor cantidad de ingresos con el tiempo.
+La fila inferior de gráficos muestra estos promedios segmentados por fuentes de adquisición o demografía para revelar qué grupos de usuarios generan la mayor cantidad de ingresos con el paso del tiempo.
 
 ## Rendimiento del producto
 

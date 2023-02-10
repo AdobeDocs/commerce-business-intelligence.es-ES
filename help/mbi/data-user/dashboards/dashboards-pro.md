@@ -2,9 +2,9 @@
 title: Tableros predeterminados
 description: Obtenga información sobre los paneles integrados para proporcionar información sobre su empresa.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2245'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->El acceso a estos tableros depende del tipo de cuenta y del nivel de acceso. Si no ve estos tableros, póngase en contacto con [support](../../guide-overview.md).
+>El acceso a estos tableros depende del tipo de cuenta y del nivel de acceso. Si no ve estos tableros, póngase en contacto con [support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## Disponibilidad de informes
 

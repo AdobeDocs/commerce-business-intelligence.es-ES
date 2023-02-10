@@ -2,9 +2,9 @@
 title: Active su [!DNL MBI] Cuenta para suscripciones de inicio de nube
 description: Obtenga información sobre cómo activar [!DNL MBI] para proyectos de Cloud Starter.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Para activar [!DNL MBI] para `Cloud Starter` proyectos, cree primero un [!DNL MB
 
 1. Cree su [!DNL MBI] Cuenta.
 
-   - Vaya a [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - Vaya a [Inicio de sesión en la cuenta de Adobe Commerce](https://account.magento.com/customer/account/login)
 
    - Vaya a **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -53,7 +53,7 @@ Para activar [!DNL MBI] para `Cloud Starter` proyectos, cree primero un [!DNL MB
 
 1. Crear dedicada [!DNL MBI] Usuario.
 
-   - Crear un nuevo usuario en [https://accounts.magento.com](https://accounts.magento.com).
+   - Cree un nuevo usuario en su [Cuenta de Adobe Commerce](https://accounts.magento.com).
 
    - _¿Por qué un usuario nuevo?_ [!DNL MBI] necesita que un usuario se añada al proyecto para recuperar continuamente nuevos datos que se transfieran a la [!DNL MBI] almacén de datos. Este usuario servirá como conexión. Añadir este usuario al proyecto vendrá en el paso 4.
 
@@ -75,7 +75,7 @@ Para activar [!DNL MBI] para `Cloud Starter` proyectos, cree primero un [!DNL MB
 
 1. Añada el nuevo [!DNL MBI] `Public key` a [!DNL MBI] creado en el paso 5.
 
-   - Vaya a [https://accounts.magento.cloud/](https://accounts.magento.cloud/). Inicie sesión con la información de inicio de sesión de su cuenta para [!DNL MBI] creado por el usuario. A continuación, vaya a la `Account Settings` pestaña .
+   - Vaya a [su cuenta de nube Adobe Commerce](https://accounts.magento.cloud/). Inicie sesión con la información de inicio de sesión de su cuenta para [!DNL MBI] creado por el usuario. A continuación, vaya a la `Account Settings` pestaña .
 
    - Desplácese hacia abajo por la página y expanda la lista desplegable para `SSH` teclas. A continuación, haga clic en **[!UICONTROL Add a public key]**.
 

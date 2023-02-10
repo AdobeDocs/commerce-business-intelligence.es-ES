@@ -2,9 +2,9 @@
 title: Filtrado ancho del panel
 description: Aprenda a realizar ediciones masivas de todos los informes en un tablero específico.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Para analizar el rendimiento de una tienda específica, haga clic en el icono de
 
 >[!NOTE]
 >
->Un filtro de tienda está habilitado o deshabilitado para todo un [!DNL MBI] cuenta. Si un tablero contiene informes que no se ven afectados por el filtro, como informes que no están basados en datos de comercio, esos informes no se actualizan cuando se aplica el filtro de almacenamiento. Puede [póngase en contacto con el servicio de asistencia técnica](../../guide-overview.md) si cree que un informe debe actualizarse en función de la selección del almacén o si cree que el filtro del almacén de cuentas está deshabilitado por error.
+>Un filtro de tienda está habilitado o deshabilitado para todo un [!DNL MBI] cuenta. Si un tablero contiene informes que no se ven afectados por el filtro, como informes que no están basados en datos de comercio, esos informes no se actualizan cuando se aplica el filtro de almacenamiento. Puede [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) si cree que un informe debe actualizarse en función de la selección del almacén o si cree que el filtro del almacén de cuentas está deshabilitado por error.
 
 Al seleccionar un almacén de la variable `Store Filter`, el filtro conserva la selección cuando navega entre tableros. Retener la selección le permite ver los datos de la tienda seleccionada en todas partes hasta que seleccione `All Stores`.
 

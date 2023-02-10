@@ -2,9 +2,9 @@
 title: Diagramas de relación de entidades
 description: Obtenga información sobre algunos diagramas ER para ayudarle a visualizar la relación entre un puñado de tablas comunes de bases de datos de Commerce.
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Un cliente puede realizar muchos pedidos. La relación entre estas dos tablas es
 
 >[!IMPORTANT]
 >
->`customer\_entity.entity\_id` no es igual a `sales\_flat\_order.entity\_id`. La primera se puede considerar como un `customer\_id` y la segunda se puede considerar como un `order\_id.` Puede leer más sobre esto en la [`entity\_id` sección](https://support.magento.com/hc/en-us/articles/360016729951) de _[!DNL Magento]: Conceptos erróneos comunes_ artículo.
+>`customer\_entity.entity\_id` no es igual a `sales\_flat\_order.entity\_id`. La primera se puede considerar como un `customer\_id` y la segunda se puede considerar como un `order\_id.`
 
 Within [!DNL MBI], si la ruta entre estas dos tablas no existe, puede [crear la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse . Cuando esté listo para crear la ruta, se definirá de la siguiente manera:
 

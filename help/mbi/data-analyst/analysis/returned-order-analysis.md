@@ -2,9 +2,9 @@
 title: Análisis de pedidos devueltos
 description: Aprenda a configurar un tablero que proporcione un análisis detallado de los retornos de su tienda.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -248,4 +248,4 @@ Columnas que crear
 
 Después de compilar todos los informes, puede organizarlos en el panel como desee. El resultado puede ser similar al panel de muestra anterior.
 
-Si tiene alguna pregunta al crear este análisis, o simplemente desea contactar con el equipo de Professional Services, [póngase en contacto con el servicio de asistencia técnica](../../guide-overview.md).
+Si tiene alguna pregunta al crear este análisis o desea contactar con el equipo de Professional Services, [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
