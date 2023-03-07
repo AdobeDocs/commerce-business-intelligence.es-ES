@@ -1,10 +1,10 @@
 ---
 title: Conectar Zendesk
-description: Aprenda a consolidar los informes del servicio de asistencia técnica en [!DNL MBI].
+description: Obtenga información sobre cómo consolidar los informes del servicio de asistencia en [!DNL MBI].
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -13,43 +13,43 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Requiere [Permisos de administrador](../../../administrator/user-management/user-management.md).
+>Requiere [Permisos de administración](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/Zendesk_logo.png)
 
-Conexión de [!DNL Zendesk] los datos le permiten consolidar los informes del servicio de asistencia en [!DNL MBI]. Esto le permite optimizar la asistencia al cliente y monitorizar el rendimiento del servicio de asistencia al cliente junto con sus ingresos.
+Conexión de su [!DNL Zendesk] Los datos de le permiten consolidar sus informes del servicio de asistencia en [!DNL MBI]. Esto le permite optimizar la asistencia al cliente y supervisar el rendimiento del servicio de asistencia junto con sus ingresos.
 
-Conexión de [!DNL Zendesk] es un proceso sencillo de tres pasos:
+Conexión de su [!DNL Zendesk] Los datos de son un proceso sencillo de tres pasos:
 
 1. [Abra el [!DNL Zendesk] página credenciales en [!DNL MBI]](#stepone)
 1. [Recupere su [!DNL Zendesk] Token de API](#steptwo)
-1. [Escriba la [!DNL Zendesk] información de inicio de sesión y inicio de sesión [!DNL MBI]](#stepthree)
+1. [Introduzca su [!DNL Zendesk] información de inicio de sesión y token en [!DNL MBI]](#stepthree)
 
-Para completar este proceso, deberá abrir dos ventanas o pestañas del explorador: una para [!DNL MBI], el otro para su [!DNL Zendesk] cuenta.
+Para completar este proceso, debe abrir dos ventanas o pestañas del explorador, una para [!DNL MBI], el otro para su [!DNL Zendesk] cuenta.
 
 ## Abra el [!DNL Zendesk] página credenciales en [!DNL MBI] {#stepone}
 
 1. Vaya a la `Integrations` página debajo de **[!UICONTROL Manage Data** > ** Fuentes de datos **> **Integraciones]**.
-1. Haga clic en **[!UICONTROL Add Integration]**, situado en el lado derecho de la pantalla.
-1. Haga clic en el [!DNL Zendesk] icono. Se abrirá la variable [!DNL Zendesk] credenciales .
+1. Clic **[!UICONTROL Add Integration]**, situado en el lado derecho de la pantalla.
+1. Haga clic en [!DNL Zendesk] icono. Esto abre el [!DNL Zendesk] página credenciales.
 
 ## Recupere su [!DNL Zendesk] Token de API {#steptwo}
 
-1. En la ventana o pestaña en la que ha iniciado sesión en su [!DNL Zendesk] haga clic en el icono de Configuración (engranaje) en la esquina inferior izquierda de la pantalla.
-1. Cuando la variable `Settings` , busque `Channels` para obtener más información. Haga clic en **[!UICONTROL API]** en esta sección.
-1. En el `Token Access` de esta página, haga clic en la casilla de verificación situada junto a `Enabled`. Se mostrará una lista de tokens de API activos.
-1. Haga clic en **[!UICONTROL Add New Token]**.
-1. Cuando se le pida, introduzca una etiqueta para el token. Se recomienda usar `MBI`, así que sabrá, de un vistazo, qué aplicación está usando el token.
-1. Haga clic en **[!UICONTROL Create]**.
-1. Se creará un token de API. Copiar este token; se utilizará en el siguiente paso.
+1. En la ventana o pestaña donde inició sesión en su [!DNL Zendesk] , haga clic en el icono Configuración (engranaje) en la esquina inferior izquierda de la pantalla.
+1. Si la variable `Settings` del menú, busque la variable `Channels` sección. Clic **[!UICONTROL API]** en esta sección.
+1. En el `Token Access` de esta página, haga clic en la casilla de verificación situada junto a `Enabled`. Se muestra una lista de tokens de API activos.
+1. Clic **[!UICONTROL Add New Token]**.
+1. Cuando se le solicite, introduzca una etiqueta para el token. Adobe recomienda utilizar `MBI`, para que sepa de un vistazo qué aplicación utiliza el token.
+1. Clic **[!UICONTROL Create]**.
+1. Se crea un token de API. Copie este token, se utilizará en el siguiente paso.
 
 ## Entrar [!DNL Zendesk] información de inicio de sesión y token de API en [!DNL MBI] {#stepthree}
 
-1. Escriba la [!DNL Zendesk] prefijo del sitio y correo electrónico de inicio de sesión en la [!DNL Zendesk] página credenciales en [!DNL MBI].
+1. Introduzca su [!DNL Zendesk] prefijo de sitio e inicio de sesión en la [!DNL Zendesk] página credenciales en [!DNL MBI].
 1. Introduzca su token de API.
-1. Haga clic en **[!UICONTROL Save & Connect]**. Si la conexión se realiza correctamente, una *Conexión correcta* se mostrará en la parte superior de la pantalla.
+1. Clic **[!UICONTROL Save & Connect]**. Si la conexión se realiza correctamente, *Conexión correcta.* El mensaje se muestra en la parte superior de la pantalla.
 
 ## Relacionado:
 
-* [Esperado [!DNL Zendesk] data](../integrations/exp-zendesk-data.md)
-* [Reautenticación de integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Previsto [!DNL Zendesk] datos](../integrations/exp-zendesk-data.md)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

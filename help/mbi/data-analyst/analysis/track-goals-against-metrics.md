@@ -1,57 +1,57 @@
 ---
 title: Seguimiento de objetivos con métricas
-description: Aprenda a configurar un tablero que le ayude a realizar un seguimiento de sus objetivos comerciales en relación con los datos reales, incluidos los ingresos, los usuarios registrados nuevos y los pedidos a lo largo del tiempo.
+description: Aprenda a configurar un tablero que le ayude a realizar un seguimiento de los objetivos de su empresa en relación con los datos reales, incluidos los ingresos, los nuevos usuarios registrados y los pedidos a lo largo del tiempo.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
-# Seguimiento de objetivos con métricas de rendimiento
+# Seguimiento De Objetivos Con Métricas De Rendimiento
 
-A menudo, una gran mayoría de nuestros clientes desean realizar un seguimiento de sus **objetivos empresariales**, pero no se dé cuenta de que esto es posible en [!DNL MBI]. En este artículo, demostramos cómo configurar un panel que le ayudará a realizar un seguimiento de sus objetivos comerciales en relación con los datos reales, incluidos los ingresos, los usuarios registrados nuevos y los pedidos a lo largo del tiempo. También le mostramos cómo comparar el rendimiento año tras año, todo en un panel como este:
+La mayoría de los clientes desea realizar un seguimiento de sus **objetivos empresariales**, pero no se da cuenta de que esto es posible en [!DNL MBI]. Este artículo muestra cómo configurar un tablero que le ayudará a realizar un seguimiento de los objetivos de su empresa en relación con los datos reales, incluidos los ingresos, los nuevos usuarios registrados y los pedidos a lo largo del tiempo. También aprenderá a comparar el rendimiento año tras año, todo en un tablero como este:
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Antes de comenzar, debe familiarizarse con nuestra [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y asegúrese de haber definido sus objetivos comerciales durante un período de tiempo determinado.
+Antes de empezar, debe familiarizarse con el [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y asegúrese de haber definido sus objetivos empresariales para un periodo determinado.
 
-## Introducción
+## Primeros pasos
 
-En primer lugar, deberá cargar un archivo que contenga objetivos específicos diarios, mensuales o trimestrales para su empresa.
+Primero debe cargar un archivo que contenga objetivos diarios, mensuales o trimestrales específicos para su empresa.
 
-Puede usar la variable [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y la siguiente imagen para dar formato a su archivo. Los objetivos más comunes en los que nuestros clientes realizan un seguimiento [!DNL MBI] incluyen Pedidos, Ingresos y Nuevas cuentas registradas.
+Puede usar el complemento [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y la imagen siguiente para dar formato al archivo. Los destinos más comunes en los que los clientes realizan el seguimiento [!DNL MBI] incluir pedidos, ingresos y nuevas cuentas registradas.
 
 ![](../../assets/Goals-_Excel.png)
 
 ## Métricas
 
-Debe crear una nueva métrica para cada objetivo. Por ejemplo, si carga los objetivos de ingresos y pedidos mensuales, deberá crear dos métricas nuevas:
+Cree una nueva métrica para cada destino. Por ejemplo, si carga objetivos de ingresos y pedidos mensuales, debe crear dos métricas nuevas:
 
 * **Objetivo de ingresos mensuales**
 * En el **`Monthly goals`** tabla
 * Esta métrica realiza una **Sum**
-* En el **`Revenue target`** column
-* Solicitado por el **`Month`** timestamp
+* En el **`Revenue target`** columna
+* Ordenado por el **`Month`** timestamp
 
-* **Objetivo de pedidos mensuales**
+* **Destino de pedidos mensuales**
 * En el **`Monthly goals`** tabla
 * Esta métrica realiza una **Sum**
-* En el **`Orders target`** column
-* Solicitado por el **`Month`** timestamp
+* En el **`Orders target`** columna
+* Ordenado por el **`Month`** timestamp
 
-* **Objetivo de las nuevas cuentas registradas mensuales**
+* **Destino de nuevas cuentas registradas mensuales**
 * En el **`Monthly goals`** tabla
 * Esta métrica realiza una **Sum**
-* En el **`New registered accounts target`** column
-* Solicitado por el **`Month`** timestamp
+* En el **`New registered accounts target`** columna
+* Ordenado por el **`Month`** timestamp
 
 ## Informes
 
-Como siempre, resulta útil tener una combinación de valores estáticos y gráficos visuales al analizar los objetivos. A continuación se muestran tres informes de ejemplo para empezar a realizar un seguimiento del rendimiento de los ingresos.
+Como siempre, es útil tener una combinación de valores estáticos y gráficos visuales al analizar los destinatarios. A continuación se muestran tres informes de ejemplo para ayudarle a empezar a rastrear el rendimiento de los ingresos.
 
-* **Ingresos que quedan para alcanzar el objetivo**
+* **Ingresos restantes para alcanzar el objetivo**
 * Métrica `A`: `Revenue`
 * 
 
@@ -96,11 +96,11 @@ Como siempre, resulta útil tener una combinación de valores estáticos y gráf
    [!UICONTROL Format]: `Currency`
 
 * Desactivar `Multiple Y-Axes`
-* [!UICONTROL Time period]: (El período de tiempo que desee)*
+* [!UICONTROL Time period]: (independientemente del período de tiempo relevante que desee)*
 * 
    [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
-Una vez que haya completado los informes anteriores para los objetivos de ingresos, puede crear informes idénticos para los objetivos relacionados con los pedidos, las cuentas registradas o cualquier otro valor que haya incluido en la carga del archivo de objetivos.
+Una vez completados los informes anteriores para los objetivos de ingresos, puede crear informes idénticos para los objetivos relacionados con pedidos, cuentas registradas o cualquier otro valor que haya incluido en la carga del archivo de objetivos.
 
-Después de compilar todos los informes, puede organizarlos en el panel como desee. El resultado final puede ser similar a la imagen de la parte superior de esta página.
+Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar a la imagen de la parte superior de esta página.

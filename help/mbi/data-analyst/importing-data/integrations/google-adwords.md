@@ -1,10 +1,10 @@
 ---
-title: Conectar adwords de Google
-description: Aprenda a medir el ROI de la campaña casando su coste publicitario con el valor de duración de clientes (CLV) de los usuarios adquiridos en sus campañas.
+title: Conectar Google AdWords
+description: Aprenda a medir el ROI de la campaña combinando el coste de la publicidad con el valor de duración del cliente (CLV) de los usuarios adquiridos de las campañas.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -13,49 +13,49 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Requiere [Permisos de administrador](../../../administrator/user-management/user-management.md).
+>Requiere [Permisos de administración](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/Google_Adwords_logo.png)
 
-Hiciste tu investigación, creaste tus publicidades, iniciaste tu campaña. Ahora es el momento de analizar los datos del gasto publicitario y ver si el dinero se está gastando de manera efectiva. Con los datos de gasto en publicidad, puede [mida el ROI de la campaña casando su coste publicitario con el valor de duración del cliente (CLV)](../../analysis/roi-ad-camp.md) de usuarios adquiridos en sus campañas.
+Hiciste tu investigación, creaste tus anuncios, lanzaste tu campaña. Ahora es el momento de analizar los datos de gasto en publicidad y ver si el dinero se está gastando de forma eficaz. Con los datos de gasto en publicidad, puede hacer lo siguiente [mida el ROI de la campaña combinando el coste de la publicidad con el valor de duración del cliente (CLV)](../../analysis/roi-ad-camp.md) de usuarios adquiridos de sus campañas.
 
-Empecemos entrando en nuestra [!DNL Google Adwords] credenciales a [!DNL MBI]:
+Comience introduciendo su [!DNL Google Adwords] credenciales en [!DNL MBI]:
 
-1. Vaya a la página Conexiones debajo de **Administrar datos > Integraciones**.
-1. Haga clic en **Añadir integración**, situado en la parte superior derecha de la pantalla.
-1. Haga clic en el **[!DNL Google Adwords]** icono. Se abrirá la variable [!DNL Google Adwords] credenciales .
-1. Escriba la [!DNL Google Analytics] credenciales. Una vez completado el proceso de autorización, se le redirigirá de nuevo a [!DNL MBI].
-1. Se mostrará una lista de ID de perfil. Compruebe los perfiles a los que desea conectarse [!DNL MBI].
+1. Vaya a la página Conexiones en **Administrar datos > Integraciones**.
+1. Clic **Añadir integración**, situado en la parte superior derecha de la pantalla.
+1. Haga clic en **[!DNL Google Adwords]** icono. Esto abre el [!DNL Google Adwords] página credenciales.
+1. Introduzca su [!DNL Google Analytics] credenciales. Una vez completado el proceso de autorización, se le redirigirá de nuevo a [!DNL MBI].
+1. Se muestra una lista de ID de perfil. Compruebe los perfiles a los que desea conectarse [!DNL MBI].
 
    ![](../../../assets/cnnct-profile.png)
 
 1. Los cambios se guardan automáticamente, por lo que haga clic en **[!UICONTROL Back to Connections]** cuando haya terminado.
 
-Si tiene varios perfiles y necesita ayuda para identificar cuál es cuál, consulte la `Connecting Multiple Google Analytics profiles` a continuación.
+Si tiene varios perfiles y necesita ayuda para identificar cuál es cuál, consulte la `Connecting Multiple Google Analytics profiles` más abajo.
 
 ## `Connecting multiple Google Analytics profiles`
 
-Es posible que tenga varios sitios web conectados a una sola [!DNL Google Analytics] cuenta, identificada por su propia cuenta [!DNL Google Analytics] ID de perfil. En este caso, tendrá la opción de incluir todos sus ID de perfil en [!DNL MBI]. Compruebe los ID de perfil que desea incluir durante el paso de selección de perfiles.
+Es posible que tenga varios sitios web conectados a un único [!DNL Google Analytics] cuenta, identificadas por su propia cuenta [!DNL Google Analytics] ID de perfil. En este caso, tiene la opción de incluir todos los ID de perfil en [!DNL MBI]. Compruebe los ID de perfil que desea incluir durante el paso de selección de perfiles.
 
-**Para identificar el ID de perfil de los Google Analytics de un sitio web en particular:**
+**Para identificar el ID de perfil de Google Analytics de un sitio web en particular:**
 
-1. Iniciar sesión [!DNL Google Analytics]
-1. Vaya al sitio web en particular [!DNL Google Analytics] tablero
-1. Busque la dirección URL: el ID de perfil corresponde a los 8 números siguientes `p` al final de la línea:
+1. Iniciar sesión en [!DNL Google Analytics]
+1. Vaya al sitio web de [!DNL Google Analytics] tablero
+1. Observe la dirección URL: el ID de perfil corresponde a los ocho números que siguen `p` al final de la línea:
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**`
 
-## Desconexión [!DNL Google Adwords]
+## Desconectando [!DNL Google Adwords]
 
-1. Visite su [!DNL Google] [configuración de la cuenta](https://www.google.com/accounts/) página.
+1. Visite su [!DNL Google] [configuración de cuenta](https://www.google.com/account/about/?hl=en) página.
 1. En el `Security` y haga clic en **[!UICONTROL edit]** junto a `Authorizing` aplicaciones y sitios.
-1. Haga clic en **[!UICONTROL revoke access]** junto a [!DNL MBI].
+1. Clic **[!UICONTROL revoke access]** junto a [!DNL MBI].
 
 ## Relacionado
 
-* [Reautenticación de integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
-* [Rastrear la fuente de referencia de pedidos a través de [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
-* [Seguimiento del origen de referencia del usuario en la base de datos](../../analysis/google-track-user-acq.md)
-* [Descubra las fuentes y canales de adquisición más valiosos](../../analysis/most-value-source-channel.md)
-* [Aumento del ROI en las campañas publicitarias](../../analysis/roi-ad-camp.md)
-* [¿Cómo [!DNL Google Analytics] ¿Funciona la atribución de UTM?](../../analysis/utm-attributes.md)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Rastrear origen de referencia de pedido mediante [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
+* [Rastrear origen de referencia de usuario en la base de datos](../../analysis/google-track-user-acq.md)
+* [Descubra sus fuentes y canales de adquisición más valiosos](../../analysis/most-value-source-channel.md)
+* [Aumente el retorno de la inversión en sus campañas publicitarias](../../analysis/roi-ad-camp.md)
+* [¿Cómo? [!DNL Google Analytics] ¿Trabajo de atribución de UTM?](../../analysis/utm-attributes.md)

@@ -1,80 +1,80 @@
 ---
-title: Crear un análisis de cohorte cualitativo
-description: Descubra qué es una cohorte cualitativa, por qué podría interesarle crear este análisis y cómo puede crearlo en [!DNL MBI].
+title: Creación de un análisis de cohorte cualitativo
+description: Descubra qué es una cohorte cualitativa, por qué podría estar interesado en crear este análisis y cómo puede crearlo en [!DNL MBI].
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
 
-# Cree un `Qualitative Cohort Analysis`
+# Crear un `Qualitative Cohort Analysis`
 
-¿Sabe cómo es su [!DNL Adwords]- los segmentos de clientes adquiridos aumentan su LTV comparado con aquellos clientes adquiridos a partir de la búsqueda orgánica? ¿Alguna vez ha pensado en realizar un `cohort` análisis en distintos segmentos de clientes en paralelo en el mismo informe? En caso afirmativo, `qualitative cohort analysis` le ayudará a responder a esas preguntas.
+¿Sabe cómo es su [!DNL Adwords]Los segmentos de clientes no adquiridos aumentan su LTV en comparación con los clientes adquiridos mediante búsqueda orgánica. ¿Ha pensado alguna vez en realizar una `cohort` análisis en diferentes segmentos de clientes en paralelo en el mismo informe? En caso afirmativo, `qualitative cohort analysis` le ayuda a responder a esas preguntas.
 
-En este artículo analizamos qué es una cohorte cualitativa, por qué podría interesarle crear este análisis y cómo puede crearlo en [!DNL MBI].
+Este artículo explora qué es una cohorte cualitativa, por qué podría interesarle crear este análisis y cómo puede crearlo en [!DNL MBI].
 
-## ¿Qué son los `qualitative cohorts`, de todos modos? {#whatare}
+## Qué son `qualitative cohorts`¿De todos modos? {#whatare}
 
-`Cohort` en general, el análisis puede definirse en términos generales como el análisis de grupos de usuarios que comparten características similares a lo largo de sus ciclos de vida. Permite identificar tendencias de comportamiento en diferentes grupos de usuarios.
+`Cohort` el análisis en general puede definirse en términos generales como el análisis de grupos de usuarios que comparten características similares a lo largo de sus ciclos de vida. Permite identificar tendencias de comportamiento entre diferentes grupos de usuarios.
 
-Consulte [análisis de cohorte](https://www.cohortanalysis.com/) - ¡Escribimos el sitio en él!
+Consulte [análisis de cohorte](https://www.cohortanalysis.com/).
 
-Más `cohort` analiza en [!DNL MBI] agrupar usuarios por una fecha común (por ejemplo, el conjunto de todos los clientes que realizaron su primera compra en un mes determinado). A `qualitative cohort` es un poco diferente: es un grupo de usuarios definido por una característica que no está basada en el tiempo. Algunos ejemplos son:
+Más `cohort` análisis en [!DNL MBI] agrupar usuarios por una fecha común (por ejemplo, el conjunto de todos los clientes que realizaron su primera compra en un mes determinado). A `qualitative cohort` es un poco diferente: es un grupo de usuarios definido por una característica que no está basada en el tiempo. Algunos ejemplos son:
 
-* Conjunto de todos los usuarios adquiridos desde una campaña de publicidad
+* El conjunto de todos los usuarios adquiridos durante una campaña publicitaria
 * El conjunto de todos los usuarios cuya primera compra incluyó un cupón (o no)
-* Conjunto de todos los usuarios que tienen una edad determinada
+* El conjunto de todos los usuarios de una determinada edad
 
-## ¿En qué se diferencia eso de lo normal? `cohort` generador? {#different}
+## ¿En qué se diferencia de lo normal? `cohort` ¿constructor? {#different}
 
-La variable [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) está optimizado para agrupar cohortes utilizando una característica basada en el tiempo. Esto es bueno para análisis centrados en un segmento específico de usuarios (por ejemplo, todos los usuarios que fueron adquiridos a través de una campaña de búsqueda de pago). En el `Cohort Analysis Builder`, puede (1) centrarse en ese grupo de usuarios específico y (2) `cohort` en una fecha (como su primera fecha de pedido).
+El [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) está optimizado para agrupar cohortes mediante una característica basada en el tiempo. Esto es bueno para los análisis centrados en un segmento específico de usuario (por ejemplo, todos los usuarios que fueron adquiridos a través de una campaña de búsqueda de pago). En el `Cohort Analysis Builder`, puede (1) centrarse en ese grupo de usuarios específico y (2) `cohort` en una fecha (como su primera fecha de pedido).
 
-Sin embargo, si desea analizar el comportamiento de cohorte de varios segmentos de usuario en el mismo informe de cohorte (`paid` búsqueda versus `organic` búsqueda vs. tráfico directo, ¿quizás?), este análisis más avanzado se puede construir en la variable `Report Builder`.
+Sin embargo, si desea analizar el comportamiento de cohorte de varios segmentos de usuario en el mismo informe de cohorte (`paid` búsqueda frente a `organic` búsqueda frente al tráfico directo, quizás?), este análisis más avanzado se puede construir en la `Report Builder`.
 
 ## ¿Qué información debo enviar al servicio de asistencia para configurar mi análisis? {#support}
 
-Creación de `qualitative cohort` en el informe `Report Builder` involucra a nuestro equipo de analistas creando algunos [columnas calculadas avanzadas](../data-warehouse-mgr/creating-calculated-columns.md) en las tablas necesarias.
+Creación de un `qualitative cohort` informe en el `Report Builder` implica que el equipo de analistas de Adobe cree algunos [columnas calculadas avanzadas](../data-warehouse-mgr/creating-calculated-columns.md) en las mesas necesarias.
 
-Para crearlos, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (y remítase a este artículo!). Esto es lo que necesitamos saber:
+Para compilarlos, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (y haga referencia a este artículo). Esto es lo que debe saber:
 
-* La variable `metric` desea realizar el análisis de cohorte con y con qué tabla utiliza (ejemplo: `Revenue`, creado en el `orders` ).
+* El `metric` desea realizar el análisis de cohorte con y qué tabla utiliza (por ejemplo: `Revenue`, creado en el `orders` tabla).
 
-* La variable `user segments` desea definir y dónde se encuentra esa información en la base de datos (ejemplo: diferentes valores de `User's referral source`, nativo del `users` y se ha trasladado a la `orders`).
+* El `user segments` desea definir y dónde se almacena esa información en la base de datos (por ejemplo: valores diferentes de `User's referral source`, nativo de `users` y se reubican hacia abajo en la `orders`).
 
-* La variable `cohort date` desea que utilice el análisis (ejemplo: el `User's first order date` timestamp). Este ejemplo nos permitiría ver cada segmento y preguntar `How does a user's revenue grow in the months following their first order date?`.
+* El `cohort date` desea que utilice su análisis (por ejemplo: la variable `User's first order date` timestamp). Este ejemplo nos permite ver cada segmento y preguntar `How does a user's revenue grow in the months following their first order date?`.
 
-* La variable `time interval` que desea ver el análisis (ejemplo: `weeks`, `months`o `quarters` después del `User's first order date`).
+* El `time interval` sobre el que desea ver el análisis (ejemplo: `weeks`, `months`, o `quarters` después de `User's first order date`).
 
-Una vez que nuestro equipo de analistas responda a lo anterior, tendrá un par de nuevas columnas calculadas avanzadas para crear su informe. Luego podrá seguir las indicaciones siguientes para hacerlo.
+Una vez que el equipo del analista de Adobes responda a lo anterior, tendrá un par de nuevas columnas calculadas avanzadas para crear el informe. A continuación, puede seguir las instrucciones que se indican a continuación para hacerlo.
 
 ## Creación del análisis de cohorte cualitativo {#create}
 
-En primer lugar, desea añadir la métrica que le interese en la cohorte, una vez para cada `cohort` está analizando. En este ejemplo, queremos ver el valor acumulado `Revenue` se realiza en los meses posteriores al primer pedido de un cliente, segmentado por la variable `User's referral source`. Esto significa que, para cada segmento, agregaremos uno `Revenue` métrica y filtro para el segmento específico:
+En primer lugar, desea agregar la métrica que le interesa codificar, una vez para cada `cohort` está analizando. En este ejemplo, desea ver los datos acumulativos `Revenue` realizados en los meses posteriores al primer pedido de un cliente, segmentados por la variable `User's referral source`. Esto significa que, para cada segmento, agrega uno `Revenue` métrica y filtro para el segmento específico:
 
 ![](../../assets/qualcohort1.gif)
 
 En segundo lugar, debe realizar dos cambios en las opciones de tiempo del informe:
 
-1. Configure las variables `time interval` a `None`. Esto se debe a que, finalmente, agrupamos por intervalo de tiempo como dimensión en lugar de usar las opciones de tiempo habituales.
+1. Configure las variables `time interval` hasta `None`. Esto se debe a que finalmente se agrupa por intervalo de tiempo como una dimensión en lugar de utilizar las opciones de tiempo habituales.
 
-1. Configure las variables `time range` a la ventana de tiempo que desea que abarque el informe.
+1. Configure las variables `time range` a la ventana de tiempo que desea que cubra el informe.
 
-En nuestro ejemplo, miramos un `all time` vista de `Revenue`. Después de esto, debería terminar con una serie de puntos:
+En este ejemplo, se ve un `all time` vista de `Revenue`. Después de esto, debería terminar con una serie de puntos:
 
 ![](../../assets/qualcohort2.gif)
 
-En tercer lugar, se realizará un ajuste para configurar la variable `cohorts`. En función de la variable `cohort date` y `time interval` ha especificado para nuestro equipo de analistas, tendrá una dimensión en su cuenta que realizará el `cohort` citas. En este ejemplo, se llama a esa dimensión personalizada `Months between this order and customer's first order date`. Con esta dimensión, debe:
+En tercer lugar, debe ajustar para configurar la variable `cohorts`. Basado en el `cohort date` y `time interval` Si ha especificado al equipo de analista de Adobe, tiene una dimensión en la cuenta que realiza las `cohort` citas. En este ejemplo, esa dimensión personalizada se llama `Months between this order and customer's first order date`. Con esta dimensión, debería:
 
-* `Group by` la dimensión con la variable `group by` option
+* `Group by` la dimensión con la variable `group by` opción
 
 * Seleccione todos los valores de la variable `dimension` en el que esté interesado
 
-* Con la variable `Show top/bottom option`, seleccione los X meses principales en los que esté interesado y ordene por `Months between this order and customer's first order date` dimensión
+* Con el `Show top/bottom option`, seleccione los X meses principales que le interesan y ordene por el `Months between this order and customer's first order date` dimensión
 
-Ahora, puede ver una línea para cada `cohort` que ha especificado. Consulte nuestro ejemplo ahora: vemos el `Revenue` aportados por los usuarios de cada fuente de referencia, `grouped by` número de meses entre el primer pedido y cualquier pedido posterior. También agregamos un `Cumulative perspective` para ver el `cohorts'` crecimiento agregado: eche un vistazo a la tabla de resultados para obtener más granularidad.
+Ahora, puede ver una línea para cada uno `cohort` que ha especificado. Consulte el ejemplo ahora: puede ver el `Revenue` aportadas por los usuarios de cada fuente de referencia, `grouped by` el número de meses entre su primer pedido y cualquier pedido posterior. En el ejemplo también se ha añadido una `Cumulative perspective` para ver la `cohorts'` crecimiento agregado: consulte la tabla de resultados para obtener más granularidad.
 
-¿Qué nos dice esto? Aquí, la fuente de referencia específica `Paid search` es muy valioso en el primer mes de vida útil de compra de un cliente, pero no conserva su base de clientes con ingresos repetidos. While `Direct Traffic` comienza con una cantidad menor, los ingresos en los meses siguientes se acumulan realmente a un ritmo similar.
+¿Qué nos dice esto? Aquí, la fuente de referencia específica `Paid search` es útil en el primer mes de la vida útil de compra de un cliente, pero no logra retener su base de clientes con ingresos repetidos. While `Direct Traffic` comienza en una cantidad menor, los ingresos en los meses siguientes se acumulan realmente a un ritmo similar.
 
-No importa cómo lo caigas, `cohort` analysis es una potente herramienta de su caja de herramientas de análisis. Este tipo de análisis puede arrojar algunas perspectivas muy interesantes sobre su negocio que `time-based cohorts` puede no ser así, lo que le permite tomar mejores decisiones basadas en datos.
+No importa cómo lo cortas, `cohort` analysis es una potente herramienta en su caja de herramientas de análisis. Este tipo de análisis puede arrojar algunas perspectivas interesantes sobre su negocio que tradicionales `time-based cohorts` puede que no, lo que le permite tomar mejores decisiones basadas en datos.

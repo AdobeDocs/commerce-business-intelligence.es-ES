@@ -1,106 +1,106 @@
 ---
-title: Análisis de la actividad del sitio web y las tasas de conversión de los clientes
-description: Obtenga información sobre cómo configurar un tablero que rastree la actividad del sitio web (incluidas las vistas de página, las sesiones y los usuarios), así como la tasa de conversión de los clientes a lo largo del tiempo.
+title: Análisis de la actividad del sitio web y las tasas de conversión de clientes
+description: Aprenda a configurar un tablero que haga un seguimiento de la actividad del sitio web, incluidas las vistas de página, las sesiones y los usuarios, y de la tasa de conversión de clientes a lo largo del tiempo.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
-# Análisis de la actividad del sitio web
+# Análisis de actividad del sitio web
 
-[!DNL MBI] le permite integrar fácilmente sus datos de costes publicitarios con el resto de sus datos. Esto no solo le permite comprender la actividad del sitio web, sino que también le permite obtener el porcentaje de visitantes del sitio web que se convierten en usuarios registrados o que realizan una compra.
+[!DNL MBI] le permite integrar fácilmente sus datos de costes publicitarios con el resto de sus datos. Esto no solo le permite comprender la actividad de su sitio web, sino que también le permite obtener el porcentaje de visitantes en su sitio web que se convierten en usuarios registrados o realizan una compra.
 
-En este artículo, demostramos cómo configurar un tablero que rastree la actividad de su sitio web, incluidas las vistas de páginas, las sesiones y los usuarios, así como la tasa de conversión de sus clientes a lo largo del tiempo.
+Este artículo muestra cómo configurar un tablero que haga un seguimiento de la actividad del sitio web, incluidas las vistas de página, las sesiones y los usuarios, y de la tasa de conversión de los clientes a lo largo del tiempo.
 
 ## Requisitos previos
 
-**Importar los datos de coste publicitario** - Conectar [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) a [!DNL MBI] - esto sincroniza automáticamente su [!DNL AdWords] gastar en BI.
+**Importar los datos de costes de publicidad** - Conectar [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) hasta [!DNL MBI] - esto sincroniza automáticamente su [!DNL AdWords] gastar en IMM.
 
-**Seguimiento de datos del canal de adquisición de usuarios** - Para atar su [!DNL Google AdWords] datos de pedidos específicos de la base de datos, necesitamos [seguimiento de la adquisición de usuarios](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce], permitiéndonos conectar cada pedido con un origen y medio utm.
+**Seguimiento de datos de canales de adquisición de usuarios** - Para atar su [!DNL Google AdWords] para pedidos específicos de la base de datos, debe [seguimiento de adquisición de usuarios](../analysis/google-track-user-acq.md) mediante [!DNL Google Analytics E-commerce]. Esto le permite conectar cada pedido con una fuente y un medio de utm.
 
 ## Campañas de adquisición de usuarios
 
-Esta colección de informes se crea con lo siguiente:
+Esta colección de informes se crea de la siguiente manera:
 
-* Métricas que se generan automáticamente al conectar su [!DNL Google AdWords] data
+* Métricas que se generan automáticamente al conectar su [!DNL Google AdWords] datos
 * Métricas básicas que ya deberían estar disponibles en su cuenta, como `Number of orders` y `New users`
-* Dimension creados al unirse a su [!DNL Google Analytics Ecommerce] datos de la base de datos, como el medio utm source del pedido y utm del pedido. Póngase en contacto con el equipo de asistencia si estos campos no están disponibles actualmente en su cuenta
+* Dimension creados al unirse a su [!DNL Google Analytics Ecommerce] datos en la base de datos, como el origen de utm del pedido y el medio de utm del pedido. Póngase en contacto con el equipo de asistencia si estos campos no están disponibles actualmente en su cuenta
 
 ## Creación de informes
 
 **Comience creando un informe que muestre la cantidad de vistas de página, sesiones y usuarios a lo largo del tiempo:**
 
-1. Cree un nuevo informe.
-1. Haga clic en **[!UICONTROL Add Metric]** y pase el ratón por encima de [!DNL Google Analytics] en la parte inferior de la lista desplegable y seleccione `Page Views`.
-1. Agregue otra métrica, pasando de nuevo el ratón por encima del [!DNL Google Analytics] sección, esta vez seleccionando `Sessions`.
-1. Añada una tercera métrica, pasando de nuevo el ratón por encima del [!DNL Google Analytics] sección, esta vez seleccionando `Users`.
-1. Ahora cambie su período de tiempo a un intervalo móvil, de hace 31 días a hace 1 día, y ajuste el intervalo de tiempo a `by day`.
+1. Cree un informe.
+1. Clic **[!UICONTROL Add Metric]**, luego pase el ratón sobre [!DNL Google Analytics] en la parte inferior de la lista desplegable y seleccione `Page Views`.
+1. Añada otra métrica, volviendo a pasar el ratón por encima de [!DNL Google Analytics] , esta vez seleccionando `Sessions`.
+1. Añada una tercera métrica, volviendo a pasar el ratón sobre la [!DNL Google Analytics] , esta vez seleccionando `Users`.
+1. Ahora cambie el período de tiempo a un intervalo móvil, de hace 31 días a hace 1 día, y ajuste el intervalo de tiempo a `by day`.
 1. Asigne un nombre al informe (por ejemplo, `Page views, sessions and users by day`) y haga clic en **[!UICONTROL Save]**.
 
-**Nuestro segundo informe analizará la cantidad de vistas de páginas durante el año pasado:**
+**El segundo informe analiza el número de vistas de página durante el año pasado:**
 
-1. Cree un nuevo informe.
-1. Haga clic en **[!UICONTROL Add Metric]**, pase el ratón por encima de [!DNL Google Analytics] en la parte inferior de la lista desplegable y seleccione _Vistas de páginas_.
+1. Cree un informe.
+1. Clic **[!UICONTROL Add Metric]**, pase el ratón sobre [!DNL Google Analytics] en la parte inferior de la lista desplegable y seleccione _Vistas de página_.
 1. Cambie el período de tiempo a un intervalo móvil, de hace 13 meses a hace 1 mes, y ajuste el intervalo de tiempo a `by month`.
 1. Asigne un nombre al informe, como `Page views by month,` y haga clic en **[!UICONTROL Save]**.
 
-**El tercer gráfico muestra la tasa de devolución del último año:**
+**El tercer gráfico analiza la tasa de salida hacia otro sitio durante el año pasado:**
 
-1. Cree un nuevo informe.
-1. Haga clic en **[!UICONTROL Add Metric]**, pase el ratón por encima de [!DNL Google Analytics] en la parte inferior de la lista desplegable y seleccione _Porcentaje de rebote_.
+1. Cree un informe.
+1. Clic **[!UICONTROL Add Metric]**, pase el ratón sobre [!DNL Google Analytics] en la parte inferior de la lista desplegable y seleccione _Tasa de devoluciones_.
 1. Cambie el período de tiempo a un intervalo móvil, de hace 13 meses a hace 1 mes, y ajuste el intervalo de tiempo a `by month`.
 1. Asigne un nombre al informe, como `Bounce rate by month`y haga clic en **[!UICONTROL Save]**.
 
 **Ahora, observe la longitud promedio de sesión de los nuevos visitantes en comparación con los visitantes que regresan:**
 
-1. Cree un nuevo informe.
-1. Haga clic en **UICONTROL Agregar métrica**, pase el ratón por encima de [!DNL Google Analytics] en la parte inferior de la lista desplegable y seleccione `Average Session Length`.
+1. Cree un informe.
+1. Clic **UICONTROL Agregar métrica**, pase el ratón sobre [!DNL Google Analytics] en la parte inferior de la lista desplegable y seleccione `Average Session Length`.
 1. Cambie el período de tiempo a un intervalo móvil, de hace 13 meses a hace 1 mes, y ajuste el intervalo de tiempo a `by month`?
-1. Agregue un `Group by` y seleccione `New or returning visitor`.  Marque la `Show All` casilla; a continuación, haga clic en **[!UICONTROL Apply]**.
+1. Añadir un `Group by` y seleccione `New or returning visitor`.  Compruebe la `Show All` y haga clic en **[!UICONTROL Apply]**.
 1. Asigne un nombre al informe, como `Average session length`y haga clic en **[!UICONTROL Save]**.
 
-**A continuación, eche un vistazo a los dominios de referencia principales en los últimos 30 días:**
+**A continuación, observe sus dominios de referencia principales en los últimos 30 días:**
 
-1. Cree un nuevo informe.
-1. Haga clic en **[!UICONTROL Add Metric]**, pase el ratón por encima de [!DNL Google Analytics] en la parte inferior de la lista desplegable y seleccione `Sessions`.
+1. Cree un informe.
+1. Clic **[!UICONTROL Add Metric]**, pase el ratón sobre [!DNL Google Analytics] en la parte inferior de la lista desplegable y seleccione `Sessions`.
 1. Cambie el período de tiempo a un intervalo móvil, de hace 31 días a hace 1 día, y ajuste el intervalo de tiempo a `none`.
-1. Agregue un `Group by` y seleccione `ga:source`.  Marque la _Mostrar todo_ casilla; a continuación, haga clic en **[!UICONTROL Apply]**.
-1. Agregue otro `group by` y seleccione `ga:medium`. De nuevo, compruebe el `Show All` casilla; a continuación, haga clic en **[!UICONTROL Apply]**.
+1. Añadir un `Group by` y seleccione `ga:source`.  Compruebe la _Mostrar todo_ y haga clic en **[!UICONTROL Apply]**.
+1. Añadir otro `group by` y seleccione `ga:medium`. De nuevo, consulte la `Show All` y haga clic en **[!UICONTROL Apply]**.
 1. Asigne un nombre al informe, como `Top 20 Referring Domains, 30 Days`y haga clic en **[!UICONTROL Save]**.
 
-**Finalmente, eche un vistazo a la conversión:**
+**Finalmente, observe la conversión:**
 
-1. Cree un nuevo informe.
-1. Agregue las métricas siguientes:
+1. Cree un informe.
+1. Añada las siguientes métricas:
 
 * `New users`
-   * Haga clic en **[!UICONTROL Hide]** debajo del nombre de la métrica
+   * Clic **[!UICONTROL Hide]** debajo del nombre de la métrica
 
 * `Number of orders`
    * Añadir un filtro para `Customer's order number` = 1 y haga clic en **[!UICONTROL Apply]**
-   * Para cambiar el nombre de la métrica, haga clic en el nombre de la métrica y llámele `Number of first orders`y haga clic en **[!UICONTROL Hide]**
+   * Cambie el nombre de la métrica haciendo clic en el nombre de la métrica y llamándola `Number of first orders`, luego haga clic en **[!UICONTROL Hide]**
 
 * `Number of orders`
    * **[!UICONTROL Hide]** la métrica
 
 * `Users`
    * **[!UICONTROL Hide]** la métrica
-   * Cambie el periodo de tiempo a `24 months ago to now`y ajustar el intervalo de tiempo a `by month`.
-   * Agregue las siguientes fórmulas haciendo clic en **[!UICONTROL Formula]**.
+   * Cambie el periodo de tiempo a `24 months ago to now`y ajuste el intervalo de tiempo a `by month`.
+   * Añada las siguientes fórmulas haciendo clic en **[!UICONTROL Formula]**.
    * A/D y haga clic en **[!UICONTROL Apply]**
-   * Cambiar el nombre de la fórmula `Registration conversion`
+   * Cambiar nombre de fórmula `Registration conversion`
    * B/D y haga clic en **[!UICONTROL Apply]**
-   * Cambiar el nombre de la fórmula `First order conversion`
+   * Cambiar nombre de fórmula `First order conversion`
    * C/D y haga clic en **[!UICONTROL Apply]**
-   * Cambiar el nombre de la fórmula `Any order conversion`
+   * Cambiar nombre de fórmula `Any order conversion`
 
-* Asigne un nombre al informe, como `Conversion by month`y, a continuación, haga clic en **[!UICONTROL Save]**.
+* Ahora asigne un nombre al informe, como `Conversion by month`y haga clic en **[!UICONTROL Save]**.
 
 ## Pasos siguientes
 
-Ahora que tiene acceso a los datos de sus tasas de conversión y tráfico web, puede empezar a aprovecharlos para dirigir las decisiones comerciales. ¿Qué sitios son los mejores para conducir el tráfico a su sitio?  ¿Cuál de sus campañas es la más efectiva para adquirir clientes con el alto valor de duración?
+Ahora que tiene acceso a los datos del tráfico web y a las tasas de conversión, puede empezar a extraer estos datos para tomar decisiones comerciales, como ¿Qué sitios son los mejores para dirigir el tráfico al sitio? o ¿Cuál de sus campañas es más eficaz para adquirir clientes con el alto valor de duración?
 
-Al ajustar la inversión en publicidad y la estrategia de marketing, puede seguir realizando un seguimiento de los resultados en [!DNL MBI], iterando en este tablero para satisfacer las cambiantes prioridades de su empresa.
+A medida que ajusta el gasto en publicidad y la estrategia de marketing, puede seguir realizando un seguimiento de los resultados en [!DNL MBI], iterando en este tablero para satisfacer las prioridades en evolución de su empresa.

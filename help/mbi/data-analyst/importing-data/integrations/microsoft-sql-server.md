@@ -1,48 +1,48 @@
 ---
-title: Conectar Microsoft SQL Server
-description: Obtenga información sobre cómo conectar la base de datos SQL de Microsoft a [!DNL MBI] en un proceso de cuatro pasos.
+title: Conectar Microsoft&reg;&reg; SQL Server
+description: Aprenda a conectar su base de datos de Microsoft&reg; SQL a [!DNL MBI] en un proceso de cuatro pasos.
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
 
-# Conectar Microsoft SQL Server
+# Conectar Microsoft® SQL Server
 
 >[!NOTE]
 >
->Requiere [Permisos de administrador](../../../administrator/user-management/user-management.md).
+>Requiere [Permisos de administración](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/MicrosoftSQLServer-logo.png)
 
-Este artículo explica cómo conectar su `Microsoft SQL` a [!DNL MBI] en un proceso de cuatro pasos. Este proceso requiere cierta experiencia técnica relacionada con las conexiones de servidor y SQL, y puede requerir la asistencia de los desarrolladores de su equipo.
+Este artículo explica cómo conectar su `Microsoft SQL` base de datos a [!DNL MBI] en un proceso de cuatro pasos. Este proceso requiere cierta experiencia técnica relacionada con las conexiones de servidor y SQL, y puede requerir el apoyo de los desarrolladores de su equipo.
 
-Apoyamos [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure], y la mayoría de los demás proveedores de servidores en la nube. Si tiene una pregunta en su host particular, [enviar un ticket de asistencia](../../../guide-overview.md) solicitándonos que proporcione esta información.
+Compatibilidad con MBI [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft®; SQL Azure]y la mayoría de los demás proveedores de servidores en la nube. Si tiene alguna pregunta sobre su host en particular, [enviar un ticket de asistencia](../../../guide-overview.md) solicitándonos que proporcionemos esta información.
 
-Nuestro sistema debe ejecutar consultas SELECT en su base de datos. Inicialmente, lo hacemos para obtener una instantánea de la estructura de su base de datos y, a continuación, hacer horas extras regularmente para mantener nuestros datos actualizados. Nuestras actualizaciones son incrementales y limitamos la frecuencia y el tiempo de actualización para evitar cualquier carga no deseada en su servidor.
+El sistema debe ejecutar consultas SELECT en la base de datos. Esto se realiza inicialmente para obtener una instantánea de la estructura de la base de datos y, a continuación, con regularidad para mantener los datos actualizados. Las actualizaciones son graduales y el Adobe restringe la frecuencia y el tiempo de actualización para evitar cualquier carga no deseada en el servidor.
 
-La mejor manera de hacerlo es conectarnos a su servidor de base de datos a través de TCP/IP. Cree un usuario para nosotros que solo pueda ejecutar consultas SELECT (y, opcionalmente, que solo pueda seleccionar datos de las tablas que especifique). Esto debe hacerse para cada uno de los servidores a los que se conectará [!DNL MBI].
+La mejor manera de hacerlo es conectarnos al servidor de su base de datos a través de TCP/IP. Cree un usuario para que solo pueda ejecutar consultas SELECT (y, opcionalmente, solo pueda seleccionar datos de las tablas especificadas). Esto debe hacerse para cada uno de los servidores a los que se está conectando [!DNL MBI].
 
-## Conexión `Microsoft SQL` a [!DNL MBI]:
+## Conectando `Microsoft SQL` hasta [!DNL MBI]:
 
-1. Asegúrese de que el servidor permita conexiones a través de TCP/IP y autenticación en modo mixto.
+1. Asegúrese de que el servidor permite conexiones a través de TCP/IP y autenticación de modo mixto.
 
-1. Asegúrese de que su cortafuegos permita que la IP dedicada de nuestro servidor se conecte.
+1. Asegúrese de que el cortafuegos permita la conexión de la IP dedicada del servidor.
 
-   Puede encontrar la dirección IP que usaremos para conectar con su servidor en la sección de conexiones de su `Settings` página.
+   Puede encontrar la dirección IP que se utiliza para conectarse al servidor en la sección de conexiones de su `Settings` página.
 
-1. Cree un usuario que usaremos para iniciar sesión en su servidor de base de datos.  Tiene dos opciones: mediante `UI` o a través de una `query`:
+1. Cree un usuario que utilice para iniciar sesión en el servidor de base de datos. Tiene dos opciones; ya sea mediante `UI` o a través de un `query`:
    * `UI`
    * [`Query`](http://sqlserverplanet.com/security/add-user) (segundo ejemplo)
 
-1. Introduzca la dirección IP del servidor, el nombre de usuario y la contraseña en [!DNL MBI] under **[!UICONTROL Manage Data** > **Connections]**.
+1. Introduzca la dirección IP del servidor, el nombre de usuario y la contraseña en [!DNL MBI] bajo **[!UICONTROL Manage Data** > **Connections]**.
 
    ![](../../../assets/manage-data-connections.png)
 
-1. Haga clic en **[!UICONTROL Add a Data Source]**.
+1. Clic **[!UICONTROL Add a Data Source]**.
 
-1. Seleccione para conectar un `Microsoft SQL` e introduzca sus credenciales en los campos de la nueva `Connections` página.
+1. Seleccione para conectar un `Microsoft SQL` e introduzca sus credenciales en los campos del nuevo `Connections` página.
 
    Si está utilizando `Windows Azure`, también debe especificar un nombre de base de datos.

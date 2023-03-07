@@ -1,73 +1,73 @@
 ---
 title: Pérdida de comercio
-description: Obtenga información sobre cómo generar y analizar la tasa de pérdida de comercio.
+description: Obtenga información sobre cómo generar y analizar la tasa de pérdida de Commerce.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '330'
 ht-degree: 2%
 
 ---
 
 # Tasa de pérdida
 
-En este tema, se muestra cómo calcular una **tasa de pérdida** para su **clientes comerciales**. A diferencia de SaaS o de las empresas de suscripción tradicionales, los clientes comerciales normalmente no tienen un **&quot;Evento de pérdida&quot;** para mostrarle que ya no deben contar para sus clientes activos. Por este motivo, las instrucciones siguientes le permiten definir a un cliente como &quot;eclipsado&quot; en función de una cantidad determinada de tiempo transcurrido desde su último pedido.
+En este tema se muestra cómo calcular una **tasa de pérdida** para su **clientes comerciales**. A diferencia del SaaS o de las empresas de suscripción tradicionales, los clientes de comercio no suelen tener un **&quot;evento de pérdida&quot;** para mostrarle que ya no deben contar hacia sus clientes activos. Por este motivo, las siguientes instrucciones le permiten definir un cliente como &quot;perdido&quot; en función de un tiempo determinado transcurrido desde su último pedido.
 
 ![](../../assets/Churn_rate_image.png)
 
-Muchos clientes desean ayuda para empezar a conceptualizar qué **periodo de tiempo** deben utilizar según sus datos. Si desea utilizar el comportamiento histórico del cliente para definir esto **pérdida de intervalo de tiempo**, es posible que desee familiarizarse con el [definición de pérdida](../analysis/define-cust-churn.md) artículo. A continuación, puede utilizar los resultados en la fórmula para la tasa de pérdida en las instrucciones siguientes.
+Muchos clientes quieren ayuda para empezar a conceptualizar lo que **periodo de tiempo** deben utilizar en función de sus datos. Si desea utilizar el comportamiento histórico del cliente para definir esto **plazo de cancelación**, es posible que desee familiarizarse con el [definición de pérdida](../analysis/define-cust-churn.md) artículo. A continuación, puede utilizar los resultados en la fórmula para la tasa de pérdida en las instrucciones siguientes.
 
 ## Columnas calculadas
 
-Columnas que crear
+Columnas para crear
 
 * **`customer_entity`** tabla
 * **`Customer's last order date`**
-   * Seleccione un [!UICONTROL definition]: `Max`
-   * Select [!UICONTROL table]: `sales_flat_order`
-   * Select [!UICONTROL column]: `created_at`
+   * Seleccione una [!UICONTROL definition]: `Max`
+   * Seleccionar [!UICONTROL table]: `sales_flat_order`
+   * Seleccionar [!UICONTROL column]: `created_at`
    * `sales_flat_order.customer_id = customer_entity.entity_id`
    * [!UICONTROL Filter]: `Orders we count`
 
 * **`Seconds since customer's last order date`**
-   * Seleccione un [!UICONTROL definition]: `Age`
-   * Select [!UICONTROL column]: `Customer's last order date`
+   * Seleccione una [!UICONTROL definition]: `Age`
+   * Seleccionar [!UICONTROL column]: `Customer's last order date`
 
 >[!NOTE]
 >
->Asegúrese de [agregar todas las columnas nuevas como dimensiones a métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de crear nuevos informes.
+>Asegúrese de lo siguiente [añadir todas las columnas nuevas como dimensiones a las métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de crear nuevos informes.
 
 ## Métricas
 
 * **Clientes nuevos (por fecha de primer pedido)**
-   * Clientes que contamos
+   * Clientes que se cuentan
 
 >[!NOTE]
 >
->Es posible que esta métrica ya exista en su cuenta.
+>Esta métrica puede existir en su cuenta.
 
 * En el **`customer_entity`** tabla
 * Esta métrica realiza una **Recuento**
-* En el **`entity_id`** column
-* Solicitado por el **`Customer's first order date`** timestamp
+* En el **`entity_id`** columna
+* Ordenado por el **`Customer's first order date`** timestamp
 * [!UICONTROL Filter]:
 
 * **Clientes nuevos (por fecha de último pedido)**
-   * Clientes que contamos
+   * Clientes que se cuentan
 
 >[!NOTE]
 >
->Es posible que esta métrica ya exista en su cuenta.
+>Esta métrica puede existir en su cuenta.
 
 * En el **`customer_entity`** tabla
 * Esta métrica realiza una **Recuento**
-* En el **`entity_id`** column
-* Solicitado por el **`Customer's last order date`** timestamp
+* En el **`entity_id`** columna
+* Ordenado por el **`Customer's last order date`** timestamp
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->Asegúrese de [agregar todas las columnas nuevas como dimensiones a métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de crear nuevos informes.
+>Asegúrese de lo siguiente [añadir todas las columnas nuevas como dimensiones a las métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de crear nuevos informes.
 
 ## Informes
 
@@ -78,7 +78,7 @@ Columnas que crear
       [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * Segundos desde la última fecha de pedido del cliente >= [Su corte autodefinido para los clientes rechazados ]**`^`**
+   * Segundos transcurridos desde la última fecha de pedido del cliente >= [Su límite autodefinido para los clientes perdidos ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
@@ -98,13 +98,13 @@ Columnas que crear
 * *`Group by`:`Customer's order number`*
 * *`Chart Type`:`Column`*
 
-A continuación se muestran algunos meses comunes > segundas conversiones, pero google proporciona otros valores, como semana > segundos de conversión para cualquier valor personalizado que esté buscando.
+A continuación se muestran algunas conversiones comunes de mes > segundo, pero Google proporciona otros valores, incluidas las conversiones de semana > segundo para cualquier valor personalizado que pueda estar buscando.
 
-| **Months** | **Segundos** |
+| **Meses** | **Seconds** |
 |---|---|
 | 3 | 7,776,000 |
 | 6 | 15,552,000 |
 | 9 | 23,328,000 |
 | 12 | 31,104,000 |
 
-Después de compilar todos los informes, puede organizarlos en el panel como desee. El resultado final puede ser similar al panel de muestra anterior.
+Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar al panel de muestra anterior.

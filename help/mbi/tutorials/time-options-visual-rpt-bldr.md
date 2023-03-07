@@ -1,145 +1,145 @@
 ---
 title: Usar opciones de tiempo en el Report Builder visual
-description: Aprenda a analizar los datos del informe para un período de tiempo específico.
+description: Obtenga información sobre cómo analizar los datos del informe durante un período de tiempo específico.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
 
-# Uso `Time` Opciones de `Visual Report Builder`
+# Uso `Time` Opciones en `Visual Report Builder`
 
-Una de las características de `Visual Report Builder` es global `Time Range` y `Interval` configuración. Esta configuración le permite analizar los datos del informe durante un período de tiempo específico.
+Una de las características del `Visual Report Builder` es el global `Time Range` y `Interval` configuración. Esta configuración le permite analizar los datos del informe durante un período de tiempo específico.
 
-Sin embargo, en algunos análisis, es posible que tenga que tener en cuenta diferentes intervalos de tiempo o intervalos de tiempo en el mismo informe. Aquí es donde `Time` Entran las opciones. Para darle una mejor idea de cómo usar `Time` Las opciones de los informes de , este tutorial tratará los siguientes casos de uso:
+Sin embargo, en algunos análisis puede que sea necesario tener en cuenta intervalos de tiempo o intervalos de tiempo diferentes en el mismo informe. Ahí es donde `Time` Las opciones entran. Para que tenga una mejor idea de cómo usar `Time` Opciones en los informes, este tutorial cubre los siguientes casos de uso:
 
-* [Análisis de métricas sin marcas de hora](#notimestamp)
-* [Asignar un intervalo de tiempo independiente a una métrica](#independenttimeinterval)
+* [Análisis de métricas sin marcas de tiempo](#notimestamp)
+* [Concesión de un intervalo de tiempo independiente a una métrica](#independenttimeinterval)
 * [Comparación de la misma métrica en diferentes intervalos de tiempo](#difftimerange)
 
-Si desea seguir con algunos de los informes de muestra que se tratan en este tema, abra la [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) antes de continuar.
+Si desea seguir junto con algunos de los informes de ejemplo mencionados en este tema, abra el [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) antes de continuar.
 
-## Análisis de métricas sin marcas de hora {#notimestamp}
+## Análisis de métricas sin marcas de tiempo {#notimestamp}
 
-Algunas métricas simplemente no pueden analizar la tendencia a lo largo del tiempo porque los datos no se recopilan ni se almacenan con una marca de tiempo asociada. Por ejemplo, una tabla de inventario a menudo contendrá solo una fila por cada SKU. En ese caso, debe [crear la métrica](../data-user/reports/ess-manage-data-metrics.md) sin especificar una marca de tiempo.
+Algunas métricas simplemente no pueden generar tendencias a lo largo del tiempo porque los datos no se recopilan ni almacenan con una marca de tiempo asociada. Por ejemplo, una tabla de inventario a menudo contiene solo una fila para cada SKU. En ese caso, debería [creación de la métrica](../data-user/reports/ess-manage-data-metrics.md) sin especificar una marca de tiempo.
 
-Al utilizar una métrica de este tipo en los informes, verá que al agregar esta métrica a un informe se establece automáticamente un `Time Interval` de `None` y `Time Range` de `Global`:
+Al utilizar una métrica de este tipo en los informes, observa que al agregar esta métrica a un informe se establece automáticamente una métrica independiente `Time Interval` de `None` y `Time Range` de `Global`:
 
 ![](../assets/Metrics_without_timestamps.gif)
 
-## Asignar un intervalo de tiempo independiente a una métrica {#independenttimeinterval}
+## Concesión de un intervalo de tiempo independiente a una métrica {#independenttimeinterval}
 
-`Time` Las opciones le permiten crear gráficos del 100% basados en el tiempo para identificar qué día, semana, mes o año contribuyeron con mayor valor durante un intervalo de tiempo específico. En esta sección, creamos un gráfico que muestra el porcentaje de ingresos generados en cada mes natural de un año.
+`Time` Las opciones le permiten crear gráficos del 100 % basados en el tiempo para identificar qué día, semana, mes o año contribuyó con la mayor cantidad de valor durante un intervalo de tiempo específico. En esta sección, se crea un gráfico que muestra el porcentaje de ingresos generados en cada mes natural de un año.
 
-Este tipo de informe puede resultar útil si desea comparar los ingresos generados año tras año. Por ejemplo, si un gráfico de 2015 revelara que enero aportó el 18% de los ingresos del año y uno para 2016 mostró solo el 8%, podría empezar a investigar lo que podría haber sucedido.
+Este tipo de informe puede resultar útil si desea comparar los ingresos generados año tras año. Por ejemplo, un gráfico para 2015 reveló que enero contribuyó con el 18 por ciento de los ingresos del año y un gráfico para 2016 mostró solo el 8 por ciento. Podrías empezar a investigar lo que podría haber pasado.
 
-1. Agregue la `Revenue` al informe.
-1. Haga clic en **[!UICONTROL Duplicate]** para crear una copia de la métrica.
-1. Haga clic en la **[!UICONTROL Time Range]** , luego **[!UICONTROL Moving Time Range]**. Configure esto como `Last Year`.
-1. Haga clic en la **[!UICONTROL Time Interval]** y configúrela en `Monthly`.
-1. El Report Builder agrega automáticamente un segundo eje Y para una segunda métrica. Anule la selección de `Multiple Y-Axes` en la ventana
-1. A continuación, aplicamos un `Time Interval` a la primera métrica. Haga clic en **[!UICONTROL Time Options]** (icono del reloj) a la derecha del `first Revenue metric`.
-1. Haga clic en **[!UICONTROL Time Options]** en la ventana expandida que se muestra encima del informe.
-1. En la lista desplegable , configure lo siguiente:
+1. Añada su `Revenue` al informe.
+1. Clic **[!UICONTROL Duplicate]** para realizar una copia de la métrica.
+1. Haga clic en el global **[!UICONTROL Time Range]** opción, entonces **[!UICONTROL Moving Time Range]**. Configure esto como `Last Year`.
+1. Haga clic en el global **[!UICONTROL Time Interval]** y configúrelo en. `Monthly`.
+1. El Report Builder añade automáticamente un segundo eje Y para una segunda métrica. Anule la selección de `Multiple Y-Axes` cuadro.
+1. A continuación, se aplica un `Time Interval` a la primera métrica. Clic **[!UICONTROL Time Options]** (icono del reloj) a la derecha del `first Revenue metric`.
+1. Clic **[!UICONTROL Time Options]** en la ventana expandida que se muestra encima del informe.
+1. En el menú desplegable, establezca lo siguiente:
 
-   * `Time Interval`: configure esto como `None`.
+   * `Time Interval`: establezca esto en `None`.
 
-   * `Time Range`: configure esto como `Last Year` haciendo clic en **[!UICONTROL Custom]**, luego **[!UICONTROL Moving Range]** y, finalmente, seleccionar la variable `Last Year` .
+   * `Time Range`: establezca esto en `Last Year` haciendo clic primero en **[!UICONTROL Custom]**, entonces **[!UICONTROL Moving Range]** y, finalmente, seleccionando la `Last Year` opción.
 
-   * Haga clic en **[!UICONTROL Apply]** para guardar la configuración de intervalo y intervalo. Esto crea una métrica que calcula los ingresos totales del año anterior. A continuación, utilizamos esta métrica como denominador en una fórmula.
+   * Clic **[!UICONTROL Apply]** para guardar la configuración de intervalo y rango. Esto crea una métrica que calcula los ingresos totales del año anterior. A continuación, utilice esta métrica como denominador en una fórmula.
 
-   * Para ver el porcentaje de ingresos de cada mes, se debe agregar una fórmula al informe. Haga clic en **[!UICONTROL Add Formula]**.
+   * Para ver el porcentaje de ingresos de cada mes, debe agregar una fórmula al informe. Clic **[!UICONTROL Add Formula]**.
 
-   * Entrar `B/A` en el campo de fórmula y seleccione `% Percent` en el menú desplegable situado junto al campo de texto. Esta fórmula divide la cantidad de ingresos de un mes específico del año pasado por la cantidad total de ingresos del año pasado.
+   * Entrar `B/A` en el campo formula y seleccione `% Percent` en el menú desplegable situado junto al campo de texto. Esta fórmula divide la cantidad de ingresos de un mes específico del año pasado por la cantidad total de ingresos del año pasado.
 
-   * Haga clic en **[!UICONTROL Apply Changes]**.
+   * Clic **[!UICONTROL Apply Changes]**.
 
    * Oculte ambas métricas de entrada y cambie el nombre de la fórmula.
 
-Ahora podemos ver cuán impactante fue cada mes el año pasado:
+Ahora puede ver el impacto que tuvo cada mes el año pasado:
 
 ![](../assets/Independent_Time_Int.png)
 
 ## Comparación de la misma métrica en diferentes intervalos de tiempo {#difftimerange}
 
-Este ejemplo utiliza una dimensión personalizada llamada `Day number of the month`. Si desea crear este informe y no tiene ya esta dimensión en la Data Warehouse, [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obtener ayuda.
+Este ejemplo utiliza una dimensión personalizada llamada `Day number of the month`. Si desea crear este informe y aún no tiene esta dimensión en la Data Warehouse, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obtener asistencia.
 
-Los dos ejemplos más comunes de esta categoría son (1) la comparación de métricas de crecimiento (ingresos año tras año o mes tras mes) y (2) una mejor comprensión de las tendencias recientes de ventas de artículos o inventarios.
+Los dos ejemplos más comunes en esta categoría son (1) la comparación de métricas de crecimiento (ingresos año tras año o mes tras mes) y (2) una mejor comprensión de las tendencias recientes de ventas de artículos o inventarios.
 
-Para demostrar este caso de uso, vemos los ingresos diarios del mes anterior comparados con los del mismo mes del año anterior. Digamos que queremos ver los ingresos de cada día de enero de 2016 y luego compararlos con enero de 2015, enero de 2014, y así sucesivamente - este informe nos mostraría eso.
+Para demostrar este caso de uso, observe los ingresos diarios del mes anterior en comparación con el mismo mes del año anterior. Supongamos que desea ver los ingresos de cada día de enero de 2016 y luego compararlos con los de enero de 2015, enero de 2014 y así sucesivamente. Este informe nos lo mostraría.
 
-1. Agregue la `Revenue` al informe.
-1. Haga clic en **[!UICONTROL Duplicate]** para crear una copia de la métrica.
+1. Añada su `Revenue` al informe.
+1. Clic **[!UICONTROL Duplicate]** para realizar una copia de la métrica.
 1. Cambie el nombre de la primera métrica a `Items sold last 7 days` y la segunda métrica a `Items sold last 28 days`.
-1. Haga clic en **[!UICONTROL Time Range]**, luego **[!UICONTROL Moving Time Range]**. Configure esto como `Last Month`.
-1. Haga clic en **[!UICONTROL Time Interval]** y configúrelo en `None`.
-1. Haga clic en **[!UICONTROL Time Options]** (icono de reloj) junto al segundo `Revenue` métrica.
-1. Haga clic en **[!UICONTROL Time Options]** en la ventana expandida que se muestra encima del informe.
-1. En la lista desplegable , configure lo siguiente:
+1. Clic **[!UICONTROL Time Range]**, entonces **[!UICONTROL Moving Time Range]**. Configure esto como `Last Month`.
+1. Clic **[!UICONTROL Time Interval]** y configúrelo en `None`.
+1. Clic **[!UICONTROL Time Options]** (icono del reloj) junto al segundo `Revenue` métrica.
+1. Clic **[!UICONTROL Time Options]** en la ventana expandida que se muestra encima del informe.
+1. En el menú desplegable, establezca lo siguiente:
 
-   * `Time Interval`: configure esto como `None`.
+   * `Time Interval`: establezca esto en `None`.
 
-   * `Time Range`: configure esto como `From 14 Months Ago To 13 Months Ago` haciendo clic en **[!UICONTROL Custom]** then **[!UICONTROL Moving Range]**. Utilice los campos y desplegables de la parte superior del menú para establecer el rango. Esta configuración nos permite ver los ingresos del mes anterior, pero del año anterior.
-   No se preocupe si la métrica desaparece del informe: al configurar opciones de tiempo independientes, se oculta automáticamente la métrica del informe. Para volver a mostrarlo, haga clic en **[!UICONTROL Show]** junto a la métrica.
+   * `Time Range`: establezca esto en `From 14 Months Ago To 13 Months Ago` haciendo clic primero en **[!UICONTROL Custom]** entonces **[!UICONTROL Moving Range]**. Utilice los campos y los menús desplegables de la parte superior del menú para establecer el intervalo. Esta configuración nos permite ver los ingresos del mes anterior, pero del año anterior.
+   No se preocupe si la métrica desaparece del informe: al establecer una opción de tiempo independiente, se oculta automáticamente la métrica del informe. Para volver a mostrarlo, haga clic en **[!UICONTROL Show]** junto a la métrica.
 
    ![](../assets/Different_Time_Ranges.gif)
 
-   * Haga clic en **[!UICONTROL Apply]** para guardar la configuración de intervalo y intervalo.
+   * Clic **[!UICONTROL Apply]** para guardar la configuración de intervalo y rango.
 
-   * A continuación, agregamos nuestra `Day number of the month` para hacer clic en **[!UICONTROL Group By]** y seleccionar la dimensión. Esto devolverá el número de día del mes de un pedido; por ejemplo, un pedido realizado el 2 de marzo devolverá `2`.
+   * A continuación, agregue el personalizado `Day number of the month` dimensión haciendo clic en **[!UICONTROL Group By]** y seleccionando la dimensión. Devolverá el número de día del mes de un pedido; por ejemplo, un pedido realizado el 2 de marzo devolverá `2`.
 
-   * En el `Group By` menú desplegable, seleccione `Show All` y haga clic en **[!UICONTROL Apply]**. Esto creará de forma eficaz los valores del eje X para el informe:
+   * En el `Group By` menú desplegable, seleccione `Show All` y haga clic en **[!UICONTROL Apply]**. Esto crea los valores del eje X para el informe:
 
    ![](../assets/TO4.png)
 
-   * Cambiar el nombre de las métricas. En nuestro ejemplo, la primera métrica es `Revenue - 2015` y la segunda es `Revenue - 2014`.
+   * Cambie el nombre de las métricas. En el ejemplo, la primera métrica es `Revenue - 2015` y la segunda es `Revenue - 2014`.
 
 
 
-Otro uso común de `Time Options` es para determinar semanas de suministro. Especialmente durante la temporada de vacaciones o un período promocional especial, puede que desee considerar artículos vendidos durante la última semana, mes y período promocional anterior para tomar decisiones de compra informadas.
+Otro uso común de la personalización `Time Options` es para determinar semanas de suministro. Especialmente durante la temporada de vacaciones o durante un periodo promocional especial, es posible que desee tener en cuenta los artículos vendidos durante la última semana, el mes y el periodo promocional anterior para tomar decisiones de compra informadas.
 
-Recuerde establecer usted mismo los intervalos de tiempo en los que necesita para crear este informe.
+Recuerde establecer los intervalos de tiempo según lo que necesite al crear este informe.
 
-1. Agregue la `Items Sold` al informe.
-1. Haga clic en **[!UICONTROL Duplicate]** para crear una copia de la métrica.
-1. Cambiar el nombre de las métricas. Puede usar los mismos nombres que usamos o algo similar:
+1. Añada su `Items Sold` al informe.
+1. Clic **[!UICONTROL Duplicate]** para realizar una copia de la métrica.
+1. Cambie el nombre de las métricas. Puede usar los mismos nombres o algo que sea similar:
    1. Cambie el nombre de la primera métrica a `Items sold last 7 days`.
    1. Cambie el nombre de la segunda métrica a `Items sold last 28 days`.
-1. En el `Items sold last 7 days` , haga clic en la **[!UICONTROL Time Range]** a continuación **[!UICONTROL Moving Time Range]**. Para este ejemplo, lo establecemos en `Last 7 Days`.
-1. Haga clic en **[!UICONTROL Time Interval]** y configúrelo en `None`.
-1. A continuación, definimos la variable `Time Options` para el `Items sold last 28 days` métrica. Haga clic en **[!UICONTROL Time Options]** (icono del reloj) a la derecha del `second Items sold` métrica.
-1. Haga clic en **[!UICONTROL Time Options]** en la ventana expandida que se muestra encima del informe.
-1. En la lista desplegable , configure lo siguiente:
+1. En el `Items sold last 7 days` métrica, haga clic en el **[!UICONTROL Time Range]** Opción entonces **[!UICONTROL Moving Time Range]**. Para este ejemplo, lo establece en `Last 7 Days`.
+1. Clic **[!UICONTROL Time Interval]** y configúrelo en `None`.
+1. A continuación, defina la variable `Time Options` para el `Items sold last 28 days` métrica. Clic **[!UICONTROL Time Options]** (icono del reloj) a la derecha del `second Items sold` métrica.
+1. Clic **[!UICONTROL Time Options]** en la ventana expandida que se muestra encima del informe.
+1. En el menú desplegable, establezca lo siguiente:
 
-   * `Time Interval`: configure esto como `None`.
-   * `Time Range`: configure esto como `From 29 days to 1 day ago` haciendo clic en **[!UICONTROL Custom]**, luego **[!UICONTROL Moving Range]**. Utilice los campos y desplegables de la parte superior del menú para establecer el rango.
-   * Haga clic en **[!UICONTROL Apply]** para guardar la configuración de intervalo y intervalo.
-   * Duplique el `Items sold last 28 days` y abra las `Time Options`. Defina las opciones de la siguiente manera:
+   * `Time Interval`: establezca esto en `None`.
+   * `Time Range`: establezca esto en `From 29 days to 1 day ago` haciendo clic primero en **[!UICONTROL Custom]**, entonces **[!UICONTROL Moving Range]**. Utilice los campos y los menús desplegables de la parte superior del menú para establecer el intervalo.
+   * Clic **[!UICONTROL Apply]** para guardar la configuración de intervalo y rango.
+   * Duplique el `Items sold last 28 days` y abra la nueva métrica de `Time Options`. Establezca las opciones en lo siguiente:
 
-      * `Time Interval`: deje esto como `None`.
-      * `Time Range`: cambie esto al intervalo de fechas que coincida con la promoción que le interese haciendo clic en **[!UICONTROL Specific Date Range]** y, a continuación, introduciendo las fechas adecuadas.
+      * `Time Interval`: dejar esto como `None`.
+      * `Time Range`: cambie esto al intervalo de fechas que se ajuste a la promoción que le interesa haciendo clic en **[!UICONTROL Specific Date Range]** y, a continuación, introducir las fechas adecuadas.
       * Cambiar el nombre de la métrica `Items sold during last promotion` o algo similar.
-      * Agregue la `Units on hand` métrica.
-      * A continuación, es necesario agregar los cálculos que nos muestran las semanas, teniendo en cuenta las tendencias de ventas, para los períodos de tiempo (`last 7 days`, `last 28 days`y `last promo` período) que incluimos en el informe. Debe hacerlo una vez por cada período de tiempo.
+      * Añada su `Units on hand` métrica.
+      * A continuación, debe agregar los cálculos que muestran las semanas disponibles, teniendo en cuenta las tendencias de ventas, para los períodos de tiempo (`last 7 days`, `last 28 days`, y `last promo` punto) que se incluye en el informe. Debe hacerlo una vez por cada período de tiempo.
 
-Para crear las fórmulas, haga clic en **[!UICONTROL Add Formula]**. Introduzca las fórmulas siguientes y haga clic en **[!UICONTROL Apply Changes]** cuando termine. Repita esto para cada uno de los tres periodos de tiempo:
+Para crear las fórmulas, haga clic en **[!UICONTROL Add Formula]**. Introduzca las fórmulas a continuación y haga clic en **[!UICONTROL Apply Changes]** cuando termine. Repita esto para cada uno de los tres períodos de tiempo:
 
-* Para la variable `last 7 days time period`, introduzca `D / A` en el `Formula` campo .
-* Para la variable `last 28 days time period`, introduzca `D / (B/4)` en el `Formula` campo .
+* Para el `last 7 days time period`, introduzca `D / A` en el `Formula` field.
+* Para el `last 28 days time period`, introduzca `D / (B/4)` en el `Formula` field.
 
    >[!NOTE]
    >
-   >Es importante normalizar los intervalos de tiempo seleccionados aquí. En este ejemplo, se deben desglosar 28 días en cuatro semanas. Es posible que deba aplicar una lógica diferente a la fórmula.
+   >Es importante normalizar aquí los intervalos de tiempo seleccionados. En este ejemplo, divida 28 días en cuatro semanas. Es posible que tenga que aplicar una lógica diferente a la fórmula.
 
-* Para la variable `last promo period`, introduzca `D / C` en el `Formula` campo .
+* Para el `last promo period`, introduzca `D / C` en el `Formula` field.
 
    ![](../assets/Different_Time_Ranges_2.png)
 
-* Por último, personalice el informe ocultando las métricas y agregando un `SKU` o una dimensión similar al informe como un `Group By`.
+* Por último, personalice el informe ocultando las métricas y agregando un `SKU` o una dimensión similar al informe como `Group By`.
 
-Este ejemplo demuestra que los niveles de inventario actuales estaban bien situados para una venta de 14 días en todo el producto. Sin embargo, añadir un periodo promocional comparable sugiere que la empresa necesita hacer algunos cambios, ya sea solicitando más inventario y promocionando solamente los artículos con suficientes unidades en existencias.
+Este ejemplo demuestra que los niveles de inventario actuales estaban bien situados para una venta de todo un producto de 14 días. Sin embargo, añadir un periodo promocional comparable sugiere que la empresa necesita hacer algunos cambios, ya sea pidiendo más inventario y promocionando solo los artículos con suficientes unidades en stock.
 
-Como los clientes se comportan de forma diferente a lo largo del tiempo, al realizar análisis puede esperar ver variaciones en los datos. La configuración de opciones de tiempo personalizadas permite crear rápidamente análisis complejos, lo que permite tomar decisiones basadas en datos que influyen en las tendencias históricas.
+Dado que los clientes se comportan de forma diferente a lo largo del tiempo, es probable que observe variaciones en los datos al realizar los análisis. La configuración de Opciones de tiempo personalizadas le permite crear rápidamente análisis complejos, lo que permite tomar decisiones basadas en datos que tienen en cuenta las tendencias históricas.
 

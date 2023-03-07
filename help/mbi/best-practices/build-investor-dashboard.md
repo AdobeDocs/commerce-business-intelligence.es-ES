@@ -1,19 +1,19 @@
 ---
 title: Creación de un tablero para inversores
-description: Aprenda a crear un panel para inversores.
+description: Aprenda a crear un tablero para los inversores.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-# Generar panel de inversores
+# Crear tablero del inversor
 
-Muchos de nuestros clientes están trabajando con inversores y necesitan compartir información desde la plataforma con ellos, pero los tableros que usted crea para tomar decisiones comerciales diarias pueden no ser lo que un inversor está buscando. Aquí explicamos algunas prácticas recomendadas para crear un panel que sea completo pero simple, ideal para compartir con inversores activos y potenciales.
+Muchos clientes trabajan con inversores y necesitan compartir información de la plataforma, pero los paneles que crea para tomar decisiones comerciales diarias pueden no ser lo que busca un inversor. A continuación se describen algunas prácticas recomendadas para crear un tablero completo, pero sencillo, ideal para compartir con inversores activos y potenciales.
 
-Esto es lo que debe crear informes para el panel del inversor:
+Esto es lo que necesita para crear informes para su tablero de inversores:
 
 ## Informes escalares
 
@@ -28,51 +28,51 @@ Esto es lo que debe crear informes para el panel del inversor:
 * **[!UICONTROL Revenue by quarter]**
    * Métrica - Ingresos
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
-   * Métrica: ingresos por primera vez en el pedido
-   * Filtro: el número de orden del usuario es igual a 1
-   * Métrica 2: ingresos de orden de repetición
-      * Filtro: el número de pedido del usuario es bueno a 1
-   * Desmarque la casilla de verificación de varios ejes Y
-   * Cambio en un gráfico de columnas apiladas
+   * Métrica: ingresos por primer pedido
+   * Filtro: el número de pedido del usuario es igual a 1
+   * Métrica 2: Ingresos de pedidos repetidos
+      * Filtro: el número de pedido del usuario es bueno que 1
+   * Desmarque la casilla de verificación de Varios ejes Y
+   * Cambiar a gráfico de columnas apiladas
 * **[!UICONTROL AOV by quarter]**
    * Métrica 1 - Ingresos
       * Ocultar esta métrica
-   * Métrica 2 - Número de pedidos
+   * Métrica 2: número de pedidos
       * Ocultar esta métrica
-   * Fórmula - AOV
+   * Fórmula: AOV
       * A/B
 * **[!UICONTROL All-time revenue by source]**
    * Métrica - Ingresos
-   * Agrupar por cliente `utm_source`
+   * Agrupar por nombre de cliente `utm_source`
 * **[!UICONTROL Revenue from top 10 products]**
-   * Métrica - Ingresos del producto
+   * Métrica: ingresos de productos
       * Ocultar el gráfico
       * Agrupar por nombre de producto. Seleccione todos los productos.
       * Establezca el intervalo de tiempo en Todo el tiempo
       * Establezca el intervalo de tiempo en Ninguno
-      * En &quot;Mostrar arriba/abajo&quot;, mostrar solo los 10 primeros ordenados por beneficio del producto
+      * En &quot;Mostrar arriba/abajo&quot;, mostrar solo los 10 principales clasificados por Beneficio del producto
 * **[!UICONTROL Cumulative distinct buyers by quarter]**
-   * Métrica: compradores distintos
+   * Métrica: compradores diferentes
       * Perspectiva: acumulativa
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * Sesiones
 
-Con un [!DNL Google Analytics] integración, puede incluir informes sobre:
+Con un [!DNL Google Analytics] Integración de, puede incluir informes sobre:
 
 * Visitas al sitio
 * Tasa de conversión
 
-Con la variable [Servicios de enriquecimiento de datos del comercio](https://business.adobe.com/products/magento/magento-commerce.html), puede incluir informes sobre:
+Con el [Servicios de enriquecimiento de datos de Commerce](https://business.adobe.com/products/magento/magento-commerce.html), puede incluir informes sobre:
 
 * Clientes únicos por estado/región, edad, sexo.
 
-## Otras sugerencias
+## Otros consejos
 
-* Utilice un [convención de nomenclatura](../best-practices/naming-elements.md)
-* Compartir el panel con los usuarios inversores
-* O envíelo a través de **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
-* Crear solo un tablero. Esto hará que el contenido sea más fácil de mantener, y sabrá exactamente lo que sus inversores están viendo.
+* Utilice un enfoque claro y conciso [convención de nomenclatura](../best-practices/naming-elements.md)
+* Uso compartido del tablero con usuarios inversores
+* O bien, envíelo mediante **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
+* Cree solo un tablero. Esto hace que el contenido sea más fácil de mantener y usted sabe exactamente lo que sus inversores están mirando.
 
-Organice los informes con cuidado y preste atención a los detalles. Una vez completado, el tablero tendrá un aspecto similar al siguiente:
+Organice sus informes cuidadosamente y preste atención a los detalles. Una vez finalizado, el tablero tiene un aspecto similar al siguiente:
 
 ![](../../mbi/assets/investor-dboard-example.png)

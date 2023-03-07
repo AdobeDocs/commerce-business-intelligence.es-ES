@@ -1,17 +1,17 @@
 ---
 title: Validación de datos en Mixpanel
-description: Obtenga información sobre cómo confirmar que hemos sincronizado todos los datos disponibles directamente en Mixpanel.
+description: Aprenda a confirmar que ha sincronizado los mismos datos que están disponibles directamente en Mixpanel.
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
 
 # Validación de datos en `Mixpanel`
 
-When [!DNL MBI] se conecta primero a su [!DNL Mixpanel] , su administrador de cuentas o analista puede solicitar que proporcione exportaciones de datos desde Mixpanel para fines de validación. Esto nos permite confirmar que hemos sincronizado todos los datos disponibles directamente en [!DNL Mixpanel].
+Cuándo [!DNL MBI] primero se conecta a su [!DNL Mixpanel] Su Administrador de cuentas o Analista puede solicitar que proporcione exportaciones de datos desde Mixpanel con fines de validación. Esto le permite confirmar que ha sincronizado todos los datos que están disponibles directamente en [!DNL Mixpanel].
 
 ## Proceso de exportación de datos: `Events`
 
@@ -19,7 +19,7 @@ When [!DNL MBI] se conecta primero a su [!DNL Mixpanel] , su administrador de c
 
    ![](../../../assets/your-top-events.png)
 
-1. Select `Past 96 Hours` para el intervalo de tiempo
+1. Seleccionar `Past 96 Hours` para el intervalo de tiempo
 
    ![](../../../assets/past-96-hours.png)
 
@@ -27,4 +27,4 @@ When [!DNL MBI] se conecta primero a su [!DNL Mixpanel] , su administrador de c
 
    ![](../../../assets/export-csv-mixpanel.png)
 
-1. Envíe el `.csv` al administrador de cuentas o analista con el que esté trabajando en este proceso de validación.
+1. Envíe el `.csv` al administrador de cuentas o al analista con el que esté trabajando en este proceso de validación.

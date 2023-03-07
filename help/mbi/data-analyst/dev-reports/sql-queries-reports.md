@@ -1,21 +1,21 @@
 ---
-title: Traducción de consultas SQL en [!DNL MBI] informes
+title: Traducción de consultas SQL a [!DNL MBI] informes
 description: Descubra cómo se traducen las consultas SQL en las columnas calculadas y las métricas que utiliza en [!DNL MBI].
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
 
 # Traducir consultas SQL en MBI
 
-Nunca se ha preguntado cómo se traducen las consultas SQL en la variable [columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md), [métricas](../../data-user/reports/ess-manage-data-metrics.md)y [informes](../../tutorials/using-visual-report-builder.md) utiliza en [!DNL MBI]? Si es un usuario SQL pesado, comprenda cómo se traduce SQL en [!DNL MBI] le permitirá trabajar de forma más inteligente en el [Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md) y aproveche al máximo las [!DNL MBI] plataforma.
+Alguna vez se ha preguntado cómo se traducen las consultas SQL en la [columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md), [métricas](../../data-user/reports/ess-manage-data-metrics.md), y [informes](../../tutorials/using-visual-report-builder.md) que usa en [!DNL MBI]? Si es un usuario de SQL con muchos recursos, le resultará muy útil entender cómo se traduce SQL en [!DNL MBI] le permite trabajar de forma más inteligente en [Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md) y sacar el máximo partido a [!DNL MBI] plataforma.
 
-Al final de este artículo, hemos incluido un **matriz de traducción** para cláusulas de consulta SQL y [!DNL MBI] elementos.
+Al final de este artículo, encontrará una **matriz de traducción** para cláusulas de consulta SQL y [!DNL MBI] elementos.
 
-Empezamos mirando una consulta general:
+Comience por ver una consulta general:
 
 |  |  |
 |--- |--- |
@@ -28,19 +28,19 @@ Empezamos mirando una consulta general:
 | `AND time < X`<br><br> `AND time >= Y` | Informe `time frame` |
 | `GROUP BY a` | Informe `group by` |
 
-Este ejemplo cubre la mayoría de los casos de traducción, pero hay algunas excepciones. Hagamos una inmersión, empezando por cómo `aggregate` está traducida.
+Este ejemplo abarca la mayoría de los casos de traducción, pero hay algunas excepciones. Sumergirse, empezando por cómo el `aggregate` función traducida.
 
 ## Funciones agregadas
 
-Funciones agregadas (por ejemplo, `count`, `sum`, `average`, `max`, `min`) en consultas que toman la forma de **agregaciones de métricas** o **agregaciones de columnas** en [!DNL MBI]. El factor de diferenciación es si se requiere o no una unión para realizar la agregación.
+Funciones agregadas (por ejemplo, `count`, `sum`, `average`, `max`, `min`) en las consultas toman la forma de **agregaciones de métricas** o **agregaciones de columnas** in [!DNL MBI]. El factor diferenciador es si se requiere una unión para realizar la agregación.
 
-Veamos un ejemplo de cada uno de los anteriores.
+Observe un ejemplo para cada uno de los elementos anteriores.
 
-## Acumulaciones de métricas {#aggregate}
+## Agregaciones de métricas {#aggregate}
 
-Se requiere una métrica al agregar `within a single table`. Por ejemplo, la variable `SUM(b)` la función de agregado de la consulta anterior probablemente estaría representada por una métrica que suma una columna `B`. 
+Se requiere una métrica al agregar `within a single table`. Por ejemplo, la variable `SUM(b)` la función de agregado de la consulta anterior probablemente se representaría mediante una métrica que suma una columna `B`. 
 
-Veamos un ejemplo específico de cómo `Total Revenue` puede definirse en [!DNL MBI]. Eche un vistazo a la siguiente consulta que intentaremos traducir:
+Observe un ejemplo específico de cómo una `Total Revenue` La métrica de se puede definir en [!DNL MBI]. Observe la consulta siguiente que intenta traducir:
 
 |  |  |
 |--- |--- |
@@ -49,59 +49,59 @@ Veamos un ejemplo específico de cómo `Total Revenue` puede definirse en [!DNL 
 | `FROM orders` | `Metric source` tabla |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | Métrica `filter` |
-| `AND created_at < X`<br><br>`AND created_at >= Y` | Métrica `timestamp` (y `time range`) |
+| `AND created_at < X`<br><br>`AND created_at >= Y` | Métrica `timestamp` (y presentación de informes `time range`) |
 
-Vaya al creador de métricas haciendo clic en **[!UICONTROL Manage Data** > ** Métricas **> **Crear nueva métrica]**, primero debe seleccionar el `source` que, en este caso, es la `orders` tabla. A continuación, la métrica se configuraría como se muestra a continuación:
+Navegación al creador de métricas haciendo clic en **[!UICONTROL Manage Data** > ** Métricas **> **Crear nueva métrica]**, primero debe seleccionar la opción `source` , que en este caso es la `orders` tabla. A continuación, la métrica se configuraría como se muestra a continuación:
 
 ![Agregación de métricas](../../assets/Metric_aggregation.png)
 
 ## Agregaciones de columnas
 
-Se requiere una columna calculada al agregar una columna que se une desde otra tabla. Por ejemplo, puede tener una columna integrada en su `customer` tabla denominada `Customer LTV`, que suma el valor total de todos los pedidos asociados con ese cliente en la variable `orders` tabla.
+Se requiere una columna calculada al agregar una columna unida desde otra tabla. Por ejemplo, puede tener una columna creada en su `customer` tabla llamada `Customer LTV`, que suma el valor total de todos los pedidos asociados con ese cliente en el `orders` tabla.
 
-La consulta para esta agregación puede tener un aspecto similar al siguiente:
+La consulta de esta agregación puede tener un aspecto similar al siguiente:
 
 |  |  |
 |--- |--- |
 | `Select` |  |
 | `c.customer_id` | Propietario agregado |
-| `SUM(o.order_total) as "Customer LTV"` | Operación agregada (columna) |
-| `FROM customers c` | Agregar tabla de propietario |
+| `SUM(o.order_total) as "Customer LTV"` | Operación de agregado (columna) |
+| `FROM customers c` | Tabla de propietario agregada |
 | `JOIN orders o` | Tabla de origen de agregación |
 | `ON c.customer_id = o.customer_id` | Ruta |
 | `WHERE o.status = 'success'` | Filtro agregado |
 
-Configurar esto en [!DNL MBI] requiere el uso del administrador de Datas Warehouse, donde creará una ruta entre `orders` y `customers` a continuación, cree una nueva columna llamada `Customer LTV` en la tabla del cliente.
+Configuración de esto en [!DNL MBI] requiere el uso del administrador de Datas Warehouse, donde puede crear una ruta entre las `orders` y `customers` luego cree una columna llamada `Customer LTV` en la tabla del cliente.
 
-En primer lugar, veamos cómo establecer un nuevo camino entre `customers` y `orders`. Nuestro objetivo final es crear una nueva columna agregada en la variable `customers` , por lo que en primer lugar vaya a la tabla `customers` en la Data Warehouse y, a continuación, haga clic en **[!UICONTROL Create a Column** > ** Seleccionar una definición **> **SUMA]**.
+Observe cómo establecer una nueva ruta entre las variables `customers` y `orders`. El objetivo final es crear una nueva columna agregada en la variable `customers` , así que primero vaya a la `customers` en la Data Warehouse y haga clic en **[!UICONTROL Create a Column** > ** Seleccionar una definición **> **SUM]**.
 
-A continuación, debe seleccionar la tabla de origen. Si ya existe una ruta de acceso a su `orders` , simplemente selecciónela en la lista desplegable. Sin embargo, si está creando una ruta nueva, haga clic en **[!UICONTROL Create new path]** y se le presentará la siguiente pantalla:
+A continuación, debe seleccionar la tabla de origen. Si existe una ruta a su `orders` , simplemente selecciónelo en la lista desplegable. Sin embargo, si está creando una nueva ruta, haga clic en **[!UICONTROL Create new path]** y se le mostrará la siguiente pantalla:
 
 ![Crear nueva ruta](../../assets/Create_new_path.png)
 
-Aquí debe considerar cuidadosamente la relación entre las dos tablas que está tratando de unir. En este caso, es posible que `Many` pedidos asociados `One` cliente, por lo tanto, la variable `orders` se muestra en la `Many` del lado, mientras que el `customers` tabla seleccionada en el `One` lado.
+Aquí debe considerar cuidadosamente la relación entre las dos tablas que está intentando unir. En este caso, existen `Many` pedidos asociados a `One` cliente, por lo tanto, `orders` La tabla aparece en la `Many` mientras que el `customers` tabla seleccionada en la `One` lado.
 
 >[!NOTE]
 >
->En [!DNL MBI], *ruta* es equivalente a un `Join` en SQL.
+>Entrada [!DNL MBI], a *ruta* es equivalente a `Join` en SQL.
 
-Una vez guardada la ruta, se configurará para crear la nueva `Customer LTV` columna! Eche un vistazo a lo siguiente:
+Una vez guardada la ruta, ya puede crear el `Customer LTV` columna! Observe lo siguiente:
 
 ![](../../assets/Customer_LTV.gif)
 
-Ahora que ha creado el nuevo `Customer LTV` en la columna `customers` , está listo para crear un [agregación de métricas](#aggregate) uso de esta columna (por ejemplo, para encontrar el promedio de LTV por cliente), o simplemente `group by` o `filter` por la columna calculada en un informe utilizando métricas existentes basadas en la variable `customers` tabla.
+Ahora que ha creado el nuevo `Customer LTV` en la columna `customers` , está listo para crear un [agregación de métricas](#aggregate) mediante esta columna (por ejemplo, para buscar el LTV promedio por cliente). También puede `group by` o `filter` por la columna calculada en un informe utilizando métricas existentes creadas en la variable `customers` tabla.
 
 >[!NOTE]
 >
->Para este último, cada vez que cree una nueva columna calculada deberá [añadir la dimensión a las métricas existentes](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de que esté disponible como `filter` o `group by`.
+>Para esto último, cada vez que cree una nueva columna calculada, debe [añadir la dimensión a las métricas existentes](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de que esté disponible como `filter` o `group by`.
 
-Consulte [creación de columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) con su administrador de Datas Warehouse.
+Consulte [creación de columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) con el administrador de Datas Warehouse.
 
 ## `Group By` cláusulas
 
-`Group By` las funciones en las consultas a menudo se representan en [!DNL MBI] como columna utilizada para segmentar o filtrar un informe visual. Por ejemplo, volvamos a examinar la `Total Revenue` consulta que hemos explorado anteriormente, pero esta vez Vamos a segmentar los ingresos por el `coupon\_code` para comprender mejor qué cupones generan la mayor cantidad de ingresos.
+`Group By` Las funciones de las consultas suelen representarse en [!DNL MBI] como una columna utilizada para segmentar o filtrar un informe visual. Por ejemplo, volvamos a visitar la `Total Revenue` consulta que ha explorado anteriormente, pero esta vez segmente los ingresos por `coupon\_code` para comprender mejor qué cupones son los que generan la mayor cantidad de ingresos.
 
-En primer lugar, empezamos con la siguiente consulta:
+Comience con la siguiente consulta:
 
 |  |  |
 |--- |--- |
@@ -110,27 +110,27 @@ En primer lugar, empezamos con la siguiente consulta:
 | `FROM orders` | `Metric source` tabla |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | Métrica `filter` |
-| `AND created_at < '2016-12-01'` <br><br>`AND created_at >= '2016-09-01'` | Métrica `timestamp` (y `time range`) |
+| `AND created_at < '2016-12-01'` <br><br>`AND created_at >= '2016-09-01'` | Métrica `timestamp` (y presentación de informes `time range`) |
 | `GROUP BY coupon_code` | Informe `group by` |
 
 >[!NOTE]
 >
->La única diferencia con respecto a la consulta con la que empezamos antes es la adición del &quot;coupon\_code&quot; como grupo por._
+>La única diferencia con respecto a la consulta con la que comenzó antes es la adición del &quot;coupon\_code&quot; como agrupado por._
 
-Usando el mismo `Total Revenue` que hemos creado anteriormente, ¡ya estamos listos para crear nuestro informe de ingresos segmentados por código de cupón! Eche un vistazo a la siguiente gif que muestra cómo configurar este informe visual mirando los datos de septiembre a noviembre:
+Usar el mismo `Total Revenue` métrica que ha creado anteriormente, ahora está listo para crear su informe de ingresos segmentado por código de cupón. Observe el gif que aparece a continuación y que muestra cómo configurar este informe visual con los datos de septiembre a noviembre:
 
 ![Ingresos por código de cupón](../../assets/Revenue_by_coupon_code.gif)
 
 ## Fórmulas
 
-En algunos casos, una consulta puede implicar múltiples agregaciones para calcular la relación entre columnas independientes. Por ejemplo, puede calcular el valor de pedido promedio en una consulta de una de las dos maneras siguientes:
+A veces, una consulta puede implicar varias agregaciones para calcular la relación entre columnas independientes. Por ejemplo, puede calcular el valor de pedido promedio en una consulta de una de las dos maneras siguientes:
 
 * `AVG('order\_total')` O
 * `SUM('order\_total')/COUNT('order\_id')`
 
-El método anterior implicaría la creación de una nueva métrica que realiza un promedio en la variable `order\_total` para abrir el Navegador. Sin embargo, este último método se puede crear directamente en el creador de informes, suponiendo que ya tenga métricas configuradas para calcular la variable `Total Revenue` y `Number of orders`.
+El método anterior implicaría la creación de una nueva métrica que realice un promedio en el `order\_total` columna. Sin embargo, este último método se podría crear directamente en el Report Builder, suponiendo que ya se hayan configurado métricas para calcular el `Total Revenue` y `Number of orders`.
 
-Retrocedamos un paso y veamos la consulta general de `Average order value`:
+Retroceda un paso y observe la consulta general de `Average order value`:
 
 |  |  |
 |--- |--- |
@@ -141,18 +141,18 @@ Retrocedamos un paso y veamos la consulta general de `Average order value`:
 | `FROM orders` | Métrica `source` tabla |
 | `WHERE` |  |
 | `email NOT LIKE '%@magento.com'` | Métrica `filter` |
-| `AND created_at < '2016-12-01'`<br><br>`AND created_at >= '2016-09-01'` | Marca de tiempo de métrica (e intervalo de tiempo de informes) |
+| `AND created_at < '2016-12-01'`<br><br>`AND created_at >= '2016-09-01'` | Marca de tiempo de las métricas (e intervalo de tiempo de informes) |
 
-Y supongamos que ya tenemos métricas configuradas para calcular la variable `Total Revenue` y `Number of orders`. Dado que estas métricas ya existen, simplemente podemos abrir el `Report Builder` y crear un cálculo ad hoc utilizando la variable `Formula` función:
+Ahora, supongamos que ya ha configurado métricas para calcular el `Total Revenue` y `Number of orders`. Dado que estas métricas existen, simplemente puede abrir el `Report Builder` y cree un cálculo bajo demanda utilizando `Formula` función:
 
 ![Fórmula AOV](../../assets/AOV_forumula.gif)
 
 ## Ajuste
 
-Como mencionamos al principio de este artículo, si es un usuario SQL pesado, piense en cómo se traducen las consultas en [!DNL MBI] le permite crear columnas, métricas e informes calculados.
+Si es un usuario de SQL con muchas tareas, piense en cómo se traducen las consultas en [!DNL MBI] permite crear columnas calculadas, métricas e informes.
 
-Para una referencia rápida, consulte la matriz siguiente. Muestra el equivalente de una cláusula SQL [!DNL MBI] y cómo se puede asignar a más de un elemento, según cómo se utilice en la consulta.
+Para obtener una referencia rápida, consulte la siguiente matriz. Muestra el equivalente de una cláusula SQL [!DNL MBI] y cómo se puede asignar a más de un elemento, según cómo se utilice en la consulta.
 
 ## Elementos de MBI
 
-|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|-|X|-| |`FROM`|-|-|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-|-|-| |`WHERE` (con elementos de tiempo)|-|-|-|X|-|-|-| |`JOIN...ON`|-|X|-|-|X|X|-| |`GROUP BY`|-|-|X|-|-|-|-|
+|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|-|X|-| |`FROM`|-|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-|-| |`WHERE` (con elementos de tiempo)|-|-|-|X|-|-| |`JOIN...ON`|-|X|-|-|X|X|-| |`GROUP BY`|-|-|X-|-|-|-|

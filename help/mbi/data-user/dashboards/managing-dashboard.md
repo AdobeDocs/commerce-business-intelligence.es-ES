@@ -1,10 +1,10 @@
 ---
 title: Administrar tableros
-description: Obtenga información sobre cómo administrar los permisos de usuario para los tableros que posee, eliminar los tableros que ya no necesita y establecer un tablero predeterminado.
+description: Obtenga información sobre cómo administrar los permisos de usuario para los paneles que posee, eliminar los que ya no necesita y establecer un panel predeterminado.
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -13,54 +13,54 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Requiere [Permisos de administrador](../../administrator/user-management/user-management.md).
+>Requiere [Permisos de administración](../../administrator/user-management/user-management.md).
 
-En **[!DNL Manage Data** > **Dashboards]**, puede administrar los permisos de usuario para los tableros que posea, eliminar los que ya no necesite y establecer un tablero predeterminado. Acá un rápido vistazo a lo que cubrimos en este artículo:
+Entrada **[!DNL Manage Data** > **Dashboards]**, puede administrar los permisos de usuario para los tableros que posee, eliminar los tableros que ya no necesita y establecer un tablero predeterminado. Se trata en este artículo:
 
-1. [Cambio de nombre de tableros](#rename)
+1. [Cambiar nombre de paneles](#rename)
 
 1. [Administración de permisos de tablero](#userperm)
 
-1. [Cambio del tablero predeterminado](#default)
+1. [Modificación del tablero predeterminado](#default)
 
-1. [Eliminación de tableros](#delete)
+1. [Eliminación de paneles](#delete)
 
-## Cambiar el nombre de un tablero {#rename}
+## Cambiar nombre de panel {#rename}
 
 Para cambiar el nombre de un tablero:
 
-1. Haga clic en el nombre del tablero que desea cambiar.
+1. Haga clic en el nombre del tablero que desee cambiar.
 
-2. Escriba el nuevo nombre en la `Dashboard Name` campo .
+2. Introduzca el nuevo nombre en la `Dashboard Name` field.
 
 ## Administrar permisos de usuario {#userperm}
 
-Existen tres niveles de acceso en [!DNL MBI] para tableros: `View`, `Edit`y `None`.
+Existen tres niveles de acceso en [!DNL MBI] para paneles: `View`, `Edit`, y `None`.
 
-* `View` permite a los usuarios seleccionados ver el tablero, pero no editarlo. Los usuarios también pueden cambiar el tamaño de los gráficos, exportar los datos y copiar los gráficos en sus propios tableros mediante la función Guardar como si tienen permisos estándar o de administrador.
+* `View` permite a los usuarios seleccionados ver el tablero, pero no editarlo. Los usuarios también pueden cambiar el tamaño de los gráficos, exportar datos y copiar los gráficos en sus propios paneles mediante la función Guardar como si tuvieran permisos estándar o de administrador.
 
-* `Edit` permite a los usuarios seleccionados editar y guardar gráficos en este tablero si tienen permisos Standard o Admin. Además, los usuarios con permisos de edición también pueden compartir tableros con otros usuarios.
+* `Edit` permite a los usuarios seleccionados editar y guardar gráficos en este panel si tienen permisos estándar o de administrador. Además, los usuarios con permisos de edición también pueden compartir tableros con otros usuarios.
 
-* `None` significa que los usuarios seleccionados no pueden ver ni editar este tablero.
+* `None` significa que los usuarios seleccionados no pueden ver ni editar este panel.
 
-Los permisos de usuario se pueden cambiar de una de dos formas: para todos los usuarios o para un usuario individual.
+Los permisos de usuario se pueden cambiar de una de las dos maneras siguientes: para todos los usuarios o para un usuario individual.
 
-1. *Para cambiar todos los permisos de los usuarios,* utilice el menú desplegable situado junto a la `Set all users' permissions to…` etiqueta.
+1. *Para cambiar los permisos de todos los usuarios,* utilice el menú desplegable situado junto a `Set all users' permissions to…` etiqueta.
 
-1. *Para cambiar los permisos de un usuario individual,* utilice el menú desplegable situado junto al nombre del usuario para establecer el nivel de acceso deseado.
+1. *Para cambiar los permisos de un usuario individual,* utilice el menú desplegable situado junto al nombre del usuario para definir el nivel de acceso deseado.
 
-## Cambiar el tablero predeterminado {#default}
+## Cambio del tablero predeterminado {#default}
 
 Para cambiar el tablero predeterminado de la cuenta:
 
-1. Haga clic en el nombre del tablero que desee como predeterminado.
+1. Haga clic en el nombre del tablero que desee utilizar como predeterminado.
 
-1. Haga clic en **[!UICONTROL Make Default]**.
+1. Clic **[!UICONTROL Make Default]**.
 
-## Eliminar tableros {#delete}
+## Eliminar paneles {#delete}
 
 Para eliminar un tablero:
 
 1. Haga clic en el nombre del tablero que desee eliminar.
 
-1. Haga clic en **[!UICONTROL Delete Dashboard]**.
+1. Clic **[!UICONTROL Delete Dashboard]**.

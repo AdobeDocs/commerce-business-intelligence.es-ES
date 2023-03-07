@@ -2,9 +2,9 @@
 title: Acceda a su [!DNL MBI] Cuenta
 description: Obtenga información sobre cómo iniciar sesión en su [!DNL MBI] cuenta.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Puede iniciar sesión con su [!DNL Adobe ID] o con su [!DNL MBI] correo electró
 
 >[!NOTE]
 >
->Si inicia sesión con su [!DNL Adobe ID], no podrá cambiar su... [!DNL MBI] contraseña de perfil.
+>Si inicia sesión con su [!DNL Adobe ID], no puede cambiar su [!DNL MBI] contraseña de perfil.
 
 ## Inicie sesión con su nombre de usuario y contraseña
 

@@ -1,41 +1,41 @@
 ---
 title: Agregar o editar un nuevo usuario
-description: Obtenga información sobre cómo agregar una nueva [!DNL MBI] y cómo actualizar su nombre de usuario o contraseña.
+description: Obtenga información sobre cómo agregar un nuevo [!DNL MBI] usuario y cómo actualizar su nombre de usuario o contraseña.
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
 
 ---
 
-# Agregar un nuevo usuario
+# Agregar un usuario
 
-1. Haga clic en el nombre de su empresa en la esquina superior derecha y seleccione **[!UICONTROL Invite User]** en la lista desplegable .
+1. Haga clic en el nombre de su empresa en la esquina superior derecha y seleccione **[!UICONTROL Invite User]** en el menú desplegable.
 1. Introduzca el nombre y el correo electrónico del usuario.
-1. Configure el **[!UICONTROL general permission level]**: `Admin`, `Standard`o `Read Only`.
-1. Indique si este nuevo usuario también debe ser responsable **[!UICONTROL billing]** o **[!UICONTROL technical]** problemas marcando las casillas correspondientes.
+1. Establezca el del usuario **[!UICONTROL general permission level]**: `Admin`, `Standard`, o `Read Only`.
+1. Indique si este nuevo usuario también debe ser responsable de lo siguiente **[!UICONTROL billing]** o **[!UICONTROL technical]** problemas marcando las casillas correspondientes.
 
    >[!NOTE]
    >
-   >Para ver, agregar o cambiar la información de facturación de la cuenta, debe tener `Billing` permisos. [Los permisos se establecen usuario por usuario](../../administrator/user-management/user-management.md) cuando se crean cuentas de usuario. Si necesita `Billing` permisos, póngase en contacto con el administrador de su cuenta.
+   >Para ver, agregar o cambiar la información de facturación de tu cuenta, debes tener `Billing` permisos. [Los permisos se establecen usuario por usuario](../../administrator/user-management/user-management.md) cuando se crean cuentas de usuario. Si necesita `Billing` Para obtener permisos, póngase en contacto con el administrador de su cuenta.
 
-1. Haga clic en **[!UICONTROL Save]**.
+1. Clic **[!UICONTROL Save]**.
 
-El nuevo usuario recibirá un correo electrónico con información de inicio de sesión y contraseña.
+Se envía un correo electrónico al nuevo usuario con los detalles de inicio de sesión y contraseña.
 
 >[!NOTE]
 >
->El nuevo usuario no tendrá tableros de forma predeterminada. Le recomendamos que [compartir](../../data-user/dashboards/share-dashboard-with-users.md) los tableros necesarios con el nuevo usuario de inmediato.
+>El nuevo usuario no tiene paneles de forma predeterminada. El Adobe recomienda que [compartir](../../data-user/dashboards/share-dashboard-with-users.md) Cree los paneles necesarios con el nuevo usuario de inmediato.
 
 ## Actualice su dirección de correo electrónico o contraseña
 
-Puede actualizar su dirección de correo electrónico y/o contraseña haciendo clic en el nombre de su empresa en la esquina superior derecha y luego hacer clic en **[!UICONTROL Edit Profile]**.
+Puede actualizar su dirección de correo electrónico y/o contraseña haciendo clic en el nombre de su empresa en la esquina superior derecha y, a continuación, haga clic en Hacer clic **[!UICONTROL Edit Profile]**.
 
 ## Reenviar la invitación
 
-Si necesita volver a enviar la invitación al nuevo usuario, en la [página de inicio de sesión](https://dashboard.rjmetrics.com), haga clic en **[!UICONTROL Forgot?]**, introduzca la dirección de correo electrónico del nuevo usuario y haga clic en **[!UICONTROL Reset Password]**. Esto reenvía la invitación y permite al usuario iniciar sesión.
+Si necesita volver a enviar la invitación al nuevo usuario, en la [página de inicio de sesión](https://dashboard.rjmetrics.com/v2/session/create), haga clic en **[!UICONTROL Forgot?]**, introduzca la dirección de correo electrónico del nuevo usuario y haga clic en **[!UICONTROL Reset Password]**. Esto reenvía la invitación y permite al usuario iniciar sesión.
 
 >[!IMPORTANT]
 >
->Cada cuenta tiene un número de licencias o asientos contratado. Si alcanza su límite o desea obtener más información, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+>Cada cuenta tiene un número contratado de licencias o puestos. Si llega al límite o desea obtener más información, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

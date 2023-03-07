@@ -1,83 +1,83 @@
 ---
-title: Análisis del comportamiento de recompra de clientes
-description: Obtenga información sobre cómo analizar el comportamiento de recompra de clientes.
+title: Análisis del Comportamiento de Recompra del Cliente
+description: Obtenga información sobre cómo analizar el comportamiento de las devoluciones de clientes.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '855'
 ht-degree: 1%
 
 ---
 
-# Comportamiento de recompra de clientes
+# Comportamiento de recompra del cliente
 
-Si ofrece más de un producto, probablemente se pregunte cómo se comportan los clientes que compran un producto específico de forma diferente a lo largo del tiempo en comparación con otros clientes. En este artículo, exploramos análisis que pueden ayudarle a responder a las siguientes preguntas:
+Si ofrece más de un producto, probablemente se pregunte cómo los clientes que compran un producto específico se comportan de forma diferente a lo largo del tiempo en comparación con otros clientes. Este artículo explora análisis que pueden ayudarle a responder las siguientes preguntas:
 
-Entre los clientes que compran un *elemento específico*,
+Entre los clientes que compran un *artículo específico*,
 
 * ¿Cuál es la probabilidad de que realicen otra compra?
-* ¿Cuánto tardarán en realizar otra compra?
-* ¿Cuál es el número promedio de pedidos que los clientes realizan a corto y largo plazo?
-* ¿Cuál es el ingreso promedio que generan los clientes a corto y largo plazo?
+* ¿Cuánto tiempo les toma hacer otra compra?
+* ¿Cuál es el número promedio de pedidos que realizan los clientes a corto/largo plazo?
+* ¿Cuáles son los ingresos promedio que generan los clientes a corto/largo plazo?
 
 ## Métricas recomendadas
 
-Al crear análisis de actividad de recompra de clientes, se recomienda utilizar las siguientes métricas:
+Al crear análisis de actividad de recompra de clientes, Adobe recomienda utilizar las siguientes métricas:
 
-### Probabilidad de repetición de pedido
+### Probabilidad de orden repetido
 
-Esta medida se define como el número total de pedidos repetidos, como un porcentaje del total de pedidos. En otras palabras, esta es la probabilidad de que un pedido sea seguido por otro pedido. Esta medida identifica los artículos que probablemente inciten a los clientes a volver a su tienda.
+Esta medida se define como el número total de pedidos repetidos, como un porcentaje del total de pedidos. En otras palabras, esta es la probabilidad de que un pedido vaya seguido de otro. Esta medida identifica los artículos que tienen probabilidades de atraer a los clientes para que regresen a su tienda.
 
-### Número promedio de pedidos realizados
+### Número medio de pedidos realizados
 
-Esto expone el comportamiento de compra de los clientes, específicamente cuántos pedidos han realizado sus clientes durante un período de tiempo determinado. Puede optar por limitar esta medida para ver el comportamiento de los clientes a corto, medio o largo plazo. Algunos productos pueden animar a los clientes a realizar compras frecuentes a corto plazo, mientras que otros pueden influir en la lealtad de un cliente a largo plazo. Si este número es mayor para un artículo comparado con otros, esto sugeriría que las personas que compran este artículo son las que regresan a su tienda.
+Esto expone el comportamiento de compra de sus clientes, específicamente cuántos pedidos han realizado durante un período de tiempo determinado. Puede optar por limitar esta medida para ver el comportamiento de los clientes a corto, medio o largo plazo. Algunos productos pueden animar a los clientes a realizar compras frecuentes a corto plazo, mientras que otros pueden influir en la lealtad a largo plazo de un cliente. Si este número es mayor para un artículo en comparación con otros artículos, esto sugeriría que las personas que compran este artículo son las que regresan a su tienda.
 
-### Ingresos promedio de la vida del cliente
+### Ingresos medios por duración de clientes
 
-Esta métrica le permite comprender si los clientes que compran artículos específicos son más valiosos a lo largo de su vida útil. Si este número es mayor para un artículo en comparación con otros artículos a precios similares, esto sugeriría que los clientes de mayor valor tienden a comprar este artículo.
+Esta métrica le permite comprender si los clientes que compran artículos específicos son más valiosos a lo largo de su vida útil. Si este número es mayor para un artículo en comparación con otros artículos con precios similares, esto sugeriría que tus clientes de mayor valor tienden a comprar este artículo.
 
 ### Tiempo para el siguiente pedido
 
-Esta medida muestra la frecuencia de pedidos del cliente o el tiempo que tarda el cliente en realizar el pedido de nuevo. Si el tiempo para el siguiente pedido es más corto para un artículo en comparación con otros, esto sugeriría que las personas que compran este artículo tienden a volver antes.
+Esta medida muestra la frecuencia de pedido del cliente o el tiempo que tarda en volver a realizar el pedido. Si el tiempo para el siguiente pedido es más corto para un artículo en comparación con otros artículos, esto sugeriría que las personas que compran este artículo tienden a regresar antes.
 
-## Ejemplo de hoy: productos para café
+## Ejemplo de hoy: productos de café
 
-Teniendo en cuenta las métricas anteriores, echemos un vistazo a un ejemplo que involucra productos de café.
+Con las métricas anteriores en mente, observe un ejemplo que implica productos de café.
 
-| **Nombre del producto** | **Probabilidad de repetición de pedido** | **Promedio de pedidos acumulados** | **Promedio de ingresos de por vida** | **Mediana del tiempo hasta el siguiente pedido** |
+| **Nombre del producto** | **Probabilidad de orden repetido** | **Número promedio de pedidos durante toda la vida** | **Ingresos promedio por vida útil** | **Mediana del tiempo hasta el siguiente pedido** |
 |-----|-----|-----|-----|-----|
-| Cafetera de una sola taza | 94.98% | 7.92 | $549.82 | 57,01 días |
+| Cervecero de una taza | 94.98% | 7.92 | $549.82 | 57,01 días |
 | Cápsulas de café | 93.82% | 8.68 | $479.98 | 63,48 días |
-| Vainas para café | 41.92% | 6.07 | $99.82 | 27,31 días |
+| Granos de café | 41.92% | 6.07 | $99.82 | 27,31 días |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Ahora que tenemos nuestros datos, echemos un vistazo a lo que esto podría significar para cada una de nuestras métricas.
+Ahora que tiene los datos, observe qué podría significar esto para cada una de las métricas.
 
-### Probabilidad de repetición de pedido
+### Probabilidad de orden repetido
 
-En este ejemplo, la probabilidad de que se repita el pedido (o la probabilidad de que un pedido sea seguido por otro pedido) es mucho mayor para las cafeteras de una sola taza y las cápsulas de café que para los granos de café.
+En este ejemplo, la probabilidad de que se repita un pedido (o la probabilidad de que un pedido vaya seguido de otro) es mucho mayor en las cafeteras de una sola taza y en las cápsulas de café que en los granos de café.
 
-Como los clientes que compran la cervecería están &quot;comprometidos&quot; a comprar las cápsulas asociadas en adelante, esto tiene sentido. Del mismo modo, los clientes que compraron las cápsulas tienen una cervecería compatible con las cápsulas. Sin embargo, los granos de café no son específicos de ninguna cervecería en particular.
+Dado que los clientes que compran la cervecería están &quot;comprometidos&quot; a comprar las cápsulas asociadas en el futuro, esto tiene sentido. Del mismo modo, los clientes que compraron cápsulas tienen una cerveza que es compatible con las cápsulas. Sin embargo, los granos de café no son específicos de una cervecera en particular.
 
-### Cantidad promedio de pedidos acumulados
+### Número promedio de pedidos durante toda la vida
 
-Basándonos en los datos anteriores, podemos ver que las personas que compran la cervecería o las cápsulas han hecho más compras en su vida útil, en promedio, en comparación con los clientes que han comprado granos de café.
+En base a los datos anteriores, se puede ver que las personas que compran la cerveza o las cápsulas han hecho más compras en su vida, en promedio, en comparación con los clientes que han comprado granos de café.
 
-### Ingresos promedio de la vida del cliente
+### Ingresos medios por duración de clientes
 
-Los clientes que compran la cervecería tienen los ingresos promedio de duración más altos; que tiene sentido, dado que el coste de la cervecería está incluido en esta medida. Por el contrario, los clientes que compran granos de café generalmente solo compran artículos de bajo costo.
+Los clientes que compran la cervecería tienen los mayores ingresos promedio de por vida; lo cual tiene sentido, dado que el costo de la cervecera está incluido en esta medida. Por el contrario, los clientes que compran granos de café generalmente solo compran artículos de bajo coste.
 
 ### Tiempo para el siguiente pedido
 
-Entre los clientes que han comprado cápsulas de café, la mitad realiza un pedido repetido en unos 2 meses. Sin embargo, entre los clientes que han comprado granos de café, la mitad realiza un pedido repetido en aproximadamente 1 mes. Esto podría deberse a que las personas que piden cápsulas (1) no beben tanto café, o (2) realizan pedidos a granel (por ejemplo, compran café durante 2 meses en un solo pedido).
+Entre los clientes que han comprado cápsulas de café, la mitad hacen un pedido repetido en aproximadamente dos meses. Sin embargo, entre los clientes que han comprado granos de café, la mitad hace un pedido repetido en aproximadamente un mes. Esto puede deberse a que las personas que ordenan cápsulas, ya sea (1) no beben tanto café, o (2) realizan pedidos a granel (por ejemplo, comprando café de dos meses en un pedido).
 
-## ¿Qué otros análisis puedo generar?
+## ¿Qué otros análisis se pueden generar?
 
-Con las métricas que describimos en este artículo, también puede crear otros útiles análisis de recompras. Por ejemplo, también podemos ver cómo recompran los clientes **el mismo elemento** - por ejemplo, si compran recargas de forma regular. Las cápsulas y los granos de café pueden ser recomprados regularmente, pero sería inesperado ver a los clientes haciendo compras repetidas de la cafetera. Si su negocio se centra en recargas o repoblación, este análisis sería extremadamente útil.
+Con las métricas descritas en este artículo, también puede crear otros análisis de recompra útiles. Por ejemplo, también puede ver cómo los clientes vuelven a comprar **el mismo elemento** - por ejemplo, si compran recambios regularmente. Las cápsulas y los granos de café se pueden volver a comprar con regularidad, pero sería inesperado ver a los clientes haciendo compras repetidas de la cervecera. Si su negocio se centra en recargas o reabastecimiento, este análisis sería útil.
 
-Además de analizar el comportamiento de recompra de sus clientes, también puede crear análisis que miren la lealtad del cliente. Considere analizar los patrones en la pérdida de clientes: ¿dónde abandonan el sitio los clientes y dónde no regresan? ¿A qué ritmo ocurre esto?
+Además de analizar el comportamiento de recompra de sus clientes, también puede generar análisis que miren la lealtad de los clientes. Considere la posibilidad de analizar los patrones de pérdida de clientes. ¿Dónde abandonan el sitio los clientes y no regresan? ¿A qué ritmo ocurre esto?
 
-Una vez que haya identificado el motivo por el que se está produciendo la pérdida, puede utilizar el análisis para crear un `reactivation` campaña. Con estos datos se puede identificar a los usuarios que se han vuelto inactivos, cuánto tiempo han transcurrido desde su última visita, cuál fue su última compra, etc. Esto le permitirá tomar decisiones útiles que incitarán a sus clientes a regresar.
+Una vez que haya identificado por qué se produce la pérdida, puede utilizar el análisis para crear una `reactivation` campaña. Con estos datos, puede identificar a los usuarios que se han vuelto inactivos, cuánto tiempo ha pasado desde su última visita, cuál fue su última compra, etc. Esto le permite tomar decisiones procesables que atraen a sus clientes a regresar.
 
-Para obtener ayuda con el análisis, [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Para obtener ayuda con el análisis, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

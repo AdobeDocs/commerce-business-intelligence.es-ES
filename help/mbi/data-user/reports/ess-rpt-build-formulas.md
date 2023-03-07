@@ -1,73 +1,73 @@
 ---
 title: Fórmulas
-description: Aprenda a utilizar fórmulas.
+description: Aprenda a utilizar las fórmulas.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
 
 # Fórmulas
 
-Una fórmula combina varias métricas y lógica matemática para responder a una pregunta. Por ejemplo, ¿cuántos ingresos por producto durante la temporada de vacaciones los generaron los nuevos clientes?
+Una fórmula combina varias métricas y lógica matemática para responder a una pregunta. Por ejemplo, ¿qué parte de los ingresos por producto durante la temporada de vacaciones los generaron los nuevos clientes?
 
-![Ventas de vacaciones en el tablero](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
+![Ventas de vacaciones en Dashboard](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## Paso 1: Crear el informe básico
 
-1. En el menú , elija `Report Builder`.
+1. En el menú, elija `Report Builder`.
 
-1. Haga clic en **[!UICONTROL Add Metric]** y elija la primera métrica del informe.
+1. Clic **[!UICONTROL Add Metric]** y elija la primera métrica para el informe.
 
-   Para este ejemplo, la variable `Revenue by products ordered` se utiliza.
+   Para este ejemplo, la variable `Revenue by products ordered` se utiliza la métrica de.
 
-1. Haga clic en **[!UICONTROL Add Metric]** y elija la segunda métrica del informe.
+1. Clic **[!UICONTROL Add Metric]** de nuevo y elija la segunda métrica para el informe.
 
-   Para este ejemplo, la variable `New Customers` se utiliza.
+   Para este ejemplo, la variable `New Customers` se utiliza la métrica de.
 
 1. En la barra lateral, haga clic en **[!UICONTROL Details]** para mostrar información sobre cada métrica.
 
-   ![Ingresos por productos solicitados](../../assets/magento-bi-report-builder-revenue-by-products.png)
+   ![Ingresos por productos pedidos](../../assets/magento-bi-report-builder-revenue-by-products.png)
 
-1. En la barra lateral, haga clic en el nombre de cada métrica para abrir la página de configuración en una nueva ficha del explorador. Desplácese hacia abajo para ver cada componente de la métrica, incluida la consulta de métrica, el filtro y las dimensiones.
+1. En la barra lateral, haga clic en el nombre de cada métrica para abrir la página de configuración en una nueva pestaña del explorador. Desplácese hacia abajo para ver cada componente de la métrica, incluidas la consulta de métrica, el filtro y las dimensiones.
 
    ![Configuración de métricas](../../assets/magento-bi-report-builder-revenue-by-products-metric-detail.png)
 
 1. Para volver al informe, haga clic en la pestaña del explorador anterior.
 
-1. En el gráfico, pase el ratón sobre unos pocos puntos de datos en cada línea para ver las cantidades asociadas a cada métrica.
+1. En el gráfico, pase el ratón sobre unos pocos puntos de datos de cada línea para ver las cantidades asociadas a cada métrica.
 
-## Paso 2: Agregar una fórmula
+## Paso 2: Añadir una fórmula
 
 1. En la parte superior de la barra lateral, haga clic en **[!UICONTROL Add Formula]**.
 
-   El cuadro de fórmula muestra las métricas como entradas disponibles `A` y `B`, e incluye un cuadro de entrada en el que puede introducir la fórmula.
+   El cuadro de fórmula muestra las métricas como entradas disponibles `A` y `B`e incluye un cuadro de entrada en el que puede introducir la fórmula.
 
    Haga lo siguiente:
 
-   * En el `Enter your Formul` cuadro de entrada, introduzca `A/B`.
+   * En el `Enter your Formul` cuadro de entrada, escriba `A/B`.
 
-      Esto dividirá los ingresos por productos solicitados por el número de clientes nuevos.
+      Esto divide los ingresos por productos ordenados por el número de clientes nuevos.
 
-   * Establezca `Select format` a `123Number`.
+   * Establecer `Select format` hasta `123Number`.
 
-   * En la barra lateral, sustituya `Untitled` con un nombre para la fórmula.
+   * En la barra lateral, reemplace `Untitled` con un nombre para la fórmula.
 
    ![Configuración de fórmula](../../assets/magento-bi-report-builder-revenue-by-products-add-formula-detail.png)
 
 1. Cuando termine, haga clic en **[!UICONTROL Apply]**.
 
-   El informe ahora tiene una nueva línea para la fórmula, `New Customer Revenue`y la barra lateral muestra la cantidad total de ingresos generados por los nuevos clientes.
+   El informe tiene ahora una nueva línea para la fórmula, `New Customer Revenue`y la barra lateral muestra la cantidad total de ingresos generados por los nuevos clientes.
 
    ![Informe con fórmula](../../assets/magento-bi-report-builder-revenue-by-products-formula-report.png)
 
-## Paso 3: Agregar un intervalo de fechas
+## Paso 3: Añadir un intervalo de fechas
 
-1. Haga clic en **[!UICONTROL Date Range]** en la esquina superior derecha.
+1. Clic **[!UICONTROL Date Range]** en la esquina superior derecha.
 
-1. En el `Fixed Date Range` , haga lo siguiente:
+1. En el `Fixed Date Range` pestaña, haga lo siguiente:
 
    * En los calendarios, elija el intervalo de fechas.
 
@@ -75,19 +75,19 @@ Una fórmula combina varias métricas y lógica matemática para responder a una
 
    * En `Select Time Interval`, elija `Day`.
 
-      ![Intervalo de fechas fijo](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
+      ![Intervalo de fecha fijo](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
    * Cuando termine, haga clic en **[!UICONTROL Apply]**.
 
-   El informe ahora está limitado a la temporada de vacaciones, con un punto de datos para cada día.
+   El informe ahora se limita a la temporada de vacaciones, con un punto de datos para cada día.
 
-   ![Intervalo de fechas fijo](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range-report.png)
+   ![Intervalo de fecha fijo](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range-report.png)
 
 ## Paso 4: Guardar el informe
 
-En este paso, el informe se guarda como un gráfico y también como una tabla.
+En este paso, guarda el informe como un gráfico y también como una tabla.
 
-1. Haga clic en `Untitled Report` en la parte superior de la página e introduzca un título descriptivo. Para este ejemplo, el título del informe es `2017 Holiday Sales`.
+1. Clic `Untitled Report` en la parte superior de la página e introduzca un título descriptivo. Para este ejemplo, el título del informe es `2017 Holiday Sales`.
 
    A continuación, haga lo siguiente:
 
@@ -95,24 +95,24 @@ En este paso, el informe se guarda como un gráfico y también como una tabla.
 
    * Para `Type`, acepte el valor predeterminado `Chart` configuración.
 
-   * Elija la `Dashboard` donde el informe debe estar disponible.
+   * Elija la `Dashboard` donde el informe va a estar disponible.
 
-   * Haga clic en **[!UICONTROL Save to Dashboard]**.
+   * Clic **[!UICONTROL Save to Dashboard]**.
 
-1. Haga clic en el título del informe y cambie el nombre. Para este ejemplo, el título del informe cambia a `2017 Holiday Sales Data`.
+1. Haga clic en el título del informe y cambie el nombre. Para este ejemplo, el título del informe se cambia a `2017 Holiday Sales Data`.
 
    A continuación, haga lo siguiente:
 
    * En la esquina superior derecha, haga clic en **[!UICONTROL Save a Copy]**.
 
-   * Establezca `Type` a `Table`.
+   * Establecer `Type` hasta `Table`.
 
-   * Elija la `Dashboard` donde el informe debe estar disponible.
+   * Elija la `Dashboard` donde el informe va a estar disponible.
 
-   * Haga clic en **[!UICONTROL Save a Copy to Dashboard]**.
+   * Clic **[!UICONTROL Save a Copy to Dashboard]**.
 
-1. Para ver los informes en el tablero, realice una de las siguientes acciones:
+1. Para ver los informes en el panel, siga uno de estos procedimientos:
 
-   * Haga clic en **[!UICONTROL Go to Dashboard]** en el mensaje de la parte superior de la página.
+   * Clic **[!UICONTROL Go to Dashboard]** en el mensaje, en la parte superior de la página.
 
-   * En el menú , elija **[!UICONTROL Dashboards]**. Haga clic en el nombre del tablero actual para mostrar la lista. A continuación, haga clic en el nombre del tablero donde se guardó el informe.
+   * En el menú, elija **[!UICONTROL Dashboards]**. Haga clic en el nombre del tablero actual para mostrar la lista. A continuación, haga clic en el nombre del tablero en el que se guardó el informe.

@@ -2,9 +2,9 @@
 title: Activación de su [!DNL MBI] Cuenta para suscripciones locales
 description: Obtenga información sobre cómo activar su [!DNL MBI] cuenta para suscripciones locales.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Para activar [!DNL MBI] para suscripciones on-premise, cree primero una [!DNL MB
 
    ![](../assets/create-account-4.png)
 
-   - Después de crear la cuenta, tiene la opción de agregar usuarios a la nueva cuenta. Ahora se pueden añadir administradores técnicos para llevar a cabo los siguientes pasos.
+   - Después de crear la cuenta, puede agregar usuarios a la nueva cuenta. Ahora se pueden añadir administradores técnicos para llevar a cabo los siguientes pasos.
 
    ![](../assets/create-account-5.png)
 

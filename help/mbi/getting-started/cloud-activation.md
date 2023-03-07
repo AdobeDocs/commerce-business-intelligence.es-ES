@@ -2,9 +2,9 @@
 title: Activar su [!DNL MBI] Cuenta para suscripciones a Cloud Starter
 description: Obtenga información sobre cómo activar [!DNL MBI] para proyectos de Cloud Starter.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Para activar [!DNL MBI] para `Cloud Starter` proyectos, cree primero un [!DNL MB
 
 >[!NOTE]
 >
->Para obtener ayuda sobre la activación [!DNL MBI] para `Cloud Pro` proyectos, póngase en contacto con el equipo de cuenta de Adobe o con el asesor técnico del cliente.
+>Para obtener ayuda con la activación [!DNL MBI] para `Cloud Pro` proyectos, póngase en contacto con el equipo de cuenta de Adobe o con el asesor técnico del cliente.
 
 1. Cree su [!DNL MBI] Cuenta.
 
@@ -25,7 +25,7 @@ Para activar [!DNL MBI] para `Cloud Starter` proyectos, cree primero un [!DNL MB
 
    - Clic **[!UICONTROL Create Instance]**. Si no ve este botón, póngase en contacto con el equipo de cuenta de Adobe o con el asesor técnico del cliente.
 
-   - Seleccione su `Cloud Starter` suscripción. Si solo tiene un `cloud starter` suscripción: esta opción se selecciona automáticamente.
+   - Seleccione su `Cloud Starter` suscripción. Si solo tiene un `cloud starter` suscripción, esta es la selección predeterminada.
 
    - Clic **[!UICONTROL Continue]**.
 
@@ -41,7 +41,7 @@ Para activar [!DNL MBI] para `Cloud Starter` proyectos, cree primero un [!DNL MB
 
    ![](../assets/create-account-4.png)
 
-   - Después de crear la cuenta, tendrá la opción de agregar usuarios a la nueva cuenta. Ahora se pueden añadir administradores técnicos para llevar a cabo los siguientes pasos.
+   - Después de crear la cuenta, puede agregar usuarios a la nueva cuenta. Ahora se pueden añadir administradores técnicos para llevar a cabo los siguientes pasos.
 
    ![](../assets/create-account-5.png)
 
@@ -49,13 +49,13 @@ Para activar [!DNL MBI] para `Cloud Starter` proyectos, cree primero un [!DNL MB
 
    ![](../assets/create-account-6.png)
 
-   Debe recopilar cierta información antes de poder conectar la base de datos para el tercer paso del flujo de incorporación. Va a rellenar el `Connect your database` en el paso 9.
+   Recopile información antes de poder conectar la base de datos para el tercer paso del flujo de incorporación. Debe completar la `Connect your database` en el paso 9.
 
 1. Crear dedicado [!DNL MBI] Usuario.
 
-   - Cree un nuevo usuario en su [cuenta de Adobe Commerce](https://accounts.magento.com).
+   - Cree un usuario en su [cuenta de Adobe Commerce](https://account.magento.com/customer/account/login).
 
-   - _¿Por qué un nuevo usuario?_ [!DNL MBI] necesita que se agregue un usuario al proyecto para recuperar continuamente nuevos datos que se transferirán al [!DNL MBI] data warehouse. Este usuario servirá como esa conexión. Añadir este usuario al proyecto se realizará en el paso 4.
+   - _¿Por qué un nuevo usuario?_ [!DNL MBI] necesita que se agregue un usuario al proyecto para recuperar continuamente nuevos datos que se transferirán al [!DNL MBI] Data Warehouse. Este usuario sirve como conexión. Añadir este usuario al proyecto se trata en el paso 4.
 
    - La razón de tener un dedicado [!DNL MBI] el usuario debe evitar que el usuario añadido se desactive o elimine de forma involuntaria y que detenga el [!DNL MBI] conexión.
 
@@ -65,7 +65,7 @@ Para activar [!DNL MBI] para `Cloud Starter` proyectos, cree primero un [!DNL MB
 
 1. Obtenga su [!DNL MBI] `SSH` llaves.
 
-   - Vaya a la `Connect your database` página de la [!DNL MBI] configure la interfaz de usuario de y desplácese hacia abajo hasta `Encryption settings`.
+   - Vaya a la `Connect your database` página de la [!DNL MBI] configurar la interfaz de usuario y desplazarse hacia abajo hasta `Encryption settings`.
 
    - Para el `Encryption Type` , elija `SSH Tunnel`.
 
@@ -75,7 +75,7 @@ Para activar [!DNL MBI] para `Cloud Starter` proyectos, cree primero un [!DNL MB
 
 1. Añada el nuevo [!DNL MBI] `Public key` a la [!DNL MBI] Usuario creado en el paso 5.
 
-   - Ir a [su cuenta de cloud Adobe Commerce](https://accounts.magento.cloud/). Inicie sesión con su información de inicio de sesión de la cuenta para el nuevo [!DNL MBI] usuario creado. A continuación, vaya a `Account Settings` pestaña.
+   - Ir a [su cuenta de cloud Adobe Commerce](https://account.magento.com/cloud/customer/login/). Inicie sesión con la información de inicio de sesión de su cuenta para el nuevo [!DNL MBI] usuario creado. A continuación, vaya a `Account Settings` pestaña.
 
    - Desplácese hacia abajo por la página y expanda la lista desplegable para `SSH` llaves. Luego haga clic en **[!UICONTROL Add a public key]**.
 
@@ -174,7 +174,7 @@ Para activar [!DNL MBI] para `Cloud Starter` proyectos, cree primero un [!DNL MB
 
 1. Obtenga información para la configuración de cifrado.
 
-   - La interfaz de usuario del proyecto proporciona un `SSH` cadena de acceso. Esta cadena se puede utilizar para recopilar la información necesaria para `Remote Address` y `Username` al configurar su `Encryption` configuración. Utilice el `SSH Access` cadena encontrada al hacer clic en el botón de acceso al sitio en la rama maestra de la interfaz de usuario del proyecto y encontrar la `User Name` y `Remote Address` como se muestra a continuación.
+   - La interfaz de usuario del proyecto proporciona un `SSH` cadena de acceso. Esta cadena se puede utilizar para recopilar la información necesaria para `Remote Address` y `Username` al configurar su `Encryption` configuración. Utilice el `SSH Access` cadena encontrada al hacer clic en el botón de acceso al sitio en la rama principal de la interfaz de usuario del proyecto y encontrar su `User Name` y `Remote Address` como se muestra a continuación.
 
    ![](../assets/create-account-13.png)
 

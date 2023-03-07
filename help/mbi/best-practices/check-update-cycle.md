@@ -2,24 +2,24 @@
 title: Comprobación del estado del ciclo de actualización
 description: Obtenga información sobre cómo comprobar el estado del ciclo de actualización.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-# Actualizar progreso del ciclo
+# Actualización del progreso del ciclo
 
-Cuando inicie sesión en su [!DNL MBI] tablero, hay varias formas de comprobar el estado del último ciclo de actualización. Todo depende del tipo de [permisos de usuario](../administrator/user-management/user-management.md) tú sí.
+Al iniciar sesión en su [!DNL MBI] , existen varias formas de comprobar el estado del último ciclo de actualización. Todo depende del tipo de [permisos de usuario](../administrator/user-management/user-management.md) que usted tiene.
 
 ## ¿Por qué debería comprobar el estado del ciclo de actualización?
 
-La comprobación del ciclo de actualización de estado es útil cuando audita los datos en su [!DNL MBI] cuenta. Si ve [resultados que no satisfacen sus expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por ejemplo, ventas diarias en [!DNL MBI] no coinciden con lo que está viendo en su plataforma de comercio electrónico o en su [[!DNL Google] ingresos por comercio electrónico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) puede comprobar el último punto de datos para ver si el problema se resolverá una vez completada la actualización.
+La comprobación del ciclo de actualización de estado resulta útil cuando se auditan los datos en su [!DNL MBI] cuenta. Si ve [resultados que no cumplen con sus expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por ejemplo, las ventas diarias en [!DNL MBI] no coinciden con lo que se ve en su plataforma de comercio electrónico o en su [[!DNL Google] ingresos por comercio electrónico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) puede comprobar el último punto de datos para ver si el problema se resuelve una vez que se completa una actualización.
 
-## [!UICONTROL Read-Only] y [!UICONTROL Standard]** Usuarios
+## [!UICONTROL Read-Only] y [!UICONTROL Standard]** usuarios
 
-`Read-only` los usuarios pueden iniciar sesión en su panel y ver la fecha en la que se han actualizado los datos pasando el cursor sobre el icono en la parte superior derecha de la página. Esto mostrará cuándo se extrajo el último punto de datos.
+`Read-only` Los usuarios de pueden iniciar sesión en su panel y ver la actualización reciente de los datos pasando el ratón por encima del icono en la parte superior derecha de la página. Esto muestra cuándo se extrajo el último punto de datos.
 
 ![](../../mbi/assets/last-success-data.png)
 
@@ -31,12 +31,12 @@ Para obtener más información, los usuarios administradores pueden hacer clic e
 
 ![](../../mbi/assets/detail-manage-data-integrations.png)
 
-Esta página muestra el estado de la actualización actual y la hora de la última actualización completada.
+Esta página muestra el estado actual de la actualización y la hora de la última actualización completada.
 
-Si hay una actualización en curso, verá un vínculo para solicitar una notificación por correo electrónico una vez que se complete la actualización.
+Si una actualización está en curso, verá un vínculo para solicitar una notificación por correo electrónico una vez que se complete la actualización.
 
-Si una actualización no está en curso, aparece un vínculo para forzar el inicio de una actualización.
+Si una actualización no está en curso, verá un vínculo para forzar el inicio de una actualización.
 
 >[!NOTE]
 >
->Si tiene horas de interrupción (hora en la que no desea [!DNL MBI] para actualizar los datos), forzar una actualización iniciará un ciclo de actualización que no respete las limitaciones de esas horas de interrupción.
+>Si tiene horas de interrupción (tiempo en el que no desea [!DNL MBI] para actualizar los datos), al forzar una actualización se inicia un ciclo de actualización que no respeta las limitaciones de esas horas de interrupción.

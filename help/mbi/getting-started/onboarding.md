@@ -1,34 +1,34 @@
 ---
 title: Incorporación
-description: Obtenga información sobre la incorporación.
+description: Más información sobre la incorporación.
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
 # Incorporación
 
-Las preguntas de incorporación relacionadas con `store` y `database` la configuración de se asegura de que los informes se configuren correctamente. Con estas respuestas, le enviaremos sus informes que se adaptan precisamente a la configuración de su tienda.
+Las preguntas de incorporación relacionadas con `store` y `database` La configuración de garantiza que los informes se configuran correctamente. Con estas respuestas, Adobe entrega informes que se adaptan con precisión a la configuración de su tienda.
 
-## Configuración de almacenamiento
+## Configuración de tienda
 
-- *¿Su tienda acepta el cierre de compra de invitado?* - Seleccionar **yes** si permite a los clientes realizar una compra en su tienda sin tener que registrarse en una cuenta.
+- *¿Acepta tu tienda el pago y envío de invitados?* - Seleccionar **yes** si permite a los clientes realizar una compra en su tienda sin registrarse para obtener una cuenta.
 
-- `Timezone` - Seleccione el `timezone` que desea ver los informes en.
+- `Timezone` - Seleccione el `timezone` que le gustaría ver sus informes en.
 
-- `Currency` - Seleccione el `currency` que su tienda opera en.
+- `Currency` - Seleccione el `currency` en el que opera su tienda.
 
-- `Your week starts on...` : seleccione el día de la semana en el que desea que comience la semana en los informes.
+- `Your week starts on...` : seleccione en los informes el día de la semana que desea que sea el inicio de la semana.
 
-- *¿Qué versión de Commerce utiliza?* - Seleccione el `currency` que su tienda opera en.
+- *¿Qué versión de Commerce utiliza?* - Seleccione el `currency` en el que opera su tienda.
 
-- *¿Tiene su tienda en la Unión Europea?* - Si responde `Yes` a esta pregunta, alojaremos su Data Warehouse y todos sus datos en la Unión Europea, de conformidad con el RGPD.
+- *¿Tiene su tienda su sede en la Unión Europea?* - Si responde `Yes` Ante esta pregunta, Adobe alojará su Data Warehouse y todos sus datos en la Unión Europea, de conformidad con el RGPD.
 
-## Configuración de la base de datos
+## Configuración de base de datos
 
-- `Database name` - ¿Qué es el *nombre de la base de datos MySQL* ¿dónde se encuentran los datos transaccionales de Commerce?
+- `Database name` - ¿Qué es el *nombre de la base de datos MySQL* ¿dónde residen los datos transaccionales de Commerce?
 
-- `Table prefix (optional)` - ¿Las tablas de la base de datos de Commerce están precedidas por cualquier cosa (por ejemplo, `store_`)? Normalmente no es así, pero se puede hacer una personalización.
+- `Table prefix (optional)` - ¿Las tablas contenidas en su base de datos de Commerce van precedidas de algo (por ejemplo, `store_`)? Normalmente no es así, pero se puede llevar a cabo una personalización.

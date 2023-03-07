@@ -1,69 +1,69 @@
 ---
 title: Formato e importación de datos de comercio electrónico
-description: Aprenda los formatos de datos ideales para su uso en la carga de datos de eCommerce.
+description: Conozca los formatos de datos ideales para utilizar para cargar datos de comercio electrónico.
 exl-id: 7b910f78-9a5a-4d5d-a8b7-1b0b76304afe
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # Formato e importación de datos
 
-Si está utilizando una integración que actualmente no admite [!DNL MBI], aún puede usar la variable [Función de carga de archivos](using-file-uploader.md) para introducir los datos en el almacén de datos. En este artículo analizamos los formatos de datos ideales para su uso en la carga de datos de eCommerce.
+Si utiliza una integración que actualmente no admite [!DNL MBI], puede seguir utilizando la variable [Función de carga de archivos](using-file-uploader.md) para introducir los datos en la Data Warehouse. Este artículo describe los formatos de datos ideales para utilizar en la carga de datos de comercio electrónico.
 
 ## `Orders` tabla
 
-La variable `orders` debe contener una fila por cada transacción que la empresa haya realizado. Las posibles columnas incluyen:
+El `orders` debe contener una fila por cada transacción que la empresa haya realizado. Las columnas potenciales incluyen:
 
 | Nombre de columna | Descripción |
 |----|----|
 | `Order ID` | El ID de pedido debe ser único para cada fila de la tabla. Además, esta suele ser la clave principal de la tabla. |
 | `Customer` | El cliente que realizó el pedido. |
-| `Order total` | El total del pedido. Puede tratarse de una columna basada en cálculos, en la que los valores de otras columnas, como el subtotal y el envío, constituyen el total de esta columna. |
-| `Currency` | La moneda en la que se pagó el pedido. Incluya si es relevante. |
-| ` Order status` | El estado del pedido, como `In Progress`, `Refunded`o `Complete`. Es probable que el valor de esta columna cambie (si no se completa). Los datos nuevos y actualizados se pueden importar mediante la variable [Función Anexar datos](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) en el `File Uploads` página. |
-| `Acquisition/marketing channel` | Canal de adquisición o marketing desde el que se derivó al cliente que realizó el pedido. |
-| `Order datetime` | Fecha y hora en que se creó el pedido. |
-| `Order updated at` | Fecha y hora en que se realizó la última modificación del registro de pedido. |
+| `Order total` | El total del pedido. Puede ser una columna basada en el cálculo, donde los valores de otras columnas, como subtotal y envío, constituyen el total de esta columna. |
+| `Currency` | La divisa en la que se pagó el pedido. Incluya si es relevante. |
+| ` Order status` | El estado del pedido, como `In Progress`, `Refunded`, o `Complete`. El valor de esta columna cambia (si no está completo). Los datos nuevos y actualizados se pueden importar mediante el [Función Anexar datos](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) en el `File Uploads` página. |
+| `Acquisition/marketing channel` | El canal de adquisición o marketing desde el que se refirió el cliente que realizó el pedido. |
+| `Order datetime` | La fecha y la hora de creación del pedido. |
+| `Order updated at` | La fecha y la hora en que se realizó la última modificación en el registro de pedido. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## `Order detail/items` tabla {#itemstable}
 
-La variable `order_detail / items` debe contener una fila para cada elemento distinto en cada orden. Las posibles columnas incluyen:
+El `order_detail / items` La tabla debe contener una fila para cada elemento distinto en cada orden. Las columnas potenciales incluyen:
 
 | Nombre de columna | Descripción |
 |----|----|
-| `Order item ID` | El ID del elemento de pedido debe ser único para cada fila de la tabla. Además, normalmente se usa la variable `primary key` para la tabla. |
-| `Order ID` | ID del pedido. |
-| `Product ID` | El ID del producto. |
-| `Product name` | Nombre del producto. |
+| `Order item ID` | El ID de elemento de pedido debe ser único para cada fila de la tabla. Además, esto suele ser el `primary key` para la tabla. |
+| `Order ID` | El ID del pedido. |
+| `Product ID` | ID del producto. |
+| `Product name` | El nombre del producto. |
 | `Product's unit price` | El precio de una sola unidad del producto. |
-| `Quantity` | Cantidad del producto en el pedido. |
+| `Quantity` | La cantidad del producto en el pedido. |
 
 ## `Customers` tabla {#customerstable}
 
-La variable `customers` debe contener una fila por cada cuenta de cliente. Las posibles columnas incluyen:
+El `customers` debe contener una fila por cada cuenta de cliente. Las columnas potenciales incluyen:
 
 | Nombre de columna | Descripción |
 |----|----|
 | `Customer ID` | El ID de cliente debe ser único para cada fila de la tabla. Además, esta suele ser la clave principal de la tabla. |
-| `Customer created at` | La fecha y hora en que se creó la cuenta del cliente. |
-| `Customer modified at` | Fecha y hora en que se modificó la cuenta del cliente por última vez. |
-| `Acquisition/marketing channel source` | Canal de adquisición o marketing desde el que se hizo referencia al cliente. |
+| `Customer created at` | La fecha y hora de creación de la cuenta del cliente. |
+| `Customer modified at` | La fecha y la hora de la última modificación de la cuenta del cliente. |
+| `Acquisition/marketing channel source` | El canal de adquisición o marketing desde el que se refirió al cliente. |
 | `Demographic info` | La información demográfica, como el intervalo de edad y el sexo, se puede utilizar para segmentar los informes. |
-| `Acquisition/marketing channel` | Canal de adquisición o marketing desde el que se derivó al cliente que realizó el pedido. |
+| `Acquisition/marketing channel` | El canal de adquisición o marketing desde el que se refirió el cliente que realizó el pedido. |
 
 ## `Subscription payments` tabla
 
-La variable `subscriptions` debe contener una fila por cada pago de suscripción. Las posibles columnas incluyen:
+El `subscriptions` La tabla debe contener una fila por cada pago de suscripción. Las columnas potenciales incluyen:
 
 | Nombre de columna | Descripción |
 |----|----|
 | `Subscription ID` | El ID de suscripción debe ser único para cada fila de la tabla. Además, esta suele ser la clave principal de la tabla. |
-| `Customer ID` | ID del cliente que realizó el pago. |
+| `Customer ID` | El ID del cliente que realizó el pago. |
 | `Payment amount` | El importe del pago de suscripción. |
-| `Start date` | La fecha de inicio del periodo que cubre el pago. |
-| `End date` | La fecha y hora de finalización del período que cubre el pago. |
+| `Start date` | La fecha y hora de inicio del período que abarca el pago. |
+| `End date` | La fecha y hora de finalización del período que abarca el pago. |

@@ -1,33 +1,33 @@
 ---
-title: Asignar nombres a informes y elementos en MBI
+title: Nombrar informes y elementos en MBI
 description: Conozca las prácticas recomendadas para nombrar informes y elementos en [!DNL MBI].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
 
 # Nombrar informes y elementos
 
-Antes de empezar a construir[!DNL MBI], queremos compartir algunos de nuestros secretos con éxito. Saber cómo crear métricas, filtros, etc. es importante, pero todo eso funcionará para nada si no encuentra lo que necesita o si no hay ambigüedad.
+Antes de empezar a generar en[!DNL MBI]Sin embargo, el Adobe quiere compartir algunos secretos para el éxito. Saber cómo crear métricas, filtros, etc., es importante, pero todo su trabajo puede ser en vano si no encuentra lo que necesita o si hay ambigüedad.
 
 ## ¿Por qué es importante la nomenclatura? {#why}
 
-La forma en que nombra las columnas, métricas e informes calculados dicta la facilidad con la que los distintos usuarios pueden navegar por sus [!DNL MBI] cuenta. Al nombrar estas funciones, nos gusta tener en cuenta las tres C:
+La forma en que asigne un nombre a las columnas, métricas e informes calculados dicta la facilidad con la que los distintos usuarios pueden navegar por el [!DNL MBI] cuenta. Al nombrar estas funciones, tenga en cuenta las tres C:
 
-* **CLARIDAD** - De modo que puede saber de un vistazo qué muestra un informe, qué hace una métrica, etc.
-* **COHERENCIA** - Para que usted (y nuestro equipo de asistencia técnica) puedan encontrar y comprender fácilmente los elementos y los informes de su cuenta.
-* **CREDIBILIDAD** - Con el fin de inspirar y empoderar a otros datos [!DNL MBI] usuarios, debe infundir confianza en cómo comprenden y utilizan los datos.
+* **CLARIDAD** : para poder saber de un vistazo lo que muestra un informe, lo que hace una métrica, etc.
+* **COHERENCIA** - Para que usted (y el equipo de asistencia de Adobe) puedan encontrar y comprender fácilmente los elementos e informes de su cuenta.
+* **CREDIBILIDAD** - Con el fin de inspirar y empoderar a otras fuentes de datos [!DNL MBI] Para los usuarios de, debe infundir confianza en cómo entienden y utilizan los datos.
 
-Siga leyendo para ver nuestros consejos probados y verdaderos de la nomenclatura!
+Sigue leyendo para consejos de nomenclatura probados y verdaderos!
 
 ## Prácticas recomendadas generales {#general}
 
-### Sea significativo {#meaningful}
+### Ser significativo {#meaningful}
 
-Sea específico siempre que sea posible. Por ejemplo, si es el país, ¿sabe si es el envío o el país de facturación? ¿Es la ciudad del usuario, o es la ciudad del acuerdo?
+¡Sea específico siempre que sea posible! Por ejemplo, si es el país, ¿sabe si es el país de envío o de facturación? ¿Es la ciudad del usuario, o es la ciudad del trato?
 
 **Ejemplo incorrecto:**
 Ingresos
@@ -39,66 +39,66 @@ Ingresos (total general base + tarifa) País de envío del usuario
 
 Estos ejemplos son específicos, lo que reduce el potencial de confusión.
 
-### Sea coherente con las mayúsculas {#capitalize}
+### Ser coherente con las mayúsculas {#capitalize}
 
-Somos grandes fans de la primera letra en mayúsculas, el resto de los caracteres en minúsculas a menos que el estilo adecuado de la letra en mayúsculas. Por ejemplo: **Número de pedido del usuario** en lugar de **Número de pedido del usuario.**
+El Adobe recomienda que la primera letra esté en mayúsculas y el resto de los caracteres en minúsculas, a menos que el estilo de sustantivo adecuado sea mayúsculas. Por ejemplo, **Número de pedido del usuario** en lugar de **Número de pedido del usuario.**
 
-Esto es realmente una cuestión de preferencia, pero lo que hay que recordar es ser coherente con lo que elijas.
+Esto es realmente una cuestión de preferencia, pero lo que hay que recordar es ser coherente con lo que usted elija.
 
-### Coherencia de entidades {#entity}
+### Coherencia de entidad {#entity}
 
-Es probable que ya tenga una nomenclatura en su empresa. Mantenga las métricas y dimensiones que haya implementado en consonancia con el uso que se hace en otras bases de datos y herramientas. Por ejemplo:
+Es probable que ya tenga una nomenclatura en vigor en su empresa. Mantenga la coherencia de las métricas y dimensiones que establezca con lo que se utiliza en otras bases de datos y herramientas. Por ejemplo:
 
 * Usuario vs. Cliente vs. Miembro vs. Cuenta
-* Empresa frente a cuenta frente a organización
-* Registro frente a creación
+* Empresa vs. Cuenta vs. Organización
+* Registro y creación
 
 ### Ortografía y gramática {#spelling}
 
-¡Asegúrate de revisar tu ortografía y no te olvides de esos pesados posesivos!
+¡Asegúrate de revisar tu ortografía y no te olvides de esos molestos posesivos!
 
 ## Gráficos {#charts}
 
-Al dar nombre [gráficos](../tutorials/using-visual-report-builder.md), nos parece más útil seguir esta fórmula: **(Perspectiva de datos) + (Métrica) + (Periodo de tiempo) + (Intervalo de tiempo)**
+Al nombrar [tablas](../tutorials/using-visual-report-builder.md)Sin embargo, es más útil seguir esta fórmula: **(Perspectiva de datos) + (Métrica) + (Período de tiempo) + (Intervalo de tiempo)**
 
 **Ejemplo incorrecto:**
 Ingresos
 
-Esto no nos dice nada acerca del informe, lo que es malo.
+Esto no nos dice nada sobre el informe, lo cual es malo.
 
-**Ejemplo correcto:**
-Ingresos acumulados de 30 días a mes
+**Buen ejemplo:**
+Ingresos acumulados pasados 30 días por mes
 
-Esto nos dice **Exactamente** lo que figura en el informe, que es fantástico.
+Esto nos dice **exacto** lo que figura en el informe, que es fantástico.
 
-## Tableros {#dashboards}
+## Paneles {#dashboards}
 
-Los tableros deben nombrarse de manera que representen temáticamente los informes que contienen. Por ejemplo, si el tablero contiene solo información relacionada con los ingresos y los pedidos, considere asignarle un nombre similar a **Nombre del almacén: ingresos y pedidos.**
+Los paneles deben nombrarse de manera que representen temáticamente los informes contenidos en ellos. Por ejemplo, si el tablero contiene únicamente información relacionada con los ingresos y los pedidos, considere ponerle un nombre similar al siguiente **Nombre de la tienda: ingresos y pedidos.**
 
-Por el contrario, si el tablero es un lugar en el que está experimentando con diferentes informes, considere ponerle nombre **Sandbox de su nombre** por lo tanto, sabe que los informes contenidos en son borradores.
+Por el contrario, si el tablero es un lugar en el que está experimentando con distintos informes, considere la posibilidad de ponerle un nombre **Su nombre es Sandbox** por lo tanto, sabe que los informes que contiene son borradores.
 
-## Dimension (columnas calculadas) {#dimensions}
+## Dimension (Columnas calculadas) {#dimensions}
 
-Al dar nombre a las nuevas [dimensiones](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md), nos parece más útil seguir esta fórmula: **(Entidad) + (Nth) + (lapso de tiempo) + (cálculo) + (comentarios)**. Por ejemplo:
+Al nombrar nuevo [dimensiones](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)Sin embargo, es más útil seguir esta fórmula: **(Entidad) + (Nth) + (lapso de tiempo) + (cálculo) + (comentarios)**. Por ejemplo:
 
-Primeros ingresos de 30 días del usuario
+Ingresos de los primeros 30 días del usuario
 * Número de pedido del usuario
-* Número de pedido del usuario (pendiente de auditoría)
+* Número de pedido del usuario (a la espera de auditoría)
 
 ## Conjuntos de filtros {#filterset}
 
-[Conjuntos de filtros](../data-user/reports/ess-manage-data-filters.md) normalmente se denominan de manera que expliquen la información que incluyen o excluyen. Por ejemplo, dar nombre a un conjunto de filtros **Ordenar artículos que contamos** permitirá a cualquier usuario entrar, ver la lógica del conjunto de filtros y comprender qué información de pedidos determina qué se cuenta en la empresa. Recuerde que los conjuntos de filtros se pueden aplicar tanto a columnas calculadas como a métricas, y deben ser fáciles de entender.
+[Conjuntos de filtros](../data-user/reports/ess-manage-data-filters.md) suelen denominarse de manera que explican la información que incluyen o excluyen. Por ejemplo, asignar un nombre a un conjunto de filtros **Ordenar elementos que contamos** permite a cualquier usuario entrar, ver la lógica del conjunto de filtros y comprender qué información de pedidos determina qué se cuenta en la empresa. Recuerde que los conjuntos de filtros se pueden aplicar tanto a columnas calculadas como a métricas y deben ser fáciles de entender.
 
 ## Métricas {#metrics}
 
-[Métricas](../data-user/reports/ess-manage-data-metrics.md) son esencialmente preguntas a las que desea respuestas con regularidad. ¿Cuál fue el número de pedidos en el último mes? ¿Cuál es el valor promedio de duración de nuestros clientes? Por lo general, se recomienda nombrar métricas para reflejar la respuesta que dan a los usuarios. Además, si tiene la misma métrica filtrada para un almacén o departamento específico, debe etiquetarla como tal. Por ejemplo:
+[Métricas](../data-user/reports/ess-manage-data-metrics.md) Son esencialmente preguntas a las que desea respuestas con regularidad. ¿Cuál fue el número de pedidos en el último mes? ¿Cuál es el valor promedio de duración de sus clientes? Se recomienda asignar nombres a las métricas para reflejar la respuesta que dan a los usuarios. Además, si tiene la misma métrica filtrada para un almacén o departamento específico, debe etiquetarlos como tal. Por ejemplo:
 
-Media de LTV de clientes (primeros 30 días) Nombre de la tienda: Ingresos
+Promedio de clientes LTV (primeros 30 días) Nombre de la tienda - Ingresos
 
-Por último, a veces la misma métrica se puede organizar mediante distintas marcas de tiempo, en función de cómo las calculen los usuarios individuales. Si este es el caso, asegúrese de incluir la marca de tiempo en el nombre:
+Por último, la misma métrica a veces se puede organizar por marcas de tiempo diferentes, según la forma en que lo calculen los usuarios individuales. Si es así, asegúrese de incluir la marca de tiempo en el nombre:
 
-Ingresos (enviados\_at) Ingresos (creados\_at)
+Ingresos (enviado\_at) Ingresos (creado\_at)
 
 ## Ajuste {#wrapup}
 
-El establecimiento temprano de convenciones de estilo y nomenclatura le ayudará a configurar su [!DNL MBI] cuenta. Recuerde los tres C: claridad, coherencia y credibilidad.
+El establecimiento anticipado de convenciones de estilo y nomenclatura le ayuda a configurar para que tenga éxito en su [!DNL MBI] cuenta. Recuerde las tres C: claridad, coherencia y credibilidad.

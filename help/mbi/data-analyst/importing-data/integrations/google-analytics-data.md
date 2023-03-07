@@ -1,25 +1,25 @@
 ---
 title: Datos de Google Analytics esperados
-description: Aprenda a interactuar con las métricas de Google Analytics.
+description: Aprenda a interactuar con las métricas de sus Google Analytics.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
-# Esperado [!DNL Google Analytics] data
+# Previsto [!DNL Google Analytics] datos
 
-Una vez que se haya conectado un [!DNL Google Analytics] integración, puede interactuar con su [!DNL Google Analytics] métricas *inmediatamente en el`Visual Report Builder`*. Al especificar la variable `Visual Report Builder`, si hace clic en **[!UICONTROL Add a Metric]**, una serie de métricas de su [!DNL Google Analytics] los perfiles aparecerán en un menú desplegable inmediatamente debajo de las métricas del almacén de datos.
+Después de conectar un [!DNL Google Analytics] integración, puede interactuar con su [!DNL Google Analytics] métricas *inmediatamente en el`Visual Report Builder`*. Al introducir la variable `Visual Report Builder`, si hace clic en **[!UICONTROL Add a Metric]**, una serie de métricas de su [!DNL Google Analytics] El perfil de aparece en un menú desplegable inmediatamente debajo de las métricas de la Data Warehouse.
 
-La variable [!DNL Google Analytics] la integración es *live* — esto significa que la variable `Report Builder` solicita datos de [!DNL Google Analytics] *inmediatamente* cuando agregue una métrica al informe. También significa que las métricas a las que puede acceder están definidas exactamente tal como están en [!DNL Google Analytics]y que estos valores no *warehoused* en su [!DNL MBI] cuenta: solo se muestra visualmente en los informes.
+El [!DNL Google Analytics] la integración es *live* — esto significa que la variable `Report Builder` solicita datos de [!DNL Google Analytics] *inmediatamente* al agregar una métrica al informe. También significa que las métricas a las que puede acceder se definen exactamente como están en [!DNL Google Analytics]y que estos valores no son *almacenado* en su [!DNL MBI] cuenta: sólo se muestra visualmente en los informes.
 
 [!DNL Google Analytics] integraciones en [!DNL MBI] use el [!DNL Google Analytics] [API de informes principales](https://developers.google.com/analytics/devguides/reporting/core/v3/)y admiten las siguientes métricas y dimensiones.
 
 >[!NOTE]
 >
->Para evitar resultados inesperados o sin sentido, confirme que las dimensiones que utilice son compatibles con las métricas que utilice en la `Report Builder`. Puede marcar [here](https://developers.google.com/analytics/devguides/reporting/core/dimsmets).
+>Para evitar resultados inesperados o sin sentido, confirme que las dimensiones que utilice son compatibles con una o más métricas que utilice en `Report Builder`. Puede comprobarlo [aquí](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Métricas compatibles
 
@@ -73,7 +73,7 @@ La variable [!DNL Google Analytics] la integración es *live* — esto significa
 | `All Goals Conversion Rate` | `ga:goalConversionRateAll` |
 | `Total Goal Value` | `ga:goal1ValueAll` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Dimension admitidos
 
@@ -142,4 +142,4 @@ La variable [!DNL Google Analytics] la integración es *live* — esto significa
 | `Custom (User Defined) Value` | `ga:userDefinedValue` | `Yes` |
 | `Year` | `ga:year` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
