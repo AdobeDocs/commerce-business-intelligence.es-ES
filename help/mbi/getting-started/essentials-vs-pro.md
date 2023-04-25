@@ -2,9 +2,10 @@
 title: Esenciales de MBI frente a Pro
 description: Aprenda cómo difiere MBI Essentials del MBI Pro.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: dcd02693b3ca060ecdc47cbee189428ce157dd58
+redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html?lang=en
+source-git-commit: 807ad89d38ab6c6dfb05afb3b1b9c09947633efa
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '83'
 ht-degree: 4%
 
 ---
@@ -34,7 +35,7 @@ La siguiente tabla describe lo que se incluye con Essentials y Pro.
 | `Access to CS, AM, or Analysts` | No | Sí |
 | `Professional Services` | Disponible | Disponible |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 >[!NOTE]
 >

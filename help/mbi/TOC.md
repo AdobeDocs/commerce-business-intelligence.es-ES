@@ -2,9 +2,9 @@
 title: MBI
 description: Aprenda a utilizar [!DNL MBI] funciones disponibles para Adobe Commerce.
 breadcrumb-title: Guía del usuario de MBI
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 807ad89d38ab6c6dfb05afb3b1b9c09947633efa
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -16,10 +16,8 @@ ht-degree: 0%
 - [[!DNL MBI] Introducción](getting-started/getting-started.md)
 - Introducción {#start}
    - [Incorporación](getting-started/onboarding.md)
-   - [Activar para [!DNL On-Premise]](getting-started/onpremise-activation.md)
-   - [Activar para [!DNL Cloud Starter]](getting-started/cloud-activation.md)
+   - [Active su [!DNL MBI] Cuenta](getting-started/onpremise-activation.md)
    - [Inicie sesión en su [!DNL MBI] Cuenta](getting-started/sign-in.md)
-   - [Esenciales de MBI vs. MBI Pro](getting-started/essentials-vs-pro.md)
 - Administrador {#administrator}
    - Administración de cuentas {#acct-mgmt}
       - [Ventajas de [!DNL New Architecture]](../mbi/administrator/account-management/new-architecture.md)
