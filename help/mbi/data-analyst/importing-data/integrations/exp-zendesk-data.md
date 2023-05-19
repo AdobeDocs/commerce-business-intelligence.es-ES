@@ -1,19 +1,19 @@
 ---
 title: Datos esperados de Zendesk
-description: Conozca las tablas de datos principales que puede importar de Zendesk a MBI, incluidos los vínculos a documentación adicional sobre los datos de Zendesk.
+description: Conozca las tablas de datos principales que puede importar de Zendesk a Commerce Intelligence, incluidos los vínculos a documentación adicional sobre Zendesk.
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
-# Datos esperados de Zendesk
+# Previsto [!DNL Zendesk] datos
 
 Después [ha conectado su [!DNL Zendesk] account](../integrations/zendesk.md), puede utilizar el [Administrador de Datas Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para realizar fácilmente un seguimiento de los campos de datos relevantes para su análisis.
 
-Este artículo explora las tablas de datos principales desde las que puede importar [!DNL Zendesk] en [!DNL MBI], incluidos vínculos a documentación adicional sobre [!DNL Zendesk] datos.
+En este tema se exploran las tablas de datos principales desde las que se puede importar [!DNL Zendesk] en [!DNL Adobe Commerce Intelligence], incluidos vínculos a documentación adicional sobre [!DNL Zendesk] datos.
 
 | Nombre de tabla | Descripción |
 |-----|-----|
@@ -33,4 +33,4 @@ Este artículo explora las tablas de datos principales desde las que puede impor
 ## Relacionado
 
 * [Conectando Zendesk](../integrations/zendesk.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -1,25 +1,25 @@
 ---
-title: Desorganización de su [!DNL MBI] Cuenta
-description: Aprenda a limpiar su [!DNL MBI] cuenta.
+title: Desorganización de su [!DNL Commerce Intelligence] Cuenta
+description: Aprenda a limpiar su [!DNL Commerce Intelligence] cuenta.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# Limpie su [!DNL MBI] Cuenta
+# Limpie su [!DNL Adobe Commerce Intelligence] Cuenta
 
-Si ha estado con [!DNL MBI] durante seis meses o seis años, mantener una cuenta ordenada es fundamental para que su organización pueda sacar el máximo partido a platform. Con el tiempo, es natural que haya usuarios, paneles, informes, métricas y columnas que ya no sean necesarios. Tal vez creó un informe para un solo uso y se olvidó de él, o bien un usuario que abandonó su compañía nunca tuvo su cuenta desactivada.
+Si ha estado con [!DNL Commerce Intelligence] durante seis meses o seis años, mantener una cuenta ordenada es fundamental para que su organización pueda sacar el máximo partido a platform. Con el tiempo, es natural que haya usuarios, paneles, informes, métricas y columnas que ya no sean necesarios. Tal vez creó un informe para un solo uso y se olvidó de él, o bien un usuario que abandonó su compañía nunca tuvo su cuenta desactivada.
 
-Con [estandarizado, nombres claros para todos los elementos](../best-practices/naming-elements.md)) de su [!DNL MBI] En cuenta de, los pasos de auditoría de cuentas que se indican a continuación le ayudan a reducir el desorden y los análisis innecesarios para los usuarios. Un beneficio adicional incluye [ciclos de actualización potencialmente más rápidos](../best-practices/reduce-update-cycle-time.md).
+Con [estandarizado, nombres claros para todos los elementos](../best-practices/naming-elements.md)) de su [!DNL Commerce Intelligence] En cuenta de, los pasos de auditoría de cuentas que se indican a continuación le ayudan a reducir el desorden y los análisis innecesarios para los usuarios. Un beneficio adicional incluye [ciclos de actualización potencialmente más rápidos](../best-practices/reduce-update-cycle-time.md).
 
 ## Paso 1: Identificar A Los Usuarios No Activos
 
-El primer paso para limpiar su cuenta es desactivar las cuentas de los usuarios no activos, como las personas que han abandonado la compañía o que ya no utilizan [!DNL MBI] en sus funciones actuales.
+El primer paso para limpiar su cuenta es desactivar las cuentas de los usuarios no activos, como las personas que han abandonado la compañía o que ya no utilizan [!DNL Commerce Intelligence] en sus funciones actuales.
 
-Para ello, haga clic en el nombre de su empresa en la esquina superior derecha de la barra de navegación superior y seleccione **[!UICONTROL Manage Users]**. A continuación, seleccione el usuario que desea desactivar y haga clic en **[!UICONTROL Deactivate User]**.
+Para ello, haga clic en el nombre de su empresa en la barra de navegación superior derecha y seleccione **[!UICONTROL Manage Users]**. A continuación, seleccione el usuario que desea desactivar y haga clic en **[!UICONTROL Deactivate User]**.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Para ello, haga clic en el nombre de su empresa en la esquina superior derecha d
 
 >[!WARNING]
 >
->Al desactivar un usuario, se eliminan los gráficos, tableros y otros recursos creados por ese usuario. Si desea conservar estos recursos, póngase en contacto con el [!DNL MBI] [apoyo](../guide-overview.md) antes de desactivar el usuario. La asistencia técnica puede ayudarle a transferir estos recursos a otro usuario.
+>Al desactivar un usuario, se eliminan los gráficos, tableros y otros recursos creados por ese usuario. Si desea conservar estos recursos, póngase en contacto con el [!DNL Commerce Intelligence] [apoyo](../guide-overview.md#Submitting-a-Support-Ticket) antes de desactivar el usuario. La asistencia técnica puede ayudarle a transferir estos recursos a otro usuario.
 
 ### Reactivar un usuario
 
@@ -89,7 +89,7 @@ Después de haber limpiado la lista de usuarios, los paneles y los informes, pue
 1. Para generar una lista de informes dependientes para una métrica, vaya a **[!DNL Manage Data]**, luego seleccione Click **[!UICONTROL Metrics]**.
 1. Clic **[!UICONTROL Edit]** junto a una métrica.
 1. En la parte inferior de la página, verá una sección llamada **[!UICONTROL Dependent Charts]**. Haga clic en el vínculo para generar una lista de informes dependientes para esta métrica.
-1. Una vez que el sistema completa la comprobación, [!DNL MBI] muestra una lista de tableros, informes y usuarios que utilizan esta métrica.
+1. Una vez que el sistema completa la comprobación, [!DNL Commerce Intelligence] muestra una lista de tableros, informes y usuarios que utilizan esta métrica.
 
 ![](../../mbi/assets/report_dependecies.png)
 
@@ -99,7 +99,7 @@ Si decide que la métrica ya no es necesaria, vuelva al **[!UICONTROL Metrics]**
 
 El último paso es evaluar las columnas que se están sincronizando en la Data Warehouse. La dessincronización de columnas no solo puede desorganizar la cuenta, sino que también puede reducir el tiempo de actualización.
 
-Si desea continuar con esto, póngase en contacto con [!DNL MBI] [Asistencia](../guide-overview.md). El equipo de asistencia puede crear un informe que incluya todas las columnas que no se utilicen en ningún tablero para ningún usuario y que no se utilicen en resúmenes de correo electrónico, excepto los informes SQL. A continuación, puede utilizar este informe como guía para seleccionar columnas que desea desincronizar mediante el Administrador de Datas Warehouse.
+Si desea continuar con esto, póngase en contacto con [!DNL Commerce Intelligence] [Asistencia](../guide-overview.md#Submitting-a-Support-Ticket). El equipo de asistencia puede crear un informe que incluya todas las columnas que no se utilicen en ningún tablero para ningún usuario y que no se utilicen en resúmenes de correo electrónico, excepto los informes SQL. A continuación, puede utilizar este informe como guía para seleccionar columnas que desea desincronizar mediante el Administrador de Datas Warehouse.
 
 >[!NOTE]
 >
@@ -122,4 +122,4 @@ A continuación se muestra un vistazo a todo el proceso:
 
 ## Ajuste
 
-¡Eso es todo! Su [!DNL MBI] La cuenta de ahora debería ser más ordenada y fácil de navegar para usted y su equipo.
+Su [!DNL Commerce Intelligence] La cuenta de ahora debería ser más ordenada y fácil de navegar para usted y su equipo.

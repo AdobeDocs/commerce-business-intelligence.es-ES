@@ -2,9 +2,9 @@
 title: Identificación De Los Canales Y Las Fuentes De Marketing Más Valiosas
 description: Obtenga información sobre algunos informes que puede utilizar para descubrir los canales de marketing más valiosos.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Investigaste tu audiencia, creaste tu campaña, invertiste en algunos canales de marketing. Ahora que ha pasado algún tiempo, ¿cómo van esos canales? ¿Qué canal ha atraído a la mayoría de los usuarios nuevos? ¿Qué fuente ha contribuido más a sus ingresos totales?
 
-Con [!DNL MBI], puede segmentar fácilmente sus ingresos y usuarios por fuente de referencia, independientemente de si corresponde a [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) o campos de datos personalizados. Esta segmentación le permite encontrar los canales con mejor rendimiento e invertir mejor su presupuesto de marketing.
+Con [!DNL Adobe Commerce Intelligence], puede segmentar fácilmente sus ingresos y usuarios por fuente de referencia, independientemente de si corresponde a [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) o campos de datos personalizados. Esta segmentación le permite encontrar los canales con mejor rendimiento e invertir mejor su presupuesto de marketing.
 
-Este artículo explora algunos informes que puede utilizar para descubrir los canales de marketing más valiosos:
+En este tema se exploran algunos informes que puede utilizar para descubrir los canales de marketing más valiosos:
 
 * [Nuevos usuarios por fuentes](#newusersbysource)
 * [Ingresos promedio por duración por origen de usuario](#avglifetimerev)
@@ -25,7 +25,7 @@ Este artículo explora algunos informes que puede utilizar para descubrir los ca
 
 ## Requisitos previos {#prereqs}
 
-Para generar los análisis de este artículo, necesita acceder a los datos de adquisición de marketing/fuente de referencia. Si aún no lo está rastreando, debe traer [solicitar datos de origen de referencia de [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) en [!DNL MBI] antes de continuar. Además, añadir información del dispositivo del usuario a los análisis le permite ver qué tecnología utilizan sus referencias.
+Para generar los análisis de este tema, necesita acceder a los datos de adquisición de marketing/fuente de referencia. Si aún no lo está rastreando, debe traer [solicitar datos de origen de referencia de [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) en [!DNL Adobe Commerce Intelligence] antes de continuar. Además, al agregar información del dispositivo del usuario a los análisis, puede ver qué tecnología utilizan las referencias.
 
 ## Nuevos usuarios por origen {#newusersbysource}
 
@@ -111,7 +111,7 @@ Este es un tutorial visual:
 
 ## Ajuste {#wrapup}
 
-En este artículo se han mencionado algunos análisis que puede utilizar para analizar el valor de sus canales de adquisición y marketing, pero esto es solo la punta del iceberg.
+En este tema se han mencionado algunos análisis que puede utilizar para analizar el valor de los canales de adquisición y marketing, pero esto es solo la punta del iceberg.
 
 ## Relacionado {#related}
 

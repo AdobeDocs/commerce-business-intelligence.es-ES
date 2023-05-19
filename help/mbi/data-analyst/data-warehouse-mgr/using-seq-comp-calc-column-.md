@@ -2,16 +2,16 @@
 title: Columna calculada de comparación secuencial
 description: Conozca el propósito y los usos de la columna calculada Comparación secuencial.
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 1%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
 # Columna calculada de comparación secuencial
 
-En este tema se describen el propósito y los usos del `Sequential Comparison` columna calculada disponible en la **[!DNL Manage Data > Data Warehouse]** página. A continuación se explica lo que hace, seguido de un ejemplo, y la mecánica de crearlo.
+En este tema se describen el propósito y los usos del `Sequential Comparison` columna calculada disponible en la **[!DNL Manage Data > Data Warehouse]** página. A continuación se explica lo que hace, seguido de un ejemplo y la mecánica de crearlo.
 
 **Explicación**
 
@@ -39,17 +39,25 @@ Para este tipo de columna calculada, la fila correspondiente al primer evento de
 
 Para crear un **Número de evento** columna:
 
-1. Vaya a **[!DNL Manage Data** > **Data Warehouse]** página.
+1. Vaya a **[!DNL Manage Data > Data Warehouse]** página.
+
 1. Desplácese hasta la tabla en la que desee crear esta columna.
-1. Clic **[!UICONTROL Create New Column]** en la parte superior derecha de la pantalla.
+
+1. Clic **[!UICONTROL Create New Column]** en la esquina superior derecha.
+
 1. Seleccionar `Same Table` como el `Definition Type` (si las columnas que desea comparar no están en la misma tabla, es posible que tenga que reubicarlas).
+
 1. Seleccionar `SEQUENTIAL_COMPARISON` como el `Column Definition Equation`.
+
 1. Elija las entradas, tal como se explica más arriba:
    - `Event Owner`
    - `Event Date`
    - `Value to Compare`
-1. También se pueden añadir filtros para excluir filas de la consideración. Las filas excluidas tienen un valor NULL para esta columna.
+
+1. También se pueden añadir filtros para excluir filas de la consideración. Las filas excluidas tienen un `NULL` valor de esta columna.
+
 1. Proporcione un nombre a la columna en la parte superior de la página y haga clic en **[!UICONTROL Save]**.
+
 1. La columna está disponible para usar *inmediatamente*.
 
 ![SEC](../../assets/SEC_new.png)

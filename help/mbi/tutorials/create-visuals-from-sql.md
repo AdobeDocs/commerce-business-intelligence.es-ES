@@ -2,18 +2,18 @@
 title: Creación de visualizaciones a partir de consultas SQL
 description: Aprenda a familiarizarse con la terminología utilizada en el Report Builder SQL y le proporcione una base sólida para crear visualizaciones SQL.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
 
 # Creación de visualizaciones a partir de consultas SQL
 
-El objetivo de este tutorial es que se familiarice con la terminología utilizada en el `SQL Report Builder` y le proporcionará una base sólida para crear `SQL visualizations`.
+El objetivo de este tutorial es que se familiarice con la terminología utilizada en el [!DNL SQL Report Builder] y le proporcionará una base sólida para crear `SQL visualizations`.
 
-El [`SQL Report Builder`](../data-analyst/dev-reports/sql-rpt-bldr.md) es un report builder con opciones: puede ejecutar una consulta con el único propósito de recuperar una tabla de datos o puede convertir esos resultados en un informe. Este tutorial explica cómo crear una visualización a partir de una consulta SQL.
+El [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) es un report builder con opciones: puede ejecutar una consulta con el único propósito de recuperar una tabla de datos o puede convertir esos resultados en un informe. Este tutorial explica cómo crear una visualización a partir de una consulta SQL.
 
 ## Terminología
 
@@ -33,13 +33,13 @@ Antes de comenzar este tutorial, consulte la siguiente terminología utilizada e
 
 Tenga en cuenta lo siguiente:
 
-- El `SQL Report Builder` utiliza [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
+- El [!DNL SQL Report Builder] utiliza [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
 
 - Si está creando un informe con una serie temporal, asegúrese de lo siguiente `ORDER BY` las columnas de marca de tiempo. Esto garantiza que las marcas de tiempo se trazen en el orden correcto en el informe.
 
 - El `EXTRACT` es bueno de usar para analizar el día, la semana, el mes o el año de la marca de tiempo. Esto resulta útil cuando la variable `time interval` que desee utilizar en el informe es `daily`, `weekly`, `monthly`, o `yearly`.
 
-Para empezar, abra el `SQL Report Builder` haciendo clic en **[!UICONTROL Report Builder** > **SQL Report Builder]**.
+Para empezar, abra el [!DNL SQL Report Builder] haciendo clic en **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
 Por ejemplo, considere esta consulta que devuelve el número total mensual de artículos vendidos para cada producto:
 
@@ -94,6 +94,6 @@ Si desea volver a utilizar este informe, asígnele un nombre y haga clic en **[!
 
 En la lista desplegable, seleccione `Chart` como el `Type` y, a continuación, un tablero en el que guardar el informe.
 
-## ¡Felicitaciones! Ya has terminado.
+## Ajuste
 
 ¿Quieres ir un paso más allá? Consulte la [prácticas recomendadas de optimización de consultas](../best-practices/optimizing-your-sql-queries.md).

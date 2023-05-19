@@ -1,19 +1,19 @@
 ---
 title: Tablas de comercio comunes
-description: Obtenga información acerca de algunas de las tablas más comunes que [!DNL MBI] Los clientes de utilizan.
+description: Obtenga información acerca de algunas de las tablas más comunes que [!DNL Commerce Intelligence] Los clientes de utilizan.
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
 # Tablas de comercio comunes
 
-La primera vez que conecte una instancia de Commerce a [[!DNL MBI]](../importing-data/integrations/magento.md), [!DNL MBI] replica automáticamente los datos de algunas de las tablas de comercio (normalmente entre 4 y 6 tablas) para configurar el conjunto inicial de paneles e informes. Aunque esto ofrece un punto de partida bueno, la mayoría de las instancias de tienda generan decenas, si no centenares, de tablas adicionales que pueden proporcionar una perspectiva crítica del rendimiento de su negocio.
+La primera vez que conecte un [!DNL Adobe Commerce] instancia a [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md), [!DNL Commerce Intelligence] replica automáticamente los datos de algunas de las tablas de comercio (normalmente entre 4 y 6 tablas) para configurar el conjunto inicial de paneles e informes. Aunque esto ofrece un punto de partida bueno, la mayoría de las instancias de tienda generan decenas, si no centenares, de tablas adicionales que pueden proporcionar una perspectiva crítica del rendimiento de su negocio.
 
-A continuación se muestra una lista de algunas de las tablas más comunes que [!DNL MBI] Los clientes de utilizan. Después de usted [conectar su instancia de Commerce a MBI](../../data-analyst/importing-data/integrations/magento.md), puede utilizar el [Administrador de Datas Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) para realizar un seguimiento de los campos de datos relevantes.
+A continuación se muestra una lista de algunas de las tablas más comunes que [!DNL Commerce Intelligence] Los clientes de utilizan. Después de usted [conectar la instancia de Commerce a Commerce Intelligence](../../data-analyst/importing-data/integrations/magento.md), puede utilizar el [Administrador de Datas Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) para realizar un seguimiento de los campos de datos relevantes.
 
 | Nombre de tabla | Descripción |
 |---|---|

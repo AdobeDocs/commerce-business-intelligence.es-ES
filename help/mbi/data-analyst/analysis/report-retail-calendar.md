@@ -1,27 +1,27 @@
 ---
 title: Creación de informes en un calendario comercial
-description: Aprenda a configurar la estructura para utilizar un calendario de ventas minoristas 4-5-4 dentro de su [!DNL MBI] cuenta.
+description: Aprenda a configurar la estructura para utilizar un calendario de ventas minoristas 4-5-4 dentro de su [!DNL Commerce Intelligence] cuenta.
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
 # Creación de informes en un calendario comercial
 
-Este artículo muestra cómo configurar la estructura para utilizar una [Calendario comercial 4-5-4](https://nrf.com/resources/4-5-4-calendar) dentro de su [!DNL MBI] cuenta. El Report Builder visual proporciona intervalos de tiempo, intervalos y configuraciones independientes increíblemente flexibles. Sin embargo, todos estos ajustes funcionan con el calendario mensual tradicional establecido.
+En este tema se muestra cómo configurar la estructura para utilizar un [Calendario comercial 4-5-4](https://nrf.com/resources/4-5-4-calendar) dentro de su [!DNL Adobe Commerce Intelligence] cuenta. El Report Builder visual proporciona intervalos de tiempo, intervalos y configuraciones independientes increíblemente flexibles. Sin embargo, todos estos ajustes funcionan con el calendario mensual tradicional establecido.
 
 Dado que muchos clientes modifican su calendario para utilizar fechas de venta minorista o contables, los pasos siguientes ilustran cómo trabajar con los datos y crear informes utilizando fechas de venta minorista. Aunque las siguientes instrucciones hacen referencia al calendario comercial 4-5-4, puede modificarlas para cualquier calendario específico que utilice su equipo, ya sea financiero o simplemente personalizado.
 
-Antes de empezar, debe familiarizarse con [el Cargador de archivos](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) y asegúrese de que ha alargado el `.csv` archivo. Esto garantiza que las fechas cubran todos los datos históricos y las inserten en el futuro.
+Antes de empezar, debe revisar [el Cargador de archivos](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) y asegúrese de que ha alargado el `.csv` archivo. Esto garantiza que las fechas cubran todos los datos históricos y las inserten en el futuro.
 
 Este análisis contiene [columnas calculadas avanzadas](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Primeros pasos
 
-Puede [descargar](../../assets/454-calendar.csv) a `.csv` versión del calendario comercial 4-5-4 para los años de venta al por menor de 2014 a 2017. Es posible que tenga que ajustar este archivo según su calendario comercial interno y ampliar el intervalo de fechas para que sea compatible con el lapso de tiempo histórico y actual. Después de descargar el archivo, use el Cargador de archivos para crear una tabla de Calendario comercial en su [!DNL MBI] Data Warehouse. Si utiliza una versión sin modificar del calendario comercial 4-5-4, asegúrese de que la estructura y los tipos de datos de los campos de esta tabla coinciden con los siguientes:
+Puede [descargar](../../assets/454-calendar.csv) a `.csv` versión del calendario comercial 4-5-4 para los años de venta al por menor de 2014 a 2017. Es posible que tenga que ajustar este archivo según su calendario comercial interno y ampliar el intervalo de fechas para que sea compatible con el lapso de tiempo histórico y actual. Después de descargar el archivo, use el Cargador de archivos para crear una tabla de Calendario comercial en su [!DNL Commerce Intelligence] Data Warehouse. Si utiliza una versión sin modificar del calendario comercial 4-5-4, asegúrese de que la estructura y los tipos de datos de los campos de esta tabla coinciden con los siguientes:
 
 | Nombre de columna | Tipo de datos de columna | Clave principal |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ Puede [descargar](../../assets/454-calendar.csv) a `.csv` versión del calendari
 
          >[!NOTE]
          >
-         >El `now()` La función anterior es específica de PostgreSQL. Aunque la mayoría [!DNL MBI] Los almacenes de datos de están alojados en PostgreSQL, algunos pueden estar alojados en Redshift. Si el cálculo anterior devuelve un error, es posible que tenga que utilizar la función Redshift `getdate()` en lugar de `now()`.
+         >El `now()` La función anterior es específica de PostgreSQL. Aunque la mayoría [!DNL Commerce Intelligence] Los almacenes de datos de están alojados en PostgreSQL, algunos pueden estar alojados en Redshift. Si el cálculo anterior devuelve un error, es posible que tenga que utilizar la función Redshift `getdate()` en lugar de `now()`.
    * **Año minorista actual** (Debe ser creado por el analista de asistencia)
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
@@ -201,6 +201,6 @@ Nota: No se necesitan métricas nuevas para este análisis. Sin embargo, asegúr
 
 Lo anterior describe cómo configurar un calendario comercial para que sea compatible con cualquier métrica creada en su `sales\_order` tabla (como `Revenue` o `Orders`). También puede ampliarlo para que admita el calendario comercial para las métricas creadas en cualquier tabla. El único requisito es que esta tabla tenga un campo de fecha y hora válido que se pueda usar para unirse a la tabla Calendario comercial.
 
-Por ejemplo, para ver las métricas de nivel de cliente en un calendario de venta minorista 4-5-4, cree un `Same Table` cálculo en la `customer\_entity` tabla, similar a `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` descrito anteriormente. Puede utilizar esta columna para reproducir el `One to Many` Cálculos JOINED\_COLUMN (como `Created_at (retail year)` y `Include in previous retail year? (Yes/No)` al unirse a `customer\_entity` a la tabla `Retail Calendar` tabla.
+Por ejemplo, para ver las métricas de nivel de cliente en un calendario de venta minorista 4-5-4, cree un `Same Table` cálculo en la `customer\_entity` tabla, similar a `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` descrito anteriormente. Puede utilizar esta columna para reproducir el `One to Many` Cálculos JOINED\_COLUMN (como `Created_at (retail year)`) y `Include in previous retail year? (Yes/No)` al unirse a `customer\_entity` a la tabla `Retail Calendar` tabla.
 
 No se olvide de [añadir todas las columnas nuevas como dimensiones a las métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de crear nuevos informes.

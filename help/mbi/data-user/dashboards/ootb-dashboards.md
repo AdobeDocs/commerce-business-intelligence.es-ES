@@ -2,22 +2,22 @@
 title: Paneles incluidos
 description: Aprenda a comprobar el estado de las métricas esenciales, como los ingresos de por vida del usuario, la cantidad de compras repetidas y mucho más, lo que crea una base sólida para la exploración futura.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
 # Paneles incluidos
 
-Adobe ofrece comercio electrónico y `SaaS` Paquetes de inicio. Estos paquetes, creados por analistas de Adobe, contienen un conjunto personalizado de paneles e informes para su conjunto de datos. Los análisis contenidos en estos paquetes le permiten comprobar el estado de las métricas esenciales, como los ingresos de por vida del usuario, el número de compras repetidas y más, lo que crea una base sólida para la exploración futura.
+[!DNL Adobe] ofertas `eCommerce` y `SaaS` Paquetes de inicio. Estos paquetes, creados por analistas de Adobe, contienen un conjunto personalizado de paneles e informes para su conjunto de datos. Los análisis contenidos en estos paquetes le permiten comprobar el estado de las métricas esenciales, como los ingresos de por vida del usuario, el número de compras repetidas y más, lo que crea una base sólida para la exploración futura.
 
 >[!NOTE]
 >
 >La disponibilidad de algunos paneles depende del conjunto de datos.
 
-Si tiene alguna pregunta o está interesado en agregar un paquete a su cuenta, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obtener ayuda.
+Si tiene alguna pregunta o está interesado en agregar un paquete a su cuenta, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obtener ayuda.
 
 ## Información general ejecutiva
 

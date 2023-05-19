@@ -2,9 +2,9 @@
 title: Seguimiento de UTM en Google Analytics
 description: Conozca las prácticas recomendadas para el seguimiento de UTM (etiquetado) en Google Analytics.
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---

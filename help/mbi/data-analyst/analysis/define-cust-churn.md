@@ -2,16 +2,16 @@
 title: Definir cancelación de cliente
 description: Aprenda a configurar un tablero que le ayude a definir la pérdida para sus clientes transaccionales.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # Cancelación de cliente transaccional
 
-Este artículo muestra cómo configurar un panel que le ayuda a definir la pérdida para sus clientes transaccionales.
+En este tema se muestra cómo configurar un tablero que le ayuda a definir la pérdida para sus clientes transaccionales.
 
 ![](../../assets/churn-deashboard.png)
 
@@ -136,4 +136,4 @@ Una vez que haya creado su panel, la pregunta más común es: ¿Cómo utilizo es
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar a la imagen de la parte superior de la página
 
-Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -1,39 +1,37 @@
 ---
 title: Conectar Salesforce
-description: Descubra cómo los datos de Salesforce permiten una amplia gama de análisis, desde la puntuación y la optimización de posibles clientes hasta la consecución de sus objetivos para oportunidades convertidas.
+description: Descubra cómo los datos de Salesforce permiten una amplia gama de análisis, desde puntuar y optimizar posibles clientes hasta alcanzar sus objetivos en busca de oportunidades convertidas.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
 
-# Conectar Salesforce
-
->[!NOTE]
->
->Requiere [Permisos de administrador](../../../administrator/user-management/user-management.md).
+# Connect [!DNL Salesforce]
 
 ![](../../../assets/Salesforce_Logo.png)
 
-Conexión de [!DNL Salesforce] Los datos permiten realizar una amplia gama de análisis, desde puntuación y optimización de posibles clientes hasta alcanzar sus objetivos para oportunidades convertidas.
+>[!NOTE]
+>
+>Requiere [Permisos de administración](../../../administrator/user-management/user-management.md).
+
+Conexión de su [!DNL Salesforce] los datos permiten una amplia gama de análisis, desde puntuar y optimizar posibles clientes hasta alcanzar sus objetivos en busca de oportunidades convertidas.
 
 >[!IMPORTANT]
 >
->La variable [!DNL Salesforce] El conector requiere que [[!DNL Salesforce] Acceso a la API](../integrations/salesforce.md) como parte de su [!DNL Salesforce] suscripción. Compruebe que esté habilitado antes de comenzar.
+>El [!DNL Salesforce] El conector requiere que tenga [[!DNL Salesforce] Acceso a API](../integrations/salesforce.md) como parte de su [!DNL Salesforce] suscripción. Compruebe que está habilitado antes de empezar.
 
-1. Para agregar la variable [!DNL Salesforce] integración con su cuenta, vaya a la `Connections` página debajo de **[!UICONTROL Manage Data** > **Connections]**.
-1. Haga clic en **[!UICONTROL Add a Data Source]**, situado en la parte derecha de la pantalla, encima de la tabla Fuentes de datos.
-1. Haga clic en el [!DNL Salesforce] icono.
-1. Haga clic en **[!UICONTROL Connect to Salesforce]**.
-1. Escriba la [!DNL Salesforce] credenciales y haga clic en **[!UICONTROL Login to Salesforce]**.
-
-¡Eso es! Una vez validadas las credenciales, [!DNL Salesforce] se completará la configuración.
+1. Para añadir el [!DNL Salesforce] Integración de con su cuenta de, vaya a `Connections` página debajo de **[!UICONTROL Manage Data** > **Connections]**.
+1. Clic **[!UICONTROL Add a Data Source]**, situado en la parte derecha de la pantalla sobre la tabla de fuentes de datos.
+1. Haga clic en [!DNL Salesforce] icono.
+1. Clic **[!UICONTROL Connect to Salesforce]**.
+1. Introduzca su [!DNL Salesforce] y haga clic en **[!UICONTROL Login to Salesforce]**.
 
 ## Relacionado:
 
-Si eres un poco más experto en tecnología, [[!DNL Salesforce] Documentación de API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) puede ser un recurso útil para obtener más información sobre la integración de Salesforce con [!DNL MBI].
+Si eres un poco más experto en tecnología, el [[!DNL Salesforce] Documentación de API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) puede ser un recurso útil para obtener más información sobre cómo Salesforce se integra con [!DNL Commerce Intelligence].
 
-* [Esperado [!DNL Salesforce] data](../integrations/salesforce-data.md)
-* [Reautenticación de integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Previsto [!DNL Salesforce] datos](../integrations/salesforce-data.md)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

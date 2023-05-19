@@ -1,8 +1,8 @@
 ---
 title: Datos de bandas esperados
-description: Explore las tablas de datos principales que se pueden importar desde Stripe a [!DNL MBI].
+description: Explore las tablas de datos principales que puede importar desde Stripe a Commerce Intelligence.
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Después [ha conectado su [!DNL Stripe] account](../integrations/stripe.md), puede utilizar el [Administrador de Datas Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para realizar fácilmente un seguimiento de los campos de datos relevantes para su análisis.
 
-Este artículo explora las tablas de datos principales desde las que puede importar [!DNL Stripe] en [!DNL MBI]. Una vez completada la configuración, se crearán las siguientes tablas en la Data Warehouse. Haga clic en los vínculos de la columna Nombre de tabla para obtener más información sobre los atributos de cada tabla.
+En este tema se exploran las tablas de datos principales desde las que se puede importar [!DNL Stripe] en [!DNL Commerce Intelligence]. Una vez completada la configuración, se crearán las siguientes tablas en la Data Warehouse. Haga clic en los vínculos de la columna Nombre de tabla para obtener más información sobre los atributos de cada tabla.
 
 | **Nombre de tabla** | **Descripción** |
 |-----|-----|
@@ -34,4 +34,4 @@ Este artículo explora las tablas de datos principales desde las que puede impor
 ## Relacionado:
 
 * [Conectando [!DNL Stripe]](../integrations/stripe.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

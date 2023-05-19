@@ -1,17 +1,17 @@
 ---
 title: Análisis de cohorte de ingresos por duración
-description: Explore el poder de [!DNL MBI] análisis de cohorte.
+description: Explore el poder del análisis de cohorte de inteligencia comercial.
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
-# `Lifetime Revenue Cohort` Análisis
+# [!DNL Lifetime Revenue Cohort] Análisis
 
-Hay muchas maneras de ver los datos en [!DNL MBI]y sabe que la interpretación y la comprensión son tan importantes como el cálculo y la visualización. Este artículo explora el poder de [!DNL MBI] `cohort` análisis.
+Hay muchas maneras de ver los datos en [!DNL Adobe Commerce Intelligence]y sabe que la interpretación y la comprensión son tan importantes como el cálculo y la visualización. En este tema se analiza el poder de [!DNL Commerce Intelligence] `cohort` análisis.
 
 ## ¿Qué hace `lifetime revenue cohort` ¿análisis medio?
 

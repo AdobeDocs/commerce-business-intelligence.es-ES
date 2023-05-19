@@ -2,7 +2,7 @@
 title: Búsqueda de paneles
 description: Aprenda a utilizar la función Búsqueda global para buscar paneles y cómo buscar paneles propiedad de otros usuarios.
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Buscar un tablero
 
-Este artículo muestra cómo utilizar la variable [`Global Search` característica](#global) para buscar paneles y cómo buscar [paneles propiedad de otros usuarios](#other).
+Este tema muestra cómo utilizar el [[!DNL Global Search] característica](#global) para buscar paneles y cómo buscar [paneles propiedad de otros usuarios](#other).
 
 ## Búsqueda global {#global}
 
-El `Global Search` le permite buscar y seleccionar los paneles que desea ver.
+El [!DNL Global Search] le permite buscar y seleccionar los paneles que desea ver.
 
 * *Para ver una lista de los paneles existentes*, haga clic en el panel.
 

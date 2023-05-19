@@ -2,9 +2,9 @@
 title: Crear o eliminar rutas para columnas calculadas
 description: Aprenda a definir una ruta que describa cómo la tabla en la que está creando una columna está relacionada con la tabla de la que está extrayendo información.
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Cuándo [creación de columnas calculadas](../data-warehouse-mgr/creating-calcul
 1. Cómo se relacionan entre sí las tablas de las bases de datos
 1. Las claves principales y externas que definen esta relación
 
-Si conoce esta información, puede crear fácilmente una ruta siguiendo las instrucciones de este artículo. Una visión general de estos conceptos si se siente un poco inseguro, pero es posible que desee preguntar a un experto técnico de su organización o ponerse en contacto con el equipo de soporte de Adobe.
+Si conoce esta información, puede crear fácilmente una ruta siguiendo las instrucciones de este tema. Si lo desea, puede preguntar a un experto técnico de su organización o ponerse en contacto con el [Equipo de Professional Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Actualizadores en relaciones de tabla y tipos de clave {#refresher}
 
@@ -36,7 +36,7 @@ Las tablas se pueden relacionar entre sí de una de las tres maneras siguientes:
 
 {style="table-layout:auto"}
 
-Una vez entendida una relación entre dos tablas, se puede utilizar para determinar qué ruta se debe crear para llevar la información de una tabla a otra. El siguiente paso requiere conocer las claves principales y externas que facilitan una relación de tabla.
+Cuando se entiende una relación entre dos tablas, se puede utilizar para determinar qué ruta se debe crear para llevar la información de una tabla a otra. El siguiente paso requiere conocer las claves principales y externas que facilitan una relación de tabla.
 
 ### Claves principales y externas {#keys}
 
@@ -59,7 +59,7 @@ Ahora puede crear la ruta.
 1. Clic **[!UICONTROL Data > Data Warehouse]**.
 1. En la lista de la tabla, haga clic en la tabla en la que desea crear la columna. En este ejemplo, es el `customers` tabla.
 1. Se muestra el esquema de tabla. Clic **[!UICONTROL Create New Column]**.
-1. Asigne un nombre a la columna como, por ejemplo, `Customer's orders`.
+1. Asigne un nombre a la columna, por ejemplo, `Customer's orders`.
 1. Seleccione la definición de la columna. Consulte la [Guía de columna calculada](../data-warehouse-mgr/creating-calculated-columns.md) para una práctica hoja de trucos.
 1. En el [!UICONTROL Select table and column] , haga clic en el **[!UICONTROL Create new path]** opción.
 
@@ -75,20 +75,23 @@ Ahora puede crear la ruta.
 
 ### Limitaciones de la creación de rutas {#limits}
 
-* **[!DNL MBI]no se pueden adivinar las relaciones de clave principal/externa**. No desea introducir datos incorrectos en su cuenta, por lo que la creación de rutas debe realizarse manualmente.
-* **Actualmente, las rutas solo se pueden especificar entre dos tablas diferentes**. ¿La lógica que intenta volver a crear implica más de dos tablas? A continuación, puede tener sentido (1) unir las columnas a una tabla intermedia primero, luego a la tabla de &quot;destino final&quot; o (2) consultar con el equipo de Adobe para encontrar el mejor enfoque a sus objetivos.
+* **[!DNL Commerce Intelligence]no se pueden adivinar las relaciones de clave principal/externa**. No desea introducir datos incorrectos en su cuenta, por lo que la creación de rutas debe realizarse manualmente.
+
+* **Actualmente, las rutas solo se pueden especificar entre dos tablas diferentes**. ¿La lógica que intenta volver a crear implica más de dos tablas? A continuación, puede tener sentido (1) unir las columnas primero a una tabla intermedia y luego a la tabla de &quot;destino final&quot;, o (2) consultar con el [Equipo de Professional Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para encontrar el mejor enfoque para sus objetivos.
+
 * **Una columna solo puede ser la referencia de clave externa para UNA ruta de acceso a la vez**. Por ejemplo, si `order_items.order_id` apunta a `orders.id`, entonces `order_items.order_id` no puede señalar a nada más.
+
 * **`Many-to-many`técnicamente, las rutas se pueden crear, pero a menudo producen datos incorrectos porque ninguno de los lados es verdadero `one-to-many` clave externa**. La mejor manera de abordar estas rutas siempre depende del análisis deseado específico. Consulte al equipo de analistas de RJ para descubrir la mejor solución.
 
 Si no puede crear una columna calculada debido a una o más de las limitaciones anteriores, póngase en contacto con el servicio de asistencia técnica proporcionando una descripción de la columna que está utilizando
 
 ## Eliminar una ruta de columna calculada {#delete}
 
-¿Ha creado una ruta incorrecta en su Data Warehouse? ¿O tal vez estás haciendo una pequeña limpieza de primavera y quieres ordenarlo? Si necesita eliminar una ruta de acceso de su cuenta, puede [enviar un ticket a los analistas de soporte de Adobe](../../guide-overview.md). **Asegúrese de incluir el nombre de la ruta.**
+¿Ha creado una ruta incorrecta en su Data Warehouse? ¿O tal vez estás haciendo una pequeña limpieza de primavera y quieres ordenarlo? Si necesita eliminar una ruta de acceso de su cuenta, puede [enviar un ticket a los analistas de soporte de Adobe](../../guide-overview.md#Submitting-a-Support-Ticket). **Asegúrese de incluir el nombre de la ruta.**
 
 ## Ajuste {#wrapup}
 
-Ahora que se siente cómodo creando rutas para las columnas calculadas en su Data Warehouse. Si todavía no está seguro de una ruta en particular, recuerde que siempre puede hacer clic en **[!UICONTROL Support]** en su [!DNL MBI] cuenta para obtener asistencia.
+Ahora que se siente cómodo creando rutas para las columnas calculadas en su Data Warehouse. Si todavía no está seguro de una ruta en particular, recuerde que siempre puede hacer clic en **[!UICONTROL Support]** en su [!DNL Commerce Intelligence] cuenta para obtener asistencia.
 
 ## Relacionado
 

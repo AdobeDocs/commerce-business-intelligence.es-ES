@@ -2,9 +2,9 @@
 title: Administrar la configuración de la cuenta
 description: Aprenda a personalizar la configuración de la cuenta para su Data Warehouse.
 exl-id: 847d51b1-287e-4c14-b64e-0bd9bfcccedc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Requiere [Permisos de administrador.](../../administrator/user-management/user-management.md)
 
-En su [!DNL MBI] Cuenta de, puede personalizar la configuración de la cuenta para su Data Warehouse. Se puede acceder a ellas seleccionando el nombre de su organización en la esquina superior derecha de cualquier pantalla y eligiendo **[!UICONTROL Account Settings]** en el menú desplegable.
+En su [!DNL Commerce Intelligence] cuenta, puede personalizar la configuración de la cuenta para su Data Warehouse. Se puede acceder a ellas seleccionando el nombre de su organización en la esquina superior derecha de cualquier pantalla y eligiendo **[!UICONTROL Account Settings]** en el menú desplegable.
 
 * **[!UICONTROL Client Name:]** Esta configuración aparece en la esquina superior derecha de todos los paneles y en cualquier otra parte de la cuenta. Si desea realizar algún cambio **[!UICONTROL "Vandelay Industries Co., Ltd]** a solo **[!UICONTROL "Vandelay]**, aquí es donde se hace.
 

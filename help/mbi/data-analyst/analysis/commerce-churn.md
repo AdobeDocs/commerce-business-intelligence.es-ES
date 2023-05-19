@@ -2,7 +2,7 @@
 title: Pérdida de comercio
 description: Obtenga información sobre cómo generar y analizar la tasa de pérdida de Commerce.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -15,7 +15,7 @@ En este tema se muestra cómo calcular una **tasa de pérdida** para su **client
 
 ![](../../assets/Churn_rate_image.png)
 
-Muchos clientes quieren ayuda para empezar a conceptualizar lo que **periodo de tiempo** deben utilizar en función de sus datos. Si desea utilizar el comportamiento histórico del cliente para definir esto **plazo de cancelación**, es posible que desee familiarizarse con el [definición de pérdida](../analysis/define-cust-churn.md) artículo. A continuación, puede utilizar los resultados en la fórmula para la tasa de pérdida en las instrucciones siguientes.
+Muchos clientes quieren ayuda para empezar a conceptualizar lo que **periodo de tiempo** deben utilizar en función de sus datos. Si desea utilizar el comportamiento histórico del cliente para definir esto **plazo de cancelación**, es posible que desee familiarizarse con el [definición de pérdida](../analysis/define-cust-churn.md) tema. A continuación, puede utilizar los resultados en la fórmula para la tasa de pérdida en las instrucciones siguientes.
 
 ## Columnas calculadas
 
@@ -55,9 +55,9 @@ Columnas para crear
 * **Clientes nuevos (por fecha de último pedido)**
    * Clientes que se cuentan
 
->[!NOTE]
->
->Esta métrica puede existir en su cuenta.
+   >[!NOTE]
+   >
+   >Esta métrica puede existir en su cuenta.
 
 * En el **`customer_entity`** tabla
 * Esta métrica realiza una **Recuento**

@@ -2,7 +2,7 @@
 title: Uso de la columna calculada Diferencia de fechas
 description: Conozca el propósito y los usos de la columna calculada Diferencia de fechas.
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%
@@ -15,7 +15,7 @@ En este tema se describen el propósito y los usos del `Date Difference` columna
 
 **Explicación**
 
-El `Date Difference` tipo de columna: busca el tiempo entre dos eventos que pertenecen a un único registro, en función de las marcas de tiempo del evento. El valor sin procesar calculado en esta columna se expresa en segundos, pero se convierte automáticamente a minutos, horas, días, etc., para que se muestre en los informes. Sin embargo, cuando se utiliza como filtro/grupo por, desea utilizar el valor en segundos.
+El `Date Difference` el tipo de columna calcula el tiempo entre dos eventos que pertenecen a un único registro, basándose en las marcas de tiempo del evento. El valor sin procesar calculado en esta columna se expresa en segundos, pero se convierte automáticamente a minutos, horas, días, etc., para que se muestre en los informes. Sin embargo, cuando se utiliza como filtro/grupo por, desea utilizar el valor en segundos.
 
 A `date difference` la columna calculada se puede utilizar para crear una métrica que calcule el promedio o la mediana de tiempo entre dos eventos, como el tiempo promedio entre el registro de clientes y sus primeros pedidos.
 

@@ -2,16 +2,16 @@
 title: Análisis del impacto de cupones
 description: Obtenga información sobre cómo analizar el impacto de los cupones en la adquisición y retención de clientes.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1359'
 ht-degree: 2%
 
 ---
 
 # Impacto de cupón
 
-Analizar cómo los clientes utilizan sus cupones puede proporcionar una perspectiva significativa de su negocio. Específicamente, analizando cómo adquiere y retiene clientes a través de cupones. Este artículo explora análisis que pueden ayudarle a responder a los siguientes tipos de preguntas:
+Analizar cómo los clientes utilizan sus cupones puede proporcionar una perspectiva significativa de su negocio. Específicamente, analizando cómo adquiere y retiene clientes a través de cupones. En este tema se exploran los análisis que pueden ayudarle a responder a los siguientes tipos de preguntas:
 
 * ¿Cuántos clientes adquiere mediante cupones?
 * ¿Los clientes con cupones adquiridos tienen más probabilidades de realizar compras repetidas que los clientes no adquiridos a través de cupones?
@@ -69,7 +69,7 @@ El número de pedidos repetidos para adquisiciones sin cupones es mucho mayor qu
 
 Del mismo modo, el número de pedidos repetidos realizados con un cupón es mayor en el caso de las adquisiciones sin cupón.
 
-## #Percent de pedidos repetidos con cupón
+## Porcentaje de pedidos repetidos con cupón
 
 Los clientes sin cupón adquirido tienen un porcentaje mucho menor de pedidos repetidos con un cupón aplicado que los clientes con cupón adquirido. Por lo tanto, para los clientes con cupones adquiridos, casi la mitad de los pedidos repetidos tienen un cupón aplicado. En este ejemplo, los clientes de cupones adquiridos tienden a realizar compras repetidas con cupones.
 
@@ -149,4 +149,4 @@ El mayor número de clientes se adquirió a través del cupón de &quot;20% de d
 
 ## Ajuste {#wrapup}
 
-Puede crear multitud de análisis para comprender mejor cómo utilizan los cupones sus clientes. ¿Ha pensado alguna vez en analizar cómo utilizan sus clientes los cupones o el tiempo que tardan en utilizarlos? ¿Qué sucede si se busca la cantidad de descuento óptima: qué cantidad anima a los compradores que repiten, un valor de pedido promedio más alto y mayores ingresos por duración? Para obtener ayuda con este tipo de preguntas, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Puede crear multitud de análisis para comprender mejor cómo utilizan los cupones sus clientes. ¿Ha pensado alguna vez en analizar cómo utilizan sus clientes los cupones o el tiempo que tardan en utilizarlos? ¿Qué sucede si se busca la cantidad de descuento óptima: qué cantidad anima a los compradores que repiten, un valor de pedido promedio más alto y mayores ingresos por duración? Para obtener ayuda con este tipo de preguntas, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

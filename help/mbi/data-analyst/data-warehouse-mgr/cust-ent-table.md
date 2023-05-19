@@ -2,9 +2,9 @@
 title: tabla customer_entity
 description: Obtenga información sobre cómo acceder a los registros de todas las cuentas registradas.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 El `customer_entity` contiene registros de todas las cuentas registradas. Una cuenta se considera registrada si se inscribe en una cuenta, independientemente de si alguna vez completa una compra. Cada fila corresponde a una cuenta registrada única, identificada por la cuenta `entity_id`.
 
-Esta tabla no contiene registros de clientes que realizan un pedido a través del cierre de compra de un invitado. Si tu tienda acepta pago y envío de invitados, [obtenga información sobre cómo dar cuenta de](../data-warehouse-mgr/guest-orders.md) para esos clientes.
+Esta tabla no contiene registros de clientes que realizan un pedido a través del cierre de compra de un invitado. Si su tienda acepta el pago y envío de invitados, consulte [cómo contabilizar pedidos de invitado](../data-warehouse-mgr/guest-orders.md) para esas órdenes.
 
 ## Columnas comunes
 
 | **Nombre de columna** | **Descripción** |
 |---|---|
-| `created_at` | Marca de tiempo correspondiente a la fecha de registro de la cuenta, almacenada localmente en UTC. Según la configuración en [!DNL MBI], esta marca de tiempo se puede convertir en una zona horaria de informe en [!DNL MBI] que difiere de la zona horaria de la base de datos |
+| `created_at` | Marca de tiempo correspondiente a la fecha de registro de la cuenta, almacenada localmente en UTC. Según la configuración en [!DNL Commerce Intelligence], esta marca de tiempo se puede convertir en una zona horaria de informe en [!DNL Commerce Intelligence] que difiere de la zona horaria de la base de datos |
 | `email` | Dirección de correo electrónico asociada a la cuenta |
 | `entity_id` (PK) | Identificador único de la tabla y que se utiliza comúnmente en combinaciones con el `customer_id` en otras tablas dentro de la instancia |
 | `group_id` | Clave externa asociada con el `customer_group` tabla. Unirse a `customer_group.customer_group_id` para determinar el grupo de clientes asociado a la cuenta registrada |

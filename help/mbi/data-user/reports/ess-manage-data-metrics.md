@@ -2,9 +2,9 @@
 title: Creación de métricas
 description: Aprenda a utilizar las métricas para crear gráficos.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Requiere [Permisos de administración](../../administrator/user-management/user-management.md).
 
-En pocas palabras, una métrica es una medida. En las estructuras SQL y de base de datos, una métrica es como una consulta almacenada durante un período de variable.
+Una métrica es una medida. En las estructuras SQL y de base de datos, una métrica es como una consulta almacenada durante un período de variable.
 
-Entrada [!DNL MBI], puede utilizar las métricas para [crear gráficos](../../data-user/reports/ess-rpt-build-visual.md). Por ejemplo, la métrica `revenue` es el número total de pedidos. La métrica `average customer revenue per order` es lo que gasta el cliente promedio por pedido.
+Entrada [!DNL Commerce Intelligence], puede utilizar las métricas para [crear gráficos](../../data-user/reports/ess-rpt-build-visual.md). Por ejemplo, la métrica `revenue` es el número total de pedidos. La métrica `average customer revenue per order` es lo que gasta el cliente promedio por pedido.
 
 Cuando se usan en los informes, las métricas se pueden analizar durante un periodo de tiempo especificado y [filtrada o segmentada](../../best-practices/segment-filter.md) por categorías diferentes. Considere la posibilidad de analizar los ingresos medios de los clientes agrupados por sexo, en este caso, `average customer revenue per order` es la métrica y el sexo es la agrupación.
 
@@ -68,7 +68,7 @@ El `Filter Logic` es donde puede definir más detalladamente cómo debe comporta
 
 El [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) Esta sección muestra todas las dimensiones de datos disponibles para filtrar o agrupar; de forma predeterminada, todas las columnas de datos disponibles se muestran como dimensiones. Continuando con el ejemplo, si desea segmentar los ingresos por fuente de referencia, puede hacerlo aquí.
 
-Además de enumerar todas las columnas de datos disponibles como dimensiones, [!DNL MBI] adivina a qué columnas se pueden agrupar. *Para segmentar o agrupar datos en informes*, las columnas deben marcarse como agrupables.
+Además de enumerar todas las columnas de datos disponibles como dimensiones, [!DNL Commerce Intelligence] adivina a qué columnas se pueden agrupar. *Para segmentar o agrupar datos en informes*, las columnas deben marcarse como agrupables.
 
 ## Finalizando {#finish}
 

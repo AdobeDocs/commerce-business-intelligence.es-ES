@@ -2,22 +2,22 @@
 title: Análisis de la actividad del sitio web y las tasas de conversión de clientes
 description: Aprenda a configurar un tablero que haga un seguimiento de la actividad del sitio web, incluidas las vistas de página, las sesiones y los usuarios, y de la tasa de conversión de clientes a lo largo del tiempo.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
 
 # Análisis de actividad del sitio web
 
-[!DNL MBI] le permite integrar fácilmente sus datos de costes publicitarios con el resto de sus datos. Esto no solo le permite comprender la actividad de su sitio web, sino que también le permite obtener el porcentaje de visitantes en su sitio web que se convierten en usuarios registrados o realizan una compra.
+[!DNL Adobe Commerce Intelligence] le permite integrar fácilmente sus datos de costes publicitarios con el resto de sus datos. Esto no solo le permite comprender la actividad de su sitio web, sino que también le permite obtener el porcentaje de visitantes en su sitio web que se convierten en usuarios registrados o realizan una compra.
 
-Este artículo muestra cómo configurar un tablero que haga un seguimiento de la actividad del sitio web, incluidas las vistas de página, las sesiones y los usuarios, y de la tasa de conversión de los clientes a lo largo del tiempo.
+En este tema se muestra cómo configurar un tablero que realice un seguimiento de la actividad del sitio web, incluidas las vistas de página, las sesiones y los usuarios, así como de la tasa de conversión de clientes a lo largo del tiempo.
 
 ## Requisitos previos
 
-**Importar los datos de costes de publicidad** - Conectar [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) hasta [!DNL MBI] - esto sincroniza automáticamente su [!DNL AdWords] gastar en IMM.
+**Importar los datos de costes de publicidad** - Conectar [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) hasta [!DNL Adobe Commerce Intelligence] - esto sincroniza automáticamente su [!DNL AdWords] Pase en Commerce Intelligence.
 
 **Seguimiento de datos de canales de adquisición de usuarios** - Para atar su [!DNL Google AdWords] para pedidos específicos de la base de datos, debe [seguimiento de adquisición de usuarios](../analysis/google-track-user-acq.md) mediante [!DNL Google Analytics E-commerce]. Esto le permite conectar cada pedido con una fuente y un medio de utm.
 
@@ -103,4 +103,4 @@ Esta colección de informes se crea de la siguiente manera:
 
 Ahora que tiene acceso a los datos del tráfico web y a las tasas de conversión, puede empezar a extraer estos datos para tomar decisiones comerciales, como ¿Qué sitios son los mejores para dirigir el tráfico al sitio? o ¿Cuál de sus campañas es más eficaz para adquirir clientes con el alto valor de duración?
 
-A medida que ajusta el gasto en publicidad y la estrategia de marketing, puede seguir realizando un seguimiento de los resultados en [!DNL MBI], iterando en este tablero para satisfacer las prioridades en evolución de su empresa.
+A medida que ajusta el gasto en publicidad y la estrategia de marketing, puede seguir realizando un seguimiento de los resultados en [!DNL Commerce Intelligence], iterando en este tablero para satisfacer las prioridades en evolución de su empresa.

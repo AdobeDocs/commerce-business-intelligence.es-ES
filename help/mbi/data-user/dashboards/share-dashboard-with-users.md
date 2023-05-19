@@ -2,16 +2,16 @@
 title: Uso compartido de paneles con otros usuarios
 description: Obtenga información sobre cómo compartir tableros con otros usuarios.
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
 # Uso compartido de paneles con otros usuarios
 
-Compartir paneles es una buena manera de mantener a su equipo en el bucle y fomentar el debate colaborativo. Al crear y compartir un tablero central, puede proporcionar a su equipo la información que necesita y, al mismo tiempo, mantener el control. [Adobe recomienda](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} que concede `Edit` derechos sobre algunos seleccionados para minimizar los cambios accidentales.
+Compartir paneles es una buena manera de mantener a su equipo en el bucle y fomentar el debate colaborativo. Al crear y compartir un tablero central, puede proporcionar a su equipo la información que necesita y, al mismo tiempo, mantener el control. [[!DNL Adobe] recomienda](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} que concede `Edit` derechos sobre algunos seleccionados para minimizar los cambios accidentales.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ Compartir paneles es una buena manera de mantener a su equipo en el bucle y fome
 
 1. Clic **[!UICONTROL Share Dashboard]** en la parte superior de la pantalla.
 
-   Una lista de todos los usuarios de su [!DNL MBI] se mostrará la cuenta.
+   Una lista de todos los usuarios de su [!DNL Commerce Intelligence] se mostrará la cuenta.
 
 1. Para seleccionar un usuario con el que compartir el panel, marque la casilla a la izquierda de su nombre.
 

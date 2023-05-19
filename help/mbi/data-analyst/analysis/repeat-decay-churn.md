@@ -2,7 +2,7 @@
 title: Análisis de la caída y pérdida de probabilidad repetida
 description: Conozca y comprenda los lapsos de tiempo entre pedidos y cuándo se espera que los clientes pierdan.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,13 +39,13 @@ Entender el porcentaje de clientes que se espera que realicen compras repetidas 
 
 ## Ejemplo de hoy
 
-Observe la caída de probabilidad repetida para un negocio típico de comercio electrónico.
+Observe la caída de probabilidad repetida para un negocio de comercio electrónico típico.
 
 ![Probabilidad de orden repetido inicial probabilidad de orden repetido dada meses desde el orden.](../../assets/Order_probability_reports.png)
 
 ### Probabilidad de orden repetido inicial
 
-En este ejemplo, la probabilidad inicial de que un cliente repita una compra es del 60 %. Esto significa que el 60% de todos los pedidos realizados con este negocio van seguidos de un pedido posterior.
+En este ejemplo, la probabilidad inicial de que un cliente repita una compra es del 60 %. Esto significa que el 60 por ciento de todos los pedidos realizados con este negocio van seguidos de un pedido posterior.
 
 ### Probabilidad de repetición de pedido dada meses desde el pedido
 
@@ -76,7 +76,7 @@ Después de crear el análisis anterior y determinar un umbral de pérdida, pued
 
 Si ofrece más de un producto, probablemente se pregunte cómo los clientes que compran un producto específico se comportan de forma diferente a lo largo del tiempo en comparación con otros clientes. ¿Quiere saber más? Consulte este tutorial para explorar el comportamiento de compra de por vida de las cohortes de clientes en función de los productos específicos que han comprado.
 
-Esta práctica recomendada la proporciona [!DNL MBI] Data Analysis Services (DAS). [Atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obtener más información.
+Esta práctica recomendada la proporciona [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obtener más información.
 
 ### Relacionado
 

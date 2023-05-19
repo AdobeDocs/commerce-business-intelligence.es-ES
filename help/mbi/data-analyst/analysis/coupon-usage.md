@@ -2,24 +2,22 @@
 title: Análisis del uso de cupones
 description: Obtenga información sobre cómo analizar el uso de cupones en la adquisición y retención de clientes.
 exl-id: d4d1393f-1695-43f2-980a-84525f84031e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1141'
 ht-degree: 2%
 
 ---
 
 # Uso de cupones
 
-¿Alguna vez se ha preguntado cómo afecta la oferta de cupones a su negocio? ¿Quiere saber qué cupones ayudan o perjudican el rendimiento? Este artículo explora los análisis que le ofrecen una buena imagen del uso de cupones de sus clientes al responder a las siguientes preguntas:
+¿Alguna vez se ha preguntado cómo afecta la oferta de cupones a su negocio? ¿Quiere saber qué cupones ayudan o perjudican el rendimiento? En este tema se exploran los análisis que le proporcionan una buena imagen del uso de cupones de sus clientes al responder a las siguientes preguntas:
 
 * ¿Cuántos clientes utilizan cupones?
 * ¿Cuántos cupones se están utilizando?
 * ¿Cuáles son sus ingresos antes y después de que se apliquen los cupones?
 * ¿Cuál es el valor de pedido promedio antes y después de aplicar los cupones?
 * ¿Qué tipo de clientes atrae con cupones?
-
-¡Empecemos!
 
 ## Métricas recomendadas {#metrics}
 
@@ -109,7 +107,7 @@ Para los ingresos promedio por duración, puede ver que los ingresos promedio po
 
 ## ¿Qué más puedo analizar? {#otheranalyses}
 
-Los análisis mencionados en este artículo pueden proporcionarle una valiosa perspectiva de cómo sus clientes utilizan sus cupones, pero hay una multitud de otros análisis que le permiten profundizar un poco más.
+Los análisis mencionados en este tema pueden proporcionarle una valiosa perspectiva de cómo utilizan sus clientes sus cupones, pero hay una multitud de otros análisis que le permiten profundizar un poco más.
 
 **Puede analizar las adquisiciones de clientes a partir de cupones.**
 

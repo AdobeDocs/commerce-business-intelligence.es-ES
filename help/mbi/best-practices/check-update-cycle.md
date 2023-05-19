@@ -2,22 +2,22 @@
 title: Comprobación del estado del ciclo de actualización
 description: Obtenga información sobre cómo comprobar el estado del ciclo de actualización.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
 # Actualización del progreso del ciclo
 
-Al iniciar sesión en su [!DNL MBI] , existen varias formas de comprobar el estado del último ciclo de actualización. Todo depende del tipo de [permisos de usuario](../administrator/user-management/user-management.md) que usted tiene.
+Al iniciar sesión en su [!DNL Adobe Commerce Intelligence] , existen varias formas de comprobar el estado del último ciclo de actualización. Todo depende del tipo de [permisos de usuario](../administrator/user-management/user-management.md) que usted tiene.
 
 ## ¿Por qué debería comprobar el estado del ciclo de actualización?
 
-La comprobación del ciclo de actualización de estado resulta útil cuando se auditan los datos en su [!DNL MBI] cuenta. Si ve [resultados que no cumplen con sus expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por ejemplo, las ventas diarias en [!DNL MBI] no coinciden con lo que se ve en su plataforma de comercio electrónico o en su [[!DNL Google] ingresos por comercio electrónico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) puede comprobar el último punto de datos para ver si el problema se resuelve una vez que se completa una actualización.
+La comprobación del ciclo de actualización de estado resulta útil cuando se auditan los datos en su [!DNL Commerce Intelligence] cuenta. Si ve [resultados que no cumplen con sus expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por ejemplo, las ventas diarias en [!DNL Commerce Intelligence] no coinciden con lo que se ve en su plataforma de comercio electrónico o en su [[!DNL Google] ingresos por comercio electrónico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) puede comprobar el último punto de datos para ver si el problema se resuelve una vez que se completa una actualización.
 
-## [!UICONTROL Read-Only] y [!UICONTROL Standard]** usuarios
+## [!UICONTROL Read-Only] y [!UICONTROL Standard] Usuarios
 
 `Read-only` Los usuarios de pueden iniciar sesión en su panel y ver la actualización reciente de los datos pasando el ratón por encima del icono en la parte superior derecha de la página. Esto muestra cuándo se extrajo el último punto de datos.
 
@@ -39,4 +39,4 @@ Si una actualización no está en curso, verá un vínculo para forzar el inicio
 
 >[!NOTE]
 >
->Si tiene horas de interrupción (tiempo en el que no desea [!DNL MBI] para actualizar los datos), al forzar una actualización se inicia un ciclo de actualización que no respeta las limitaciones de esas horas de interrupción.
+>Si tiene horas de interrupción (tiempo en el que no desea [!DNL Commerce Intelligence] para actualizar los datos), al forzar una actualización se inicia un ciclo de actualización que no respeta las limitaciones de esas horas de interrupción.

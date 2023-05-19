@@ -2,7 +2,7 @@
 title: Informe Probabilidad de Orden Repetido
 description: Conozca y comprenda el Informe de Probabilidad de Pedidos Repetidos.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## ¿Cuándo es el `Incremental Event Probability` ¿perspectiva disponible?
 
-El `incremental event probability` La perspectiva solo está disponible cuando los filtros utilizan dimensiones iguales para todos los pedidos (por ejemplo, el del usuario `gender`, del usuario `age` o del usuario `source`)
+El `incremental event probability` La perspectiva solo está disponible cuando los filtros utilizan dimensiones iguales para todos los pedidos (por ejemplo, el del usuario `gender`, del usuario `age` o del usuario `source`).
 
 Esto se debe a que esta perspectiva se basa en una dimensión denominada `User's order number` para la segmentación, que numera las compras de un usuario (por ejemplo, los pedidos primero, segundo y tercero de John).
 
@@ -23,7 +23,7 @@ Si ha añadido un filtro que utiliza una dimensión que no es igual para todos l
 
 En determinados casos, es posible que pueda convertir un `order-specific` dimensión en una `user-specific` dimensión para agregar como filtro en `Repeat Order Probability` gráfico. En estos casos, se devuelve el atributo order del primer pedido o del último pedido de un usuario (por ejemplo, el nombre de región de primer pedido del usuario).
 
-Si desea crear una dimensión tan nueva, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si desea crear una dimensión tan nueva, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Comparación de la probabilidad de repetición de pedidos con atributos diferentes
 
@@ -33,7 +33,7 @@ Los números que componen un gráfico de este tipo se pueden exportar a Excel pa
 
 ### Ejemplo:
 
-|  |  |
+| Categoría | Valor |
 |---|---|
 | Número de clientes que realizaron una compra en su vida útil | `90` |
 | Número de clientes que realizaron dos compras en su vida útil | `30` |

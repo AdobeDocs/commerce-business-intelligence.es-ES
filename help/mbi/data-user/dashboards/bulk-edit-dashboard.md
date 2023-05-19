@@ -1,23 +1,23 @@
 ---
 title: Edición masiva de gráficos en paneles
-description: Aprenda a utilizar la función de edición masiva en [!DNL MBI].
+description: Aprenda a utilizar la función de edición masiva en [!DNL Commerce Intelligence].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
 # Edición masiva de gráficos en paneles
 
-La función de edición masiva facilita el cambio de nombres y fechas de gráficos en los paneles. Por ejemplo, desea que todos los gráficos de un tablero específico hagan referencia a un único almacén e informe con periodicidad mensual en lugar de trimestral. En lugar de cambiar todo manualmente, deje que la variable `bulk-editing` función para realizar el trabajo. En este artículo, aprenderá a utilizar lo siguiente:
+La función de edición masiva facilita el cambio de nombres y fechas de gráficos en los paneles. Por ejemplo, desea que todos los gráficos de un tablero específico hagan referencia a un único almacén e informe con periodicidad mensual en lugar de trimestral. En lugar de cambiar todo manualmente, deje que la variable `bulk-editing` función para realizar el trabajo. En este tema, aprenderá a utilizar lo siguiente:
 
-* [El ](#findreplace)
+* [El [!DNL Find/Replace] Función](#findreplace)
 
-* [El ](#prepend)
+* [El [!DNL Prepend Name] Función](#prepend)
 
-* [El ](#dates)
+* [El [!DNL Change Dates] Función](#dates)
 
 Dicho esto, considere esto - *¿Es necesario que estos cambios sean permanentes?* Si no es así, considere la posibilidad de clonar el panel y, a continuación, cambiar las fechas en el nuevo panel. Esto le permite conservar su panel original mientras realiza los cambios que necesita.
 
@@ -25,7 +25,7 @@ Dicho esto, considere esto - *¿Es necesario que estos cambios sean permanentes?
 >
 >Si está cambiando numerosos informes, el proceso de actualización podría tardar un poco.
 
-## Uso de `Find/Replace` {#findreplace}
+## Uso de [!DNL Find/Replace] {#findreplace}
 
 1. Haga clic en el engranaje (![](../../assets/gear-icon.png)) junto al nombre del tablero y, a continuación, el icono [!UICONTROL Bulk Edit Reports] ventana.
 
@@ -57,7 +57,7 @@ Ejemplo:
 
 ## Cambio `Dates` {#dates}
 
-1. Haga clic en el engranaje (![](../../assets/gear-icon.png)) junto al nombre del tablero y, a continuación, seleccione el icono `!UICONTROL Bulk Edit Reports` ventana.
+1. Haga clic en el engranaje (![](../../assets/gear-icon.png)) junto al nombre del tablero y, a continuación, seleccione el icono [!UICONTROL Bulk Edit Reports] ventana.
 
 1. Clic **[!UICONTROL Change Dates]** en la ventana emergente.
 

@@ -2,16 +2,16 @@
 title: Tipos de columnas calculadas avanzadas
 description: Aprenda los conceptos básicos de la mayoría de los casos de columnas de uso, pero es posible que desee una columna calculada que sea un poco más compleja de lo que puede crear el Administrador de Datas Warehouse.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 4%
 
 ---
 
 # Tipos de columnas calculadas avanzadas
 
-Muchos análisis que puede intentar crear implican el uso de una variable **nueva columna** que desea que `group by` o `filter by`. El [Creación de columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) Este tutorial trata los conceptos básicos de la mayoría de los casos de uso, pero es posible que desee una columna calculada que sea un poco más compleja de lo que puede crear el Administrador de Datas Warehouse.
+Muchos de los análisis que puede interesarle crear implican el uso de una **nueva columna** que desea que `group by` o `filter by`. El [Creación de columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) Este tutorial trata los conceptos básicos de la mayoría de los casos de uso, pero es posible que desee una columna calculada que sea un poco más compleja de lo que puede crear el Administrador de Datas Warehouse.
 {: #top}
 
 El equipo de Adobe de analistas de Datas Warehouse puede crear estos tipos de columnas. Para definir una nueva columna calculada, proporciónenos la siguiente información:
@@ -159,7 +159,7 @@ Para crear este tipo de columna calculada, debe saber:
 
 No te preocupes. El hecho de que no aparezca en la lista no significa que no sea posible. El equipo de Adobe de analistas de Data Warehouse puede ayudarle.
 
-Para definir una nueva columna calculada, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) con detalles sobre exactamente lo que desea crear.
+Para definir una nueva columna calculada, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) con detalles sobre exactamente lo que desea crear.
 
 ## Documentación relacionada
 

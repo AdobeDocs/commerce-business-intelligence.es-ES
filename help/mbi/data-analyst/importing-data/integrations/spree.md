@@ -2,7 +2,7 @@
 title: Conectar Spree
 description: Aprenda a ver el rendimiento de su empresa o a encontrar las fuentes y los canales de adquisición más valiosos.
 exl-id: d443e6ca-04b0-4090-a3be-14db71819356
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 96e1da59c2f366bdb948ddf907340f7fd8636741
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -11,9 +11,11 @@ ht-degree: 0%
 
 # Connect [!DNL Spree]
 
-¿Quiere ver el rendimiento de su empresa o encontrar las fuentes y canales de adquisición más valiosos? Conexión de su [!DNL Spree] datos a [!DNL MBI] le permite responder a estas preguntas y más.
+![](../../../assets/spree-commerce-logo.png)
 
-El [!DNL Spree] La base de datos de se basa en `PostgreSQL`, puede conectarlo a [!DNL MBI] uso del [los mismos pasos que haría para una normal `Postgres` conexión](../integrations/postgresql.md).
+¿Quiere ver el rendimiento de su empresa o encontrar las fuentes y canales de adquisición más valiosos? Conexión de su [!DNL Spree] datos a [!DNL Commerce Intelligence] le permite responder a estas preguntas y más.
+
+El [!DNL Spree] La base de datos de se basa en [!DNL PostgreSQL], puede conectarlo a [!DNL Commerce Intelligence] uso del [los mismos pasos que haría para una normal [!DNL Postgres] conexión](../integrations/postgresql.md).
 
 ## Documentación relacionada
 

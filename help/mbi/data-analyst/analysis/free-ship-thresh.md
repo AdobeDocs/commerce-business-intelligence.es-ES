@@ -2,9 +2,9 @@
 title: Umbral de envío gratuito
 description: Aprenda a configurar un tablero que realice un seguimiento del rendimiento de su umbral de envío gratuito.
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este artículo contiene instrucciones para clientes que utilizan la arquitectura original y la nueva arquitectura. Se encuentra en la nueva arquitectura si tiene la sección &quot;Vistas de Data Warehouse&quot; disponible después de seleccionar &quot;Administrar datos&quot; en la barra de herramientas principal.
+>Este tema contiene instrucciones para los clientes que utilizan la arquitectura original y la nueva arquitectura. Se encuentra en la nueva arquitectura si tiene el `Data Warehouse Views` disponible tras seleccionar `Manage Data` en la barra de herramientas principal.
 
-Este artículo muestra cómo configurar un panel que realice un seguimiento del rendimiento de su umbral de envío gratuito. Este panel, que se muestra a continuación, es una buena forma de probar los dos umbrales de envío gratuito de la prueba A/B. Por ejemplo, es posible que su empresa no esté segura de si debe ofrecer envío gratuito a 50 o 100 dólares. Debe realizar una prueba A/B de dos subconjuntos aleatorios de sus clientes y realizar el análisis en [!DNL MBI].
+En este tema se muestra cómo configurar un tablero que realice un seguimiento del rendimiento de su umbral de envío gratuito. Este panel, que se muestra a continuación, es una buena forma de probar los dos umbrales de envío gratuito de la prueba A/B. Por ejemplo, es posible que su empresa no esté segura de si debe ofrecer envío gratuito a 50 o 100 dólares. Debe realizar una prueba A/B de dos subconjuntos aleatorios de sus clientes y realizar el análisis en [!DNL Commerce Intelligence].
 
 Antes de comenzar, debes identificar dos periodos de tiempo diferentes en los que has tenido valores diferentes para el umbral de envío gratuito de tu tienda.
 

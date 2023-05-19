@@ -2,16 +2,16 @@
 title: Estandarización de datos con tablas de asignación
 description: Aprenda a trabajar con tablas de asignación.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
 # Estandarización de datos con tablas de asignación
 
-Imagínese esto: está en la `Report Builder`, creando un `Revenue by State` informe. Estás en la zona. Todo va bien hasta que agregue un `billing state` en el informe y verá lo siguiente:
+Imagina que estás en el `Report Builder` creación de una `Revenue by State` informe. Todo va bien hasta que intente agregar una `billing state` en el informe y verá lo siguiente:
 
 ![](../../assets/Messy_State_Segments.png)
 
@@ -45,9 +45,9 @@ En la segunda columna, introduzca los valores **debería ser**. Continuando con 
 
 ![](../../assets/Mapping_table_examples.jpg)
 
-## ¿Qué debo hacer en? [!DNL MBI] para usarlo? {#use}
+## ¿Qué debo hacer en? [!DNL Commerce Intelligence] para usarlo? {#use}
 
-Una vez que haya terminado de crear la tabla de asignación, deberá hacer lo siguiente [cargar el archivo](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) en [!DNL MBI] y [crear una columna combinada](../../data-analyst/data-warehouse-mgr/calc-column-types.md) que reubica el nuevo campo en la tabla deseada. Puede hacerlo después de sincronizar el archivo con la Data Warehouse.
+Una vez que haya terminado de crear la tabla de asignación, debe [cargar el archivo](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) en [!DNL Commerce Intelligence] y [crear una columna combinada](../../data-analyst/data-warehouse-mgr/calc-column-types.md) que reubica el nuevo campo en la tabla deseada. Puede hacerlo después de sincronizar el archivo con la Data Warehouse.
 
 En este ejemplo, se mueve la columna que ha creado en el `mapping_state` tabla (`state_input`) a la `customer_address` mediante una columna combinada. Esto nos permite agruparnos por lo limpio `state_input` en los informes en lugar de en la columna `state` columna.
 
@@ -70,15 +70,13 @@ Para crear el `joined` , vaya a la tabla a la que se reubicará el campo en el A
 1. Es posible que la ruta no se rellene inmediatamente después de guardar. Si esto sucede, haga clic en el `Path` y seleccione la ruta que ha creado.
 1. Clic **[!UICONTROL Save]** para crear la columna.
 
-¡Eso es todo!
-
 ## ¿Qué hago ahora? {#wrapup}
 
 Una vez completado el ciclo de actualización, podrá utilizar la nueva columna combinada para segmentar correctamente los datos en lugar de la columna desordenada de la base de datos. Mira tus opciones de agrupación ahora - no más líos de estrés:
 
 ![](../../assets/Clean_State_Segments.png)
 
-Las tablas de asignación son útiles para cualquier momento en el que desee limpiar algunos datos potencialmente desordenados en la Data Warehouse. Sin embargo, las tablas de asignación también se pueden utilizar para algunos otros casos de uso interesantes, como [replicar los canales de Google Analytics en MBI](../data-warehouse-mgr/rep-google-analytics-channels.md).
+Las tablas de asignación son útiles para cualquier momento en el que desee limpiar algunos datos potencialmente desordenados en la Data Warehouse. Sin embargo, las tablas de asignación también se pueden utilizar para algunos otros casos de uso interesantes, como [replicación de su [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### Relacionado
 

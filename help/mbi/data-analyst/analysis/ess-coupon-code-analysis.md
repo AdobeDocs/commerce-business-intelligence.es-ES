@@ -2,9 +2,9 @@
 title: Análisis de código de cupón (básico)
 description: Conozca el rendimiento de los cupones de su negocio es una forma interesante de segmentar sus pedidos y comprender mejor los hábitos de los clientes.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Comprender el rendimiento de los cupones de su negocio es una forma interesante de segmentar sus pedidos y comprender mejor los hábitos de los clientes.
 
-Este artículo describe los pasos necesarios para crear este análisis con el fin de comprender el rendimiento de los clientes con cupones adquiridos, ver las tendencias y rastrear el uso del código de cupones individual.
+En este tema se explican los pasos necesarios para crear este análisis con el fin de comprender el rendimiento de los clientes con cupones adquiridos, ver las tendencias y realizar un seguimiento del uso del código de cupones individual.
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
@@ -21,7 +21,7 @@ Este artículo describe los pasos necesarios para crear este análisis con el fi
 
 En primer lugar, una nota sobre cómo se realiza el seguimiento de los códigos de cupones. Si un cliente aplica un cupón a un pedido, ocurren tres cosas:
 
-* Un descuento se refleja en la variable `base_grand_total` importe (su `Revenue` métrica en MBI)
+* Un descuento se refleja en la variable `base_grand_total` importe (su `Revenue` en Commerce Intelligence)
 * El código de cupón se almacena en `coupon_code` field. Si este campo es NULL (vacío), el pedido no tiene un cupón asociado.
 * La cantidad descontada se almacena en `base_discount_amount`. Según la configuración, este valor puede parecer negativo o positivo.
 

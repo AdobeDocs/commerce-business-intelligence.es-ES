@@ -2,7 +2,7 @@
 title: Análisis del valor de duración esperado (LTV) (básico)
 description: Aprenda a crear análisis para comprender el valor de duración de sus clientes actuales y predecir cómo aumenta el valor de duración con más pedidos.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Pronosticar el valor de vida útil de los clientes a medida que realizan más pedidos es uno de los aspectos más importantes de cualquier negocio de cualquier tamaño.
 
-A continuación se indican los pasos para crear análisis con el fin de comprender el valor de duración de los clientes actuales y prever cómo aumenta este valor con más pedidos:
+A continuación se indican los pasos para crear análisis con el fin de comprender el valor de duración de los clientes actuales y prever cómo aumenta este valor con más pedidos.
 
 ![valor de duración esperado](../../assets/expected_ltv_720.png)
 

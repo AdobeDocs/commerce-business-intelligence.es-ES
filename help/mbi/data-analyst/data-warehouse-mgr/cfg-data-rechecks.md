@@ -2,31 +2,32 @@
 title: Configuración de comprobaciones de datos
 description: Aprenda a configurar columnas de datos con valores modificables.
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
 # Configuración de comprobaciones de datos
 
-En una tabla de base de datos, puede haber columnas de datos con valores modificables. Por ejemplo, en un `orders`) tabla puede haber una columna llamada `status`. Cuando se escribe inicialmente un pedido en la base de datos, la columna de estado puede contener el valor _pendiente_. El orden se replica en su [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) con esto `pending` valor.
+En una tabla de base de datos, puede haber columnas de datos con valores modificables. Por ejemplo, en un `orders` podría haber una columna llamada `status`. Cuando se escribe inicialmente un pedido en la base de datos, la columna de estado puede contener el valor _pendiente_. El orden se replica en su [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) con esto `pending` valor.
 
-Sin embargo, los estados de los pedidos pueden cambiar: no siempre están en un `pending` estado. Con el tiempo podría convertirse en `complete` o `cancelled`. Para asegurarse de que la Data Warehouse sincronice este cambio, se debe volver a comprobar la columna para ver si hay nuevos valores.
+Los estados de los pedidos pueden cambiar, aunque no siempre se encuentran en un `pending` estado. Con el tiempo podría convertirse en `complete` o `cancelled`. Para asegurarse de que la Data Warehouse sincronice este cambio, se debe volver a comprobar la columna para ver si hay nuevos valores.
 
 ¿Cómo encaja esto con el [métodos de replicación](../data-warehouse-mgr/cfg-replication-methods.md) ¿eso se discutió? El procesamiento de las comprobaciones varía en función del método de replicación elegido. El `Modified\_At` el método de replicación es la mejor opción para procesar los valores que cambian, ya que no es necesario configurar las comprobaciones nuevas. El `Auto-Incrementing Primary Key` y `Primary Key Batch Monitoring` Los métodos de requieren volver a comprobar la configuración.
 
 Al utilizar cualquiera de estos métodos, las columnas modificables deben marcarse para volver a comprobarlas. Hay tres formas de hacerlo:
 
-* Proceso de auditoría que se ejecuta como parte de las columnas de indicadores de actualización que se van a volver a comprobar.
+1. Proceso de auditoría que se ejecuta como parte de las columnas de indicadores de actualización que se van a volver a comprobar.
 
    >[!NOTE]
    >
    >El auditor se basa en un proceso de muestreo y las columnas que cambian pueden no detectarse inmediatamente.
 
-* Puede configurarlos usted mismo seleccionando la casilla de verificación situada junto a la columna en el administrador de Datas Warehouse y haciendo clic en **[!UICONTROL Set Recheck Frequency]** y elegir un intervalo de tiempo adecuado para cuándo se deben comprobar los cambios.
-* Un miembro de la [!DNL MBI] El equipo de Data Warehouse puede marcar manualmente las columnas para volver a comprobar en la Data Warehouse. Si tiene conocimiento de columnas que se pueden cambiar, póngase en contacto con el equipo de para solicitar que se vuelvan a configurar las comprobaciones. Incluya una lista de columnas, junto con la frecuencia, con la solicitud.
+1. Puede configurarlos usted mismo seleccionando la casilla de verificación situada junto a la columna en el administrador de Datas Warehouse y haciendo clic en **[!UICONTROL Set Recheck Frequency]** y elegir un intervalo de tiempo adecuado para cuándo se deben comprobar los cambios.
+
+1. Un miembro de la [!DNL Adobe Commerce Intelligence] El equipo de Data Warehouse puede marcar manualmente las columnas para volver a comprobar en la Data Warehouse. Si tiene conocimiento de columnas que se pueden cambiar, póngase en contacto con el equipo de para solicitar que se vuelvan a configurar las comprobaciones. Incluya una lista de columnas, junto con la frecuencia, con la solicitud.
 
 ## Volver a comprobar frecuencias {#frequency}
 
@@ -55,7 +56,7 @@ Para cambiar la frecuencia de repetición de la comprobación, haga clic en la c
 
 A veces puede ver `Paused` en el `Changes?` columna. Este valor se muestra cuando la tabla [método de replicación](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) se establece en `Paused`.
 
-El Adobe recomienda revisar estas columnas para optimizar las actualizaciones y garantizar que se vuelvan a comprobar las columnas modificables. Si la frecuencia de nueva comprobación de una columna es alta, dada la frecuencia con la que cambian los datos, Adobe recomienda reducirla para optimizar las actualizaciones.
+[!DNL Adobe] recomienda revisar estas columnas para optimizar las actualizaciones y garantizar que se vuelvan a comprobar las columnas modificables. Si la frecuencia de nueva comprobación de una columna es alta, dada la frecuencia con la que cambian los datos, Adobe recomienda reducirla para optimizar las actualizaciones.
 
 Póngase en contacto con nosotros si tiene alguna pregunta o pregunta sobre los métodos de replicación actuales o las comprobaciones nuevas.
 

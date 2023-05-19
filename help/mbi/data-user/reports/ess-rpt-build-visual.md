@@ -2,24 +2,24 @@
 title: Report Builder visual
 description: Aprenda a utilizar Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-# `Visual Report Builder`
+# [!DNL Visual Report Builder]
 
-`Visual Report Builder` facilita la creación de informes rápidos basados en métricas predefinidas. Cada métrica incluye una consulta que define el conjunto de datos del informe.
+[!DNL Visual Report Builder] facilita la creación de informes rápidos basados en métricas predefinidas. Cada métrica incluye una consulta que define el conjunto de datos del informe.
 
 En el ejemplo siguiente se muestra cómo crear un informe simple, agrupar los datos por una dimensión adicional, establecer el intervalo de fecha y hora, cambiar el tipo de gráfico y guardar el informe en un panel.
 
 ## Para crear un informe simple:
 
-1. En el [!DNL MBI] , haga clic en **[!UICONTROL Report Builder]**.
+1. En el [!DNL Commerce Intelligence] , haga clic en **[!UICONTROL Report Builder]**.
 
-1. En `Visual Report Builder`, haga clic en **[!UICONTROL Create Report]** y haga lo siguiente:
+1. En [!UICONTROL Visual Report Builder], haga clic en **[!UICONTROL Create Report]** y haga lo siguiente:
 
    * Clic **[!UICONTROL Add Metric]**.
 

@@ -2,7 +2,7 @@
 title: Agregar gráficos a los paneles
 description: Aprenda a añadir gráficos a los paneles mediante la función Añadir informe.
 exl-id: 4a4f14c3-a6ab-4abc-9451-2a0f2fcf06a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Agregar gráficos a los paneles
 
-Los gráficos existentes se pueden agregar a los paneles mediante la variable `Add Report` función, situada en el área superior derecha de la pantalla. El mismo gráfico se puede agregar a varios paneles, lo que significa que si se edita el gráfico, todos los paneles con este gráfico reflejarán el cambio.
+Los gráficos existentes se pueden agregar a los paneles mediante la variable [!UICONTROL Add Report] función, situada en el área superior derecha de la pantalla. El mismo gráfico se puede agregar a varios paneles, lo que significa que si se edita el gráfico, todos los paneles con este gráfico reflejarán el cambio.
 
 >[!NOTE]
 >

@@ -2,7 +2,7 @@
 title: Utilizar el cargador de archivos
 description: Aprenda a colocar todos los datos en una sola Data Warehouse.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -15,14 +15,14 @@ ht-degree: 0%
 >
 >Requiere [Permisos de administración](../../../administrator/user-management/user-management.md).
 
-[!DNL MBI] es potente no solo por sus características de visualización, sino porque le permite colocar todos los datos en una sola Data Warehouse. Incluso los datos que se encuentran fuera de sus bases de datos e integraciones se pueden incorporar a [!DNL MBI] mediante la herramienta de carga de archivos en el Administrador de Datas Warehouse.
+[!DNL Adobe Commerce Intelligence] es potente no solo por sus características de visualización, sino porque le permite colocar todos los datos en una sola Data Warehouse. Incluso los datos que se encuentran fuera de sus bases de datos e integraciones se pueden incorporar a [!DNL Commerce Intelligence] mediante la herramienta de carga de archivos en el Administrador de Datas Warehouse.
 
 Utilice campañas de publicidad como ejemplo. Si está ejecutando campañas en línea y sin conexión, no puede obtener una imagen completa si solo está analizando los datos de una integración en línea. Al cargar una hoja de cálculo con los datos de campañas sin conexión, puede analizar ambos conjuntos de datos y comprender mejor el rendimiento de la campaña.
 
 ## Restricciones y requisitos {#require}
 
 1. **El único formato admitido para la carga de archivos es `CSV` o`comma separated values`**. Si está trabajando en Excel, puede utilizar la función Guardar como para guardar el archivo en `.csv` formato.
-1. **`CSV`Los archivos deben utilizar`UTF-8 encoding`**. La mayoría de las veces, esto no es un problema. Si aparece este error al cargar un archivo, [consulte este artículo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
+1. **`CSV`Los archivos deben utilizar`UTF-8 encoding`**. La mayoría de las veces, esto no es un problema. Si aparece este error al cargar un archivo, [consulte este artículo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Los archivos no pueden superar los 100 MB**. Si el archivo es más grande que este, separe la tabla en fragmentos y guárdela como archivos individuales. Puede anexar los datos después de cargar el archivo inicial.
 1. **Todas las tablas deben tener un`primary key`**. Debe haber al menos una columna en la tabla que pueda utilizarse como `primary key`o un identificador único para cada fila de la tabla. Cualquier columna designada como `primary key` lata *nunca* ser nulo. A `primary key` puede ser tan simple como agregar una columna que da un número a cada fila, o puede ser dos columnas concatenadas para crear una columna de valores únicos (por ejemplo, `campaign name` y `date`).
 
@@ -30,7 +30,7 @@ Utilice campañas de publicidad como ejemplo. Si está ejecutando campañas en l
 
 ## Formato de datos para carga {#formatting}
 
-Antes de cargar los datos en [!DNL MBI], compruebe que tiene el formato indicado en las directrices de esta sección.
+Antes de cargar los datos en [!DNL Commerce Intelligence], compruebe que tiene el formato indicado en las directrices de esta sección.
 
 ### Fila de encabezado {#header}
 
@@ -77,7 +77,7 @@ Para [!DNL Google Docs] y [!DNL Apple Numbers] recursos, consulte la [Relacionad
 
 ## Carga de datos {#uploading}
 
-Ahora que la hoja de cálculo tiene el formato correcto y [!DNL MBI]compatible con, añádalo a su Data Warehouse.
+Ahora que la hoja de cálculo tiene el formato correcto y [!DNL Commerce Intelligence]compatible con, añádalo a su Data Warehouse.
 
 1. Para empezar, vaya a **[!UICONTROL Data** > **File Uploads]**.
 
@@ -85,7 +85,7 @@ Ahora que la hoja de cálculo tiene el formato correcto y [!DNL MBI]compatible c
 
 1. Clic **[!UICONTROL Choose File]** y seleccione el archivo. Clic **[!UICONTROL Open]** para iniciar la carga.
 
-   Una vez finalizada la carga, una lista de las columnas [!DNL MBI] que se encuentran en el archivo se muestra.
+   Una vez finalizada la carga, una lista de las columnas [!DNL Commerce Intelligence] que se encuentran en el archivo se muestra.
 
 1. Compruebe que los nombres de columna y los tipos de datos son correctos. Concretamente, compruebe que todas las columnas de fecha se lean como fechas y no como números.
 
@@ -111,7 +111,7 @@ Las tablas cargadas se muestran en **Cargas de archivos** de la lista de tablas 
 
 ## Actualización o adición de datos a una tabla existente {#appending}
 
-¿Tiene nuevos datos para agregar a un archivo que ya ha cargado? No hay problema: puede actualizar y anexar datos fácilmente en [!DNL MBI].
+¿Tiene nuevos datos para agregar a un archivo que ya ha cargado? No hay problema: puede actualizar y anexar datos fácilmente en [!DNL Commerce Intelligence].
 
 1. Para empezar, vaya a **[!UICONTROL Manage Data** > **File Uploads]**.
 
@@ -121,7 +121,7 @@ Las tablas cargadas se muestran en **Cargas de archivos** de la lista de tablas 
 
 1. Utilice el menú desplegable para seleccionar la opción para administrar filas duplicadas:
 
-   |  |  |
+   | Opción | Descripción |
    |---|---|
    | `Overwrite old row with new row` | Esto sobrescribe los datos existentes con datos nuevos si una fila tiene la misma clave principal en la tabla existente y en el nuevo archivo. Es el método que se utiliza para columnas con valores que cambian con el tiempo; por ejemplo, una columna Estado. Los datos existentes se sobrescriben y actualizan con los nuevos datos. Las filas con claves principales que no están en la tabla existente se agregan como filas nuevas. |
    | `Retain old row; discard new row` | Esto hace que se ignoren los nuevos datos si una fila tiene la misma clave principal en la tabla existente y en el nuevo archivo. |
@@ -131,7 +131,7 @@ Las tablas cargadas se muestran en **Cargas de archivos** de la lista de tablas 
 
 1. Clic **[!UICONTROL Open]** para iniciar la carga.
 
-   Una vez finalizada la carga, [!DNL MBI] validará la estructura de datos del archivo. A *¡Correcto!* El mensaje aparece en la parte superior de la pantalla después de guardar la tabla.
+   Una vez finalizada la carga, [!DNL Commerce Intelligence] validará la estructura de datos del archivo. A *¡Correcto!* El mensaje aparece en la parte superior de la pantalla después de guardar la tabla.
 
 ## Disponibilidad de datos {#availability}
 
@@ -139,9 +139,9 @@ Al igual que las columnas calculadas, los datos de las cargas de archivos están
 
 ## Ajuste {#wrapup}
 
-Este artículo cubría únicamente los conceptos básicos para utilizar la importación de datos, pero es posible que desee hacer algo más avanzado. Consulte los Artículos relacionados para obtener instrucciones sobre el formato y la importación de datos financieros, de comercio electrónico, de gasto en publicidad y de otro tipo.
+En este tema se trataron únicamente los conceptos básicos para utilizar la importación de datos, pero puede que desee hacer algo más avanzado. Consulte los Artículos relacionados para obtener instrucciones sobre el formato y la importación de datos financieros, de comercio electrónico, de gasto en publicidad y de otro tipo.
 
-Además, la carga de archivos no es la única manera de introducir sus datos en [!DNL MBI]. El [API de importación de datos](https://developer.adobe.com/commerce/services/reporting/import-api/) Las funciones de le permiten insertar datos arbitrarios en su [!DNL MBI] Data Warehouse.
+Además, la carga de archivos no es la única manera de introducir sus datos en [!DNL Commerce Intelligence]. El [API de importación de datos](https://developer.adobe.com/commerce/services/reporting/import-api/) Las funciones de le permiten insertar datos arbitrarios en su [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Relacionado {#related}
 

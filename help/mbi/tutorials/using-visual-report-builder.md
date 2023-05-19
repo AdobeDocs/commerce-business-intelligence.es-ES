@@ -2,16 +2,16 @@
 title: Usar el Report Builder visual
 description: Obtenga información sobre cómo analizar los datos del informe durante un período de tiempo específico.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# Utilice el `Visual Report Builder`
+# Utilice el [!DNL Visual Report Builder]
 
-El [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) le permite explorar visualmente sus datos para obtener perspectivas y ayudar a impulsar las decisiones comerciales. Este tutorial lo acompañará durante el proceso de creación de un informe básico.
+El [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) le permite explorar visualmente sus datos para obtener perspectivas y ayudar a impulsar las decisiones comerciales. Este tutorial lo acompañará durante el proceso de creación de un informe básico.
 
 >[!NOTE]
 >
@@ -19,9 +19,9 @@ El [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) le pe
 
 ## Paso 1: Creación de un informe
 
-Para empezar a crear un informe, haga clic en **[!UICONTROL Report Builder]** en la barra lateral o **[!UICONTROL Add Report]** en la parte superior de cualquier tablero. Si la variable `Report Builder` Si se muestra la página de selección, haga clic en **[!UICONTROL Visual Report Builder]** opción.
+Para empezar a crear un informe, haga clic en **[!UICONTROL Report Builder]** en la barra lateral o **[!UICONTROL Add Report]** en la parte superior de cualquier tablero. Si la variable `Report Builder` página, haga clic en el **[!UICONTROL Visual Report Builder]** opción.
 
-Para editar un informe creado en `Visual Report Builder`, haga clic en el icono de engranaje (Opciones) en la esquina superior derecha de cualquier gráfico y, a continuación, haga clic en **[!UICONTROL Edit]**.
+Para editar un informe creado en [!DNL Visual Report Builder], haga clic en el icono de engranaje (Opciones) en la esquina superior derecha de cualquier gráfico y, a continuación, haga clic en **[!UICONTROL Edit]**.
 
 ## Paso 2: Añadir métricas
 
@@ -45,7 +45,7 @@ Para centrarse en un periodo de tiempo determinado, se puede definir el periodo 
 
 Al establecer un intervalo de fechas específico para el período de tiempo, asegúrese de que la fecha de inicio sea al principio del intervalo y la fecha de finalización al final del intervalo.
 
-Por ejemplo, configurar un periodo de tiempo desde `January 1st to March 1st` y elegir una `monthly` programas de intervalos `March` como punto de datos, pero ignorar todos los días en `March` excepto `March 1`. En ese caso, debe hacer su `Time Period` de `January 1 to March 31`.
+Por ejemplo, configurar un periodo de tiempo desde `January 1st` hasta `March 1st` y elegir una `monthly` programas de intervalos `March` como punto de datos, pero ignorar todos los días en `March` excepto `March 1`. En ese caso, debe hacer su `Time Period` de `January 1 to March 31`.
 
 ## Paso 5: `Group by` / `Segmenting the Analysis` {#groupby}
 

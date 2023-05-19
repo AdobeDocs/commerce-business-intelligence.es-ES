@@ -1,19 +1,19 @@
 ---
 title: Exportar datos sin procesar
-description: Obtenga información sobre cómo exportar registros desde [!DNL MBI] Data Warehouse para obtener una visión más detallada de lo que alimenta el panel.
+description: Obtenga información sobre cómo exportar registros desde [!DNL Commerce Intelligence] Data Warehouse para obtener una visión más detallada de lo que alimenta el panel.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
 # Exportar datos sin procesar
 
-Con las exportaciones de datos sin procesar, puede exportar registros desde [!DNL MBI] Data Warehouse para obtener una visión más detallada de lo que alimenta el panel. Además, las exportaciones de datos sin procesar pueden ayudarle [localizar discrepancias de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
+Con las exportaciones de datos sin procesar, puede exportar registros de la Data Warehouse para obtener una visión más detallada de lo que alimenta el panel. Además, las exportaciones de datos sin procesar pueden ayudarle [localizar discrepancias de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
-Las exportaciones de datos sin procesar proporcionan acceso a columnas y dimensiones adicionales generadas mediante la desnormalización y la agregación previa de métricas relevantes. Por ejemplo, `User's first order date` es una dimensión que puede exportar para cada usuario en [!DNL MBI], aunque es posible que no esté disponible en la base de datos.
+Las exportaciones de datos sin procesar proporcionan acceso a columnas y dimensiones adicionales generadas mediante la desnormalización y la agregación previa de métricas relevantes. Por ejemplo, `User's first order date` es una dimensión que puede exportar para cada usuario en [!DNL Commerce Intelligence], aunque es posible que no esté disponible en la base de datos.
 
 Este tutorial abarca lo siguiente:
 
@@ -23,13 +23,16 @@ Este tutorial abarca lo siguiente:
 
 ## Paso 1: Selección de datos para exportar {#select}
 
-Existen dos maneras de exportar datos sin procesar en [!DNL MBI]: a nivel de gráfico o de tabla.
+Existen dos maneras de exportar datos sin procesar en [!DNL Commerce Intelligence]:
 
-### Exportación a nivel de tabla en su `Manage Data` Ficha
+1. a nivel de gráfico
+1. a nivel de tabla
 
-Si desea exportar la tabla desde `Manage Data` pestaña, necesita [Administrador](../administrator/user-management/user-management.md) permisos.
+### Exportación a nivel de tabla en su [!UICONTROL Manage Data] Ficha
 
-1. Clic **[!UICONTROL Manage Data** > ** Exportar datos **> **Exportación de datos sin procesar]** para empezar.
+Si desea exportar la tabla desde [!UICONTROL Manage Data] pestaña, necesita [Administrador](../administrator/user-management/user-management.md) permisos.
+
+1. Clic **[!UICONTROL Manage Data** > ** Exportar datos **> **Exportación de datos sin procesar]**.
 1. Verá un `Export List` de exportaciones de datos creadas recientemente, si las hay. Clic **[!UICONTROL Add Export]** para crear una exportación.
 1. El `New Raw Data Export` se muestra. Aquí puede personalizar la exportación seleccionando o anulando la selección de columnas y filtros:
 
@@ -43,8 +46,11 @@ Si desea exportar la tabla desde `Manage Data` pestaña, necesita [Administrador
 ### Exportación a nivel de gráfico desde el panel
 
 1. Haga clic en el icono de engranaje en la esquina superior derecha de cualquier gráfico.
+
 1. Seleccionar `Raw Export` en el menú desplegable para mostrar el `Raw Export` diálogo.
+
 1. Personalice la exportación eligiendo la opción `table`, `columns`, y `filters` para incluir o excluir. Consulte la sección anterior para obtener información más detallada sobre los campos de este módulo.
+
    >[!NOTE]
    >
    >La tabla que se muestra en la `Table` El campo es, de forma predeterminada, la tabla que alimenta el gráfico.
@@ -66,5 +72,3 @@ Para comprobar si la exportación está lista, haga clic en **[!UICONTROL Raw Da
 ## Paso 3: Acceso a exportaciones históricas {#historical}
 
 Para ver las exportaciones anteriores, haga clic en **[!UICONTROL Raw Data Export]** en la esquina superior derecha de la pantalla. Se puede acceder a los informes pendientes y completados durante un máximo de siete días.
-
-¡Felicitaciones! Ha terminado.

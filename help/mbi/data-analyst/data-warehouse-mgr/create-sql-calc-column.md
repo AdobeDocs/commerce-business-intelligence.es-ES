@@ -1,29 +1,29 @@
 ---
 title: Crear y usar una columna calculada de SQL
-description: Descubra cómo se pueden crear columnas avanzadas en forma de columnas de cálculo SQL en la nueva arquitectura de MBI.
+description: Descubra cómo se pueden crear columnas avanzadas en forma de columnas de cálculo SQL en la nueva arquitectura de Adobe Commerce Intelligence.
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
 
 # Crear una columna calculada SQL
 
-En este tema se describen el propósito y los usos del `Calculation` tipo de columna: que se puede añadir a las tablas utilizando la variable [Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md). A continuación se explica qué hacen los cálculos SQL, por qué se utilizan, el proceso para crear un cálculo SQL y dos ejemplos.
+En este tema se describen el propósito y los usos del `Calculation` tipo de columna, que se puede añadir a las tablas utilizando la variable [Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md). A continuación se explica qué hacen los cálculos SQL, por qué se utilizan, el proceso para crear un cálculo SQL e incluye dos ejemplos.
 
 **Explicación**
 
-En el pasado, las columnas que se consideraban `advanced` solo lo ha podido realizar un analista del equipo de éxito del cliente aquí en [!DNL MBI]. Ahora todo el poder está en manos del usuario final, y se pueden crear columnas avanzadas en forma de `SQL Calculation` columnas en la nueva [!DNL MBI] arquitectura.
+En el pasado, las columnas que se consideraban `advanced` solo lo ha podido realizar un analista del equipo de éxito del cliente aquí en [!DNL Adobe Commerce Intelligence]. Ahora todo el poder está en manos del usuario final, y se pueden crear columnas avanzadas en forma de `SQL Calculation` columnas en la nueva [!DNL Commerce Intelligence] arquitectura.
 
-El `Calculation` El tipo de columna, ahora disponible como opción en el Administrador de Datas Warehouse, es una misma operación de tabla que le permite transformar las columnas de una tabla mediante la lógica PostgreSQL. Documentación sobre las funciones y operadores que se pueden utilizar en la `Calculatio`No se puede encontrar ningún tipo de columna en el sitio web PostgreSQL [aquí](https://www.postgresql.org/docs/9.6/functions.html).
+El `Calculation` El tipo de columna, ahora disponible como opción en el Administrador de Datas Warehouse, es una misma operación de tabla que le permite transformar las columnas de una tabla mediante la lógica PostgreSQL. Documentación sobre las funciones y operadores que se pueden utilizar en la `Calculation` El tipo de columna se encuentra en el sitio web de PostgreSQL [aquí](https://www.postgresql.org/docs/9.6/functions.html).
 
 Las diferentes columnas que se pueden crear con la variable `Calculation` Las columnas son casi ilimitadas, pero la mayoría de las columnas se pueden crear con instrucciones IF-THEN y aritmética básica, que se utiliza en los ejemplos siguientes.
 
 **Ejemplo 1: ¿Es el último pedido del cliente?**
 
-La mayoría de las cuentas tienen una columna denominada `Is customer's last order?` en su `orders` tabla para realizar análisis de tasas de compra repetidas y clientes perdidos. Si la cuenta se encuentra en la nueva arquitectura, esta columna se crea mediante una `Calculation` y se puede ver en la captura de pantalla siguiente:
+La mayoría de las cuentas tienen una columna denominada `Is customer's last order?` en su `orders` tabla para realizar análisis de tasas de compra repetidas y clientes perdidos. Si la cuenta se encuentra en la nueva arquitectura, esta columna se crea mediante una `Calculation` y se puede ver en la siguiente captura de pantalla:
 
 ![](../../assets/Is_customer_s_last_order.png)
 
@@ -73,4 +73,5 @@ Desde aquí puede crear una `Calculation` siguiendo estos pasos:
    * `Datetime` - dd/MM/yyyy hh:mm:formato ss
 
 1. Clic **[!UICONTROL test column]**. Esto genera una lista de cinco valores de prueba para cada una de las entradas y muestra el resultado de la lógica del paso 6 para cada conjunto de valores de prueba. Si alguna parte del SQL genera un error, se devuelve el mensaje de error correspondiente. Solo se pueden generar resultados de muestra si todas las columnas de entrada son campos nativos. Si alguna de las columnas de entrada es una columna calculada, debe validar los resultados agregando la columna a una métrica y visualizándola en el Report Builder visual
+
 1. Cuando esté satisfecho con los resultados, haga clic en **[!UICONTROL Save]**. La columna habilita para su uso.

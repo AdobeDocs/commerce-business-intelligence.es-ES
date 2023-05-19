@@ -2,16 +2,16 @@
 title: Fórmulas en el Report Builder
 description: Descubra cómo se pueden utilizar las fórmulas en el Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 # Fórmulas en la `Report Builder`
 
-En el [`Report Builder`](../../tutorials/using-visual-report-builder.md), puede crear potentes visualizaciones utilizando el [métricas definidas](../../data-user/reports/ess-manage-data-metrics.md) en su cuenta. La combinación de estas métricas en una fórmula le permite obtener información adicional de los datos. Este artículo explica cómo se pueden utilizar las fórmulas en `Report Builder` - vamos a saltar en!
+En el [`Report Builder`](../../tutorials/using-visual-report-builder.md), puede crear potentes visualizaciones utilizando el [métricas definidas](../../data-user/reports/ess-manage-data-metrics.md) en su cuenta. La combinación de estas métricas en una fórmula le permite obtener información adicional de los datos. En este tema se explica cómo se pueden utilizar las fórmulas en `Report Builder` - vamos a saltar en!
 
 ## ¿Qué es un? `formula`? {#what}
 
@@ -63,4 +63,4 @@ En este ejemplo, utilizó el `Stacked Columns` para mostrar los resultados por m
 
 ¿Se ha dado cuenta en los ejemplos anteriores de que la fórmula `timestamp`, `groupings`, `perspectives`, y `filters` se heredan de sus métricas de entrada? Tenga en cuenta que las fórmulas se pueden utilizar para `perspectives` y [opciones de tiempo independientes](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, igual que las métricas.
 
-Si tiene alguna pregunta adicional acerca del uso de fórmulas en la `Report Builder`, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si tiene alguna pregunta adicional acerca del uso de fórmulas en la `Report Builder`, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

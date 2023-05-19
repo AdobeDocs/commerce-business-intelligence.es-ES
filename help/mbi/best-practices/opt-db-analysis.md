@@ -2,16 +2,16 @@
 title: Optimización de la base de datos para análisis
 description: Aprenda a optimizar la base de datos para realizar análisis.
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
 # Optimización de la base de datos
 
-La principal ventaja de utilizar una base de datos operativa para inteligencia empresarial es que no es necesario crear ni modificar nada para recopilar datos. Ya hay información valiosa; todo lo que hay que hacer es desbloquearla.
+La principal ventaja de utilizar una base de datos operativa para [!DNL Adobe Commerce Intelligence] es que no es necesario crear ni modificar nada para recopilar datos. Información valiosa ya está allí, solo tiene que desbloquearla.
 
 Este tema contiene algunas recomendaciones para ayudarle a optimizar la base de datos para el análisis y extraer perspectivas procesables de los datos sin procesar.
 
@@ -51,16 +51,16 @@ Demasiadas empresas se centran únicamente en encontrar canales que proporcionen
 
 ### Establecer una clave principal
 
-A [clave principal](https://en.wikipedia.org/wiki/Unique_key) es una columna (o conjunto de columnas) que no cambia y que produce valores únicos dentro de una tabla. Las claves principales son muy importantes, ya que garantizan que las tablas se dupliquen correctamente en [!DNL MBI].
+A [clave principal](https://en.wikipedia.org/wiki/Unique_key) es una columna (o conjunto de columnas) que no cambia y que produce valores únicos dentro de una tabla. Las claves principales son muy importantes, ya que garantizan que las tablas se dupliquen correctamente en [!DNL Commerce Intelligence].
 
 Cuando cree claves principales, utilice un tipo de datos de número entero para la columna que aumenta automáticamente. El Adobe recomienda evitar el uso de claves principales de varias columnas siempre que sea posible.
 
-Si la tabla es una vista SQL, agregue una columna que pueda actuar como clave principal. [!DNL MBI] puede identificar automáticamente esta columna como clave principal.
+Si la tabla es una vista SQL, agregue una columna que pueda actuar como clave principal. [!DNL Commerce Intelligence] puede identificar automáticamente esta columna como clave principal.
 
 ### Asignar un tipo de datos a su columna de datos
 
-Si una columna de datos no tiene un asignado [tipo de datos](https://en.wikipedia.org/wiki/Data_type), [!DNL MBI] averigua qué tipo de datos utilizar. Si el sistema no lo adivina correctamente, es posible que no pueda realizar los análisis relevantes hasta que el equipo de soporte de Adobe ajuste la columna al tipo de datos adecuado. Por ejemplo, si una columna de fecha se adivina como un tipo de datos numérico, puede generar tendencias a lo largo del tiempo utilizando esa dimensión de fecha.
+Si una columna de datos no tiene un asignado [tipo de datos](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] averigua qué tipo de datos utilizar. Si el sistema no lo adivina correctamente, es posible que no pueda realizar los análisis relevantes hasta que el equipo de soporte de Adobe ajuste la columna al tipo de datos adecuado. Por ejemplo, si una columna de fecha se adivina como un tipo de datos numérico, puede generar tendencias a lo largo del tiempo utilizando esa dimensión de fecha.
 
 ### Agregar prefijos a las tablas de datos si tiene varias bases de datos
 
-Si tiene varias bases de datos conectadas a [!DNL MBI], el Adobe recomienda agregar prefijos a las tablas para evitar confusiones. Los prefijos le ayudan a recordar de dónde provienen las métricas o dimensiones de datos.
+Si tiene varias bases de datos conectadas a [!DNL Commerce Intelligence], el Adobe recomienda agregar prefijos a las tablas para evitar confusiones. Los prefijos le ayudan a recordar de dónde provienen las métricas o dimensiones de datos.

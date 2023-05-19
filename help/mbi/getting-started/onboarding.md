@@ -1,15 +1,15 @@
 ---
-title: Incorporación
-description: Más información sobre la incorporación.
+title: Incorporación de Adobe Commerce Intelligence
+description: Obtenga información acerca de la incorporación de Adobe Commerce Intelligence.
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-# Incorporación
+# Incorporación [!DNL Adobe Commerce Intelligence]
 
 Las preguntas de incorporación relacionadas con `store` y `database` La configuración de garantiza que los informes se configuran correctamente. Con estas respuestas, Adobe entrega informes que se adaptan con precisión a la configuración de su tienda.
 
@@ -29,6 +29,6 @@ Las preguntas de incorporación relacionadas con `store` y `database` La configu
 
 ## Configuración de base de datos
 
-- `Database name` - ¿Qué es el *nombre de la base de datos MySQL* ¿dónde residen los datos transaccionales de Commerce?
+- `Database name` - ¿Qué es el *nombre del [!DNL MySQL] database* ¿dónde residen los datos transaccionales de Commerce?
 
 - `Table prefix (optional)` - ¿Las tablas contenidas en su base de datos de Commerce van precedidas de algo (por ejemplo, `store_`)? Normalmente no es así, pero se puede llevar a cabo una personalización.

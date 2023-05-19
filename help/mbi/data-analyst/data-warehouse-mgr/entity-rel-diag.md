@@ -2,22 +2,22 @@
 title: Diagramas de relación de entidad
 description: Obtenga información acerca de algunos diagramas de ER para ayudarle a visualizar la relación entre un puñado de tablas comunes de bases de datos de Commerce.
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
 # Diagrama de relación de entidad
 
-¿Qué es un? **[!UICONTROL entity relationship (ER) diagram]**? Un `ER` el diagrama es una visualización de las tablas de una base de datos y de cómo se relacionan entre sí. Este artículo contiene algunos diagramas de ER para ayudarle a visualizar la relación entre un puñado de tablas comunes de bases de datos de Commerce.
+¿Qué es un? **[!UICONTROL entity relationship (ER) diagram]**? Un [!UICONTROL ER] el diagrama es una visualización de las tablas de una base de datos y de cómo se relacionan entre sí. Este tema contiene algunos [!UICONTROL ER] diagramas para ayudarle a visualizar la relación entre algunas tablas comunes de bases de datos de Adobe Commerce.
 
 >[!NOTE]
 >
->A lo largo de este artículo, verá las palabras **unirse**, **parentesco**, y **ruta**. Todas estas palabras se utilizan para describir cómo se conectan dos tablas.
+>A lo largo de este tema, verá las palabras **unirse**, **parentesco**, y **ruta**. Todas estas palabras se utilizan para describir cómo se conectan dos tablas.
 
-## Commerce principal `ER` Diagrama
+## Commerce principal [!UICONTROL ER] Diagrama
 
 ![Gráfico_DB_4](../../assets/4_DB_Chart.png)
 
@@ -35,7 +35,7 @@ Un cliente puede realizar muchos pedidos. La relación entre estas dos tablas es
 >
 >`customer\_entity.entity\_id` no es igual a `sales\_flat\_order.entity\_id`. La primera puede considerarse como una `customer\_id` y el segundo puede ser considerado como un `order\_id.`
 
-En [!DNL MBI]Sin embargo, si la ruta entre estas dos tablas no existe, puede [creación de la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse. Cuando esté listo para crear la ruta, se define de la siguiente manera:
+En [!DNL Commerce Intelligence]Sin embargo, si la ruta entre estas dos tablas no existe, puede [creación de la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse. Cuando esté listo para crear la ruta, se define de la siguiente manera:
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -45,7 +45,7 @@ En [!DNL MBI]Sin embargo, si la ruta entre estas dos tablas no existe, puede [cr
 
 Un pedido puede contener muchos elementos. La relación entre estas dos tablas es `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`.
 
-En [!DNL MBI]Sin embargo, si la ruta entre estas dos tablas no existe, puede [creación de la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse. Cuando esté listo para crear la ruta, se define de la siguiente manera:
+En [!DNL Commerce Intelligence]Sin embargo, si la ruta entre estas dos tablas no existe, puede [creación de la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse. Cuando esté listo para crear la ruta, defina la ruta como se muestra a continuación.
 
 ![](../../assets/SFOI___SFO_path.png)
 
@@ -55,6 +55,6 @@ En [!DNL MBI]Sin embargo, si la ruta entre estas dos tablas no existe, puede [cr
 
 Un producto se puede comprar muchos artículos. La relación entre estas dos tablas es `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
 
-En [!DNL MBI]Sin embargo, si la ruta entre estas dos tablas no existe, puede [creación de la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse. Cuando esté listo para crear la ruta, se define de la siguiente manera:
+En [!DNL Commerce Intelligence]Sin embargo, si la ruta entre estas dos tablas no existe, puede [creación de la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse. Cuando esté listo para crear la ruta, defina la ruta como se muestra a continuación.
 
 ![](../../assets/SFOI___CPE_path.png)

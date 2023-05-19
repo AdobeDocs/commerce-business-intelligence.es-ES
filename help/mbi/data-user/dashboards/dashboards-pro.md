@@ -2,20 +2,20 @@
 title: Paneles integrados en el producto
 description: Obtenga información acerca de los paneles predeterminados para proporcionar información sobre su empresa.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '2240'
+source-wordcount: '1932'
 ht-degree: 0%
 
 ---
 
 # Paneles listos para usar.
 
-[!DNL MBI] incluye paneles listos para usar para proporcionar información sobre su negocio. Con los paneles, puede comprobar el estado de las métricas esenciales, como los ingresos de por vida del usuario, el número de compras repetidas, los productos principales comprados en un período de tiempo determinado y más. Estos paneles preconfigurados se crearon para ayudarle a tomar decisiones comerciales fundadas.
+[!DNL Adobe Commerce Intelligence] incluye paneles listos para usar para proporcionar información sobre su negocio. Con los paneles, puede comprobar el estado de las métricas esenciales, como los ingresos de por vida del usuario, el número de compras repetidas, los productos principales comprados en un período de tiempo determinado y más. Estos paneles preconfigurados se crearon para ayudarle a tomar decisiones comerciales fundadas.
 
 >[!NOTE]
 >
->El acceso a estos paneles depende del tipo de cuenta y del nivel de acceso. Si no ve estos paneles, póngase en contacto con [apoyo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+>El acceso a estos paneles depende del tipo de cuenta y del nivel de acceso. Si no ve estos paneles, póngase en contacto con [apoyo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Disponibilidad del informe
 
@@ -36,7 +36,7 @@ El panel Clientes (con derecho de pago y envío de invitados) proporciona inform
 | `Subsequent Order Probability (All Time)` | La probabilidad de que los clientes que hayan realizado un pedido realicen otro. |
 | `% of Customers with Multiple Orders (All Time)` | Porcentaje de todos los clientes que han realizado más de un pedido. |
 | `Median Time Between Orders (All Time)` | Cantidad media de tiempo que tarda cada cliente entre la realización de un pedido y el siguiente. |
-| `Subsequent Order Probability` | La probabilidad de que los clientes que hayan realizado un pedido realicen otro pedido, desglosado por número de pedido. Es decir, el porcentaje de clientes con un pedido que realizan un segundo, el porcentaje con dos que realizan un tercer pedido, etc.). |
+| `Subsequent Order Probability` | La probabilidad de que los clientes que hayan realizado un pedido realicen otro pedido, desglosado por número de pedido. Es decir, el porcentaje de clientes con un pedido que colocan un segundo, el porcentaje con dos que colocan un tercero, y así sucesivamente. |
 | `Time Between Orders` | El tiempo medio y medio que tardan los clientes entre pedidos, desglosado por número de pedido (es decir, el tiempo entre pedidos uno y dos, dos y tres, etc.). |
 | `Number of Customers - Lifetime Orders` | Para un número determinado de pedidos realizados durante la vida útil de un cliente, el número de clientes que han realizado ese número de pedidos y el porcentaje de toda la base de clientes que representa ese número. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Clientes que realizaron su primera y única compra entre hace tres y seis meses. |
@@ -51,20 +51,20 @@ El panel Clientes (no se permite el cierre de compra de invitados) proporciona i
 
 | Nombre | Descripción |
 |---|---|
-| Registro de cuenta (últimos 30 días) | Número de personas que se registraron en una cuenta de su tienda en los últimos 30 días. |
-| Cuentas registradas (últimos 30 días) con 1 o más pedidos | El número de personas que se registraron para una cuenta en su tienda en los últimos 30 días, y también hicieron al menos un pedido. |
-| % de conversión de registro a primer pedido (últimos 30 días) | Porcentaje de cuentas registradas en los últimos 30 días que han realizado un pedido. |
-| % de conversión de registro a primer pedido | Porcentaje de cuentas registradas que han realizado un pedido, por mes de registro. |
-| Pedidos por clientes nuevos frente a los existentes | Número de pedidos de clientes sin pedidos anteriores frente a clientes con al menos un pedido anterior. |
-| Probabilidad de pedido posterior (todo el tiempo) | La probabilidad de que los clientes que hayan realizado un pedido realicen otro. |
-| % de clientes con varios pedidos (todo el tiempo) | Porcentaje de todos los clientes que han realizado más de un pedido. |
-| Mediana de tiempo entre pedidos (todo el tiempo) | Cantidad media de tiempo que tarda cada cliente entre la realización de un pedido y el siguiente. |
-| Probabilidad de orden posterior | La probabilidad de que los clientes que hayan realizado un pedido coloquen otro, desglosado por número de pedido. Es decir, el porcentaje de clientes con un pedido que realizan un segundo, el porcentaje con dos que realizan un tercer pedido, etc. |
-| Tiempo entre pedidos | El tiempo medio y medio que tardan los clientes entre pedidos, desglosado por número de pedido (es decir, el tiempo entre pedidos uno y dos, dos y tres, etc.). |
-| Número de clientes: pedidos de por vida | Para un número determinado de pedidos realizados durante la vida útil de un cliente, el número de clientes que han realizado ese número de pedidos y el porcentaje de toda la base de clientes que representa ese número. |
-| Clientes únicos que compraron hace 3-6 meses | Clientes que realizaron su primera y única compra entre hace tres y seis meses. |
-| Promedio de LTV por primer pedido | Compara el promedio acumulado de ingresos por vida útil del cliente entre cohortes. Las cohortes se definen por el mes en el que un cliente realizó una compra por primera vez. Por ejemplo, una cohorte de enero de 2020 muestra el promedio acumulado de LTV para los clientes cuya primera compra fue en enero de 2020. |
-| Primeros 30 días del cliente frente a ingresos de por vida | Comparación de los ingresos promedio de los clientes en los 30 días posteriores a su primera compra frente a durante toda su vida útil. Cada burbuja corresponde a una región de envío y el tamaño de cada burbuja representa el número de clientes adquiridos de esa región. |
+| `Account Registration (Past 30 Days)` | Número de personas que se registraron en una cuenta de su tienda en los últimos 30 días. |
+| `Accounts Registered (Past 30 Days) with 1 or More Orders` | El número de personas que se registraron para una cuenta en su tienda en los últimos 30 días, y también hicieron al menos un pedido. |
+| `% Conversion from Registration to First Order (Past 30 Days)` | Porcentaje de cuentas registradas en los últimos 30 días que han realizado un pedido. |
+| `% Conversion from Registration to First Order` | Porcentaje de cuentas registradas que han realizado un pedido, por mes de registro. |
+| `Orders by New vs Existing Customers` | Número de pedidos de clientes sin pedidos anteriores frente a clientes con al menos un pedido anterior. |
+| `Subsequent Order Probability (All Time)` | La probabilidad de que los clientes que hayan realizado un pedido realicen otro. |
+| `% of Customers with Multiple Orders (All Time)` | Porcentaje de todos los clientes que han realizado más de un pedido. |
+| `Median Time Between Orders (All Time)` | Cantidad media de tiempo que tarda cada cliente entre la realización de un pedido y el siguiente. |
+| `Subsequent Order Probability` | La probabilidad de que los clientes que hayan realizado un pedido coloquen otro, desglosado por número de pedido. Es decir, el porcentaje de clientes con un pedido que realizan un segundo, el porcentaje con dos que realizan un tercer pedido, etc. |
+| `Time Between Orders` | El tiempo medio y medio que tardan los clientes entre pedidos, desglosado por número de pedido (es decir, el tiempo entre pedidos uno y dos, dos y tres, etc.). |
+| `Number of Customers - Lifetime Orders` | Para un número determinado de pedidos realizados durante la vida útil de un cliente, el número de clientes que han realizado ese número de pedidos y el porcentaje de toda la base de clientes que representa ese número. |
+| `One-Time Customers who Bought 3-6 Months Ago` | Clientes que realizaron su primera y única compra entre hace tres y seis meses. |
+| `Avg LTV by First Order` | Compara el promedio acumulado de ingresos por vida útil del cliente entre cohortes. Las cohortes se definen por el mes en el que un cliente realizó una compra por primera vez. Por ejemplo, una cohorte de enero de 2020 muestra el promedio acumulado de LTV para los clientes cuya primera compra fue en enero de 2020. |
+| `Customer's First 30 Day vs Lifetime Revenue` | Comparación de los ingresos promedio de los clientes en los 30 días posteriores a su primera compra frente a durante toda su vida útil. Cada burbuja corresponde a una región de envío y el tamaño de cada burbuja representa el número de clientes adquiridos de esa región. |
 
 ## Resumen ejecutivo (se permite el pago y envío de invitados)
 
@@ -74,16 +74,16 @@ El panel de control Resumen ejecutivo (se permite el pago de los huéspedes) le 
 
 | Nombre | Descripción |
 |---|---|
-| Ingresos (mes actual) | Ingresos que ha generado su tienda en el mes actual. En este caso, los ingresos se definen como el precio final pagado por un cliente en un pedido. |
-| Ingresos (últimos 6 meses por día) | Ingresos diarios totales, superpuestos con los ingresos diarios medios de los siete días anteriores. En este caso, los ingresos se definen como el precio final pagado por un cliente en un pedido. |
-| % de cambio en ingresos (MoM MTD) | Comparación de ingresos del mes actual (hasta ahora) frente a la misma porción del mes anterior. |
-| Ingresos de clientes nuevos frente a los existentes (mes actual) | Ingresos del mes actual (hasta el momento) atribuidos a clientes nuevos (nuevos) frente a clientes existentes (segundo o posterior pedido). |
-| Valor de pedido promedio (mes actual) | Valor medio diario de los pedidos realizados en el mes actual (hasta el momento). El valor del pedido se define como el precio final pagado por un cliente en un pedido. |
-| Pedidos (mes actual) | Número de pedidos realizados en su tienda durante el mes actual (hasta el momento). |
-| % de cambio en pedidos (MoM MTD) | Comparación del número de pedidos del mes actual (hasta ahora) con la misma parte del mes anterior. |
-| Pedidos por Clientes Nuevos (Mes Actual) | Pedidos del mes actual de clientes que nunca han realizado un pedido anteriormente. |
-| Pedidos de Clientes Existentes (Mes Actual) | Pedidos del mes actual de clientes que han realizado al menos un pedido anteriormente. |
-| Pedidos por clientes nuevos frente a los existentes (año actual por semana) | Número de pedidos de clientes sin pedidos anteriores frente a los de clientes con al menos un pedido anterior, para cada semana del año actual (hasta ahora). |
+| `Revenue (Current Month)` | Ingresos que ha generado su tienda en el mes actual. En este caso, los ingresos se definen como el precio final pagado por un cliente en un pedido. |
+| `Revenue (Past 6 Months by Day)` | Ingresos diarios totales, superpuestos con los ingresos diarios medios de los siete días anteriores. En este caso, los ingresos se definen como el precio final pagado por un cliente en un pedido. |
+| `% Change in Revenue (MoM MTD)` | Comparación de ingresos del mes actual (hasta ahora) frente a la misma porción del mes anterior. |
+| `Revenue from New vs Existing Customers (Current Month)` | Ingresos del mes actual (hasta el momento) atribuidos a clientes nuevos (nuevos) frente a clientes existentes (segundo o posterior pedido). |
+| `Average Order Value (Current Month)` | Valor medio diario de los pedidos realizados en el mes actual (hasta el momento). El valor del pedido se define como el precio final pagado por un cliente en un pedido. |
+| `Orders (Current Month)` | Número de pedidos realizados en su tienda durante el mes actual (hasta el momento). |
+| `% Change in Orders (MoM MTD)` | Comparación del número de pedidos del mes actual (hasta ahora) con la misma parte del mes anterior. |
+| `Orders by New Customers (Current Month)` | Pedidos del mes actual de clientes que nunca han realizado un pedido anteriormente. |
+| `Orders by Existing Customers (Current Month)` | Pedidos del mes actual de clientes que han realizado al menos un pedido anteriormente. |
+| `Orders by New vs Existing Customers (Current Year by Week)` | Número de pedidos de clientes sin pedidos anteriores frente a los de clientes con al menos un pedido anterior, para cada semana del año actual (hasta ahora). |
 
 ## Resumen ejecutivo (no se permite pagar)
 
@@ -93,16 +93,16 @@ El panel de resumen ejecutivo (no se permite el cierre de compra de invitados) l
 
 | Nombre | Descripción |
 |---|---|
-| Ingresos (mes actual) | Ingresos que ha generado su tienda este mes. En este caso, los ingresos se definen como el precio final pagado por un cliente en un pedido. |
-| Ingresos (últimos 6 meses por día) | Ingresos diarios totales, superpuestos con los ingresos diarios medios de los siete días anteriores. En este caso, los ingresos se definen como el precio final pagado por un cliente en un pedido. |
-| % de cambio en ingresos (MoM MTD) | Comparación de ingresos en lo que va de mes frente a la misma porción del mes anterior. |
-| Ingresos de clientes nuevos frente a los existentes (mes actual) | Ingresos del mes actual (hasta el momento) atribuidos a clientes nuevos (nuevos) frente a clientes existentes (segundo o posterior pedido). |
-| Valor de pedido promedio (mes actual) | Valor medio diario de los pedidos realizados en el mes actual (hasta el momento). El valor del pedido se define como el precio final pagado por un cliente en un pedido. |
-| Pedidos (mes actual) | Número de pedidos realizados en su tienda durante el mes actual (hasta el momento). |
-| % de cambio en pedidos (MoM MTD) | Comparación del número de pedidos del mes actual (hasta ahora) con la misma parte del mes anterior. |
-| Registros de cuenta (mes actual) | Número de cuentas recién registradas en lo que va de mes. |
-| % de conversión de registro a primer pedido (mes actual) | Porcentaje de cuentas registradas en lo que va de mes que han realizado un pedido. |
-| % de conversión de registro a primer pedido (año actual por semana) | El porcentaje de cuentas registradas cada semana en lo que va de año que han realizado un pedido. |
+| `Revenue (Current Month)` | Ingresos que ha generado su tienda este mes. En este caso, los ingresos se definen como el precio final pagado por un cliente en un pedido. |
+| `Revenue (Past 6 Months by Day)` | Ingresos diarios totales, superpuestos con los ingresos diarios medios de los siete días anteriores. En este caso, los ingresos se definen como el precio final pagado por un cliente en un pedido. |
+| `% Change in Revenue (MoM MTD)` | Comparación de ingresos en lo que va de mes frente a la misma porción del mes anterior. |
+| `Revenue from New vs Existing Customers (Current Month)` | Ingresos del mes actual (hasta el momento) atribuidos a clientes nuevos (nuevos) frente a clientes existentes (segundo o posterior pedido). |
+| `Average Order Value (Current Month)` | Valor medio diario de los pedidos realizados en el mes actual (hasta el momento). El valor del pedido se define como el precio final pagado por un cliente en un pedido. |
+| `Orders (Current Month)` | Número de pedidos realizados en su tienda durante el mes actual (hasta el momento). |
+| `% Change in Orders (MoM MTD)` | Comparación del número de pedidos del mes actual (hasta ahora) con la misma parte del mes anterior. |
+| `Account Registrations (Current Month)` | Número de cuentas recién registradas en lo que va de mes. |
+| `% Conversion from Registration to First Order (Current Month)` | Porcentaje de cuentas registradas en lo que va de mes que han realizado un pedido. |
+| `% Conversion from Registration to First Order (Current Year by Week)` | El porcentaje de cuentas registradas cada semana en lo que va de año que han realizado un pedido. |
 
 ## Pedidos
 
@@ -116,18 +116,18 @@ El panel Pedidos proporciona información sobre el volumen transaccional de pedi
 
 | Nombre | Descripción |
 |---|---|
-| Pedidos (últimos 30 días) | El número de pedidos realizados con su tienda en los últimos 30 días. |
-| Ingresos (Últimos 30 Días) | Ingresos que su tienda ha generado en los últimos 30 días. Los ingresos se definen como el precio final pagado por un cliente en un pedido. |
-| Valor de pedido promedio (últimos 30 días) | Valor medio de los pedidos realizados en los últimos 30 días. El valor del pedido se define como el precio final pagado por un cliente en un pedido. |
-| Pedidos | El número de pedidos realizados en su tienda cada mes. |
-| Ingresos por método de pago | Los ingresos que ha generado su tienda, divididos por método de pago. Los ingresos se definen como el precio final pagado por un cliente en un pedido. |
-| AOV por clientes nuevos frente a existentes | Valor medio mensual de los pedidos realizados en su tienda, dividido por los pedidos realizados por clientes sin pedidos anteriores frente a los clientes con al menos un pedido anterior. El valor del pedido se define como el precio final pagado por un cliente en un pedido. |
-| % de pedidos por estado (últimos 30 días) | Porcentaje de pedidos de cada día en los últimos 30 días que están actualmente en cada estado de pedido. |
-| Pedidos incompletos (creados hace más de un día) | Una lista de todos los pedidos realizados hace más de un día que aún están en estado incompleto (no cancelados o completados). |
-| Pedidos por hora (últimos 7 días) | Ordene el volumen día a hora. |
-| Detalles de ingresos (últimos 30 días) | Desglose de ingresos diarios de los últimos 30 días en todos los componentes del valor de ingresos totales. |
-| Detalles del pedido por código de cupón (últimos 30 días) | Para cada código de cupón ofrecido por su tienda, detalles sobre cómo se utilizó ese código de cupón y qué devoluciones trajo durante los últimos 30 días. |
-| % de pedidos con cupón (últimos 30 días) | El porcentaje de pedidos realizados en los últimos 30 días que utilizaron un cupón frente a los que no lo hicieron. |
+| `Orders (Past 30 Days)` | El número de pedidos realizados con su tienda en los últimos 30 días. |
+| `Revenue (Past 30 Days)` | Ingresos que su tienda ha generado en los últimos 30 días. Los ingresos se definen como el precio final pagado por un cliente en un pedido. |
+| `Average Order Value (Past 30 Days)` | Valor medio de los pedidos realizados en los últimos 30 días. El valor del pedido se define como el precio final pagado por un cliente en un pedido. |
+| `Orders` | El número de pedidos realizados en su tienda cada mes. |
+| `Revenue by Payment Method` | Los ingresos que ha generado su tienda, divididos por método de pago. Los ingresos se definen como el precio final pagado por un cliente en un pedido. |
+| `AOV by New vs Existing Customers` | Valor medio mensual de los pedidos realizados en su tienda, dividido por los pedidos realizados por clientes sin pedidos anteriores frente a los clientes con al menos un pedido anterior. El valor del pedido se define como el precio final pagado por un cliente en un pedido. |
+| `% Orders by Status (Past 30 Days)` | Porcentaje de pedidos de cada día en los últimos 30 días que están actualmente en cada estado de pedido. |
+| `Incomplete Orders (Created more than 1 Day Ago)` | Una lista de todos los pedidos realizados hace más de un día que aún están en estado incompleto (no cancelados o completados). |
+| `Orders Per Hour (Past 7 Days)` | Ordene el volumen día a hora. |
+| `Revenue Details (Past 30 Days)` | Desglose de ingresos diarios de los últimos 30 días en todos los componentes del valor de ingresos totales. |
+| `Order Details by Coupon Code (Past 30 Days)` | Para cada código de cupón ofrecido por su tienda, detalles sobre cómo se utilizó ese código de cupón y qué devoluciones trajo durante los últimos 30 días. |
+| `% Orders with Coupon (Past 30 Days)` | El porcentaje de pedidos realizados en los últimos 30 días que utilizaron un cupón frente a los que no lo hicieron. |
 
 ## Productos
 
@@ -141,14 +141,14 @@ El panel Productos muestra el rendimiento general del producto en términos de p
 
 | Nombre | Descripción |
 |---|---|
-| GMV (últimos 30 días) | El valor bruto de mercancía de todos los productos vendidos en los últimos 30 días. GMV se define como la cantidad pedida multiplicada por el precio base de cada producto. |
-| % de GMV (últimos 30 días) reembolsado | Porcentaje de GMV para productos comprados en los últimos 30 días que tuvieron como resultado un reembolso. |
-| Cantidad de productos solicitada (últimos 30 días) | Cantidad total de artículos pedidos en los últimos 30 días. |
-| % de productos comprados (últimos 30 días) reembolsado | Porcentaje de artículos comprados en los últimos 30 días que resultaron en un reembolso. |
-| Valor bruto de mercancía | El valor bruto de mercancía de todos los productos vendidos, por mes. GMV se define como la cantidad pedida multiplicada por el precio base de cada producto. |
-| Compras frente a tasa de reembolso por producto (últimos 30 días) | Para cada producto, una comparación del número total pedido en los últimos 30 días frente a la tasa a la que se reembolsó el producto. El tamaño de cada burbuja representa la tasa de reembolso. |
-| Detalles de rendimiento del producto (últimos 30 días) | Información detallada sobre las ventas y los reembolsos posteriores en los últimos 30 días, por SKU del producto y nombre del producto. |
-| Los productos más comprados por GMV (últimos 30 días) | Productos vendidos en los últimos 30 días que generaron la mayor cantidad de ingresos (los 10 principales). |
-| Los mejores productos reembolsados por GMV (últimos 30 días) | Productos comprados en los últimos 30 días que resultaron en la mayor cantidad de GMV perdidos debido a reembolsos (top 10). |
-| Principales productos comprados por cantidad (últimos 30 días) | Productos vendidos en los últimos 30 días en los números más buenos (top 10). |
-| Principales productos reembolsados por cantidad (últimos 30 días) | Productos comprados en los últimos 30 días que tuvieron como resultado la cantidad más buena reembolsada (top 10). |
+| `GMV (Past 30 Days)` | El valor bruto de mercancía de todos los productos vendidos en los últimos 30 días. GMV se define como la cantidad pedida multiplicada por el precio base de cada producto. |
+| `% GMV (Past 30 Days) Refunded` | Porcentaje de GMV para productos comprados en los últimos 30 días que tuvieron como resultado un reembolso. |
+| `Product Quantity Ordered (Past 30 Days)` | Cantidad total de artículos pedidos en los últimos 30 días. |
+| `% Purchased Products (Past 30 Days) Refunded` | Porcentaje de artículos comprados en los últimos 30 días que resultaron en un reembolso. |
+| `Gross Merchandise Value` | El valor bruto de mercancía de todos los productos vendidos, por mes. GMV se define como la cantidad pedida multiplicada por el precio base de cada producto. |
+| `Purchases vs Refund Rate per Product (Past 30 Days)` | Para cada producto, una comparación del número total pedido en los últimos 30 días frente a la tasa a la que se reembolsó el producto. El tamaño de cada burbuja representa la tasa de reembolso. |
+| `Product Performance Details (Past 30 Days)` | Información detallada sobre las ventas y los reembolsos posteriores en los últimos 30 días, por SKU del producto y nombre del producto. |
+| `Top Purchased Products by GMV (Past 30 Days)` | Productos vendidos en los últimos 30 días que generaron la mayor cantidad de ingresos (los 10 principales). |
+| `Top Refunded Products by GMV (Past 30 Days)` | Productos comprados en los últimos 30 días que resultaron en la mayor cantidad de GMV perdidos debido a reembolsos (top 10). |
+| `Top Purchased Products by Quantity (Past 30 Days)` | Productos vendidos en los últimos 30 días en los números más buenos (top 10). |
+| `Top Refunded Products by Quantity (Past 30 Days)` | Productos comprados en los últimos 30 días que tuvieron como resultado la cantidad más buena reembolsada (top 10). |

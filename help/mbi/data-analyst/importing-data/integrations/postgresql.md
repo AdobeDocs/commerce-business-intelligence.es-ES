@@ -1,50 +1,48 @@
 ---
 title: Conectar PostgreSQL mediante el túnel SSH
-description: Aprenda a conectar la base de datos PostgreSQL a [!DNL MBI] por un túnel SSH.
+description: Aprenda a conectar la base de datos de PostgreSQL a Commerce Intelligence a través de un túnel SSH.
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
-# Connect `PostgreSQL` mediante `SSH` Túnel
+# Connect [!DNL PostgreSQL] mediante [!DNL SSH Tunnel]
 
-Para conectar su `PostgreSQL` base de datos a [!DNL MBI] mediante un `SSH tunnel`, usted (o su equipo, si no es un técnico) debe hacer algunas cosas:
+Para conectar su [!DNL PostgreSQL] base de datos a [!DNL Commerce Intelligence] mediante un `SSH tunnel`, debe hacer algunas cosas:
 
-1. [Recupere el [!DNL MBI] clave pública](#retrieve)
-1. [Permitir el acceso al [!DNL MBI] Dirección IP](#allowlist)
-1. [Crear un Linux](#linux)
-1. [Crear un usuario de Postgres para [!DNL MBI] ](#postgres)
-1. [Introduzca la conexión y la información de usuario en MBI](#finish)
+1. [Recupere el [!DNL Commerce Intelligence] clave pública](#retrieve)
+1. [Permitir el acceso al [!DNL Commerce Intelligence] Dirección IP](#allowlist)
+1. [Crear un [!DNL Linux] usuario para [!DNL Commerce Intelligence] ](#linux)
+1. [Crear un [!DNL PostgreSQL] usuario para [!DNL Commerce Intelligence] ](#postgres)
+1. [Introduzca la conexión y la información de usuario en [!DNL Commerce Intelligence]](#finish)
 
-No es tan complicado como podría sonar. Empiece por.
+## Recuperación del [!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
 
-## Recuperación del [!DNL MBI] `public key` {#retrieve}
-
-El `public key` se utiliza para autorizar la [!DNL MBI] Usuario de Linux®. En la siguiente sección, creará el usuario e importará la clave.
+El `public key` se utiliza para autorizar la [!DNL Commerce Intelligence] [!DNL Linux] usuario. Ahora creará el usuario e importará la clave.
 
 1. Ir a **[!UICONTROL Manage Data** > **Connections]** y haga clic en **[!UICONTROL Add a Data Source]**.
-1. Haga clic en `PostgreSQL` icono.
+1. Haga clic en [!DNL PostgreSQL] icono.
 1. Después del `PostgreSQL credentials` se abre la página, configure el `Encrypted` cambiar a `Yes`. Esto muestra el `SSH` formulario de configuración.
 1. El `public key` se encuentra debajo de este formulario.
 
 Deje esta página abierta durante todo el tutorial, la necesitará en la siguiente sección y al final.
 
-Si está un poco perdido, así es como navegar [!DNL MBI] para recuperar la clave:
+A continuación se muestra cómo navegar por [!DNL Commerce Intelligence] para recuperar la clave:
 
 ![Recuperación de la clave pública de RJMetrics](../../../assets/get-mbi-public-key.gif)
 
-## Permitir el acceso al [!DNL MBI] Dirección IP {#allowlist}
+## Permitir el acceso al [!DNL Commerce Intelligence] Dirección IP {#allowlist}
 
-Para que la conexión se realice correctamente, debe configurar el cortafuegos para permitir el acceso desde su dirección IP. Lo es `54.88.76.97/32`, pero también está en la `PostgreSQL` página credenciales. ¿Ve el recuadro azul en el GIF de arriba? ¡Eso es todo!
+Para que la conexión se realice correctamente, debe configurar el cortafuegos para permitir el acceso desde su dirección IP. Lo es `54.88.76.97/32`, pero también está en la `PostgreSQL` página credenciales. Consulte el cuadro azul en el GIF de arriba.
 
-## Creación de un `Linux` usuario para [!DNL MBI] {#linux}
+## Creación de un [!DNL Linux] usuario para [!DNL Commerce Intelligence] {#linux}
 
-Puede ser una máquina de producción o secundaria, siempre que contenga datos en tiempo real (o actualizados con frecuencia). Puede [restringir este usuario](../../../administrator/account-management/restrict-db-access.md) como desee, siempre y cuando conserve el derecho de conexión con el servidor PostgreSQL.
+Puede ser una máquina de producción o secundaria, siempre que contenga datos en tiempo real (o actualizados con frecuencia). Puede [restringir este usuario](../../../administrator/account-management/restrict-db-access.md) de cualquier manera que desee, siempre y cuando conserve el derecho de conectarse al [!DNL PostgreSQL] servidor.
 
-1. Para agregar al nuevo usuario, ejecute los siguientes comandos como raíz en su `Linux` servidor:
+1. Para agregar al nuevo usuario, ejecute los siguientes comandos como raíz en su [!DNL Linux] servidor:
 
 ```bash
         adduser rjmetric -p<password>
@@ -70,11 +68,11 @@ Puede ser una máquina de producción o secundaria, siempre que contenga datos e
 
 >[!IMPORTANT]
 >
->Si la variable `sshd\_config` el archivo asociado con el servidor no está establecido en la opción predeterminada, solo determinados usuarios tienen acceso al servidor; esto impide una conexión correcta a [!DNL MBI]. En estos casos, es necesario ejecutar un comando como `AllowUsers` para permitir que el usuario rjmetric tenga acceso al servidor.
+>Si la variable `sshd\_config` el archivo asociado con el servidor no está establecido en la opción predeterminada, solo determinados usuarios tienen acceso al servidor; esto impide una conexión correcta a [!DNL Commerce Intelligence]. En estos casos, es necesario ejecutar un comando como `AllowUsers` para permitir que el usuario rjmetric tenga acceso al servidor.
 
-## Creación de un [!DNL MBI] Usuario de Postgres {#postgres}
+## Creación de un [!DNL Commerce Intelligence] [!DNL Postgres] usuario {#postgres}
 
-Su organización puede requerir un proceso diferente, pero la forma más sencilla de crear este usuario es ejecutar la siguiente consulta cuando se inicia sesión en Postgres como usuario con el derecho de conceder privilegios. El usuario también debe ser propietario del esquema que [!DNL MBI] se le está otorgando acceso a.
+Su organización puede requerir un proceso diferente, pero la forma más sencilla de crear este usuario es ejecutar la siguiente consulta cuando se inicia sesión en Postgres como usuario con el derecho de conceder privilegios. El usuario también debe ser propietario del esquema que [!DNL Commerce Intelligence] se le está otorgando acceso a.
 
 ```sql
     GRANT CONNECT ON DATABASE <database name> TO rjmetric WITH PASSWORD <secure password>;GRANT USAGE ON SCHEMA <schema name> TO rjmetric;GRANT SELECT ON ALL TABLES IN SCHEMA <schema name> TO rjmetric;ALTER DEFAULT PRIVILEGES IN SCHEMA <schema name> GRANT SELECT ON TABLES TO rjmetric;
@@ -84,11 +82,11 @@ Reemplazar `secure password` con su propia contraseña segura, que puede diferir
 
 Si desea conectar varias bases de datos o esquemas, repita este proceso según sea necesario.
 
-## Introducción de la conexión y la información de usuario en [!DNL MBI] {#finish}
+## Introducción de la conexión y la información de usuario en [!DNL Commerce Intelligence] {#finish}
 
-Para finalizar, debe introducir la conexión y la información de usuario en [!DNL MBI]. ¿Ha dejado abierta la página de credenciales de PostgreSQL? Si no es así, vaya a **[!UICONTROL Manage Data > Connections]** y haga clic en **[!UICONTROL Add a Data Source]**, luego el icono PostgreSQL. No olvide configurar el `Encrypted` cambiar a `Yes`.
+Para finalizar, debe introducir la conexión y la información de usuario en [!DNL Commerce Intelligence]. ¿Dejaste el [!DNL PostgreSQL] ¿desea abrir la página credenciales? Si no es así, vaya a **[!UICONTROL Manage Data > Connections]** y haga clic en **[!UICONTROL Add a Data Source]** y, a continuación, el [!DNL PostgreSQL] icono. No olvide configurar el `Encrypted` cambiar a `Yes`.
 
-Introduzca la siguiente información en esta página, empezando por la sección Conexión a Base de Datos:
+Introduzca la siguiente información en esta página, empezando por `Database Connection` sección:
 
 * `Username`: el nombre de usuario de RJMetrics Postgres (debe ser rjmetric)
 * `Password`: la contraseña de Postgres de RJMetrics
@@ -101,8 +99,8 @@ En `SSH Connection`:
 * `Username`: su nombre de inicio de sesión SSH (debe ser jjjmetric)
 * `SSH Port`: Puerto SSH en el servidor (22 de forma predeterminada)
 
-¡Eso es todo! Cuando haya terminado, haga clic en **Guardar y probar** para completar la configuración.
+Cuando haya terminado, haga clic en **Guardar y probar** para completar la configuración.
 
 ### Relacionado
 
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

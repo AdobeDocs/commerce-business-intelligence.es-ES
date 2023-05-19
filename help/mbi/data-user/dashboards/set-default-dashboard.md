@@ -2,7 +2,7 @@
 title: Establecer un tablero predeterminado
 description: Obtenga información sobre cómo establecer un tablero predeterminado.
 exl-id: a3fc64e3-b527-4c2c-848d-c0962cd20ff3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Establecer un tablero predeterminado
 
-El tablero predeterminado es el primer tablero que ve al abrirlo [!DNL MBI].
+El tablero predeterminado es el primer tablero que ve al abrirlo [!DNL Commerce Intelligence].
 
 1. En el tablero, haga clic en **[!UICONTROL Dashboard Options]** situado en la parte superior de la pantalla.
 

@@ -2,9 +2,9 @@
 title: Informes anuales, mensuales y semanales
 description: Aprenda a ver fácilmente las tendencias a lo largo del tiempo y a cambiar la perspectiva de los períodos de tiempo que desee comparar.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este artículo contiene instrucciones para clientes que utilizan la arquitectura original y la nueva arquitectura. Estás en el [nueva arquitectura](../../administrator/account-management/new-architecture.md) si tiene el _Vistas de Data Warehouse_ disponible tras seleccionar `Manage Data` en la barra de herramientas principal.
+>Este tema contiene instrucciones para los clientes que utilizan la arquitectura original y la nueva arquitectura. Estás en el [nueva arquitectura](../../administrator/account-management/new-architecture.md) si tiene el [!DNL _Vistas de Data Warehouse_] disponible tras seleccionar [!DNL Manage Data] en la barra de herramientas principal.
 
-Report Builder le permite ver fácilmente las tendencias a lo largo del tiempo y cambiar la perspectiva de los períodos de tiempo que desee comparar. Este artículo muestra cómo configurar un tablero para que profundice un nivel y le permita crear informes para el análisis semana tras semana, mes tras mes y año tras año.
+Report Builder le permite ver fácilmente las tendencias a lo largo del tiempo y cambiar la perspectiva de los períodos de tiempo que desee comparar. En este tema se muestra cómo configurar un tablero para que profundice un nivel y le permita crear informes para el análisis semana tras semana, mes tras mes y año tras año.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-Antes de comenzar, debe familiarizarse con las perspectivas de exploración con más detalle [aquí](../../tutorials/using-visual-report-builder.md) y opciones de tiempo independientes [aquí](../../tutorials/time-options-visual-rpt-bldr.md).
+Antes de comenzar, debe revisar las perspectivas de exploración con más detalle [aquí](../../tutorials/using-visual-report-builder.md) y opciones de tiempo independientes [aquí](../../tutorials/time-options-visual-rpt-bldr.md).
 
 Este análisis contiene [columnas calculadas avanzadas](../data-warehouse-mgr/adv-calc-columns.md).
 

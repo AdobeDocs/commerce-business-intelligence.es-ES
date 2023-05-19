@@ -2,7 +2,7 @@
 title: Aumento del retorno de la inversión en sus campañas publicitarias
 description: Obtenga información sobre distintos métodos para evaluar el rendimiento de la campaña.
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # Campañas publicitarias y ROI
 
-MBI le permite [combinar los datos de costes e ingresos de publicidad](../../data-analyst/importing-data/integrations/google-adwords.md) de la base de datos. Esto le ayuda a identificar qué campañas tienen el ROI más alto. Este artículo explora algunos métodos diferentes para evaluar el rendimiento de la campaña.
+[!DNL Adobe Commerce Intelligence] le permite realizar [combinar los datos de costes e ingresos de publicidad](../../data-analyst/importing-data/integrations/google-adwords.md) de la base de datos. Esto le ayuda a identificar qué campañas tienen el retorno de la inversión (ROI) más alto. En este tema se exploran varios métodos diferentes para evaluar el rendimiento de la campaña.
 
 ## Requisitos previos
 
 * Importe los datos de costes de publicidad:
-   * [Conecte su [!DNL Google AdWords] hasta [!DNL MBI]](../importing-data/integrations/google-adwords.md): Esto sincroniza su [!DNL Adwords] gastar en [!DNL MBI]
-   * [Cargar otros datos de costes de publicidad](../importing-data/connecting-data/import-offline-ad-data.md): Se recomienda para canales sin un conector directo a [!DNL MBI]
-   * Si importa datos de coste de varios orígenes, puede [consolidar](../../best-practices/consolidating-your-tables.md) los datos de [!DNL MBI]. Simplemente [enviar un ticket de asistencia](../../guide-overview.md).
+   * [Conecte su [!DNL Google AdWords] hasta [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): Esto sincroniza su [!DNL Adwords] gastar en [!DNL Commerce Intelligence]
+   * [Cargar otros datos de costes de publicidad](../importing-data/connecting-data/import-offline-ad-data.md): Se recomienda para canales sin un conector directo a [!DNL Commerce Intelligence]
+   * Si importa datos de coste de varios orígenes, puede [consolidar](../../best-practices/consolidating-your-tables.md) los datos de [!DNL Commerce Intelligence]. Simplemente [enviar un ticket de asistencia](../../guide-overview.md#Submitting-a-Support-Ticket).
 * [Seguimiento de datos de canales de adquisición de usuarios](../analysis/google-track-user-acq.md)
 
 ## Campañas de adquisición de usuarios
@@ -35,7 +35,7 @@ Los análisis (1) y (2) anteriores se exploran en un tutorial independiente sobr
 >
 >En este ejemplo se supone que todos los costes de campaña se utilizaron exclusivamente para adquirir nuevos usuarios. En realidad, el coste de su campaña también se comparte con la adquisición de visitas no convertidas, compradores repetidos y similares. Suponiendo que todo el coste se utiliza para adquirir nuevos usuarios registrados, el ROI resultante corresponde al peor escenario (coste por adquisición más alto). Puede estar seguro de que el ROI real es mayor que su cálculo.
 >
->Ejemplo: suponiendo que gastó 20 $ en una campaña que generó 10 usuarios nuevos y 10 compradores repetidos, el coste real por usuario nuevo es de 1 $. Pero, suponiendo que todo el coste se destinó a la adquisición de nuevos usuarios, el coste por adquisición es de 2 dólares).
+>Ejemplo: suponiendo que gastó 20 $ en una campaña que generó 10 usuarios nuevos y 10 compradores repetidos, el coste real por usuario nuevo es de 1 $. Pero, suponiendo que todo el coste se destinó a la adquisición de nuevos usuarios, el coste por adquisición es de 2 dólares.
 
 **1. Comience creando un gráfico que segmente el coste de la publicidad por campañas:**
 
@@ -95,9 +95,9 @@ Los análisis (1) y (2) anteriores se exploran en un tutorial independiente sobr
 
 >[!NOTE]
 >
->En este ejemplo se supone que todos los costes de campaña se utilizaron exclusivamente para generar compras de productos específicos. Suponiendo que todo el coste se haya gastado en la generación de compras, el ROI resultante corresponde al peor escenario (el coste por compra más alto). Puede estar seguro de que el ROI real es mayor que este cálculo. Ejemplo: suponiendo que gastó 20 $ en una campaña que generó 10 usuarios nuevos y 10 compras, el coste real por compra es de 1 $. Suponiendo que todo el coste se destinó a adquirir nuevos usuarios, el coste por compra es de 2 $).*
+>En este ejemplo se supone que todos los costes de campaña se utilizaron exclusivamente para generar compras de productos específicos. Suponiendo que todo el coste se haya gastado en la generación de compras, el ROI resultante corresponde al peor escenario (el coste por compra más alto). Puede estar seguro de que el ROI real es mayor que este cálculo. Ejemplo: suponiendo que gastó 20 $ en una campaña que generó 10 usuarios nuevos y 10 compras, el coste real por compra es de 1 $. Suponiendo que todo el coste se destina a adquirir nuevos usuarios, el coste por compra es de 2 dólares.
 
-Antes de empezar, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para unir las siguientes dimensiones a la tabla de elementos de línea (`sales\_flat\_order\_item, order\_item`):
+Antes de empezar, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para unir las siguientes dimensiones a la tabla de elementos de línea (`sales\_flat\_order\_item, order\_item`):
 
 * Origen del pedido (si solo realiza el seguimiento del origen de referencia a nivel de usuario, únase al origen del usuario)
 * Campaña del pedido (si solo rastrea el origen de referencia en el nivel de usuario, únase a la campaña del usuario)

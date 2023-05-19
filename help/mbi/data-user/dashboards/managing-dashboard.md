@@ -2,9 +2,9 @@
 title: Administrar tableros
 description: Obtenga información sobre cómo administrar los permisos de usuario para los paneles que posee, eliminar los que ya no necesita y establecer un panel predeterminado.
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Requiere [Permisos de administración](../../administrator/user-management/user-management.md).
 
-Entrada **[!DNL Manage Data** > **Dashboards]**, puede administrar los permisos de usuario para los tableros que posee, eliminar los tableros que ya no necesita y establecer un tablero predeterminado. Se trata en este artículo:
+Entrada **[!DNL Manage Data** > **Dashboards]**, puede administrar los permisos de usuario para los tableros que posee, eliminar los tableros que ya no necesita y establecer un tablero predeterminado. Este tema trata sobre:
 
 1. [Cambiar nombre de paneles](#rename)
 
@@ -35,7 +35,7 @@ Para cambiar el nombre de un tablero:
 
 ## Administrar permisos de usuario {#userperm}
 
-Existen tres niveles de acceso en [!DNL MBI] para paneles: `View`, `Edit`, y `None`.
+Existen tres niveles de acceso en [!DNL Commerce Intelligence] para paneles: `View`, `Edit`, y `None`.
 
 * `View` permite a los usuarios seleccionados ver el tablero, pero no editarlo. Los usuarios también pueden cambiar el tamaño de los gráficos, exportar datos y copiar los gráficos en sus propios paneles mediante la función Guardar como si tuvieran permisos estándar o de administrador.
 

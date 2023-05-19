@@ -2,7 +2,7 @@
 title: Formato e importación de datos de comercio electrónico
 description: Conozca los formatos de datos ideales para utilizar para cargar datos de comercio electrónico.
 exl-id: 7b910f78-9a5a-4d5d-a8b7-1b0b76304afe
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Formato e importación de datos
 
-Si utiliza una integración que actualmente no admite [!DNL MBI], puede seguir utilizando la variable [Función de carga de archivos](using-file-uploader.md) para introducir los datos en la Data Warehouse. Este artículo describe los formatos de datos ideales para utilizar en la carga de datos de comercio electrónico.
+Si utiliza una integración que actualmente no admite [!DNL Adobe Commerce Intelligence], puede seguir utilizando la variable [Función de carga de archivos](using-file-uploader.md) para introducir los datos en la Data Warehouse. En este tema se describen los formatos de datos ideales para cargar datos de comercio electrónico.
 
 ## `Orders` tabla
 

@@ -2,7 +2,7 @@
 title: Visualización de paneles en varias pantallas
 description: Aprenda a mostrar los paneles por la oficina.
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Mostrar paneles alrededor de la oficina
 
-Para [!DNL MBI] Para los usuarios interesados en mostrar sus tableros e informes en pantallas de toda la oficina, existen varias opciones de hardware que pueden habilitar fácilmente esta configuración.
+Para [!DNL Commerce Intelligence] Para los usuarios interesados en mostrar sus tableros e informes en pantallas de toda la oficina, existen varias opciones de hardware que pueden habilitar fácilmente esta configuración.
 
 Esta es la lista recomendada de las cosas que necesita para la opción:
 

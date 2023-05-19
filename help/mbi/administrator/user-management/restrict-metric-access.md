@@ -2,9 +2,9 @@
 title: Restringir el acceso a métricas
 description: Aprenda a trabajar con métricas de acceso y restricciones.
 exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ Después de establecer el nivel de permisos, puede seleccionar las métricas com
 
 1. Ir a **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
 1. Seleccione la cuenta de usuario que desee.
-1. El **[!UICONTROL Metrics]** Esta pestaña muestra una lista de las métricas disponibles. Compruebe las métricas a las que desea que el usuario tenga acceso; anule la selección de las que el usuario no debe tener acceso.
-1. [!DNL MBI] guarda los cambios automáticamente. Si el cambio se realiza correctamente, [!DNL MBI] visualizaciones **[!UICONTROL Saved!]** en la parte superior de la página.
+1. El **[!UICONTROL Metrics]** Esta pestaña muestra una lista de las métricas disponibles. Compruebe las métricas a las que desea que el usuario tenga acceso y anule la selección de aquellas a las que el usuario no debe tener acceso.
+1. [!DNL Adobe Commerce Intelligence] guarda los cambios automáticamente. Si el cambio se realiza correctamente, [!DNL Commerce Intelligence] visualizaciones **[!UICONTROL Saved!]** en la parte superior de la página.
 
 >[!NOTE]
 >
@@ -30,4 +30,4 @@ También puede restringir el acceso a una métrica editando la métrica y **[!UI
 
 >[!NOTE]
 >
->Si duplica una métrica, [!DNL MBI] copia los permisos de usuario establecidos en la métrica original.
+>Si duplica una métrica, [!DNL Commerce Intelligence] copia los permisos de usuario establecidos en la métrica original.

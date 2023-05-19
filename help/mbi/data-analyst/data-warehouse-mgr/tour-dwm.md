@@ -2,9 +2,9 @@
 title: Administrador de Datas Warehouse
 description: Obtenga información sobre cómo administrar la configuración de sincronización de columnas y tablas, explorar en profundidad el esquema de una tabla y crear columnas calculadas para utilizarlas en los informes.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c4094e780f83255846520d18f4d0806b1dd9a9ef
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Requiere [Permisos de administración](../../administrator/user-management/user-management.md)
 
-El Administrador de Datas Warehouse, al que se accede haciendo clic en **[!UICONTROL Manage Data > Data Warehouse]** en la barra lateral, es el portal de su [!DNL MBI] Data Warehouse. Con el Administrador de Datas Warehouse, puede administrar la configuración de sincronización de columnas y tablas, explorar en profundidad el esquema de una tabla y crear columnas calculadas para utilizarlas en los informes.
+El Administrador de Datas Warehouse, al que se accede haciendo clic en **[!UICONTROL Manage Data > Data Warehouse]**, es el portal de su [!DNL Adobe Commerce Intelligence] Data Warehouse. Con el Administrador de Datas Warehouse, puede administrar la configuración de sincronización de columnas y tablas, explorar en profundidad el esquema de una tabla y crear columnas calculadas para utilizarlas en los informes.
 
-Este artículo trata sobre:
+Este tema trata sobre:
 
 * [Aprender a dar la vuelta](#learning)
 * [Sincronización de tablas y columnas](#syncing)
@@ -39,7 +39,7 @@ El `Synced Tables` Esta opción muestra todas las tablas que ya se han añadido 
 No vea la tabla que está buscando en el `All Tables` ¿lista? Esto puede deberse a varios motivos:
 
 * La fuente de datos aún no se ha agregado
-* La fuente de datos es una base de datos y la variable [!DNL MBI] el usuario que ha creado no tiene acceso. En este caso, usted o el administrador de la base de datos deben conceder acceso.
+* La fuente de datos es una base de datos y la variable [!DNL Commerce Intelligence] el usuario que ha creado no tiene acceso. En este caso, usted o el administrador de la base de datos deben conceder acceso.
 * La fuente de datos o tabla se ha agregado recientemente y aún no se ha sincronizado
 
 ## Sincronización de tablas y columnas {#syncing}
@@ -61,7 +61,7 @@ El Administrador de Datas Warehouse no solo le permite ver y administrar fácilm
    Si está sincronizando una tabla que proviene directamente de la base de datos, es posible que `Primary Keys` no se puede indicar. En este caso, póngase en contacto con el administrador de la base de datos para solicitar que se agregue una o varias claves principales a la tabla.
 1. Cuando termine, haga clic en ![botón](../../assets/button.png) botón.
 
-A *¡Correcto!* y el estado cambia a. `Pending` para las columnas seleccionadas. Una vez que se complete la siguiente actualización completa, las tablas y columnas recién sincronizadas estarán disponibles para usarlas en los informes; también puede establecer nuevas tablas y columnas [métodos de replicación](./cfg-replication-methods.md) después de la sincronización inicial.
+A *¡Correcto!* se muestra el mensaje y el estado cambia a `Pending` para las columnas seleccionadas. Una vez que se complete la siguiente actualización completa, las tablas y columnas recién sincronizadas estarán disponibles para usarlas en los informes. También puede definir nuevas [métodos de replicación](./cfg-replication-methods.md) después de la sincronización inicial.
 
 A continuación se muestra un breve vistazo a todo el proceso:
 
@@ -119,6 +119,6 @@ Cuando esté listo para usar las nuevas columnas en los informes, [primero debe 
 
 ## Ajuste
 
-Este tutorial abarcó mucho material. Por ahora, debería tener una comprensión sólida de lo que es una base de datos, cómo se organizan los datos, cómo se relacionan las tablas entre sí y qué puede hacer con el Administrador de Datas Warehouse.
+Este artículo abarcaba mucho material. Por ahora, debería tener una comprensión sólida de lo que es una base de datos, cómo se organizan los datos, cómo se relacionan las tablas entre sí y qué puede hacer con el Administrador de Datas Warehouse.
 
-¡Excelente! Pruebe su nuevo conocimiento por [creación de una columna calculada](../data-warehouse-mgr/creating-calculated-columns.md) o [realización de algunos informes interesantes](../../tutorials/using-visual-report-builder.md).
+Pruebe sus conocimientos por [creación de una columna calculada](../data-warehouse-mgr/creating-calculated-columns.md) o [realización de algunos informes interesantes](../../tutorials/using-visual-report-builder.md).

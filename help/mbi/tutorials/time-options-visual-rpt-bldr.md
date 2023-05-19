@@ -2,24 +2,24 @@
 title: Usar opciones de tiempo en el Report Builder visual
 description: Obtenga información sobre cómo analizar los datos del informe durante un período de tiempo específico.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
 
-# Uso `Time` Opciones en `Visual Report Builder`
+# Uso [!DNL Time] Opciones en [!DNL Visual Report Builder]
 
-Una de las características del `Visual Report Builder` es el global `Time Range` y `Interval` configuración. Esta configuración le permite analizar los datos del informe durante un período de tiempo específico.
+Una de las características del [!DNL Visual Report Builder] es el global `Time Range` y `Interval` configuración. Esta configuración le permite analizar los datos del informe durante un período de tiempo específico.
 
-Sin embargo, en algunos análisis puede que sea necesario tener en cuenta intervalos de tiempo o intervalos de tiempo diferentes en el mismo informe. Ahí es donde `Time` Las opciones entran. Para que tenga una mejor idea de cómo usar `Time` Opciones en los informes, este tutorial cubre los siguientes casos de uso:
+Sin embargo, en algunos análisis puede que sea necesario tener en cuenta intervalos de tiempo o intervalos de tiempo diferentes en el mismo informe. Ahí es donde `Time` Las opciones entran. Para que tenga una mejor idea de cómo usar `Time` en sus informes, este tutorial cubre los siguientes casos de uso:
 
 * [Análisis de métricas sin marcas de tiempo](#notimestamp)
 * [Concesión de un intervalo de tiempo independiente a una métrica](#independenttimeinterval)
 * [Comparación de la misma métrica en diferentes intervalos de tiempo](#difftimerange)
 
-Si desea seguir junto con algunos de los informes de ejemplo mencionados en este tema, abra el [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) antes de continuar.
+Si desea seguir junto con algunos de los informes de ejemplo mencionados en este tema, abra el [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) antes de continuar.
 
 ## Análisis de métricas sin marcas de tiempo {#notimestamp}
 
@@ -64,7 +64,7 @@ Ahora puede ver el impacto que tuvo cada mes el año pasado:
 
 ## Comparación de la misma métrica en diferentes intervalos de tiempo {#difftimerange}
 
-Este ejemplo utiliza una dimensión personalizada llamada `Day number of the month`. Si desea crear este informe y aún no tiene esta dimensión en la Data Warehouse, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obtener asistencia.
+Este ejemplo utiliza una dimensión personalizada llamada `Day number of the month`. Si desea crear este informe y aún no tiene esta dimensión en la Data Warehouse, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obtener asistencia.
 
 Los dos ejemplos más comunes en esta categoría son (1) la comparación de métricas de crecimiento (ingresos año tras año o mes tras mes) y (2) una mejor comprensión de las tendencias recientes de ventas de artículos o inventarios.
 

@@ -2,16 +2,16 @@
 title: Análisis del Comportamiento de Recompra del Cliente
 description: Obtenga información sobre cómo analizar el comportamiento de las devoluciones de clientes.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
 
 # Comportamiento de recompra del cliente
 
-Si ofrece más de un producto, probablemente se pregunte cómo los clientes que compran un producto específico se comportan de forma diferente a lo largo del tiempo en comparación con otros clientes. Este artículo explora análisis que pueden ayudarle a responder las siguientes preguntas:
+Si ofrece más de un producto, probablemente se pregunte cómo los clientes que compran un producto específico se comportan de forma diferente a lo largo del tiempo en comparación con otros clientes. En este tema se exploran los análisis que pueden ayudarle a responder las siguientes preguntas.
 
 Entre los clientes que compran un *artículo específico*,
 
@@ -52,7 +52,7 @@ Con las métricas anteriores en mente, observe un ejemplo que implica productos 
 
 {style="table-layout:auto"}
 
-Ahora que tiene los datos, observe qué podría significar esto para cada una de las métricas.
+Ahora que tiene los datos, ¿qué significa esto para cada una de las métricas?
 
 ### Probabilidad de orden repetido
 
@@ -66,7 +66,7 @@ En base a los datos anteriores, se puede ver que las personas que compran la cer
 
 ### Ingresos medios por duración de clientes
 
-Los clientes que compran la cervecería tienen los mayores ingresos promedio de por vida; lo cual tiene sentido, dado que el costo de la cervecera está incluido en esta medida. Por el contrario, los clientes que compran granos de café generalmente solo compran artículos de bajo coste.
+Los clientes que compran la cervecera tienen los ingresos promedio de por vida más altos, lo cual tiene sentido, dado que el costo de la cervecera está incluido en esta medida. Por el contrario, los clientes que compran granos de café generalmente solo compran artículos de bajo coste.
 
 ### Tiempo para el siguiente pedido
 
@@ -74,10 +74,10 @@ Entre los clientes que han comprado cápsulas de café, la mitad hacen un pedido
 
 ## ¿Qué otros análisis se pueden generar?
 
-Con las métricas descritas en este artículo, también puede crear otros análisis de recompra útiles. Por ejemplo, también puede ver cómo los clientes vuelven a comprar **el mismo elemento** - por ejemplo, si compran recambios regularmente. Las cápsulas y los granos de café se pueden volver a comprar con regularidad, pero sería inesperado ver a los clientes haciendo compras repetidas de la cervecera. Si su negocio se centra en recargas o reabastecimiento, este análisis sería útil.
+Con las métricas descritas en este tema, también puede crear otros análisis de recompra útiles. Por ejemplo, también puede ver cómo los clientes vuelven a comprar **el mismo elemento** - por ejemplo, si compran recambios regularmente. Las cápsulas y los granos de café se pueden volver a comprar con regularidad, pero sería inesperado ver a los clientes haciendo compras repetidas de la cervecera. Si su negocio se centra en recargas o reabastecimiento, este análisis sería útil.
 
 Además de analizar el comportamiento de recompra de sus clientes, también puede generar análisis que miren la lealtad de los clientes. Considere la posibilidad de analizar los patrones de pérdida de clientes. ¿Dónde abandonan el sitio los clientes y no regresan? ¿A qué ritmo ocurre esto?
 
 Una vez que haya identificado por qué se produce la pérdida, puede utilizar el análisis para crear una `reactivation` campaña. Con estos datos, puede identificar a los usuarios que se han vuelto inactivos, cuánto tiempo ha pasado desde su última visita, cuál fue su última compra, etc. Esto le permite tomar decisiones procesables que atraen a sus clientes a regresar.
 
-Para obtener ayuda con el análisis, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Para obtener ayuda con el análisis, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

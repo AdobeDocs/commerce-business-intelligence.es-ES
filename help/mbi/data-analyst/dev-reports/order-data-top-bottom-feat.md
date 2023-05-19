@@ -2,9 +2,9 @@
 title: Ordenar datos mediante la función Mostrar arriba/abajo
 description: Aprenda a ordenar los datos mediante la función Mostrar arriba/abajo.
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Este tipo de clasificación y orden de los datos se puede realizar en informes q
 
 ## ¿Cómo se usa esto? {#how}
 
-Después de hacer clic en **[!UICONTROL Show Top/Bottom link]**, se mostrará una ventana donde puede establecer los parámetros de visualización y ordenación. El número del cuadro de texto puede ser un número entero (como `5`) o `ALL`. A continuación, puede elegir ordenar el informe por la métrica O por la agrupación.
+Haga clic en **[!UICONTROL Show Top/Bottom link]** para definir los parámetros de visualización y ordenación. El número del cuadro de texto puede ser un número entero (como `5`) o `ALL`. A continuación, puede elegir ordenar el informe por la métrica O por la agrupación.
 
 Por ejemplo, si desea mostrar las cinco fuentes de referencia que generaron la mayor cantidad de ingresos, así es como lo hace:
 

@@ -2,16 +2,16 @@
 title: tabla quote_item
 description: Aprenda a trabajar con la tabla quote_item.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
 # Tabla quote_item
 
-El `quote_item` tabla (`sales_flat_quote_item` en M1) 1) contiene registros de todos los artículos agregados a un carro de compras, independientemente de si se abandonó o se convirtió en una compra. Cada fila representa un elemento del carro de compras. Debido al tamaño potencial de esta tabla, Adobe recomienda eliminar registros periódicamente si se cumplen determinados criterios, como si hay carros de compras sin convertir con más de 60 días.
+El `quote_item` tabla (`sales_flat_quote_item` en M1) contiene registros de todos los artículos agregados a un carro de compras, independientemente de si se abandonó o se convirtió en una compra. Cada fila representa un elemento del carro de compras. Debido al tamaño potencial de esta tabla, Adobe recomienda eliminar registros periódicamente si se cumplen determinados criterios, como si hay carros de compras sin convertir con más de 60 días.
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ El `quote_item` tabla (`sales_flat_quote_item` en M1) 1) contiene registros de 
 | **Nombre de columna** | **Descripción** |
 |---|---|
 | `base_price` | Precio de una unidad individual de un producto en el momento en que se agregó el artículo a un carro de compras, después de [reglas de precios de catálogo, descuentos por niveles y precios especiales](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) se aplican y antes de aplicar impuestos, envíos o descuentos en el carro de compras. Se representa en la moneda base de la tienda. |
-| `created_at` | Marca de tiempo de creación del elemento del carro de compras, almacenada localmente en UTC. Según la configuración en [!DNL MBI], esta marca de tiempo se puede convertir en una zona horaria de informe en [!DNL MBI] que difiere de la zona horaria de la base de datos |
+| `created_at` | Marca de tiempo de creación del elemento del carro de compras, almacenada localmente en UTC. Según la configuración en [!DNL Commerce Intelligence], esta marca de tiempo se puede convertir en una zona horaria de informe en [!DNL Commerce Intelligence] que difiere de la zona horaria de la base de datos |
 | `item_id` (PK) | Identificador único de la tabla |
 | `name` | Nombre de texto del elemento de pedido |
 | `parent_item_id` | `Foreign key` que relaciona un producto simple con su paquete principal o producto configurable. Unirse a `quote_item.item_id` para determinar los atributos de producto principales asociados a un producto simple. Para los elementos de carro de compras principales (es decir, paquetes o tipos de productos configurables), la variable `parent_item_id` es `NULL` |
@@ -70,7 +70,7 @@ El `quote_item` tabla (`sales_flat_quote_item` en M1) 1) contiene registros de 
 
 `quote_item`
 
-* Unirse a `quote_item` para crear columnas que asocien detalles del SKU configurable o del paquete principal con el producto simple. [Atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obtener ayuda sobre la configuración de estos cálculos, si está compilando en el administrador de Datas Warehouse.
+* Unirse a `quote_item` para crear columnas que asocien detalles del SKU configurable o del paquete principal con el producto simple. [Atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obtener ayuda sobre la configuración de estos cálculos, si está compilando en el administrador de Datas Warehouse.
    * Ruta: `quote_item.parent_item_id` (muchos) => `quote_item.item_id` (uno)
 
 `store`

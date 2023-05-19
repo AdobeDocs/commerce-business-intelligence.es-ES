@@ -2,9 +2,9 @@
 title: Creación y uso de vistas de Data Warehouse
 description: Obtenga información sobre un método para crear nuevas tablas almacenadas mediante la modificación de una tabla existente o la unión o consolidación de varias tablas mediante SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1071'
 ht-degree: 9%
 
 ---
@@ -36,6 +36,7 @@ Desde aquí puede crear una vista siguiendo las instrucciones de ejemplo siguien
 1. Si observa una vista existente, haga clic en **[!UICONTROL New Data Warehouse View]** para abrir una ventana de consulta en blanco. Si ya está abierta una ventana de consulta en blanco, continúe con el paso siguiente.
 1. Asigne un nombre a la vista escribiendo en `View Name` field. El nombre proporcionado aquí determina el nombre para mostrar de la vista en la Data Warehouse. `View names` se limitan a letras minúsculas, números y guiones bajos (_). Todos los demás caracteres están prohibidos.
 1. Introduzca la consulta en la ventana titulada `Select Query`, usando la sintaxis estándar de PostgreSQL.
+
    >[!NOTE]
    >
    >La consulta debe hacer referencia a nombres de columna específicos. El uso del `*`no se permite seleccionar todas las columnas.
@@ -76,7 +77,7 @@ Examine con más detalle uno de los ejemplos mencionados anteriormente en este a
 | 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
-Para crear una sola tabla de gasto de publicidad que contenga ambos [!DNL Facebook] y [!DNL AdWords] campañas, debe escribir una consulta SQL y utilizar el complemento `UNION ALL` función. A `UNION ALL` La instrucción se utiliza generalmente para combinar varias consultas SQL distintas mientras se anexan los resultados de cada consulta a un único resultado.
+Para crear una sola tabla de gasto de publicidad que contenga ambos [!DNL Facebook] y [!DNL Google AdWords] campañas, debe escribir una consulta SQL y utilizar el complemento `UNION ALL` función. A `UNION ALL` La instrucción se utiliza generalmente para combinar varias consultas SQL distintas mientras se anexan los resultados de cada consulta a un único resultado.
 
 Hay algunos requisitos de un `UNION` declaración que vale la pena mencionar, como se describe en PostgreSQL [documentación](https://www.postgresql.org/docs/8.3/queries-union.html):
 
@@ -129,13 +130,13 @@ Guardar la consulta anterior como `Data Warehouse View` crea una tabla con ambos
 | **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1.2 | 300 | 5 |
 | **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28.5 | 10200 | 280 |
 
-En lugar de crear un conjunto independiente de métricas de marketing para cada fuente de publicidad, ahora puede crear un único conjunto de métricas utilizando la tabla anterior para capturar todos los anuncios.
+En lugar de crear un conjunto independiente de métricas de marketing para cada fuente de publicidad, puede crear un único conjunto de métricas utilizando la tabla anterior para capturar todos los anuncios.
 
 **¿Busca ayuda adicional?**
 
-Escribir SQL y crear `Data Warehouse Views` no se incluye con el soporte técnico. Sin embargo, el equipo de servicios ofrece asistencia en la creación de vistas. El equipo de asistencia puede ayudarle con todo tipo de tareas, desde migrar una base de datos heredada con una nueva base de datos para crear una única vista de Data Warehouse con el fin de realizar un análisis específico.
+Escribir SQL y crear `Data Warehouse Views` no se incluye con el soporte técnico. Sin embargo, la variable [Equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ofrece asistencia en la creación de vistas. El equipo de asistencia puede ayudarle con todo tipo de tareas, desde migrar una base de datos heredada con una nueva base de datos para crear una única vista de Data Warehouse con el fin de realizar un análisis específico.
 
-Generalmente, la creación de un nuevo `Data Warehouse View` a los efectos de consolidar 2-3 tablas de estructura similar requiere cinco horas de servicio, lo que se traduce en aproximadamente $ 1250 de trabajo. Sin embargo, a continuación se presentan algunos factores comunes que pueden aumentar la inversión esperada requerida:
+Generalmente, la creación de un nuevo `Data Warehouse View` a los efectos de consolidar 2-3 tablas de estructura similar requiere cinco horas de servicio, lo que se traduce en aproximadamente $ 1.250 de trabajo. Sin embargo, a continuación se presentan algunos factores comunes que pueden aumentar la inversión esperada requerida:
 
 * Consolidación de más de tres tablas en una sola vista
 * Creación de más de una vista de Data Warehouse

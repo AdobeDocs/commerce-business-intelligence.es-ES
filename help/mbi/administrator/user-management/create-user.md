@@ -1,15 +1,15 @@
 ---
-title: Agregar o editar un nuevo usuario
-description: Obtenga información sobre cómo agregar un nuevo [!DNL MBI] usuario y cómo actualizar su nombre de usuario o contraseña.
+title: Añadir un nuevo usuario de Adobe Commerce Intelligence
+description: Obtenga información sobre cómo agregar un nuevo [!DNL Commerce Intelligence] usuario y cómo actualizar su nombre de usuario o contraseña.
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-# Agregar un usuario
+# Añadir un nuevo [!DNL Adobe Commercer Intelligence] usuario
 
 1. Haga clic en el nombre de su empresa en la esquina superior derecha y seleccione **[!UICONTROL Invite User]** en el menú desplegable.
 1. Introduzca el nombre y el correo electrónico del usuario.
@@ -30,12 +30,12 @@ Se envía un correo electrónico al nuevo usuario con los detalles de inicio de 
 
 ## Actualice su dirección de correo electrónico o contraseña
 
-Puede actualizar su dirección de correo electrónico y/o contraseña haciendo clic en el nombre de su empresa en la esquina superior derecha y, a continuación, haga clic en Hacer clic **[!UICONTROL Edit Profile]**.
+Puede actualizar su dirección de correo electrónico y/o contraseña haciendo clic en el nombre de su empresa en la esquina superior derecha y, a continuación, haga clic en **[!UICONTROL Edit Profile]**.
 
 ## Reenviar la invitación
 
-Si necesita volver a enviar la invitación al nuevo usuario, en la [página de inicio de sesión](https://dashboard.rjmetrics.com/v2/session/create), haga clic en **[!UICONTROL Forgot?]**, introduzca la dirección de correo electrónico del nuevo usuario y haga clic en **[!UICONTROL Reset Password]**. Esto reenvía la invitación y permite al usuario iniciar sesión.
+Si necesita volver a enviar la invitación, en la [página de inicio de sesión](https://dashboard.rjmetrics.com/v2/session/create), haga clic en **[!UICONTROL Forgot?]**, introduzca la dirección de correo electrónico del nuevo usuario y haga clic en **[!UICONTROL Reset Password]**. Esto reenvía la invitación y permite al usuario iniciar sesión.
 
 >[!IMPORTANT]
 >
->Cada cuenta tiene un número contratado de licencias o puestos. Si llega al límite o desea obtener más información, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+>Cada cuenta tiene un número contratado de licencias o puestos. Si llega al límite o desea obtener más información, [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

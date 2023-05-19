@@ -2,7 +2,7 @@
 title: Tabla de presupuesto
 description: Aprenda a trabajar con la tabla de presupuestos.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -24,7 +24,7 @@ El `quote` tabla (`sales_flat_quote` en M1) contiene registros en cada carro de 
 | `base_currency_code` | Moneda para todos los valores capturados en `base_*` campos (es decir, `base_grand_total`, `base_subtotal`, etc.). Esto suele reflejar la moneda predeterminada de la tienda de Commerce |
 | `base_grand_total` | Precio final cotizado al cliente para el carro de compras, después de aplicar todos los impuestos, envíos y descuentos. Aunque el cálculo preciso es personalizable, en general la variable `base_grand_total` se calcula como `base_subtotal` + `base_tax_amount` + `base_shipping_amount` + `base_discount_amount` - `base_gift_cards_amount` - `base_customer_balance_amount` |
 | `base_subtotal` | Valor bruto de mercancía de todos los artículos incluidos en el carro de compras. No se incluyen impuestos, gastos de envío, descuentos, etc |
-| `created_at` | Marca de tiempo de creación del carro de compras, almacenada localmente en UTC. Según la configuración en [!DNL MBI], esta marca de tiempo se puede convertir en una zona horaria de informe en [!DNL MBI] que difiere de la zona horaria de la base de datos |
+| `created_at` | Marca de tiempo de creación del carro de compras, almacenada localmente en UTC. Según la configuración en [!DNL Commerce Intelligence], esta marca de tiempo se puede convertir en una zona horaria de informe en [!DNL Commerce Intelligence] que difiere de la zona horaria de la base de datos |
 | `customer_email` | Dirección de correo electrónico del cliente que creó el carro |
 | `customer_id` | `Foreign key` asociado con el `customer_entity` , si el cliente está registrado. Unirse a `customer_entity.entity_id` para determinar los atributos del cliente asociados al usuario que creó el carro de compras. Si el carro de compras se creó mediante el cierre de compra de invitado, este campo es `NULL` |
 | `entity_id` (PK) | Identificador único de la tabla y que se utiliza comúnmente en combinaciones con otras tablas dentro de la instancia de Commerce |

@@ -2,7 +2,7 @@
 title: Paneles
 description: Aprenda a crear y trabajar con un tablero.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Paneles
 
-[!DNL MBI] Los paneles le ofrecen una visión rápida del rendimiento y la actividad de ventas de su tienda de un vistazo. Los paneles individuales se pueden compartir con otros usuarios y organizar en grupos lógicos. También puede establecer diferentes niveles de permisos para otros usuarios.
+[!DNL Adobe Commerce Intelligence] Los paneles le ofrecen una visión rápida del rendimiento y la actividad de ventas de su tienda de un vistazo. Los paneles individuales se pueden compartir con otros usuarios y organizar en grupos lógicos. También puede establecer diferentes niveles de permisos para otros usuarios.
 
 Es fácil crear un informe, agregarlo a un panel y exportar los datos a Excel. Se puede cambiar el tamaño de los gráficos e informes y arrastrarlos a su posición en el panel.
 
@@ -76,7 +76,7 @@ Entrada **[!DNL Manage Data** > **Dashboards]**, puede administrar los permisos 
 
 ### Uso compartido de paneles {#sharingdash}
 
-Para escalar realmente [!DNL MBI] en toda la organización y para proporcionar perspectivas valiosas, Adobe le anima a compartir los paneles que cree con otros integrantes del equipo. *Puede compartir los tableros que posee* haciendo clic en `Share Dashboard` en la parte superior de la página.
+Para escalar realmente [!DNL Commerce Intelligence] en toda la organización y para proporcionar perspectivas valiosas, Adobe le anima a compartir los paneles que cree con otros integrantes del equipo. *Puede compartir los tableros que posee* haciendo clic en `Share Dashboard` en la parte superior de la página.
 
 Al compartir un tablero, puede asignar permisos en toda la organización O de forma individual, lo que significa que puede decidir quién puede ver y editar los informes.
 
@@ -113,7 +113,7 @@ Al compartir un tablero, puede asignar permisos en toda la organización O de fo
 
    **`Default`**
 
-   1. Para hacer que este tablero sea el predeterminado para su [!DNL MBI] cuenta, haga clic en **[!UICONTROL Make Default]**.
+   1. Para hacer que este tablero sea el predeterminado para su [!DNL Commerce Intelligence] cuenta, haga clic en **[!UICONTROL Make Default]**.
 
    **`Remove`**
 

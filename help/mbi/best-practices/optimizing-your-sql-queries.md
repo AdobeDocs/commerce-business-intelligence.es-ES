@@ -2,18 +2,18 @@
 title: Optimización de las consultas SQL
 description: Aprenda a optimizar las consultas SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
 
 # Optimización de las consultas SQL
 
-El Report Builder SQL le permite consultar e iterar en esas consultas en un momento dado. Esto resulta útil cuando necesita modificar una consulta sin tener que esperar a que finalice un ciclo de actualización antes de darse cuenta de que una columna o informe que ha creado necesita actualizarse.
+El [!DNL SQL Report Builder] le permite consultar e iterar en esas consultas en un momento dado. Esto resulta útil cuando necesita modificar una consulta sin tener que esperar a que finalice un ciclo de actualización antes de darse cuenta de que una columna o informe que ha creado necesita actualizarse.
 
-Antes de ejecutar una consulta, [[!DNL MBI] estima su coste](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). El coste tiene en cuenta el tiempo y el número de recursos necesarios para ejecutar una consulta. Si se considera que ese coste es demasiado alto o si el número de filas devueltas supera los límites de MBI, la consulta falla. Para consultar la Data Warehouse, que garantiza que escribe las consultas más optimizadas posibles, Adobe recomienda lo siguiente.
+Antes de ejecutar una consulta, [[!DNL Commerce Intelligence] estima su coste](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). El coste tiene en cuenta el tiempo y el número de recursos necesarios para ejecutar una consulta. Si ese coste se considera demasiado alto o si el número de filas devueltas supera [!DNL Commerce Intelligence] La consulta falla al limitar. Para consultar su [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), que garantiza que escribe las consultas más optimizadas posibles, Adobe recomienda lo siguiente.
 
 ## Uso de SELECT o Selección de todas las columnas
 

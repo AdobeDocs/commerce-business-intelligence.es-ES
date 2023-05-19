@@ -2,16 +2,16 @@
 title: Rendimiento de cupones
 description: Obtenga información sobre cómo analizar el rendimiento de los cupones.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
 # Análisis avanzado de código de cupones
 
-Comprender el rendimiento de los cupones de su negocio es una manera interesante de segmentar sus pedidos y también comprender mejor a sus clientes. Este artículo le guiará por los pasos para crear análisis con el fin de comprender qué clientes adquiere mediante cupones, cómo funcionan y rastrear el uso general de cupones.
+Comprender el rendimiento de los cupones de su negocio es una manera interesante de segmentar sus pedidos y también comprender mejor a sus clientes. En este tema se explican los pasos para crear análisis con el fin de comprender qué clientes obtiene mediante cupones, cómo funcionan y rastrean el uso general de cupones.
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
@@ -19,7 +19,7 @@ Este análisis contiene [columnas calculadas avanzadas](../data-warehouse-mgr/ad
 
 ## Primeros pasos
 
-Como primer paso, debe asegurarse de que las siguientes columnas estén sincronizadas con la Data Warehouse. Si no es así, vaya y realice el seguimiento navegando hasta &quot;Administrar datos&quot; > &quot;Data Warehouse&quot; y sincronizando lo siguiente:
+Como primer paso, debe asegurarse de que las siguientes columnas estén sincronizadas con la Data Warehouse. Si no es así, continúe y rastree el contenido navegando hasta `Manage Data` > `Data Warehouse`y sincronizando lo siguiente:
 
 * **sales\_plain\_order** tabla
 * **coupon\_code**
@@ -519,4 +519,4 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar a la imagen de la parte superior de la página.
 
-Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -2,9 +2,9 @@
 title: ROI de marketing
 description: Aprenda a configurar un tablero que realice un seguimiento del análisis de canal, incluido el retorno de la inversión en conjunto y por campaña.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este artículo contiene instrucciones para clientes que utilizan la arquitectura original y la nueva arquitectura. Estás en el [nueva arquitectura](../../administrator/account-management/new-architecture.md) si tiene la sección &quot;Vistas de Data Warehouse&quot; disponible después de seleccionar &quot;Administrar datos&quot; en la barra de herramientas principal.
+>Este tema contiene instrucciones para los clientes que utilizan la arquitectura original y la nueva arquitectura. Estás en el [nueva arquitectura](../../administrator/account-management/new-architecture.md) si tiene la sección &quot;Vistas de Data Warehouse&quot; disponible después de seleccionar &quot;Administrar datos&quot; en la barra de herramientas principal.
 
-Si está gastando dinero en publicidad en línea, quiere rastrear su retorno de este gasto y tomar decisiones basadas en datos sobre futuras inversiones. Este artículo muestra cómo configurar un tablero que realice un seguimiento del análisis de canal, incluido el retorno de la inversión en suma y por campaña.
+Si está gastando dinero en publicidad en línea, quiere rastrear su retorno de este gasto y tomar decisiones basadas en datos sobre futuras inversiones. En este tema se muestra cómo configurar un tablero que realice un seguimiento del análisis de canal, incluido el retorno de la inversión en términos agregados y por campaña.
 
 ![](../../assets/Marketing_dashboard_example.png)
 
@@ -23,7 +23,7 @@ Antes de empezar, debe conectar su [!DNL [Facebook Ads]](../importing-data/integ
 
 ## Tablas consolidadas
 
-**Arquitectura original:** Para reunir su gasto de varias fuentes (como [!DNL Facebook Ads] o [!DNL Google Adwords]), el Adobe recomienda crear un **tabla consolidada** de todos tus gastos publicitarios. Necesita un analista para completar este paso. Si no lo ha hecho, [presentar una solicitud de asistencia](../../guide-overview.md) con el asunto `[MARKETING ROI ANALYSIS]`y un analista crea esta tabla.
+**Arquitectura original:** Para reunir el gasto de varias fuentes, como [!DNL Facebook Ads] o [!DNL Google Adwords], el Adobe recomienda crear un **tabla consolidada** de todos tus gastos publicitarios. Necesita un analista para completar este paso. Si no lo ha hecho, [presentar una solicitud de asistencia](../../guide-overview.md#Submitting-a-Support-Ticket) con el asunto `[MARKETING ROI ANALYSIS]`y un analista crea esta tabla.
 
 **Nueva arquitectura:** Puede seguir el ejemplo en [esta biblioteca de análisis](../../data-analyst/data-warehouse-mgr/create-dw-views.md) tema. Las tablas consolidadas ahora se conocen como Vistas de Data Warehouse en la nueva arquitectura.
 
@@ -32,11 +32,7 @@ Antes de empezar, debe conectar su [!DNL [Facebook Ads]](../importing-data/integ
 Columnas para crear
 
 * **`Consolidated Digital Ad Spend`** tabla
-* **`Campaign name`** es creado por un analista como parte de su **[ANÁLISIS DE ROI DE MARKETING]** boleto
-
->[!NOTE]
->
->Consulte las diferencias de nueva arquitectura más arriba.
+* **`Campaign name`** lo crea un analista de Adobes como parte de su **[ANÁLISIS DE ROI DE MARKETING]** boleto
 
 **Arquitecturas originales y nuevas:**
 
@@ -63,7 +59,6 @@ Columnas para crear
       * Seleccione una [!UICONTROL table]: `ecommerce####`
       * Seleccione una [!UICONTROL column]: `source`
       * [!UICONTROL Path]: sales_plain_order.increment_id = ecommerce#####.transactionId ^
-
 
 
 
@@ -295,7 +290,7 @@ Columnas para crear
 
    [!UICONTROL Chart Type]: `Table`
 
-Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### Relacionado
 

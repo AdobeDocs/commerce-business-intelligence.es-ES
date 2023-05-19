@@ -1,30 +1,30 @@
 ---
-title: Esenciales de MBI frente a Pro
-description: Aprenda cómo difiere MBI Essentials del MBI Pro.
+title: Commerce Intelligence Essentials frente a Pro
+description: Descubra en qué se diferencia Commerce Intelligence Essentials de Commerce Intelligence Pro.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: c403d28392d781f0e897b937d00dfe0cfe35ea4d
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '74'
 ht-degree: 5%
 
 ---
 
-# [!DNL MBI Essentials] vs [!DNL MBI Pro]
+# [!DNL Commerce Intelligence Essentials] vs [!DNL Commerce Intelligence Pro]
 
-En la tabla siguiente se describen los elementos incluidos en una `Essentials` en comparación con una cuenta de IMM actual. Adobe ya no ofrece `Essentials`.
+En la tabla siguiente se describen los elementos incluidos con un heredado `Essentials` frente a una cuenta actual de Commerce Intelligence. El Adobe ya no ofrece `Essentials`.
 
-|  | **`MBI Essentials`** | **`MBI Pro`** |
+|  | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
 | `Pre-Defined Reports` | Hasta 100 | Personalizado |
 | `Pre-Defined Dashboards` | 5-6 | Personalizado |
 | `New Custom Report Creation` | Sí | Sí |
-| `Commerce Tables` | 4-6 | Sin límite |
+| `Commerce Tables` | 4-6 | Ilimitado |
 | `Log-ins/User Accounts` | 10 | 20 |
 | `User Permissions` | Sí | Sí |
 | `Data Warehouse Manager` | No disponible | Disponible |
 | `Email Reports` | Sí | Sí |
 | `Cohort Report Builder` | Sí | Sí |
-| `Google Analytics Live Integration` | Sí | Sin límite |
+| `Google Analytics Live Integration` | Sí | Ilimitado |
 | `3rd Party Integrations` | No disponible | Disponible |
 | `Full API Access` | No | Sí |
 | `Access to CS, AM, or Analysts` | No | Sí |
@@ -34,7 +34,7 @@ En la tabla siguiente se describen los elementos incluidos en una `Essentials` e
 
 >[!NOTE]
 >
->El número de tablas depende del cierre de compra de los invitados.
+>El número de mesas depende del pago y envío de los invitados.
 
 **Tablas incluidas**
 

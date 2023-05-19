@@ -2,7 +2,7 @@
 title: Comprender y evaluar las relaciones entre tablas
 description: Aprenda a comprender cuántas ocurrencias posibles de una tabla podrían pertenecer a una entidad en otra.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Comprender las relaciones es vital para mantener la integridad de los datos, ya 
 
 Existen tres tipos de relaciones que pueden existir entre dos tablas:
 
-* [&quot;uno a uno&quot;](#onetoone)
-* [&quot;uno a varios&quot;](#onetomany)
-* [&quot;varios a varios&quot;](#manytomany)
+1. [&quot;uno a uno&quot;](#onetoone)
+1. [&quot;uno a varios&quot;](#onetomany)
+1. [&quot;varios a varios&quot;](#manytomany)
 
 ### `One-to-One` {#onetoone}
 
-En un `one-to-one` relación, un registro en la Tabla `B` solo pertenece a un registro de la tabla `A`. Y un registro en la tabla `A` solo pertenece a un registro de la tabla `B`.
+En un `one-to-one` relación, un registro en la tabla `B` solo pertenece a un registro de la tabla `A`. Y un registro en la tabla `A` solo pertenece a un registro de la tabla `B`.
 
 Por ejemplo, en la relación entre las personas y los números de licencia de conducir, una persona solo puede tener un número de licencia de conducir, y un número de licencia de conducir pertenece a una sola persona.
 
@@ -33,13 +33,13 @@ Por ejemplo, en la relación entre las personas y los números de licencia de co
 
 ### `One-to-Many` {#onetomany}
 
-En un `one-to-many` relación, un registro en la Tabla `A` puede pertenecer potencialmente a varios registros de la Tabla `B`. Piense en la relación entre `orders` y `items` - un pedido puede contener muchos artículos, pero un artículo pertenece a un único pedido. En este caso, la variable `orders` La tabla es el lado uno y el `items` La tabla es el lado varios.
+En un `one-to-many` relación, un registro en la tabla `A` puede pertenecer potencialmente a varios registros de la tabla `B`. Piense en la relación entre `orders` y `items` - un pedido puede contener muchos artículos, pero un artículo pertenece a un único pedido. En este caso, la variable `orders` La tabla es el lado uno y el `items` La tabla es el lado varios.
 
 ![](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
-En un `many-to-many` relación, un registro en la Tabla `B` puede pertenecer potencialmente a varios registros de la Tabla `A`. Y viceversa, un registro en la Tabla `A` puede pertenecer potencialmente a varios registros de la Tabla `B`.
+En un `many-to-many` relación, un registro en la tabla `B` puede pertenecer potencialmente a varios registros de la tabla `A`. Y viceversa, un registro en la tabla `A` puede pertenecer potencialmente a varios registros de la tabla `B`.
 
 Piense en la relación entre **products** y **categorías**: un producto puede pertenecer a muchas categorías y una categoría puede contener muchos productos.
 
@@ -60,6 +60,7 @@ Por ejemplo, cuando piense en usuarios y pedidos, tenga en cuenta todo lo que es
 Para utilizar este método:
 
 1. Identifique la entidad que se describe en cada tabla. **Pista: suele ser un sustantivo**. Por ejemplo, la variable `user` y `orders` Las tablas de describen explícitamente usuarios y pedidos.
+
 1. Identifique uno o más verbos que describan cómo interactúan estas entidades. Por ejemplo, al comparar usuarios con pedidos, los usuarios &quot;realizan&quot; pedidos. En la otra dirección, los pedidos &quot;pertenecen&quot; a los usuarios.
 
 Este tipo de marco de trabajo se puede aplicar a cualquier emparejamiento de tablas en la Data Warehouse. Esto le permite identificar fácilmente el tipo de relación y qué tabla es un lado uno y qué tabla es un lado varios.

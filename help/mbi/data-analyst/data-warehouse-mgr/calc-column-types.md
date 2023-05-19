@@ -2,9 +2,9 @@
 title: Tipos de columnas calculadas
 description: Aprenda a crear columnas para aumentar y optimizar los datos para el análisis.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 Dentro de [Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md), puede crear columnas para aumentar y optimizar los datos para el análisis. [Esta funcionalidad](../data-warehouse-mgr/creating-calculated-columns.md) se puede acceder a ella seleccionando cualquier tabla en el Administrador de Datas Warehouse y haciendo clic en **[!UICONTROL Create New Column]**.
 
-En este artículo se describen los tipos de columnas que se pueden crear con el Administrador de Datas Warehouse. También se describe la descripción, se describe visualmente esa columna y se muestra un [mapa de referencia](#map) de todas las entradas necesarias para crear una columna. Existen tres formas de crear columnas calculadas:
+En este tema se describen los tipos de columnas que se pueden crear con el Administrador de Datas Warehouse. También se describe la descripción, se describe visualmente esa columna y se muestra un [mapa de referencia](#map) de todas las entradas necesarias para crear una columna. Existen tres formas de crear columnas calculadas:
 
-* [Mismas columnas calculadas de tabla](#sametable)
-* [Columnas calculadas de uno a varios](#onetomany)
-* [Columnas calculadas varios a uno](#manytoone)
+1. [Mismas columnas calculadas de tabla](#sametable)
+1. [Columnas calculadas de uno a varios](#onetomany)
+1. [Columnas calculadas varios a uno](#manytoone)
 
 ## Mismas columnas calculadas de tabla {#sametable}
 
@@ -85,13 +85,13 @@ Esto se puede utilizar para crear dimensiones de nivel de cliente como `Customer
 
 ### Existe {#exists}
 
-Una columna calculada existe es una prueba binaria que determina la presencia de un registro en el lado varios. En otras palabras, la nueva columna devuelve un `1` si la ruta conecta al menos una fila en cada tabla, y `0` si no se puede establecer ninguna conexión.
+Una columna calculada es una prueba binaria que determina la presencia de un registro en el lado varios. En otras palabras, la nueva columna devuelve un `1` si la ruta conecta al menos una fila en cada tabla, y `0` si no se puede establecer ninguna conexión.
 
 Este tipo de dimensión podría determinar, por ejemplo, si un cliente ha comprado alguna vez un producto en particular. Uso de una unión entre un `customers` tabla y `orders` una tabla, un filtro para un producto específico, una dimensión `Customer has purchased Product X?` se puede crear.
 
 ## Mapa de referencia útil {#map}
 
-Si tiene algún problema para recordar cuáles son todas las entradas al crear una columna calculada, intente mantener este mapa de referencia a mano cuando esté construyendo:
+Si tiene problemas para recordar cuáles son todas las entradas al crear una columna calculada, tenga a mano este mapa de referencia al crear:
 
 ![](../../assets/merged_reference_map.png)
 
@@ -99,7 +99,7 @@ Si tiene algún problema para recordar cuáles son todas las entradas al crear u
 
 En su búsqueda para analizar y responder preguntas sobre su negocio, puede encontrarse con una situación en la que no puede crear la columna exacta que desea.
 
-Para garantizar un giro rápido, el Adobe recomienda consultar el [Tipos de columnas calculadas avanzadas](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) para ver qué tipo de columnas puede crear el equipo de asistencia de Adobe. Ese artículo también cubre la información que necesita de usted para crear la columna: inclúyala en su solicitud.
+Para garantizar un giro rápido, el Adobe recomienda consultar el [Tipos de columnas calculadas avanzadas](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) para ver qué tipo de columnas puede crear el equipo de asistencia de Adobe. Ese tema también cubre la información que necesita de usted para crear la columna: inclúyala en su solicitud.
 
 ## Documentación relacionada
 

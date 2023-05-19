@@ -2,16 +2,16 @@
 title: Datos previstos de Salesforce
 description: Obtenga información sobre los objetos admitidos y no admitidos en los datos de Salesforce.
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
 
 # Previsto [!DNL Salesforce] datos
 
-[Después del [!DNL Salesforce] la configuración ha finalizado](../integrations/salesforce.md), una tabla para cada consulta [objeto](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - con nombre `sf_/\{sobject-name}` : se crea en la Data Warehouse.
+Después del [[!DNL Salesforce] configurar](../integrations/salesforce.md) se ha completado, una tabla para cada consultable [objeto](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - con nombre `sf_/\{sobject-name}` : se crea en la Data Warehouse.
 
 >[!NOTE]
 >
@@ -48,4 +48,4 @@ Actualmente, [!DNL Salesforce] actualmente no expone los siguientes objetos en s
 ## Relacionado:
 
 * [Conectando [!DNL Salesforce]](../integrations/salesforce.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

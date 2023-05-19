@@ -2,7 +2,7 @@
 title: Compartir paneles
 description: Aprenda a trabajar con sus paneles y a compartirlos.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Compartir un tablero
 
-Compartir paneles significa que usted y su equipo poseen la misma información en cualquier momento dado, lo que permite la colaboración y el debate. Estas son algunas recomendaciones para compartir paneles y mantener [!DNL MBI] cuenta despejada.
+Compartir paneles significa que usted y su equipo poseen la misma información en cualquier momento dado, lo que permite la colaboración y el debate. Estas son algunas recomendaciones para compartir paneles y mantener [!DNL Adobe Commerce Intelligence] cuenta despejada.
 
 ## Evitar paneles duplicados
 
 A veces, es posible que encuentre varios paneles con el mismo nombre; esto suele deberse a que otros usuarios han creado y compartido paneles similares con usted. Estos paneles podrían ser duplicados de una copia principal. En este caso, Adobe recomienda que un usuario comparta la copia principal del tablero y luego elimine todos los tableros duplicados.
 
-Para ver a quién pertenece un tablero, haga clic en el menú desplegable de tableros en la parte superior izquierda. Los tableros que no tengan un nombre debajo le pertenecen.
+Para ver a quién pertenece un panel, haga clic en el menú desplegable del panel situado en la esquina superior izquierda. Los tableros que no tengan un nombre debajo le pertenecen.
 
 ![](../../mbi/assets/Dash_ownership.gif)
 

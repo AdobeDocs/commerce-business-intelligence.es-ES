@@ -1,18 +1,18 @@
 ---
-title: Active su [!DNL MBI] Cuenta
-description: Aprenda a ponerse en contacto para activar su [!DNL MBI] cuenta.
+title: Activar su [!DNL Commerce Intelligence] Cuenta
+description: Aprenda con quién ponerse en contacto para activar su [!DNL Commerce Intelligence] cuenta.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 434539f1c0cc5455db7f1998347fa65eb8a6d39f
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '32'
+source-wordcount: '36'
 ht-degree: 0%
 
 ---
 
-# Active su [!DNL MBI] Cuenta
+# Activar su [!DNL Commerce Intelligence] Cuenta
 
-Para activar [!DNL MBI] para locales o `Cloud Pro` suscripciones, póngase en contacto con el administrador de éxito del cliente de Adobe.
+Para activar [!DNL Commerce Intelligence] para in situ o `Cloud Pro` suscripciones, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >
->Adobe ya no admite `Cloud Starter` suscripciones.
+>El Adobe ya no admite nuevas `Cloud Starter` suscripciones.

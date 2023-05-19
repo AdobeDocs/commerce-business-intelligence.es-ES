@@ -2,16 +2,16 @@
 title: Análisis del valor de duración esperado (LTV) para Pro
 description: Aprenda a configurar un tablero que le ayude a comprender el crecimiento del valor de duración del cliente y el valor de duración esperado de sus clientes.
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
 # Análisis de valor de duración esperada
 
-Este artículo muestra cómo configurar un panel que le ayuda a comprender el crecimiento del valor de duración del cliente y el valor de duración esperado de sus clientes.
+En este tema se muestra cómo configurar un tablero que le ayuda a comprender el crecimiento del valor de duración del cliente y el valor de duración esperado de sus clientes.
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
@@ -153,4 +153,4 @@ Otros detalles del gráfico
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar a la imagen de la parte superior de la página.
 
-Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

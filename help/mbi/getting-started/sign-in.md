@@ -1,36 +1,36 @@
 ---
-title: Acceda a su [!DNL MBI] Cuenta
-description: Obtenga información sobre cómo iniciar sesión en su [!DNL MBI] cuenta.
+title: Acceder a su cuenta de Commerce Intelligence
+description: Obtenga información sobre cómo iniciar sesión en su cuenta de Commerce Intelligence.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 7f168ff545a68e5ee9ec2f80928a653fd6a1370b
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
-# Acceda a su [!DNL MBI] account
+# Acceda a su activado [!DNL Adobe Commerce Intelligence] account
 
-Una vez que haya activado su [!DNL MBI] o bien [local o nube](../getting-started/onpremise-activation.md) y han trabajado con su equipo de cuentas de Adobe para finalizar los pasos de configuración, ahora puede iniciar sesión en su cuenta.
+Después de activar su [!DNL Commerce Intelligence] cuenta para [local o en la nube](../getting-started/onpremise-activation.md) y ha trabajado con su equipo de cuenta de Adobe para finalizar los pasos de configuración, ahora puede iniciar sesión en su cuenta.
 
-Puede iniciar sesión con su [!DNL Adobe ID] o usando su [!DNL MBI] dirección de correo electrónico y contraseña.
+Puede iniciar sesión con su [!DNL Adobe ID] o con su [!DNL Commerce Intelligence] correo electrónico y contraseña.
 
 ![inicio de sesión](../assets/sign-in.png)
 
-## Inicie sesión utilizando su [!DNL Adobe ID]
+## Inicie sesión con su [!DNL Adobe ID]
 
-1. Haga clic en **[!UICONTROL Sign in with Adobe ID]**.
+1. Clic **[!UICONTROL Sign in with Adobe ID]**.
 
-   ![inicio de sesión en adobe](../assets/sign-in-adobe.png)
+   ![sign-in-adobe](../assets/sign-in-adobe.png)
 
-1. Introduzca la dirección de correo electrónico que utilizó al crear su [!DNL MBI] cuenta. Si todavía no tiene una cuenta de Adobe, haga clic en **[!UICONTROL Create an account]** e introduzca su información. Recuerde utilizar la dirección de correo electrónico que utilizó al crear su [!DNL MBI] cuenta. La dirección de correo electrónico es la clave necesaria para acceder a su cuenta de Adobe.
+1. Introduzca la dirección de correo electrónico que utilizó al crear su [!DNL Commerce Intelligence] cuenta. Si todavía no tiene una cuenta de Adobe, haga clic en **[!UICONTROL Create an account]** e introduzca su información. Recuerde usar la dirección de correo electrónico que utilizó al crear su [!DNL Commerce Intelligence] cuenta. La dirección de correo electrónico es la clave que necesita para acceder a su cuenta de Adobe.
 
 >[!NOTE]
 >
->Si inicia sesión utilizando su [!DNL Adobe ID], no puede cambiar su [!DNL MBI] contraseña de perfil.
+>Si inicia sesión con su [!DNL Adobe ID], no puede cambiar su [!DNL Commerce Intelligence] contraseña de perfil.
 
-## Iniciar sesión con su nombre de usuario y contraseña
+## Inicie sesión con su nombre de usuario y contraseña
 
 Introduzca su dirección de correo electrónico y contraseña y haga clic en **[!UICONTROL Sign In]**.
 
-Ahora tiene acceso a [!DNL MBI].
+Ahora tiene acceso a [!DNL Commerce Intelligence].

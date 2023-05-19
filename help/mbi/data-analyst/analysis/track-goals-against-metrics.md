@@ -2,26 +2,26 @@
 title: Seguimiento de objetivos con métricas
 description: Aprenda a configurar un tablero que le ayude a realizar un seguimiento de los objetivos de su empresa en relación con los datos reales, incluidos los ingresos, los nuevos usuarios registrados y los pedidos a lo largo del tiempo.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
 # Seguimiento De Objetivos Con Métricas De Rendimiento
 
-La mayoría de los clientes desea realizar un seguimiento de sus **objetivos empresariales**, pero no se da cuenta de que esto es posible en [!DNL MBI]. Este artículo muestra cómo configurar un tablero que le ayudará a realizar un seguimiento de los objetivos de su empresa en relación con los datos reales, incluidos los ingresos, los nuevos usuarios registrados y los pedidos a lo largo del tiempo. También aprenderá a comparar el rendimiento año tras año, todo en un tablero como este:
+La mayoría de los clientes desea realizar un seguimiento de sus **objetivos empresariales**, pero no se da cuenta de que esto es posible en [!DNL Adobe Commerce Intelligence]. En este tema se muestra cómo configurar un tablero que le ayudará a realizar un seguimiento de los objetivos de su empresa en relación con los datos reales, incluidos los ingresos, los nuevos usuarios registrados y los pedidos a lo largo del tiempo. También aprenderá a comparar el rendimiento año tras año, todo en un tablero como este:
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Antes de empezar, debe familiarizarse con el [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y asegúrese de haber definido sus objetivos empresariales para un periodo determinado.
+Antes de comenzar, debe revisar la [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y asegúrese de haber definido sus objetivos empresariales para un periodo determinado.
 
 ## Primeros pasos
 
 Primero debe cargar un archivo que contenga objetivos diarios, mensuales o trimestrales específicos para su empresa.
 
-Puede usar el complemento [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y la imagen siguiente para dar formato al archivo. Los destinos más comunes en los que los clientes realizan el seguimiento [!DNL MBI] incluir pedidos, ingresos y nuevas cuentas registradas.
+Puede usar el complemento [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y la imagen siguiente para dar formato al archivo. Los destinos más comunes en los que los clientes realizan el seguimiento [!DNL Commerce Intelligence] incluir pedidos, ingresos y nuevas cuentas registradas.
 
 ![](../../assets/Goals-_Excel.png)
 
@@ -49,7 +49,7 @@ Cree una nueva métrica para cada destino. Por ejemplo, si carga objetivos de in
 
 ## Informes
 
-Como siempre, es útil tener una combinación de valores estáticos y gráficos visuales al analizar los destinatarios. A continuación se muestran tres informes de ejemplo para ayudarle a empezar a rastrear el rendimiento de los ingresos.
+Es útil tener una combinación de valores estáticos y gráficos visuales al analizar los destinatarios. A continuación se muestran tres informes de ejemplo para ayudarle a empezar a rastrear el rendimiento de los ingresos.
 
 * **Ingresos restantes para alcanzar el objetivo**
 * Métrica `A`: `Revenue`

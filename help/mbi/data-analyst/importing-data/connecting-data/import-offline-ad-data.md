@@ -1,29 +1,29 @@
 ---
 title: Importar otros datos de gasto en publicidad
-description: Obtenga información sobre cómo importar datos de gasto en publicidad o sin conexión a [!DNL MBI].
+description: Obtenga información sobre cómo importar datos de gasto en publicidad o sin conexión a [!DNL Commerce Intelligence].
 exl-id: 6f12a397-0927-4e87-95ff-3a55ccc9e14b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
 # Importar otros datos de gasto en publicidad
 
-La carga de los datos de gasto en publicidad le permite medir el ROI de la campaña combinando el coste de la publicidad con el cliente `lifetime value (CLV)` de usuarios adquiridos de sus campañas.
+La carga de los datos de gasto en publicidad le permite medir el ROI de la campaña combinando el coste de la publicidad con el coste de `customer lifetime value (CLV)` de usuarios adquiridos de sus campañas.
 
 ## Carga de datos de costes de publicidad
 
-El primer paso para analizar los datos de gasto en publicidad es obtener los datos. Dado que la mayoría de las plataformas de publicidad le permiten exportar informes, Adobe recomienda exportar los datos sin procesar de su plataforma de publicidad y cargarlos directamente en [!DNL MBI] sin ninguna manipulación. Puede realizar operaciones en los datos de la Data Warehouse, por lo que no es necesario duplicar los esfuerzos.
+El primer paso para analizar los datos de gasto en publicidad es obtener los datos. Dado que la mayoría de las plataformas de publicidad le permiten exportar informes, Adobe recomienda exportar los datos sin procesar de su plataforma de publicidad y cargarlos directamente en [!DNL Commerce Intelligence] sin ninguna manipulación. Puede realizar operaciones en los datos de la Data Warehouse, por lo que no es necesario duplicar los esfuerzos.
 
-Después de exportar los datos de gasto en publicidad, utilice el [`File Upload` característica](../connecting-data/using-file-uploader.md) para introducir los datos en la Data Warehouse. Puede cargar nuevos datos en el mismo [!DNL MBI] tabla con el tiempo.
+Después de exportar los datos de gasto en publicidad, utilice el [`File Upload` característica](../connecting-data/using-file-uploader.md) para introducir los datos en la Data Warehouse. Puede cargar nuevos datos en el mismo [!DNL Commerce Intelligence] tabla con el tiempo.
 
 ## Fuentes sin conexión
 
-Además de sus campañas en línea, es posible que también tenga anuncios sin conexión, como en la radio o en un cartel. Para tener en cuenta estos casos, puede cargar manualmente una hoja de cálculo con los datos de coste a [!DNL MBI].
+Además de sus campañas en línea, es posible que también tenga anuncios sin conexión, como en la radio o en un cartel. Para tener en cuenta estos casos, puede cargar manualmente una hoja de cálculo con los datos de coste a [!DNL Commerce Intelligence].
 
-La estructura de tabla explorada a continuación se recomienda al crear una `.csv` para registrar los datos de gasto del anuncio. También se adjunta un archivo de plantilla al final de este artículo para servir de ejemplo. Las columnas recomendadas son:
+La estructura de tabla explorada a continuación se recomienda al crear una `.csv` para registrar los datos de gasto del anuncio. También se adjunta un archivo de plantilla al final de este tema para que sirva de ejemplo. Las columnas recomendadas son:
 
 * `ID` : es un identificador único para cada fila de datos que la base de datos utiliza como clave principal. Debe ser diferente para cada fila.
 * `Date` - Fecha en la que se ejecutó la campaña, en formato aaaa-mm-dd.

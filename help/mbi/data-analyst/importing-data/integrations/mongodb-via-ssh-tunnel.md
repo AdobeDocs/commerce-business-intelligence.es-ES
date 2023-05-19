@@ -2,30 +2,30 @@
 title: Connect [!DNL MongoDB] a través del túnel SSH
 description: Obtenga información sobre cómo conectarse [!DNL MongoDB] vía túnel SSH.
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
 
 # Connect [!DNL MongoDB] a través del túnel SSH
 
-Para conectar su [!DNL MongoDB] base de datos a [!DNL MBI] a través de un túnel SSH, usted (o su equipo, si no es un técnico) debe hacer algunas cosas:
+Para conectar su [!DNL MongoDB] base de datos a [!DNL Commerce Intelligence] a través de un túnel SSH, debe hacer algunas cosas:
 
-1. [Recupere el [!DNL MBI] clave pública](#retrieve)
-1. [Permitir el acceso al [!DNL MBI] Dirección IP](#allowlist)
-1. [Crear un Linux](#linux)
-1. [Crear un [!DNL MongoDB] usuario para MBI](#mongodb)
-1. [Introduzca la conexión y la información de usuario en [!DNL MBI]](#finish)
+1. [Recupere el [!DNL Commerce Intelligence] clave pública](#retrieve)
+1. [Permitir el acceso al [!DNL Commerce Intelligence] Dirección IP](#allowlist)
+1. [Creación de un usuario de Linux para Commerce Intelligence](#linux)
+1. [Crear un [!DNL MongoDB] usuario de Commerce Intelligence](#mongodb)
+1. [Introduzca la conexión y la información de usuario en [!DNL Commerce Intelligence]](#finish)
 
 >[!NOTE]
 >
 >Debido a la naturaleza técnica de esta configuración, Adobe recomienda que inicie sesión en un desarrollador para que le ayude si no lo ha hecho antes.
 
-## Recuperación del [!DNL MBI] clave pública {#retrieve}
+## Recuperación del [!DNL Commerce Intelligence] clave pública {#retrieve}
 
-El `public key` se utiliza para autorizar la [!DNL MBI] `Linux` usuario. La siguiente sección le explica cómo crear el usuario e importar las claves.
+El `public key` se utiliza para autorizar la [!DNL Commerce Intelligence] `Linux` usuario. La siguiente sección le explica cómo crear el usuario e importar las claves.
 
 1. Ir a **[!UICONTROL Data** > **Connections]** y haga clic en **[!UICONTROL Add New Data Source]**.
 1. Haga clic en [!DNL MONGODB] icono.
@@ -34,21 +34,21 @@ El `public key` se utiliza para autorizar la [!DNL MBI] `Linux` usuario. La sigu
 
 Deje esta página abierta durante todo el tutorial, la necesitará en la siguiente sección y al final.
 
-Si está un poco perdido, así es como navegar [!DNL MBI] para recuperar la clave:
+Si está un poco perdido, así es como navegar [!DNL Commerce Intelligence] para recuperar la clave:
 
 ![Recuperación de la clave pública de RJMetrics](../../../assets/MongoDB_Public_Key.gif)<!--{:.zoom}-->
 
-## Permitir el acceso al [!DNL MBI] Dirección IP {#allowlist}
+## Permitir el acceso al [!DNL Commerce Intelligence] Dirección IP {#allowlist}
 
 Para que la conexión se realice correctamente, debe configurar el cortafuegos para permitir el acceso desde las direcciones IP. Lo son `54.88.76.97` y `34.250.211.151`, pero también está en la [!DNL MongoDB] página credenciales:
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## Creación de un `Linux` usuario para [!DNL MBI] {#linux}
+## Creación de un `Linux` usuario para [!DNL Commerce Intelligence] {#linux}
 
 >[!IMPORTANT]
 >
->Si la variable `sshd_config` el archivo asociado con el servidor no está establecido en la opción predeterminada, solo determinados usuarios tienen acceso al servidor; esto impide una conexión correcta a [!DNL MBI]. En estos casos, es necesario ejecutar un comando como `AllowUsers` para permitir el `rjmetric` acceso del usuario al servidor.
+>Si la variable `sshd_config` el archivo asociado con el servidor no está establecido en la opción predeterminada, solo determinados usuarios tienen acceso al servidor; esto impide una conexión correcta a [!DNL Commerce Intelligence]. En estos casos, es necesario ejecutar un comando como `AllowUsers` para permitir el `rjmetric` acceso del usuario al servidor.
 
 Puede ser una máquina de producción o secundaria, siempre que contenga datos en tiempo real (o actualizados con frecuencia). Puede restringir a este usuario de la forma que desee, siempre y cuando conserve el derecho de conectarse a [!DNL MongoDB] servidor.
 
@@ -74,7 +74,7 @@ Para terminar de crear el usuario, modifique los permisos en el directorio /home
     chmod -R 700 /home/rjmetric/.ssh
 ```
 
-## Creación de un [!DNL MBI] [!DNL MongoDB] usuario {#mongodb}
+## Creación de un [!DNL Commerce Intelligence] [!DNL MongoDB] usuario {#mongodb}
 
 [!DNL MongoDB] Los servidores de tienen dos modos de ejecución: [uno con la opción &quot;auth&quot;](#auth) `(mongod -- auth)` y uno sin él, [que es la opción predeterminada](#default). Los pasos para crear un [!DNL MongoDB] El usuario varía en función del modo que utilice el servidor. Asegúrese de verificar el modo antes de continuar.
 
@@ -84,16 +84,16 @@ Al conectarse a varias bases de datos, puede agregar el usuario iniciando sesió
 
 >[!NOTE]
 >
->Para ver todas las bases de datos disponibles, la variable [!DNL MBI] El usuario de requiere los permisos para ejecutar `listDatabases.`
+>Para ver todas las bases de datos disponibles, la variable [!DNL Commerce Intelligence] El usuario de requiere los permisos para ejecutar `listDatabases.`
 
-Este comando concede a [!DNL MBI] acceso de usuario `to all databases`:
+Este comando concede a [!DNL Commerce Intelligence] acceso de usuario `to all databases`:
 
 ```bash
     use admin
     db.createUser('rjmetric', '< secure password here >', true)
 ```
 
-Utilice este comando para conceder el [!DNL MBI] acceso de usuario `to a single database`:
+Utilice este comando para conceder el [!DNL Commerce Intelligence] acceso de usuario `to a single database`:
 
 ```bash
     use < database name >
@@ -122,26 +122,26 @@ Si el servidor no utiliza `auth` modo, su [!DNL MongoDB] el servidor es accesibl
 
 Para enlazar su [!DNL MongoDB] servidor a una dirección diferente, ajuste el nombre de host de la base de datos en el siguiente paso en consecuencia.
 
-## Introducción de la conexión y la información de usuario en [!DNL MBI] {#finish}
+## Introducción de la conexión y la información de usuario en [!DNL Commerce Intelligence] {#finish}
 
-Para finalizar, debe introducir la conexión y la información de usuario en [!DNL MBI]. ¿Dejaste el [!DNL MongoDB] ¿desea abrir la página credenciales? Si no es así, vaya a **[!UICONTROL Data > Connections]** y haga clic en **[!UICONTROL Add New Data Source]** y, a continuación, el [!DNL MongoDB] icono. No olvide cambiar el `Encrypted` cambiar a `Yes`.
+Para finalizar, debe introducir la conexión y la información de usuario en [!DNL Commerce Intelligence]. ¿Dejaste el [!DNL MongoDB] ¿desea abrir la página credenciales? Si no es así, vaya a **[!UICONTROL Data > Connections]** y haga clic en **[!UICONTROL Add New Data Source]** y, a continuación, el [!DNL MongoDB] icono. No olvide cambiar el `Encrypted` cambiar a `Yes`.
 
 Introduzca la siguiente información en esta página, empezando por `Database Connection` sección:
 
 * `Host`: `127.0.0.1`
-* `Username`: La [!DNL MBI] [!DNL MongoDB] nombre de usuario (debe ser `rjmetric`)
-* `Password`: La [!DNL MBI] [!DNL MongoDB] contraseña
+* `Username`: La [!DNL Commerce Intelligence] [!DNL MongoDB] nombre de usuario (debe ser `rjmetric`)
+* `Password`: La [!DNL Commerce Intelligence] [!DNL MongoDB] contraseña
 * `Port`: Puerto de MongoDB en el servidor (`27017` de forma predeterminada)
 * `Database Name` (Opcional): Si solo ha permitido el acceso a una base de datos, especifique el nombre de la base de datos aquí.
 
 En el `SSH Connection` sección:
 
 * `Remote Address`: La dirección IP o el nombre de host del servidor en el que se SSH
-* `Username`: La [!DNL MBI] Nombre de usuario de Linux® (SSH) (debe ser rjmetric)
+* `Username`: La [!DNL Commerce Intelligence] Nombre de usuario de Linux (SSH) (debe ser rjmetric)
 * `SSH Port`: el puerto SSH del servidor (22 de forma predeterminada)
 
-¡Eso es todo! Cuando haya terminado, haga clic en **[!UICONTROL Save Test]** para completar la configuración.
+Cuando haya terminado, haga clic en **[!UICONTROL Save Test]** para completar la configuración.
 
 ### Relacionado
 
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

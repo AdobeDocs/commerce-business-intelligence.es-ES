@@ -2,7 +2,7 @@
 title: Previsto[!DNL Google ECommerce]datos
 description: Descubra qué tipos de datos se comparten con Google ECommerce.
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Previsto[!DNL Google ECommerce] datos
 
-Después de su [!DNL Google ECommerce] la cuenta se ha conectado correctamente a [!DNL MBI], el sistema empezará a importar datos en una tabla titulada `ecommerce`. Esta tabla registra una fila de datos para cada transacción. Esto incluye las siguientes columnas de datos en el nivel de pedido:
+Después de su [!DNL Google ECommerce] la cuenta se ha conectado correctamente a [!DNL Commerce Intelligence], el sistema empezará a importar datos en una tabla titulada `ecommerce`. Esta tabla registra una fila de datos para cada transacción. Esto incluye las siguientes columnas de datos en el nivel de pedido:
 
 | Nombre de columna | Descripción |
 |-----|-----|

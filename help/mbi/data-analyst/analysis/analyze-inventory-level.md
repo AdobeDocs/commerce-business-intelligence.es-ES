@@ -2,16 +2,16 @@
 title: Análisis de Niveles de Inventario
 description: Obtenga información sobre cómo analizar los niveles de inventario.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # Analizar niveles de inventario
 
-En este tema se muestra cómo configurar un tablero que proporcione información sobre el inventario actual. Este tema contiene instrucciones para los clientes sobre la arquitectura heredada o la nueva arquitectura. Se encuentra en la arquitectura heredada si no tiene el **[!UICONTROL Data Warehouse Views]** en la opción **[!UICONTROL Manage Data]** menú). Si utiliza la arquitectura heredada, envíe un [nueva solicitud de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) con el asunto **[!UICONTROL INVENTORY ANALYSIS]** una vez que llegue a la sección designada en la _Columnas calculadas_ instrucciones a continuación.
+En este tema se muestra cómo configurar un tablero que proporciona información sobre el inventario actual y contiene instrucciones para los clientes sobre la arquitectura heredada o la nueva arquitectura. Se encuentra en la arquitectura heredada si no tiene el **[!UICONTROL Data Warehouse Views]** en la opción **[!UICONTROL Manage Data]** menú. Si utiliza la arquitectura heredada, envíe un [nueva solicitud de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) con el asunto **[!UICONTROL INVENTORY ANALYSIS]** una vez que llegue a la sección designada en la _Columnas calculadas_ instrucciones a continuación.
 
 ## Columnas para rastrear:
 
@@ -29,7 +29,7 @@ En este tema se muestra cómo configurar un tablero que proporcione información
 
 ## Columnas calculadas:
 
-### Nueva arquitectura
++++ Nueva arquitectura
 
 * **[!UICONTROL catalog_product_entity]** tabla:
    * **`Product's most recent order date`**
@@ -118,7 +118,8 @@ En este tema se muestra cómo configurar un tablero que proporcione información
 
 
 
-### Arquitectura heredada
++++
++++ Arquitectura heredada
 
 * **[!UICONTROL catalog_product_entity]** tabla:
    * **`Product's most recent order date`**
@@ -189,6 +190,8 @@ En este tema se muestra cómo configurar un tablero que proporcione información
 
 
 
++++
+
 ## Métricas
 
 ### Instrucciones de métricas
@@ -240,4 +243,4 @@ En este tema se muestra cómo configurar un tablero que proporcione información
       [!UICONTROL Chart type]: `Table`
 
 
-Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
