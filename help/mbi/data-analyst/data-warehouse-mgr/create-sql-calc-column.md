@@ -23,7 +23,7 @@ Las diferentes columnas que se pueden crear con la variable `Calculation` Las co
 
 **Ejemplo 1: ¿Es el último pedido del cliente?**
 
-La mayoría de las cuentas tienen una columna denominada `Is customer's last order?` en su `orders` tabla para realizar análisis de tasas de compra repetidas y clientes perdidos. Si la cuenta se encuentra en la nueva arquitectura, esta columna se crea mediante una `Calculation` y se puede ver en la siguiente captura de pantalla:
+La mayoría de las cuentas tienen una columna denominada `Is customer's last order?` en su `orders` tabla para realizar análisis de tasas de compra repetidas y clientes perdidos. Si la cuenta se encuentra en la nueva arquitectura, esta columna se crea mediante una `Calculation` y se puede ver en la captura de pantalla siguiente:
 
 ![](../../assets/Is_customer_s_last_order.png)
 

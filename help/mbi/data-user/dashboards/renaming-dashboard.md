@@ -1,6 +1,6 @@
 ---
-title: Cambio de nombre de tableros
-description: Obtenga información sobre cómo quitar un gráfico de un tablero.
+title: Cambiar nombre de paneles
+description: Obtenga información sobre cómo quitar un gráfico de un panel.
 exl-id: 45c67f3c-4660-4bb5-ba10-55ed666525f4
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
@@ -9,22 +9,22 @@ ht-degree: 0%
 
 ---
 
-# Eliminación de un gráfico de un tablero
+# Quitar un gráfico de un panel
 
 >[!NOTE]
 >
->Requiere [Administrador](../../administrator/user-management/user-management.md) o `Standard` permisos para realizar estas funciones. Si eres un `Standard` usuario, también necesita `Edit` permisos del tablero.
+>Requiere [Administrador](../../administrator/user-management/user-management.md) o `Standard` permisos para realizar estas funciones. Si eres un... `Standard` usuario, también necesita lo siguiente `Edit` permisos para el tablero.
 
-A veces los nombres ya no encajan. Cambiar el nombre de un tablero es rápido y fácil.
+A veces los nombres ya no caben. Cambiar el nombre de un tablero es rápido y sencillo.
 
-1. Mientras está en el tablero, haga clic en el **[!UICONTROL Dashboard Options]** en la parte superior de la pantalla, situada junto al `Global Search` para abrir el Navegador.
+1. En el tablero, haga clic en **[!UICONTROL Dashboard Options]** menú situado en la parte superior de la pantalla, junto al `Global Search` menú.
 
-1. Haga clic en **[!UICONTROL Rename]** en la lista desplegable .
+1. Clic **[!UICONTROL Rename]** en el menú desplegable.
 
-1. Cuando se le solicite, introduzca el nuevo nombre para su tablero.
+1. Cuando se le solicite, escriba el nuevo nombre para el tablero.
 
-1. Haga clic en **[!UICONTROL Save Changes]**.
+1. Clic **[!UICONTROL Save Changes]**.
 
 Ejemplo:
 
-![cambiar el nombre del tablero](../../assets/renaming-dboard.gif)
+![cambiar nombre de tablero](../../assets/renaming-dboard.gif)
