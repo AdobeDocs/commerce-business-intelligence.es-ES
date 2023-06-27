@@ -2,7 +2,7 @@
 title: Traducción de consultas SQL a informes de Commerce Intelligence
 description: Descubra cómo se traducen las consultas SQL en las columnas calculadas y las métricas que utiliza en Commerce Intelligence.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: fa65bd909495d4d73cabbc264e9a47b3e0a0da3b
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Al final de este tema, encontrará una **matriz de traducción** para cláusulas
 
 Comience por ver una consulta general:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `a,` | Informe `group by` |
@@ -42,7 +42,7 @@ Se requiere una métrica al agregar `within a single table`. Por ejemplo, la var
 
 Observe un ejemplo específico de cómo una `Total Revenue` La métrica de se puede definir en [!DNL Commerce Intelligence]. Observe la consulta siguiente que intenta traducir:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation` (columna) |
@@ -63,7 +63,7 @@ La consulta de esta agregación puede tener un aspecto similar al siguiente:
 
 |  |  |
 |--- |--- |
-| `Select` |  |
+| `Select` | |
 | `c.customer_id` | Propietario agregado |
 | `SUM(o.order_total) as "Customer LTV"` | Operación de agregado (columna) |
 | `FROM customers c` | Tabla de propietario agregada |
@@ -103,7 +103,7 @@ Consulte [creación de columnas calculadas](../data-warehouse-mgr/creating-calcu
 
 Comience con la siguiente consulta:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT coupon_code,` | Informe `group by` |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation`(columna) |
@@ -132,7 +132,7 @@ El método anterior implicaría la creación de una nueva métrica que realice u
 
 Retroceda un paso y observe la consulta general de `Average order value`:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | Métrica `operation` (columna) |
@@ -155,4 +155,11 @@ Para obtener una referencia rápida, consulte la siguiente matriz. Muestra el eq
 
 ## Commerce Intelligence Elements
 
-|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|-|X|-| |`FROM`|-|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-|-| |`WHERE` (con elementos de tiempo)|-|-|-|X|-|-| |`JOIN...ON`|-|X|-|-|X|X|-| |`GROUP BY`|-|-|X-|-|-|-|
+| **`SQL Clause`** | **`Metric`** | **`Filter`** | **`Report group by`** | **`Report time frame`** | **`Path`** | **`Calculated column inputs`** | **`Source table`** |
+|---|---|---|---|---|---|---|---|
+| `SELECT` | X | - | X | - | - | X | - |
+| `FROM` | - | - | - | - | - | - | X |
+| `WHERE` | - | X | - | - | - | - | - |
+| `WHERE` (con elementos de tiempo) | - | - | - | X | - | - | - |
+| `JOIN...ON` | - | X | - | - | X | X | - |
+| `GROUP BY` | - | - | X | - | - | - | - |
