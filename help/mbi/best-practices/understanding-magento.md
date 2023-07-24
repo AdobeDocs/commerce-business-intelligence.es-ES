@@ -2,7 +2,9 @@
 title: Comprenda su [!DNL Commerce Intelligence] Entorno
 description: Obtenga información sobre cómo trabajar con y mejorar su [!DNL Commerce Intelligence] entorno.
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -19,7 +21,7 @@ Muchas de las tablas contienen una columna denominada `entity\_id`. En cada tab
 
 Por ejemplo, cada fila del `sales\_order` es un orden único. La clave principal de esta tabla se llama `entity\_id`. Esta columna se puede considerar como `order\_id`. En una tabla independiente, `customer\_entity`, cada fila representa un cliente único. La clave principal de esta tabla también se denomina `entity\_id`, que se puede considerar como `customer\_id`.
 
-En esas tablas, `sales\_order.entity\_id` no es igual a `customer\_entity.entity\_id`. Esto se aplica a todos los conjuntos de tablas que contienen `entity\_id`: `table\_A.entity\_id` no es igual a `table\_B.entity\_id`.
+En esas tablas, `sales\_order.entity\_id` no es igual a `customer\_entity.entity\_id`. Esto se aplica a todos los conjuntos de tablas que contienen `entity\_id`: `table\_A.entity\_id` no es igual a `table\_B.entity\_id`.
 
 ## [!DNL Guest orders]
 

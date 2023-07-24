@@ -2,7 +2,9 @@
 title: Pérdida de comercio
 description: Obtenga información sobre cómo generar y analizar la tasa de pérdida de Commerce.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -55,9 +57,9 @@ Columnas para crear
 * **Clientes nuevos (por fecha de último pedido)**
    * Clientes que se cuentan
 
-   >[!NOTE]
-   >
-   >Esta métrica puede existir en su cuenta.
+  >[!NOTE]
+  >
+  >Esta métrica puede existir en su cuenta.
 
 * En el **`customer_entity`** tabla
 * Esta métrica realiza una **Recuento**
@@ -75,7 +77,7 @@ Columnas para crear
    * [!UICONTROL Metric]: Clientes nuevos (por fecha de primer pedido)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
-      [!UICONTROL Perspective]: `Cumulative`
+     [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
    * Segundos transcurridos desde la última fecha de pedido del cliente >= [Su límite autodefinido para los clientes perdidos ]**`^`**
@@ -84,11 +86,10 @@ Columnas para crear
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
-      [!UICONTROL Perspective]: Cumulative
+     [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
    * 
-
-      [!UICONTROL Format]: Percentage
+     [!UICONTROL Format]: Percentage
 
 * *Métrica `A`:`New customers cumulative`*
 * *Métrica `B`:`Churned customers by last order date`*

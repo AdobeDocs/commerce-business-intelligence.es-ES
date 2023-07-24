@@ -2,7 +2,9 @@
 title: Creación de informes en un calendario comercial
 description: Aprenda a configurar la estructura para utilizar un calendario de ventas minoristas 4-5-4 dentro de su [!DNL Commerce Intelligence] cuenta.
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -49,18 +51,19 @@ Puede [descargar](../../assets/454-calendar.csv) a `.csv` versión del calendari
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
       * 
-         [!UICONTROL Tipo de datos]: `Datetime`
+        [!UICONTROL Tipo de datos]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
-         >[!NOTE]
-         >
-         >El `now()` La función anterior es específica de PostgreSQL. Aunque la mayoría [!DNL Commerce Intelligence] Los almacenes de datos de están alojados en PostgreSQL, algunos pueden estar alojados en Redshift. Si el cálculo anterior devuelve un error, es posible que tenga que utilizar la función Redshift `getdate()` en lugar de `now()`.
+        >[!NOTE]
+        >
+        >El `now()` La función anterior es específica de PostgreSQL. Aunque la mayoría [!DNL Commerce Intelligence] Los almacenes de datos de están alojados en PostgreSQL, algunos pueden estar alojados en Redshift. Si el cálculo anterior devuelve un error, es posible que tenga que utilizar la función Redshift `getdate()` en lugar de `now()`.
+
    * **Año minorista actual** (Debe ser creado por el analista de asistencia)
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
       * 
-         [!UICONTROL Operation]: `Max`
+        [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **¿Incluido en el año minorista actual? (Sí/No)**
       * [!UICONTROL Column type]: `Same table > Calculation`
@@ -68,7 +71,7 @@ Puede [descargar](../../assets/454-calendar.csv) a `.csv` versión del calendari
          * `A` - `Year Retail`
          * `B` - `Current retail year`
       * 
-         [!UICONTROL Tipo de datos]: `String`
+        [!UICONTROL Tipo de datos]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **¿Incluido en el año comercial anterior? (Sí/No)**
       * [!UICONTROL Column type]: `Same table > Calculation`
@@ -76,9 +79,8 @@ Puede [descargar](../../assets/454-calendar.csv) a `.csv` versión del calendari
          * `A` - `Year Retail`
          * `B` - `Current retail year`
       * 
-         [!UICONTROL Tipo de datos]: String
+        [!UICONTROL Tipo de datos]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
-
 
 * **sales\_order** tabla
    * **Creado\_a las (año comercial)**
@@ -138,64 +140,62 @@ Nota: No se necesitan métricas nuevas para este análisis. Sin embargo, asegúr
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail week)
+     [!UICONTROL Group by]: `Created\_at` (retail week)
    * 
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
       * Desactivar `multiple Y-axes`
 
 * **Resumen del calendario de ventas minoristas (año de venta minorista actual por mes)**
    * Métrica `A`: `Revenue`
       * 
-         [!UICONTROL Métrica]: `Revenue`
+        [!UICONTROL Métrica]: `Revenue`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * Métrica `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * Métrica `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail month)
+     [!UICONTROL Group by]: `Created\_at` (retail month)
    * 
-
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
 
 * **Resumen del calendario de ventas minoristas (año de venta minorista anterior por mes)**
    * Métrica `A`: `Revenue`
       * 
-         [!UICONTROL Métrica]: `Revenue`
+        [!UICONTROL Métrica]: `Revenue`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * Métrica `B`: `Orders`
       * [!UICONTROL Metric]: Número de pedidos
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * Métrica `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail month)
+     [!UICONTROL Group by]: `Created\_at` (retail month)
    * 
-
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
 
 ## Pasos siguientes
 

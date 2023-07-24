@@ -2,7 +2,9 @@
 title: Crear y usar una columna calculada de SQL
 description: Descubra cómo se pueden crear columnas avanzadas en forma de columnas de cálculo SQL en la nueva arquitectura de Adobe Commerce Intelligence.
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -43,7 +45,7 @@ Los posibles valores que puede devolver esta columna (`NULL`, `Yes`, `No`) conti
 
 A muchos clientes les gusta analizar los ingresos en el nivel de artículo, dividiéndolos por campos como `product name` o `category`. La mayoría de las bases de datos no proporcionan realmente los ingresos de un producto en un pedido; en su lugar, proporcionan la cantidad vendida en el pedido y el precio del artículo.
 
-Para habilitar los análisis de ingresos de productos, la mayoría de las cuentas tienen una columna denominada `Order item total value (quantity * price)` en su `Orders Items` tabla. Si la cuenta se encuentra en la nueva arquitectura, esta columna también se crea mediante una `Calculation` y se puede ver en la siguiente captura de pantalla:
+Para habilitar los análisis de ingresos de productos, la mayoría de las cuentas tienen una columna denominada `Order item total value (quantity * price)` en su `Orders Items` tabla. Si la cuenta se encuentra en la nueva arquitectura, esta columna también se crea mediante una `Calculation` y se puede ver en la captura de pantalla siguiente:
 
 ![](../../assets/Order_item_total_value.png)
 

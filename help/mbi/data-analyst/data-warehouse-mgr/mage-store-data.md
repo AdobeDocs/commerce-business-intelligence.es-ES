@@ -2,7 +2,9 @@
 title: Almacenamiento de datos en Adobe Commerce
 description: Descubra cómo se generan los datos, qué hace que se inserte una nueva fila y cómo se registran las acciones en la base de datos de Adobe Commerce.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -61,7 +63,7 @@ Poco después de la adición de los tres nuevos productos, un nuevo cliente, `Sa
 
 Una vez finalizada la creación de la cuenta, `Sammy Customer` está listo para empezar a realizar una compra. En el sitio web, el cliente agrega dos pares del `Throwback Bellbottoms` y uno `V-Neck T-Shirt` al carro de compras. Satisfecho con las selecciones, el cliente pasa a la caja y envía el pedido, creando la siguiente entrada en la [tabla de pedido plano de ventas](../data-warehouse-mgr/sales-flat-order-table.md):
 
-| **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
+| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 

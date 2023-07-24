@@ -2,7 +2,9 @@
 title: ROI de marketing
 description: Aprenda a configurar un tablero que realice un seguimiento del análisis de canal, incluido el retorno de la inversión en conjunto y por campaña.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin,  User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
@@ -41,26 +43,25 @@ Columnas para crear
       * Seleccione una definición: `Joined Column`
       * [!UICONTROL Create Path]:
       * 
-         [!UICONTROL Many]: `sales_flat_order.increment_id`
+        [!UICONTROL Many]: `sales_flat_order.increment_id`
       * 
-
-         [!UICONTROL One]: `ecommerce####.transaction_id`
+        [!UICONTROL One]: `ecommerce####.transaction_id`
 
       * Seleccione una [!UICONTROL table]: `ecommerce####`
       * Seleccione una [!UICONTROL column]: `campaign`
       * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
+
    * **`Order's GA medium`**
       * Seleccione una definición: Columna combinada
       * Seleccione una [!UICONTROL table]: `ecommerce####`
       * Seleccione una [!UICONTROL column]: `medium`
       * [!UICONTROL Path]: sales_plain_order.increment_id = ecommerce#####.transactionId
+
    * **`Order's GA source`**
       * Seleccione una definición: Columna combinada
       * Seleccione una [!UICONTROL table]: `ecommerce####`
       * Seleccione una [!UICONTROL column]: `source`
       * [!UICONTROL Path]: sales_plain_order.increment_id = ecommerce#####.transactionId ^
-
-
 
 * **`customer_entity`** tabla
 * **`Customer's first order GA campaign`**
@@ -141,10 +142,9 @@ Columnas para crear
 * Métrica `A`: Gasto en publicidad
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **Adquisiciones de clientes de publicidad (todo el tiempo)**
    * [!UICONTROL Metric]: `New customers`
@@ -158,10 +158,9 @@ Columnas para crear
 * Métrica `A`: `Ad customer acquisitions`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **ROI del anuncio**
    * [!UICONTROL Metric]: Gasto en publicidad
@@ -173,6 +172,7 @@ Columnas para crear
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Lógica de filtro: ([`A`] O [`B`] O [`C`]) Y [`D`]
+
    * [!UICONTROL Metric]: Ingresos medios a largo plazo
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -180,12 +180,10 @@ Columnas para crear
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Lógica de filtro: ([`A`] O [`B`] O [`C`]) Y [`D`]
+
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
    * 
-
-      [!UICONTROL Format]: `Percentage`
-
-
+     [!UICONTROL Format]: `Percentage`
 
 * Métrica `A`: `Ad Spend (hide)`
 * Métrica `B`: `Ad customer acquisitions (hide)`
@@ -193,23 +191,20 @@ Columnas para crear
 * [!UICONTROL Formula]: `Ads ROI`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **Pedidos por medio de gas**
    * 
-
-      [!UICONTROL Métrica]: `Orders`
+     [!UICONTROL Métrica]: `Orders`
 
 * Métrica `A`: `Orders`
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By Month`
 * [!UICONTROL Group by]: `Order's medium`
 * 
-
-   [!UICONTROL Chart Type]: `Area`
+  [!UICONTROL Chart Type]: `Area`
 
 * **ROI del anuncio por campaña**
    * [!UICONTROL Metric]: `Ad Spend`
@@ -221,6 +216,7 @@ Columnas para crear
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Lógica de filtro: ([`A`] O [`B`] O [`C`]) Y [`D`]
+
    * [!UICONTROL Metric]: Ingresos medios a largo plazo
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -228,6 +224,7 @@ Columnas para crear
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Lógica de filtro: ([`A`] O [`B`] O [`C`]) Y [`D`]
+
    * [!UICONTROL Metric]: Número promedio de pedidos durante toda la vida
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -235,20 +232,18 @@ Columnas para crear
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Lógica de filtro: ([`A`] O [`B`] O [`C`]) Y [`D`]
+
    * [!UICONTROL Formula]: `(A / B)`
    * 
-
-      [!UICONTROL Format]: `Currency`
+     [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `(C - (A / B))`
    * 
-
-      [!UICONTROL Format]: `Currency`
+     [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
    * 
-
-      [!UICONTROL Format]: `Percentage`
+     [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric]: `Ad Clicks`
 
@@ -256,39 +251,33 @@ Columnas para crear
 
    * [!UICONTROL Formula]: `(H / I)`
    * 
-
-      [!UICONTROL Format]: `Percentage`
+     [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Formula]: `(A / H)`
    * 
-
-      [!UICONTROL Format]: `Currency`
-
-
-
+     [!UICONTROL Format]: `Currency`
 
 * Métrica `A`: `Ad Spend` (ocultar)
 * Métrica `B`: `Ad customer acquisitions`
 * Métrica `C`: `Average LTV`
 * Métrica `D`: `Average lifetime # of orders`
 * 
-   [!UICONTROL Fórmula]: `CAC`
+  [!UICONTROL Fórmula]: `CAC`
 * [!UICONTROL Formula]: `Avg return`
 * [!UICONTROL Formula]: `Ads ROI`
 * Métrica `H`: `adClicks`
 * Métrica `I`: `Impressions`
 * 
-   [!UICONTROL Fórmula]: `CTR`
+  [!UICONTROL Fórmula]: `CTR`
 * 
-   [!UICONTROL Fórmula]: `CPC`
+  [!UICONTROL Fórmula]: `CPC`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-   [!UICONTROL Agrupar por]: `campaign` (Utilice la campaña &quot;Primer pedido del cliente&quot; para métricas de tabla de gasto que no sean de publicidad)
+  [!UICONTROL Agrupar por]: `campaign` (Utilice la campaña &quot;Primer pedido del cliente&quot; para métricas de tabla de gasto que no sean de publicidad)
 * 
-
-   [!UICONTROL Chart Type]: `Table`
+  [!UICONTROL Chart Type]: `Table`
 
 Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 

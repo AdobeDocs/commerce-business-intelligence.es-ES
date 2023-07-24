@@ -2,7 +2,9 @@
 title: Tipos de columnas calculadas avanzadas
 description: Aprenda los conceptos básicos de la mayoría de los casos de columnas de uso, pero es posible que desee una columna calculada que sea un poco más compleja de lo que puede crear el Administrador de Datas Warehouse.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 4%

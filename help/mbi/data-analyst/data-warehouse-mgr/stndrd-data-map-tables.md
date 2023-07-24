@@ -2,7 +2,9 @@
 title: Estandarización de datos con tablas de asignación
 description: Aprenda a trabajar con tablas de asignación.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -64,7 +66,7 @@ Para crear el `joined` , vaya a la tabla a la que se reubicará el campo en el A
    * En el `One` lado, seleccione el `mapping` y la `Primary key` columna. En este caso, debe seleccionar la variable `state_input` de la columna `mapping_state` tabla.
    * Este es un vistazo a la apariencia de la ruta:
 
-      ![](../../assets/State_Mapping_Path.png)
+     ![](../../assets/State_Mapping_Path.png)
 
 1. Cuando termine, haga clic en **[!UICONTROL Save]** para crear la ruta.
 1. Es posible que la ruta no se rellene inmediatamente después de guardar. Si esto sucede, haga clic en el `Path` y seleccione la ruta que ha creado.

@@ -2,7 +2,9 @@
 title: Administrador de Datas Warehouse
 description: Obtenga información sobre cómo administrar la configuración de sincronización de columnas y tablas, explorar en profundidad el esquema de una tabla y crear columnas calculadas para utilizarlas en los informes.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: c4094e780f83255846520d18f4d0806b1dd9a9ef
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%

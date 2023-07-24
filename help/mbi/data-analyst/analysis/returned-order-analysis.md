@@ -2,7 +2,9 @@
 title: Análisis de Pedidos Devueltos
 description: Aprenda a configurar un tablero que proporcione un análisis detallado de las devoluciones de su tienda.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -60,10 +62,9 @@ Columnas para crear
 * Seleccione una definición: `Joined Column`
 * [!UICONTROL Create Path]:
 * 
-   [!UICONTROL Many]: `enterprise_rma.order_id`
+  [!UICONTROL Many]: `enterprise_rma.order_id`
 * 
-
-   [!UICONTROL One]: `sales_flat_order.entity_id`
+  [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * Seleccione una [!UICONTROL table]: `sales_flat_order`
 * Seleccione una [!UICONTROL column]: `created_at`
@@ -82,10 +83,9 @@ Columnas para crear
 * Seleccione una definición: `Joined Column`
 * [!UICONTROL Create Path]:
    * 
-      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
+     [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
    * 
-
-      [!UICONTROL One]: `enterprise_rma.entity_id`
+     [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * Seleccione una [!UICONTROL table]: `enterprise_rma`
 * Seleccione una [!UICONTROL column]: `date_requested`
@@ -158,15 +158,14 @@ Columnas para crear
 * Fórmula: Probabilidad de orden de repetición
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * 
-   [!UICONTROL Tipo de gráfico]: `Bar`
+  [!UICONTROL Tipo de gráfico]: `Bar`
 
 * **Tiempo promedio para el retorno (todo el tiempo)**
 * Métrica `A`: `Avg time between order and return`
@@ -174,10 +173,9 @@ Columnas para crear
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Number`
+  [!UICONTROL Tipo de gráfico]: `Number`
 
 * **Porcentaje de pedidos con una devolución**
 * Métrica `A`: `Number of orders`
@@ -191,12 +189,11 @@ Columnas para crear
 * Fórmula: % de pedidos con devolución
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
 * **Ingresos devueltos por mes**
@@ -206,8 +203,7 @@ Columnas para crear
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Line`
+  [!UICONTROL Tipo de gráfico]: `Line`
 
 * **Clientes que han realizado una devolución y no han vuelto a comprar**
 * Métrica `A`: `Number of orders with returns`
@@ -218,12 +214,11 @@ Columnas para crear
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-   [!UICONTROL Agrupar por]: `Customer_email`
+  [!UICONTROL Agrupar por]: `Customer_email`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Table`
+  [!UICONTROL Tipo de gráfico]: `Table`
 
 * **Tasa de devolución por artículo**
 * Métrica `A`: `Returned items` (Ocultar)
@@ -236,15 +231,14 @@ Columnas para crear
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
 * 
-   [!UICONTROL Tipo de gráfico]: `Table`
+  [!UICONTROL Tipo de gráfico]: `Table`
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar al panel de muestra anterior.
 

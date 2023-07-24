@@ -2,7 +2,9 @@
 title: Eliminar o reactivar un usuario de Adobe Commerce Intelligence
 description: Obtenga información sobre cómo eliminar un [!DNL Commerce Intelligence] usuario.
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -25,4 +27,4 @@ Si solo necesita que los tableros de ese usuario se inserten en una cuenta de us
 
 1. Utilice la dirección de correo electrónico del usuario eliminado para crear una nueva [!DNL Commerce Intelligence] usuario.
 1. [Notificar al soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) después de crear el usuario. La compatibilidad transfiere los paneles a su cuenta de.
-1. Una vez que la Asistencia técnica de Adobe le haya notificado la transferencia, podrá volver a eliminar el usuario.
+1. Una vez que la Asistencia técnica de Adobe le haya notificado la transferencia, podrá volver a borrar el usuario.

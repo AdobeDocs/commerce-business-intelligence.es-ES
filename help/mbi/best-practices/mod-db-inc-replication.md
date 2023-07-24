@@ -2,7 +2,9 @@
 title: Modificación de la Base de Datos para Apoyar la Replicación Incremental
 description: Aprenda a modificar la base de datos para que admita la replicación incremental.
 exl-id: c9a38892-6096-4eb5-8a53-35b8b7b083dc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Integration, Data Import/Export, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%

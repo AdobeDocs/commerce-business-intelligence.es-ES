@@ -2,7 +2,9 @@
 title: Previsión
 description: Previsión
 exl-id: 61e0516a-941c-4e32-b051-6ff664962198
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%
@@ -13,6 +15,6 @@ ht-degree: 0%
 
 Poder pronosticar el valor de vida útil de los clientes a medida que realizan más pedidos es uno de los aspectos más importantes de cualquier negocio de cualquier tamaño.
 
-En esta sección, aprenderá sobre el valor de duración de sus clientes actuales y calculará cómo aumenta el valor de duración con más pedidos.
+En esta sección, obtendrá información sobre el valor de duración de sus clientes actuales y calculará cómo aumenta el valor de duración con más pedidos.
 
 Consulte también: [Análisis del valor de duración esperado (LTV) (básico)](../../data-analyst/analysis/ess-expected-ltv.md)

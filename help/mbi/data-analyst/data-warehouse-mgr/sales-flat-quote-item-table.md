@@ -2,7 +2,9 @@
 title: tabla quote_item
 description: Aprenda a trabajar con la tabla quote_item.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -51,8 +53,8 @@ El `quote_item` tabla (`sales_flat_quote_item` en M1) contiene registros de tod
 
 | **Nombre de métrica** | **Descripción** | **Construcción** |
 |---|---|---|
-| `Number of abandoned cart items` | Cantidad total de artículos agregados a carros de compras que cumplen las condiciones específicas de &quot;abandono&quot; | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>Filtros:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, donde &quot;x&quot; corresponde al tiempo transcurrido (en segundos) desde la creación del carro de compras más allá del cual un carro de compras se considera abandonado |
-| `Abandoned cart item value` | Suma de los ingresos totales asociados con los carros de compras que cumplen las condiciones específicas de &quot;abandono&quot; | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>Filtros:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, donde &quot;x&quot; corresponde al tiempo transcurrido (en segundos) desde la creación del carro de compras más allá del cual un carro de compras se considera abandonado |
+| `Number of abandoned cart items` | Cantidad total de artículos agregados a carros de compras que cumplen las condiciones específicas de &quot;abandono&quot; | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>Filtros:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, donde &quot;x&quot; corresponde al tiempo transcurrido (en segundos) desde la creación del carro de compras más allá del cual un carro de compras se considera abandonado |
+| `Abandoned cart item value` | Suma de los ingresos totales asociados con los carros de compras que cumplen las condiciones específicas de &quot;abandono&quot; | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>Filtros:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, donde &quot;x&quot; corresponde al tiempo transcurrido (en segundos) desde la creación del carro de compras más allá del cual un carro de compras se considera abandonado |
 
 {style="table-layout:auto"}
 

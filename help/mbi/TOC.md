@@ -2,7 +2,9 @@
 title: Inteligencia comercial
 description: Aprenda a utilizar [!DNL Commerce Intelligence] funciones disponibles para Adobe Commerce.
 breadcrumb-title: Guía del usuario de Commerce Intelligence
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: Business Performance
+source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%

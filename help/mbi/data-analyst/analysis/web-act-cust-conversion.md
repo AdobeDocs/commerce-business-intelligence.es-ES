@@ -2,7 +2,9 @@
 title: Análisis de la actividad del sitio web y las tasas de conversión de clientes
 description: Aprenda a configurar un tablero que haga un seguimiento de la actividad del sitio web, incluidas las vistas de página, las sesiones y los usuarios, y de la tasa de conversión de clientes a lo largo del tiempo.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 0%

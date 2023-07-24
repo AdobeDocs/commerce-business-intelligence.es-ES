@@ -2,7 +2,9 @@
 title: tabla enterprise_rma
 description: Obtenga información sobre cómo analizar información sobre una solicitud de retorno específica.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -44,10 +46,10 @@ Cada fila de la `enterprise_rma` tabla (a menudo denominada `magento_rma` en Ado
 
 | **Nombre de métrica** | **Descripción** | **Construcción** |
 |---|---|---|
-| `Number of returns` | El número de devoluciones solicitadas. | `Operation` columna: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Columna: `date requested` |
-| `Total returned amount` | El importe monetario total devuelto. | `Operation `Columna: `Return's total value`<br>`Operation`: Sum<br>`Timestamp` Columna: fecha solicitada |
-| `Average returned amount` | El importe monetario promedio devuelto. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Columna: `date requested` |
-| `Average time to return` | El tiempo promedio desde el pedido hasta la devolución. | `Operation` Columna: Segundos entre la fecha de creación del pedido y la fecha de devolución solicitada<br>`Operation`: `Average`<br>`Timestamp` Columna: `date requested` |
+| `Number of returns` | El número de devoluciones solicitadas. | `Operation` columna: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Columna: `date requested` |
+| `Total returned amount` | El importe monetario total devuelto. | `Operation `Columna: `Return's total value`<br>`Operation`: Sum<br>`Timestamp` Columna: fecha solicitada |
+| `Average returned amount` | El importe monetario promedio devuelto. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Columna: `date requested` |
+| `Average time to return` | El tiempo promedio desde el pedido hasta la devolución. | `Operation` Columna: Segundos entre la fecha de creación del pedido y la fecha de devolución solicitada<br>`Operation`: `Average`<br>`Timestamp` Columna: `date requested` |
 
 {style="table-layout:auto"}
 

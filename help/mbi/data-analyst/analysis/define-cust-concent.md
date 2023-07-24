@@ -2,7 +2,9 @@
 title: Definir la concentración de clientes
 description: Aprenda a configurar un tablero que le ayude a medir cómo se distribuyen los ingresos totales entre la base de clientes.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
@@ -99,17 +101,16 @@ Columnas para crear
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
 * 
-   [!UICONTROL Agrupar por]: `Independent`
+  [!UICONTROL Agrupar por]: `Independent`
 * Métrica `A`: `Total customer lifetime revenue by percentile`
 * Métrica `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * Mostrar arriba/abajo: `100% of Customer's revenue percentile Name`
 * 
-
-   [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]: `Line`
 
 * **Concentración del 10 % superior**
 * [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
@@ -117,13 +118,12 @@ Columnas para crear
 * Métrica `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * Ocultar gráfico
 * 
-   [!UICONTROL Agrupar por]: `Email`
+  [!UICONTROL Agrupar por]: `Email`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 * **Concentración inferior del 50% con una sola compra**
 
@@ -134,13 +134,12 @@ Columnas para crear
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * Ocultar gráfico
 * 
-   [!UICONTROL Agrupar por]: `Email`
+  [!UICONTROL Agrupar por]: `Email`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 * **Concentración inferior del 10%**
 * [!UICONTROL Filter]: `Customer's revenue percentile > 90`
@@ -148,13 +147,12 @@ Columnas para crear
 * Métrica `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * Ocultar gráfico
 * 
-   [!UICONTROL Agrupar por]: `Email`
+  [!UICONTROL Agrupar por]: `Email`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar al panel de muestra anterior.
 

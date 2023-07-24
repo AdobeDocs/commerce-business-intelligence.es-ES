@@ -2,7 +2,9 @@
 title: Rendimiento de cupones
 description: Obtenga información sobre cómo analizar el rendimiento de los cupones.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1167'
 ht-degree: 0%
@@ -34,19 +36,19 @@ Columnas que se van a crear independientemente de la directiva de pedidos de inv
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
-   * 
-      [!UICONTROL Tipo de datos]: `String`
-   * [!UICONTROL Calculation]: caso en el que `A` es nulo entonces `No coupon` else `Coupon` fin
 
+   * 
+     [!UICONTROL Tipo de datos]: `String`
+   * [!UICONTROL Calculation]: caso en el que `A` es nulo entonces `No coupon` else `Coupon` fin
 
 * **\[INPUT\] customer\_id - coupon code**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `customer\_id`
       * `B`: `coupon\_code`
+
    * [!UICONTROL Datatype] Cadena
    * [!UICONTROL Calculation]: `concat(A,' - ',B)`
-
 
 * **Número de pedidos con este cupón**
    * [!UICONTROL Column type]: `Same Table => EVENT\_NUMBER`
@@ -64,6 +66,7 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
    * [!UICONTROL Filters]:
       * `A`: `Orders we count`
       * `B`: `Customer's order number = 1`
+
    * **Cupón del primer pedido del cliente**
       * [!UICONTROL Column type]: `Many to One => MAX`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
@@ -71,42 +74,41 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
       * [!UICONTROL Filter]:
          * `A`: `Orders we count`
          * `B`: `Customer's order number = 1`
+
    * **Número de cupones utilizados de por vida del cliente**
       * [!UICONTROL Column type]: `Many to One => COUNT`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
       * [!UICONTROL Filter]:
          * `A`: `Orders we count`
          * `B`: `Order has coupon applied? (Coupon/No coupon) = Coupon`
+
    * **Cliente de adquisición de cupón o cliente de adquisición no de cupón**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
+
       * 
-         [!UICONTROL Tipo de datos]: `String`
+        [!UICONTROL Tipo de datos]: `String`
       * [!UICONTROL Calculation]: **Caso en el que A=&#39;Coupon&#39; then &#39;Coupon acquisition customer&#39; else &#39;Non-coupon acquisition customer&#39; end**
+
    * **Porcentaje de pedidos del cliente con cupón**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
+
       * 
-         [!UICONTROL Tipo de datos]: `Decimal`
+        [!UICONTROL Tipo de datos]: `Decimal`
       * [!UICONTROL Calculation]: **Caso en el que A es nulo, B es nulo o B=0 y luego nulo fin A/B**
+
    * **Uso de cupones del cliente**
       * [!UICONTROL Column type]: `Same Table => Calculation`
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
+
       * 
-         [!UICONTROL Tipo de datos]: `String`
+        [!UICONTROL Tipo de datos]: `String`
       * [!UICONTROL Calculation]: **Caso en el que A es nulo entonces nulo cuando A=0 entonces &quot;Cupón nunca utilizado&quot; cuando A&lt;0,5 entonces &quot;Precio mayormente completo&quot; cuando A=0,5 entonces &quot;50/50&quot; cuando A=1 entonces &quot;Solo cupones&quot; cuando A>0,5 entonces &quot;Cupón mayoritario&quot; de lo contrario &quot;Indefinido&quot; termina**
-
-
-
-
-
-
-
-
 
 * `sales\_flat\_order` tabla
    * **¿El primer pedido del cliente incluye un cupón? (Cupón/Sin cupón)**
@@ -114,11 +116,11 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
       * Seleccione una [!UICONTROL column]: `Customer's first order included a coupon? (Coupon/No coupon)`
 ^
+
    * **Cupón del primer pedido del cliente**
       * [!UICONTROL Column type]: `One to Many => JOINED\_COLUMN`
       * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
       * Seleccione una [!UICONTROL column]: `Customer's first order coupon?`
-
 
 Columnas adicionales para crear si NO se admiten pedidos de invitado:
 
@@ -131,29 +133,29 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-   * 
-      [!UICONTROL Tipo de datos]: `String`
-   * [!UICONTROL Calculation]: **Caso en el que A=&#39;Coupon&#39; then &#39;Coupon acquisition customer&#39; else &#39;Non-coupon acquisition customer&#39; end**
 
+   * 
+     [!UICONTROL Tipo de datos]: `String`
+   * [!UICONTROL Calculation]: **Caso en el que A=&#39;Coupon&#39; then &#39;Coupon acquisition customer&#39; else &#39;Non-coupon acquisition customer&#39; end**
 
 * **Porcentaje de pedidos del cliente con cupón**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
-   * 
-      [!UICONTROL Tipo de datos]: `Decimal`
-   * [!UICONTROL Calculation]: **Caso en el que A es nulo, B es nulo o B=0 y luego nulo fin A/B**
 
+   * 
+     [!UICONTROL Tipo de datos]: `Decimal`
+   * [!UICONTROL Calculation]: **Caso en el que A es nulo, B es nulo o B=0 y luego nulo fin A/B**
 
 * **Uso de cupones del cliente**
    * [!UICONTROL Column type]: `Same Table => Calculation`
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
-   * 
-      [!UICONTROL Tipo de datos]: `String`
-   * [!UICONTROL Calculation]: **Caso en el que A es nulo entonces nulo cuando A=0 entonces &quot;Cupón nunca utilizado&quot; cuando A&lt;0,5 entonces &quot;Precio mayormente completo&quot; cuando A=0,5 entonces &quot;50/50&quot; cuando A=1 entonces &quot;Solo cupones&quot; cuando A>0,5 entonces &quot;Cupón mayoritario&quot; de lo contrario &quot;Indefinido&quot; termina**
 
+   * 
+     [!UICONTROL Tipo de datos]: `String`
+   * [!UICONTROL Calculation]: **Caso en el que A es nulo entonces nulo cuando A=0 entonces &quot;Cupón nunca utilizado&quot; cuando A&lt;0,5 entonces &quot;Precio mayormente completo&quot; cuando A=0,5 entonces &quot;50/50&quot; cuando A=1 entonces &quot;Solo cupones&quot; cuando A>0,5 entonces &quot;Cupón mayoritario&quot; de lo contrario &quot;Indefinido&quot; termina**
 
 ## Métricas
 
@@ -189,11 +191,10 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * Métrica `A`: `Coupon acquisitions`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Group by]: `Coupon acquisitions customer` o `Non coupon acquisition customer`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Pie`
+  [!UICONTROL Tipo de gráfico]: `Pie`
 
 * **Número de clientes con y sin cupones adquiridos**
    * [!UICONTROL Metric]: `New customers`
@@ -212,10 +213,9 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * Métrica `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Scalar`
+  [!UICONTROL Tipo de gráfico]: `Scalar`
 
 * **Ingresos promedio por vida útil: Acumulación no de cupones (90+ días de edad)**
    * [!UICONTROL Metric]: Ingresos medios a largo plazo
@@ -225,10 +225,9 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * Métrica `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Scalar`
+  [!UICONTROL Tipo de gráfico]: `Scalar`
 
 * **Ingresos promedio por vida útil por cupón de primer pedido**
    * [!UICONTROL Metric]: `Average lifetime revenue`
@@ -236,11 +235,10 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * Métrica `A`: `Average lifetime revenue`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Group by]: `Customer's first order's coupon`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Column`
+  [!UICONTROL Tipo de gráfico]: `Column`
 
 >[!NOTE]
 >
@@ -250,23 +248,23 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * El primer pedido del cliente incluía un cupón (Cupón/Sin cupón) = Cupón
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * El primer pedido del cliente incluía un cupón (Cupón/Sin cupón) = Cupón
       * ¿Es el último pedido del cliente? = No
    * 
-      [!UICONTROL Fórmula]: `B/A`
+     [!UICONTROL Fórmula]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
    * Seleccionar un número estadísticamente significativo de `Customer's by lifetime orders` gráfico. Cuando se mira el gráfico, una buena regla es buscar números de pedidos con 30 o más clientes en el bloque. Según el conjunto de datos, puede ser un número elevado, por lo que puede añadir del 1 al 10.
-
 
 * Métrica `A`: `Number of orders`
 * Métrica `B`: `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
 
@@ -274,24 +272,24 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * El primer pedido del cliente incluía un cupón (Cupón/Sin cupón) = Sin cupón
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * El primer pedido del cliente incluía un cupón (Cupón/Sin cupón) = Sin cupón
       * ¿Es el último pedido del cliente? = No
+
    * 
-      [!UICONTROL Fórmula]: `B/A`
+     [!UICONTROL Fórmula]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
    * Seleccionar un número estadísticamente significativo de `Customer's by lifetime orders` o 1-5.
-
-
 
 * Métrica `A`: `Number of orders`
 * Métrica `B`: `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
 
@@ -299,21 +297,21 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
       * Adquisición de cupón cliente o adquisición no de cupón cliente = Adquisición de cupón
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Número de pedido del cliente > 1
       * ¿El primer pedido del cliente incluía un cupón? (Cupón/Sin cupón) = Cupón
+
    * [!UICONTROL Metric]:`Number of orders`
    * [!UICONTROL Filter]:
       * Número de pedido del cliente > 1
       * ¿El primer pedido del cliente incluía un cupón? (Cupón/Sin cupón) = Cupón
       * ¿Se ha aplicado el cupón del pedido? (Cupón/Sin cupón) = Cupón
+
    * 
-      [!UICONTROL Fórmula]: `C/B`
+     [!UICONTROL Fórmula]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
-
-
-
 
 * Métrica `A`: `Coupon-acquired customers`
 * Métrica `B`: `Number of repeat orders`
@@ -321,30 +319,29 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Table` (puede transponer esta tabla para una mejor visualización)
+  [!UICONTROL Tipo de gráfico]: `Table` (puede transponer esta tabla para una mejor visualización)
 
 * **Tasa de uso de cupones de clientes no adquiridos con cupones (pedidos repetidos)**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
       * Adquisición de cupón cliente o cliente de adquisición no de cupón = Adquisición no de cupón
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Número de pedido del cliente > 1
       * ¿El primer pedido del cliente incluía un cupón? (Cupón/Sin cupón) = Sin cupón
+
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Número de pedido del cliente > 1
       * ¿El primer pedido del cliente incluía un cupón? (Cupón/Sin cupón) = Sin cupón
       * ¿Se ha aplicado el cupón del pedido? (Cupón/Sin cupón) = Cupón
+
    * 
-      [!UICONTROL Fórmula]: `C/B`
+     [!UICONTROL Fórmula]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
-
-
-
 
 * Métrica `A`: `Non-coupon-acquired customers`
 * Métrica `B`: `Number of repeat orders`
@@ -352,37 +349,35 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Table` (puede transponer esta tabla para una mejor visualización)
+  [!UICONTROL Tipo de gráfico]: `Table` (puede transponer esta tabla para una mejor visualización)
 
 * **Detalles de uso del cupón (pedidos por primera vez)**
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Número de pedido del cliente = 1
       * Número de pedidos con este cupón > 10
+
    * 
-      [!UICONTROL Métrica]: `Revenue`
+     [!UICONTROL Métrica]: `Revenue`
    * [!UICONTROL Filter]:
       * Número de pedido del cliente = 1
       * Número de pedidos con este cupón > 10
+
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Filter]:
       * Número de pedido del cliente = 1
       * Número de pedidos con este cupón > 10
+
    * [!UICONTROL Formula]: `B-C` (si C es negativo); B+C (si C es positivo)
    * 
-
-      [!UICONTROL Formato]: `Currency`
+     [!UICONTROL Formato]: `Currency`
 
    * [!UICONTROL Metric]: `Average order value`
    * [!UICONTROL Filter]:
       * Número de pedido del cliente = 1
       * Número de pedidos con este cupón > 10
-
-
-
 
 * Métrica `A`: `First time orders (FTO)`
 * Métrica `B`: `Revenue from FTO`
@@ -391,11 +386,10 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * Métrica `E`: `Average order value for FTO`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Group by]: `coupon code`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Table`
+  [!UICONTROL Tipo de gráfico]: `Table`
 >[!NOTE]
 >
 >La cantidad de 10 para &quot;Número de pedidos con este cupón&quot; es arbitraria. No dude en utilizar la cantidad más adecuada para este filtro.
@@ -406,24 +400,22 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * Métrica `A`: `Number or orders with coupon`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Scalar`
+  [!UICONTROL Tipo de gráfico]: `Scalar`
 
 * **Ingresos netos de pedidos con cupones (todo el tiempo)**
    * 
-      [!UICONTROL Métrica]: `Revenue`
+     [!UICONTROL Métrica]: `Revenue`
    * [!UICONTROL Filter]:
       * ¿Se ha aplicado el cupón del pedido? (Cupón/Sin cupón) = Cupón
 
 * Métrica `A`: `Net revenue from orders with coupons`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Scalar`
+  [!UICONTROL Tipo de gráfico]: `Scalar`
 
 * **Descuentos de cupones (todo el tiempo)**
    * [!UICONTROL Metric]: `Number of coupons used`
@@ -431,10 +423,9 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * Métrica `A`: `Coupon discount amount`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Scalar`
+  [!UICONTROL Tipo de gráfico]: `Scalar`
 
 * **Número de pedidos con y sin cupones**
    * [!UICONTROL Metric]: `Number of orders`
@@ -442,7 +433,7 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * Métrica `A`: `Number of orders`
 * [!UICONTROL Time period]: `Last 24 months`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Group by]: `Order has coupon applied? (Coupon/No coupon)`
 * [!UICONTROL Chart type]: `Stacked column`
 
@@ -454,49 +445,45 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * Métrica `A`: `New customers`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Group by]: `Customer's coupon usage`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Pie`
+  [!UICONTROL Tipo de gráfico]: `Pie`
 
 * **Detalles de uso del cupón**
    * [!UICONTROL Metric]: `Number of orders with coupon`
    * [!UICONTROL Filter]:
       * Número de pedidos con este cupón > 10
+
    * 
-      [!UICONTROL Métrica]: `Revenue`
+     [!UICONTROL Métrica]: `Revenue`
    * [!UICONTROL Filter]:
       * Número de pedidos con este cupón > 10
+
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Filter]:
       * Número de pedidos con este cupón > 10
+
    * [!UICONTROL Formula]: `B-C` (if `C` es negativo); `B+C` (if `C` es positivo)
    * 
-
-      [!UICONTROL Formato]: `Currency`
+     [!UICONTROL Formato]: `Currency`
 
    * [!UICONTROL Formula]: `C/(B-C)` (if `C` es negativo); `C/(B+C)` (if `C` es positivo)
    * 
-
-      [!UICONTROL Formato]: `Percentage`
+     [!UICONTROL Formato]: `Percentage`
 
    * [!UICONTROL Metric]: `Average order value`
    * [!UICONTROL Filter]:
       * Número de pedidos con este cupón > 10
-   * 
-      [!UICONTROL Fórmula]: `C/A`
-   * 
 
-      [!UICONTROL Formato]: `Currency`
+   * 
+     [!UICONTROL Fórmula]: `C/A`
+   * 
+     [!UICONTROL Formato]: `Currency`
 
    * [!UICONTROL Metric]: `Distinct buyers`
    * [!UICONTROL Filter]:
       * Número de pedidos con este cupón > 10
-
-
-
-
 
 * Métrica `A`: `Number of orders`
 * Métrica `B`: `Net revenue from orders`
@@ -508,10 +495,10 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * Métrica `H`: `Distinct buyers`
 * [!UICONTROL Time period]: `All time`
 * 
-   [!INTERVALO UICONTROL]: `None`
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Group by]: `coupon code`
 * 
-   [!UICONTROL Tipo de gráfico]: `Table`
+  [!UICONTROL Tipo de gráfico]: `Table`
 
 >[!NOTE]
 >

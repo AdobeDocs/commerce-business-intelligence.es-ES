@@ -2,7 +2,9 @@
 title: Análisis de actualización, frecuencia y monetario (RFM)
 description: Aprenda a configurar un tablero que le permita segmentar a sus clientes por su actualización, frecuencia y clasificaciones monetarias.
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -41,19 +43,17 @@ Columnas para crear
 * [!UICONTROL Filter]: `Orders we count`
 
 * 
-
-       Segundos desde la última fecha de pedido del cliente
-   * [!UICONTROL Column type]: - &quot;Misma tabla > Edad
+      Segundos desde la última fecha de pedido del cliente
+  * [!UICONTROL Column type]: - &quot;Misma tabla > Edad
 * Seleccionado [!UICONTROL column]: `Customer's last order date`
 
 * (entrada) Referencia de recuento
 * [!UICONTROL Column type]: `Same table > Calculation`
 * 
-   [!UICONTROL Entradas]: `entity_id`
+  [!UICONTROL Entradas]: `entity_id`
 * [!UICONTROL Calculation]: `**case when A is null then null else 1 end**`
 * 
-
-   [!UICONTROL Tipo de datos]: `Integer`
+  [!UICONTROL Tipo de datos]: `Integer`
 
 * **Referencia de recuento** (este es el archivo que subió con el número &quot;1&quot;)
 * Número de clientes
@@ -77,16 +77,14 @@ Columnas para crear
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
 * 
-
-   [!UICONTROL Tipo de datos]: `Integer`
+  [!UICONTROL Tipo de datos]: `Integer`
 
 * Puntuación monetaria del cliente (en percentiles)
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
 * 
-
-   [!UICONTROL Tipo de datos]: `Integer`
+  [!UICONTROL Tipo de datos]: `Integer`
 
 * (entrada) Clasificación por número de pedidos de duración del cliente
 * [!UICONTROL Column type]: `Same table > Event Number`
@@ -95,7 +93,7 @@ Columnas para crear
 
 * Clasificación por número de pedidos de duración del cliente
 * 
-   [!UICONTROL Tipo de columna]: – "Misma tabla > Cálculo"
+  [!UICONTROL Tipo de columna]: – "Misma tabla > Cálculo"
 * [!UICONTROL Inputs]: - **(entrada) Clasificación por número de pedidos de duración del cliente**, **Número de clientes**
 * [!UICONTROL Calculation]: - **Caso en el que A es nulo y, a continuación, fin nulo (B-(A-1))**
 * [!UICONTROL Datatype]: - Entero
@@ -105,8 +103,7 @@ Columnas para crear
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
 * 
-
-   [!UICONTROL Tipo de datos]: `Integer`
+  [!UICONTROL Tipo de datos]: `Integer`
 
 * Clasificación por segundos desde la última fecha de pedido del cliente
 * [!UICONTROL Column type]: `Same table > Event Number`
@@ -118,16 +115,14 @@ Columnas para crear
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
 * 
-
-   [!UICONTROL Tipo de datos]: `Integer`
+  [!UICONTROL Tipo de datos]: `Integer`
 
 * Puntuación de actualización del cliente (en percentiles)
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
 * 
-
-   [!UICONTROL Tipo de datos]: String
+  [!UICONTROL Tipo de datos]: String
 
 * **Referencia de recuento** tabla
 * [!UICONTROL Number of customers]: `(RFM > 0)`
@@ -147,8 +142,7 @@ Columnas para crear
 * [!UICONTROL Inputs]: – `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
 * 
-
-   [!UICONTROL Tipo de datos]: `Integer`
+  [!UICONTROL Tipo de datos]: `Integer`
 
 * Clasificación por puntuación RFM general del cliente (entrada)
 * [!UICONTROL Column type]: `Same table > Event Number`
@@ -161,16 +155,14 @@ Columnas para crear
 * [!UICONTROL Inputs]: `(input) Ranking by customer's overall RFM score`, `Number of customers (RFM > 0)`
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
 * 
-
-   [!UICONTROL Tipo de datos]: `Integer`
+  [!UICONTROL Tipo de datos]: `Integer`
 
 * Grupo RFM del cliente
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
 * 
-
-   [!UICONTROL Tipo de datos]: `Integer`
+  [!UICONTROL Tipo de datos]: `Integer`
 
 >[!NOTE]
 >
@@ -193,14 +185,13 @@ No hay métricas nuevas.
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * Ocultar gráfico
 * [!UICONTROL Group by]: `Customer's RFM group`
 * 
-   [!UICONTROL Agrupar por]: `Email`
+  [!UICONTROL Agrupar por]: `Email`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 * **Clientes con cinco puntuaciones de actualización**
 * Métrica `A`: `New customers`
@@ -209,16 +200,15 @@ No hay métricas nuevas.
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 * Ocultar gráfico
 * 
-   [!UICONTROL Agrupar por]: `Email`
+  [!UICONTROL Agrupar por]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 * **Clientes con una puntuación de actualización**
 * Métrica `A`: `New customers`
@@ -227,15 +217,14 @@ No hay métricas nuevas.
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 * Ocultar gráfico
 * 
-   [!UICONTROL Agrupar por]: `Email`
+  [!UICONTROL Agrupar por]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
 * 
-
-   [!UICONTROL Chart type]: `Table`
+  [!UICONTROL Chart type]: `Table`
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede parecer el panel de muestra anterior, pero las tres tablas generadas son solo ejemplos de los tipos de segmentación de clientes que puede realizar.

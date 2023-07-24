@@ -2,7 +2,9 @@
 title: Comprender y evaluar las relaciones entre tablas
 description: Aprenda a comprender cuántas ocurrencias posibles de una tabla podrían pertenecer a una entidad en otra.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -120,7 +122,7 @@ Cuando las tablas están vinculadas mediante una `Foreign key` apuntando a un `p
 Si alguna de las siguientes opciones es verdadera, la relación es `many-to-many`:
 
 * `Non-primary key` se utilizan para vincular dos tablas
-   ![](../../assets/many-to-many1.png)
+  ![](../../assets/many-to-many1.png)
 * Parte de un compuesto `primary key` se utiliza para vincular dos tablas
 
 ![](../../assets/many-to-mnay2.png)

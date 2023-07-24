@@ -2,7 +2,9 @@
 title: Administración de usuarios y permisos de Adobe Commerce
 description: Obtenga información sobre cómo administrar los usuarios de Commerce Intelligence.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -23,25 +25,25 @@ Entrada [!DNL Commerce Intelligence]Sin embargo, hay tres niveles de permisos ge
 
 Estos permisos permiten a los usuarios realizar determinadas acciones o acceder a partes específicas de [!DNL Commerce Intelligence]. A continuación se muestra una tabla de lo que puede hacer cada nivel de permiso en [!DNL Commerce Intelligence]:
 
-|  | `Admin` | `Standard` | `Read Only` |
+|   | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
-| **Crear/administrar usuarios** | ✔ |  |  |
-| **Crear resúmenes de correo electrónico** | ✔ | ✔ |  |
-| **Crear/editar/compartir tableros** | ✔ | ✔ |  |
+| **Crear/administrar usuarios** | ✔ |   |   |
+| **Crear resúmenes de correo electrónico** | ✔ | ✔ |   |
+| **Crear/editar/compartir tableros** | ✔ | ✔ |   |
 | **Ver paneles** | ✔ | ✔ | ✔ |
-| **Crear/editar/eliminar informes visuales** | ✔ | ✔* |  |
-| **Crear/editar/eliminar informes SQL** | ✔ |  |  |
-| **Clonar paneles** | ✔ |  |  |
-| **Agregar o administrar integraciones** | ✔ |  |  |
-| **Acceso al Administrador de Datas Warehouse** | ✔ |  |  |
-| **Sincronizar/dessincronizar tablas y columnas** | ✔ |  |  |
-| **Crear/editar métricas** | ✔ |  |  |
-| **Creación/edición de conjuntos de filtros** | ✔ |  |  |
-| **Crear/editar columnas calculadas** | ✔ |  |  |
-| **Creación de una lista de informes dependientes** | ✔ |  |  |
-| **Resumen del sistema de acceso** | ✔ |  |  |
-| **Acceder a configuración de zona horaria** | ✔ |  |  |
-| **Facturación de acceso** | ✔ | ✔** |  |
+| **Crear/editar/eliminar informes visuales** | ✔ | ✔* |   |
+| **Crear/editar/eliminar informes SQL** | ✔ |  |   |
+| **Clonar paneles** | ✔ |   |   |
+| **Agregar o administrar integraciones** | ✔ |   |   |
+| **Acceso al Administrador de Datas Warehouse** | ✔ |   |   |
+| **Sincronizar/dessincronizar tablas y columnas** | ✔ |   |   |
+| **Crear/editar métricas** | ✔ |   |   |
+| **Creación/edición de conjuntos de filtros** | ✔ |   |   |
+| **Crear/editar columnas calculadas** | ✔ |   |   |
+| **Creación de una lista de informes dependientes** | ✔ |   |   |
+| **Resumen del sistema de acceso** | ✔ |   |   |
+| **Acceder a configuración de zona horaria** | ✔ |   |   |
+| **Facturación de acceso** | ✔ | ✔** |   |
 | **Atención al cliente** | ✔ | ✔ | ✔ |
 
 {style="table-layout:auto"}

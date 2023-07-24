@@ -2,7 +2,9 @@
 title: Asignar nombres a informes y elementos en Commerce Intelligence
 description: Conozca las prácticas recomendadas para nombrar informes y elementos en [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +13,7 @@ ht-degree: 0%
 
 # Nombrar informes y elementos
 
-Antes de empezar a generar en[!DNL Adobe Commerce Intelligence]Sin embargo, el Adobe quiere compartir algunos secretos para el éxito. Saber cómo crear métricas, filtros, etc., es importante, pero todo su trabajo puede ser en vano si no encuentra lo que necesita o si hay ambigüedad.
+Antes de empezar a generar en [!DNL Adobe Commerce Intelligence]Sin embargo, el Adobe quiere compartir algunos secretos para el éxito. Saber cómo crear métricas, filtros, etc., es importante, pero todo su trabajo puede ser en vano si no encuentra lo que necesita o si hay ambigüedad.
 
 ## ¿Por qué es importante la nomenclatura? {#why}
 

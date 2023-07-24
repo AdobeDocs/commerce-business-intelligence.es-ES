@@ -2,7 +2,9 @@
 title: Definir cancelación de cliente
 description: Aprenda a configurar un tablero que le ayude a definir la pérdida para sus clientes transaccionales.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -68,29 +70,27 @@ No hay métricas nuevas.
 
 * [!UICONTROL Formula]: Probabilidad de orden repetido inicial
 * 
-   [!UICONTROL Fórmula]: `A/B`
+  [!UICONTROL Fórmula]: `A/B`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart type]: `Scalar`
+  [!UICONTROL Chart type]: `Scalar`
 
 * **Probabilidad de repetición de pedido dada meses desde el pedido**
 * Métrica A: Repetir pedidos por meses desde el pedido anterior (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Métrica B: últimos pedidos por meses desde el pedido (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * Métrica C: Todos los pedidos repetidos (ocultar)
@@ -98,33 +98,29 @@ No hay métricas nuevas.
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 
-
-   [!UICONTROL Agrupar por]: `Independent`
+  [!UICONTROL Agrupar por]: `Independent`
 
 * ID de métrica: últimos pedidos permanentes (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 
-
-   [!UICONTROL Agrupar por]: `Independent`
+  [!UICONTROL Agrupar por]: `Independent`
 
 * [!UICONTROL Formula]: Probabilidad de orden repetido inicial
 * 
-   [!UICONTROL Fórmula]: `(C-A)/(C+D-A-B)`
+  [!UICONTROL Fórmula]: `(C-A)/(C+D-A-B)`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Mostrar top.bottom: Las 24 categorías principales, ordenadas por nombre de categoría
 
 * 
-
-   [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]: `Line`
 
 El informe de probabilidad de pedido repetido inicial representa el total de pedidos repetidos/total de pedidos. Cada pedido es una oportunidad para hacer un pedido repetido; el número de pedidos repetidos es el subconjunto de los que realmente lo hacen.
 

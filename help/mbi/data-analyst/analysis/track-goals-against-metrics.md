@@ -2,7 +2,9 @@
 title: Seguimiento de objetivos con métricas
 description: Aprenda a configurar un tablero que le ayude a realizar un seguimiento de los objetivos de su empresa en relación con los datos reales, incluidos los ingresos, los nuevos usuarios registrados y los pedidos a lo largo del tiempo.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -54,51 +56,46 @@ Es útil tener una combinación de valores estáticos y gráficos visuales al an
 * **Ingresos restantes para alcanzar el objetivo**
 * Métrica `A`: `Revenue`
 * 
-
-   [!UICONTROL Métrica]: `Revenue`
+  [!UICONTROL Métrica]: `Revenue`
 
 * Métrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
 * 
-   [!UICONTROL Fórmula]: `(B-A)`
+  [!UICONTROL Fórmula]: `(B-A)`
 * 
-
-   [!UICONTROL Format]: `Number`
+  [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (el período de tiempo relevante que desee)
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * 
-
-   [!UICONTROL Tipo de gráfico]: `Scalar`
+  [!UICONTROL Tipo de gráfico]: `Scalar`
 
 * **Destinos de ingresos**
 * Métrica `A`: `Revenue`
 * 
-
-   [!UICONTROL Métrica]: `Revenue`
+  [!UICONTROL Métrica]: `Revenue`
 
 * Métrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * Métrica `C`: `Revenue (amount change since previous year)` (ocultar)
 * 
-   [!UICONTROL Métrica]: `Revenue`
+  [!UICONTROL Métrica]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Este mes del año pasado)
 * 
-   [!UICONTROL Fórmula]: `(A-C)`
+  [!UICONTROL Fórmula]: `(A-C)`
 * 
-
-   [!UICONTROL Format]: `Currency`
+  [!UICONTROL Format]: `Currency`
 
 * Desactivar `Multiple Y-Axes`
 * [!UICONTROL Time period]: (independientemente del período de tiempo relevante que desee)*
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
 Una vez completados los informes anteriores para los objetivos de ingresos, puede crear informes idénticos para los objetivos relacionados con pedidos, cuentas registradas o cualquier otro valor que haya incluido en la carga del archivo de objetivos.

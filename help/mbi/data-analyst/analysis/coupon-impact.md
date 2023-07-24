@@ -2,7 +2,9 @@
 title: Análisis del impacto de cupones
 description: Obtenga información sobre cómo analizar el impacto de los cupones en la adquisición y retención de clientes.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 2%
@@ -122,10 +124,10 @@ Ahora, observe un ejemplo que incluye tres cupones diferentes utilizados para el
 * la hora del día/semana/mes/año en que se ofrecieron los cupones.
 * la temporada en la que se ofrecieron los cupones, dependiendo del negocio.
 
-   **Ejemplo:** el cupón de &quot;20% de descuento&quot; se ofreció durante los meses de verano, pero el negocio vende ropa de invierno.
+  **Ejemplo:** el cupón de &quot;20% de descuento&quot; se ofreció durante los meses de verano, pero el negocio vende ropa de invierno.
 * las restricciones sobre los cupones.
 
-   **Ejemplo:** el cupón de &quot;10% de descuento&quot; solo se ofrece a los clientes que compren un abrigo de invierno en el mismo pedido.
+  **Ejemplo:** el cupón de &quot;10% de descuento&quot; solo se ofrece a los clientes que compren un abrigo de invierno en el mismo pedido.
 
 El **ingresos brutos** para el cupón &quot;25% de descuento de 100 dólares o más&quot; es mucho más alto que los ingresos brutos para el cupón &quot;10 dólares de descuento&quot;. Sin embargo, el cupón de &quot;$10 off&quot; tiene un valor mucho mayor **número de pedidos**. Análisis de la **valor de pedido promedio** proporciona una perspectiva de estas diferencias. A pesar de que el cupón de &quot;25% de descuento de 100 dólares o más&quot; tenía menos número de pedidos, el valor de pedido promedio es más del triple que el cupón de &quot;$10 de descuento&quot;. Por lo tanto, se atribuye un mayor ingreso bruto al cupón de &quot;25% de descuento de 100 dólares o más&quot;.
 

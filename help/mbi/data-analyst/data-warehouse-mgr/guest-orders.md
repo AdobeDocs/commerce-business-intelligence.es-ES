@@ -2,7 +2,9 @@
 title: Pedidos de invitado
 description: Obtenga información sobre el impacto que los pedidos de invitados tienen en sus datos y qué opciones tiene para tener en cuenta correctamente los pedidos de invitados en su [!DNL Commerce Intelligence] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -21,13 +23,13 @@ En la base de datos de comercio típica, hay un `orders` tabla que se une a una 
 
 * **Si todos los clientes están registrados** y los pedidos de los invitados no están permitidos, lo que significa que todos los registros de `orders` tiene un valor en la variable `customer\_id` columna. Como resultado, cada pedido se une de nuevo a la `customers` tabla.
 
-   ![](../../assets/guest-orders-4.png)
+  ![](../../assets/guest-orders-4.png)
 
 * **Si se permiten pedidos de invitados**, esto significa que algunos pedidos no tienen un valor en `customer\_id` columna. Solo los clientes registrados reciben un valor para `customer\_id` en la columna `orders` tabla. Los clientes que no están registrados reciben una `NULL` (o en blanco) valor de esta columna. Como resultado, no todos los registros de pedidos tienen registros coincidentes en la `customers` tabla.
 
-   >[!NOTE]
-   >
-   >Para identificar al particular único que realizó el pedido, debe haber otro atributo de usuario único junto a `customer\_id` adjunto a un pedido. Normalmente, se utiliza la dirección de correo electrónico del cliente.
+  >[!NOTE]
+  >
+  >Para identificar al particular único que realizó el pedido, debe haber otro atributo de usuario único junto a `customer\_id` adjunto a un pedido. Normalmente, se utiliza la dirección de correo electrónico del cliente.
 
 ## Cómo contabilizar pedidos de invitado en la configuración de Data Warehouse
 
