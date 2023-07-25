@@ -2,7 +2,9 @@
 title: Filtros
 description: Aprenda a utilizar los filtros.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -37,21 +39,21 @@ Se pueden añadir uno o más filtros para limitar los datos que se utilizan para
 
    * Haga clic en la primera parte del filtro y elija la columna que desea utilizar como asunto de la expresión.
 
-      ![Elegir la primera parte del filtro](../../assets/magento-bi-report-builder-filter-part1.png)
+     ![Elegir la primera parte del filtro](../../assets/magento-bi-report-builder-filter-part1.png)
 
    * Haga clic en la segunda parte del filtro y seleccione el operador.
 
-      ![Selección del operador](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![Selección del operador](../../assets/magento-bi-report-builder-filter-part2.png)
 
    * En la tercera parte del filtro, introduzca el valor necesario para completar la expresión.
 
-      ![Introduzca el valor](../../assets/magento-bi-report-builder-filter-part3.png)
+     ![Introduzca el valor](../../assets/magento-bi-report-builder-filter-part3.png)
 
    * Cuando haya completado el filtro, haga clic en **[!UICONTROL Apply]**.
 
-      Ahora, el informe solo incluye clientes que repiten y el número de registros de clientes recuperados para el informe se ha reducido de 33 000 a 12 600.
+     Ahora, el informe solo incluye clientes que repiten y el número de registros de clientes recuperados para el informe se ha reducido de 33 000 a 12 600.
 
-      ![Informe filtrado](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
+     ![Informe filtrado](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
 1. En la barra lateral, haga clic en la perspectiva ( ![](../../assets/magento-bi-btn-perspective.png)) icono.
 

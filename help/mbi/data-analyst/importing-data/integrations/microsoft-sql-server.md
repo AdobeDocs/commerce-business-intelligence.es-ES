@@ -2,7 +2,9 @@
 title: Conectar Microsoft SQL Server
 description: Obtenga información sobre cómo conectar la base de datos SQL de Microsoft a [!DNL Commerce Intelligence] en un proceso de cuatro pasos.
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%

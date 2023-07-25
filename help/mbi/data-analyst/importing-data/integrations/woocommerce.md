@@ -2,7 +2,9 @@
 title: Conectar WooCommerce
 description: Aprenda a ver el rendimiento de su empresa o a encontrar las fuentes y los canales de adquisición más valiosos.
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%

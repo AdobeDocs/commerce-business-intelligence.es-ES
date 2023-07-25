@@ -2,7 +2,9 @@
 title: Fórmulas
 description: Aprenda a utilizar las fórmulas.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -49,7 +51,7 @@ Una fórmula combina varias métricas y lógica matemática para responder a una
 
    * En el `Enter your Formula` cuadro de entrada, escriba `A/B`.
 
-      Esto divide los ingresos por productos ordenados por el número de clientes nuevos.
+     Esto divide los ingresos por productos ordenados por el número de clientes nuevos.
 
    * Establecer `Select format` hasta `123Number`.
 
@@ -71,11 +73,11 @@ Una fórmula combina varias métricas y lógica matemática para responder a una
 
    * En los calendarios, elija el intervalo de fechas.
 
-      Para este ejemplo, la temporada de vacaciones es de `November 1` mediante `December 31`.
+     Para este ejemplo, la temporada de vacaciones es de `November 1` mediante `December 31`.
 
    * En `Select Time Interval`, elija `Day`.
 
-      ![Intervalo de fecha fijo](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
+     ![Intervalo de fecha fijo](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
    * Cuando termine, haga clic en **[!UICONTROL Apply]**.
 

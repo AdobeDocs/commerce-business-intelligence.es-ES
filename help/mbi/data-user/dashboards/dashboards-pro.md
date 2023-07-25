@@ -2,7 +2,9 @@
 title: Paneles integrados en el producto
 description: Obtenga información acerca de los paneles predeterminados para proporcionar información sobre su empresa.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1932'
 ht-degree: 0%

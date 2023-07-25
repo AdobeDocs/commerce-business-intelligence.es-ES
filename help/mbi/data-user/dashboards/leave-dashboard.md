@@ -2,7 +2,9 @@
 title: Dejar (dejar de compartir) un tablero
 description: Aprenda a dejar de compartirse o dejar de compartirse desde un tablero.
 exl-id: c84e7145-aded-4f66-8e52-a61c7e6ac804
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: Conectar Zendesk
 description: Obtenga información sobre cómo consolidar los informes del servicio de asistencia en [!DNL Commerce Intelligence].
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%

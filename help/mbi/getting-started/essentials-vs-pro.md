@@ -2,7 +2,9 @@
 title: Commerce Intelligence Essentials frente a Pro
 description: Descubra en qué se diferencia Commerce Intelligence Essentials de Commerce Intelligence Pro.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 5%
@@ -13,7 +15,7 @@ ht-degree: 5%
 
 En la tabla siguiente se describen los elementos incluidos con un heredado `Essentials` frente a una cuenta actual de Commerce Intelligence. El Adobe ya no ofrece `Essentials`.
 
-|  | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
+|   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
 | `Pre-Defined Reports` | Hasta 100 | Personalizado |
 | `Pre-Defined Dashboards` | 5-6 | Personalizado |

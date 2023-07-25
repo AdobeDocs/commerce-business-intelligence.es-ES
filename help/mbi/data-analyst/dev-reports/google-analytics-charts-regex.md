@@ -2,7 +2,9 @@
 title: Creación de gráficos de Google Analytics
 description: Aprenda a crear gráficos a partir de los datos de los Google Analytics.
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -29,7 +31,7 @@ Después de haber conectado su [[!DNL Google Analytics] account](../../data-anal
 >
 >Los únicos caracteres especiales a los que se debe aplicar un escape utilizando el carácter \ son los siguientes metacaracteres:
 
-|  |  |  |  |  |
+| | | | | |
 |-----|-----|-----|-----|-----|
 | `^` | `[` | `]` | `$` | `(` |
 | `)` | `.` | `{` | `}` | `*` |

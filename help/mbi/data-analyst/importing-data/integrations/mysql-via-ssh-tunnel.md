@@ -2,7 +2,9 @@
 title: Conectando [!DNL MySQL] a través del túnel SSH
 description: Obtenga información sobre cómo conectarse [!DNL MySQL] a través del túnel SSH.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
@@ -106,7 +108,7 @@ Introduzca la siguiente información en esta página, empezando por `Database Co
 * `Port`: [!DNL MySQL] puerto del servidor (3306 de forma predeterminada)
 * `Host` De forma predeterminada, es localhost. En general, es el valor de dirección de enlace para su [!DNL MySQL] servidor, que de forma predeterminada es `127.0.0.1 (localhost)`, pero también podría ser alguna dirección de red local (por ejemplo, `192.168.0.1`) o la dirección IP pública del servidor.
 
-   El valor se puede encontrar en su `my.cnf` archivo (ubicado en `/etc/my.cnf`) debajo de la línea que dice `\[mysqld\]`. Si la línea de dirección de enlace está comentada en ese archivo, el servidor está protegido frente a intentos de conexión externos.
+  El valor se puede encontrar en su `my.cnf` archivo (ubicado en `/etc/my.cnf`) debajo de la línea que dice `\[mysqld\]`. Si la línea de dirección de enlace está comentada en ese archivo, el servidor está protegido frente a intentos de conexión externos.
 
 En el `SSH Connection` sección:
 

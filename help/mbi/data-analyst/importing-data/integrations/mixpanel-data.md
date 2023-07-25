@@ -2,7 +2,9 @@
 title: Datos del Mixpanel esperados
 description: Explore las tablas de datos principales que se pueden importar desde Mixpanel a su [!DNL Commerce Intelligence] cuenta.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%

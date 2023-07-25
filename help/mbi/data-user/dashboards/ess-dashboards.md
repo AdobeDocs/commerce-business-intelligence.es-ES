@@ -2,7 +2,9 @@
 title: Paneles
 description: Aprenda a crear y trabajar con un tablero.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -41,14 +43,13 @@ El aspecto que tengan los paneles que cree depende totalmente de usted. Puede or
 
    * Para crear un `Group` en el tablero, introduzca el nombre del grupo.
 
-      Por ejemplo, si la instalación de Commerce tiene varias vistas de tienda, puede crear un grupo para cada vista de tienda.
+     Por ejemplo, si la instalación de Commerce tiene varias vistas de tienda, puede crear un grupo para cada vista de tienda.
 
    * Clic **[!UICONTROL Create]**.
 
    ![nombre del tablero](../../assets/magento-bi-dashboard-create-name.png)
 
    * El nombre del nuevo tablero aparecerá en la esquina superior izquierda. Haga clic en la flecha abajo (![](../../assets/magento-bi-btn-down.png)) para mostrar las opciones. Si ha creado un grupo, el nuevo tablero aparece debajo del grupo en la lista.
-
 
 ### Añadir un informe
 
@@ -58,7 +59,7 @@ El aspecto que tengan los paneles que cree depende totalmente de usted. Puede or
 
    * En el encabezado del panel, haga clic en **[!UICONTROL Add Report]**.
 
-      ![Añadir informe](../../assets/magento-bi-dashboard-create-add-report.png)
+     ![Añadir informe](../../assets/magento-bi-dashboard-create-add-report.png)
 
 1. Clic **[!UICONTROL Create Report]** para mostrar el **[!UICONTROL Report Builder Options]**.
 
@@ -107,6 +108,7 @@ Al compartir un tablero, puede asignar permisos en toda la organización O de fo
       * `View`
       * `Edit`
       * `None`
+
    1. Cuando se le pida confirmación, haga clic en **[!UICONTROL OK]** para actualizar el nivel de permisos de cada usuario.
 
    1. Para cambiar el nivel de permisos de un individuo, busque el usuario en la lista y cambie el nivel de permisos. El cambio se guarda automáticamente.
