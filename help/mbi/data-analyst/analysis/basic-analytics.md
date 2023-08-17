@@ -213,10 +213,10 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Ejemplo de informe**: Clientes con cupones y sin cupones por mes
    * **[!UICONTROL Metric A]**: `Non coupon customers`
    * **[!UICONTROL Metric]**: `New Users`
-   * **[!UICONTROL Filters]**: Número de Pedidos Buenos a 0 y Número de Cupones Vencidos del Cliente Igual a 0
+   * **[!UICONTROL Filters]**: Número de pedidos superiores a 0 de por vida del cliente y Número de cupones de por vida del cliente igual a 0
    * **[!UICONTROL Metric B]**: `Coupon customers`
    * **[!UICONTROL Metric]**: `New Users`
-   * **[!UICONTROL Filters]**: Número de Duración de Clientes de Pedidos Buenos a 0 y Número de Duración de Cupones del Cliente Buenos a 0
+   * **[!UICONTROL Filters]**: Número de Duración de Clientes de Pedidos Mayores que 0 y Número de Duración de Cliente de Cupones Mayores que 0
    * **[!UICONTROL Time range]**: `All Time`
    * **[!UICONTROL Time interval]**: `By Month`
 

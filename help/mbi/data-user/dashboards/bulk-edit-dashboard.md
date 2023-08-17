@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Dicho esto, considere esto - *¿Es necesario que estos cambios sean permanentes?
 
 1. En el `Replace With` , escriba las palabras o caracteres que deben reemplazar lo que hay en el campo `Find` field.
 
-1. Clic **[!UICONTROL Update Reports]**.
+1. Haga clic **[!UICONTROL Update Reports]**.
 
 Ejemplo:
 
@@ -51,7 +51,7 @@ Ejemplo:
 
 1. Escriba las palabras o los caracteres que desea anteponer a los gráficos.
 
-1. Clic **[!UICONTROL Update Reports]**.
+1. Haga clic **[!UICONTROL Update Reports]**.
 
 Ejemplo:
 
@@ -65,7 +65,7 @@ Ejemplo:
 
 1. Establecer el nuevo `Start/End Date` y `Time Interval`. También puede dejar estos campos sin cambios.
 
-1. Clic **[!UICONTROL Update Reports]**.
+1. Haga clic **[!UICONTROL Update Reports]**.
 
 Ejemplo:
 

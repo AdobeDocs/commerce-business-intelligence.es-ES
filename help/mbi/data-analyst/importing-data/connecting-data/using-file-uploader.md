@@ -54,7 +54,7 @@ No se aceptan algunos caracteres especiales. Por ejemplo, el símbolo de barra v
 
 ### Números decimales
 
-Los valores de moneda deben tener el tipo de datos `Decimal Number` y estas columnas se redondean automáticamente a dos decimales en la Data Warehouse. Si no desea redondear los números decimales o si tiene un grado de precisión bueno, debe seleccionar la opción `Non-Currency Decimal Number` tipo de datos.
+Los valores de moneda deben tener el tipo de datos `Decimal Number` y estas columnas se redondean automáticamente a dos decimales en la Data Warehouse. Si no desea redondear los números decimales o si tiene un grado de precisión mayor que este, debe seleccionar la opción `Non-Currency Decimal Number` tipo de datos.
 
 ### Porcentajes
 
@@ -99,7 +99,7 @@ Ahora que la hoja de cálculo tiene el formato correcto y [!DNL Commerce Intelli
 
 1. Asigne un nombre a la tabla.
 
-1. Clic **[!UICONTROL Save Table]**.
+1. Haga clic **[!UICONTROL Save Table]**.
 
 A *¡Correcto!* El mensaje aparece en la parte superior de la pantalla después de guardar la tabla.
 

@@ -27,7 +27,7 @@ Este tipo de `cohort` el análisis puede ser útil para varios fines diferentes,
 
 El problema con este enfoque es que a menudo resulta en una inversión insuficiente en crecimiento. Si sus competidores realizan marketing basado en una comprensión más profunda del comportamiento de compra, le superarán. El `lifetime revenue cohort` el análisis le ayuda a comprender las consecuencias de ampliar el gasto en adquisición de clientes y ofrece una forma sencilla de transmitirlo al resto de su equipo. Si los clientes futuros se comportan como los clientes existentes, la adquisición de clientes para una CPA más alta resulta en un periodo de recuperación predecible. Dependiendo de la posición de efectivo de la empresa, puede definir con qué periodo de amortización se siente cómodo, encontrar el lugar relevante en el gráfico y gastar en consecuencia.
 
-Además, puede utilizar este análisis para ver si mejora la incorporación, la participación y la generación de ingresos de los usuarios que adquiere. Por ejemplo, esto `cohort` analysis es una buena manera de ver si una promoción de envío gratuito para nuevos usuarios resultó en compradores repetidos o compradores únicos que nunca regresan.
+Además, puede utilizar este análisis para ver si mejora la incorporación, la participación y la generación de ingresos de los usuarios que adquiere. Por ejemplo, esto `cohort` analysis es una buena manera de ver si una promoción de envío gratis para nuevos usuarios resultó en compradores repetidos o compradores únicos que nunca regresan.
 
 ## ¿Cómo variará esto para los diferentes modelos de negocio?
 
@@ -35,7 +35,7 @@ Para la mayoría de las empresas, la `lifetime revenue cohort` el gráfico de an
 
 A modo de ejemplo, [!DNL Groupon] probablemente tendría un salto inicial mucho menor que [!DNL Amazon], porque muchas de las personas que se inscriben en [!DNL Groupon] no realice una compra de inmediato. A menos que haya un número elevado de reembolsos, este gráfico se inclinará hacia arriba y hacia la derecha después del salto inicial. La tasa de crecimiento tiende a disminuir con el tiempo porque los clientes son más activos cuando se registran por primera vez. Esto hace que la media baje porque el número de personas en la cohorte permanece constante independientemente de cuántas regresen para comprar más. En los negocios de suscripción, la pendiente se deteriorará de manera menos agresiva que en los negocios donde la gente hace compras únicas.
 
-En ocasiones, un negocio de suscripción tendrá en realidad una pendiente que aumenta con el tiempo. Es raro ver esto, pero es una señal buena para el negocio cuando sucede. Esto no significa que no haya ningún cliente que pierda, sino que las actualizaciones para clientes que se quedan más que compensan a los clientes que se van.
+En ocasiones, un negocio de suscripción tendrá en realidad una pendiente que aumenta con el tiempo. Es raro ver esto, pero es una gran señal para el negocio cuando sucede. Esto no significa que no haya ningún cliente que pierda, sino que las actualizaciones para clientes que se quedan más que compensan a los clientes que se van.
 
 ## ¿Cómo se calcula?
 

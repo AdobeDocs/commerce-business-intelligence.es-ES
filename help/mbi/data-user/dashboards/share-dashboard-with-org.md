@@ -21,7 +21,7 @@ Es fácil garantizar que todos los usuarios tengan acceso a los paneles empresar
 
 1. Establecer el nivel de `Permissions` desea que otros usuarios tengan: `View`, `Edit`, o `None`.
 
-1. Clic **[!UICONTROL Save Changes]**.
+1. Haga clic **[!UICONTROL Save Changes]**.
 
    If `Permissions` se han establecido en `View` o `Edit` y los usuarios buscan su tablero, su tablero aparecerá en los resultados de búsqueda.
 

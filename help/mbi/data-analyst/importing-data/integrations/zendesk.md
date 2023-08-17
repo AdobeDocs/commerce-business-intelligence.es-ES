@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -40,16 +40,16 @@ Para completar este proceso, debe abrir dos ventanas o pestañas del explorador,
 1. En la ventana o pestaña donde inició sesión en su [!DNL Zendesk] , haga clic en el icono Configuración (engranaje) en la esquina inferior izquierda de la pantalla.
 1. Si la variable `Settings` del menú, busque la variable `Channels` sección. Clic **[!UICONTROL API]** en esta sección.
 1. En el `Token Access` de esta página, haga clic en la casilla de verificación situada junto a `Enabled`. Se muestra una lista de tokens de API activos.
-1. Clic **[!UICONTROL Add New Token]**.
+1. Haga clic **[!UICONTROL Add New Token]**.
 1. Cuando se le solicite, introduzca una etiqueta para el token. Adobe recomienda utilizar `Commerce Intelligence`, para que sepa de un vistazo qué aplicación utiliza el token.
-1. Clic **[!UICONTROL Create]**.
+1. Haga clic **[!UICONTROL Create]**.
 1. Se crea un token de API. Copie este token, se utilizará en el siguiente paso.
 
 ## Entrar [!DNL Zendesk] información de inicio de sesión y token de API en [!DNL Commerce Intelligence] {#stepthree}
 
 1. Introduzca su [!DNL Zendesk] prefijo de sitio e inicio de sesión en la [!DNL Zendesk] página credenciales en [!DNL Commerce Intelligence].
 1. Introduzca su token de API.
-1. Clic **[!UICONTROL Save & Connect]**. Si la conexión se realiza correctamente, *Conexión correcta.* El mensaje se muestra en la parte superior de la pantalla.
+1. Haga clic **[!UICONTROL Save & Connect]**. Si la conexión se realiza correctamente, *Conexión correcta.* El mensaje se muestra en la parte superior de la pantalla.
 
 ## Relacionado:
 

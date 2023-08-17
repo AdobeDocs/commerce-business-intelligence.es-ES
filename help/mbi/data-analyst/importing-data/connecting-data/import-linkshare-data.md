@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -34,9 +34,9 @@ Para traer su [!DNL Linkshare] datos en [!DNL Adobe Commerce Intelligence], debe
 
    ![import\_linkshare\_data.png](../../../assets/importing_linkshare_data.png)
 
-1. Clic **[!UICONTROL View Report]**.
+1. Haga clic **[!UICONTROL View Report]**.
 
-1. Clic **[!UICONTROL Download]**.
+1. Haga clic **[!UICONTROL Download]**.
 
    En este punto, una `.csv` y descargado.
 

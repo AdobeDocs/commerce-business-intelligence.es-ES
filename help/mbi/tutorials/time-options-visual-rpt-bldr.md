@@ -52,11 +52,11 @@ Este tipo de informe puede resultar útil si desea comparar los ingresos generad
 
    * Clic **[!UICONTROL Apply]** para guardar la configuración de intervalo y rango. Esto crea una métrica que calcula los ingresos totales del año anterior. A continuación, utilice esta métrica como denominador en una fórmula.
 
-   * Para ver el porcentaje de ingresos de cada mes, debe agregar una fórmula al informe. Clic **[!UICONTROL Add Formula]**.
+   * Para ver el porcentaje de ingresos de cada mes, debe agregar una fórmula al informe. Haga clic **[!UICONTROL Add Formula]**.
 
    * Entrar `B/A` en el campo formula y seleccione `% Percent` en el menú desplegable situado junto al campo de texto. Esta fórmula divide la cantidad de ingresos de un mes específico del año pasado por la cantidad total de ingresos del año pasado.
 
-   * Clic **[!UICONTROL Apply Changes]**.
+   * Haga clic **[!UICONTROL Apply Changes]**.
 
    * Oculte ambas métricas de entrada y cambie el nombre de la fórmula.
 

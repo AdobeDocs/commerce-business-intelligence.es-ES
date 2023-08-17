@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Cohort Report Builder] para cohortes no basadas en fechas
 
-El [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) es bueno en ayudar a los comerciantes a estudiar cómo se comportan los diferentes subconjuntos de usuarios con el paso del tiempo. En el pasado, la `Cohort Report Builder` se ha optimizado para agrupar usuarios por un `cohort date` (por ejemplo, el conjunto de todos los clientes que realizaron su primera compra en un mes determinado). El `Non-Date Based Cohort` Ahora, esta función le permite agrupar usuarios por una actividad o atributo similar. Consulte algunos casos de uso para esta función.
+El [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) es excelente para ayudar a los comerciantes a estudiar cómo se comportan los distintos subconjuntos de usuarios a lo largo del tiempo. En el pasado, la `Cohort Report Builder` se ha optimizado para agrupar usuarios por un `cohort date` (por ejemplo, el conjunto de todos los clientes que realizaron su primera compra en un mes determinado). El `Non-Date Based Cohort` Ahora, esta función le permite agrupar usuarios por una actividad o atributo similar. Consulte algunos casos de uso para esta función.
 
 ## Casos de uso
 

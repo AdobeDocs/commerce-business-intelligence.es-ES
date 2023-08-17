@@ -93,7 +93,7 @@ Añadir varios filtros permite un control estricto de los datos del gráfico. De
 
 ![](../assets/Standard.png)
 
-- `Amount` O `Percent Change` frente `Previous Period` perspectiva: esta perspectiva muestra la cantidad o el porcentaje de cambio de un intervalo al siguiente y es útil para medir la tasa de cambio en métricas de cambio rápido. También existe una perspectiva para comparar el intervalo con el mismo período de tiempo del año pasado y mostrar el crecimiento año tras año.
+- `Amount` O `Percent Change` frente `Previous Period` perspectiva: esta perspectiva muestra la cantidad o el porcentaje de cambio de un intervalo al siguiente y es útil para medir la tasa de cambio en métricas de cambio rápido. También existe una perspectiva para comparar el intervalo con el mismo período de tiempo del año pasado y mostrar el crecimiento interanual.
 
 ![](../assets/Amt_or_Percent_Change.png)
 
@@ -149,4 +149,4 @@ Para ayudarle a decidir qué resultado del informe elegir, consulte lo siguiente
 
 ![](../assets/RB_Scalar.png)
 
-¡Felicitaciones! Ha terminado.
+¡Felicidades! Ha terminado.

@@ -36,7 +36,7 @@ Una vez habilitada la exportación de datos, solo los administradores de un domi
 
 1. Haga clic en el vínculo de la notificación por correo electrónico para descargar un archivo zip que contenga el informe.
 
-   Este enlace de descarga es válido durante al menos tres días.
+   Este vínculo de descarga es válido durante al menos tres días.
 
 Este proceso crea un archivo XML que contiene toda la información almacenada en el [!DNL Zendesk] Cuenta de, incluidos los datos de tickets (con comentarios), datos de usuario y datos de cuenta. En este punto, puede [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (asegúrese de adjuntar este archivo). para que pueda ver más de cerca sus datos. Si el archivo es demasiado grande, compártalo con el [!DNL Commerce Intelligence] equipo mediante [!DNL Dropbox] o [!DNL Google Drive].
 

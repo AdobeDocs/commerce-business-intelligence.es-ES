@@ -23,7 +23,7 @@ Antes de comenzar, debe revisar la [cargador de archivos](../importing-data/conn
 
 Primero debe cargar un archivo que contenga objetivos diarios, mensuales o trimestrales específicos para su empresa.
 
-Puede usar el complemento [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y la imagen siguiente para dar formato al archivo. Los destinos más comunes en los que los clientes realizan el seguimiento [!DNL Commerce Intelligence] incluir pedidos, ingresos y nuevas cuentas registradas.
+Puede usar el complemento [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y la imagen siguiente para dar formato al archivo. Los objetivos más comunes que rastrean los clientes en [!DNL Commerce Intelligence] incluir pedidos, ingresos y nuevas cuentas registradas.
 
 ![](../../assets/Goals-_Excel.png)
 

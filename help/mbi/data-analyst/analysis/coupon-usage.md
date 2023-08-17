@@ -105,7 +105,7 @@ Por otro lado, el cupón de &quot;10% de descuento&quot; tiene un valor de descu
 
 Consulte la **distintos compradores** y **ingresos medios a largo plazo** para cada cupón. El cupón de &quot;10% de descuento&quot; tiene el mismo número de pedidos que compradores diferentes. Esto podría deberse a que cada cliente se limita a un cupón. Por otro lado, los cupones de &quot;$20 de descuento de $100 o más&quot; y &quot;$10 de descuento&quot; tienen menos compradores distintos que el número de pedidos, lo que implica que algunos clientes utilizaron estos cupones varias veces.
 
-Para los ingresos promedio por duración, puede ver que los ingresos promedio por duración de cada cupón son buenos que los respectivos **pedido neto promedio** valor. Esto implica que, o bien los clientes realizaron compras repetidas o bien el valor de su pedido fue mucho más alto que el valor neto promedio del pedido.
+Para los ingresos promedio por duración, puede ver que los ingresos promedio por duración de cada cupón son mayores que los respectivos **pedido neto promedio** valor. Esto implica que, o bien los clientes realizaron compras repetidas o bien el valor de su pedido fue mucho más alto que el valor neto promedio del pedido.
 
 ## ¿Qué más puedo analizar? {#otheranalyses}
 

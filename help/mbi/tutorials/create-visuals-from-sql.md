@@ -39,7 +39,7 @@ Tenga en cuenta lo siguiente:
 
 - Si está creando un informe con una serie temporal, asegúrese de lo siguiente `ORDER BY` las columnas de marca de tiempo. Esto garantiza que las marcas de tiempo se trazen en el orden correcto en el informe.
 
-- El `EXTRACT` es bueno de usar para analizar el día, la semana, el mes o el año de la marca de tiempo. Esto resulta útil cuando la variable `time interval` que desee utilizar en el informe es `daily`, `weekly`, `monthly`, o `yearly`.
+- El `EXTRACT` es una función genial para usar para analizar el día, la semana, el mes o el año de la marca de tiempo. Esto resulta útil cuando la variable `time interval` que desee utilizar en el informe es `daily`, `weekly`, `monthly`, o `yearly`.
 
 Para empezar, abra el [!DNL SQL Report Builder] haciendo clic en **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 

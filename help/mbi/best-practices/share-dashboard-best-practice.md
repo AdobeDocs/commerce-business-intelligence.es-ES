@@ -40,7 +40,7 @@ Los nuevos usuarios también pueden beneficiarse del acceso a algunos paneles qu
 
 ## Ser selectivo con permisos de edición
 
-`Edit` Los permisos de otorgan a los usuarios mucho poder. Pero con el bueno poder viene la buena responsabilidad. Para evitar cambios accidentales en los gráficos y paneles, Adobe recomienda que sea selectivo sobre a quién debe dar `Edit` permisos para.
+`Edit` Los permisos de otorgan a los usuarios mucho poder. Pero con gran poder viene gran responsabilidad. Para evitar cambios accidentales en los gráficos y paneles, Adobe recomienda que sea selectivo sobre a quién debe dar `Edit` permisos para.
 
 ## Anotar los gráficos
 

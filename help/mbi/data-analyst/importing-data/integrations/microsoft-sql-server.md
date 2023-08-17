@@ -43,7 +43,7 @@ La mejor manera de hacerlo es conectarnos al servidor de su base de datos a trav
 
    ![](../../../assets/manage-data-connections.png)
 
-1. Clic **[!UICONTROL Add a Data Source]**.
+1. Haga clic **[!UICONTROL Add a Data Source]**.
 
 1. Seleccione para conectar un `Microsoft SQL` e introduzca sus credenciales en los campos del nuevo `Connections` página.
 

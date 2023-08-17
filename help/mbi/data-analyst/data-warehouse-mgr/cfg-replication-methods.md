@@ -41,7 +41,7 @@ Además de estos criterios, el Adobe recomienda **indexación** el `datetime` co
 
 Cuando se ejecuta la actualización, los datos nuevos o modificados se identifican buscando filas que tienen un valor en `datetime` columna que se produjo después de la actualización más reciente. Cuando se detectan nuevas filas, se replican en la Data Warehouse. Si existen filas en la variable [Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md), se sobrescriben con los valores actuales de la base de datos.
 
-Por ejemplo, una tabla puede tener una columna llamada `modified\_at` que indica la última vez que se cambiaron los datos. Si la actualización más reciente se ejecutó el martes a mediodía, la actualización busca todas las filas que tengan un `modified\_at` valor bueno que el martes a mediodía. Las filas detectadas que se hayan creado o modificado desde el mediodía del martes se replicarán en la Data Warehouse.
+Por ejemplo, una tabla puede tener una columna llamada `modified\_at` que indica la última vez que se cambiaron los datos. Si la actualización más reciente se ejecutó el martes a mediodía, la actualización busca todas las filas que tengan un `modified\_at` valor mayor que martes a mediodía. Las filas detectadas que se hayan creado o modificado desde el mediodía del martes se replicarán en la Data Warehouse.
 
 **¿Lo sabías?**
 Incluso si la base de datos no admite actualmente un `Incremental` Método de replicación, es posible que [realizar cambios en la base de datos](../../best-practices/mod-db-inc-replication.md) que permitirían el uso de `Modified At` o `Single Auto Incrementing PK`.
@@ -64,7 +64,7 @@ Cuando una tabla utiliza `Single Auto Incrementing Primary Key` replicación, lo
 
 El `Add Date` El método funciona de manera similar a `Single Auto Incrementing Primary Key` método. En lugar de utilizar un entero para la clave principal de la tabla, este método utiliza un `timestamped` columna para buscar nuevas filas.
 
-Cuando una tabla utiliza `Add Date` replicación, los nuevos datos se detectan buscando valores con marca de tiempo buenos a la última fecha de sincronización con la Data Warehouse. Por ejemplo, si una actualización se ejecutó por última vez el 20/12/2015 09:00:00, todas las filas con una marca de tiempo buena a esta se marcarán como datos nuevos y se replicarán.
+Cuando una tabla utiliza `Add Date` replicación, los nuevos datos se detectan buscando valores con marca de tiempo mayores que la última fecha sincronizada con la Data Warehouse. Por ejemplo, si una actualización se ejecutó por última vez el 20/12/2015 09:00:00, todas las filas con una marca de tiempo mayor que esta se marcarán como datos nuevos y se replicarán.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ Los métodos de replicación se establecen tabla por tabla. Para establecer un m
    >
    >**Algunos métodos incrementales requieren que establezca un`Replication Key`**. [!DNL Commerce Intelligence] utilizará esta clave para determinar dónde debe comenzar el siguiente ciclo de actualización.
    >
-   >Por ejemplo, si desea utilizar la variable `modified at` método para su `orders` tabla, debe establecer una `date column` como clave de replicación. Pueden existir varias opciones para las claves de replicación, pero seleccione `created at`o la hora en que se creó la solicitud. Si el último ciclo de actualización se detuvo el 1/12/2015 00:10:00, el siguiente ciclo empezaría a replicar datos con una `created at` fecha buena a esta.
+   >Por ejemplo, si desea utilizar la variable `modified at` método para su `orders` tabla, debe establecer una `date column` como clave de replicación. Pueden existir varias opciones para las claves de replicación, pero seleccione `created at`o la hora en que se creó la solicitud. Si el último ciclo de actualización se detuvo el 1/12/2015 00:10:00, el siguiente ciclo empezaría a replicar datos con una `created at` fecha posterior a esta.
 
 1. Cuando termine, haga clic en **[!UICONTROL Save]**.
 

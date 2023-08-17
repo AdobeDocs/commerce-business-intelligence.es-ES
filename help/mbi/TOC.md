@@ -231,7 +231,7 @@ ht-degree: 0%
    - Uso de paneles {#working-dashboards}
       - [Compartir paneles](best-practices/share-dashboard-best-practice.md)
       - [Creación de un panel para inversores](best-practices/build-investor-dashboard.md)
-- Tutorials {#tutorials}
+- Tutoriales {#tutorials}
    - [Uso del [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Uso de las opciones de tiempo en [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Creación de visualizaciones para una [!DNL SQL] Consulta](tutorials/create-visuals-from-sql.md)

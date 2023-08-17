@@ -29,7 +29,7 @@ Cada vez que pida a otras personas que hagan clic en un vínculo, debería estar
 
 `UTM`Las direcciones URL etiquetadas con pueden ser engorrosas. En lugar de intentar escribirlos a mano, use una herramienta [como este](https://support.google.com/analytics/answer/1033867?hl=en) para ayudarte. Esto garantiza que está pensando en añadir todos los parámetros razonables a la dirección URL y que obtiene la dirección URL que copia y pega directamente de ella. Para administrar vínculos sociales, herramientas como [!DNL Hootsuite] incluya la opción de agregar parámetros de URL personalizados a todos los vínculos.
 
-### 3. Asegúrese de que distingue entre mayúsculas y minúsculas en los valores de los parámetros
+### 3. Asegúrese de que distingue entre mayúsculas y minúsculas en los valores de parámetros
 
 Es importante recordar que la etiqueta `utm\_source=adwords` es una etiqueta diferente a `utm\_source=Adwords`. Considere la posibilidad de ponerlo todo en minúsculas.
 

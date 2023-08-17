@@ -23,7 +23,7 @@ En el ejemplo siguiente se muestra cómo crear un informe simple, agrupar los da
 
 1. En [!UICONTROL Visual Report Builder], haga clic en **[!UICONTROL Create Report]** y haga lo siguiente:
 
-   * Clic **[!UICONTROL Add Metric]**.
+   * Haga clic **[!UICONTROL Add Metric]**.
 
      Las métricas disponibles pueden enumerarse alfabéticamente o por tabla.
 
@@ -114,7 +114,7 @@ En el ejemplo siguiente se muestra cómo crear un informe simple, agrupar los da
 
    * Elija la `Dashboard` donde el informe va a estar disponible.
 
-   * Clic **[!UICONTROL Save to Dashboard]**.
+   * Haga clic **[!UICONTROL Save to Dashboard]**.
 
      ![Guardar en el panel](../../assets/magento-bi-report-builder-save-to-dashboard.png)
 

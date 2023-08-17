@@ -31,7 +31,7 @@ Más `cohort` análisis en [!DNL Commerce Intelligence] agrupar usuarios por una
 
 ## ¿En qué se diferencia de lo normal? `cohort` ¿constructor? {#different}
 
-El [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) está optimizado para agrupar cohortes mediante una característica basada en el tiempo. Esto es bueno para los análisis centrados en un segmento específico de usuario (por ejemplo, todos los usuarios que fueron adquiridos a través de una campaña de búsqueda de pago). En el `Cohort Analysis Builder`, puede (1) centrarse en ese grupo de usuarios específico y (2) `cohort` en una fecha (como su primera fecha de pedido).
+El [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) está optimizado para agrupar cohortes mediante una característica basada en el tiempo. Esto es ideal para análisis que se centran en un segmento específico de usuario (por ejemplo, todos los usuarios que fueron adquiridos a través de una campaña de búsqueda de pago). En el `Cohort Analysis Builder`, puede (1) centrarse en ese grupo de usuarios específico y (2) `cohort` en una fecha (como su primera fecha de pedido).
 
 Sin embargo, si desea analizar el comportamiento de cohorte de varios segmentos de usuario en el mismo informe de cohorte (`paid` búsqueda frente a `organic` búsqueda frente al tráfico directo, quizás?), este análisis más avanzado se puede construir en la `Report Builder`.
 

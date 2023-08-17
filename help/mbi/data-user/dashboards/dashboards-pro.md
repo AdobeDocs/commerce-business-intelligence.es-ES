@@ -152,5 +152,5 @@ El panel Productos muestra el rendimiento general del producto en términos de p
 | `Product Performance Details (Past 30 Days)` | Información detallada sobre las ventas y los reembolsos posteriores en los últimos 30 días, por SKU del producto y nombre del producto. |
 | `Top Purchased Products by GMV (Past 30 Days)` | Productos vendidos en los últimos 30 días que generaron la mayor cantidad de ingresos (los 10 principales). |
 | `Top Refunded Products by GMV (Past 30 Days)` | Productos comprados en los últimos 30 días que resultaron en la mayor cantidad de GMV perdidos debido a reembolsos (top 10). |
-| `Top Purchased Products by Quantity (Past 30 Days)` | Productos vendidos en los últimos 30 días en los números más buenos (top 10). |
-| `Top Refunded Products by Quantity (Past 30 Days)` | Productos comprados en los últimos 30 días que tuvieron como resultado la cantidad más buena reembolsada (top 10). |
+| `Top Purchased Products by Quantity (Past 30 Days)` | Productos vendidos en los últimos 30 días en los mayores números (top 10). |
+| `Top Refunded Products by Quantity (Past 30 Days)` | Productos comprados en los últimos 30 días que tuvieron como resultado la mayor cantidad reembolsada (top 10). |

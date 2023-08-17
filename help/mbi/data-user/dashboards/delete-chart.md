@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -19,13 +19,13 @@ Para eliminar un gráfico de forma permanente:
 
 1. Clic **[!UICONTROL Account Setting]** en la barra lateral.
 
-1. Clic **[!UICONTROL Charts]**.
+1. Haga clic **[!UICONTROL Charts]**.
 
 1. Los gráficos que puede eliminar (según los permisos de usuario y la propiedad del gráfico) se muestran en la parte derecha de la pantalla.
 
 1. Haga clic en la casilla de verificación situada junto a la línea del gráfico que desee eliminar.
 
-1. Clic **[!UICONTROL Delete Selected]**.
+1. Haga clic **[!UICONTROL Delete Selected]**.
 
    >[!NOTE]
    >

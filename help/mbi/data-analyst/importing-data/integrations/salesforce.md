@@ -28,7 +28,7 @@ Conexión de su [!DNL Salesforce] los datos permiten una amplia gama de análisi
 1. Para añadir el [!DNL Salesforce] Integración de con su cuenta de, vaya a `Connections` página debajo de **[!UICONTROL Manage Data** > **Connections]**.
 1. Clic **[!UICONTROL Add a Data Source]**, situado en la parte derecha de la pantalla sobre la tabla de fuentes de datos.
 1. Haga clic en [!DNL Salesforce] icono.
-1. Clic **[!UICONTROL Connect to Salesforce]**.
+1. Haga clic **[!UICONTROL Connect to Salesforce]**.
 1. Introduzca su [!DNL Salesforce] y haga clic en **[!UICONTROL Login to Salesforce]**.
 
 ## Relacionado:

@@ -7,7 +7,7 @@ feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce 
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

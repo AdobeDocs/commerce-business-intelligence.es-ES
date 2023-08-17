@@ -57,7 +57,7 @@ Para cambiar el tablero predeterminado de la cuenta:
 
 1. Haga clic en el nombre del tablero que desee utilizar como predeterminado.
 
-1. Clic **[!UICONTROL Make Default]**.
+1. Haga clic **[!UICONTROL Make Default]**.
 
 ## Eliminar paneles {#delete}
 
@@ -65,4 +65,4 @@ Para eliminar un tablero:
 
 1. Haga clic en el nombre del tablero que desee eliminar.
 
-1. Clic **[!UICONTROL Delete Dashboard]**.
+1. Haga clic **[!UICONTROL Delete Dashboard]**.

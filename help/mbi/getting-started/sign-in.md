@@ -21,7 +21,7 @@ Puede iniciar sesión con su [!DNL Adobe ID] o con su [!DNL Commerce Intelligenc
 
 ## Inicie sesión con su [!DNL Adobe ID]
 
-1. Clic **[!UICONTROL Sign in with Adobe ID]**.
+1. Haga clic **[!UICONTROL Sign in with Adobe ID]**.
 
    ![sign-in-adobe](../assets/sign-in-adobe.png)
 

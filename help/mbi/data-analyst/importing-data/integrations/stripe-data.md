@@ -1,6 +1,6 @@
 ---
 title: Datos de Stripe esperados
-description: Explore las tablas de datos principales que puede importar desde Stripe a Commerce Intelligence.
+description: Explore las tablas de datos principales que puede importar de Stripe a Commerce Intelligence.
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export

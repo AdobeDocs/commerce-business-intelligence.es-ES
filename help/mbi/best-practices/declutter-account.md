@@ -57,13 +57,13 @@ Después de acceder a los paneles e informes, puede empezar a limpiar la cuenta.
 
 1. Busque el informe que desee quitar en el panel.
 1. Seleccionar **[!UICONTROL Options]** en la esquina superior derecha del informe.
-1. Clic **[!UICONTROL Remove From Dashboard]**.
+1. Haga clic **[!UICONTROL Remove From Dashboard]**.
 
 **Eliminación de todo un tablero**
 
 1. Seleccionar **[!UICONTROL Manage Data]** y luego **[!UICONTROL Dashboards**].
 1. Haga clic en el tablero que desee eliminar.
-1. Clic **[!UICONTROL Delete Dashboard]**.
+1. Haga clic **[!UICONTROL Delete Dashboard]**.
 
 También puede seleccionar **[!UICONTROL Dashboard Options]**, entonces **[!UICONTROL Delete]** desde el propio tablero.
 
@@ -78,7 +78,7 @@ También puede seleccionar **[!UICONTROL Dashboard Options]**, entonces **[!UICO
 1. Seleccionar **[!UICONTROL Manage Data]**, entonces **[!UICONTROL Reports]**.
 1. Compruebe la **Mostrar solo los informes no utilizados** situado debajo de la lista de métricas. Esto crea una lista de informes que no se utilizan en un panel o resumen de correo electrónico.
 1. Seleccione los informes que desee eliminar. Para seleccionar todos, haga clic en la casilla de verificación situada encima de la lista de informes.
-1. Clic **[!UICONTROL Delete Selected]**.
+1. Haga clic **[!UICONTROL Delete Selected]**.
 
 Aquí tiene un vistazo al proceso de eliminación de informes no utilizado:
 
@@ -95,7 +95,7 @@ Después de haber limpiado la lista de usuarios, los paneles y los informes, pue
 
 ![](../../mbi/assets/report_dependecies.png)
 
-Si decide que la métrica ya no es necesaria, vuelva al **[!UICONTROL Metrics]** haciendo clic en **[!UICONTROL Back to Metric List]** para encontrar la métrica que desea eliminar. Clic **[!UICONTROL Delete]**.
+Si decide que la métrica ya no es necesaria, vuelva al **[!UICONTROL Metrics]** haciendo clic en **[!UICONTROL Back to Metric List]** para encontrar la métrica que desea eliminar. Haga clic **[!UICONTROL Delete]**.
 
 ## Paso 4: Evaluar las columnas sincronizadas
 

@@ -51,7 +51,7 @@ Es posible que tenga varios sitios web conectados a un único [!DNL Google Analy
 
 1. Visite su [!DNL Google] [configuración de cuenta](https://www.google.com/account/about/?hl=en) página.
 1. En el `Security` , haga clic en **[!UICONTROL edit]** junto a `Authorizing` aplicaciones y sitios.
-1. Clic **[!UICONTROL revoke access]**.
+1. Haga clic **[!UICONTROL revoke access]**.
 
 ## Relacionado
 

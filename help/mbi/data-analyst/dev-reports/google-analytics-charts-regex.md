@@ -19,7 +19,7 @@ Después de haber conectado su [[!DNL Google Analytics] account](../../data-anal
 
 ## Crear [!DNL Google Analytics] Gráficos
 
-1. Clic **[!UICONTROL Add Chart** > **Create New Chart]**.
+1. Haga clic **[!UICONTROL Add Chart** > **Create New Chart]**.
 
 1. Al seleccionar una métrica en la `Chart Builder`, desplácese hasta la parte inferior de la lista para buscar una sección que incluya su [!DNL Google Analytics] Perfiles. Aparece un segundo menú desplegable de métricas. Aquí puede elegir la métrica que desea analizar.
 

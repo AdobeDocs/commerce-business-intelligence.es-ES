@@ -28,7 +28,7 @@ En este tema se exploran las tablas de datos principales desde las que se puede 
 | [`Zendesk\_Groups`](https://developer.zendesk.com/rest_api/docs/core/groups) | Los grupos son la organización de los agentes en su cuenta de Zendesk. El `Groups` registra información como la `group ID`, `URL`, `name`y la información de creación y actualización. |
 | [`Zendesk\_Macro`](https://developer.zendesk.com/rest_api/docs/core/macros) | Las macros son acciones definidas por el usuario que modifican los valores de los campos de un ticket. Esta tabla contiene atributos como el título, el identificador, las acciones, las restricciones y la información de creación y actualización de la macro. |
 | [`Zendesk\_Tags`](https://developer.zendesk.com/rest_api/docs/core/tags) | El `Tags` contiene una lista de todas las etiquetas de su cuenta. |
-| [`Zendesk\_Ticket\_Metrics`](https://developer.zendesk.com/rest_api/docs/core/ticket_metrics#ticket-metrics) | Esta tabla contiene datos sobre las métricas de tickets. Los campos incluyen `ticket ID`, `URL`, y el número de grupos, usuarios asignados, reaperturas, respuestas, tiempo de respuesta (en minutos), tiempo de resolución completa y información de última actualización (por ejemplo, estado, usuario asignado o solicitante). |
+| [`Zendesk\_Ticket\_Metrics`](https://developer.zendesk.com/rest_api/docs/core/ticket_metrics#ticket-metrics) | Esta tabla contiene datos sobre las métricas de tickets. Los campos incluyen `ticket ID`, `URL`, y el número de grupos, usuarios asignados, reaperturas, respuestas, tiempo de respuesta (en minutos), tiempo de resolución completa y la información de última actualización (por ejemplo, estado, usuario asignado o solicitante). |
 
 {style="table-layout:auto"}
 

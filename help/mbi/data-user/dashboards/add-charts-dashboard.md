@@ -21,7 +21,7 @@ Los gráficos existentes se pueden agregar a los paneles mediante la variable [!
 
 ## Agregar un gráfico
 
-1. Clic **[!UICONTROL Add Report]**. Se muestra una lista de los gráficos existentes.
+1. Haga clic **[!UICONTROL Add Report]**. Se muestra una lista de los gráficos existentes.
 
 1. Busque o haga clic en el nombre del gráfico que desee agregar.
 

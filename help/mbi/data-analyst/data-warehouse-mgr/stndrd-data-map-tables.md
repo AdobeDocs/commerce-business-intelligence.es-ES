@@ -55,7 +55,7 @@ En este ejemplo, se mueve la columna que ha creado en el `mapping_state` tabla (
 
 Para crear el `joined` , vaya a la tabla a la que se reubicará el campo en el Administrador de Datas Warehouse. En este ejemplo, este sería el `customer_address` tabla.
 
-1. Clic **[!UICONTROL Create a Column]**.
+1. Haga clic **[!UICONTROL Create a Column]**.
 1. Seleccionar `Joined Column` desde el `Definition` desplegable.
 1. Asigne un nombre a la columna que la diferencie del `state` en la base de datos. Asignar un nombre a la columna `billing state (mapped)` por lo tanto, puede saber qué columna utilizar al segmentar en report builder.
 1. La ruta que necesita para conectar las tablas no existe, por lo que debe crear una. Clic **[!UICONTROL Create new path]**  en el `Select a table and column` desplegable.

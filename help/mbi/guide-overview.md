@@ -1,14 +1,14 @@
 ---
 title: Guía del usuario de Commerce Intelligence
 description: Información completa para los administradores de datos de Commerce Intelligence.
-breadcrumb-title: Información general de guía
+breadcrumb-title: Información general de la guía
 seo-title: Commerce Intelligence User Guide
 seo-description: Describes how to use Adobe Commerce Intelligence features used to gain insights from Adobe Commerce or Magento Open Source data, along with other third-party data sources.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ Existen dos áreas para los administradores de datos:
 
 Esta guía contiene las siguientes secciones organizadas según la función que pueda tener dentro de su organización.
 
-- [Usuario de datos](data-user.md): Los datos se utilizan para tomar decisiones empresariales. Puede recibir informes y paneles de un analista de datos de su equipo, pero también desea aprender a crear esos informes y paneles.
+- [Usuario de datos](data-user.md): Los datos se utilizan para tomar decisiones comerciales. Puede recibir informes y paneles de un analista de datos de su equipo, pero también desea aprender a crear esos informes y paneles.
 - [Analista de datos](data-analyst.md): se siente cómodo diseñando consultas y siendo la persona indicada para el análisis de datos. Sabe cómo encontrar respuestas específicas a preguntas sobre datos y desea facilitar una experiencia de autoservicio para sus compañeros.
 - Administrador: Usted administra el [!DNL Commerce Intelligence] cuenta, incluidas las licencias, la adición y eliminación de usuarios y la gestión de tareas administrativas esenciales.
 

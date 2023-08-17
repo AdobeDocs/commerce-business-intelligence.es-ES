@@ -25,7 +25,7 @@ Para importar [!DNL CJ Affiliate (Commission Junction)] datos en [!DNL Adobe Com
 
 1. Seleccionar `Run Report`.
 
-1. En el `File Format` menú desplegable, seleccione `CSV`.  Clic **[!UICONTROL Download]**.
+1. En el `File Format` menú desplegable, seleccione `CSV`.  Haga clic **[!UICONTROL Download]**.
 
    ![exportar datos de afiliados de cj](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
 

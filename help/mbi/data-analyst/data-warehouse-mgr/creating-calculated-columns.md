@@ -21,7 +21,7 @@ Antes de comenzar, el Adobe recomienda que revise la [Guía de tipos de columnas
 
 1. Haga clic en la tabla en la que desea crear una columna. Por ejemplo, si desea crear una `Customer Gender` para la segmentación de ingresos, debe seleccionar la columna `sales_flat_order` tabla.
 
-1. Se muestra el esquema de tabla. Clic **[!UICONTROL Create New Column]**.
+1. Se muestra el esquema de tabla. Haga clic **[!UICONTROL Create New Column]**.
 
 1. Asigne un nombre a la columna. Por ejemplo, `Customer Gender`.
 

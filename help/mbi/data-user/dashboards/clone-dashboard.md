@@ -27,7 +27,7 @@ Esto resulta útil si desea volver a crear un conjunto de gráficos existente pe
 
 1. Utilice el `Chart Title Find` y `Chart Title Replace` campos con los que buscar todos los gráficos `Philadelphia` en el título y reemplácelo por `New York City`.
 
-   Si no introduce ningún valor en estos campos, se debe `(2)` anexa automáticamente al final de todos los títulos de gráficos del nuevo tablero.
+   Si no introduce ningún valor en estos campos, `(2)` anexa automáticamente al final de todos los títulos de gráficos del nuevo tablero.
 
 1. Clic **[!UICONTROL Save]** para clonar el tablero.
 

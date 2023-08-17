@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Este tema le guiará a través de la conexión directa de [!DNL MySQL] base de d
 1. Crear un [!DNL Commerce Intelligence] [!DNL MySQL] usuario en [!DNL cPanel]
 1. Especifique la conexión y la información de usuario en [!DNL Commerce Intelligence]
 
-Empiece por.
+Introducción.
 
 ## Creación de un [!DNL Commerce Intelligence] [!DNL MySQL] usuario en [!DNL cPanel] {#cpanel}
 
@@ -40,11 +40,11 @@ Empiece por.
 
    ![](../../../assets/create-mbi-mysql-user-cpanel.png)
 
-1. Clic **[!UICONTROL Create User]**.
+1. Haga clic **[!UICONTROL Create User]**.
 1. Ahora que ha creado el usuario, debe asociarlo a una base de datos. Vuelva a la `Add New User` sección: consulte la configuración de `Add User to Database?` Eso es lo que necesitas.
 1. En el `User` de esta sección, seleccione el usuario que ha creado.
 1. En el `Database` de esta sección, seleccione la base de datos a la que desea conectarse [!DNL Commerce Intelligence].
-1. Clic **[!UICONTROL Add]**.
+1. Haga clic **[!UICONTROL Add]**.
 1. Cuando aparezca la lista de comprobación de privilegios, marque la casilla junto a `SELECT` - esto es todo [!DNL Commerce Intelligence] necesita conectarse a la base de datos.
 
 ## Introducción de la conexión y la información de usuario en [!DNL Commerce Intelligence] {#finish}

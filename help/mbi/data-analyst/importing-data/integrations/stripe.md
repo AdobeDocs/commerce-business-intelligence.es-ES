@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,13 +29,13 @@ ht-degree: 0%
 1. Vaya a la `Connections` página debajo de **[!UICONTROL Admin** > **Connections]**.
 1. Clic **[!UICONTROL Add a Data Source]**, situado en el lado derecho de la pantalla, encima de `Data Sources` tabla.
 1. Haga clic en [!DNL Stripe] icono. Esto muestra el `[!DNL Stripe] authorization` página.
-1. Clic **[!UICONTROL Connect with Stripe]**.
+1. Haga clic **[!UICONTROL Connect with Stripe]**.
 
 ## Permitir [!DNL Commerce Intelligence] acceso a su [!DNL Stripe] datos {#steptwo}
 
 Después de hacer clic **[!UICONTROL Connect with Stripe]**, aparecerá una página de solicitud de acceso.
 
-1. Clic **[!UICONTROL Sign in with Stripe to Continue]**.
+1. Haga clic **[!UICONTROL Sign in with Stripe to Continue]**.
 
 1. Introduzca sus credenciales de y haga clic en **[!UICONTROL Sign in to your account]**.
 

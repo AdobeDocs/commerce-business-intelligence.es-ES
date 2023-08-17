@@ -113,7 +113,7 @@ Clic **[!UICONTROL Save]** en la esquina superior derecha de la [!DNL SQL] edito
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) le permite consultar directamente la Data Warehouse, ver los resultados y transformarlos rápidamente en un informe. Uso de [!DNL SQL] también le permite [para utilizar [!DNL SQL] funciones que no están disponibles](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) en el `Visual` o `Cohort` Report Builder, lo que le proporciona el bueno control sobre sus datos.
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) le permite consultar directamente la Data Warehouse, ver los resultados y transformarlos rápidamente en un informe. Uso de [!DNL SQL] también le permite [para utilizar [!DNL SQL] funciones que no están disponibles](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) en el `Visual` o `Cohort` Report Builder, lo que le proporciona un mayor control sobre los datos.
 
 Columnas calculadas creadas mediante [!DNL SQL] no dependen de los ciclos de actualización, lo que significa que puede iterar en ellos como desee y ver los resultados inmediatamente.
 

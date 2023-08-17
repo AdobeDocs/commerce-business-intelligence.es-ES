@@ -58,9 +58,9 @@ Usar la relación entre **clientes** y **pedidos** para mostrarle cómo se hace.
 
 Ahora puede crear la ruta.
 
-1. Clic **[!UICONTROL Data > Data Warehouse]**.
+1. Haga clic **[!UICONTROL Data > Data Warehouse]**.
 1. En la lista de la tabla, haga clic en la tabla en la que desea crear la columna. En este ejemplo, es el `customers` tabla.
-1. Se muestra el esquema de tabla. Clic **[!UICONTROL Create New Column]**.
+1. Se muestra el esquema de tabla. Haga clic **[!UICONTROL Create New Column]**.
 1. Asigne un nombre a la columna, por ejemplo, `Customer's orders`.
 1. Seleccione la definición de la columna. Consulte la [Guía de columna calculada](../data-warehouse-mgr/creating-calculated-columns.md) para una práctica hoja de trucos.
 1. En el [!UICONTROL Select table and column] , haga clic en el **[!UICONTROL Create new path]** opción.

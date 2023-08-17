@@ -19,13 +19,13 @@ En este tema se describen el propósito y los usos del `Calculation` tipo de col
 
 En el pasado, las columnas que se consideraban `advanced` solo lo ha podido realizar un analista del equipo de éxito del cliente aquí en [!DNL Adobe Commerce Intelligence]. Ahora todo el poder está en manos del usuario final, y se pueden crear columnas avanzadas en forma de `SQL Calculation` columnas en la nueva [!DNL Commerce Intelligence] arquitectura.
 
-El `Calculation` El tipo de columna, ahora disponible como opción en el Administrador de Datas Warehouse, es una misma operación de tabla que le permite transformar las columnas de una tabla mediante la lógica PostgreSQL. Documentación sobre las funciones y operadores que se pueden utilizar en la `Calculation` El tipo de columna se encuentra en el sitio web de PostgreSQL [aquí](https://www.postgresql.org/docs/9.6/functions.html).
+El `Calculation` El tipo de columna, ahora disponible como opción en el Administrador de Datas Warehouse, es la misma operación de tabla que le permite transformar las columnas de una tabla mediante la lógica PostgreSQL. Documentación sobre las funciones y operadores que se pueden utilizar en la `Calculation` El tipo de columna se encuentra en el sitio web de PostgreSQL [aquí](https://www.postgresql.org/docs/9.6/functions.html).
 
 Las diferentes columnas que se pueden crear con la variable `Calculation` Las columnas son casi ilimitadas, pero la mayoría de las columnas se pueden crear con instrucciones IF-THEN y aritmética básica, que se utiliza en los ejemplos siguientes.
 
 **Ejemplo 1: ¿Es el último pedido del cliente?**
 
-La mayoría de las cuentas tienen una columna denominada `Is customer's last order?` en su `orders` tabla para realizar análisis de tasas de compra repetidas y clientes perdidos. Si la cuenta se encuentra en la nueva arquitectura, esta columna se crea mediante una `Calculation` y se puede ver en la captura de pantalla siguiente:
+La mayoría de las cuentas tienen una columna denominada `Is customer's last order?` en su `orders` tabla para realizar análisis de tasas de compra repetidas y clientes perdidos. Si la cuenta se encuentra en la nueva arquitectura, esta columna se crea mediante una `Calculation` y se puede ver en la siguiente captura de pantalla:
 
 ![](../../assets/Is_customer_s_last_order.png)
 
@@ -45,7 +45,7 @@ Los posibles valores que puede devolver esta columna (`NULL`, `Yes`, `No`) conti
 
 A muchos clientes les gusta analizar los ingresos en el nivel de artículo, dividiéndolos por campos como `product name` o `category`. La mayoría de las bases de datos no proporcionan realmente los ingresos de un producto en un pedido; en su lugar, proporcionan la cantidad vendida en el pedido y el precio del artículo.
 
-Para habilitar los análisis de ingresos de productos, la mayoría de las cuentas tienen una columna denominada `Order item total value (quantity * price)` en su `Orders Items` tabla. Si la cuenta se encuentra en la nueva arquitectura, esta columna también se crea mediante una `Calculation` y se puede ver en la captura de pantalla siguiente:
+Para habilitar los análisis de ingresos de productos, la mayoría de las cuentas tienen una columna denominada `Order item total value (quantity * price)` en su `Orders Items` tabla. Si la cuenta se encuentra en la nueva arquitectura, esta columna también se crea mediante una `Calculation` y se puede ver en la siguiente captura de pantalla:
 
 ![](../../assets/Order_item_total_value.png)
 
@@ -74,6 +74,6 @@ Desde aquí puede crear una `Calculation` siguiendo estos pasos:
    * `String` - Cualquier tipo de texto o serie de caracteres que no utilicen números
    * `Datetime` - dd/MM/yyyy hh:mm:formato ss
 
-1. Clic **[!UICONTROL test column]**. Esto genera una lista de cinco valores de prueba para cada una de las entradas y muestra el resultado de la lógica del paso 6 para cada conjunto de valores de prueba. Si alguna parte del SQL genera un error, se devuelve el mensaje de error correspondiente. Solo se pueden generar resultados de muestra si todas las columnas de entrada son campos nativos. Si alguna de las columnas de entrada es una columna calculada, debe validar los resultados agregando la columna a una métrica y visualizándola en el Report Builder visual
+1. Haga clic **[!UICONTROL test column]**. Esto genera una lista de cinco valores de prueba para cada una de las entradas y muestra el resultado de la lógica del paso 6 para cada conjunto de valores de prueba. Si alguna parte del SQL genera un error, se devuelve el mensaje de error correspondiente. Solo se pueden generar resultados de muestra si todas las columnas de entrada son campos nativos. Si alguna de las columnas de entrada es una columna calculada, debe validar los resultados agregando la columna a una métrica y visualizándola en el Report Builder visual
 
 1. Cuando esté satisfecho con los resultados, haga clic en **[!UICONTROL Save]**. La columna habilita para su uso.

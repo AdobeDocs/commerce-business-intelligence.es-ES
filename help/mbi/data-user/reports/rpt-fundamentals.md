@@ -111,7 +111,7 @@ Al crear informes que se comparten con otros miembros de su equipo, Adobe recomi
 
 1. Clic **[!UICONTROL i]** al principio de cualquier informe.
 1. Escriba una descripción en el cuadro de texto.
-1. Clic **[!UICONTROL Save Description]**.
+1. Haga clic **[!UICONTROL Save Description]**.
 
 Consulte lo siguiente:
 

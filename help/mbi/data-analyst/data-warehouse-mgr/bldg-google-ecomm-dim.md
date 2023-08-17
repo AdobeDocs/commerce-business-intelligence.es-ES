@@ -57,11 +57,11 @@ Para crear dimensiones, abra [Administrador de Datas Warehouse](../data-warehous
 En este ejemplo se crea el **El pedido es [!DNL Google Analytics] Origen** dimensión.
 
 1. En la lista de tablas de la Data Warehouse, haga clic en la tabla (en este caso, ). `orders`) que contiene la información de su pedido.
-1. Clic **[!UICONTROL Create a Column]**.
+1. Haga clic **[!UICONTROL Create a Column]**.
 1. Asigne un nombre a la columna
 1. Seleccionar `Joined Column` desde el [menú desplegable de definición](../data-warehouse-mgr/calc-column-types.md). Este ejemplo funciona con un [relación uno a uno](../data-warehouse-mgr/table-relationships.md), coincidiendo con el `eCommerce.transactionID` a exactamente una fila de la columna `orders` tabla.
 1. A continuación, debe definir la ruta o cómo se conectan la tabla y la columna que se están utilizando. Haga clic en `Select a table and column` desplegable.
-1. La ruta que necesita no está disponible, por lo que debe crear una nueva. Clic **[!UICONTROL Create new Path]**.
+1. La ruta que necesita no está disponible, por lo que debe crear una nueva. Haga clic **[!UICONTROL Create new Path]**.
 1. En la ventana que se muestra, configure las `Many` de lado a `orders.order\_id`, o la columna en la `orders` que contiene el ID de pedido.
 1. En el `One` lado, encuentre el `Google ECommerce` tabla y, a continuación, establezca la columna en `transactionID`.
 
@@ -83,14 +83,14 @@ A continuación, intente crear **El pedido es [!DNL Google Analytics] mediano** 
 En este ejemplo se crea el **El primer pedido del cliente [!DNL Google Analytics] origen** dimensión.
 
 1. En la lista de tablas de la Data Warehouse, haga clic en la tabla (en este caso, ). `customers`) que contiene su información de cliente.
-1. Clic **[!UICONTROL Create a Column]**.
+1. Haga clic **[!UICONTROL Create a Column]**.
 1. Asigne un nombre a la columna
 1. Para este ejemplo, seleccione `is MAX` definición de desde el [menú desplegable de definición](../../data-analyst/data-warehouse-mgr/calc-column-types.md). El `is MIN` La definición también podría funcionar si se aplica a una columna de texto con un solo valor posible. La parte importante es garantizar que se establecen los filtros adecuados, cosa que hará más adelante.
 1. Haga clic en **[!UICONTROL Select a table and column]** y seleccione la opción `orders` y luego la tabla `Order's [!DNL Google Analytics] source` columna.
-1. Clic **[!UICONTROL Save]**.
+1. Haga clic **[!UICONTROL Save]**.
 1. Una vez que vuelva al esquema de tabla, haga clic en `Options` desplegable, entonces `Filters`.
 1. Clic **[!UICONTROL Add Filter Set]** y luego seleccione la `Orders we count` set. Solo desea que se incluyan los pedidos incluidos en el conjunto de filtros que cuenta, por lo que es importante que se seleccione este conjunto de filtros.
-1. Clic **[!UICONTROL Add Filter]**. Desea encontrar el primer pedido del cliente. [!DNL Google Analytics] fuente, por lo que debe añadir un filtro:
+1. Haga clic **[!UICONTROL Add Filter]**. Desea encontrar el primer pedido del cliente. [!DNL Google Analytics] fuente, por lo que debe añadir un filtro:
 
    _orders.Número de pedido del cliente = 1
 
@@ -106,7 +106,7 @@ Puede detenerse aquí si lo desea, pero esta sección permite un análisis más 
 Este ejemplo se une al `Customer's first order's [!DNL Google Analytics] source` dimensión a `orders` tabla.
 
 1. En la lista de tablas de la Data Warehouse, haga clic en la tabla (en este caso, ). `orders`) que contiene la información de su pedido.
-1. Clic **[!UICONTROL Create a Column]**.
+1. Haga clic **[!UICONTROL Create a Column]**.
 1. Asigne un nombre a la columna
 1. Seleccionar `Joined Column` en el menú desplegable de definición. Esto une las dimensiones de cliente que creó en la sección anterior a `orders` tabla.
 1. Haga clic en **[!UICONTROL Select a table and column]** y, a continuación, seleccione la `customers` y la `Customer's first order's [!DNL Google Analytics] source` columna.

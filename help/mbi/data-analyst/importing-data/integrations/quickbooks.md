@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Con el [!DNL QuickBooks] Al integrarse, las finanzas de su empresa ahora pueden 
 1. Vaya a la `Integrations` página debajo de **[!UICONTROL Manage Data** > **Data Sources]**.
 1. Clic **[!UICONTROL Add Integration]**, situado en el lado derecho de la pantalla, encima de `Data Sources` tabla.
 1. Haga clic en [!DNL QuickBooks] icono.
-1. Clic **[!UICONTROL Connect to Quickbooks]**.
+1. Haga clic **[!UICONTROL Connect to Quickbooks]**.
 
 ## Conceder [!DNL Commerce Intelligence] acceso a su [!DNL QuickBooks] datos
 
@@ -35,7 +35,7 @@ Después de hacer clic **[!UICONTROL Connect to Quickbooks]**, inicie sesión en
 ![](../../../assets/QuickBooks_App_Store_1.jpg)
 
 1. En el `Search for a company` , seleccione su empresa.
-1. Clic **[!UICONTROL Next]**. Se le redirigirá a [!DNL Commerce Intelligence] y una *Conexión correcta.* El mensaje se muestra en la parte superior de la pantalla.
+1. Haga clic **[!UICONTROL Next]**. Se le redirigirá a [!DNL Commerce Intelligence] y una *Conexión correcta.* El mensaje se muestra en la parte superior de la pantalla.
 
 ## Relacionado
 

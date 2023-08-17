@@ -22,7 +22,7 @@ ht-degree: 0%
    >
    >Para ver, agregar o cambiar la información de facturación de tu cuenta, debes tener `Billing` permisos. [Los permisos se establecen usuario por usuario](../../administrator/user-management/user-management.md) cuando se crean cuentas de usuario. Si necesita `Billing` Para obtener permisos, póngase en contacto con el administrador de su cuenta.
 
-1. Clic **[!UICONTROL Save]**.
+1. Haga clic **[!UICONTROL Save]**.
 
 Se envía un correo electrónico al nuevo usuario con los detalles de inicio de sesión y contraseña.
 

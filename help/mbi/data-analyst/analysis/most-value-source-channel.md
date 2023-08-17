@@ -101,7 +101,7 @@ Para crear este informe en [Report Builder](../../tutorials/using-visual-report-
 1. Configure las variables [!UICONTROL Time Interval] a mensualmente.
 1. Añadir un [!UICONTROL filter] para que solo se incluyan los usuarios con pedidos repetidos:
 
-   Número de pedido del usuario bueno a 1
+   Número de pedido del usuario mayor que 1
 
 1. Establecer [!UICONTROL Group By] Vaya a la fuente de adquisición (o de referencia) y seleccione las fuentes que desea incluir.
 1. Este ejemplo utiliza el `stacked columns` tipo de gráfico.

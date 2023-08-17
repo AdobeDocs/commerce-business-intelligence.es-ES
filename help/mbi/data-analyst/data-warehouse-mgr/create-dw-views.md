@@ -138,7 +138,7 @@ En lugar de crear un conjunto independiente de métricas de marketing para cada 
 
 Escribir SQL y crear `Data Warehouse Views` no se incluye con el soporte técnico. Sin embargo, la variable [Equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ofrece asistencia en la creación de vistas. El equipo de asistencia puede ayudarle con todo tipo de tareas, desde migrar una base de datos heredada con una nueva base de datos para crear una única vista de Data Warehouse con el fin de realizar un análisis específico.
 
-Generalmente, la creación de un nuevo `Data Warehouse View` a los efectos de consolidar 2-3 tablas de estructura similar requiere cinco horas de servicio, lo que se traduce en aproximadamente $ 1.250 de trabajo. Sin embargo, a continuación se presentan algunos factores comunes que pueden aumentar la inversión esperada requerida:
+Generalmente, la creación de un nuevo `Data Warehouse View` a los efectos de consolidar 2-3 tablas de estructura similar requiere cinco horas de tiempo de servicios, lo que se traduce en aproximadamente $ 1.250 de trabajo. Sin embargo, a continuación se presentan algunos factores comunes que pueden aumentar la inversión esperada requerida:
 
 * Consolidación de más de tres tablas en una sola vista
 * Creación de más de una vista de Data Warehouse

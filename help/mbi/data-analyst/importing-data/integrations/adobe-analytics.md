@@ -43,17 +43,17 @@ Se necesita la siguiente información para conectarse:
 
 1. Vaya a la `Integrations` página debajo de **[!DNL Manage Data** > **Integrations]**.
 
-1. Clic **[!UICONTROL Add an Integration]**.
+1. Haga clic **[!UICONTROL Add an Integration]**.
 
 1. Haga clic en **[!UICONTROL Adobe Analytics]** para acceder a la página que le permite autorizar su [!DNL Adobe Analytics] conexión de cuenta.
 
-1. Clic **[!UICONTROL Authorize with Adobe Analytics]**.
+1. Haga clic **[!UICONTROL Authorize with Adobe Analytics]**.
 
 1. Introduzca su [!DNL Adobe Analytics] credenciales. Después de la autorización correcta, se le redirigirá de nuevo a [!DNL Commerce Intelligence].
 
 1. Se muestra una lista de los grupos de informes disponibles. Seleccione el grupo de informes desde el que desea importar los datos y haga clic en **[!UICONTROL Continue]**.
 
-1. Se muestra la pantalla de selección de métricas y dimensiones. Seleccione al menos una métrica y una dimensión, hasta un total combinado de 25 métricas y dimensiones. Busque por nombre o desplácese hasta encontrar los componentes y, a continuación, haga clic en las casillas de verificación para seleccionar. Clic **[!UICONTROL Continue]**.
+1. Se muestra la pantalla de selección de métricas y dimensiones. Seleccione al menos una métrica y una dimensión, hasta un total combinado de 25 métricas y dimensiones. Busque por nombre o desplácese hasta encontrar los componentes y, a continuación, haga clic en las casillas de verificación para seleccionar. Haga clic **[!UICONTROL Continue]**.
 
 1. El grupo de informes seleccionado se muestra en una tabla. Clic **[!UICONTROL Save]** para confirmar la selección.
 

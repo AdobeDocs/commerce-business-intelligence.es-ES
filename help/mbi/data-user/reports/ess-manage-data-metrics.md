@@ -27,7 +27,7 @@ Cuando se usan en los informes, las métricas se pueden analizar durante un peri
 
 1. Para crear una métrica, haga clic en **[!UICONTROL Data** > **Metrics]**.
 
-1. Clic **[!UICONTROL Create New Metric]**.
+1. Haga clic **[!UICONTROL Create New Metric]**.
 
 1. En el menú desplegable, haga clic en la tabla que incluye la columna nativa o calculada que desee utilizar para la métrica.
 

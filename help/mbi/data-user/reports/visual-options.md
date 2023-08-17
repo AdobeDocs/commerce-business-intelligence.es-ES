@@ -49,7 +49,7 @@ Para guardar un informe como un escalar, configure los filtros y la hora y haga 
 
 ## `Table`
 
-Como su nombre sugiere, `table` los informes son buenos para mostrar los detalles en forma de tabla. Cuando es necesario mostrar muchos grupos por valores o métricas en un solo informe, la mejor manera de hacerlo suele ser mediante una tabla. Por ejemplo, a continuación se muestra una tabla de &quot;Detalles del cliente&quot;, que muestra los pedidos y los ingresos agrupados por correo electrónico del cliente:
+Como su nombre sugiere, `table` los informes son ideales para mostrar detalles en forma de tabla. Cuando es necesario mostrar muchos grupos por valores o métricas en un solo informe, la mejor manera de hacerlo suele ser mediante una tabla. Por ejemplo, a continuación se muestra una tabla de &quot;Detalles del cliente&quot;, que muestra los pedidos y los ingresos agrupados por correo electrónico del cliente:
 
 ![](../../assets/blobid2.png)
 

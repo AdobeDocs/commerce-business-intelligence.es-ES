@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Uso compartido de paneles con otros usuarios
 
-Compartir paneles es una buena manera de mantener a su equipo en el bucle y fomentar el debate colaborativo. Al crear y compartir un tablero central, puede proporcionar a su equipo la información que necesita y, al mismo tiempo, mantener el control. [[!DNL Adobe] recomienda](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} que concede `Edit` derechos sobre algunos seleccionados para minimizar los cambios accidentales.
+Compartir tableros es una buena manera de mantener a su equipo al tanto y fomentar el debate colaborativo. Al crear y compartir un tablero central, puede proporcionar a su equipo la información que necesita y, al mismo tiempo, mantener el control. [[!DNL Adobe] recomienda](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} que concede `Edit` derechos sobre algunos seleccionados para minimizar los cambios accidentales.
 
 >[!NOTE]
 >

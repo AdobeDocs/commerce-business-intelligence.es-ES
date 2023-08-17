@@ -61,7 +61,7 @@ Una vez creada la métrica, puede **crear un tablero** haciendo esto:
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Añadir [!UICONTROL filters]:
          * [`A`] `Customer's group code` **Not Equal To** `Not Logged In`
-         * [`B`] `Customer's lifetime number of orders` **Bueno que**`0`
+         * [`B`] `Customer's lifetime number of orders` **Mayor que**`0`
 
    * [!UICONTROL Time period]: `All time`
    * 

@@ -22,7 +22,7 @@ Analizar cómo los clientes utilizan sus cupones puede proporcionar una perspect
 
 Responda a estas preguntas centrándose en [comparación de clientes adquiridos con cupones con clientes adquiridos sin cupones](#compare), [análisis de detalles de primer pedido de adquisiciones de cupones](#firstorder), y [observando los atributos de los clientes que utilizan cupones en su primer pedido.](#attributes)
 
-¡Empiece!
+Introducción!
 
 ## Comparación entre clientes con cupones adquiridos y clientes sin cupones adquiridos {#compare}
 

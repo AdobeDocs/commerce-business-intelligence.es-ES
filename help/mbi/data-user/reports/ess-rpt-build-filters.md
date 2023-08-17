@@ -31,7 +31,7 @@ Se pueden añadir uno o más filtros para limitar los datos que se utilizan para
 
    ![Añadir filtro](../../assets/magento-bi-report-builder-filter-add.png)
 
-1. Clic **[!UICONTROL Add Filter]**.
+1. Haga clic **[!UICONTROL Add Filter]**.
 
    Los filtros se numeran alfabéticamente y el primero es `[A]`. Las dos primeras partes del filtro son opciones desplegables y la tercera parte es un valor.
 

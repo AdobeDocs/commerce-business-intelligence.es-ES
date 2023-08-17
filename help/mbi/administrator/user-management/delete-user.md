@@ -27,4 +27,4 @@ Si solo necesita que los tableros de ese usuario se inserten en una cuenta de us
 
 1. Utilice la dirección de correo electrónico del usuario eliminado para crear una nueva [!DNL Commerce Intelligence] usuario.
 1. [Notificar al soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) después de crear el usuario. La compatibilidad transfiere los paneles a su cuenta de.
-1. Una vez que la Asistencia técnica de Adobe le haya notificado la transferencia, podrá volver a borrar el usuario.
+1. Una vez que la Asistencia técnica de Adobe le haya notificado la transferencia, podrá volver a eliminar el usuario.

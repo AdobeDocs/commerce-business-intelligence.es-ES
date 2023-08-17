@@ -56,7 +56,7 @@ En el `Set when to send the Email Summary` , puede especificar cuándo enviar lo
 
 1. Seleccionar `Manual` desde el `Set when to send the Email Summary` field.
 
-1. Clic **[!UICONTROL Save]**.
+1. Haga clic **[!UICONTROL Save]**.
 
    Esto guarda el resumen en la lista de resúmenes de correo electrónico.
 

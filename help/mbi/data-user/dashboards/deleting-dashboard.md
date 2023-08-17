@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,11 +21,11 @@ Si desea evitar que la lista de paneles se llene de elementos que no necesita, p
 
 ## Elimine el panel de control mediante `Account Settings` página {#account}
 
-1. Clic **[!UICONTROL Account Settings** > **Dashboards]**.
+1. Haga clic **[!UICONTROL Account Settings** > **Dashboards]**.
 
 1. En la lista de paneles, haga clic en el panel que desee eliminar.
 
-1. Clic **[!UICONTROL Delete Dashboard]**.
+1. Haga clic **[!UICONTROL Delete Dashboard]**.
 
 Ejemplo:
 

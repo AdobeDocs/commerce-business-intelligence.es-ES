@@ -31,7 +31,7 @@ Para completar este proceso, debe abrir dos ventanas o pestañas del explorador,
 
 ## Abriendo el [!DNL Mixpanel] página credenciales {#stepone}
 
-Introducción a:
+Introducción:
 
 1. Vaya a la `Connections` página debajo de **[!DNL Manage Data** > **Connections]**.
 

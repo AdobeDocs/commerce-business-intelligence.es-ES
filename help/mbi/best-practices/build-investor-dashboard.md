@@ -33,7 +33,7 @@ Esto es lo que necesita para crear informes para su tablero de inversores:
    * Métrica: ingresos por primer pedido
    * Filtro: el número de pedido del usuario es igual a 1
    * Métrica 2: Ingresos de pedidos repetidos
-      * Filtro: el número de pedido del usuario es bueno que 1
+      * Filtro: el número de pedido del usuario es mayor que 1
    * Desmarque la casilla de verificación de Varios ejes Y
    * Cambiar a gráfico de columnas apiladas
 * **[!UICONTROL AOV by quarter]**

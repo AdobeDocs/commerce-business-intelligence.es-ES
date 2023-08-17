@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Este tema contiene instrucciones para los clientes que utilizan la arquitectura original y la nueva arquitectura. Se encuentra en la nueva arquitectura si tiene el `Data Warehouse Views` disponible tras seleccionar `Manage Data` en la barra de herramientas principal.
 
-En este tema se muestra cómo configurar un tablero que realice un seguimiento del rendimiento de su umbral de envío gratuito. Este panel, que se muestra a continuación, es una buena forma de probar los dos umbrales de envío gratuito de la prueba A/B. Por ejemplo, es posible que su empresa no esté segura de si debe ofrecer envío gratuito a 50 o 100 dólares. Debe realizar una prueba A/B de dos subconjuntos aleatorios de sus clientes y realizar el análisis en [!DNL Commerce Intelligence].
+En este tema se muestra cómo configurar un tablero que realice un seguimiento del rendimiento de su umbral de envío gratuito. Este panel, que se muestra a continuación, es una buena manera de probar dos umbrales de envío gratuito en A/B. Por ejemplo, es posible que su empresa no esté segura de si debe ofrecer envío gratuito a 50 o 100 dólares. Debe realizar una prueba A/B de dos subconjuntos aleatorios de sus clientes y realizar el análisis en [!DNL Commerce Intelligence].
 
 Antes de comenzar, debes identificar dos periodos de tiempo diferentes en los que has tenido valores diferentes para el umbral de envío gratuito de tu tienda.
 
@@ -38,7 +38,7 @@ Si se basa en la arquitectura original (por ejemplo, si no tiene el `Data Wareho
 
   >[!NOTE]
   >
-  >Los tamaños del &quot;cubo&quot; dependen de lo que sea apropiado para usted como cliente. Podrías empezar con tu `average order value` y cree algunos bloques inferiores y buenos a esa cantidad. Al consultar el cálculo siguiente, verá cómo copiar fácilmente parte de la consulta, editarla y crear bloques adicionales. El ejemplo se realiza en incrementos de 50.
+  >Los tamaños del &quot;cubo&quot; dependen de lo que sea apropiado para usted como cliente. Podrías empezar con tu `average order value` y cree algunos bloques inferiores y superiores a esa cantidad. Al consultar el cálculo siguiente, puede ver cómo copiar fácilmente parte de la consulta, editarla y crear bloques adicionales. El ejemplo se realiza en incrementos de 50.
 
    * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`, o `calculated column`, `Datatype`: `Integer`
    * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`

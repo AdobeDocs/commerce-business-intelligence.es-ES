@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ A veces los nombres ya no caben. Cambiar el nombre de un tablero es rápido y se
 
 1. Cuando se le solicite, escriba el nuevo nombre para el tablero.
 
-1. Clic **[!UICONTROL Save Changes]**.
+1. Haga clic **[!UICONTROL Save Changes]**.
 
 Ejemplo:
 

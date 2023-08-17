@@ -99,7 +99,7 @@ En este paso, guarda el informe como un gráfico y también como una tabla.
 
    * Elija la `Dashboard` donde el informe va a estar disponible.
 
-   * Clic **[!UICONTROL Save to Dashboard]**.
+   * Haga clic **[!UICONTROL Save to Dashboard]**.
 
 1. Haga clic en el título del informe y cambie el nombre. Para este ejemplo, el título del informe se cambia a `2017 Holiday Sales Data`.
 
@@ -111,7 +111,7 @@ En este paso, guarda el informe como un gráfico y también como una tabla.
 
    * Elija la `Dashboard` donde el informe va a estar disponible.
 
-   * Clic **[!UICONTROL Save a Copy to Dashboard]**.
+   * Haga clic **[!UICONTROL Save a Copy to Dashboard]**.
 
 1. Para ver los informes en el panel, siga uno de estos procedimientos:
 

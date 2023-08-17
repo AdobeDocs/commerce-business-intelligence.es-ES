@@ -25,7 +25,7 @@ Para agregar una o más dimensiones a varias métricas a la vez:
 
 1. Ir a **[!UICONTROL Manage Data > Metrics]**.
 
-1. Clic **[!UICONTROL Add Dimensions To Metric(s)]**.
+1. Haga clic **[!UICONTROL Add Dimensions To Metric(s)]**.
 
 1. Elija la tabla que contiene las dimensiones.
 
@@ -35,7 +35,7 @@ Para agregar una o más dimensiones a varias métricas a la vez:
 
 1. Si desea segmentar o agrupar por cualquiera de las dimensiones de datos en los informes, asegúrese de indicar que son _Agrupable_.
 
-1. Clic **[!UICONTROL Add]**.
+1. Haga clic **[!UICONTROL Add]**.
 
 ## Eliminar dimensiones de varias métricas
 
@@ -43,13 +43,13 @@ Para eliminar una o más dimensiones de varias métricas:
 
 1. Ir a **[!UICONTROL Data > Metrics]**.
 
-1. Clic **[!UICONTROL Remove Dimensions From Metric(s)]**.
+1. Haga clic **[!UICONTROL Remove Dimensions From Metric(s)]**.
 
 1. Elija la tabla que contiene las dimensiones.
 
 1. Seleccione las métricas de las que desea eliminar las dimensiones a la izquierda, y las dimensiones que desea eliminar a la derecha.
 
-1. Clic **[!UICONTROL Remove]**.
+1. Haga clic **[!UICONTROL Remove]**.
 
 1. Si las dimensiones están en uso en los informes, se muestra una advertencia con la lista de gráficos que utilizan las dimensiones. Clic **[!UICONTROL Delete]** para eliminar las dimensiones seleccionadas y todas sus dependientes, incluidos los informes.
 

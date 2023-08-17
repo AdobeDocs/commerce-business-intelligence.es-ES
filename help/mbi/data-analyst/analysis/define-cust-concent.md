@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Concentración de clientes
 
-En este tema se muestra cómo configurar un tablero que le ayuda a medir cómo se distribuyen los ingresos totales entre la base de clientes. Comprenda qué porcentaje de clientes contribuyen con qué porcentaje de ingresos y cree listas segmentadas para comercializar mejor a sus clientes de alta contribución y conservarlos.
+En este tema se muestra cómo configurar un tablero que le ayude a medir cómo se distribuyen los ingresos totales entre la base de clientes. Comprenda qué porcentaje de clientes contribuyen con qué porcentaje de ingresos y cree listas segmentadas para comercializar mejor a sus clientes de alta contribución y conservarlos.
 
 Este análisis contiene [columnas calculadas avanzadas](../data-warehouse-mgr/adv-calc-columns.md).
 

@@ -37,7 +37,7 @@ El aspecto que tengan los paneles que cree depende totalmente de usted. Puede or
 
    ![Crear tablero](../../assets/magento-bi-dashboard-create.png)
 
-1. Clic **[!UICONTROL Create Dashboard]**. A continuación, haga lo siguiente:
+1. Haga clic **[!UICONTROL Create Dashboard]**. A continuación, haga lo siguiente:
 
    * Introduzca una `Name` para el tablero.
 
@@ -45,7 +45,7 @@ El aspecto que tengan los paneles que cree depende totalmente de usted. Puede or
 
      Por ejemplo, si la instalación de Commerce tiene varias vistas de tienda, puede crear un grupo para cada vista de tienda.
 
-   * Clic **[!UICONTROL Create]**.
+   * Haga clic **[!UICONTROL Create]**.
 
    ![nombre del tablero](../../assets/magento-bi-dashboard-create-name.png)
 
