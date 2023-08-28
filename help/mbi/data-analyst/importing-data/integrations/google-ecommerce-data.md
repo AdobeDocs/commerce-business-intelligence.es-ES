@@ -4,14 +4,14 @@ description: Descubra qué tipos de datos se comparten con Google ECommerce.
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3f16484f189f6b4a8b072d2e3514d2f170993d60
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
 
 ---
 
-# Previsto[!DNL Google ECommerce] datos
+# Previsto [!DNL Google ECommerce] datos
 
 Después de su [!DNL Google ECommerce] la cuenta se ha conectado correctamente a [!DNL Commerce Intelligence], el sistema empezará a importar datos en una tabla titulada `ecommerce`. Esta tabla registra una fila de datos para cada transacción. Esto incluye las siguientes columnas de datos en el nivel de pedido:
 
