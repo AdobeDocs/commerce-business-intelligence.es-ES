@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo iniciar sesión en su cuenta de Co
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Accounts
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 988a7bee27a0c381d1c84db960e978ca73eb3615
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,9 @@ ht-degree: 0%
 
 Después de activar su [!DNL Commerce Intelligence] cuenta para [local o en la nube](../getting-started/onpremise-activation.md) y ha trabajado con su equipo de cuenta de Adobe para finalizar los pasos de configuración, ahora puede iniciar sesión en su cuenta.
 
-Puede iniciar sesión con su [!DNL Adobe ID] o con su [!DNL Commerce Intelligence] correo electrónico y contraseña.
-
-![inicio de sesión](../assets/sign-in.png)
-
 ## Inicie sesión con su [!DNL Adobe ID]
 
-1. Haga clic **[!UICONTROL Sign in with Adobe ID]**.
+1. Clic **[!UICONTROL Sign in with Adobe ID]**.
 
    ![sign-in-adobe](../assets/sign-in-adobe.png)
 
