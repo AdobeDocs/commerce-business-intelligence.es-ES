@@ -4,7 +4,7 @@ description: Aprenda a utilizar [!DNL Commerce Intelligence] funciones disponibl
 breadcrumb-title: Guía del usuario de Commerce Intelligence
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
+source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -57,10 +57,10 @@ ht-degree: 0%
       - [Estandarización de datos con tablas de asignación](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
       - [Traducción de consultas SQL a [!DNL Commerce Intelligence] informes](data-analyst/dev-reports/sql-queries-reports.md)
       - [Explicación y evaluación de las relaciones de tabla](data-analyst/data-warehouse-mgr/table-relationships.md)
-      - [Uso de la diferencia de fecha calculada](data-analyst/data-warehouse-mgr/using-date-diff-calc-column-.md)
+      - [Uso de la diferencia de fecha calculada](data-analyst/data-warehouse-mgr/using-date-diff-calc-column.md)
       - [Uso del filtrado amplio del panel](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [Uso de la columna calculada Número de evento](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
-      - [Uso de la Columna Calculada de Comparación Secuencial](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column-.md)
+      - [Uso de la Columna Calculada de Comparación Secuencial](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
    - Tablas de comercio comunes {#tables}
       - [Introducción](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
@@ -231,7 +231,7 @@ ht-degree: 0%
    - Uso de paneles {#working-dashboards}
       - [Compartir paneles](best-practices/share-dashboard-best-practice.md)
       - [Creación de un panel para inversores](best-practices/build-investor-dashboard.md)
-- Tutoriales {#tutorials}
+- Tutorials {#tutorials}
    - [Uso del [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Uso de las opciones de tiempo en [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Creación de visualizaciones para una [!DNL SQL] Consulta](tutorials/create-visuals-from-sql.md)
