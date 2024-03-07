@@ -4,9 +4,9 @@ description: Descubra cómo se pueden crear columnas avanzadas en forma de colum
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -72,8 +72,8 @@ Desde aquí puede crear una `Calculation` siguiendo estos pasos:
    * `Integer` - Número entero
    * `Decimal(10,2)` - un número decimal con 10 dígitos totales, de los cuales 2 están a la derecha del separador decimal
    * `String` - Cualquier tipo de texto o serie de caracteres que no utilicen números
-   * `Datetime` - dd/MM/yyyy hh:mm:formato ss
+   * `Datetime` - `yyyy-MM-dd hh:mm:ss` formato
 
-1. Haga clic **[!UICONTROL test column]**. Esto genera una lista de cinco valores de prueba para cada una de las entradas y muestra el resultado de la lógica del paso 6 para cada conjunto de valores de prueba. Si alguna parte del SQL genera un error, se devuelve el mensaje de error correspondiente. Solo se pueden generar resultados de muestra si todas las columnas de entrada son campos nativos. Si alguna de las columnas de entrada es una columna calculada, debe validar los resultados agregando la columna a una métrica y visualizándola en el Report Builder visual
+1. Clic **[!UICONTROL test column]**. Esto genera una lista de cinco valores de prueba para cada una de las entradas y muestra el resultado de la lógica del paso 6 para cada conjunto de valores de prueba. Si alguna parte del SQL genera un error, se devuelve el mensaje de error correspondiente. Solo se pueden generar resultados de muestra si todas las columnas de entrada son campos nativos. Si alguna de las columnas de entrada es una columna calculada, debe validar los resultados agregando la columna a una métrica y visualizándola en el Report Builder visual
 
 1. Cuando esté satisfecho con los resultados, haga clic en **[!UICONTROL Save]**. La columna habilita para su uso.
