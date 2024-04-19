@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo analizar el rendimiento de los cup
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -507,3 +507,9 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar a la imagen de la parte superior de la página.
 
 Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+
+>[!NOTE]
+>
+>A partir de Adobe Commerce 2.4.7, los clientes pueden utilizar el **quote_coupons** y **sales_order_coupons** para obtener información sobre cómo los clientes utilizan varios cupones.
+
+![](../../assets/multicoupon_relationship_tables.png)
