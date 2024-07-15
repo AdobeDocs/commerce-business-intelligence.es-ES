@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Seguimiento De Objetivos Con Métricas De Rendimiento
 
-La mayoría de los clientes desea realizar un seguimiento de sus **objetivos empresariales**, pero no se da cuenta de que esto es posible en [!DNL Adobe Commerce Intelligence]. En este tema se muestra cómo configurar un tablero que le ayudará a realizar un seguimiento de los objetivos de su empresa en relación con los datos reales, incluidos los ingresos, los nuevos usuarios registrados y los pedidos a lo largo del tiempo. También aprenderá a comparar el rendimiento año tras año, todo en un tablero como este:
+A la mayoría de los clientes les gustaría hacer un seguimiento de sus **objetivos comerciales**, pero no se dan cuenta de que esto es posible en [!DNL Adobe Commerce Intelligence]. En este tema se muestra cómo configurar un tablero que le ayudará a realizar un seguimiento de los objetivos de su empresa en relación con los datos reales, incluidos los ingresos, los nuevos usuarios registrados y los pedidos a lo largo del tiempo. También aprenderá a comparar el rendimiento año tras año, todo en un tablero como este:
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Antes de comenzar, debe revisar la [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y asegúrese de haber definido sus objetivos empresariales para un periodo determinado.
+Antes de empezar, debería revisar el [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y asegurarse de haber definido sus objetivos comerciales para un período determinado.
 
 ## Primeros pasos
 
 Primero debe cargar un archivo que contenga objetivos diarios, mensuales o trimestrales específicos para su empresa.
 
-Puede usar el complemento [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y la imagen siguiente para dar formato al archivo. Los objetivos más comunes que rastrean los clientes en [!DNL Commerce Intelligence] incluir pedidos, ingresos y nuevas cuentas registradas.
+Puede usar el [cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y la imagen siguiente para dar formato al archivo. Los destinos más comunes que los clientes rastrean en [!DNL Commerce Intelligence] son Pedidos, Ingresos y Nuevas cuentas registradas.
 
 ![](../../assets/Goals-_Excel.png)
 
@@ -32,28 +32,28 @@ Puede usar el complemento [cargador de archivos](../importing-data/connecting-da
 Cree una nueva métrica para cada destino. Por ejemplo, si carga objetivos de ingresos y pedidos mensuales, debe crear dos métricas nuevas:
 
 * **Objetivo de ingresos mensuales**
-* En el **`Monthly goals`** tabla
-* Esta métrica realiza una **Sum**
-* En el **`Revenue target`** columna
-* Ordenado por el **`Month`** timestamp
+* En la tabla **`Monthly goals`**
+* Esta métrica arroja una **Sum**
+* En la columna **`Revenue target`**
+* Ordenado por la marca de tiempo **`Month`**
 
 * **Destino de pedidos mensuales**
-* En el **`Monthly goals`** tabla
-* Esta métrica realiza una **Sum**
-* En el **`Orders target`** columna
-* Ordenado por el **`Month`** timestamp
+* En la tabla **`Monthly goals`**
+* Esta métrica arroja una **Sum**
+* En la columna **`Orders target`**
+* Ordenado por la marca de tiempo **`Month`**
 
 * **Destino de nuevas cuentas registradas mensuales**
-* En el **`Monthly goals`** tabla
-* Esta métrica realiza una **Sum**
-* En el **`New registered accounts target`** columna
-* Ordenado por el **`Month`** timestamp
+* En la tabla **`Monthly goals`**
+* Esta métrica arroja una **Sum**
+* En la columna **`New registered accounts target`**
+* Ordenado por la marca de tiempo **`Month`**
 
 ## Informes
 
 Es útil tener una combinación de valores estáticos y gráficos visuales al analizar los destinatarios. A continuación se muestran tres informes de ejemplo para ayudarle a empezar a rastrear el rendimiento de los ingresos.
 
-* **Ingresos restantes para alcanzar el objetivo**
+* Quedan **ingresos para alcanzar el objetivo**
 * Métrica `A`: `Revenue`
 * 
   [!UICONTROL Métrica]: `Revenue`
@@ -93,7 +93,7 @@ Es útil tener una combinación de valores estáticos y gráficos visuales al an
   [!UICONTROL Format]: `Currency`
 
 * Desactivar `Multiple Y-Axes`
-* [!UICONTROL Time period]: (independientemente del período de tiempo relevante que desee)*
+* [!UICONTROL Time period]: (el período de tiempo relevante que desee)*
 * 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`

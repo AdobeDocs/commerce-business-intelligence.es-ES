@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -21,75 +21,75 @@ Este análisis contiene [columnas calculadas avanzadas](../data-warehouse-mgr/ad
 
 Primero debe cargar un archivo que contenga solo una clave principal con el valor de una. Esto permite crear algunas columnas calculadas necesarias para el análisis.
 
-Puede utilizar [el cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y la imagen siguiente para dar formato al archivo.
+Puedes usar [el cargador de archivos](../importing-data/connecting-data/using-file-uploader.md) y la imagen siguiente para dar formato al archivo.
 
 ## Columnas calculadas
 
-Si se basa en la arquitectura original (por ejemplo, si no tiene el `Data Warehouse Views` en la opción `Manage Data` ), desea ponerse en contacto con el equipo de asistencia para crear las columnas siguientes. En la nueva arquitectura, estas columnas se pueden crear desde el `Manage Data > Data Warehouse` página. A continuación se ofrecen instrucciones detalladas.
+Si se encuentra en la arquitectura original (por ejemplo, si no tiene la opción `Data Warehouse Views` en el menú `Manage Data`), debe ponerse en contacto con el equipo de atención al cliente para crear las columnas siguientes. En la nueva arquitectura, estas columnas se pueden crear desde la página `Manage Data > Data Warehouse`. A continuación se ofrecen instrucciones detalladas.
 
-Se hace una distinción adicional si su negocio permite pedidos de invitados. Si es así, puede ignorar todos los pasos de `customer_entity` tabla. Si no se permiten pedidos de invitado, ignore todos los pasos para la `sales_flat_order` tabla.
+Se hace una distinción adicional si su negocio permite pedidos de invitados. Si es así, puede omitir todos los pasos de la tabla `customer_entity`. Si no se permiten pedidos de invitado, ignore todos los pasos de la tabla `sales_flat_order`.
 
 Columnas para crear
 
 * `Sales_flat_order/customer_entity` tabla
 * (entrada) `reference`
-* [!UICONTROL Column type]: – `Same table > Calculation`
-* [!UICONTROL Inputs]: – `entity_id`
-* [!UICONTROL Calculation]: - **Caso de que A sea nulo y luego nulo fin de else 1**
-* [!UICONTROL Datatype]: – `Integer`
+* [!UICONTROL Column type]: - `Same table > Calculation`
+* [!UICONTROL Inputs]: - `entity_id`
+* [!UICONTROL Calculation]: - **caso cuando A es nulo y luego nulo 1 fin**
+* [!UICONTROL Datatype]: - `Integer`
 
-* `Customer concentration` tabla (este es el archivo que cargó con el número `1`)
+* `Customer concentration` tabla (este es el archivo que subió con el número `1`)
 * Número de clientes
-* [!UICONTROL Column type]: – `Many to One > Count Distinct`
+* [!UICONTROL Column type]: - `Many to One > Count Distinct`
 * Ruta - `sales_flat_order.(input) reference > Customer Concentration.Primary Key` O `customer_entity.(input)reference > Customer Concentration.Primary Key`
-* Columna seleccionada - `sales_flat_order.customer_email` O `customer_entity.entity_id`
+* Columna seleccionada: `sales_flat_order.customer_email` O `customer_entity.entity_id`
 
 * `customer_entity` tabla
 * Número de clientes
-* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
-* Ruta - `customer_entity.(input) reference > Customer Concentration. Primary Key`
-* Columna seleccionada - `Number of customers`
+* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
+* Ruta de acceso - `customer_entity.(input) reference > Customer Concentration. Primary Key`
+* Columna seleccionada: `Number of customers`
 
 * (entrada) `Ranking by customer lifetime revenue`
-* [!UICONTROL Column type]: – `Same table > Event Number`
+* [!UICONTROL Column type]: - `Same table > Event Number`
 * Propietario del evento - `Number of customers`
 * Clasificación del evento - `Customer's lifetime revenue`
 
 * Percentil de ingresos del cliente
-* [!UICONTROL Column type]: – `Same table > Calculation`
-* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **Caso en el que A es nulo y luego nulo (A/B)* Fin de 100 **
-* [!UICONTROL Datatype]: – `Decimal`
+* [!UICONTROL Column type]: - `Same table > Calculation`
+* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Calculation]: - **caso cuando A es nulo entonces nulo más (A/B)* 100 fin **
+* [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order` tabla
 * Número de clientes
-* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
-* Ruta - `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
-* Columna seleccionada - `Number of customers`
+* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
+* Ruta de acceso - `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
+* Columna seleccionada: `Number of customers`
 
 * (entrada) Clasificación por ingresos de duración de clientes
-* [!UICONTROL Column type]: – `Same table > Event Number`
+* [!UICONTROL Column type]: - `Same table > Event Number`
 * Propietario del evento - `Number of customers`
 * Clasificación del evento - `Customer's lifetime revenue`
 * Filtro - `Customer's order number = 1`
 
 * Percentil de ingresos del cliente
-* [!UICONTROL Column type]: – `Same table > Calculation`
-* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **Caso en el que A es nulo y luego nulo (A/B)* Fin de 100 **
+* [!UICONTROL Column type]: - `Same table > Calculation`
+* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Calculation]: - **caso cuando A es nulo entonces nulo más (A/B)* 100 fin **
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
 >
->Los percentiles utilizados son incluso divisiones de clientes, que representan el percentil X de la base de clientes. Cada cliente está asociado con un número entero entre 1 y 100, que se puede considerar como sus ingresos de duración *clasificar*. Por ejemplo, si el percentil de ingresos del cliente para un cliente específico es **5**, este cliente se encuentra en ***percentil 5*** de todos los clientes en términos de ingresos por duración.
+>Los percentiles utilizados son incluso divisiones de clientes, que representan el percentil X de la base de clientes. Cada cliente está asociado con un número entero entre 1 y 100, que se puede considerar como sus ingresos de por vida *rank*. Por ejemplo, si el percentil de ingresos del cliente para un cliente específico es **5**, este cliente se encuentra en el ***quinto percentil*** de todos los clientes en términos de ingresos por duración.
 
 ## Métricas
 
-* **Valor total de duración del cliente**
-* En el `customer_entity` tabla
-* Esta métrica realiza una **Sum**
-* En el `Customer's lifetime revenue` columna
-* Ordenado por el `Customer's first order date` timestamp
+* **Valor total de duración de cliente**
+* En la tabla `customer_entity`
+* Esta métrica arroja una **Sum**
+* En la columna `Customer's lifetime revenue`
+* Ordenado por la marca de tiempo `Customer's first order date`
 
 ## Informes
 
@@ -112,7 +112,7 @@ Columnas para crear
 * 
   [!UICONTROL Chart type]: `Line`
 
-* **Concentración del 10 % superior**
+* **Concentración del 10% superior**
 * [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
 
 * Métrica `A`: `Total customer lifetime revenue`
@@ -156,4 +156,4 @@ Columnas para crear
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar al panel de muestra anterior.
 
-Si tiene alguna pregunta mientras realiza este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si tiene alguna pregunta al generar este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

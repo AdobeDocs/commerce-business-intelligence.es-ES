@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Business Performance, Data Integration, Data Import/Export, Data Warehouse Manager
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # Optimización de la base de datos
 
-La principal ventaja de utilizar una base de datos operativa para [!DNL Adobe Commerce Intelligence] es que no es necesario crear ni modificar nada para recopilar datos. Información valiosa ya está allí, solo tiene que desbloquearla.
+La ventaja principal de utilizar una base de datos operativa para [!DNL Adobe Commerce Intelligence] es que no es necesario generar ni modificar nada para recopilar datos. Información valiosa ya está allí, solo tiene que desbloquearla.
 
 Este tema contiene algunas recomendaciones para ayudarle a optimizar la base de datos para el análisis y extraer perspectivas procesables de los datos sin procesar.
 
@@ -35,17 +35,17 @@ Si utilizamos las fechas de inicio de sesión como ejemplo, muchas empresas alma
 
 Por lo general, si actualiza un registro debido a algún tipo de acción del usuario, no sobrescriba la información sobre una acción anterior o independiente del usuario.
 
-## Incluir `Updated_at` Columnas para datos actualizados con el tiempo
+## Incluir `Updated_at` columnas para datos actualizados con el paso del tiempo
 
-Si las filas de una tabla van a tener valores que cambian con el tiempo, por ejemplo, **order\_status** cambios de`processing` hasta `complete`, incluir un **actualizado\_a las** para registrar cuándo se produce el último cambio. Asegúrese de que una **actualizado\_a las** está disponible la primera vez que se inserta la nueva fila de datos, cuando la variable **actualizado\_a las** fecha corresponde a la fecha **created\_at** fecha.
+Si las filas de una tabla van a tener valores que cambian con el tiempo, por ejemplo, **order\_status** cambia de`processing` a `complete`, incluya una columna **updated\_at** para registrar cuándo se produce el cambio más reciente. Asegúrese de que haya un valor **updated\_at** disponible la primera vez que inserte la nueva fila de datos, cuando la fecha **updated\_at** corresponda a la fecha **created\_at**.
 
-Además de optimizar para el análisis, **actualizado\_a las** Las columnas también permiten utilizar [Métodos de replicación incremental](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md), que puede ayudar a reducir la duración de los ciclos de actualización.
+Además de optimizar para el análisis, las columnas **updated\_at** también le permiten utilizar [métodos de replicación incremental](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md), que pueden ayudarle a acortar la duración de sus ciclos de actualización.
 
-## Origen de adquisición de usuario de tienda
+## Source de adquisición de usuarios de tienda
 
-Uno de los errores más comunes es el [fuente de adquisición de usuarios](../data-analyst/analysis/google-track-user-acq.md) (UAS) no se está almacenando en la base de datos operativa. En la mayoría de los casos, cuando se trata de un problema, el UAS solo se rastrea mediante [!DNL Google Analytics] o alguna otra herramienta de análisis web. Aunque estas herramientas pueden ser útiles, el almacenamiento exclusivo de UAS en ellas presenta algunos inconvenientes; por ejemplo, no es posible extraer datos de nivel de usuario de estas herramientas. Cuando es posible, suele ser un proceso difícil. Debería ser fácil obtener esta información y combinarla con datos de otras fuentes, como la información de comportamiento y transaccional que también se almacena en la base de datos.
+Uno de los errores más comunes es que [user acquisition source](../data-analyst/analysis/google-track-user-acq.md) (UAS) no está almacenada en la base de datos operativa. En la mayoría de los casos, cuando esto es un problema, UAS solo se rastrea a través de [!DNL Google Analytics] o alguna otra herramienta de análisis web. Aunque estas herramientas pueden ser útiles, el almacenamiento exclusivo de UAS en ellas presenta algunos inconvenientes; por ejemplo, no es posible extraer datos de nivel de usuario de estas herramientas. Cuando es posible, suele ser un proceso difícil. Debería ser fácil obtener esta información y combinarla con datos de otras fuentes, como la información de comportamiento y transaccional que también se almacena en la base de datos.
 
-El almacenamiento de UAS en su propia base de datos es a menudo la mayor mejora que un negocio en línea puede hacer a sus capacidades analíticas. Esto permite a UAS analizar las ventas, la participación del usuario, los períodos de devolución, el valor de duración del cliente, la pérdida y otras métricas críticas. [Estos datos son esenciales a la hora de decidir dónde invertir los recursos de marketing](../data-analyst/analysis/most-value-source-channel.md).
+El almacenamiento de UAS en su propia base de datos es a menudo la mayor mejora que un negocio en línea puede hacer a sus capacidades analíticas. Esto permite a UAS analizar las ventas, la participación del usuario, los períodos de devolución, el valor de duración del cliente, la pérdida y otras métricas críticas. [Estos datos son cruciales para decidir dónde invertir los recursos de marketing](../data-analyst/analysis/most-value-source-channel.md).
 
 Demasiadas empresas se centran únicamente en encontrar canales que proporcionen nuevos usuarios al menor coste. Si no realiza el seguimiento de la calidad de los usuarios adquiridos en cada canal, corre el riesgo de atraer usuarios que no generan valor empresarial.
 
@@ -53,7 +53,7 @@ Demasiadas empresas se centran únicamente en encontrar canales que proporcionen
 
 ### Establecer una clave principal
 
-A [clave principal](https://en.wikipedia.org/wiki/Unique_key) es una columna (o conjunto de columnas) que no cambia y que produce valores únicos dentro de una tabla. Las claves principales son muy importantes, ya que garantizan que las tablas se dupliquen correctamente en [!DNL Commerce Intelligence].
+Una [clave principal](https://en.wikipedia.org/wiki/Unique_key) es una columna (o conjunto de columnas) que no cambia y que produce valores únicos dentro de una tabla. Las claves principales son muy importantes, ya que garantizan que las tablas se replican correctamente en [!DNL Commerce Intelligence].
 
 Cuando cree claves principales, utilice un tipo de datos de número entero para la columna que aumenta automáticamente. El Adobe recomienda evitar el uso de claves principales de varias columnas siempre que sea posible.
 
@@ -61,8 +61,8 @@ Si la tabla es una vista SQL, agregue una columna que pueda actuar como clave pr
 
 ### Asignar un tipo de datos a su columna de datos
 
-Si una columna de datos no tiene un asignado [tipo de datos](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] averigua qué tipo de datos utilizar. Si el sistema no lo adivina correctamente, es posible que no pueda realizar los análisis relevantes hasta que el equipo de soporte de Adobe ajuste la columna al tipo de datos adecuado. Por ejemplo, si una columna de fecha se adivina como un tipo de datos numérico, puede generar tendencias a lo largo del tiempo utilizando esa dimensión de fecha.
+Si una columna de datos no tiene un tipo de datos [asignado](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] adivina qué tipo de datos usar. Si el sistema no lo adivina correctamente, es posible que no pueda realizar los análisis relevantes hasta que el equipo de soporte de Adobe ajuste la columna al tipo de datos adecuado. Por ejemplo, si una columna de fecha se adivina como un tipo de datos numérico, puede generar tendencias a lo largo del tiempo utilizando esa dimensión de fecha.
 
 ### Agregar prefijos a las tablas de datos si tiene varias bases de datos
 
-Si tiene varias bases de datos conectadas a [!DNL Commerce Intelligence], el Adobe recomienda agregar prefijos a las tablas para evitar confusiones. Los prefijos le ayudan a recordar de dónde provienen las métricas o dimensiones de datos.
+Si tiene más de una base de datos conectada a [!DNL Commerce Intelligence], Adobe recomienda agregar prefijos a las tablas para evitar confusiones. Los prefijos le ayudan a recordar de dónde provienen las métricas o dimensiones de datos.

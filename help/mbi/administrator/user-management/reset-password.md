@@ -6,15 +6,15 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
 
 # Restablecer la contraseña
 
-Para restablecer la contraseña, haga clic en **[!UICONTROL Reset Password]** debajo del campo de contraseña de su [!DNL Adobe Commerce Intelligence] página de inicio de sesión. Introduzca la dirección de correo electrónico de la cuenta de usuario y se enviará un mensaje de correo electrónico con un vínculo para restablecer la contraseña.
+Para restablecer su contraseña, haga clic en **[!UICONTROL Reset Password]** debajo del campo Contraseña en la página de inicio de sesión de [!DNL Adobe Commerce Intelligence]. Introduzca la dirección de correo electrónico de la cuenta de usuario y se enviará un mensaje de correo electrónico con un vínculo para restablecer la contraseña.
 
-Además, puede cambiar la contraseña en [!DNL Commerce Intelligence] mediante el uso de **[!UICONTROL Personal Settings]** página.
+Además, puede cambiar la contraseña dentro de [!DNL Commerce Intelligence] mediante la página **[!UICONTROL Personal Settings]**.
 
-Si restablece su contraseña y permanece bloqueado en su cuenta, siga [estas sugerencias](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html) para ayudar a identificar el problema.
+Si restableces tu contraseña y permaneces bloqueado en tu cuenta, sigue [estas sugerencias](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html) para ayudar a identificar el problema.

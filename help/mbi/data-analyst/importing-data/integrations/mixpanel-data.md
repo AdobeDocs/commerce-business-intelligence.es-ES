@@ -1,25 +1,25 @@
 ---
 title: Datos del Mixpanel esperados
-description: Explore las tablas de datos principales que se pueden importar desde Mixpanel a su [!DNL Commerce Intelligence] cuenta.
+description: Explore las tablas de datos principales que se pueden importar desde Mixpanel a su cuenta de  [!DNL Commerce Intelligence] .
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
-# Previsto [!DNL Mixpanel] datos
+# Se esperaban [!DNL Mixpanel] datos
 
-Después [ha conectado su [!DNL Mixpanel] account](../integrations/mixpanel.md), puede utilizar el [Administrador de Datas Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para realizar fácilmente un seguimiento de los campos de datos relevantes para su análisis.
+Después de [haber conectado tu [!DNL Mixpanel] cuenta](../integrations/mixpanel.md), puedes usar el [Administrador de Datas Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear fácilmente los campos de datos relevantes para el análisis.
 
-En este tema se exploran las tablas de datos principales desde las que se puede importar [!DNL Mixpanel] en su [!DNL Commerce Intelligence] cuenta. Las siguientes tablas se crearán en la Data Warehouse después de conectarse [!DNL Mixpanel]. Para ver todos los campos disponibles para el seguimiento, haga clic en los vínculos de la columna de nombre de tabla.
+En este tema se exploran las tablas de datos principales que puede importar de [!DNL Mixpanel] a su cuenta de [!DNL Commerce Intelligence]. Las tablas siguientes se crearán en la Data Warehouse después de conectar [!DNL Mixpanel]. Para ver todos los campos disponibles para el seguimiento, haga clic en los vínculos de la columna de nombre de tabla.
 
 >[!NOTE]
 >
->Debido a las limitaciones de la [!DNL Mixpanel] API, datos históricos: datos anteriores a siete (7) días desde la fecha de conexión a [!DNL Commerce Intelligence] - no se replica.
+>Debido a las limitaciones de la API [!DNL Mixpanel], los datos históricos (datos anteriores a siete (7) días desde la fecha de conexión a [!DNL Commerce Intelligence]) no se replican.
 
 | **Nombre de tabla** | **Descripción** |
 |-----|-----|
@@ -32,4 +32,4 @@ En este tema se exploran las tablas de datos principales desde las que se puede 
 ## Documentación relacionada
 
 * [Conectando [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

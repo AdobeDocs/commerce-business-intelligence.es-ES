@@ -11,17 +11,17 @@ ht-degree: 1%
 
 ---
 
-# [!DNL MongoDB] Modelado de datos
+# Modelado de datos de [!DNL MongoDB]
 
-Cuándo [!DNL Adobe Commerce Intelligence] extrae [!DNL MongoDB] datos, esos datos se traducen en un modelo relacional.
+Cuando [!DNL Adobe Commerce Intelligence] extrae [!DNL MongoDB] datos, estos se traducen en un modelo relacional.
 
-Las malas noticias: aunque la mayoría de los patrones de datos no plantean un problema, hay algunos que no son compatibles con [!DNL Commerce Intelligence], debido a la traducción a un modelo relacional.
+Las malas noticias: aunque la mayoría de los patrones de datos no plantean ningún problema, hay algunos que no son compatibles con [!DNL Commerce Intelligence], debido a la traducción a un modelo relacional.
 
 La buena noticia: todos estos patrones pueden evitarse.
 
 ## Matrices subanidadas {#subnested}
 
-Si su colección tiene el aspecto del ejemplo siguiente, [!DNL Commerce Intelligence] solo replica los datos en la matriz de elementos. No se extraen datos de la matriz de subelementos.
+Si su colección se parece al ejemplo siguiente, [!DNL Commerce Intelligence] solo replica los datos en la matriz de elementos. No se extraen datos de la matriz de subelementos.
 
 ```bash
     {

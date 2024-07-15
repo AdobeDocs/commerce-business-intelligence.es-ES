@@ -15,9 +15,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Requiere [Permisos de administración](../../administrator/user-management/user-management.md).
+>Requiere [permisos de administrador](../../administrator/user-management/user-management.md).
 
-Entrada **[!DNL Manage Data** > **Dashboards]**, puede administrar los permisos de usuario para los tableros que posee, eliminar los tableros que ya no necesita y establecer un tablero predeterminado. Este tema trata sobre:
+En **[!DNL Manage Data** > **Dashboards]**, puede administrar los permisos de usuario para los tableros que posee, eliminar los tableros que ya no necesita y establecer un tablero predeterminado. Este tema trata sobre:
 
 1. [Cambiar nombre de paneles](#rename)
 
@@ -33,23 +33,23 @@ Para cambiar el nombre de un tablero:
 
 1. Haga clic en el nombre del tablero que desee cambiar.
 
-2. Introduzca el nuevo nombre en la `Dashboard Name` field.
+2. Escriba el nuevo nombre en el campo `Dashboard Name`.
 
 ## Administrar permisos de usuario {#userperm}
 
-Existen tres niveles de acceso en [!DNL Commerce Intelligence] para paneles: `View`, `Edit`, y `None`.
+Hay tres niveles de acceso en [!DNL Commerce Intelligence] para los paneles: `View`, `Edit` y `None`.
 
-* `View` permite a los usuarios seleccionados ver el tablero, pero no editarlo. Los usuarios también pueden cambiar el tamaño de los gráficos, exportar datos y copiar los gráficos en sus propios paneles mediante la función Guardar como si tuvieran permisos estándar o de administrador.
+* `View` permite que los usuarios seleccionados vean el tablero, pero no lo editen. Los usuarios también pueden cambiar el tamaño de los gráficos, exportar datos y copiar los gráficos en sus propios paneles mediante la función Guardar como si tuvieran permisos estándar o de administrador.
 
-* `Edit` permite a los usuarios seleccionados editar y guardar gráficos en este panel si tienen permisos estándar o de administrador. Además, los usuarios con permisos de edición también pueden compartir tableros con otros usuarios.
+* `Edit` permite que los usuarios seleccionados editen y guarden gráficos en este panel si tienen permisos estándar o de administración. Además, los usuarios con permisos de edición también pueden compartir tableros con otros usuarios.
 
-* `None` significa que los usuarios seleccionados no pueden ver ni editar este panel.
+* `None` significa que los usuarios seleccionados no pueden ver ni editar este tablero.
 
 Los permisos de usuario se pueden cambiar de una de las dos maneras siguientes: para todos los usuarios o para un usuario individual.
 
-1. *Para cambiar los permisos de todos los usuarios,* utilice el menú desplegable situado junto a `Set all users' permissions to…` etiqueta.
+1. *Para cambiar los permisos de todos los usuarios,* use el menú desplegable situado junto a la etiqueta `Set all users' permissions to…`.
 
-1. *Para cambiar los permisos de un usuario individual,* utilice el menú desplegable situado junto al nombre del usuario para definir el nivel de acceso deseado.
+1. *Para cambiar los permisos de un usuario individual,* use el menú desplegable situado junto al nombre del usuario para establecer el nivel de acceso deseado.
 
 ## Cambio del tablero predeterminado {#default}
 
@@ -57,7 +57,7 @@ Para cambiar el tablero predeterminado de la cuenta:
 
 1. Haga clic en el nombre del tablero que desee utilizar como predeterminado.
 
-1. Haga clic **[!UICONTROL Make Default]**.
+1. Haga clic en **[!UICONTROL Make Default]**.
 
 ## Eliminar paneles {#delete}
 
@@ -65,4 +65,4 @@ Para eliminar un tablero:
 
 1. Haga clic en el nombre del tablero que desee eliminar.
 
-1. Haga clic **[!UICONTROL Delete Dashboard]**.
+1. Haga clic en **[!UICONTROL Delete Dashboard]**.

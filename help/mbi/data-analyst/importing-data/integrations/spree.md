@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Connect [!DNL Spree]
+# Conectar [!DNL Spree]
 
 ![](../../../assets/spree-commerce-logo.png)
 
-¿Quiere ver el rendimiento de su empresa o encontrar las fuentes y canales de adquisición más valiosos? Conexión de su [!DNL Spree] datos a [!DNL Commerce Intelligence] le permite responder a estas preguntas y más.
+¿Quiere ver el rendimiento de su empresa o encontrar las fuentes y canales de adquisición más valiosos? Si conecta sus datos de [!DNL Spree] a [!DNL Commerce Intelligence], podrá responder a estas preguntas y mucho más.
 
-El [!DNL Spree] La base de datos de se basa en [!DNL PostgreSQL], puede conectarlo a [!DNL Commerce Intelligence] uso del [los mismos pasos que haría para una normal [!DNL Postgres] conexión](../integrations/postgresql.md).
+La base de datos [!DNL Spree] se basa en [!DNL PostgreSQL], puede conectarla a [!DNL Commerce Intelligence] siguiendo los [mismos pasos que haría para una conexión normal [!DNL Postgres] 5}.](../integrations/postgresql.md)
 
 ## Documentación relacionada
 

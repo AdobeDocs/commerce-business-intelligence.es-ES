@@ -19,25 +19,25 @@ Una tabla de datos bidimensional entre pestañas suele ser el formato utilizado 
 
 ![](../../mbi/assets/crosstab.png)
 
-Para importar y analizar estos datos en [!DNL Commerce Intelligence], la tabla debe acoplarse en una lista unidimensional. Cuando se acopla, cada valor de datos se clasifica por varias etiquetas que se encuentran todas en una sola fila, donde cada fila es única o tendría un identificador único, por ejemplo una columna de clave principal.
+Para importar y analizar estos datos en [!DNL Commerce Intelligence], la tabla debe acoplarse a una lista unidimensional. Cuando se acopla, cada valor de datos se clasifica por varias etiquetas que se encuentran todas en una sola fila, donde cada fila es única o tendría un identificador único, por ejemplo una columna de clave principal.
 
 ![](../../mbi/assets/flattened.png)
 
 ## Formato de archivos de Excel para importar
 
-Para acoplar una tabla bidimensional con un [!DNL Excel] tabla dinámica:
+Para acoplar una tabla bidimensional con una tabla dinámica [!DNL Excel]:
 
 1. Abra el archivo con la tabla de datos bidimensional.
-1. Abra el Asistente para tablas dinámicas. Entrada [!DNL Windows], el método abreviado es `Alt-D`. Entrada [!DNL Mac OS], introduzca `Command-Option-P`.
-1. Seleccionar **[!UICONTROL Multiple consolidated ranges]** y haga clic en **[!UICONTROL Next]**.
-1. Seleccionar **[!UICONTROL I will create the page fields]** y haga clic en **[!UICONTROL Next]**.
-1. Seleccione todo el conjunto de datos en la tabla bidimensional, incluidas las etiquetas. Asegúrese de que `0` está seleccionado para el número de campos de página deseados y haga clic en **[!UICONTROL Next]**.
+1. Abra el Asistente para tablas dinámicas. En [!DNL Windows], el acceso directo es `Alt-D`. En [!DNL Mac OS], escriba `Command-Option-P`.
+1. Seleccione **[!UICONTROL Multiple consolidated ranges]** y haga clic en **[!UICONTROL Next]**.
+1. Seleccione **[!UICONTROL I will create the page fields]** y haga clic en **[!UICONTROL Next]**.
+1. Seleccione todo el conjunto de datos en la tabla bidimensional, incluidas las etiquetas. Asegúrese de que `0` esté seleccionado para el número de campos de página deseados y haga clic en **[!UICONTROL Next]**.
 1. Cree la tabla dinámica en una hoja nueva y haga clic en **[!UICONTROL Finish]**.
 1. Anule la selección de los campos de columna y fila de la lista de campos.
 1. Haga doble clic en el valor numérico resultante para mostrar los datos de origen aplanados en una hoja nueva.
    ![](../../mbi/assets/pivot-table-double-click.png)
-1. Guardar como `CSV` archivo.
+1. Guardar como archivo de `CSV`.
 
 ## Ajuste
 
-La tabla de datos se ha convertido a un formato de lista, conservando toda su información original, y ahora se puede [importado a [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) para su análisis.
+La tabla de datos se ha convertido a un formato de lista, conservando toda su información original, y ahora se puede [importar a [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) para su análisis.

@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -22,23 +22,23 @@ A continuación se indican los pasos para crear análisis con el fin de comprend
 ## Creación de una métrica
 
 El primer paso es construir una nueva métrica con los siguientes pasos:
-* Vaya a **[!UICONTROL Manage Data > Metrics]**
-   * Ver los existentes **[!UICONTROL Avg lifetime revenue]**.
+* Navegar a **[!UICONTROL Manage Data > Metrics]**
+   * Ver los(as) **[!UICONTROL Avg lifetime revenue]** existentes.
 
   >[!NOTE]
   >
-  >La tabla en la que se construye esta métrica (probablemente `customer_entity` o `sales_order` dependiendo de la capacidad de su tienda para aceptar pago y envío de invitados).
+  >La tabla en la que se construye esta métrica (probablemente `customer_entity` o `sales_order` según la capacidad de su tienda para aceptar el pago y envío de invitados).
 
-   * Clic **[!UICONTROL Create New Metric]** y seleccione la tabla de arriba.
-   * Esta métrica realiza una **Mediana** en el `Customer's lifetime revenue` columna, ordenada por `created_at`.
+   * Haga clic en **[!UICONTROL Create New Metric]** y seleccione la tabla de arriba.
+   * Esta métrica realiza una **Mediana** en la columna `Customer's lifetime revenue`, ordenada por `created_at`.
       * [!UICONTROL Filters]:
-         * Añada el `Customers we count (Saved Filter Set)` (o `Registered accounts we count`)
+         * Agregar `Customers we count (Saved Filter Set)` (o `Registered accounts we count`)
 
    * Asigne un nombre a la métrica, como `Median lifetime revenue`.
 
 ## Creación del tablero
 
-Una vez creada la métrica, puede **crear un tablero** haciendo esto:
+Una vez creada la métrica, puede **crear un tablero** haciendo lo siguiente:
 * Vaya a **[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
 * Asigne un nombre al tablero, como `Expected LTV`.
 
@@ -48,7 +48,7 @@ Una vez creada la métrica, puede **crear un tablero** haciendo esto:
 
 >[!NOTE]
 >
->Activado **[!UICONTROL Time Period:]**, el período de tiempo de cada informe se muestra como `All-time`. No dude en modificar esto para adaptarlo a sus necesidades de análisis. El Adobe recomienda que todos los informes de este tablero abarquen el mismo periodo de tiempo, como `All time`, `Year-to-date`, o `Last 365 days`.
+>El **[!UICONTROL Time Period:]**, el período de tiempo de cada informe se muestra como `All-time`. No dude en modificar esto para adaptarlo a sus necesidades de análisis. El Adobe recomienda que todos los informes de este tablero abarquen el mismo período de tiempo, como `All time`, `Year-to-date` o `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
@@ -59,9 +59,9 @@ Una vez creada la métrica, puede **crear un tablero** haciendo esto:
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
-      * Añadir [!UICONTROL filters]:
-         * [`A`] `Customer's group code` **Not Equal To** `Not Logged In`
-         * [`B`] `Customer's lifetime number of orders` **Mayor que**`0`
+      * Agregar [!UICONTROL filters]:
+         * [`A`] `Customer's group code` **No Igual A** `Not Logged In`
+         * [`B`] `Customer's lifetime number of orders` **Mayor Que**`0`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -77,7 +77,7 @@ Una vez creada la métrica, puede **crear un tablero** haciendo esto:
      [!UICONTROL Tipo de gráfico]: `Line`
    * Desmarcar `Multiple Y-Axes`
 
-* **LTV por número de pedidos de duración**
+* **LTV por número de pedidos**
    * Métrica `1`: `Avg lifetime revenue`
    * Métrica `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
@@ -89,8 +89,8 @@ Una vez creada la métrica, puede **crear un tablero** haciendo esto:
 
   >[!NOTE]
   >
-  >No agregue todos los valores para `Customer's lifetime number of orders`. En su lugar, observe un punto en el que el número de Nuevos clientes alcanza un número pequeño y añada manualmente el número de duración de cada cliente del valor de pedido a ese punto. Por ejemplo, si hay 200 clientes en un pedido, 75 en dos, 15 en tres y 3 en cuatro, agregue *1, 2 y 3*.
+  >No agregue todos los valores de `Customer's lifetime number of orders`. En su lugar, observe un punto en el que el número de Nuevos clientes alcanza un número pequeño y añada manualmente el número de duración de cada cliente del valor de pedido a ese punto. Por ejemplo, si hay 200 clientes en un pedido, 75 en dos, 15 en tres y 3 en cuatro, agregue *1, 2 y 3*.
 
-* Añadir el existente [!UICONTROL Avg customer lifetime revenue by cohort] informe.
+* Agregar el informe [!UICONTROL Avg customer lifetime revenue by cohort] existente.
 
 Después de crear los informes, consulte la imagen de la parte superior de este tema para saber cómo organizar los informes en el panel.

@@ -6,24 +6,24 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
 
-# Previsto [!DNL Salesforce] datos
+# Se esperaban [!DNL Salesforce] datos
 
-Después del [[!DNL Salesforce] configurar](../integrations/salesforce.md) se ha completado, una tabla para cada consultable [objeto](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - con nombre `sf_/\{sobject-name}` : se crea en la Data Warehouse.
+Una vez completada la instalación de [[!DNL Salesforce] setup](../integrations/salesforce.md), se creará en la Data Warehouse una tabla para cada [objeto](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) que se pueda consultar, denominado `sf_/\{sobject-name}`.
 
 >[!NOTE]
 >
 >La estructura (columnas) de cada tabla depende de los campos contenidos en el objeto.
 
-Para obtener una lista de los objetos disponibles para su organización, consulte la [!DNL Salesforce] [Obtener una documentación de lista de objetos](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). Una vez que tenga una lista de objetos, extraiga el [Diagrama de relación de entidades (ERD), sección](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) de [!DNL Salesforce] para ver cómo se relacionan las entidades entre sí.
+Para obtener una lista de los objetos disponibles para su organización, consulte la [!DNL Salesforce] [Obtener una lista de objetos](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). Una vez que tenga una lista de objetos, consulte la [sección Diagrama de relación de entidades (ERD)](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) de la documentación de [!DNL Salesforce] para ver cómo se relacionan las entidades entre sí.
 
 ## Objetos no admitidos
 
-Actualmente, [!DNL Salesforce] actualmente no expone los siguientes objetos en su API:
+Actualmente, [!DNL Salesforce] no expone los siguientes objetos en su API:
 
 * `Announcement`
 * `Attachment`
@@ -50,4 +50,4 @@ Actualmente, [!DNL Salesforce] actualmente no expone los siguientes objetos en s
 ## Relacionado:
 
 * [Conectando [!DNL Salesforce]](../integrations/salesforce.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

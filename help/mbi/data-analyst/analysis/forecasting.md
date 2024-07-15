@@ -17,4 +17,4 @@ Poder pronosticar el valor de vida útil de los clientes a medida que realizan m
 
 En esta sección, obtendrá información sobre el valor de duración de sus clientes actuales y calculará cómo aumenta el valor de duración con más pedidos.
 
-Consulte también: [Análisis del valor de duración esperado (LTV) (básico)](../../data-analyst/analysis/ess-expected-ltv.md)
+Vea también: [Análisis del valor de duración esperado (LTV) (básico)](../../data-analyst/analysis/ess-expected-ltv.md)

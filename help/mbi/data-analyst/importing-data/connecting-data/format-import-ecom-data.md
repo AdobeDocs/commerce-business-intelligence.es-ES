@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Formato e importación de datos
 
-Si utiliza una integración que actualmente no admite [!DNL Adobe Commerce Intelligence], puede seguir utilizando la variable [Función de carga de archivos](using-file-uploader.md) para introducir los datos en la Data Warehouse. En este tema se describen los formatos de datos ideales para cargar datos de comercio electrónico.
+Si está usando una integración que [!DNL Adobe Commerce Intelligence] no admite actualmente, puede seguir usando la [característica de carga de archivos](using-file-uploader.md) para introducir sus datos en su Data Warehouse. En este tema se describen los formatos de datos ideales para cargar datos de comercio electrónico.
 
 ## `Orders` tabla
 
-El `orders` debe contener una fila por cada transacción que la empresa haya realizado. Las columnas potenciales incluyen:
+La tabla `orders` debe contener una fila por cada transacción realizada por la empresa. Las columnas potenciales incluyen:
 
 | Nombre de columna | Descripción |
 |----|----|
@@ -25,7 +25,7 @@ El `orders` debe contener una fila por cada transacción que la empresa haya rea
 | `Customer` | El cliente que realizó el pedido. |
 | `Order total` | El total del pedido. Puede ser una columna basada en el cálculo, donde los valores de otras columnas, como subtotal y envío, constituyen el total de esta columna. |
 | `Currency` | La divisa en la que se pagó el pedido. Incluya si es relevante. |
-| ` Order status` | El estado del pedido, como `In Progress`, `Refunded`, o `Complete`. El valor de esta columna cambia (si no está completo). Los datos nuevos y actualizados se pueden importar mediante el [Función Anexar datos](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) en el `File Uploads` página. |
+| ` Order status` | El estado del pedido, como `In Progress`, `Refunded` o `Complete`. El valor de esta columna cambia (si no está completo). Los datos nuevos y actualizados se pueden importar mediante la [característica de datos anexados](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) en la página `File Uploads`. |
 | `Acquisition/marketing channel` | El canal de adquisición o marketing desde el que se refirió el cliente que realizó el pedido. |
 | `Order datetime` | La fecha y la hora de creación del pedido. |
 | `Order updated at` | La fecha y la hora en que se realizó la última modificación en el registro de pedido. |
@@ -34,11 +34,11 @@ El `orders` debe contener una fila por cada transacción que la empresa haya rea
 
 ## `Order detail/items` tabla {#itemstable}
 
-El `order_detail / items` La tabla debe contener una fila para cada elemento distinto en cada orden. Las columnas potenciales incluyen:
+La tabla `order_detail / items` debe contener una fila para cada elemento distinto en cada orden. Las columnas potenciales incluyen:
 
 | Nombre de columna | Descripción |
 |----|----|
-| `Order item ID` | El ID de elemento de pedido debe ser único para cada fila de la tabla. Además, esto suele ser el `primary key` para la tabla. |
+| `Order item ID` | El ID de elemento de pedido debe ser único para cada fila de la tabla. Además, este suele ser el `primary key` de la tabla. |
 | `Order ID` | El ID del pedido. |
 | `Product ID` | ID del producto. |
 | `Product name` | El nombre del producto. |
@@ -47,7 +47,7 @@ El `order_detail / items` La tabla debe contener una fila para cada elemento dis
 
 ## `Customers` tabla {#customerstable}
 
-El `customers` debe contener una fila por cada cuenta de cliente. Las columnas potenciales incluyen:
+La tabla `customers` debe contener una fila por cada cuenta de cliente. Las columnas potenciales incluyen:
 
 | Nombre de columna | Descripción |
 |----|----|
@@ -60,7 +60,7 @@ El `customers` debe contener una fila por cada cuenta de cliente. Las columnas p
 
 ## `Subscription payments` tabla
 
-El `subscriptions` La tabla debe contener una fila por cada pago de suscripción. Las columnas potenciales incluyen:
+La tabla `subscriptions` debe contener una fila por cada pago de suscripción. Las columnas potenciales incluyen:
 
 | Nombre de columna | Descripción |
 |----|----|

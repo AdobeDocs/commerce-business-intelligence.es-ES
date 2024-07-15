@@ -6,24 +6,24 @@ role: Admin, User
 feature: Accounts, User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
 
 # Restringir el acceso
 
-Cuando crea un túnel SSH a su servidor, no es necesario [!DNL Adobe Commerce Intelligence] para tener acceso a cualquier cosa excepto a la base de datos. Si no lo desea [!DNL Commerce Intelligence] para tener acceso completo al servidor que aloja la base de datos, puede restringir el acceso forzando el [!DNL Commerce Intelligence Linux] usuario en un [bash shell restringido](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
+Cuando crea un túnel SSH al servidor, no es necesario que [!DNL Adobe Commerce Intelligence] tenga acceso a nada excepto a la base de datos. Si no desea que [!DNL Commerce Intelligence] tenga acceso total al servidor que aloja su base de datos, puede restringir el acceso forzando al usuario [!DNL Commerce Intelligence Linux] a un [shell de bash restringido](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
 
 Puede que haya adivinado por el nombre, pero se usa un shell de bash restringido para configurar un entorno más controlado que el shell estándar. Lo importante de este tipo de shell es que los usuarios de shell restringidos no pueden acceder a las funciones del sistema ni realizar ningún tipo de modificación.
 
-Para restringir el [!DNL Commerce Intelligence Linux] usuario, debe hacer dos cosas:
+Para restringir el usuario [!DNL Commerce Intelligence Linux], debe hacer dos cosas:
 
 1. Cambie la variable de entorno PATH para que sea la cadena vacía. Esto significa que el usuario no puede acceder a los ejecutables del sistema.
 
 1. Asegúrese de que el shell ejecutado sea `bash -r`
 
-Ambos se pueden realizar dentro del `authorized_keys` archivo en el inicio del usuario `dir/.ssh` como parte del comando que se ejecuta cuando el usuario inicia sesión. Tiene un aspecto similar al siguiente:
+Ambos se pueden realizar dentro del archivo `authorized_keys` en el directorio principal `dir/.ssh` del usuario como parte del comando que se ejecuta cuando el usuario inicia sesión. Tiene un aspecto similar al siguiente:
 
 ```bash
 ... other keys ...
@@ -31,4 +31,4 @@ command="env PATH="" /bin/bash -r" <rjmetrics public key goes here>
 ... other keys ...
 ```
 
-Cuando se complete, el usuario que ha creado para [!DNL Commerce Intelligence] no puede realizar cambios en el sistema.
+Cuando se complete esto, el usuario que creó para [!DNL Commerce Intelligence] no podrá realizar cambios en el sistema.

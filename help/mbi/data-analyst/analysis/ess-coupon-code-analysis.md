@@ -23,13 +23,13 @@ En este tema se explican los pasos necesarios para crear este análisis con el f
 
 En primer lugar, una nota sobre cómo se realiza el seguimiento de los códigos de cupones. Si un cliente aplica un cupón a un pedido, ocurren tres cosas:
 
-* Un descuento se refleja en la variable `base_grand_total` importe (su `Revenue` en Commerce Intelligence)
-* El código de cupón se almacena en `coupon_code` field. Si este campo es NULL (vacío), el pedido no tiene un cupón asociado.
-* La cantidad descontada se almacena en `base_discount_amount`. Según la configuración, este valor puede parecer negativo o positivo.
+* Un descuento se refleja en la cantidad de `base_grand_total` (su métrica de `Revenue` en Commerce Intelligence)
+* El código de cupón se almacena en el campo `coupon_code`. Si este campo es NULL (vacío), el pedido no tiene un cupón asociado.
+* La cantidad con descuento se almacena en `base_discount_amount`. Según la configuración, este valor puede parecer negativo o positivo.
 
 A partir de la versión 2.4.7 de Commerce, un cliente puede aplicar más de un código de cupón a un pedido. En este caso:
 
-* Todos los códigos de cupones aplicados se almacenan en la variable `coupon_code` campo de `sales_order_coupons`. El primer código de cupón aplicado también se almacena en la variable `coupon_code` campo de `sales_order`. Si este campo es NULL (vacío), el pedido no tiene un cupón asociado.
+* Todos los códigos de cupón aplicados se almacenan en el campo `coupon_code` de `sales_order_coupons`. El primer código de cupón aplicado también se almacena en el campo `coupon_code` de `sales_order`. Si este campo es NULL (vacío), el pedido no tiene un cupón asociado.
 
 ## Creación de una métrica
 
@@ -37,10 +37,10 @@ El primer paso es construir una nueva métrica con los siguientes pasos:
 
 * Vaya a **[!UICONTROL Manage Data > Metrics > Create New Metric]**.
 
-* Seleccione el `sales_order`.
-* Esta métrica realiza una **Sum** en el **base_discount_amount** columna, ordenada por **created_at**.
+* Seleccione `sales_order`.
+* Esta métrica realiza una **Suma** en la columna **base_discount_amount**, ordenada por **created_at**.
    * [!UICONTROL Filters]:
-      * Añada el `Orders we count` (Conjunto de filtros guardado)
+      * Agregar `Orders we count` (conjunto de filtros guardado)
       * Añada lo siguiente:
          * `coupon_code`**NO ES**`[NULL]`
       * Asigne un nombre a la métrica, como `Coupon discount amount`.
@@ -59,7 +59,7 @@ El primer paso es construir una nueva métrica con los siguientes pasos:
 
 >[!NOTE]
 >
->El [!UICONTROL Time Period]La ** de cada informe se enumera como `All-time`. No dude en modificar esto para adaptarlo a sus necesidades de análisis. El Adobe recomienda que todos los informes de este tablero abarquen el mismo periodo de tiempo, como `All time`, `Year-to-date`, o `Last 365 days`.
+>El [!UICONTROL Time Period]** de cada informe se muestra como `All-time`. No dude en modificar esto para adaptarlo a sus necesidades de análisis. El Adobe recomienda que todos los informes de este tablero abarquen el mismo período de tiempo, como `All time`, `Year-to-date` o `Last 365 days`.
 
 * **Pedidos con cupones**
    * 
@@ -101,7 +101,7 @@ El primer paso es construir una nueva métrica con los siguientes pasos:
      [!INTERVALO UICONTROL]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Average lifetime revenue: clientes con cupones adquiridos**
+* **Ingresos promedio por vida útil: Clientes adquiridos con cupones**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Añadir filtro:
          * [`A`] `Customer's first order's coupon_code` **NO ES** `[NULL]`
@@ -111,7 +111,7 @@ El primer paso es construir una nueva métrica con los siguientes pasos:
      [!INTERVALO UICONTROL]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Ingresos promedio por vida útil: clientes adquiridos sin cupón**
+* **Ingresos promedio de por vida: clientes adquiridos sin cupón**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Añadir filtro:
          * [A] `Customer's first order's coupon_code` **ES**`[NULL]`
@@ -132,7 +132,7 @@ El primer paso es construir una nueva métrica con los siguientes pasos:
          * [`A`] `coupon_code` **NO ES**`[NULL]`
          * [`B`] `Customer's order number` **Igual a** `1`
 
-      * Cambiar nombre:  `Net revenue`
+      * Cambiar nombre: `Net revenue`
 
    * Métrica `3`: `Coupon discount amount`
       * Añadir filtro:
@@ -144,7 +144,7 @@ El primer paso es construir una nueva métrica con los siguientes pasos:
       * 
         [!UICONTROL Format]: `Currency`
 
-   * Crear fórmula:**% descontado**
+   * Crear fórmula:**% con descuento**
       * Fórmula: `(C / (B - C))`
       * 
         [!UICONTROL Format]: `Percentage`
@@ -161,7 +161,7 @@ El primer paso es construir una nueva métrica con los siguientes pasos:
      [!UICONTROL Tipo de gráfico]: `Table`
 
 * **Ingresos promedio por vida útil por cupón de primer pedido**
-   * [!UICONTROL Metric]:**Ingresos promedio por vida útil**
+   * [!UICONTROL Metric]:**Ingresos promedio por duración**
       * Añadir filtro:
          * [`A`] `coupon_code` **ES**`[NULL]`
 
@@ -182,7 +182,7 @@ El primer paso es construir una nueva métrica con los siguientes pasos:
    * 
      [!UICONTROL Tipo de gráfico]: **Column**
 
-* **Nuevos clientes por adquisición de cupones/no cupones**
+* **Nuevos clientes por adquisición de cupones / no cupones**
    * Métrica `1`: `New customers`
       * Añadir filtro:
          * [`A`] `Customer's first order's coupon_code` **NO ES** `[NULL]`
@@ -203,6 +203,6 @@ Después de crear los informes, consulte la imagen de la parte superior de este 
 
 >[!NOTE]
 >
->A partir de Adobe Commerce 2.4.7, los clientes pueden utilizar el **quote_coupons** y **sales_order_coupons** para obtener información sobre cómo los clientes utilizan varios cupones.
+>A partir de Adobe Commerce 2.4.7, los clientes pueden utilizar las tablas **quote_coupons** y **sales_order_coupons** para obtener información sobre cómo los clientes utilizan varios cupones.
 
 ![](../../assets/multicoupon_relationship_tables.png)

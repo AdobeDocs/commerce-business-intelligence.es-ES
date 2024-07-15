@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Uso de un informe
 
-Uso de informes en [!DNL Adobe Commerce Intelligence] para ayudarle a responder preguntas comerciales: si simplemente desea ver los ingresos de este mes en comparación con los del año pasado o comprender los costes de adquisición de su última [!DNL Google AdWords] campaña.
+Use los informes de [!DNL Adobe Commerce Intelligence] para responder preguntas comerciales: si simplemente desea ver los ingresos de este mes en comparación con los del año pasado o comprender los costos de adquisición de la última campaña [!DNL Google AdWords].
 
 ¿Cómo se ve exactamente ese camino de la pregunta a la respuesta?
 
@@ -45,26 +45,26 @@ En un nivel superior, necesita saber dónde encontrar estos datos en la base de 
 
 * La tabla que registra una fila de datos cada vez que alguien se registra
 * La tabla que registra una fila de datos que cada vez que alguien realiza una compra
-* Columna que se puede utilizar para unir o hacer referencia al `purchase` a la tabla `customer` tabla: esto nos permite saber quién realizó una compra
+* La columna que se puede usar para unir o hacer referencia a la tabla `purchase` a la tabla `customer` - esto nos permite saber quién hizo una compra
 
 En un nivel más granular, debe identificar los campos de datos exactos que se utilizan para este análisis:
 
 * La tabla de datos y la columna que contienen la fecha de registro de un cliente: por ejemplo `user.created\_at`
-* La tabla de datos y la columna que contienen una fecha de compra: por ejemplo `order.created\_at`
+* Tabla de datos y columna que contienen una fecha de compra: por ejemplo `order.created\_at`
 
 ## Creación de columnas de datos para su análisis
 
 Además de las columnas de datos nativos descritas anteriormente, también necesita un conjunto de campos de datos calculados para habilitar este análisis, que incluye:
 
-* `Customer's first purchase date` que devuelve el de un usuario específico `MIN(order.created_at`)
+* `Customer's first purchase date` que devuelve `MIN(order.created_at` de un usuario específico)
 
 A continuación, se utiliza para crear:
 
 * `Time between a customer's registration date and first purchase date`, que devuelve el tiempo de un usuario específico transcurrido entre el registro y la fecha de la primera compra. Esta es la base de la métrica más adelante.
 
-Ambos campos deben crearse en el nivel de usuario (por ejemplo, en la variable `user` tabla). Esto permite que los usuarios puedan normalizar el análisis promedio (es decir, el denominador en este cálculo de promedio es el recuento de usuarios).
+Ambos campos deben crearse en el nivel de usuario (por ejemplo, en la tabla `user`). Esto permite que los usuarios puedan normalizar el análisis promedio (es decir, el denominador en este cálculo de promedio es el recuento de usuarios).
 
-Aquí es donde [!DNL Commerce Intelligence] ¡entra! Puede usar su [!DNL Commerce Intelligence] Data Warehouse para crear las columnas anteriores. Póngase en contacto con el equipo de analistas de Adobe y proporciónenos la definición específica de sus nuevas columnas para la creación. También puede utilizar la variable [Editor de columnas](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+¡Aquí es donde [!DNL Commerce Intelligence] interviene! Puede usar su Data Warehouse [!DNL Commerce Intelligence] para crear las columnas anteriores. Póngase en contacto con el equipo de analistas de Adobe y proporciónenos la definición específica de sus nuevas columnas para la creación. También puede usar el [Editor de columnas](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 Se recomienda evitar la creación de estos campos de datos calculados directamente en la base de datos, ya que supone una carga innecesaria para los servidores de producción.
 
@@ -75,13 +75,13 @@ Ahora que tiene los campos de datos requeridos para el análisis, es hora de bus
 Aquí desea realizar el siguiente cálculo:
 
 
-_[SUMA de `Time between a customer's registration date and first purchase date`] / [Número total de clientes que se registraron y compraron]_
+_[SUMA de `Time between a customer's registration date and first purchase date`] / [Cantidad total de clientes que se registraron y compraron]_
 
-Y desea ver este cálculo trazado en el tiempo, o tendencias, según la fecha de registro de un cliente. Y aquí está cómo [crear esta métrica](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
+Y desea ver este cálculo trazado en el tiempo, o tendencias, según la fecha de registro de un cliente. Y así es como [crear esta métrica](../../data-user/reports/ess-manage-data-metrics.md) en [!DNL Commerce Intelligence]:
 
-1. Ir a **[!UICONTROL Data]** y seleccione la `Metrics` pestaña.
-1. Clic **[!UICONTROL Add New Metric]** y seleccione la `user` (donde creó las dimensiones anteriores).
-1. En el menú desplegable, seleccione `Average` en el`Time between a customer's registration date and first purchase date` en la columna `user` tabla ordenada por el `Customer's registration date`  columna.
+1. Vaya a **[!UICONTROL Data]** y seleccione la ficha `Metrics`.
+1. Haga clic en **[!UICONTROL Add New Metric]** y seleccione la tabla `user` (donde creó las dimensiones anteriores).
+1. En el menú desplegable, seleccione `Average` en la columna `Time between a customer's registration date and first purchase date` de la tabla `user` ordenada por la columna `Customer's registration date`.
 1. Añada los filtros o conjuntos de filtros relevantes.
 
 Esta métrica ya está lista.
@@ -90,7 +90,7 @@ Esta métrica ya está lista.
 
 Con la nueva métrica configurada, puede utilizarla para informar sobre el tiempo promedio entre el registro y la fecha de la primera compra por fecha de registro.
 
-Simplemente vaya a cualquier panel y [creación de un informe](../../data-user/reports/ess-manage-data-metrics.md) mediante la métrica creada anteriormente.
+Simplemente, ve a cualquier panel y [crea un informe](../../data-user/reports/ess-manage-data-metrics.md) con la métrica creada anteriormente.
 
 ### `Visual Report Builder` {#visualrb}
 
@@ -99,7 +99,7 @@ Simplemente vaya a cualquier panel y [creación de un informe](../../data-user/r
 |  |  |
 |--- |--- |
 | **Esto es perfecto para...** | **Esto no es tan bueno para...** |
-| - Todos los niveles de experiencia en análisis/tecnología<br>: Creación rápida de informes<br>: Creación de análisis para compartirlos con otros usuarios | - Análisis que requieren funciones específicas de SQL<br>- Prueba de nuevas columnas: las columnas calculadas dependen de los ciclos de actualización para la población de datos inicial, mientras que las creadas con SQL no lo son. |
+| - Todos los niveles de experiencia de análisis/tecnología<br>- Creación rápida de informes<br>- Creación de análisis para compartirlos con otros usuarios | - Análisis que requieren funciones específicas de SQL<br>- Prueba de nuevas columnas: las columnas calculadas dependen de los ciclos de actualización para la población de datos inicial, mientras que las creadas con SQL no. |
 
 {style="table-layout:auto"}
 
@@ -109,9 +109,9 @@ Simplemente vaya a cualquier panel y [creación de un informe](../../data-user/r
 
 Al crear informes que se comparten con otros miembros de su equipo, Adobe recomienda añadir descripciones que permitan a otros usuarios comprender mejor su análisis.
 
-1. Clic **[!UICONTROL i]** al principio de cualquier informe.
+1. Haga clic en **[!UICONTROL i]** en la parte superior de cualquier informe.
 1. Escriba una descripción en el cuadro de texto.
-1. Haga clic **[!UICONTROL Save Description]**.
+1. Haga clic en **[!UICONTROL Save Description]**.
 
 Consulte lo siguiente:
 
@@ -119,11 +119,11 @@ Consulte lo siguiente:
 
 #### Exportación de informes como imágenes
 
-¿Necesita incluir un informe en una presentación o documento? Cualquier informe se puede guardar como imagen (en formato PNG, PDF o SVG) utilizando `Report Options` , situado en la esquina superior derecha de cada informe.
+¿Necesita incluir un informe en una presentación o documento? Cualquier informe se puede guardar como una imagen (en formato PNG, PDF o SVG) mediante el menú `Report Options`, que se encuentra en la esquina superior derecha de cada informe.
 
 1. Haga clic en el icono de engranaje en la esquina superior derecha de cualquier informe.
 1. En el menú desplegable, seleccione `Enlarge`.
-1. Cuando el informe se amplíe, haga clic en **[!UICONTROL Download]** en la esquina superior derecha del informe.
+1. Cuando se agrande el informe, haga clic en **[!UICONTROL Download]**, en la esquina superior derecha del informe.
 1. Seleccione el formato de imagen preferido en la lista desplegable. La descarga comienza inmediatamente.
 
 Consulte lo siguiente:

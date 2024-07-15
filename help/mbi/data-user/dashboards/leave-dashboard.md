@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # Dejar (dejar de compartir) un tablero
 
-¿Cambiando de equipo? En medio de la primavera limpiando su [!DNL Commerce Intelligence] ¿Cuenta? Para salir o dejar de compartir un tablero, haga clic en **[!UICONTROL Shared]** en la parte superior de la pantalla mientras está en el panel que desea dejar. Clic **[!UICONTROL Leave this Dashboard]** para quitarte de encima.
+¿Cambiando de equipo? ¿En mitad de la primavera limpiando tu cuenta de [!DNL Commerce Intelligence]? Para salir o dejar de compartir un panel, haga clic en **[!UICONTROL Shared]** en la parte superior de la pantalla mientras está en el panel que desea salir. Haga clic en **[!UICONTROL Leave this Dashboard]** para eliminarse a sí mismo.
 
 Ejemplo:
 
-![dejar panel](../../assets/Leave_Dashboard.gif)
+![dejar tablero](../../assets/Leave_Dashboard.gif)

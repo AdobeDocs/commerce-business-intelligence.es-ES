@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Información de datos del gráfico
 
-Elija su elección: inglés claro o la definición de la métrica. Los usuarios pueden realizar anotaciones en gráficos y ver las métricas y fórmulas de un gráfico haciendo clic en el _Información_ en la esquina superior derecha de cualquier gráfico.
+Elija su elección: inglés claro o la definición de la métrica. Los usuarios pueden anotar gráficos y ver las métricas y fórmulas de un gráfico haciendo clic en el icono _Información_ en la esquina superior derecha de cualquier gráfico.
 
 ## Relacionado:
 

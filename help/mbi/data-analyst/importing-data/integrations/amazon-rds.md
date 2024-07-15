@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Connect [!DNL Amazon RDS]
+# Conectar [!DNL Amazon RDS]
 
 [!DNL Amazon Relational Database Services (RDS)] es un servicio de base de datos administrada que se ejecuta en motores de base de datos con los que probablemente ya esté familiarizado:
 
@@ -19,41 +19,41 @@ ht-degree: 0%
 * [[!DNL Microsoft SQL]](../integrations/microsoft-sql-server.md)
 * [[!DNL PostgreSQL]](../integrations/postgresql.md)
 
-Los pasos para conectar su [!DNL RDS] Las instancias de varían en función del tipo de base de datos que utilice y de si está utilizando una conexión cifrada (como una [`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)), pero aquí están los conceptos básicos.
+Los pasos para conectar su instancia de [!DNL RDS] varían, según el tipo de base de datos que esté usando y si está usando una conexión cifrada (como una [`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)), pero aquí están los conceptos básicos.
 
-## Autorizar [!DNL Commerce Intelligence] para acceder a la base de datos
+## Autorizar a [!DNL Commerce Intelligence] para acceder a su base de datos
 
-En la página de credenciales (**[!UICONTROL Manage Data** > **Integrations]**) para cada base de datos, verá un cuadro que contiene las direcciones IP que debe autorizar para conectarse[!DNL RDS] hasta [!DNL Commerce Intelligence]: `54.88.76.97` y `34.250.211.151`. Aquí tiene un vistazo a la `MySQL credentials` , donde resaltó el cuadro Dirección IP:
+En la página de credenciales (**[!UICONTROL Manage Data** > **Integrations]**) de cada base de datos, verá un cuadro que contiene las direcciones IP que debe autorizar para conectar R[!DNL RDS] a [!DNL Commerce Intelligence]: `54.88.76.97` y `34.250.211.151`. Aquí tiene un vistazo a la página de `MySQL credentials`, en la que resaltó el cuadro Dirección IP:
 
 ![](../../../assets/RDS_IP.png)
 
-Para [!DNL Commerce Intelligence] para conectarse correctamente con su [!DNL RDS] Por ejemplo, debe agregar estas direcciones IP al grupo de seguridad de base de datos correspondiente a través de la consola de administración de AWS. Estas direcciones IP se pueden añadir a un grupo existente o puede crear una. Lo importante es que el grupo esté autorizado para acceder a la instancia a la que desea conectarse [!DNL Commerce Intelligence].
+Para que [!DNL Commerce Intelligence] se conecte correctamente con su instancia de [!DNL RDS], debe agregar estas direcciones IP al grupo de seguridad de base de datos apropiado a través de la consola de administración de AWS. Estas direcciones IP se pueden agregar a un grupo existente o puede crear una. Lo importante es que el grupo tenga autorización para acceder a la instancia a la que desea conectarse [!DNL Commerce Intelligence].
 
-Al añadir la variable [!DNL Commerce Intelligence] Direcciones IP, asegúrese de añadir una `/32` hasta el final de la dirección para indicar a [!DNL Amazon] Compruebe que sea una dirección IP exacta. No se preocupe; la interfaz de AWS deja claro que es necesario.
+Al agregar las [!DNL Commerce Intelligence] direcciones IP, asegúrese de agregar `/32` al final de la dirección para indicar a [!DNL Amazon] que se trata de una dirección IP exacta. No se preocupe; la interfaz de AWS deja claro que es necesario.
 
-## Crear un `Linux` usuario para [!DNL Commerce Intelligence] {#linux}
+## Crear un usuario `Linux` para [!DNL Commerce Intelligence] {#linux}
 
 >[!NOTE]
 >
->Este paso solo es necesario si utiliza una conexión cifrada. Para obtener instrucciones sobre cómo hacerlo, consulte el tema de configuración de la base de datos que está utilizando (por ejemplo: MySQL). El `Linux` El usuario nos permite crear un `SSH tunnel`, que es el método más seguro de envío de datos a través de Internet.
+>Este paso solo es necesario si utiliza una conexión cifrada. Para obtener instrucciones sobre cómo hacerlo, consulte el tema de configuración de la base de datos que está utilizando (por ejemplo: MySQL). El usuario `Linux` nos permite crear un `SSH tunnel`, que es el método más seguro de enviar datos a través de Internet.
 
 ## Crear un usuario de base de datos para [!DNL Commerce Intelligence]
 
-Esta es la parte del proceso en la que, según la base de datos que utilice, los pasos varían. La idea es la misma, sin embargo, para la que crea un usuario [!DNL Commerce Intelligence] que se utiliza para acceder a la base de datos. Instrucciones para crear una base de datos [!DNL Commerce Intelligence] El usuario se encuentra en el tema de configuración de la base de datos que está utilizando.
+Esta es la parte del proceso en la que, según la base de datos que utilice, los pasos varían. La idea es la misma, sin embargo, usted crea un usuario para [!DNL Commerce Intelligence] que se utiliza para acceder a su base de datos. Las instrucciones para crear un usuario de base de datos [!DNL Commerce Intelligence] se encuentran en el tema de configuración de la base de datos que está utilizando.
 
-## Introducir información de conexión en [!DNL Commerce Intelligence]
+## Escriba la información de conexión en [!DNL Commerce Intelligence]
 
-Después de conceder [!DNL Commerce Intelligence] acceder a su instancia y crear un usuario para nosotros, lo último que debe hacer es introducir la información de conexión en [!DNL Commerce Intelligence].
+Después de conceder a [!DNL Commerce Intelligence] acceso a su instancia y crear un usuario para nosotros, lo último que debe hacer es escribir la información de conexión en [!DNL Commerce Intelligence].
 
-Las páginas de credenciales para `MySQL`, `Microsoft SQL`, y `PostgreSQL` se accede a través de la `Integrations` página (**[!UICONTROL Manage Data** > **Integrations]**) haciendo clic en **[!UICONTROL Add Integration]**. Cuando se muestre la lista de integraciones, haga clic en el icono de la base de datos que está utilizando para ir a la página de credenciales. Si actualmente no tiene acceso a la integración que necesita, póngase en contacto con el equipo de cuenta de Adobe.
+Se tiene acceso a las páginas de credenciales de `MySQL`, `Microsoft SQL` y `PostgreSQL` a través de la página `Integrations` (**[!UICONTROL Manage Data** > **Integrations]**) haciendo clic en **[!UICONTROL Add Integration]**. Cuando se muestre la lista de integraciones, haga clic en el icono de la base de datos que está utilizando para ir a la página de credenciales. Si actualmente no tiene acceso a la integración que necesita, póngase en contacto con el equipo de cuenta de Adobe.
 
 Para terminar de crear la conexión, necesita la siguiente información:
 
-* La dirección pública de la instancia de RDS: Esto se puede encontrar en la [!DNL AWS] consola de administración.
-* El puerto que utiliza la instancia de base de datos: Algunas bases de datos tienen un puerto predeterminado, que rellena automáticamente la variable `Port` field. Esta información también se encuentra en la documentación de configuración de la base de datos.
-* Nombre de usuario y contraseña del usuario que ha creado para [!DNL Commerce Intelligence].
+* La dirección pública de su instancia de RDS: Esto se encuentra en la consola de administración de [!DNL AWS].
+* El puerto que utiliza la instancia de base de datos: algunas bases de datos tienen un puerto predeterminado, que rellena automáticamente el campo `Port`. Esta información también se encuentra en la documentación de configuración de la base de datos.
+* Nombre de usuario y contraseña del usuario que creó para [!DNL Commerce Intelligence].
 
-Si utiliza una conexión cifrada, cambie el `Encrypted` active la página credenciales de la base de datos para `Yes`. Esto muestra un formulario adicional para configurar el cifrado:
+Si está usando una conexión cifrada, cambie el conmutador `Encrypted` de la página de credenciales de la base de datos a `Yes`. Esto muestra un formulario adicional para configurar el cifrado:
 
 ![](../../../assets/sql-integration-encrypted-yes.png)
 

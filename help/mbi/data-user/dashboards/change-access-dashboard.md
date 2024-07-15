@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Cambio del acceso a los paneles compartidos
 
-El acceso a los paneles se puede cambiar en cualquier momento siguiendo los mismos pasos para [compartir el tablero inicialmente](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}. En la lista de usuarios que se muestra en la `Share Dashboard` , actualice los permisos de usuario/organización según sea necesario y haga clic en **[!UICONTROL Save Changes]** para actualizar.
+El acceso a los paneles se puede cambiar en cualquier momento siguiendo los mismos pasos para [compartir inicialmente el panel](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}. En la lista de usuarios que se muestra en el menú `Share Dashboard`, actualice los permisos de usuario/organización según sea necesario y haga clic en **[!UICONTROL Save Changes]** para actualizar.

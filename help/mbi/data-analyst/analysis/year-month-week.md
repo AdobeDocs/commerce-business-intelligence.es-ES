@@ -15,20 +15,20 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este tema contiene instrucciones para los clientes que utilizan la arquitectura original y la nueva arquitectura. Estás en el [nueva arquitectura](../../administrator/account-management/new-architecture.md) si tiene el [!DNL _Vistas de Data Warehouse_] disponible tras seleccionar [!DNL Manage Data] en la barra de herramientas principal.
+>Este tema contiene instrucciones para los clientes que utilizan la arquitectura original y la nueva arquitectura. Se encuentra en la [nueva arquitectura](../../administrator/account-management/new-architecture.md) si tiene disponible la sección [!DNL _Vistas de la Data Warehouse_] después de seleccionar [!DNL Manage Data] en la barra de herramientas principal.
 
 Report Builder le permite ver fácilmente las tendencias a lo largo del tiempo y cambiar la perspectiva de los períodos de tiempo que desee comparar. En este tema se muestra cómo configurar un tablero para que profundice un nivel y le permita crear informes para el análisis semana tras semana, mes tras mes y año tras año.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-Antes de comenzar, debe revisar las perspectivas de exploración con más detalle [aquí](../../tutorials/using-visual-report-builder.md) y opciones de tiempo independientes [aquí](../../tutorials/time-options-visual-rpt-bldr.md).
+Antes de comenzar, debería revisar las perspectivas de exploración con más detalle [aquí](../../tutorials/using-visual-report-builder.md) y las opciones de tiempo independientes [aquí](../../tutorials/time-options-visual-rpt-bldr.md).
 
 Este análisis contiene [columnas calculadas avanzadas](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Columnas calculadas
 
 * **`Sales_flat_order`** tabla
-* **Arquitectura original:** las siguientes columnas las crea un analista como parte de su `[YoY WoW MoM ANALYSIS]` boleto
+* **Arquitectura original:** las siguientes columnas las crea un analista como parte de su vale `[YoY WoW MoM ANALYSIS]`
 * `created_at (month-day)`
 * `created_at (month)`
 * `created_at (day of the month)`
@@ -49,7 +49,7 @@ Ninguna.
 
 >[!NOTE]
 >
->Asegúrese de lo siguiente [añadir todas las columnas nuevas como dimensiones a las métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de crear nuevos informes.
+>Asegúrese de [agregar todas las columnas nuevas como dimensiones a las métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de crear nuevos informes.
 
 ## Informes
 
@@ -59,7 +59,7 @@ Ninguna.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
-   * [!UICONTROL Show top/bottom]: 100 % superior ordenado por **`created_at (month-day)`***
+   * [!UICONTROL Show top/bottom]: 100% superior ordenado por **`created_at (month-day)`***
 
 * Métrica `A`: `This year`
 * Métrica `B`: `Last year`
@@ -78,9 +78,9 @@ Ninguna.
 
    * Mostrar superior/inferior: 100% superior ordenado por **`created_at (day of month)`***
 
-* Métrica `A`: Este mes*
+* Métrica `A`: este mes*
 * Métrica `B`: mes pasado*
-* [!UICONTROL Time period]: hace un mes a hace 0 meses
+* [!UICONTROL Time period]: hace un mes hasta hace 0 meses
 * 
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
@@ -93,7 +93,7 @@ Ninguna.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
-   * [!UICONTROL Show top/bottom]: 100 % superior ordenado por `created_at (day of week)`
+   * [!UICONTROL Show top/bottom]: 100% superior ordenado por `created_at (day of week)`
 
 * Métrica `A`: `This week`
 * Métrica `B`: `Last week`
@@ -110,7 +110,7 @@ Ninguna.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
-   * [!UICONTROL Show top/bottom]: 100 % superior ordenado por `created_at (hour of day)`
+   * [!UICONTROL Show top/bottom]: 100% superior ordenado por `created_at (hour of day)`
 
 * Métrica `A`: `Today`
 * Métrica B: `Yesterday`

@@ -6,38 +6,38 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
 
-# [!DNL Google Analytics] Atribución de y UTM
+# Atribución de [!DNL Google Analytics] y UTM
 
-Es fundamental para [origen de adquisición de usuario de seguimiento](../../data-analyst/analysis/google-track-user-acq.md) hasta [identificar las campañas publicitarias con mejor rendimiento](../../data-analyst/analysis/most-value-source-channel.md). En este tema se exploran las [!DNL Google Analytics] proceso de atribución de origen. En otras palabras, qué parte de la información se registra cuando.
+Es fundamental para [rastrear el origen de adquisición de usuarios](../../data-analyst/analysis/google-track-user-acq.md) para [identificar las campañas publicitarias con mejor rendimiento](../../data-analyst/analysis/most-value-source-channel.md). En este tema se explora el proceso de atribución de origen de [!DNL Google Analytics]. En otras palabras, qué parte de la información se registra cuando.
 
 ## ¿Qué es la atribución?
 
-`Attribution` se trata de especificar una fuente de referencia de una actividad concreta. Estas actividades suelen ser macro-conversiones o micro-conversiones, siendo las macro cosas como **compras**, microser cosas como **registro, registro por correo electrónico, comentario en el blog,** y demás.
+`Attribution` trata de especificar un origen de referencia de una actividad en particular. Estas actividades suelen ser conversiones o microconversiones, ya que las macros son cosas como **compras**, las micro son cosas como **registro, registro por correo electrónico, comentario en el blog**, etc.
 
 Lo ideal es que, cada vez que se produzca un evento de conversión, se registre un origen de referencia. Pero, ¿cómo se determina la fuente?
 
-La realidad es que los usuarios a menudo vienen de muchas fuentes antes de golpear / cometer una conversión micro o macro. Por ejemplo, pueden llegar al sitio a través de la información orgánica, luego salir, luego venir a través de la búsqueda de pago, luego salir y luego venir directamente al sitio en sí. Esta información de seguimiento de la fuente se proporciona a menudo al sitio a través de parámetros de UTM, pero también hay sistemas más sofisticados. Para sus fines, céntrese en [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
+La realidad es que los usuarios a menudo vienen de muchas fuentes antes de golpear / cometer una conversión micro o macro. Por ejemplo, pueden llegar al sitio a través de la información orgánica, luego salir, luego venir a través de la búsqueda de pago, luego salir y luego venir directamente al sitio en sí. Esta información de seguimiento de la fuente se proporciona a menudo al sitio a través de parámetros de UTM, pero también hay sistemas más sofisticados. Para tus propósitos, céntrate en [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
 
-## ¿Cómo? [!DNL Google Analytics] ¿atribuir fuentes de referencia a través de parámetros UTM?
+## ¿Cómo atribuye [!DNL Google Analytics] fuentes de referencia a través de parámetros de UTM?
 
-Cuando se especifican los parámetros de UTM en la dirección URL, estos se analizan y se colocan en una [!DNL Google Analytics] [cookie](https://en.wikipedia.org/wiki/HTTP_cookie). Si un sitio web no tiene [!DNL Google Analytics]Sin embargo, no tiene sentido tener UTM. [!DNL Google Analytics] tiene reglas para el tratamiento de un usuario que visita varias URL con UTM durante su vida útil (más información más adelante). Suponiendo que el sitio web está configurado para capturar parámetros de UTM en una base de datos externa, cuando se produce una conversión micro o macro, lo que esté en la [!DNL Google Analytics] La cookie en el momento de la conversión se replica en la base de datos.
+Cuando se especifican los parámetros de UTM en la dirección URL, estos se analizan y se colocan en una [!DNL Google Analytics] [cookie](https://en.wikipedia.org/wiki/HTTP_cookie). Si un sitio web no tiene [!DNL Google Analytics], no tiene sentido tener UTM. [!DNL Google Analytics] tiene reglas para tratar con un usuario que visita varias URL con UTM durante su vida útil (más información más adelante). Suponiendo que el sitio web está configurado para capturar parámetros de UTM en una base de datos externa, cuando se produce una conversión micro o macro, lo que esté en la cookie [!DNL Google Analytics] en el momento de la conversión se replica en la base de datos.
 
 ## Primer clic frente a último clic
 
 ### Atribución de último clic
 
-La atribución de último clic es el modelo de atribución más común empleado por [!DNL Google Analytics]. En este caso, la variable [!DNL Google Analytics] La cookie representa los parámetros de UTM del origen más reciente antes del evento de conversión y este es [registrado en la base de datos](../../data-analyst/analysis/google-track-user-acq.md). El [!DNL Google Analytics] La cookie solo sobrescribe los parámetros de UTM anteriores si el usuario hace clic en una nueva dirección URL que contiene un nuevo conjunto de parámetros de UTM.
+La atribución de último clic es el modelo de atribución más común empleado por [!DNL Google Analytics]. En este caso, la cookie [!DNL Google Analytics] representa los parámetros de UTM para el origen más reciente antes del evento de conversión, y esto es [registrado en la base de datos](../../data-analyst/analysis/google-track-user-acq.md). La cookie [!DNL Google Analytics] solo sobrescribe los parámetros de UTM anteriores si el usuario hace clic en una nueva dirección URL que contiene un nuevo conjunto de parámetros de UTM.
 
-Por ejemplo, piense en un usuario que visita por primera vez un sitio web a través de [!DNL Google Analytics] *búsqueda de pago* y, a continuación, devuelve mediante *búsqueda orgánica*, y finalmente regresa al *sitio web directamente* o a través de un *vínculo de correo electrónico* **sin parámetros de UTM** antes del evento de conversión. En este ejemplo, la variable [!DNL Google Analytics] La cookie indica que la fuente del usuario es orgánica, ya que representa la última fuente antes de la conversión. El *ruta* del usuario antes de que se ignore el evento de conversión final. Si, en su lugar, el usuario visitó el sitio web desde un vínculo de correo electrónico con UTM, la variable [!DNL Google Analytics] La cookie diría que la fuente es &quot;correo electrónico&quot;. Por lo tanto, si hay parámetros de UTM existentes en la cookie y el usuario entra mediante un vínculo directo, la variable [!DNL Google Analytics] La cookie muestra los parámetros de UTM en lugar de &quot;directos&quot;.
+Por ejemplo, piense en un usuario que visita por primera vez un sitio web a través de [!DNL Google Analytics] *búsqueda de pago*, luego regresa a través de *búsqueda orgánica* y finalmente regresa al *sitio web directamente* o a través de un *vínculo de correo electrónico* **sin parámetros de UTM** antes del evento de conversión. En este ejemplo, la cookie [!DNL Google Analytics] indica que el origen del usuario es orgánico, ya que representa el último origen antes de la conversión. La *ruta* del usuario antes de ese evento de conversión final se omite. Si, en cambio, el usuario visitó el sitio web desde un vínculo de correo electrónico con UTM, la cookie [!DNL Google Analytics] diría que el origen es &quot;correo electrónico&quot;. Por lo tanto, si hay parámetros de UTM existentes en la cookie y el usuario entra mediante comunicación directa, la cookie [!DNL Google Analytics] muestra los parámetros de UTM en lugar de &quot;directa&quot;.
 
 >[!NOTE]
 >
->El nombre de un usuario específico [!DNL Google Analytics] Los parámetros de cookies se borran al configurar la cookie [caduca](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)o cuando un usuario borra sus cookies en el explorador.*
+>Los parámetros de cookie [!DNL Google Analytics] de un usuario específico se borran cuando la cookie [caduca](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage), o cuando un usuario borra sus cookies en el explorador.*
 
 ### Atribución del primer clic
 
@@ -45,7 +45,7 @@ Algunas herramientas de atribución de pago le permiten capturar &quot;la pila d
 
 ## ¿Cómo analizar la atribución?
 
-[!DNL Google Analytics] tiene una funcionalidad sólida en su interfaz web que le permite realizar cuatro modelos de atribución diferentes:
+[!DNL Google Analytics] tiene algunas funciones sólidas en su interfaz web que le permiten realizar cuatro modelos de atribución diferentes:
 
 1. primer clic
 1. último clic
@@ -63,10 +63,10 @@ Aquí es donde se pregunta: &quot;¿Cuántos ingresos obtuve de la búsqueda de 
 
 ## Documentación relacionada
 
-* [Rastrear origen de referencia de pedido mediante [!DNL Google Analytics] Comercio electrónico](../importing-data/integrations/google-ecommerce.md)
+* [Rastrear origen de referencia de pedidos a través de  [!DNL Google Analytics] E-Commerce](../importing-data/integrations/google-ecommerce.md)
 * [Rastrear origen de referencia de usuario en la base de datos](../analysis/google-track-user-acq.md)
 * [Seguimiento de los datos de dispositivos de usuario, exploradores y SO en la base de datos](../analysis/google-track-user-acq.md)
 * [Descubra sus fuentes y canales de adquisición más valiosos](../analysis/most-value-source-channel.md)
-* [Conecte su [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)
+* [Conecta tu cuenta de  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
 * [Aumente el retorno de la inversión en sus campañas publicitarias](../analysis/roi-ad-camp.md)
-* [Cinco prácticas recomendadas para el etiquetado UTM en [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
+* [Cinco prácticas recomendadas para el etiquetado UTM en  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

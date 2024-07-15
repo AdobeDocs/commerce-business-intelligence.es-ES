@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # Uso compartido de paneles con otros usuarios
 
-Compartir tableros es una buena manera de mantener a su equipo al tanto y fomentar el debate colaborativo. Al crear y compartir un tablero central, puede proporcionar a su equipo la información que necesita y, al mismo tiempo, mantener el control. [[!DNL Adobe] recomienda](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} que concede `Edit` derechos sobre algunos seleccionados para minimizar los cambios accidentales.
+Compartir tableros es una buena manera de mantener a su equipo al tanto y fomentar el debate colaborativo. Al crear y compartir un tablero central, puede proporcionar a su equipo la información que necesita y, al mismo tiempo, mantener el control. [[!DNL Adobe] recomienda](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} que conceda derechos de `Edit` a algunos seleccionados para minimizar los cambios accidentales.
 
 >[!NOTE]
 >
->Si el tablero que está compartiendo contiene informes creados con métricas a las que un usuario específico no tiene acceso, los informes muestran un `Error Loading Data` Mensaje. Si desea que los datos aparezcan para el usuario específico, una [usuario administrador](../../administrator/user-management/user-management.md) debe conceder acceso a todas las métricas utilizadas en esos informes.
+>Si el tablero que está compartiendo contiene informes creados con métricas a las que un usuario específico no tiene acceso, los informes mostrarán un mensaje `Error Loading Data`. Si desea que los datos aparezcan para el usuario específico, un [usuario administrador](../../administrator/user-management/user-management.md) debe otorgar acceso a todas las métricas utilizadas en esos informes.
 
 ## Compartir un tablero
 
-1. Clic **[!UICONTROL Share Dashboard]** en la parte superior de la pantalla.
+1. Haga clic en **[!UICONTROL Share Dashboard]** en la parte superior de la pantalla.
 
-   Una lista de todos los usuarios de su [!DNL Commerce Intelligence] se mostrará la cuenta.
+   Se mostrará una lista de todos los usuarios de su cuenta de [!DNL Commerce Intelligence].
 
 1. Para seleccionar un usuario con el que compartir el panel, marque la casilla a la izquierda de su nombre.
 
-   Para seleccionar o deseleccionar todos los usuarios, haga clic en **[!UICONTROL Select]** y seleccione `Everyone` o `None`, respectivamente.
+   Para seleccionar o anular la selección de todos los usuarios, haga clic en **[!UICONTROL Select]** y seleccione `Everyone` o `None`, respectivamente.
 
 1. Los permisos se pueden configurar usuario por usuario o en masa.
 

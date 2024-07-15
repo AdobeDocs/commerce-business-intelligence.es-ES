@@ -6,28 +6,28 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
 
-# Previsto [!DNL Google Analytics Warehoused] Datos
+# Se esperaban [!DNL Google Analytics Warehoused] datos
 
 >[!NOTE]
 >
->Requiere [Permisos de administración](../../../administrator/user-management/user-management.md).
+>Requiere [permisos de administrador](../../../administrator/user-management/user-management.md).
 
 >[!NOTE]
 >
->Algunos datos se utilizaron con el permiso de tus amigos en [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
+>Parte de la información se usó con el permiso de tus amigos en [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
 
-[!DNL Google Analytics Warehoused] integración en [!DNL Commerce Intelligence] utiliza el [!DNL Google Analytics] [API de informes principales](https://developers.google.com/analytics/devguides/reporting/core/v3/).
+La integración de [!DNL Google Analytics Warehoused] en [!DNL Commerce Intelligence] usa la [!DNL Google Analytics] [API de informes principales](https://developers.google.com/analytics/devguides/reporting/core/v3/).
 
 >[!NOTE]
 >
->Para evitar resultados inesperados o sin sentido, confirme que las dimensiones que utilice son las siguientes [compatible con una o más métricas](https://ga-dev-tools.google/dimensions-metrics-explorer/) que utiliza en la `Report Builder`.
+>Para evitar resultados inesperados o sin sentido, confirme que las dimensiones que utilice son [compatibles con una o más métricas](https://ga-dev-tools.google/dimensions-metrics-explorer/) que utilice en `Report Builder`.
 
-Una sola tabla denominada `report` : se crea en la Data Warehouse.
+Se crea una sola tabla denominada `report` en la Data Warehouse.
 
 El esquema de esta tabla está compuesto por las métricas y los Dimension seleccionados durante el proceso de configuración y otras dos columnas: `start-date` y `end-date`.
 
@@ -41,8 +41,8 @@ La tabla sería como el ejemplo siguiente.
 | **Nombre de columna** | **Descripción** |
 |-----|-----|
 | `\_id` | Esta columna es la `primary key`. |
-| `\_rjm\_record\_hash` | [!DNL Commerce Intelligence] identificador único. Esta columna la crea [!DNL Commerce Intelligence]. |
-| `\_updated\_at` | Esta columna contiene la última vez que se actualizó la fila de datos. Esta columna la crea [!DNL Commerce Intelligence]. |
+| `\_rjm\_record\_hash` | [!DNL Commerce Intelligence] identificador único. Esta columna la creó [!DNL Commerce Intelligence]. |
+| `\_updated\_at` | Esta columna contiene la última vez que se actualizó la fila de datos. Esta columna la creó [!DNL Commerce Intelligence]. |
 | `start-date` | Identificación del día para el que es la fila. |
 | `end-date` | Identificación del día para el que es la fila. |
 | `month` | Dimensión seleccionada: mes de la sesión, un entero de dos dígitos comprendido entre 01 y 12. |
@@ -50,15 +50,15 @@ La tabla sería como el ejemplo siguiente.
 
 {style="table-layout:auto"}
 
-## ¿Cuál es la diferencia entre [!DNL Google Analytics Warehoused] y [!DNL Live Integration]
+## Cuál es la diferencia entre [!DNL Google Analytics Warehoused] y [!DNL Live Integration]
 
-El principal diferenciador es que se almacena una integración ([!DNL Google Analytics Warehoused]), y la otra no es ([!DNL Google Analytics Live]). En casos de [!DNL Google Analytics Warehoused], esto permite manipular los [!DNL Google Analytics] y le ofrece la posibilidad de combinar [!DNL Google Analytics] y otras fuentes de datos para crear informes reveladores.
+El principal diferenciador es que una integración está almacenada ([!DNL Google Analytics Warehoused]) y la otra no ([!DNL Google Analytics Live]). En los casos de [!DNL Google Analytics Warehoused], esto permite manipular los datos de [!DNL Google Analytics] y permite combinar [!DNL Google Analytics] y otras fuentes de datos para crear informes profundos.
 
-Observe lo siguiente [!DNL Google Analytics] añada campañas para ver un ejemplo de lo que se puede hacer desde el punto de vista de la manipulación. Supongamos que ha tenido varias campañas publicitarias para el cuarto trimestre con nombres diferentes. Las campañas fueron el resultado de una iniciativa de marketing específica. Con los datos almacenados, puede crear una columna que encuentre los nombres de campaña en cuestión y devuelva el nombre de la iniciativa del cuarto trimestre de `Operation Dumbo`.
+Consulte [!DNL Google Analytics] campañas de publicidad para ver un ejemplo de lo que se puede hacer desde el punto de vista de la manipulación. Supongamos que ha tenido varias campañas publicitarias para el cuarto trimestre con nombres diferentes. Las campañas fueron el resultado de una iniciativa de marketing específica. Con los datos almacenados, puede crear una columna que encuentre los nombres de campaña en cuestión y devuelva el nombre de la iniciativa del cuarto trimestre de `Operation Dumbo`.
 
-El aspecto combinado permite [!DNL Google Analytics] datos que se van a unir a otros datos para llevar a cabo análisis. Por ejemplo, tome `Total Time On Site By Ad Campaign` datos de [!DNL Google Analytics] y únete a él en contra `Total Spent Per Campaign` datos de [!DNL Facebook Ads] para obtener una imagen completa de cuánto le está costando la participación.
+El aspecto de combinación permite que los datos de [!DNL Google Analytics] se unan a otros datos para realizar análisis. Por ejemplo, tome `Total Time On Site By Ad Campaign` datos de [!DNL Google Analytics] y únase a ellos con `Total Spent Per Campaign` datos de [!DNL Facebook Ads] para obtener una idea completa de cuánto le está costando la participación.
 
-Con el [!DNL Google Analytics Live] integración, por otro lado, cada [!DNL Google Analytics] es como un pequeño silo que no se almacena en su [!DNL Commerce Intelligence] Data Warehouse.
+Con la integración de [!DNL Google Analytics Live] por otro lado, cada gráfico de [!DNL Google Analytics] es como un pequeño silo que no está almacenado en su Data Warehouse de [!DNL Commerce Intelligence].
 
 ## Relacionado:
 

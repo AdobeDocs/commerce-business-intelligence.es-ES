@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Las prisas se pueden experimentar en cualquier momento del año; por ejemplo, si
 
 ## Métricas recomendadas
 
-Al analizar el rendimiento de la temporada de vacaciones, considere la posibilidad de analizar ([o edificio](../../data-user/reports/ess-manage-data-metrics.md)) estas métricas:
+Al analizar el rendimiento de la temporada de vacaciones, considere la posibilidad de analizar ([o crear](../../data-user/reports/ess-manage-data-metrics.md)) estas métricas:
 
 ### Número de clientes nuevos, Número de pedidos, Ingresos
 
@@ -33,7 +33,7 @@ Esta medida muestra el valor de pedido promedio general durante las temporadas f
 
 Ahora que sabe qué métricas analizar, consulta algunos datos de ingresos de muestra durante los meses de vacaciones de noviembre y diciembre tanto para 2014 como para 2015.
 
-![Ingresos diarios de la temporada de vacaciones para 2014 y 2015](../../assets/Analyzing_holiday_season.png)
+![Ingresos diarios para la temporada de vacaciones 2014 y 2015](../../assets/Analyzing_holiday_season.png)
 
 En este ejemplo, hay dos grandes picos en los ingresos para 2014 y 2015: estos aumentos coinciden con el Black Friday y el Cyber Monday. Observe que los picos no están en el mismo día para 2014 y 2015. Esto se debe a que el Black Friday cayó el 27 de noviembre para 2014 y el 28 de noviembre para 2015. Del mismo modo, el Cyber Monday fue el 30 de noviembre para 2014 y el 1 de diciembre para 2015.
 
@@ -58,7 +58,7 @@ Una opción es analizar el comportamiento de compra de sus clientes durante la t
 
 Otra opción es analizar el ROI por campaña durante las temporadas festivas. ¿Su ROI es mayor para las campañas particulares que se ejecutan durante la temporada de vacaciones? ¿Debería aumentar el gasto en campañas con un ROI alto durante estas temporadas?
 
-Además, puede analizar el número de pedidos con descuento frente a los pedidos con precio completo. [¿La mayoría de los clientes están esperando una venta para comprar pedidos?](../analysis/coupon-usage.md) durante la temporada de vacaciones o están comprando artículos a precio completo?
+Además, puede analizar el número de pedidos con descuento frente a los pedidos con precio completo. [¿La mayoría de los clientes están esperando una venta para comprar pedidos](../analysis/coupon-usage.md) durante sus vacaciones o están comprando artículos a precio completo?
 
 ### Relacionado
 

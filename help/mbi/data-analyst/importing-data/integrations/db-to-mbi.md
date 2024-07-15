@@ -1,6 +1,6 @@
 ---
-title: Conecte su [!DNL MySQL] Base de datos
-description: Vea cómo conectar su [!DNL MySQL] bases de datos [!DNL Commerce Intelligence].
+title: Conectar Tu [!DNL MySQL] Base De Datos
+description: Vea cómo conectar sus [!DNL MySQL] bases de datos con [!DNL Commerce Intelligence].
 exl-id: 22632cab-3c44-4a1b-8809-ac6cba5f655a
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,6 +11,6 @@ ht-degree: 0%
 
 ---
 
-# Conecte su `MySQL` Base de datos
+# Conectar Su Base De Datos `MySQL`
 
 Información próximamente.

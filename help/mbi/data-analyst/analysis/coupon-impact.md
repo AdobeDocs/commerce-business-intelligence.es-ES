@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 2%
+source-wordcount: '1382'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,9 @@ Analizar cómo los clientes utilizan sus cupones puede proporcionar una perspect
 * ¿En qué se diferencian los ingresos medios a largo plazo entre los clientes adquiridos con cupones y los clientes no adquiridos con cupones?
 * ¿Los clientes adquiridos con cupones realizan compras repetidas con cupones?
 
-Responda a estas preguntas centrándose en [comparación de clientes adquiridos con cupones con clientes adquiridos sin cupones](#compare), [análisis de detalles de primer pedido de adquisiciones de cupones](#firstorder), y [observando los atributos de los clientes que utilizan cupones en su primer pedido.](#attributes)
+Responda a estas preguntas centrándose en [comparar clientes adquiridos con cupones con clientes adquiridos sin cupones](#compare), [analizar los detalles del primer pedido de las adquisiciones de cupones](#firstorder) y [observar los atributos de los clientes que usan cupones en su primer pedido.](#attributes)
 
-Introducción!
+¡Empiece!
 
 ## Comparación entre clientes con cupones adquiridos y clientes sin cupones adquiridos {#compare}
 
@@ -46,10 +46,10 @@ Muestra el número de pedidos repetidos realizados con un cupón aplicado y el p
 
 Observe algunos datos de ejemplo para métricas de adquisición de cupones frente a métricas de adquisición no de cupones:
 
-| **Adquisición de cliente** | **Número de clientes nuevos** | **Ingresos medios a largo plazo** | **Número de pedidos repetidos** | **Número de pedidos repetidos con cupón** | **% de pedidos repetidos con cupón** |
+| **Adquisición de cliente** | **Número de clientes nuevos** | **Ingresos promedio de por vida** | **Número de pedidos repetidos** | **Número de pedidos repetidos con cupón** | **% de pedidos repetidos con cupón** |
 |-----|-----|-----|-----|-----|-----|
-| Cupón | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
-| Sin cupón | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
+| Cupón | 1.206 | 356,91 $ | 2.570 | 1.248 | 48,56 % |
+| Sin cupón | 11.561 | 498,30 $ | 20.145 | 3.251 | 16,14 % |
 
 {style="table-layout:auto"}
 
@@ -77,7 +77,7 @@ Los clientes sin cupón adquirido tienen un porcentaje mucho menor de pedidos re
 
 ## Análisis de los detalles del primer pedido de las adquisiciones de cupones {#firstorder}
 
-Esta sección se centra únicamente en **primeros pedidos de adquisiciones de cupones, segmentados por cupón.** Utilice estas métricas en el análisis:
+Esta sección se centra solamente en **primeros pedidos de adquisiciones de cupones, segmentados por cupón.** Use estas métricas en el análisis:
 
 ### Número de pedidos/clientes
 
@@ -111,9 +111,9 @@ Ahora, observe un ejemplo que incluye tres cupones diferentes utilizados para el
 
 | **Cupón** | **Pedidos por primera vez (FTO)** | **Ingresos brutos de FTO** | **Descuentos aplicados a FTO** | **Ingresos netos de FTO** | **Valor de pedido promedio para FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25% de descuento de 100 $ o más** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
-| **10 $ de descuento** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
-| **20 % de descuento** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
+| **25% de descuento de $100 o más** | 56 | 8.531,04 $ | 2.132,76 $ | 6.398,28 $ | 152,34 $ |
+| **$10 de descuento** | 87 | 3.707,07 $ | 426,10 $ | 3.280,97 $ | 42,61 $ |
+| **20% de descuento** | 145 | 10.975,05 $ | 2.195,01 $ | 8.780,04 $ | 75,69 USD |
 
 {style="table-layout:auto"}
 
@@ -129,26 +129,26 @@ Ahora, observe un ejemplo que incluye tres cupones diferentes utilizados para el
 
   **Ejemplo:** el cupón de &quot;10% de descuento&quot; solo se ofrece a los clientes que compren un abrigo de invierno en el mismo pedido.
 
-El **ingresos brutos** para el cupón &quot;25% de descuento de 100 dólares o más&quot; es mucho más alto que los ingresos brutos para el cupón &quot;10 dólares de descuento&quot;. Sin embargo, el cupón de &quot;$10 off&quot; tiene un valor mucho mayor **número de pedidos**. Análisis de la **valor de pedido promedio** proporciona una perspectiva de estas diferencias. A pesar de que el cupón de &quot;25% de descuento de 100 dólares o más&quot; tenía menos número de pedidos, el valor de pedido promedio es más del triple que el cupón de &quot;$10 de descuento&quot;. Por lo tanto, se atribuye un mayor ingreso bruto al cupón de &quot;25% de descuento de 100 dólares o más&quot;.
+Los **ingresos brutos** del cupón &quot;25% de descuento de 100 dólares o más&quot; son mucho más altos que los ingresos brutos del cupón &quot;10 dólares de descuento&quot;. Sin embargo, el cupón de &quot;$10 off&quot; tiene un **número de pedidos** mucho mayor. Analizar el **valor de pedido promedio** proporciona una perspectiva de estas diferencias. A pesar de que el cupón de &quot;25% de descuento de 100 dólares o más&quot; tenía menos número de pedidos, el valor de pedido promedio es más del triple que el cupón de &quot;$10 de descuento&quot;. Por lo tanto, se atribuye un mayor ingreso bruto al cupón de &quot;25% de descuento de 100 dólares o más&quot;.
 
-El **descuentos** y **ingresos netos** para los cupones de &quot;25% de descuento de 100 dólares o más&quot; y &quot;20% de descuento&quot; tienen un valor cercano. Aunque el valor de pedido promedio para &quot;25% de descuento de 100 dólares o más&quot; está cerca del doble del valor de pedido promedio para &quot;20% de descuento&quot;, este último cupón tiene un poco menos del triple del número de pedidos.
+Los **descuentos** y **ingresos netos** para los cupones de &quot;25% de descuento en 100 dólares o más&quot; y &quot;20% de descuento&quot; tienen un valor cercano. Aunque el valor de pedido promedio para &quot;25% de descuento de 100 dólares o más&quot; está cerca del doble del valor de pedido promedio para &quot;20% de descuento&quot;, este último cupón tiene un poco menos del triple del número de pedidos.
 
 ## Atributos de los clientes que utilizan cupones en su primer pedido {#attributes}
 
 Ahora que ha visto los pedidos en sí, observe a los clientes que utilizan cupones en sus primeros pedidos:
 
-| **Cupón de primer pedido del cliente** | **Número de clientes** | **Número promedio de pedidos durante toda la vida** | **Ingresos medios a largo plazo** |
+| **Cupón de primer pedido del cliente** | **Cantidad de clientes** | **Número promedio de pedidos durante toda la vida** | **Ingresos promedio de por vida** |
 |-----|-----|-----|-----|
-| **25% de descuento de 100 $ o más** | 56 | 2.8 | $554.54 |
-| **10 $ de descuento** | 87 | 1.9 | $115.50 |
-| **20 % de descuento** | 145 | 1.3 | $103.75 |
+| **25% de descuento de $100 o más** | 56 | 2,8 | 554,54 $ |
+| **$10 de descuento** | 87 | 1,9 | 115,50 $ |
+| **20% de descuento** | 145 | 1,3 | 103,75 $ |
 
 {style="table-layout:auto"}
 
 Verá que el número de pedidos por primera vez es el mismo que el número de clientes para cada cupón. Esto tiene sentido porque cada cliente solo puede tener un primer pedido.
 
-El mayor número de clientes se adquirió a través del cupón de &quot;20% de descuento&quot;. Sin embargo, estos clientes tienen el más bajo **número medio de pedidos durante toda la vida** y **ingresos medios a largo plazo**; por lo general, la mayoría de los clientes adquiridos con cupones no realizan pedidos repetidos. Además, los clientes adquiridos a través del cupón de &quot;25% de descuento de 100 dólares o más&quot; aumentan **número medio de pedidos durante toda la vida** y a su vez, más alto **ingresos medios a largo plazo**. Por lo general, los usuarios que fueron adquiridos a través de este cupón generalmente regresan y hacen más compras repetidas.
+El mayor número de clientes se adquirió a través del cupón de &quot;20% de descuento&quot;. Sin embargo, estos clientes tienen el **número promedio de duración de pedidos** y **ingresos promedio de duración** más bajos; por lo general, la mayoría de los clientes con cupones adquiridos no realizan pedidos repetidos. Además, los clientes que obtuvieron a través del cupón de &quot;25% de descuento de 100 dólares o más&quot; obtienen un número de pedidos **promedio de por vida** más alto y, a su vez, **ingresos promedio de por vida** más altos. Por lo general, los usuarios que fueron adquiridos a través de este cupón generalmente regresan y hacen más compras repetidas.
 
 ## Ajuste {#wrapup}
 
-Puede crear multitud de análisis para comprender mejor cómo utilizan los cupones sus clientes. ¿Ha pensado alguna vez en analizar cómo utilizan sus clientes los cupones o el tiempo que tardan en utilizarlos? ¿Qué sucede si se busca la cantidad de descuento óptima: qué cantidad anima a los compradores que repiten, un valor de pedido promedio más alto y mayores ingresos por duración? Para obtener ayuda con este tipo de preguntas, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Puede crear multitud de análisis para comprender mejor cómo utilizan los cupones sus clientes. ¿Ha pensado alguna vez en analizar cómo utilizan sus clientes los cupones o el tiempo que tardan en utilizarlos? ¿Qué sucede si se busca la cantidad de descuento óptima: qué cantidad anima a los compradores que repiten, un valor de pedido promedio más alto y mayores ingresos por duración? Para obtener ayuda con este tipo de preguntas, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

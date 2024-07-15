@@ -17,6 +17,6 @@ Para quitar un gráfico de un panel, haga clic en el icono de engranaje (![](../
 
 >[!NOTE]
 >
->Eliminar un gráfico no es lo mismo que [eliminándolo](../../data-user/dashboards/delete-chart.md). Además, [se puede leer un gráfico en un panel](../../data-user/dashboards/add-charts-dashboard.md) en cualquier momento.
+>Eliminar un gráfico no es lo mismo que [eliminarlo](../../data-user/dashboards/delete-chart.md). Además, [se puede leer un gráfico en un panel](../../data-user/dashboards/add-charts-dashboard.md) en cualquier momento.
 
-![eliminar gráfico](../../assets/Removing_Charts_from_Dashboards.gif)
+![quitar gráfico](../../assets/Removing_Charts_from_Dashboards.gif)

@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
 source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # Nueva arquitectura
 
-[!DNL Adobe Commerce Intelligence] Los equipos de productos e ingeniería se han centrado en realizar las mejoras más amplias y solicitadas posibles durante el último año. El Adobe está encantado de anunciar la disponibilidad de un nuevo [!DNL Commerce Intelligence] la arquitectura del producto que hace que estas mejoras sean una realidad.
+[!DNL Adobe Commerce Intelligence] equipos de productos e ingeniería se han enfocado en lograr las mejoras más amplias y solicitadas posibles durante el último año. A Adobe le complace anunciar la disponibilidad de la nueva arquitectura de productos [!DNL Commerce Intelligence] que hará realidad estas mejoras.
 
 ## Ventajas de la nueva arquitectura
 
@@ -45,7 +45,7 @@ Cuando se complete, sabrá qué datos necesita sincronizar con la nueva Data War
 
 ### Obtención de ayuda
 
-El [!DNL Adobe Commerce Intelligence] [Equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) puede realizar la reimplementación por un coste adicional. Póngase en contacto con su [Equipo de cuenta de Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) y esté preparado para proporcionar una lista de paneles e informes que desee priorizar al crear en la nueva cuenta
+El [!DNL Adobe Commerce Intelligence] [equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) puede realizar la reimplementación por un costo adicional. Póngase en contacto con su [equipo de cuenta de Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) y asegúrese de proporcionar una lista de tableros o informes que desee priorizar al crear en la nueva cuenta
 
 ### Permanecer con la arquitectura existente
 

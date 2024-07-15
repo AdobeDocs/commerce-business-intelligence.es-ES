@@ -19,18 +19,18 @@ Esto resulta útil si desea volver a crear un conjunto de gráficos existente pe
 
 1. Para clonar un tablero, haga clic en **[!UICONTROL Options]** en la parte superior de la pantalla.
 
-1. En el menú desplegable, haga clic en **[!UICONTROL Save As]**.
+1. En el menú desplegable , haga clic en **[!UICONTROL Save As]**.
 
-1. Cuando se le solicite, introduzca la variable `New Dashboard Name`. Adobe recomienda nombres que le indiquen, de un vistazo, qué información contiene el panel.
+1. Cuando se le solicite, escriba `New Dashboard Name`. Adobe recomienda nombres que le indiquen, de un vistazo, qué información contiene el panel.
 
-   Por ejemplo, está clonando un tablero llamado `Customer Activity`. Este panel contenía información de la actividad del cliente para su ubicación de Filadelfia, pero ahora desea crear un panel para su nueva ubicación de la ciudad de Nueva York. Se puede asignar un nombre a este panel `New York City - Customer Activity`.
+   Por ejemplo, está clonando un tablero denominado `Customer Activity`. Este panel contenía información de la actividad del cliente para su ubicación de Filadelfia, pero ahora desea crear un panel para su nueva ubicación de la ciudad de Nueva York. Este tablero podría llamarse `New York City - Customer Activity`.
 
-1. Utilice el `Chart Title Find` y `Chart Title Replace` campos con los que buscar todos los gráficos `Philadelphia` en el título y reemplácelo por `New York City`.
+1. Utilice los campos `Chart Title Find` y `Chart Title Replace` para buscar todos los gráficos con `Philadelphia` en el título y reemplazarlos con `New York City`.
 
-   Si no introduce ningún valor en estos campos, `(2)` anexa automáticamente al final de todos los títulos de gráficos del nuevo tablero.
+   Si no escribe ningún valor en estos campos, se agregará automáticamente un `(2)` al final de todos los títulos de gráficos en el nuevo tablero.
 
-1. Clic **[!UICONTROL Save]** para clonar el tablero.
+1. Haga clic en **[!UICONTROL Save]** para clonar el tablero.
 
 Ejemplo:
 
-![clonar tablero](../../assets/datgif.gif)
+![tablero de clonación](../../assets/datgif.gif)

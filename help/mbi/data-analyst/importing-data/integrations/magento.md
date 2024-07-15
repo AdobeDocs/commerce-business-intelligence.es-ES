@@ -11,18 +11,18 @@ ht-degree: 0%
 
 ---
 
-# Connect [!DNL Adobe Commerce]
+# Conectar [!DNL Adobe Commerce]
 
 >[!NOTE]
 >
->Requiere [Permisos de administración](../../../administrator/user-management/user-management.md).
+>Requiere [permisos de administrador](../../../administrator/user-management/user-management.md).
 
-¿Quiere ver el rendimiento de su empresa o encontrar las fuentes y canales de adquisición más valiosos? Conexión de su [!DNL Adobe Commerce] datos a [!DNL Commerce Intelligence] le permite responder a estas preguntas y más.
+¿Quiere ver el rendimiento de su empresa o encontrar las fuentes y canales de adquisición más valiosos? Conectar los datos de [!DNL Adobe Commerce] a [!DNL Commerce Intelligence] le permite responder a estas preguntas y más.
 
-Como el [!DNL Adobe Commerce] La base de datos está basada en MySQL, puede conectarla a [!DNL Commerce Intelligence] mediante una [conexión directa](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md), o [a través de un túnel SSH](../integrations/mysql-via-ssh-tunnel.md). Se recomienda el método SSH porque es el más seguro.
+Como la base de datos [!DNL Adobe Commerce] está basada en MySQL, puede conectarla a [!DNL Commerce Intelligence] a través de una [conexión directa](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) o [a través de un túnel SSH](../integrations/mysql-via-ssh-tunnel.md). Se recomienda el método SSH porque es el más seguro.
 
 ## Información relacionada
 
-* [Datos de Commerce esperados](../integrations/magento-data.md)
+* [Datos Commerce esperados](../integrations/magento-data.md)
 * [Dimensiones de datos recomendadas para la segmentación y el filtrado](../../../best-practices/segment-filter.md)
 * [¿Cuáles son sus fuentes y canales de adquisición más valiosos?](../../analysis/most-value-source-channel.md)

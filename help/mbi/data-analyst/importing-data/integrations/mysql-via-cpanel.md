@@ -6,67 +6,67 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 1%
+source-wordcount: '358'
+ht-degree: 0%
 
 ---
 
-# Connect [!DNL MySQL] mediante [!DNL cPanel]
+# Conectar [!DNL MySQL] a través de [!DNL cPanel]
 
-* [Crear un [!DNL Commerce Intelligence] [!DNL MySQL] usuario en [!DNL cPanel]](#cpanel)
-* [Especifique la conexión y la información de usuario en [!DNL Commerce Intelligence]](#finish)
+* [Crear un usuario  [!DNL Commerce Intelligence] [!DNL MySQL] en  [!DNL cPanel]](#cpanel)
+* [Escriba la conexión y la información de usuario en  [!DNL Commerce Intelligence]](#finish)
 
 ## Saltar a
 
-* [[!DNL MySQL] a través del túnel SSH](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL] a través de un túnel SSH](../integrations/mysql-via-ssh-tunnel.md)
 * [[!DNL MySQL] mediante conexión directa](../integrations/mysql-via-a-direct-connection.md)
 
 >[!IMPORTANT]
 >
->[!DNL Adobe] recomienda utilizar SSH o cualquier otra forma de cifrado para proteger los datos. Si esta no es una opción, aún puede conectarse directamente [!DNL Commerce Intelligence] a la base de datos con las instrucciones de este tema.
+>[!DNL Adobe] recomienda usar SSH o algún otro tipo de cifrado para proteger los datos. Si no se trata de una opción, aún puede conectar directamente [!DNL Commerce Intelligence] a la base de datos siguiendo las instrucciones de este tema.
 
-Este tema le guiará a través de la conexión directa de [!DNL MySQL] base de datos a [!DNL Commerce Intelligence] usando [!DNL cPanel]. Este proceso también se puede utilizar para conectar [!DNL Adobe Commerce] y cualquier otra base de datos de comercio electrónico basada en MySQL para [!DNL Commerce Intelligence].
+En este tema se explica cómo conectar directamente la base de datos de [!DNL MySQL] a [!DNL Commerce Intelligence] mediante [!DNL cPanel]. Este proceso también se puede usar para conectar [!DNL Adobe Commerce] y otras bases de datos de comercio electrónico basadas en MySQL a [!DNL Commerce Intelligence].
 
-1. Crear un [!DNL Commerce Intelligence] [!DNL MySQL] usuario en [!DNL cPanel]
-1. Especifique la conexión y la información de usuario en [!DNL Commerce Intelligence]
+1. Crear un usuario [!DNL Commerce Intelligence] [!DNL MySQL] en [!DNL cPanel]
+1. Escriba la conexión y la información de usuario en [!DNL Commerce Intelligence]
 
-Introducción.
+Empiece por.
 
-## Creación de un [!DNL Commerce Intelligence] [!DNL MySQL] usuario en [!DNL cPanel] {#cpanel}
+## Creando un usuario [!DNL Commerce Intelligence] [!DNL MySQL] en [!DNL cPanel] {#cpanel}
 
-1. Iniciar sesión en [!DNL cPanel] a través de su proveedor de alojamiento.
-1. Clic **[!UICONTROL [!DNL MySQL] Databases]**, ubicado en el `Database` sección.
-1. Desplácese hacia abajo hasta el `Add New User` y cree un usuario para [!DNL Commerce Intelligence]:
+1. Inicie sesión en [!DNL cPanel] a través de su proveedor de alojamiento.
+1. Haga clic en **[!UICONTROL [!DNL MySQL] Databases]**, ubicado en la sección `Database`.
+1. Desplácese hacia abajo hasta la sección `Add New User` y cree un usuario para [!DNL Commerce Intelligence]:
 
    ![](../../../assets/create-mbi-mysql-user-cpanel.png)
 
-1. Haga clic **[!UICONTROL Create User]**.
-1. Ahora que ha creado el usuario, debe asociarlo a una base de datos. Vuelva a la `Add New User` sección: consulte la configuración de `Add User to Database?` Eso es lo que necesitas.
-1. En el `User` de esta sección, seleccione el usuario que ha creado.
-1. En el `Database` de esta sección, seleccione la base de datos a la que desea conectarse [!DNL Commerce Intelligence].
-1. Haga clic **[!UICONTROL Add]**.
-1. Cuando aparezca la lista de comprobación de privilegios, marque la casilla junto a `SELECT` - esto es todo [!DNL Commerce Intelligence] necesita conectarse a la base de datos.
+1. Haga clic en **[!UICONTROL Create User]**.
+1. Ahora que ha creado el usuario, debe asociarlo a una base de datos. Vuelva a la sección `Add New User` y vea la configuración de `Add User to Database?`, que es lo que necesita.
+1. En el menú desplegable `User` de esta sección, seleccione el usuario que ha creado.
+1. En el menú desplegable `Database` de esta sección, seleccione la base de datos a la que desea conectarse [!DNL Commerce Intelligence].
+1. Haga clic en **[!UICONTROL Add]**.
+1. Cuando aparezca la lista de comprobación de privilegios, marque la casilla junto a `SELECT`; esto es todo lo que [!DNL Commerce Intelligence] necesita para conectarse a la base de datos.
 
-## Introducción de la conexión y la información de usuario en [!DNL Commerce Intelligence] {#finish}
+## Introduciendo la conexión y la información de usuario en [!DNL Commerce Intelligence] {#finish}
 
-Para finalizar, debe introducir la conexión y la información de usuario en [!DNL Commerce Intelligence]. ¿Dejaste el [!DNL MySQL] ¿desea abrir la página credenciales? Si no es así, vaya a **[!UICONTROL Manage Data** > **Connections]** y haga clic en **[!UICONTROL Add New Data Source]** y, a continuación, el [!DNL MySQL] icono.
+Para finalizar, debe especificar la conexión y la información de usuario en [!DNL Commerce Intelligence]. ¿Dejó abierta la página de credenciales de [!DNL MySQL]? Si no es así, vaya a **[!UICONTROL Manage Data** > **Connections]** y haga clic en **[!UICONTROL Add New Data Source]**, luego en el icono [!DNL MySQL].
 
-Introduzca la siguiente información en esta página en la `Database Connection` sección:
+Escriba la siguiente información en esta página en la sección `Database Connection`:
 
-* `Username`: El nombre de usuario del [!DNL Commerce Intelligence] [!DNL MySQL] usuario
-* `Password`: La contraseña para el [!DNL Commerce Intelligence] [!DNL MySQL] usuario
-* `Port`: el puerto de MySQL en su servidor (`3306` de forma predeterminada)
-* `Host`: La dirección pública del `MySQL` server [!DNL Commerce Intelligence] se conecta a. Normalmente, es la dirección URL que se utiliza para iniciar sesión en `[!DNL cPanel]`.
+* `Username`: el nombre de usuario para el usuario [!DNL Commerce Intelligence] [!DNL MySQL]
+* `Password`: la contraseña del usuario [!DNL Commerce Intelligence] [!DNL MySQL]
+* `Port`: puerto de MySQL en su servidor (`3306` de forma predeterminada)
+* `Host`: la dirección pública del servidor `MySQL` [!DNL Commerce Intelligence] se conecta a. Suele ser la dirección URL que usa para iniciar sesión en `[!DNL cPanel]`.
 
-Si utiliza un [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md), debe introducir la información de cifrado. Configure las variables `Encrypted` cambiar a `Yes` para mostrar el formulario.
+Si usa un [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md), debe escribir la información de cifrado. Establezca el conmutador `Encrypted` en `Yes` para mostrar el formulario.
 
-* `Connection Type`: establezca esto en `SSH Tunnel`
-* `Remote Address`: La dirección IP o el nombre de host del servidor [!DNL Commerce Intelligence] entrará en túnel
-* `Username`: El nombre de usuario del [!DNL Commerce Intelligence] `SSH (Linux)` usuario, consulte [instrucciones](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) sobre cómo hacerlo, si aún no lo ha hecho)
-* `SSH Port`: Puerto SSH en el servidor (`22` de forma predeterminada)
+* `Connection Type`: establecer esto en `SSH Tunnel`
+* `Remote Address`: la dirección IP o el nombre de host del servidor [!DNL Commerce Intelligence] se conectará mediante túnel a
+* `Username`: el nombre de usuario para el usuario [!DNL Commerce Intelligence] `SSH (Linux)`, consulte [instrucciones](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) sobre cómo hacerlo, si aún no lo ha hecho)
+* `SSH Port`: puerto SSH en el servidor (`22` de forma predeterminada)
 
-Cuando haya terminado, haga clic en **[!UICONTROL Save & Test]** para completar la configuración.
+Cuando termine, haga clic en **[!UICONTROL Save & Test]** para completar la instalación.
 
 ## Relacionado:
 
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

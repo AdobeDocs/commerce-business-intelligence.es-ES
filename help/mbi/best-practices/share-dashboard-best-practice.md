@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Compartir un tablero
 
-Compartir paneles significa que usted y su equipo poseen la misma información en cualquier momento dado, lo que permite la colaboración y el debate. Estas son algunas recomendaciones para compartir paneles y mantener [!DNL Adobe Commerce Intelligence] cuenta despejada.
+Compartir paneles significa que usted y su equipo poseen la misma información en cualquier momento dado, lo que permite la colaboración y el debate. Estas son algunas recomendaciones para compartir paneles y mantener la cuenta de [!DNL Adobe Commerce Intelligence] despejada.
 
 ## Evitar paneles duplicados
 
@@ -26,7 +26,7 @@ Para ver a quién pertenece un panel, haga clic en el menú desplegable del pane
 Para quitar todos los paneles duplicados:
 
 1. Sincronícese con su equipo e identifique a la persona que debe mantener el panel.
-1. [Dejar de compartir](../data-user/dashboards/leave-dashboard.md) de todos los paneles similares, excepto el compartido por el usuario principal.
+1. [Deje de compartirse](../data-user/dashboards/leave-dashboard.md) de todos los tableros similares, excepto el que compartió el usuario principal.
 1. Si tiene una copia del tablero, [elimínelo](../data-user/dashboards/deleting-dashboard.md).
 1. Pida a otras personas que eliminen su versión del tablero.
 
@@ -36,11 +36,11 @@ Cuando se crean nuevos usuarios, no son propietarios de paneles ni gráficos. Si
 
 ## Uso compartido de paneles con nuevos usuarios
 
-Los nuevos usuarios también pueden beneficiarse del acceso a algunos paneles que no se comparten en toda la organización. En estos casos, Adobe recomienda que los propietarios de tableros [compartir los paneles relevantes](../data-user/dashboards/share-dashboard-with-users.md) con nuevos usuarios cuando se crean sus cuentas.
+Los nuevos usuarios también pueden beneficiarse del acceso a algunos paneles que no se comparten en toda la organización. En estos casos, Adobe recomienda que los propietarios de tableros [compartan los tableros relevantes](../data-user/dashboards/share-dashboard-with-users.md) con nuevos usuarios cuando se creen sus cuentas.
 
 ## Ser selectivo con permisos de edición
 
-`Edit` Los permisos de otorgan a los usuarios mucho poder. Pero con gran poder viene gran responsabilidad. Para evitar cambios accidentales en los gráficos y paneles, Adobe recomienda que sea selectivo sobre a quién debe dar `Edit` permisos para.
+Los permisos de `Edit` otorgan a los usuarios mucho poder. Pero con gran poder viene gran responsabilidad. Para evitar cambios accidentales en los gráficos y paneles, Adobe recomienda que sea selectivo con respecto a a quién otorga permisos de `Edit`.
 
 ## Anotar los gráficos
 

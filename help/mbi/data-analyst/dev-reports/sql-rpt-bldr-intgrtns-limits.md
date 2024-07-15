@@ -10,6 +10,6 @@ ht-degree: 0%
 
 ---
 
-# `SQL Report Builder` Integraciones
+# Integraciones de `SQL Report Builder`
 
 En el estado actual del mundo, [[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) es la única integración que no está disponible para su uso con [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md). Esta funcionalidad está en desarrollo.

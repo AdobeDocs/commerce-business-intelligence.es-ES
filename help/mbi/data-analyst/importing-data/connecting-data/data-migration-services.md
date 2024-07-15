@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
 
 # Migración de datos
 
-La migración a un nuevo esquema de base de datos, servidor o base de datos de informes no tiene por qué ser estresante. El [[!DNL Adobe] Equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ofrece asistencia para la migración.
+La migración a un nuevo esquema de base de datos, servidor o base de datos de informes no tiene por qué ser estresante. El [[!DNL Adobe] equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ofrece asistencia para la migración.
 
 Para garantizar que la transición sea lo más fluida posible, debe ser lo más detallado posible al enviar la solicitud de migración. Este tema tiene todo lo que necesita para enviar una solicitud y comenzar la migración. Proporcionarnos una imagen completa de sus necesidades garantiza que su proyecto tenga un alcance adecuado y que la estimación sea precisa.
 
@@ -21,11 +21,11 @@ Para garantizar que la transición sea lo más fluida posible, debe ser lo más 
 
 Antes de empezar, debe conocer las respuestas a estas preguntas:
 
-* **¿La nueva base de datos está en un servidor nuevo?** Antes de enviar una solicitud, actualice la configuración de la conexión de datos en **[!UICONTROL Manage Data** > **Connections]**. Si necesita un repaso sobre cómo hacerlo, vaya a la [`Integrations`](../integrations/integrations.md) y busque las instrucciones para el tipo de base de datos que está utilizando.
+* **¿La nueva base de datos se encuentra en un servidor nuevo?** Antes de enviar una solicitud, actualice la configuración de la conexión de datos en **[!UICONTROL Manage Data** > **Connections]**. Si necesita un actualizador sobre cómo hacerlo, vaya a la sección [`Integrations`](../integrations/integrations.md) y busque las instrucciones para el tipo de base de datos que está utilizando.
 
-* **¿Todos los datos históricos existen en la nueva base de datos o es necesario migrarlos?** Puede consolidar los datos nuevos e históricos durante el proceso de migración. Aunque no necesite una consolidación, háganoslo saber en su solicitud.
+* **¿Todos los datos históricos existen en la nueva base de datos o es necesario migrarlos?**: puede consolidar los datos nuevos e históricos durante el proceso de migración. Aunque no necesite una consolidación, háganoslo saber en su solicitud.
 
-Una vez que tenga las respuestas a lo anterior, debe saber el tipo de migración. ¿Tendrá la nueva base de datos [`same`](#sameschema) esquema, o tendrá un esquema [`different`](#newschema) esquema? En las discusiones que se describen a continuación, encontrará instrucciones detalladas para cada tipo de migración.
+Una vez que tenga las respuestas a lo anterior, debe saber el tipo de migración. ¿Tendrá la nueva base de datos el esquema [`same`](#sameschema) o tendrá un esquema [`different`](#newschema)? En las discusiones que se describen a continuación, encontrará instrucciones detalladas para cada tipo de migración.
 
 ## Migración a una nueva base de datos con el mismo esquema {#sameschema}
 
@@ -45,17 +45,17 @@ Para completar correctamente este tipo de migración, las columnas de datos exis
 
 Si se siente cómodo haciendo la coincidencia usted mismo, siga estas instrucciones y adjunte la hoja de cálculo terminada a su solicitud:
 
-1. Revise todas las tablas y columnas que se están sincronizando con su Data Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**).
+1. Revise todas las tablas y columnas que se están sincronizando con la Data Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**).
 
 1. En una hoja de cálculo, cree una pestaña para cada tabla que desee migrar a la nueva base de datos.
 
-1. En cada pestaña, cree una columna para todas las columnas existentes que deban migrarse. Adobe recomienda ponerle un nombre similar al siguiente `Existing column name`.
+1. En cada pestaña, cree una columna para todas las columnas existentes que deban migrarse. El Adobe recomienda ponerle un nombre similar a `Existing column name`.
 
-1. También debe crear otra columna para los equivalentes de columna en la nueva base de datos en cada pestaña de la hoja de cálculo. El Adobe recomienda que la columna tenga un nombre similar al siguiente `New column name`.
+1. También debe crear otra columna para los equivalentes de columna en la nueva base de datos en cada pestaña de la hoja de cálculo. El Adobe recomienda asignar a la columna un nombre similar a `New column name`.
 
-1. Introduzca las columnas existentes y sus equivalentes. Si una columna existente no tiene un nuevo equivalente, introduzca `N/A`.
+1. Introduzca las columnas existentes y sus equivalentes. Si una columna existente no tiene un nuevo equivalente, escriba `N/A`.
 
-   Además, si existe una nueva forma de calcular la misma información en la nueva base de datos, indíquela en la [`New column name`] columna.
+   Además, si existe una nueva forma de calcular la misma información en la nueva base de datos, escríbala en la columna [`New column name`].
 
 A continuación, se muestra un ejemplo:
 
@@ -67,10 +67,10 @@ A continuación, se muestra un ejemplo:
 
 ## ¿Cómo envío una solicitud? {#submitreq}
 
-Puede ponerse en contacto con nosotros mediante [enviar una solicitud de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Póngase en contacto con nosotros al [enviar una solicitud de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Si ha seguido los pasos de la sección anterior para crear la hoja de cálculo que coincide con la columna, no olvide adjuntarla.
 
 ## ¿Cuál es el siguiente paso? {#wrapup}
 
-La determinación del ámbito del proyecto requiere cierta colaboración entre usted y el analista del equipo de Commerce Services que realiza la migración. La complejidad de los cambios y la capacidad de respuesta de usted y del analista afectan directamente a la cantidad de tiempo que puede tardar la migración. Una vez que haya analizado los detalles, se establecerá una cronología y se le enviará una declaración de trabajo.
+La determinación del ámbito del proyecto requiere cierta colaboración entre usted y el analista del equipo de servicios de Commerce que realiza la migración. La complejidad de los cambios y la capacidad de respuesta de usted y del analista afectan directamente a la cantidad de tiempo que puede tardar la migración. Una vez que haya analizado los detalles, se establecerá una cronología y se le enviará una declaración de trabajo.

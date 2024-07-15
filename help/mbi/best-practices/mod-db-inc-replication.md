@@ -17,15 +17,15 @@ Si las tablas actualmente no permiten la replicación incremental, consulte las 
 
 ## Modificaciones para Modificado en
 
-El `Modified At` , que es el método de replicación más ideal, utiliza un `datetime` para detectar datos nuevos o actualizados. Recuerde que la variable `datetime` la columna de las tablas que utilizan este método debe estar indexada y no puede contener valores nulos en ningún momento.
+El método `Modified At`, que es el método de replicación más ideal, utiliza una columna `datetime` para detectar datos nuevos o actualizados. Recuerde que la columna `datetime` de las tablas que utilizan este método debe estar indizada y no puede contener valores nulos en ningún momento.
 
-Si la tabla no tiene un `datetime` columna, puede añadir un índice `modified at` columna. No se permiten valores nulos en `modified at` columna. Compruebe que la columna se rellena para cada fila.
+Si la tabla no tiene una columna `datetime`, puede agregar una columna de índice `modified at`. No se permiten valores nulos en una columna `modified at`. Compruebe que la columna se rellena para cada fila.
 
-Para garantizar que `Modified At` funciona según lo previsto, no se pueden eliminar filas de la tabla. En su lugar, debe marcar la fila como no válida agregando un `deleted` a la tabla. Esta columna devuelve un `1` si la fila no es válida y `0` de lo contrario. A continuación, puede utilizar esta columna para filtrar las filas no válidas cuando cree métricas e informes.
+Para asegurarse de que el método `Modified At` funciona según lo previsto, no puede eliminar filas de la tabla. En su lugar, debe marcar la fila como no válida agregando una columna `deleted` a la tabla. Esta columna devuelve un `1` si la fila no es válida y `0` en caso contrario. A continuación, puede utilizar esta columna para filtrar las filas no válidas cuando cree métricas e informes.
 
 ## Modificaciones para clave principal de incremento automático único
 
-Si la variable `Modified At` no se puede activar, la clave principal de incremento automático único es la siguiente mejor opción. Los nuevos datos se detectan en tablas utilizando este método al buscar valores de clave principal superiores al valor más alto actual en la Data Warehouse.
+Si el método `Modified At` no se puede habilitar, entonces la clave principal de incremento automático único es la siguiente mejor opción. Los nuevos datos se detectan en tablas utilizando este método al buscar valores de clave principal superiores al valor más alto actual en la Data Warehouse.
 
 Recuerde que las tablas que utilizan este método son de una sola columna con claves principales de aumento automático de enteros. Para utilizar este método en la base de datos, realice las siguientes modificaciones:
 
@@ -34,4 +34,4 @@ Recuerde que las tablas que utilizan este método son de una sola columna con cl
 
 ## Ajuste
 
-Si realiza pequeñas modificaciones en las tablas, puede aprovechar los métodos de replicación incremental más rápidos y eficientes. Sin embargo, si esto no es posible, aún puede realizar otros pasos para lo siguiente [reducir el tiempo de actualización](../best-practices/reduce-update-cycle-time.md) y [optimizar la base de datos](../best-practices/opt-db-analysis.md).
+Si realiza pequeñas modificaciones en las tablas, puede aprovechar los métodos de replicación incremental más rápidos y eficientes. Sin embargo, si esto no es posible, puedes seguir dando otros pasos para [reducir el tiempo de actualización](../best-practices/reduce-update-cycle-time.md) y [optimizar tu base de datos](../best-practices/opt-db-analysis.md).

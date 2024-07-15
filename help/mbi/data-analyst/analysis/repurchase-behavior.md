@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 1%
+source-wordcount: '849'
+ht-degree: 0%
 
 ---
 
@@ -46,11 +46,11 @@ Esta medida muestra la frecuencia de pedido del cliente o el tiempo que tarda en
 
 Con las métricas anteriores en mente, observe un ejemplo que implica productos de café.
 
-| **Nombre del producto** | **Probabilidad de orden repetido** | **Número promedio de pedidos durante toda la vida** | **Ingresos promedio por vida útil** | **Mediana del tiempo hasta el siguiente pedido** |
+| **Nombre del producto** | **Probabilidad de repetición de pedido** | **Número promedio de pedidos durante toda la vida** | **Ingresos promedio por duración** | **Mediana de tiempo hasta el siguiente pedido** |
 |-----|-----|-----|-----|-----|
-| Cervecero de una taza | 94.98% | 7.92 | $549.82 | 57,01 días |
-| Cápsulas de café | 93.82% | 8.68 | $479.98 | 63,48 días |
-| Granos de café | 41.92% | 6.07 | $99.82 | 27,31 días |
+| Cervecero de una taza | 94,98 % | 7,92 | 549,82 $ | 57,01 días |
+| Cápsulas de café | 93,82 % | 8,68 | 479,98 $ | 63,48 días |
+| Granos de café | 41,92 % | 6,07 | 99,82 $ | 27,31 días |
 
 {style="table-layout:auto"}
 
@@ -76,10 +76,10 @@ Entre los clientes que han comprado cápsulas de café, la mitad hacen un pedido
 
 ## ¿Qué otros análisis se pueden generar?
 
-Con las métricas descritas en este tema, también puede crear otros análisis de recompra útiles. Por ejemplo, también puede ver cómo los clientes vuelven a comprar **el mismo elemento** - por ejemplo, si compran recambios regularmente. Las cápsulas y los granos de café se pueden volver a comprar con regularidad, pero sería inesperado ver a los clientes haciendo compras repetidas de la cervecera. Si su negocio se centra en recargas o reabastecimiento, este análisis sería útil.
+Con las métricas descritas en este tema, también puede crear otros análisis de recompra útiles. Por ejemplo, también puede ver cómo los clientes vuelven a comprar **el mismo artículo**, por ejemplo, si compran recargas con regularidad. Las cápsulas y los granos de café se pueden volver a comprar con regularidad, pero sería inesperado ver a los clientes haciendo compras repetidas de la cervecera. Si su negocio se centra en recargas o reabastecimiento, este análisis sería útil.
 
 Además de analizar el comportamiento de recompra de sus clientes, también puede generar análisis que miren la lealtad de los clientes. Considere la posibilidad de analizar los patrones de pérdida de clientes. ¿Dónde abandonan el sitio los clientes y no regresan? ¿A qué ritmo ocurre esto?
 
-Una vez que haya identificado por qué se produce la pérdida, puede utilizar el análisis para crear una `reactivation` campaña. Con estos datos, puede identificar a los usuarios que se han vuelto inactivos, cuánto tiempo ha pasado desde su última visita, cuál fue su última compra, etc. Esto le permite tomar decisiones procesables que atraen a sus clientes a regresar.
+Una vez que haya identificado por qué se produce la pérdida, puede utilizar el análisis para generar una campaña `reactivation`. Con estos datos, puede identificar a los usuarios que se han vuelto inactivos, cuánto tiempo ha pasado desde su última visita, cuál fue su última compra, etc. Esto le permite tomar decisiones procesables que atraen a sus clientes a regresar.
 
-Para obtener ayuda con el análisis, [soporte de contacto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Para obtener ayuda con el análisis, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

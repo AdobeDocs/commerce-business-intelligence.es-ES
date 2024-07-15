@@ -16,8 +16,8 @@ ht-degree: 0%
 Los datos se utilizan para tomar decisiones comerciales. Puede recibir informes y paneles de un analista de datos de su equipo, pero también desea aprender a crear esos informes y paneles.
 
 Esta sección muestra cómo:
-* adquisición y visualización de datos en [!DNL Commerce Intelligence] uso de informes y paneles
-* comparta esos datos con las partes interesadas por correo electrónico y `.csv` archivos
+* adquirir y mostrar datos en [!DNL Commerce Intelligence] mediante informes y paneles
+* compartir esos datos con las partes interesadas mediante correo electrónico y `.csv` archivos
 
 ## Relacionado
 

@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Compartir datos
 
-Comunicar el estado y las tendencias de su negocio es esencial. En esta sección, aprenderá a exportar y compartir datos de un gráfico a una `.csv` o `Excel` archivo. Además, aprenda a configurar y enviar automáticamente resúmenes de sus datos por correo electrónico a las partes interesadas clave.
+Comunicar el estado y las tendencias de su negocio es esencial. En esta sección, aprenderá a exportar y compartir datos de un gráfico a un archivo de `.csv` o `Excel`. Además, aprenda a configurar y enviar automáticamente resúmenes de sus datos por correo electrónico a las partes interesadas clave.

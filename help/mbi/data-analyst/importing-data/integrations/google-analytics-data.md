@@ -6,32 +6,32 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
-# Previsto [!DNL Google Analytics] datos
+# Se esperaban [!DNL Google Analytics] datos
 
-Después de conectar un [!DNL Google Analytics] integración, puede interactuar con su [!DNL Google Analytics] métricas *inmediatamente en el`Visual Report Builder`*. Al introducir la variable `Visual Report Builder`, si hace clic en **[!UICONTROL Add a Metric]**, una serie de métricas de su [!DNL Google Analytics] El perfil de aparece en un menú desplegable inmediatamente debajo de las métricas de la Data Warehouse.
+Una vez que haya conectado una integración de [!DNL Google Analytics], podrá interactuar con las métricas de [!DNL Google Analytics] *inmediatamente en`Visual Report Builder`*. Cuando escribe `Visual Report Builder`, si hace clic en **[!UICONTROL Add a Metric]**, aparece una serie de métricas del perfil [!DNL Google Analytics] en un menú desplegable situado inmediatamente debajo de las métricas de la Data Warehouse.
 
-El [!DNL Google Analytics] la integración es *live* — esto significa que la variable `Report Builder` solicita datos de [!DNL Google Analytics] *inmediatamente* al agregar una métrica al informe. También significa que las métricas a las que puede acceder se definen exactamente como están en [!DNL Google Analytics]y que estos valores no son *almacenado* en su [!DNL Commerce Intelligence] cuenta: solo se muestra visualmente en los informes.
+La integración de [!DNL Google Analytics] es *activa*, lo que significa que `Report Builder` solicita datos de [!DNL Google Analytics] *inmediatamente* cuando agrega una métrica al informe. También significa que las métricas a las que puede acceder se definen exactamente como están en [!DNL Google Analytics] y que estos valores no están *almacenados* en su cuenta de [!DNL Commerce Intelligence], solo se muestran visualmente en los informes.
 
 +++Métricas y Dimension compatibles (Google Analytics 3 o Universal Analytics)
 
 >[!NOTE]
 >
->El 1 de julio de 2023, Universal Analytics estándar ([!DNL Google Analytics] 3) las propiedades ya no procesarán los datos. Podrá ver sus informes de Universal Analytics durante un período de tiempo después del 1 de julio de 2023. Sin embargo, los nuevos datos solo fluirán a [!DNL Google Analytics] 4 propiedades.
+>El 1 de julio de 2023, las propiedades estándar de Universal Analytics ([!DNL Google Analytics] 3) dejarán de procesar datos. Podrá ver sus informes de Universal Analytics durante un período de tiempo después del 1 de julio de 2023. Sin embargo, los nuevos datos solo fluirán a [!DNL Google Analytics] 4 propiedades.
 
-[!DNL Google Analytics] integraciones en [!DNL Commerce Intelligence] use el [!DNL Google Analytics] [API de informes principales](https://developers.google.com/analytics/devguides/reporting/core/v3/)y admiten las siguientes métricas y dimensiones.
+Las integraciones de [!DNL Google Analytics] en [!DNL Commerce Intelligence] utilizan la [!DNL Google Analytics] [API de informes principales](https://developers.google.com/analytics/devguides/reporting/core/v3/) y admiten las siguientes métricas y dimensiones.
 
 >[!NOTE]
 >
->Para evitar resultados inesperados o sin sentido, confirme que las dimensiones que utilice son compatibles con una o más métricas que utilice en `Report Builder`. Puede comprobarlo [aquí](https://ga-dev-tools.google/dimensions-metrics-explorer/).
+>Para evitar resultados inesperados o sin sentido, confirme que las dimensiones que utilice son compatibles con una o varias métricas que utilice en `Report Builder`. Puede marcar [aquí](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Métricas compatibles
 
-| [!DNL Commerce Intelligence] Nombre para mostrar | [!DNL Google Analytics] Nombre/Fórmula |
+| Nombre para mostrar [!DNL Commerce Intelligence] | [!DNL Google Analytics] nombre/fórmula |
 | --- | --- |
 | `Page Views` | `ga:pageviews` |
 | `Total Time Spent On Page` | `ga:timeOnPage` |
@@ -85,7 +85,7 @@ El [!DNL Google Analytics] la integración es *live* — esto significa que la v
 
 ## Dimension admitidos
 
-| [!DNL Commerce Intelligence] Nombre para mostrar | [!DNL Google Analytics] Nombre/Fórmula | ¿Agrupable? |
+| Nombre para mostrar [!DNL Commerce Intelligence] | [!DNL Google Analytics] nombre/fórmula | ¿Agrupable? |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -156,12 +156,12 @@ El [!DNL Google Analytics] la integración es *live* — esto significa que la v
 
 +++Métricas y Dimension compatibles (Google Analytics 4)
 
-[!DNL Google Analytics] integraciones en [!DNL Commerce Intelligence] use el [!DNL Google Analytics] [API de datos v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+Las integraciones de [!DNL Google Analytics] en [!DNL Commerce Intelligence] utilizan [!DNL Google Analytics] [API de datos v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
 
 >[!NOTE]
 >
-> Commerce Intelligence no admite las siguientes dimensiones: `cohort`, `cohortNthDay`, `cohortNthMonth`, y `cohortNthWeek`.
+> Commerce Intelligence no admite las siguientes dimensiones: `cohort`, `cohortNthDay`, `cohortNthMonth` y `cohortNthWeek`.
 >
->Para evitar resultados inesperados o sin sentido, confirme que las dimensiones que utilice son compatibles con una o más métricas que utilice en `Visual Report Builder`. Puede consultar la [DIMENSION de GA4 y explorador de métricas](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
+>Para evitar resultados inesperados o sin sentido, confirme que las dimensiones que utilice son compatibles con una o varias métricas que utilice en `Visual Report Builder`. Puede consultar [Explorador de Dimension y métricas de GA4](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
 
 +++

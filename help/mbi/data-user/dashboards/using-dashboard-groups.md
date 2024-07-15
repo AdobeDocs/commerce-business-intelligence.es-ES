@@ -31,11 +31,11 @@ Los grupos de paneles se pueden crear de una de las dos maneras siguientes:
 
    ![crear grupo de tableros](../../assets/create-dashboard-groups-new-dashboard.png)
 
-1. Al cambiar el grupo de un tablero existente, desde el `Manage Data > Dashboards` página:
+1. Al cambiar el grupo de un tablero existente, desde la página `Manage Data > Dashboards`:
 
    1. Haga clic en el tablero para el que desea crear el grupo.
 
-   1. En `Dashboard Group (optional)`, aparecerá el grupo de tableros actual.
+   1. En `Dashboard Group (optional)`, aparece el grupo de tableros actual.
 
    1. Para crear un grupo, escriba el nombre del nuevo grupo y haga clic fuera del cuadro.
 
@@ -43,11 +43,11 @@ Los grupos de paneles se pueden crear de una de las dos maneras siguientes:
 
 ## Añadir tableros existentes a grupos existentes
 
-1. En el `Manage Data > Dashboards` , elija el tablero para el que desea cambiar el grupo.
+1. En la página `Manage Data > Dashboards`, elija el tablero para el cual desea cambiar el grupo.
 
-1. El texto debajo de `Dashboard Group (optional)` muestra el grupo de paneles actual del panel.
+1. El texto bajo `Dashboard Group (optional)` muestra el grupo de tableros actual del tablero.
 
-1. Para cambiar el grupo del panel, elija otro grupo de la lista, en este caso `PS`, `Campaigns`.
+1. Para cambiar el grupo del tablero, elija otro grupo de la lista, en este caso `PS`, `Campaigns`.
 
    ![cambiar tablero de grupo](../../assets/add-existing-dashboard-existing-group.png)
 

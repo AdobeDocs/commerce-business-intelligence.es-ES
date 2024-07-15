@@ -6,16 +6,16 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
 
 # Comprender y evaluar las relaciones entre tablas
 
-Al evaluar la relación entre dos tablas determinadas, debe comprender cuántas ocurrencias posibles de una tabla podrían pertenecer a una entidad en otra y viceversa. Por ejemplo, utilice un `users` y una tabla `orders` tabla. En este caso, desea saber cuántas **pedidos** un determinado **usuario** ha colocado y cuántas posibles **usuarios** un **pedido** podría pertenecer a.
+Al evaluar la relación entre dos tablas determinadas, debe comprender cuántas ocurrencias posibles de una tabla podrían pertenecer a una entidad en otra y viceversa. Por ejemplo, use una tabla `users` y una tabla `orders`. En este caso, desea saber cuántos **pedidos** ha realizado un **usuario** determinado y a cuántos posibles **usuarios** podría pertenecer un **pedido**.
 
-Comprender las relaciones es vital para mantener la integridad de los datos, ya que afecta a la precisión de su [columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) y [dimensiones](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Para obtener más información, consulte [tipos de relación](#types) y [cómo evaluar las tablas de la Data Warehouse.](#eval)
+Entender las relaciones es vital para mantener la integridad de los datos, ya que afecta la precisión de las [columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) y [dimensiones](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Para obtener más información, vea [tipos de relación](#types) y [cómo evaluar las tablas en la Data Warehouse.](#eval)
 
 ## Tipos de relaciones {#types}
 
@@ -27,7 +27,7 @@ Existen tres tipos de relaciones que pueden existir entre dos tablas:
 
 ### `One-to-One` {#onetoone}
 
-En un `one-to-one` relación, un registro en la tabla `B` solo pertenece a un registro de la tabla `A`. Y un registro en la tabla `A` solo pertenece a un registro de la tabla `B`.
+En una relación `one-to-one`, un registro de la tabla `B` pertenece a un único registro de la tabla `A`. Y un registro de la tabla `A` pertenece a un único registro de la tabla `B`.
 
 Por ejemplo, en la relación entre las personas y los números de licencia de conducir, una persona solo puede tener un número de licencia de conducir, y un número de licencia de conducir pertenece a una sola persona.
 
@@ -35,23 +35,23 @@ Por ejemplo, en la relación entre las personas y los números de licencia de co
 
 ### `One-to-Many` {#onetomany}
 
-En un `one-to-many` relación, un registro en la tabla `A` puede pertenecer potencialmente a varios registros de la tabla `B`. Piense en la relación entre `orders` y `items` - un pedido puede contener muchos artículos, pero un artículo pertenece a un único pedido. En este caso, la variable `orders` La tabla es el lado uno y el `items` La tabla es el lado varios.
+En una relación `one-to-many`, un registro de la tabla `A` puede pertenecer potencialmente a varios registros de la tabla `B`. Piense en la relación entre `orders` y `items`: un pedido puede contener muchos elementos, pero un elemento pertenece a un único pedido. En este caso, la tabla `orders` es el lado uno y la tabla `items` es el lado varios.
 
 ![](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
-En un `many-to-many` relación, un registro en la tabla `B` puede pertenecer potencialmente a varios registros de la tabla `A`. Y viceversa, un registro en la tabla `A` puede pertenecer potencialmente a varios registros de la tabla `B`.
+En una relación `many-to-many`, un registro de la tabla `B` puede pertenecer potencialmente a varios registros de la tabla `A`. Y viceversa, un registro de la tabla `A` puede pertenecer potencialmente a varios registros de la tabla `B`.
 
-Piense en la relación entre **products** y **categorías**: un producto puede pertenecer a muchas categorías y una categoría puede contener muchos productos.
+Piense en la relación entre **productos** y **categorías**: un producto puede pertenecer a muchas categorías y una categoría puede contener muchos productos.
 
 ![](../../assets/many-to-many.png)
 
 ## Evaluación de las tablas {#eval}
 
-Dados los tipos de relaciones que existen entre las tablas, puede aprender a evaluar las tablas en la Data Warehouse. A medida que estas relaciones configuran cómo se definen las columnas calculadas de varias tablas, es importante que entienda cómo identificar las relaciones de tabla y qué lado - `one` o `many` - la tabla pertenece a.
+Dados los tipos de relaciones que existen entre las tablas, puede aprender a evaluar las tablas en la Data Warehouse. A medida que estas relaciones determinan cómo se definen las columnas calculadas de varias tablas, es importante que entienda cómo identificar las relaciones de tabla y a qué lado - `one` o `many` - pertenece la tabla.
 
-Puede utilizar dos métodos para evaluar las relaciones de un par determinado de tablas dentro de la Data Warehouse. El primer método emplea un [marco conceptual](#concept) que tiene en cuenta cómo interactúan las entidades de la tabla entre sí. El segundo método utiliza el [esquema de tabla](#schema).
+Puede utilizar dos métodos para evaluar las relaciones de un par determinado de tablas dentro de la Data Warehouse. El primer método emplea un [marco conceptual](#concept) que tiene en cuenta cómo interactúan las entidades de la tabla entre sí. El segundo método usa el esquema [table](#schema).
 
 ### Uso del marco conceptual {#concept}
 
@@ -61,7 +61,7 @@ Por ejemplo, cuando piense en usuarios y pedidos, tenga en cuenta todo lo que es
 
 Para utilizar este método:
 
-1. Identifique la entidad que se describe en cada tabla. **Pista: suele ser un sustantivo**. Por ejemplo, la variable `user` y `orders` Las tablas de describen explícitamente usuarios y pedidos.
+1. Identifique la entidad que se describe en cada tabla. **Sugerencia: normalmente es un sustantivo**. Por ejemplo, las tablas `user` y `orders` describen explícitamente usuarios y pedidos.
 
 1. Identifique uno o más verbos que describan cómo interactúan estas entidades. Por ejemplo, al comparar usuarios con pedidos, los usuarios &quot;realizan&quot; pedidos. En la otra dirección, los pedidos &quot;pertenecen&quot; a los usuarios.
 
@@ -73,7 +73,7 @@ Una vez identificada la terminología que describe cómo interactúan las dos ta
 
 Una persona determinada solo puede tener un número de licencia de conducir. Un determinado número de licencia de conducir pertenece a una sola persona.
 
-Este es un `one-to-one` relación en la que cada tabla es un lado.
+Se trata de una relación de `one-to-one` en la que cada tabla es un lado uno.
 
 ![](../../assets/one-to-one3.png)
 
@@ -81,7 +81,7 @@ Este es un `one-to-one` relación en la que cada tabla es un lado.
 
 Un pedido determinado puede contener muchos elementos. Un elemento dado pertenece a un único pedido.
 
-Este es un `one-to-many` relación en la que la tabla pedidos es el lado uno y la tabla elementos es el lado varios.
+Se trata de una relación de `one-to-many` en la que la tabla pedidos es el lado uno y la tabla elementos es el lado varios.
 
 ![](../../assets/one-to-many3.png)
 
@@ -89,21 +89,21 @@ Este es un `one-to-many` relación en la que la tabla pedidos es el lado uno y l
 
 Un producto dado puede pertenecer posiblemente a muchas categorías. Una categoría determinada puede contener muchos productos.
 
-Este es un `many-to-many` relación en la que cada tabla es un lado varios.
+Se trata de una relación de `many-to-many` en la que cada tabla es un lado varios.
 
 ![](../../assets/many-to-many3.png)
 
 ### Uso del esquema de la tabla {#schema}
 
-El segundo método utiliza el esquema de tabla. El esquema define qué columnas son las [`Primary`](https://en.wikipedia.org/wiki/Unique_key) y [`Foreign`](https://en.wikipedia.org/wiki/Foreign_key) llaves. Puede utilizar estas claves para vincular tablas y ayudar a determinar los tipos de relación.
+El segundo método utiliza el esquema de tabla. El esquema define qué columnas son las claves [`Primary`](https://en.wikipedia.org/wiki/Unique_key) y [`Foreign`](https://en.wikipedia.org/wiki/Foreign_key). Puede utilizar estas claves para vincular tablas y ayudar a determinar los tipos de relación.
 
 Una vez identificadas las columnas que vinculan dos tablas, utilice los tipos de columna para evaluar la relación entre las tablas. Estos son algunos ejemplos:
 
 ### `One-to-one`
 
-Si las tablas están vinculadas mediante la variable `primary key` de ambas tablas, se describe la misma entidad única en cada tabla y la relación es `one-to-one`.
+Si las tablas están vinculadas utilizando el `primary key` de ambas tablas, se describe la misma entidad única en cada tabla y la relación es `one-to-one`.
 
-Por ejemplo, una `users` La tabla puede capturar la mayoría de los atributos de usuario (como el nombre) mientras que una `user_source` La tabla de captura las fuentes de registro del usuario. En cada tabla, una fila representa un usuario.
+Por ejemplo, una tabla `users` puede capturar la mayoría de los atributos de usuario (como el nombre) mientras que una tabla `user_source` suplementaria captura los orígenes de registro de usuario. En cada tabla, una fila representa un usuario.
 
 ![](../../assets/one-to-one1.png)
 
@@ -111,9 +111,9 @@ Por ejemplo, una `users` La tabla puede capturar la mayoría de los atributos de
 
 >[!NOTE]
 >
->¿Aceptas órdenes de invitados? Consulte [Pedidos de invitado](../data-warehouse-mgr/guest-orders.md) para conocer cómo los pedidos de invitados pueden afectar a las relaciones de tabla.
+>¿Aceptas órdenes de invitados? Vea [Pedidos de invitado](../data-warehouse-mgr/guest-orders.md) para conocer cómo los pedidos de invitado pueden afectar las relaciones de tabla.
 
-Cuando las tablas están vinculadas mediante una `Foreign key` apuntando a un `primary key`, esta configuración describe un `one-to-many` relación. Un lado es la tabla que contiene el `primary key` y el lado varios es la tabla que contiene el `foreign key`.
+Cuando las tablas se vinculan mediante un `Foreign key` que señala a un `primary key`, esta configuración describe una relación de `one-to-many`. El lado uno es la tabla que contiene `primary key` y el lado varios es la tabla que contiene `foreign key`.
 
 ![](../../assets/one-to-many1.png)
 
@@ -121,12 +121,12 @@ Cuando las tablas están vinculadas mediante una `Foreign key` apuntando a un `p
 
 Si alguna de las siguientes opciones es verdadera, la relación es `many-to-many`:
 
-* `Non-primary key` se utilizan para vincular dos tablas
+* Se están utilizando `Non-primary key` columnas para vincular dos tablas
   ![](../../assets/many-to-many1.png)
-* Parte de un compuesto `primary key` se utiliza para vincular dos tablas
+* Parte de un(a) `primary key` compuesto(a) se usa para vincular dos tablas
 
 ![](../../assets/many-to-mnay2.png)
 
 ## Pasos siguientes
 
-La evaluación correcta de las relaciones de tabla es crucial para modelar los datos con precisión. Ahora que comprende cómo se relacionan las tablas entre sí, consulte [qué puede hacer con el Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md).
+La evaluación correcta de las relaciones de tabla es crucial para modelar los datos con precisión. Ahora que comprende cómo se relacionan las tablas, vea [lo que puede hacer con el Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md).

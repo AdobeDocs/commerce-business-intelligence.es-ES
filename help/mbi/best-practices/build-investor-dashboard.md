@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Esto es lo que necesita para crear informes para su tablero de inversores:
       * A/B
 * **[!UICONTROL All-time revenue by source]**
    * Métrica - Ingresos
-   * Agrupar por nombre de cliente `utm_source`
+   * Agrupar por `utm_source` del cliente
 * **[!UICONTROL Revenue from top 10 products]**
    * Métrica: ingresos de productos
       * Ocultar el gráfico
@@ -59,20 +59,20 @@ Esto es lo que necesita para crear informes para su tablero de inversores:
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * Sesiones
 
-Con un [!DNL Google Analytics] Integración de, puede incluir informes sobre:
+Con una integración de [!DNL Google Analytics], puede incluir informes sobre:
 
 * Visitas al sitio
 * Tasa de conversión
 
-Con el [Servicios de enriquecimiento de datos de Commerce](https://business.adobe.com/products/magento/magento-commerce.html), puede incluir informes sobre:
+Con los [servicios de enriquecimiento de datos de Commerce](https://business.adobe.com/products/magento/magento-commerce.html), puede incluir informes sobre:
 
 * Clientes únicos por estado/región, edad, sexo.
 
 ## Otros consejos
 
-* Utilice un enfoque claro y conciso [convención de nomenclatura](../best-practices/naming-elements.md)
+* Use una [convención de nomenclatura](../best-practices/naming-elements.md) clara y concisa
 * Uso compartido del tablero con usuarios inversores
-* O bien, envíelo mediante **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
+* O enviarlo a través de **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
 * Cree solo un tablero. Esto hace que el contenido sea más fácil de mantener y usted sabe exactamente lo que sus inversores están mirando.
 
 Organice sus informes cuidadosamente y preste atención a los detalles. Una vez finalizado, el tablero tiene un aspecto similar al siguiente:

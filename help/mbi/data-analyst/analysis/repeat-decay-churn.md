@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ En este tema se exploran los análisis que pueden ayudarle a responder las sigui
 
 ## Métricas recomendadas
 
-Cuando analice la caída y la pérdida de la probabilidad de repetición, considere la posibilidad de utilizar ([o edificio](../../data-user/reports/ess-manage-data-metrics.md)) estas métricas:
+Cuando analice la disminución y la pérdida de la probabilidad de repetición, considere la posibilidad de utilizar ([o generar](../../data-user/reports/ess-manage-data-metrics.md)) estas métricas:
 
 ### Probabilidad de orden repetido inicial
 
@@ -43,7 +43,7 @@ Entender el porcentaje de clientes que se espera que realicen compras repetidas 
 
 Observe la caída de probabilidad repetida para un negocio de comercio electrónico típico.
 
-![Probabilidad de orden repetido inicial probabilidad de orden repetido dada meses desde el orden.](../../assets/Order_probability_reports.png)
+![Probabilidad de orden repetido inicial probabilidad de orden repetido dada meses desde el pedido.](../../assets/Order_probability_reports.png)
 
 ### Probabilidad de orden repetido inicial
 
@@ -78,7 +78,7 @@ Después de crear el análisis anterior y determinar un umbral de pérdida, pued
 
 Si ofrece más de un producto, probablemente se pregunte cómo los clientes que compran un producto específico se comportan de forma diferente a lo largo del tiempo en comparación con otros clientes. ¿Quiere saber más? Consulte este tutorial para explorar el comportamiento de compra de por vida de las cohortes de clientes en función de los productos específicos que han comprado.
 
-Esta práctica recomendada la proporciona [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obtener más información.
+Esta práctica recomendada la proporciona [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obtener más información.
 
 ### Relacionado
 

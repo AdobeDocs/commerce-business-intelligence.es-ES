@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 2%
+source-wordcount: '1177'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Métricas recomendadas {#metrics}
 
-Al analizar el uso de cupones, considere la posibilidad de utilizar ([o edificio](../../data-user/reports/ess-manage-data-metrics.md)) estas métricas:
+Al analizar el uso de cupones, considere la posibilidad de utilizar ([o generar](../../data-user/reports/ess-manage-data-metrics.md)) estas métricas:
 
 ### Número de pedidos
 
@@ -65,26 +65,26 @@ Esta métrica ayuda a evaluar la lealtad y los ingresos promedio generados por l
 
 Ahora que sabe qué métricas ver, observe un ejemplo que incluye tres cupones diferentes: 10 % de descuento, 20 dólares de descuento en 100 o más y 10 dólares de descuento.
 
-| **Cupón** | **Número de pedidos** | **Ingresos brutos** | **Descuentos brutos de cupones** | **Ingresos netos** | **Porcentaje descontado** |
+| **Cupón** | **# de pedidos** | **Ingresos brutos** | **Descuentos brutos en cupones** | **Ingresos netos** | **Descuento porcentual** |
 |-----|-----|-----|-----|-----|-----|
-| **10 % de descuento** | 79 | $19,757.02 | $1,975.70 | $17,781.32 | 10.00% |
-| **$20 de descuento en $100+** | 101 | $13,928.91 | $2,020.00 | $11,908.91 | 14.50% |
-| **10 $ de descuento** | 201 | $14,542.35 | $2,010.00 | $12,532.35 | 13.82% |
+| **10% de descuento** | 79 | 19.757,02 $ | 1.975,70 $ | 17.781,32 $ | 10,00 % |
+| **$20 de descuento en $100+** | 101 | 13.928,91 $ | 2.020,00 $ | 11.908,91 $ | 14,50 % |
+| **$10 de descuento** | 201 | 14.542,35 $ | $2.010,00 | 12.532,35 $ | 13,82 % |
 
 {style="table-layout:auto"}
 
 
-| **Cupón** | **El Promedio de valor de pedido neto** | **El Promedio de descuento por pedido** | **Distintos compradores** | **El Promedio de ingresos por duración** |
+| **Cupón** | **Promedio valor de pedido neto** | **Promedio descuento para pedidos** | **Compradores distintos** | **Promedio ingresos de por vida** |
 |-----|-----|-----|-----|-----|
-| **10 % de descuento** | $225.08 | $25.01 | 79 | $361.50 |
-| **$20 de descuento en $100+** | $117.91 | $20.00 | 95 | $218.76 |
-| **10 $ de descuento** | $62.35 | $10.00 | 199 | $84.27 |
+| **10% de descuento** | 225,08 $ | 25,01 $ | 79 | 361,50 $ |
+| **$20 de descuento en $100+** | 117,91 $ | 20,00 $ | 95 | 218,76 $ |
+| **$10 de descuento** | 62,35 $ | 10,00 $ | 199 | 84,27 $ |
 
 {style="table-layout:auto"}
 
 ## ¿Qué se puede sacar de esto?
 
-Se realizaron alrededor de 80 pedidos con el cupón de &quot;10% de descuento&quot;, 100 pedidos con el cupón de &quot;$20 de descuento de $100 o más&quot; y 200 pedidos con el cupón de &quot;$10 de descuento&quot;. El **número de pedidos** asociadas a cada cupón pueden variar en función de varios factores, entre ellos:
+Se realizaron alrededor de 80 pedidos con el cupón de &quot;10% de descuento&quot;, 100 pedidos con el cupón de &quot;$20 de descuento de $100 o más&quot; y 200 pedidos con el cupón de &quot;$10 de descuento&quot;. El **número de pedidos** asociados con cada cupón puede variar según varios factores, entre ellos:
 
 * el periodo de tiempo durante el cual se ofrecieron los cupones.
 * la hora del día/semana/mes/año en que se ofrecieron los cupones.
@@ -97,15 +97,15 @@ Se realizaron alrededor de 80 pedidos con el cupón de &quot;10% de descuento&qu
 
 * el comportamiento de compra típico del cliente.
 
-Mientras que el **descuentos brutos** para los tres cupones son similares (alrededor de $2,000), el número de pedidos para cada cupón es diferente. El análisis de los descuentos por pedido ayuda a explicar las razones de estos números contrastantes. El cupón de &quot;10% de descuento&quot; tiene el menor número de pedidos, pero un **descuento de pedido promedio** de unos 25 dólares. Aunque este cupón tiene un número bajo de pedidos, su alto valor de descuento promedio hace que su importe de descuento bruto se acerque a los $2,000.
+Aunque los **descuentos brutos** para los tres cupones son similares (alrededor de $2,000), el número de pedidos para cada cupón es diferente. El análisis de los descuentos por pedido ayuda a explicar las razones de estos números contrastantes. El cupón de &quot;descuento del 10%&quot; tiene el menor número de pedidos, pero un **descuento promedio en el pedido** de aproximadamente $25. Aunque este cupón tiene un número bajo de pedidos, su alto valor de descuento promedio hace que su importe de descuento bruto se acerque a los $2,000.
 
-**Ingresos brutos y netos** proporciona una idea general del valor total de los pedidos asociados con cada cupón. Sin embargo, este panorama general no permite comprender los diferentes comportamientos relacionados con cada cupón. Una vez que consulta una base por pedido, puede ver que el cupón de &quot;10% de descuento&quot; tiene un alto **pedido neto promedio** valor, que a su vez conduce a su alto **ingresos netos**.
+**Ingresos brutos y netos** proporcionan una idea general del valor total de los pedidos asociados con cada cupón. Sin embargo, este panorama general no permite comprender los diferentes comportamientos relacionados con cada cupón. Una vez que vea una base por pedido, puede ver que el cupón de &quot;10% de descuento&quot; tiene un alto valor de **promedio de pedido neto**, lo que a su vez conduce a sus altos **ingresos netos**.
 
-Por otro lado, el cupón de &quot;10% de descuento&quot; tiene un valor de descuento promedio alto ($25.01), pero el más bajo **porcentaje de descuento**. Esto tiene sentido cuando se contabiliza su valor de pedido neto promedio de 225,08 $. El cupón &quot;10% de descuento&quot; tiene un pequeño descuento porcentual de un gran valor de pedido neto promedio, por lo que el descuento de pedido promedio es una gran cantidad.
+Por otro lado, el cupón &quot;10% de descuento&quot; tiene un valor de descuento promedio alto ($25.01), pero el **porcentaje de descuento más bajo**. Esto tiene sentido cuando se contabiliza su valor de pedido neto promedio de 225,08 $. El cupón &quot;10% de descuento&quot; tiene un pequeño descuento porcentual de un gran valor de pedido neto promedio, por lo que el descuento de pedido promedio es una gran cantidad.
 
-Consulte la **distintos compradores** y **ingresos medios a largo plazo** para cada cupón. El cupón de &quot;10% de descuento&quot; tiene el mismo número de pedidos que compradores diferentes. Esto podría deberse a que cada cliente se limita a un cupón. Por otro lado, los cupones de &quot;$20 de descuento de $100 o más&quot; y &quot;$10 de descuento&quot; tienen menos compradores distintos que el número de pedidos, lo que implica que algunos clientes utilizaron estos cupones varias veces.
+Observe a **compradores diferentes** y a **ingresos promedio por vida útil** de cada cupón. El cupón de &quot;10% de descuento&quot; tiene el mismo número de pedidos que compradores diferentes. Esto podría deberse a que cada cliente se limita a un cupón. Por otro lado, los cupones de &quot;$20 de descuento de $100 o más&quot; y &quot;$10 de descuento&quot; tienen menos compradores distintos que el número de pedidos, lo que implica que algunos clientes utilizaron estos cupones varias veces.
 
-Para los ingresos promedio por duración, puede ver que los ingresos promedio por duración de cada cupón son mayores que los respectivos **pedido neto promedio** valor. Esto implica que, o bien los clientes realizaron compras repetidas o bien el valor de su pedido fue mucho más alto que el valor neto promedio del pedido.
+Para los ingresos promedio de por vida, puede ver que los ingresos promedio de por vida de cada cupón son mayores que el valor respectivo de **promedio de pedido neto**. Esto implica que, o bien los clientes realizaron compras repetidas o bien el valor de su pedido fue mucho más alto que el valor neto promedio del pedido.
 
 ## ¿Qué más puedo analizar? {#otheranalyses}
 
@@ -115,7 +115,7 @@ Los análisis mencionados en este tema pueden proporcionarle una valiosa perspec
 
 ¿Qué cupones animan a los clientes a realizar pedidos? ¿Estos cupones atraen a compradores únicos o fomentan la lealtad del cliente (es decir, el cliente que realiza compras repetidas)?
 
-**Puede analizar el tiempo que tardan los clientes en utilizar los cupones.**
+**Podría analizar el tiempo que tardan sus clientes en usar sus cupones.**
 
 ¿Se utilizan los cupones el día en que se lanzan o transcurre una semana o dos antes de que la mayoría de los clientes los utilicen?
 

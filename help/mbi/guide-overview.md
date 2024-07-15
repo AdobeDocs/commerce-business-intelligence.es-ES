@@ -8,12 +8,12 @@ exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# [!DNL Adobe Commerce Intelligence] Guía del usuario
+# Guía del usuario de [!DNL Adobe Commerce Intelligence]
 
 >[!NOTE]
 >
@@ -28,26 +28,26 @@ Existen dos áreas para los administradores de datos:
 
 Esta guía contiene las siguientes secciones organizadas según la función que pueda tener dentro de su organización.
 
-- [Usuario de datos](data-user.md): Los datos se utilizan para tomar decisiones comerciales. Puede recibir informes y paneles de un analista de datos de su equipo, pero también desea aprender a crear esos informes y paneles.
-- [Analista de datos](data-analyst.md): se siente cómodo diseñando consultas y siendo la persona indicada para el análisis de datos. Sabe cómo encontrar respuestas específicas a preguntas sobre datos y desea facilitar una experiencia de autoservicio para sus compañeros.
-- Administrador: Usted administra el [!DNL Commerce Intelligence] cuenta, incluidas las licencias, la adición y eliminación de usuarios y la gestión de tareas administrativas esenciales.
+- [Usuario de datos](data-user.md): Utiliza datos para tomar decisiones comerciales. Puede recibir informes y paneles de un analista de datos de su equipo, pero también desea aprender a crear esos informes y paneles.
+- [Analista de datos](data-analyst.md): Se siente cómodo diseñando consultas y siendo la persona indicada para el análisis de datos. Sabe cómo encontrar respuestas específicas a preguntas sobre datos y desea facilitar una experiencia de autoservicio para sus compañeros.
+- Administrador: administra la cuenta de [!DNL Commerce Intelligence], incluidas las licencias, la adición y eliminación de usuarios y la administración de tareas administrativas esenciales.
 
 Además de los flujos de trabajo basados en funciones anteriores, esta guía también contiene lo siguiente:
 
-- Prácticas recomendadas: [!UICONTROL Commerce Intelligence] es una plataforma sólida y flexible, lo que significa que hay muchas maneras diferentes de realizar tareas similares. Esta sección reúne las [!DNL Commerce Intelligence] métodos recomendados para capturar, analizar y ver sus datos.
-- Tutorials: Siga estos tutoriales autoguiados para aprender el poder de [!DNL Commerce Intelligence].
+- Prácticas recomendadas: [!UICONTROL Commerce Intelligence] es una plataforma sólida y flexible, lo que significa que hay muchas maneras diferentes de realizar tareas similares. Esta sección reúne los [!DNL Commerce Intelligence] métodos recomendados para capturar, analizar y ver sus datos.
+- Tutorials: siga estos tutoriales autoguiados para conocer el poder de [!DNL Commerce Intelligence].
 
 ## Cómo obtener ayuda
 
-Póngase en contacto con [equipo de apoyo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si tiene preguntas y desea aprovechar algunos de sus Servicios Profesionales o si encuentra problemas con su cuenta.
+Póngase en contacto con el [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si tiene preguntas y desea aprovechar algunos de los servicios profesionales o si tiene problemas con su cuenta.
 
 ### Políticas de servicio
 
-Consulte un [lista de los servicios que proporciona el equipo de asistencia al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Ver una [lista de los servicios que proporciona el equipo de atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### Envío de un vale de asistencia
 
-¿Necesita ayuda para crear una columna calculada avanzada? ¿Ha encontrado un defecto o un problema de conexión? Si necesita ponerse en contacto con el equipo de asistencia, el Adobe le pedirá que utilice el [directrices de tickets de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Estas directrices describen el Adobe de información necesario para resolver el problema.
+¿Necesita ayuda para crear una columna calculada avanzada? ¿Ha encontrado un defecto o un problema de conexión? Si necesita ponerse en contacto con el equipo de asistencia, el Adobe le pide que utilice las [directrices de vale de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Estas directrices describen el Adobe de información necesario para resolver el problema.
 
 ## Documentación disponible
 

@@ -16,10 +16,10 @@ ht-degree: 0%
 Se siente cómodo diseñando consultas y siendo la persona indicada para el análisis de datos. Sabe cómo encontrar respuestas específicas a preguntas sobre datos y desea facilitar una experiencia de autoservicio para sus compañeros.
 
 Esta sección muestra cómo:
-* conexión e importación de datos a [!DNL Commerce Intelligence]
+* conectar e importar datos en [!DNL Commerce Intelligence]
 * ver cómo se almacenan y estructuran los datos en la Data Warehouse
 * analizar los datos
-* use el [!DNL SQL Report Builder]
+* usar [!DNL SQL Report Builder]
 
 ## Relacionado
 

@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -21,17 +21,17 @@ En este tema se muestra cómo configurar un tablero que le permita segmentar a l
 
 ![](../../assets/blobid0.png)
 
-El análisis de RFM solo se puede configurar si tiene [!DNL Adobe Commerce Intelligence] Planifique Pro en la nueva arquitectura (por ejemplo, si tiene el `Data Warehouse Views` en la opción `Manage Data` menú). Estas columnas se pueden crear desde el **[!DNL Manage Data > Data Warehouse]** página. A continuación se proporcionan instrucciones detalladas.
+El análisis de RFM solo se puede configurar si tiene el plan [!DNL Adobe Commerce Intelligence] Pro en la nueva arquitectura (por ejemplo, si tiene la opción `Data Warehouse Views` en el menú `Manage Data`). Estas columnas se pueden crear desde la página **[!DNL Manage Data > Data Warehouse]**. A continuación se proporcionan instrucciones detalladas.
 
 ## Primeros pasos
 
 Primero debe cargar un archivo que contenga solo una clave principal con el valor de una. Esto permite crear algunas columnas calculadas necesarias para el análisis.
 
-Puede usar esto [artículo](../importing-data/connecting-data/using-file-uploader.md) y la imagen siguiente para dar formato al archivo.
+Puede usar este [artículo](../importing-data/connecting-data/using-file-uploader.md) y la imagen siguiente para dar formato al archivo.
 
 ## Columnas calculadas
 
-Se hace una distinción adicional si su negocio permite pedidos de invitados. Si es así, puede ignorar todos los pasos de `customer_entity` tabla. Si no se permiten pedidos de invitado, ignore todos los pasos para la `sales_flat_order` tabla.
+Se hace una distinción adicional si su negocio permite pedidos de invitados. Si es así, puede omitir todos los pasos de la tabla `customer_entity`. Si no se permiten pedidos de invitado, ignore todos los pasos de la tabla `sales_flat_order`.
 
 Columnas para crear
 
@@ -44,7 +44,7 @@ Columnas para crear
 
 * 
       Segundos desde la última fecha de pedido del cliente
-  * [!UICONTROL Column type]: - &quot;Misma tabla > Edad
+  * [!UICONTROL Column type]:     &quot;Misma tabla > Edad
 * Seleccionado [!UICONTROL column]: `Customer's last order date`
 
 * (entrada) Referencia de recuento
@@ -55,13 +55,13 @@ Columnas para crear
 * 
   [!UICONTROL Tipo de datos]: `Integer`
 
-* **Referencia de recuento** (este es el archivo que subió con el número &quot;1&quot;)
+* Tabla **Count reference** (este es el archivo que ha cargado con el número &quot;1&quot;)
 * Número de clientes
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` O `customer_entity.(input)reference > Count Reference`. `Primary Key`
 * Seleccionado [!UICONTROL column]: `sales_flat_order.customer_email` O `customer_entity.entity_id`
 
-* **Customer_entity** tabla
+* Tabla **Customer_entity**
 * Número de clientes
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
 * [!UICONTROL Path]: `customer_entity`.Referencia de (entrada) > Concentración de clientes. `Primary Key`
@@ -94,8 +94,8 @@ Columnas para crear
 * Clasificación por número de pedidos de duración del cliente
 * 
   [!UICONTROL Tipo de columna]: – "Misma tabla > Cálculo"
-* [!UICONTROL Inputs]: - **(entrada) Clasificación por número de pedidos de duración del cliente**, **Número de clientes**
-* [!UICONTROL Calculation]: - **Caso en el que A es nulo y, a continuación, fin nulo (B-(A-1))**
+* [!UICONTROL Inputs]: - **(entrada) Clasificación por número de pedidos de por vida del cliente**, **Número de clientes**
+* [!UICONTROL Calculation]: - **caso cuando A es nulo y luego nulo (B-(A-1)) fin**
 * [!UICONTROL Datatype]: - Entero
 
 * Puntuación de frecuencia del cliente (en percentiles)
@@ -124,14 +124,14 @@ Columnas para crear
 * 
   [!UICONTROL Tipo de datos]: String
 
-* **Referencia de recuento** tabla
+* **Tabla de referencia de recuento**
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `sales_flat_order.(input) reference > Customer Concentration. Primary Key` O `customer_entity.(input)reference > Customer Concentration.Primary Key`
 * Seleccionado [!UICONTROL column]: `sales_flat_order.customer_email` O `customer_entity.entity_id`
 * [!UICONTROL Filter]: `Customer's RFM score (by percentile)` No Igual A 000
 
-* **Customer_entity** tabla
+* Tabla **Customer_entity**
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
 * [!UICONTROL Path]: `customer_entity.(input) reference > Customer Concentration.Primary Key`
@@ -139,7 +139,7 @@ Columnas para crear
 
 * Puntuación de actualización del cliente `(R+F+M)`
 * [!UICONTROL Column type]: `Same table > Calculation`
-* [!UICONTROL Inputs]: – `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
+* [!UICONTROL Inputs]: - `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
 * 
   [!UICONTROL Tipo de datos]: `Integer`
@@ -174,7 +174,7 @@ No hay métricas nuevas.
 
 >[!NOTE]
 >
->Asegúrese de lo siguiente [añadir todas las columnas nuevas como dimensiones a las métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de crear nuevos informes.
+>Asegúrese de [agregar todas las columnas nuevas como dimensiones a las métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de crear nuevos informes.
 
 ## Informes
 

@@ -6,22 +6,22 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
 
 # Paneles listos para usar.
 
-[!DNL Adobe Commerce Intelligence] incluye paneles listos para usar para proporcionar información sobre su negocio. Con los paneles, puede comprobar el estado de las métricas esenciales, como los ingresos de por vida del usuario, el número de compras repetidas, los productos principales comprados en un período de tiempo determinado y más. Estos paneles preconfigurados se crearon para ayudarle a tomar decisiones comerciales fundadas.
+[!DNL Adobe Commerce Intelligence] incluye paneles predeterminados para proporcionar información sobre su negocio. Con los paneles, puede comprobar el estado de las métricas esenciales, como los ingresos de por vida del usuario, el número de compras repetidas, los productos principales comprados en un período de tiempo determinado y más. Estos paneles preconfigurados se crearon para ayudarle a tomar decisiones comerciales fundadas.
 
 >[!NOTE]
 >
->El acceso a estos paneles depende del tipo de cuenta y del nivel de acceso. Si no ve estos paneles, póngase en contacto con [apoyo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>El acceso a estos paneles depende del tipo de cuenta y del nivel de acceso. Si no ve estos paneles, comuníquese con [soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Disponibilidad del informe
 
-Para el `Customers` y `Executive Summary` Paneles, algunos informes solo están disponibles según la configuración de cierre de compra de la tienda. Específicamente, si su tienda permite el pago y envío de invitados o no permite el pago y envío de invitados.
+Para los paneles de `Customers` y `Executive Summary`, algunos informes solo están disponibles según la configuración de cierre de compra de la tienda. Específicamente, si su tienda permite el pago y envío de invitados o no permite el pago y envío de invitados.
 
 ## Clientes (se permite el cierre de compra de invitados)
 
@@ -42,7 +42,7 @@ El panel Clientes (con derecho de pago y envío de invitados) proporciona inform
 | `Time Between Orders` | El tiempo medio y medio que tardan los clientes entre pedidos, desglosado por número de pedido (es decir, el tiempo entre pedidos uno y dos, dos y tres, etc.). |
 | `Number of Customers - Lifetime Orders` | Para un número determinado de pedidos realizados durante la vida útil de un cliente, el número de clientes que han realizado ese número de pedidos y el porcentaje de toda la base de clientes que representa ese número. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Clientes que realizaron su primera y única compra entre hace tres y seis meses. |
-| `Avg LTV by First Order` | Compara el promedio acumulado de ingresos por vida útil del cliente entre cohortes. Las cohortes se definen por el mes en el que un cliente realizó una compra por primera vez. Por ejemplo, una `Jan 2020` La cohorte muestra el promedio acumulado de LTV para los clientes cuya primera compra fue en enero de 2020. |
+| `Avg LTV by First Order` | Compara el promedio acumulado de ingresos por vida útil del cliente entre cohortes. Las cohortes se definen por el mes en el que un cliente realizó una compra por primera vez. Por ejemplo, una cohorte `Jan 2020` muestra el LTV promedio acumulado de los clientes cuya primera compra fue en enero de 2020. |
 | `Customer's First 30 Day vs Lifetime Revenue` | Comparación de los ingresos promedio de los clientes en los 30 días posteriores a su primera compra frente a durante toda su vida útil. Cada burbuja corresponde a una región de envío y el tamaño de cada burbuja representa el número de clientes adquiridos de esa región. |
 
 ## Clientes (no se permite el pago y envío de invitados)
@@ -133,7 +133,7 @@ El panel Pedidos proporciona información sobre el volumen transaccional de pedi
 
 ## Productos
 
-El panel Productos muestra el rendimiento general del producto en términos de productos pedidos, su valor bruto de mercancía (GMV) y los principales productos comprados y reembolsados. Puede ayudarle a equilibrar las compras y las devoluciones, así como a determinar el éxito y la popularidad del producto. Su tienda debe ser [configurado para rastrear devoluciones](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) para que se rellenen los gráficos.
+El panel Productos muestra el rendimiento general del producto en términos de productos pedidos, su valor bruto de mercancía (GMV) y los principales productos comprados y reembolsados. Puede ayudarle a equilibrar las compras y las devoluciones, así como a determinar el éxito y la popularidad del producto. Su tienda debe estar [configurada para hacer un seguimiento de los reembolsos](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) para que se rellenen esos gráficos.
 
 >[!NOTE]
 >

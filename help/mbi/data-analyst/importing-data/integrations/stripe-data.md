@@ -6,16 +6,16 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-# Previsto [!DNL Stripe] datos
+# Se esperaban [!DNL Stripe] datos
 
-Después [ha conectado su [!DNL Stripe] account](../integrations/stripe.md), puede utilizar el [Administrador de Datas Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para realizar fácilmente un seguimiento de los campos de datos relevantes para su análisis.
+Después de [haber conectado tu [!DNL Stripe] cuenta](../integrations/stripe.md), puedes usar el [Administrador de Datas Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear fácilmente los campos de datos relevantes para el análisis.
 
-En este tema se exploran las tablas de datos principales desde las que se puede importar [!DNL Stripe] en [!DNL Commerce Intelligence]. Una vez completada la configuración, se crearán las siguientes tablas en la Data Warehouse. Haga clic en los vínculos de la columna Nombre de tabla para obtener más información sobre los atributos de cada tabla.
+En este tema se exploran las tablas de datos principales que se pueden importar de [!DNL Stripe] a [!DNL Commerce Intelligence]. Una vez completada la configuración, se crearán las siguientes tablas en la Data Warehouse. Haga clic en los vínculos de la columna Nombre de tabla para obtener más información sobre los atributos de cada tabla.
 
 | **Nombre de tabla** | **Descripción** |
 |-----|-----|
@@ -25,15 +25,15 @@ En este tema se exploran las tablas de datos principales desde las que se puede 
 | [`Invoices`](https://stripe.com/docs/billing/migration/invoice-states) | Esta tabla contiene información sobre facturas, incluido el importe adeudado, suscripciones, artículos de factura, cualquier ajuste de prorrateo automático, etc. |
 | [`Plans`](https://stripe.com/docs/api/plans/object) | Esta tabla contiene la información de precios de diferentes productos y niveles de funciones del sitio. Por ejemplo, puede tener un plan de $10 al mes para funciones básicas y un plan de $20 al mes para funciones premium. |
 | [`Subscriptions`](https://stripe.com/docs/api/subscriptions/object) | Esta tabla contiene los detalles de los planes de suscripción a los que pertenecen sus clientes. Los atributos incluyen el ID de cliente, el estado, las fechas de cancelación/finalización, el porcentaje de impuestos, la información de prueba, etc. |
-| [`Events`](https://stripe.com/docs/development/dashboard/events) | Los eventos le permiten conocer algo interesante que ha sucedido en una cuenta de. [Cuando se produce un evento interesante](https://stripe.com/docs/api/events/types), se crea un nuevo objeto de evento. Por ejemplo, cuando un cargo se realiza correctamente `charge.succeeded` evento se ha creado, o cuando una factura no se puede pagar, `invoice.payment\_failed` evento creado. |
+| [`Events`](https://stripe.com/docs/development/dashboard/events) | Los eventos le permiten conocer algo interesante que ha sucedido en una cuenta de. [Cuando se produce un evento interesante](https://stripe.com/docs/api/events/types), se crea un nuevo objeto de evento. Por ejemplo, cuando un cargo se realiza correctamente `charge.succeeded`, se crea un evento o, cuando una factura no se puede pagar, se crea un evento `invoice.payment\_failed`. |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->Muchas solicitudes de API pueden provocar la creación de varios eventos. Por ejemplo, si crea una suscripción para un cliente, recibirá un `customer.subscription.created` evento y una  `charge.succeeded` evento.
+>Muchas solicitudes de API pueden provocar la creación de varios eventos. Por ejemplo, si crea una suscripción para un cliente, recibirá un evento `customer.subscription.created` y un evento `charge.succeeded`.
 
 ## Relacionado:
 
 * [Conectando [!DNL Stripe]](../integrations/stripe.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

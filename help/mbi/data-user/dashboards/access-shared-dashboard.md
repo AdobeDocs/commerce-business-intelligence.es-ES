@@ -17,8 +17,8 @@ Poner al día a los nuevos usuarios es sencillo.
 
 ## Nuevo usuario
 
-Después de que un nuevo usuario cree su contraseña, se mostrará una lista de paneles compartidos populares. Pueden seleccionar los paneles que desean mostrar en su panel y hacer clic en **[!UICONTROL Done]**.
+Después de que un nuevo usuario cree su contraseña, se mostrará una lista de paneles compartidos populares. Pueden seleccionar los tableros que desean mostrar en su tablero y hacer clic en **[!UICONTROL Done]**.
 
 ## Usuarios existentes
 
-Para volver a ver la lista de paneles compartidos, los usuarios pueden hacer clic en **[!UICONTROL Find]** en el `Global Search` menú.
+Para volver a ver la lista de paneles compartidos, los usuarios pueden hacer clic en **[!UICONTROL Find]** en el menú `Global Search`.
