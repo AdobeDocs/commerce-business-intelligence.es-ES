@@ -4,9 +4,9 @@ description: Aprenda a utilizar los filtros.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 0854d644cb72b3fc8b8b31a0bf7e8dca4cc99724
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Se pueden añadir uno o más filtros para limitar los datos que se utilizan para
 
      ![Informe filtrado](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
-1. En la barra lateral, haga clic en el icono de perspectiva ( ![](../../assets/magento-bi-btn-perspective.png)).
+1. En la barra lateral, haga clic en el icono de perspectiva (![Icono de perspectiva](../../assets/magento-bi-btn-perspective.png)).
 
    ![Perspectiva](../../assets/magento-bi-report-builder-filter-perspective.png)<!--{: .zoom}-->
 
