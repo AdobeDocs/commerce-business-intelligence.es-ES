@@ -23,6 +23,6 @@ ht-degree: 0%
 
 1. Una vez agregada su cuenta al editor [!DNL Google Adwords], seleccione **[!UICONTROL File** > **&#x200B; Exportar hoja de cálculo (CSV)**> **Exportar toda la cuenta]**
 
-Esto genera un archivo de `.csv` que contiene toda la información almacenada en su cuenta actual de [!DNL Google Adwords]. En este momento, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (asegúrese de adjuntar este archivo). para que pueda ver más de cerca sus datos. Si el archivo es demasiado grande, compártalo con el equipo [!DNL Commerce Intelligence] a través de [!DNL Dropbox] o [!DNL Google Drive].
+Esto genera un archivo de `.csv` que contiene toda la información almacenada en su cuenta actual de [!DNL Google Adwords]. En este momento, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) (asegúrese de adjuntar este archivo). para que pueda ver más de cerca sus datos. Si el archivo es demasiado grande, compártalo con el equipo [!DNL Commerce Intelligence] a través de [!DNL Dropbox] o [!DNL Google Drive].
 
 Para obtener más información sobre [!DNL Google Adwords] `.csv` exportaciones de archivos, consulte la [[!DNL Google Adwords] documentación](https://support.google.com/google-ads/editor/answer/38657?hl=en) oficial.

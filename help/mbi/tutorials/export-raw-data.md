@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Exportar datos sin procesar
 
-Con las exportaciones de datos sin procesar, puede exportar registros de la Data Warehouse para obtener una visión más detallada de lo que alimenta el panel. Además, las exportaciones de datos sin procesar pueden ayudarle a [identificar discrepancias en los datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
+Con las exportaciones de datos sin procesar, puede exportar registros de la Data Warehouse para obtener una visión más detallada de lo que alimenta el panel. Además, las exportaciones de datos sin procesar pueden ayudarle a [identificar discrepancias en los datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=es).
 
 Las exportaciones de datos sin procesar proporcionan acceso a columnas y dimensiones adicionales generadas mediante la desnormalización y la agregación previa de métricas relevantes. Por ejemplo, `User's first order date` es una dimensión que puede exportar para cada usuario en [!DNL Commerce Intelligence], aunque es posible que no esté disponible en la base de datos.
 

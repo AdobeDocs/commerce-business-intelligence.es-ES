@@ -60,4 +60,4 @@ Esta tabla incluye la misma información que la tabla `facebook_ads_insights_{ac
 ## Relacionado
 
 * [Conectando [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)

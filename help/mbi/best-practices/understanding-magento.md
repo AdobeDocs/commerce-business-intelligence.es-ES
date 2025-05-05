@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Su entorno [!DNL Adobe Commerce Intelligence]
 
-A medida que analiza los datos de comercio, tenga en cuenta estos factores y las ideas erróneas comunes. Si necesita ayuda para asegurarse de que está usando correctamente el esquema de Commerce, no dude en [ponerse en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+A medida que analiza los datos de comercio, tenga en cuenta estos factores y las ideas erróneas comunes. Si necesita ayuda para asegurarse de que está usando correctamente el esquema de Commerce, no dude en [ponerse en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
 
 ## [!DNL entity\_id]
 
