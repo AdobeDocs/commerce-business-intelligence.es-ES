@@ -55,46 +55,46 @@ Es útil tener una combinación de valores estáticos y gráficos visuales al an
 
 * Quedan **ingresos para alcanzar el objetivo**
 * Métrica `A`: `Revenue`
-* 
+* &#x200B;
   [!UICONTROL Métrica]: `Revenue`
 
 * Métrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* 
+* &#x200B;
   [!UICONTROL Fórmula]: `(B-A)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (el período de tiempo relevante que desee)
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
-* 
+* &#x200B;
   [!UICONTROL Tipo de gráfico]: `Scalar`
 
 * **Destinos de ingresos**
 * Métrica `A`: `Revenue`
-* 
+* &#x200B;
   [!UICONTROL Métrica]: `Revenue`
 
 * Métrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * Métrica `C`: `Revenue (amount change since previous year)` (ocultar)
-* 
+* &#x200B;
   [!UICONTROL Métrica]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Este mes del año pasado)
-* 
+* &#x200B;
   [!UICONTROL Fórmula]: `(A-C)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Currency`
 
 * Desactivar `Multiple Y-Axes`
 * [!UICONTROL Time period]: (el período de tiempo relevante que desee)*
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 

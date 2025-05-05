@@ -14,7 +14,7 @@ ht-degree: 0%
 # Elija un Report Builder
 
 >[!NOTE]
->>Requiere [permisos de administrador](../../administrator/user-management/user-management.md).
+>&#x200B;>Requiere [permisos de administrador](../../administrator/user-management/user-management.md).
 
 Ahora que tiene más opciones para crear análisis, a veces es difícil saber con exactitud qué sabor del Report Builder se adapta a sus necesidades. Este tema le guía a través de la elección de la mejor manera de generar su análisis.
 

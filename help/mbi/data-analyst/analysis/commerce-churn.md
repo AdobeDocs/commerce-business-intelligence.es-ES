@@ -76,19 +76,22 @@ Columnas para crear
 * **Tasa de pérdida**
    * [!UICONTROL Metric]: nuevos clientes (por fecha de primer pedido)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * 
+   * &#x200B;
+
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * Segundos transcurridos desde la última fecha de pedido del cliente >= [Su límite autodefinido para los clientes perdidos ]**`^`**
+   * Segundos transcurridos desde la última fecha de pedido del cliente >= [Su límite autodefinido para los clientes perdidos ]&#x200B;**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * 
+   * &#x200B;
+
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * 
+   * &#x200B;
+
      [!UICONTROL Format]: Percentage
 
 * *Métrica `A`:`New customers cumulative`*

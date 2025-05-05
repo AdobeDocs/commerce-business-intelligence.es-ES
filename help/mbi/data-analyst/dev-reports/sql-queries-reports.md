@@ -53,7 +53,7 @@ Observe un ejemplo específico de cómo se puede definir una métrica de `Total 
 | `email NOT LIKE '%@magento.com'` | Métrica `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Métrica `timestamp` (y sistema de informes `time range`) |
 
-Vaya al generador de métricas haciendo clic en **[!UICONTROL Manage Data** > ** Métricas **> **Crear nueva métrica]**; primero debe seleccionar la tabla `source` adecuada, que en este caso es la tabla `orders`. A continuación, la métrica se configuraría como se muestra a continuación:
+Vaya al generador de métricas haciendo clic en **[!UICONTROL Manage Data** > **&#x200B; Métricas &#x200B;**> **Crear nueva métrica]**; primero debe seleccionar la tabla `source` adecuada, que en este caso es la tabla `orders`. A continuación, la métrica se configuraría como se muestra a continuación:
 
 ![Agregación de métrica](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ La consulta de esta agregación puede tener un aspecto similar al siguiente:
 
 La configuración de esto en [!DNL Commerce Intelligence] requiere el uso del administrador de Datas Warehouse, donde se crea una ruta de acceso entre la tabla `orders` y `customers` y, a continuación, se crea una columna denominada `Customer LTV` en la tabla del cliente.
 
-Observe cómo establecer una nueva ruta de acceso entre `customers` y `orders`. El objetivo final es crear una nueva columna agregada en la tabla `customers`, así que primero vaya a la tabla `customers` de la Data Warehouse y, a continuación, haga clic en **[!UICONTROL Create a Column** > ** Seleccionar una definición **> **SUMA]**.
+Observe cómo establecer una nueva ruta de acceso entre `customers` y `orders`. El objetivo final es crear una nueva columna agregada en la tabla `customers`, así que primero vaya a la tabla `customers` de la Data Warehouse y, a continuación, haga clic en **[!UICONTROL Create a Column** > **&#x200B; Seleccionar una definición &#x200B;**> **SUMA]**.
 
 A continuación, debe seleccionar la tabla de origen. Si existe una ruta de acceso a la tabla `orders`, simplemente selecciónela en la lista desplegable. Sin embargo, si está creando una nueva ruta, haga clic en **[!UICONTROL Create new path]** y aparecerá la siguiente pantalla:
 
