@@ -4,14 +4,14 @@ description: Aprenda a agregar un nuevo usuario  [!DNL Commerce Intelligence] y 
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 99fc6c26017b5da4d066d400be1888ab4032590d
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# Agregar nuevo usuario [!DNL Adobe Commercer Intelligence]
+# Agregar nuevo usuario [!DNL Adobe Commerce Intelligence]
 
 1. Haga clic en el nombre de su empresa en la esquina superior derecha y seleccione **[!UICONTROL Invite User]** en el menú desplegable.
 1. Introduzca el nombre y el correo electrónico del usuario.
@@ -28,7 +28,7 @@ Se envía un correo electrónico al nuevo usuario con los detalles de inicio de 
 
 >[!NOTE]
 >
->El nuevo usuario no tiene paneles de forma predeterminada. El Adobe recomienda que [comparta](../../data-user/dashboards/share-dashboard-with-users.md) los tableros necesarios con el nuevo usuario de inmediato.
+>El nuevo usuario no tiene paneles de forma predeterminada. Adobe recomienda que [comparta](../../data-user/dashboards/share-dashboard-with-users.md) los tableros necesarios con el nuevo usuario de inmediato.
 
 ## Actualice su dirección de correo electrónico o contraseña
 
@@ -40,4 +40,4 @@ Si necesita reenviar la invitación, en la [página de inicio de sesión](https:
 
 >[!IMPORTANT]
 >
->Cada cuenta tiene un número contratado de licencias o puestos. Si llegas al límite o deseas obtener más información, [envía un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+>Cada cuenta tiene un número contratado de licencias o puestos. Si llegas al límite o deseas obtener más información, [envía un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
