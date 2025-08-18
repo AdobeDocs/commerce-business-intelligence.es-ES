@@ -6,7 +6,7 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Estos permisos permiten a los usuarios realizar determinadas acciones o acceder 
 | **Crear/editar/eliminar informes SQL** | ✔ |  |   |
 | **Clonar tableros** | ✔ |   |   |
 | **Agregar/administrar integraciones** | ✔ |   |   |
-| **Acceder al Administrador de Datas Warehouse** | ✔ |   |   |
+| **Acceder al Administrador de Data Warehouse** | ✔ |   |   |
 | **Sincronizar/no sincronizar tablas y columnas** | ✔ |   |   |
 | **Crear/editar métricas** | ✔ |   |   |
 | **Crear/editar conjuntos de filtros** | ✔ |   |   |
@@ -50,11 +50,11 @@ Estos permisos permiten a los usuarios realizar determinadas acciones o acceder 
 
 >[!NOTE]
 >
->_Puede limitar el acceso de [un usuario de **[!UICONTROL Standard]**&#x200B;a métricas específicas](../../administrator/user-management/restrict-metric-access.md)._
+>_Puede limitar el acceso de **[!UICONTROL Standard]**un usuario de [ a métricas específicas](../../administrator/user-management/restrict-metric-access.md)._
 >
 >**[!UICONTROL Standard] _los usuarios pueden acceder a Facturación con una configuración de permiso adicional._
 >
->Los usuarios de **[!UICONTROL Read-Only]** solo pueden _ver_ paneles que se hayan compartido con ellos; no pueden crear ni editar nada en [!DNL Commerce Intelligence], ni pueden buscar y agregar nuevos paneles a su cuenta. El Adobe recomienda compartir un conjunto específico de paneles con **[!UICONTROL Read-Only]** usuarios que usted u otro miembro de su equipo mantiene. No clone un conjunto de paneles para ellos.
+>Los usuarios de **[!UICONTROL Read-Only]** solo pueden _ver_ paneles que se hayan compartido con ellos; no pueden crear ni editar nada en [!DNL Commerce Intelligence], ni pueden buscar y agregar nuevos paneles a su cuenta. Adobe recomienda compartir un conjunto específico de paneles con **[!UICONTROL Read-Only]** usuarios que usted u otro miembro de su equipo mantiene. No clone un conjunto de paneles para ellos.
 
 ## Permisos adicionales: Facturación y asistencia técnica {#billingtech}
 
@@ -62,7 +62,7 @@ Además de los niveles generales de permisos, existen otras dos designaciones de
 
 ### Factura
 
-`Billing` usuarios tienen acceso a la página de facturación y pueden cambiar la información de pago. Además, también pueden ser contactados por Adobe para preguntas de facturación.
+`Billing` usuarios tienen acceso a la página de facturación y pueden cambiar la información de pago. Además, Adobe también puede ponerse en contacto con ellos si tienen preguntas sobre facturación.
 
 Los usuarios de `Admin` tienen acceso a la ficha `Billing` de manera predeterminada, pero los usuarios de `Standard` también pueden obtener acceso si tienen seleccionada la casilla de verificación `Billing` en su perfil.
 
@@ -70,7 +70,7 @@ Los usuarios de `Admin` tienen acceso a la ficha `Billing` de manera predetermin
 
 ### Técnico
 
-`Technical` usuarios no tienen permisos específicos para ellos. Esta configuración solo marca un contacto técnico dentro de su organización. El Adobe puede ponerse en contacto con estos usuarios si tienen preguntas técnicas.
+`Technical` usuarios no tienen permisos específicos para ellos. Esta configuración solo marca un contacto técnico dentro de su organización. Adobe puede ponerse en contacto con estos usuarios si tienen preguntas técnicas.
 
 Los usuarios de `Admin` pueden agregar nuevos usuarios a su cuenta al hacer clic en **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** y seguir las indicaciones. Una vez creado el usuario en [!DNL Commerce Intelligence], la persona afortunada a la que está invitando recibirá instrucciones por correo electrónico sobre cómo completar el proceso de configuración de la cuenta.
 

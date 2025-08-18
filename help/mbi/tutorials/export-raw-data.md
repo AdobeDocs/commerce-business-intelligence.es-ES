@@ -1,6 +1,6 @@
 ---
 title: Exportar datos sin procesar
-description: Aprenda a exportar registros de su Data Warehouse de  [!DNL Commerce Intelligence] para obtener una vista más detallada de lo que alimenta su tablero.
+description: Aprenda a exportar registros de su  [!DNL Commerce Intelligence] Data Warehouse para obtener más información sobre lo que alimenta su tablero.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Exportar datos sin procesar
 
-Con las exportaciones de datos sin procesar, puede exportar registros de la Data Warehouse para obtener una visión más detallada de lo que alimenta el panel. Además, las exportaciones de datos sin procesar pueden ayudarle a [identificar discrepancias en los datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=es).
+Con las exportaciones de datos sin procesar, puede exportar registros de su Data Warehouse para obtener una visión más detallada de lo que alimenta su panel. Además, las exportaciones de datos sin procesar pueden ayudarle a [identificar discrepancias en los datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
 Las exportaciones de datos sin procesar proporcionan acceso a columnas y dimensiones adicionales generadas mediante la desnormalización y la agregación previa de métricas relevantes. Por ejemplo, `User's first order date` es una dimensión que puede exportar para cada usuario en [!DNL Commerce Intelligence], aunque es posible que no esté disponible en la base de datos.
 
@@ -34,7 +34,7 @@ Existen dos maneras de exportar datos sin procesar en [!DNL Commerce Intelligenc
 
 Si desea exportar la tabla desde la ficha [!UICONTROL Manage Data], necesita los permisos de [Admin](../administrator/user-management/user-management.md).
 
-1. Haga clic en **[!UICONTROL Manage Data** > **&#x200B; Exportar datos &#x200B;**> **Exportación de datos sin procesar]**.
+1. Haga clic en **[!UICONTROL Manage Data** > ** Exportar datos **> **Exportación de datos sin procesar]**.
 1. Verá un(a) `Export List` de exportaciones de datos creadas recientemente, si las hay. Haga clic en **[!UICONTROL Add Export]** para crear una exportación.
 1. Se muestra el cuadro de diálogo `New Raw Data Export`. Aquí puede personalizar la exportación seleccionando o anulando la selección de columnas y filtros:
 

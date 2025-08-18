@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migración de datos
 
-La migración a un nuevo esquema de base de datos, servidor o base de datos de informes no tiene por qué ser estresante. El [[!DNL Adobe] equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) ofrece asistencia para la migración.
+La migración a un nuevo esquema de base de datos, servidor o base de datos de informes no tiene por qué ser estresante. El [[!DNL Adobe] equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ofrece asistencia para la migración.
 
 Para garantizar que la transición sea lo más fluida posible, debe ser lo más detallado posible al enviar la solicitud de migración. Este tema tiene todo lo que necesita para enviar una solicitud y comenzar la migración. Proporcionarnos una imagen completa de sus necesidades garantiza que su proyecto tenga un alcance adecuado y que la estimación sea precisa.
 
@@ -45,13 +45,13 @@ Para completar correctamente este tipo de migración, las columnas de datos exis
 
 Si se siente cómodo haciendo la coincidencia usted mismo, siga estas instrucciones y adjunte la hoja de cálculo terminada a su solicitud:
 
-1. Revise todas las tablas y columnas que se están sincronizando con la Data Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**).
+1. Revise todas las tablas y columnas que se están sincronizando con su Data Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**).
 
 1. En una hoja de cálculo, cree una pestaña para cada tabla que desee migrar a la nueva base de datos.
 
-1. En cada pestaña, cree una columna para todas las columnas existentes que deban migrarse. El Adobe recomienda ponerle un nombre similar a `Existing column name`.
+1. En cada pestaña, cree una columna para todas las columnas existentes que deban migrarse. Adobe recomienda ponerle un nombre similar a `Existing column name`.
 
-1. También debe crear otra columna para los equivalentes de columna en la nueva base de datos en cada pestaña de la hoja de cálculo. El Adobe recomienda asignar a la columna un nombre similar a `New column name`.
+1. También debe crear otra columna para los equivalentes de columna en la nueva base de datos en cada pestaña de la hoja de cálculo. Adobe recomienda que asigne a la columna un nombre similar a `New column name`.
 
 1. Introduzca las columnas existentes y sus equivalentes. Si una columna existente no tiene un nuevo equivalente, escriba `N/A`.
 
@@ -67,7 +67,7 @@ A continuación, se muestra un ejemplo:
 
 ## ¿Cómo envío una solicitud? {#submitreq}
 
-Póngase en contacto con nosotros al [enviar una solicitud de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Póngase en contacto con nosotros al [enviar una solicitud de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Si ha seguido los pasos de la sección anterior para crear la hoja de cálculo que coincide con la columna, no olvide adjuntarla.
 

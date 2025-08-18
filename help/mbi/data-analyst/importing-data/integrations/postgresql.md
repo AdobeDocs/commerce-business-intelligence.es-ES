@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ A continuación se muestra cómo navegar por [!DNL Commerce Intelligence] para r
 
 ## Permitir acceso a la dirección IP [!DNL Commerce Intelligence] {#allowlist}
 
-Para que la conexión se realice correctamente, debe configurar el cortafuegos para permitir el acceso desde su dirección IP. Es `54.88.76.97/32`, pero también se encuentra en la página de credenciales de `PostgreSQL`. Consulte el cuadro azul en el GIF de arriba.
+Para que la conexión se realice correctamente, debe configurar el cortafuegos para permitir el acceso desde su dirección IP. Es `54.88.76.97/32`, pero también se encuentra en la página de credenciales de `PostgreSQL`. Consulte el cuadro azul en la sección GIF anterior.
 
 ## Creando un usuario [!DNL Linux] para [!DNL Commerce Intelligence] {#linux}
 
@@ -105,4 +105,4 @@ Cuando termine, haga clic en **Guardar y probar** para completar la configuraci�
 
 ### Relacionado
 
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -1,5 +1,5 @@
 ---
-title: Administrador de Datas Warehouse
+title: Data Warehouse Manager
 description: Obtenga información sobre cómo administrar la configuración de sincronización de columnas y tablas, explorar en profundidad el esquema de una tabla y crear columnas calculadas para utilizarlas en los informes.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
 role: Admin, Data Architect, Data Engineer, User
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Administrador de Datas Warehouse
+# Data Warehouse Manager
 
 >[!NOTE]
 >
 >Requiere [permisos de administrador](../../administrator/user-management/user-management.md)
 
-El Administrador de Datas Warehouse, al que se tiene acceso haciendo clic en **[!UICONTROL Manage Data > Data Warehouse]**, es el portal de la Data Warehouse [!DNL Adobe Commerce Intelligence]. Con el Administrador de Datas Warehouse, puede administrar la configuración de sincronización de columnas y tablas, explorar en profundidad el esquema de una tabla y crear columnas calculadas para utilizarlas en los informes.
+Data Warehouse Manager, al que se accede haciendo clic en **[!UICONTROL Manage Data > Data Warehouse]**, es el portal de su Data Warehouse [!DNL Adobe Commerce Intelligence]. Con el Administrador de Data Warehouse, puede administrar la configuración de sincronización de columnas y tablas, explorar en profundidad el esquema de una tabla y crear columnas calculadas para utilizarlas en los informes.
 
 Este tema trata sobre:
 
@@ -34,9 +34,9 @@ La parte izquierda de la página `Data Warehouse Manager` contiene la lista de t
 
 En la lista de la tabla, las tablas se agrupan por su origen de conexión. Estos orígenes se agregan en [!UICONTROL Manage Data > Integrations] y pueden ser una base de datos, una [API](https://developer.adobe.com/commerce/services/reporting/) o un conector de terceros. En la parte superior de la lista de la tabla, hay un cuadro de búsqueda que le permite encontrar fácilmente las tablas deseadas.
 
-Debajo del cuadro de búsqueda, verá dos opciones: `All Tables` y `Synced Tables`. La opción `All Tables` enumera todas las tablas que ha puesto a disposición de la Data Warehouse, lo que incluye tanto las tablas sincronizadas como las no sincronizadas.
+Debajo del cuadro de búsqueda, verá dos opciones: `All Tables` y `Synced Tables`. La opción `All Tables` enumera todas las tablas que ha puesto a disposición de su Data Warehouse, las cuales incluyen tablas sincronizadas y no sincronizadas.
 
-La opción `Synced Tables` muestra todas las tablas que ya se han agregado a la Data Warehouse y que tienen datos que se replican desde las columnas seleccionadas.
+La opción `Synced Tables` muestra todas las tablas que ya se han agregado a su Data Warehouse y que tienen datos que se replican desde las columnas seleccionadas.
 
 ¿No ve la tabla que está buscando en la lista `All Tables`? Esto puede deberse a varios motivos:
 
@@ -48,7 +48,7 @@ La opción `Synced Tables` muestra todas las tablas que ya se han agregado a la 
 
 ### Sincronización de nuevas tablas y columnas nativas
 
-El Administrador de Datas Warehouse no solo le permite ver y administrar fácilmente sus fuentes de datos, sino que también tiene la libertad de seleccionar las tablas y columnas individuales que desee sincronizar.
+Data Warehouse Manager no solo le permite ver y administrar fácilmente sus fuentes de datos, sino que también tiene la libertad de seleccionar las tablas y columnas individuales que desee sincronizar.
 
 1. Haga clic en la opción `All Tables` y busque la tabla que desee sincronizar.
 1. Haga clic en el nombre de la tabla para previsualizar el esquema. Si la tabla es nueva, todas las columnas se mostrarán como `Unsynced`.
@@ -58,7 +58,7 @@ El Administrador de Datas Warehouse no solo le permite ver y administrar fácilm
    >
    >Las columnas nativas de una tabla tienen From Your Database en la columna `Location`.
 
-1. Asegúrese de comprobar las columnas `Primary Key`; estas columnas tienen un símbolo de clave junto al nombre de la columna. Se requiere un `Primary Key` para sincronizar correctamente los datos en la Data Warehouse.
+1. Asegúrese de comprobar las columnas `Primary Key`; estas columnas tienen un símbolo de clave junto al nombre de la columna. Se requiere un `Primary Key` para sincronizar correctamente los datos en Data Warehouse.
 
    Si está sincronizando una tabla que proviene directamente de la base de datos, es posible que no se indique `Primary Keys`. En este caso, póngase en contacto con el administrador de la base de datos para solicitar que se agregue una o varias claves principales a la tabla.
 1. Cuando termine, haga clic en el botón ![button](../../assets/button.png).
@@ -71,19 +71,19 @@ A continuación se muestra un breve vistazo a todo el proceso:
 
 ### Sincronización de nuevas tablas en segundo plano {#syncnew}
 
-Cuando puede sincronizar una tabla grande por primera vez, la Data Warehouse debe capturar de forma retroactiva todos los puntos de datos de la tabla antes de capturar nuevos datos de forma continua. Si la tabla es grande, es posible que no desee que la sincronización inicial se ejecute en secuencia con el **ciclo de actualización**. En este caso, desea que la sincronización inicial se produzca en segundo plano, en *paralelo* con cualquier actualización en ejecución.
+Cuando sincronice una tabla grande por primera vez, su Data Warehouse debe capturar de forma retroactiva todos los puntos de datos de la tabla antes de capturar nuevos datos de forma continua. Si la tabla es grande, es posible que no desee que la sincronización inicial se ejecute en secuencia con el **ciclo de actualización**. En este caso, desea que la sincronización inicial se produzca en segundo plano, en *paralelo* con cualquier actualización en ejecución.
 
 Para asegurarse de que esto ocurra, debe seleccionar la opción `Save and Sync Data Immediately` que sincroniza esa tabla por primera vez.
 
 ### Comprobación de nuevas tablas y columnas {#forceupdate}
 
-La Data Warehouse no detecta automáticamente nuevas fuentes, tablas o columnas en el momento en que se agregan. Un proceso de sincronización se ejecuta durante la semana para buscar nuevas adiciones y ponerlas a disposición, pero puede forzar una sincronización de estructura si desea acceder a las tablas y columnas agregadas recientemente antes de que se ejecute el proceso.
+Data Warehouse no detecta automáticamente nuevas fuentes, tablas o columnas en el momento en que se agregan. Un proceso de sincronización se ejecuta durante la semana para buscar nuevas adiciones y ponerlas a disposición, pero puede forzar una sincronización de estructura si desea acceder a las tablas y columnas agregadas recientemente antes de que se ejecute el proceso.
 
 Debajo de la barra de búsqueda en la lista de la tabla hay un vínculo `Check for new tables and columns`. Al hacer clic en este vínculo, se fuerza el inicio del proceso de sincronización de estructura; las nuevas incorporaciones suelen estar disponibles después de 10 minutos. Actualice la página para ver el nuevo origen, tabla o columna.
 
 ## Creación de columnas calculadas {#calculated}
 
-El simple hecho de poder ver y administrar datos de todas sus fuentes facilita en gran medida la obtención de información sobre su negocio. Sin embargo, dentro del Administrador de Datas Warehouse, puede ir un paso más allá al crear columnas calculadas dentro de las tablas. Las columnas de `Calculated` derivan información nueva de los datos existentes.
+El simple hecho de poder ver y administrar datos de todas sus fuentes facilita en gran medida la obtención de información sobre su negocio. Sin embargo, dentro del Administrador de Data Warehouse, puede ir un paso más allá al crear columnas calculadas dentro de las tablas. Las columnas de `Calculated` derivan información nueva de los datos existentes.
 
 Supongamos que desea agregar `user's lifetime revenue` a su tabla `users` para encontrar usuarios de alto valor. O bien, si desea segmentar los ingresos por sexo, puede agregar `customer's gender` a la tabla `orders`.
 
@@ -91,7 +91,7 @@ Para obtener más información, consulte este [tutorial](../../data-analyst/data
 
 ## Borrado de tablas y eliminación de columnas {#delete}
 
-Del mismo modo que puede seleccionar tablas y columnas para sincronizarlas con la Data Warehouse, también puede soltarlas o eliminarlas.
+Del mismo modo que puede seleccionar tablas y columnas para sincronizarlas con su Data Warehouse, también puede soltarlas o eliminarlas.
 
 >[!NOTE]
 >
@@ -121,6 +121,6 @@ Cuando esté listo para usar las nuevas columnas en los informes, [primero debe 
 
 ## Ajuste
 
-Este artículo abarcaba mucho material. Por ahora, debería tener una comprensión sólida de lo que es una base de datos, cómo se organizan los datos, cómo se relacionan las tablas entre sí y qué puede hacer con el Administrador de Datas Warehouse.
+Este artículo abarcaba mucho material. Por ahora, debería tener una comprensión sólida de lo que es una base de datos, cómo se organizan los datos, cómo se relacionan las tablas entre sí y qué puede hacer con el Administrador de Data Warehouse.
 
 Pruebe sus conocimientos [creando una columna calculada](../data-warehouse-mgr/creating-calculated-columns.md) o [creando algunos informes interesantes](../../tutorials/using-visual-report-builder.md).

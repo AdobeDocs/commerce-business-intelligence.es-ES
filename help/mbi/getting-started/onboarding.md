@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Incorporando [!DNL Adobe Commerce Intelligence]
 
-Las preguntas de incorporación relacionadas con la configuración de `store` y `database` garantizan que los informes se hayan configurado correctamente. Con estas respuestas, Adobe entrega informes que se adaptan con precisión a la configuración de su tienda.
+Las preguntas de incorporación relacionadas con la configuración de `store` y `database` garantizan que los informes se hayan configurado correctamente. Con estas respuestas, Adobe entrega informes que se ajustan con precisión a la configuración de su tienda.
 
 ## Configuración de tienda
 

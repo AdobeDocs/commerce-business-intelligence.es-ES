@@ -21,7 +21,7 @@ Para que funcione la consolidación de tablas, las tablas de entrada deben estar
 
 En este tema se describen algunos de los casos de uso más comunes de las tablas consolidadas y los pasos siguientes necesarios para crear las suyas propias.
 
-## Recommendations para saber cuándo usar tablas consolidadas
+## Recomendaciones sobre cuándo utilizar tablas consolidadas
 
 A continuación se explica cuándo puede ser apropiado utilizar tablas consolidadas en el sistema.
 
@@ -41,7 +41,7 @@ Imagine un sitio web en el que los usuarios puedan hacer varias cosas: realizar 
 
 Puede utilizar tablas consolidadas para crear una lista unificada de todos los usuarios y cuándo se produjo cualquiera de estos eventos. A continuación, puede ejecutar consultas en la tabla consolidada para realizar fácilmente dicho análisis.
 
-Al igual que con todas las demás tablas de la Data Warehouse, puede agregar columnas adicionales para generar diferentes tipos de gráficos y análisis.
+Al igual que con todas las demás tablas de Data Warehouse, puede agregar columnas adicionales para generar diferentes tipos de gráficos y análisis.
 
 ## Creación, Consulta o Actualización de una Tabla Consolidada
 

@@ -1,6 +1,6 @@
 ---
 title: Importación de datos de marketing de afiliados de CJ (Commission Junction)
-description: Obtenga información sobre cómo importar datos de afiliados de CJ (Commission Junction) en  [!DNL Commerce Intelligence].L Commerce Intelligence&rbrack;.
+description: Obtenga información sobre cómo importar datos de afiliados de CJ (Commission Junction) en  [!DNL Commerce Intelligence].L Commerce Intelligence].
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Importar datos de [!DNL CJ Affiliate]
 
-Para importar datos de [!DNL CJ Affiliate (Commission Junction)] en [!DNL Adobe Commerce Intelligence], simplemente siga los pasos a continuación y adjunte el archivo resultante a un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es). El Adobe configurará la tabla de datos de su cuenta y le permitirá continuar cargando datos de forma independiente.
+Para importar datos de [!DNL CJ Affiliate (Commission Junction)] en [!DNL Adobe Commerce Intelligence], simplemente siga los pasos a continuación y adjunte el archivo resultante a un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Adobe configurará la tabla de datos en su cuenta y le permitirá continuar cargando datos de forma independiente.
 
 ## Exportar [!DNL CJ Affiliate] datos
 
@@ -29,6 +29,6 @@ Para importar datos de [!DNL CJ Affiliate (Commission Junction)] en [!DNL Adobe 
 
    ![exportar datos de afiliados de cj](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
 
-1. Una vez que hayas descargado el archivo, puedes [cargar el archivo](../connecting-data/using-file-uploader.md) en tu Data Warehouse de [!DNL Commerce Intelligence].
+1. Una vez que hayas descargado el archivo, puedes [cargar el archivo](../connecting-data/using-file-uploader.md) en tu Data Warehouse [!DNL Commerce Intelligence].
 
    Esto crea una tabla en su Data Warehouse [!DNL Commerce Intelligence] en la cual puede continuar cargando datos nuevos periódicamente. Al cargar el archivo, siga los requisitos de formato enumerados en [Uso del cargador de archivos](../connecting-data/using-file-uploader.md).

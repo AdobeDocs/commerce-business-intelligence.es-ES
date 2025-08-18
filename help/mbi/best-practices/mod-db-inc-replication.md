@@ -25,7 +25,7 @@ Para asegurarse de que el método `Modified At` funciona según lo previsto, no 
 
 ## Modificaciones para clave principal de incremento automático único
 
-Si el método `Modified At` no se puede habilitar, entonces la clave principal de incremento automático único es la siguiente mejor opción. Los nuevos datos se detectan en tablas utilizando este método al buscar valores de clave principal superiores al valor más alto actual en la Data Warehouse.
+Si el método `Modified At` no se puede habilitar, entonces la clave principal de incremento automático único es la siguiente mejor opción. Los nuevos datos se detectan en tablas utilizando este método al buscar valores de clave principal superiores al valor más alto actual en Data Warehouse.
 
 Recuerde que las tablas que utilizan este método son de una sola columna con claves principales de aumento automático de enteros. Para utilizar este método en la base de datos, realice las siguientes modificaciones:
 

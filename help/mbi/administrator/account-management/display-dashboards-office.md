@@ -23,6 +23,6 @@ Esta es la lista recomendada de las cosas que necesita para la opción:
 
 1. **Teclado y ratón USB** para controlar tu dongle.
 
-1. **Extensión de explorador que gira entre varias fichas a la vez.** Esto le permite configurar cualquier panel seleccionado que se muestre en una pestaña única. El Adobe recomienda la extensión [Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) si usa [!DNL Chrome].
+1. **Extensión de explorador que gira entre varias fichas a la vez.** Esto le permite configurar cualquier panel seleccionado que se muestre en una pestaña única. Adobe recomienda la extensión [Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) si usa [!DNL Chrome].
 
 Una vez que tenga el hardware anterior, puede abrir una ventana del explorador en la pantalla con un tablero específico que desee mostrar en cada pestaña. Finalmente, configure el explorador para que gire a través de cada panel con la frecuencia deseada.

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Tablas comunes de Commerce
 
-Cuando conecta por primera vez una instancia de [!DNL Adobe Commerce] a [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md), [!DNL Commerce Intelligence] replica automáticamente los datos de algunas de sus tablas de comercio (normalmente entre 4 y 6 tablas) para configurar el conjunto inicial de paneles e informes. Aunque esto ofrece un buen punto de partida, la mayoría de las instancias de tienda generan decenas, si no cientos, de tablas adicionales que pueden proporcionar una perspectiva crítica del rendimiento de su negocio.
+Cuando conecta por primera vez una instancia de [!DNL Adobe Commerce] a [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md), [!DNL Commerce Intelligence] replica automáticamente los datos de algunas de sus tablas de comercio (normalmente entre 4 y 6 tablas) para configurar el conjunto inicial de paneles e informes. Aunque esto ofrece un buen punto de partida, la mayoría de las instancias de tienda generan decenas, si no cientos, de tablas adicionales que pueden proporcionar insight crítico en el rendimiento de su negocio.
 
-A continuación se muestra una lista de algunas de las tablas más comunes que utilizan los clientes de [!DNL Commerce Intelligence]. Después de [conectar tu instancia de Commerce a Commerce Intelligence](../../data-analyst/importing-data/integrations/magento.md), puedes usar el [Administrador de Datas Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear campos de datos relevantes.
+A continuación se muestra una lista de algunas de las tablas más comunes que utilizan los clientes de [!DNL Commerce Intelligence]. Después de [conectar tu instancia de Commerce a Commerce Intelligence](../../data-analyst/importing-data/integrations/magento.md), puedes usar [Data Warehouse Manager](../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear campos de datos relevantes.
 
 | Nombre de tabla | Descripción |
 |---|---|

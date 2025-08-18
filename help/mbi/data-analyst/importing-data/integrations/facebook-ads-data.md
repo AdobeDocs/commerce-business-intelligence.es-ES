@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Se esperaban [!DNL Facebook Ads] datos
 
-Una vez que hayas [conectado tu [!DNL Facebook Ads] cuenta](../integrations/facebook-ads.md), puedes usar el [Administrador de Datas Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear fácilmente los campos de datos relevantes y analizarlos.
+Una vez que hayas [conectado tu [!DNL Facebook Ads] cuenta](../integrations/facebook-ads.md), puedes usar el [Administrador de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear fácilmente los campos de datos relevantes y analizarlos.
 
-En este tema se ofrece una breve descripción general de las tablas que el Adobe recomienda sincronizar con la Data Warehouse. Esto solo resalta las tablas principales, ya que hay bastantes subtablas.
+En este tema se ofrece una breve descripción general de las tablas que Adobe recomienda sincronizar con su Data Warehouse. Esto solo resalta las tablas principales, ya que hay bastantes subtablas.
 
 ## Tablas de campañas de anuncios principales
 
@@ -60,4 +60,4 @@ Esta tabla incluye la misma información que la tabla `facebook_ads_insights_{ac
 ## Relacionado
 
 * [Conectando [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

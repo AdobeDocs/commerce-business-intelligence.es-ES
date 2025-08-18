@@ -43,7 +43,7 @@ Esta métrica muestra los ingresos netos que se obtienen de los pedidos que incl
 
 ### Porcentaje descontado
 
-Muestra la proporción de ingresos brutos que se compensa con los descuentos. Para los cupones que ofrecen un descuento porcentual, este valor ya se conoce (por ejemplo, 10 % de descuento). A pesar de esto, esta medida proporciona una perspectiva y un método de comparación para los cupones que son un descuento en dólares fijos.
+Muestra la proporción de ingresos brutos que se compensa con los descuentos. Para los cupones que ofrecen un descuento porcentual, este valor ya se conoce (por ejemplo, 10 % de descuento). A pesar de esto, esta medida proporciona insight y un método de comparación para los cupones que son un descuento en dólares fijos.
 
 ### Valor de pedido neto promedio
 
@@ -109,7 +109,7 @@ Para los ingresos promedio de por vida, puede ver que los ingresos promedio de p
 
 ## ¿Qué más puedo analizar? {#otheranalyses}
 
-Los análisis mencionados en este tema pueden proporcionarle una valiosa perspectiva de cómo utilizan sus clientes sus cupones, pero hay una multitud de otros análisis que le permiten profundizar un poco más.
+Los análisis mencionados en este tema pueden proporcionarle una valiosa perspectiva de insight sobre cómo sus clientes utilizan los cupones, pero hay una multitud de otros análisis que le permiten profundizar un poco más.
 
 **Puede analizar las adquisiciones de clientes a partir de cupones.**
 

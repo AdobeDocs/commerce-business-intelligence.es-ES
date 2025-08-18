@@ -1,6 +1,6 @@
 ---
 title: Pedidos de invitado
-description: Obtenga información sobre el impacto que tienen los pedidos de invitados en los datos y las opciones que tiene para tener en cuenta correctamente los pedidos de invitados en la Data Warehouse  [!DNL Commerce Intelligence] .
+description: Obtenga información sobre el impacto que tienen los pedidos de invitados en sus datos y qué opciones tiene para tener en cuenta correctamente los pedidos de invitados en su  [!DNL Commerce Intelligence] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -31,9 +31,9 @@ En la base de datos de comercio típica, hay una tabla `orders` que se une a una
   >
   >Para identificar al individuo único que realizó el pedido, debe haber otro atributo de usuario único junto a `customer\_id` adjunto a un pedido. Normalmente, se utiliza la dirección de correo electrónico del cliente.
 
-## Cómo contabilizar pedidos de invitado en la configuración de Data Warehouse
+## Cómo contabilizar pedidos de invitados en la configuración de Data Warehouse
 
-Normalmente, el ingeniero de ventas que implementa su cuenta tiene en cuenta los pedidos de los invitados al crear la base de la Data Warehouse.
+Normalmente, el ingeniero de ventas que implementa su cuenta tiene en cuenta los pedidos de los invitados al crear la base de su Data Warehouse.
 
 La forma más óptima de tener en cuenta los pedidos de invitados es basar todas las métricas de nivel de cliente en la tabla `orders`. Esta configuración utiliza un ID de cliente único que tienen todos los clientes, incluidos los invitados (normalmente se utiliza el correo electrónico del cliente). Esto ignora los datos de registro de la tabla `customers`. Con esta opción, solo se incluyen en los informes de nivel de cliente los clientes que han realizado al menos una compra. No se incluyen los usuarios registrados que aún no hayan realizado una compra. Con esta opción, la métrica `New customer` se basa en la primera fecha de pedido del cliente en la tabla `orders`.
 

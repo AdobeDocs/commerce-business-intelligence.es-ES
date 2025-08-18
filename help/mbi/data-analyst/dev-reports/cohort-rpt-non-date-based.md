@@ -1,5 +1,5 @@
 ---
-title: Report Builder de cohortes para cohortes no basadas en fechas
+title: Report Builder de cohorte para cohortes no basadas en fecha
 description: Aprenda a agrupar usuarios por una actividad o atributo similar.
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
 role: Admin, Data Architect, Data Engineer, User
@@ -55,11 +55,11 @@ Se necesitan cinco especificaciones para crear un informe de cohorte:
 
 
 
-#### 1. Agrupación `cohorts`
+#### &#x200B;1. Agrupación `cohorts`
 
 `Cohorts` se agrupan por una característica de comportamiento, en este ejemplo `Customer's first order GA source`. Las opciones disponibles aquí son columnas que ya se han designado como `groupable` para la métrica.
 
-#### 2. Selección de cohortes
+#### &#x200B;2. Selección de cohortes
 
 Puede mostrar todos los resultados de la característica determinada. Dado que esto puede generar muchos `cohorts`, puede seleccionar el `cohorts` específico (que corresponde a los distintos valores disponibles para `Customer's first order GA source`) que necesita.
 

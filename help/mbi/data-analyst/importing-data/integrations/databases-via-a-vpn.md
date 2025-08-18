@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Conexión de bases de datos mediante VPN
 
-Aunque el Adobe recomienda conectar las bases de datos mediante `SSH tunnel`, también puede utilizar una conexión cifrada de `VPN` para mantener las cosas seguras. Se puede usar un `VPN` para cualquiera de las integraciones de la base de datos y, para que todo sea sencillo, el proceso es casi el mismo que configurar un `SSH tunnel`:
+Aunque Adobe recomienda conectar las bases de datos mediante `SSH tunnel`, también puede usar una conexión cifrada de `VPN` para mantener las cosas seguras. Se puede usar un `VPN` para cualquiera de las integraciones de la base de datos y, para que todo sea sencillo, el proceso es casi el mismo que configurar un `SSH tunnel`:
 
 1. [Crear un usuario de base de datos  [!DNL Commerce Intelligence] ](#database)
 1. [Crear un usuario de  [!DNL Commerce Intelligence] VPN](#vpn)

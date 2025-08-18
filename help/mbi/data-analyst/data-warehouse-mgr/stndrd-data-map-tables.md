@@ -25,7 +25,7 @@ Es posible que haya un recurso técnico que pueda ayudarle a limpiar los datos o
 
 >[!NOTE]
 >
->No se puede crear una tabla de asignación para tablas consolidadas sin la ayuda del equipo de soporte técnico de Adobe.
+>No se puede crear una tabla de asignación para tablas consolidadas sin la ayuda del equipo de asistencia de Adobe.
 
 ## ¿Cómo se crea? {#how}
 
@@ -49,11 +49,11 @@ En la segunda columna, escriba cuáles son estos valores **debería ser**. Conti
 
 ## ¿Qué debo hacer en [!DNL Commerce Intelligence] para utilizarlo? {#use}
 
-Una vez que haya terminado de crear la tabla de asignación, debe [cargar el archivo](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) en [!DNL Commerce Intelligence] y [crear una columna combinada](../../data-analyst/data-warehouse-mgr/calc-column-types.md) que reubique el nuevo campo en la tabla deseada. Puede hacerlo después de sincronizar el archivo con la Data Warehouse.
+Una vez que haya terminado de crear la tabla de asignación, debe [cargar el archivo](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) en [!DNL Commerce Intelligence] y [crear una columna combinada](../../data-analyst/data-warehouse-mgr/calc-column-types.md) que reubique el nuevo campo en la tabla deseada. Puede hacerlo después de sincronizar el archivo con su Data Warehouse.
 
 Este ejemplo mueve la columna que creó en la tabla `mapping_state` (`state_input`) a la tabla `customer_address` mediante una columna combinada. Esto nos permite agrupar por la columna `state_input` limpia en sus informes en lugar de por la columna `state`.
 
-Para crear la columna `joined`, vaya a la tabla a la que se reubicará el campo en el Administrador de Datas Warehouse. En este ejemplo, sería la tabla `customer_address`.
+Para crear la columna `joined`, vaya a la tabla a la que se reubicará el campo en el Administrador de Data Warehouse. En este ejemplo, sería la tabla `customer_address`.
 
 1. Haga clic en **[!UICONTROL Create a Column]**.
 1. Seleccione `Joined Column` de la lista desplegable `Definition`.
@@ -78,7 +78,7 @@ Una vez completado el ciclo de actualización, podrá utilizar la nueva columna 
 
 ![](../../assets/Clean_State_Segments.png)
 
-Las tablas de asignación son útiles para cualquier momento en el que desee limpiar algunos datos potencialmente desordenados en la Data Warehouse. Sin embargo, las tablas de asignación también se pueden usar para otros casos de uso interesantes, como [replicar su [!DNL Google Analytics channels] en [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
+Las tablas de asignación son útiles para cualquier momento en el que desee limpiar algunos datos potencialmente desordenados en Data Warehouse. Sin embargo, las tablas de asignación también se pueden usar para otros casos de uso interesantes, como [replicar su [!DNL Google Analytics channels] en [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### Relacionado
 

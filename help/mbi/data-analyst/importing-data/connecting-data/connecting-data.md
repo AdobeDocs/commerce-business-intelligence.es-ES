@@ -1,6 +1,6 @@
 ---
 title: Conectar los datos
-description: Obtenga información sobre cómo examinar las tablas disponibles para sincronizar en el Administrador de Datas Warehouse.
+description: Obtenga información sobre cómo examinar las tablas disponibles para sincronizar en el Administrador de Data Warehouse.
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Conectar los datos
 
-En [!DNL Adobe Commerce Intelligence], los orígenes de datos se llaman `integrations`. Una vez que un(a) `integration` se haya conectado correctamente, podrá examinar las tablas disponibles para sincronizar en el Administrador de Datas Warehouse.
+En [!DNL Adobe Commerce Intelligence], los orígenes de datos se llaman `integrations`. Una vez que un `integration` se haya conectado correctamente, podrá examinar las tablas disponibles para sincronizar en el Administrador de Data Warehouse.
 
 Las integraciones se agregan y administran mediante la página `Connections`, a la cual se puede acceder haciendo clic en **[!UICONTROL Manage Data** > **Connections]**. Aquí puede ver lo siguiente:
 
@@ -37,7 +37,7 @@ Hay cuatro maneras de obtener los datos en [!DNL Commerce Intelligence]: conecta
 
 [!DNL Commerce Intelligence] admite bases de datos basadas en SQL y NoSQL como [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [Microsoft SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md) y [PostgreSQL](../integrations/postgresql.md).
 
-Aunque puede conectar directamente la base de datos a [!DNL Commerce Intelligence] mediante las credenciales de la base de datos, Adobe recomienda utilizar un método de cifrado de eficacia comprobada como un túnel SSH. Esto garantiza que los datos estén seguros y protegidos a medida que avanzan hacia la Data Warehouse.
+Aunque puede conectar directamente la base de datos a [!DNL Commerce Intelligence] mediante las credenciales de la base de datos, Adobe recomienda utilizar un método de cifrado probado, como un túnel SSH. Esto garantiza que los datos permanezcan seguros a medida que avanzan hacia el Data Warehouse.
 
 Según el método de conexión y el tipo de base de datos, puede ser necesario contar con algunos conocimientos técnicos para completar la configuración.
 
@@ -51,7 +51,7 @@ Normalmente, configurar una integración en [!DNL Commerce Intelligence] es tan 
 
 ## Carga de archivos
 
-¿No está seguro de cómo obtener datos de una fuente complementaria en su Data Warehouse? [Usar la característica `File Upload`](../connecting-data/using-file-uploader.md) es una buena manera de extraer datos que no necesita para la toma de decisiones diaria. Siguiendo las reglas de formato, puede cargar rápidamente `.csv` archivos en su Data Warehouse y unirlos con otras fuentes de datos.
+¿No está seguro de cómo obtener datos de una fuente complementaria en su Data Warehouse? [Usar la característica `File Upload`](../connecting-data/using-file-uploader.md) es una buena manera de extraer datos que no necesita para la toma de decisiones diaria. Siguiendo las reglas de formato, puede cargar rápidamente `.csv` archivos en su Data Warehouse y unirlos a otras fuentes de datos.
 
 ## [!DNL Commerce Intelligence] `Import API`
 
@@ -70,6 +70,6 @@ Para agregar una integración, haga clic en **[!UICONTROL Manage Data** > **Conn
 * [Consolidación de tablas](../../../best-practices/consolidating-your-tables.md)
 * [Restricción del acceso a la base de datos](../../../administrator/account-management/restrict-db-access.md)
 
-**¿No ve la integración que desea?** Algunas integraciones deben activarse para que sean visibles en su cuenta. Si está buscando algo como [!DNL Facebook] pero no aparece en la lista, [envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+**¿No ve la integración que desea?** Algunas integraciones deben activarse para que sean visibles en su cuenta. Si está buscando algo como [!DNL Facebook] pero no aparece en la lista, [envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Si ves un estado de error para una integración**, consulta la [sección de solución de problemas](https://support.magento.com/hc/en-us/sections/360003078151) para obtener ayuda.

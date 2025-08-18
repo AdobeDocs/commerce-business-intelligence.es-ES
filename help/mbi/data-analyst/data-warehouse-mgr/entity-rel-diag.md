@@ -37,7 +37,7 @@ Un cliente puede realizar muchos pedidos. La relación entre estas dos tablas es
 >
 >`customer\_entity.entity\_id` no es igual a `sales\_flat\_order.entity\_id`. El primero se puede considerar como `customer\_id` y el segundo como `order\_id.`
 
-En [!DNL Commerce Intelligence], si la ruta de acceso entre estas dos tablas no existe, puede [crear la ruta de acceso](../data-warehouse-mgr/create-paths-calc-columns.md) en la ficha Data Warehouse. Cuando esté listo para crear la ruta, se define de la siguiente manera:
+En [!DNL Commerce Intelligence], si la ruta entre estas dos tablas no existe, puede [crear la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse. Cuando esté listo para crear la ruta, se define de la siguiente manera:
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -47,7 +47,7 @@ En [!DNL Commerce Intelligence], si la ruta de acceso entre estas dos tablas no 
 
 Un pedido puede contener muchos elementos. La relación entre estas dos tablas es `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`.
 
-En [!DNL Commerce Intelligence], si la ruta de acceso entre estas dos tablas no existe, puede [crear la ruta de acceso](../data-warehouse-mgr/create-paths-calc-columns.md) en la ficha Data Warehouse. Cuando esté listo para crear la ruta, defina la ruta como se muestra a continuación.
+En [!DNL Commerce Intelligence], si la ruta entre estas dos tablas no existe, puede [crear la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse. Cuando esté listo para crear la ruta, defina la ruta como se muestra a continuación.
 
 ![](../../assets/SFOI___SFO_path.png)
 
@@ -57,6 +57,6 @@ En [!DNL Commerce Intelligence], si la ruta de acceso entre estas dos tablas no 
 
 Un producto se puede comprar muchos artículos. La relación entre estas dos tablas es `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
 
-En [!DNL Commerce Intelligence], si la ruta de acceso entre estas dos tablas no existe, puede [crear la ruta de acceso](../data-warehouse-mgr/create-paths-calc-columns.md) en la ficha Data Warehouse. Cuando esté listo para crear la ruta, defina la ruta como se muestra a continuación.
+En [!DNL Commerce Intelligence], si la ruta entre estas dos tablas no existe, puede [crear la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse. Cuando esté listo para crear la ruta, defina la ruta como se muestra a continuación.
 
 ![](../../assets/SFOI___CPE_path.png)

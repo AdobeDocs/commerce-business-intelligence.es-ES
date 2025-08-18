@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Se utilizan `Replication` métodos y [comprobaciones nuevas](../data-warehouse-mgr/cfg-data-rechecks.md) para identificar datos nuevos o actualizados en las tablas de la base de datos. Configurarlos correctamente es crucial para garantizar tanto la precisión de los datos como los tiempos de actualización optimizados. Este tema se centra en los métodos de replicación.
 
-Cuando se sincronizan nuevas tablas en el [Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md), se elige automáticamente un método de replicación para la tabla. Conocer los distintos métodos de replicación, cómo se organizan las tablas y cómo se comportan los datos de la tabla le permite elegir el mejor método de replicación para sus tablas.
+Cuando se sincronizan nuevas tablas en [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md), se elige automáticamente un método de replicación para la tabla. Conocer los distintos métodos de replicación, cómo se organizan las tablas y cómo se comportan los datos de la tabla le permite elegir el mejor método de replicación para sus tablas.
 
 ## ¿Cuáles son los métodos de replicación?
 
@@ -23,7 +23,7 @@ Los métodos de `Replication` se dividen en tres grupos: `Incremental`, `Full Ta
 
 [**[!UICONTROL Incremental Replication]**](#incremental) significa que [!DNL Commerce Intelligence] replica solamente datos nuevos o actualizados en cada intento de replicación. Como estos métodos reducen en gran medida la latencia, Adobe recomienda utilizarla siempre que sea posible.
 
-[**[!UICONTROL Full Table Replication]**](#fulltable) significa que [!DNL Commerce Intelligence] replica todo el contenido de una tabla en cada intento de replicación. Debido a la gran cantidad de datos que pueden replicarse, estos métodos pueden aumentar la latencia y los tiempos de actualización. Si una tabla contiene columnas de fecha y hora o con marca de hora, Adobe recomienda utilizar un método Incremental en su lugar.
+[**[!UICONTROL Full Table Replication]**](#fulltable) significa que [!DNL Commerce Intelligence] replica todo el contenido de una tabla en cada intento de replicación. Debido a la gran cantidad de datos que pueden replicarse, estos métodos pueden aumentar la latencia y los tiempos de actualización. Si una tabla contiene columnas con marca de hora o fecha y hora, Adobe recomienda utilizar un método Incremental en su lugar.
 
 **[!UICONTROL Paused]** indica que la replicación de la tabla se ha detenido o pausado. [!DNL Commerce Intelligence] no comprueba si hay datos nuevos o actualizados durante un ciclo de actualización; esto significa que no se replican datos de una tabla que tenga este método de replicación.
 
@@ -37,11 +37,11 @@ El método de replicación `Modified At` usa una columna datetime (que se rellen
 * la columna `datetime` nunca es nula;
 * las filas no se eliminan de la tabla
 
-Además de esos criterios, el Adobe recomienda **indexar** la columna `datetime` utilizada para la replicación `Modified At`, ya que esto ayuda a optimizar la velocidad de replicación.
+Además de esos criterios, Adobe recomienda **indexar** la columna `datetime` utilizada para la replicación `Modified At`, ya que esto ayuda a optimizar la velocidad de replicación.
 
-Cuando se ejecuta la actualización, los datos nuevos o modificados se identifican buscando filas que tengan un valor en la columna `datetime` que se produjo después de la actualización más reciente. Cuando se detectan nuevas filas, se replican en la Data Warehouse. Si existen filas en el [Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md), se sobrescribirán con los valores actuales de la base de datos.
+Cuando se ejecuta la actualización, los datos nuevos o modificados se identifican buscando filas que tengan un valor en la columna `datetime` que se produjo después de la actualización más reciente. Cuando se detectan nuevas filas, se replican en el Data Warehouse. Si existen filas en [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md), se sobrescriben con los valores actuales de la base de datos.
 
-Por ejemplo, una tabla puede tener una columna llamada `modified\_at` que indica la última vez que se cambiaron los datos. Si la actualización más reciente se ejecutó el martes a mediodía, la actualización buscará todas las filas que tengan un valor de `modified\_at` mayor que el martes a mediodía. Las filas detectadas que se hayan creado o modificado desde el mediodía del martes se replicarán en la Data Warehouse.
+Por ejemplo, una tabla puede tener una columna llamada `modified\_at` que indica la última vez que se cambiaron los datos. Si la actualización más reciente se ejecutó el martes a mediodía, la actualización buscará todas las filas que tengan un valor de `modified\_at` mayor que el martes a mediodía. Las filas detectadas que se hayan creado o modificado desde el mediodía del martes se replican en Data Warehouse.
 
 **¿Lo sabías?**
 Aunque su base de datos no admita actualmente un método de replicación de `Incremental`, es posible que pueda [realizar cambios en su base de datos](../../best-practices/mod-db-inc-replication.md) que permitan el uso de `Modified At` o `Single Auto Incrementing PK`.
@@ -58,13 +58,13 @@ Este método está diseñado para replicar nuevos datos de tablas que cumplan lo
 * `primary key` el tipo de datos es `integer`; y
 * `auto incrementing` valores de clave principal.
 
-Cuando una tabla utiliza la replicación `Single Auto Incrementing Primary Key`, se detectan nuevos datos buscando valores de clave principal superiores al valor más alto actual en la Data Warehouse. Por ejemplo, si el valor de clave principal más alto de la Data Warehouse es 500, cuando se ejecute la siguiente actualización, buscará filas con valores de clave principal 501 o superiores.
+Cuando una tabla utiliza la replicación `Single Auto Incrementing Primary Key`, se detectan nuevos datos buscando valores de clave principal superiores al valor más alto actual en Data Warehouse. Por ejemplo, si el valor de clave principal más alto de Data Warehouse es 500, cuando se ejecute la siguiente actualización, buscará filas con valores de clave principal 501 o superiores.
 
 ### Añadir fecha
 
 El método `Add Date` funciona de manera similar al método `Single Auto Incrementing Primary Key`. En lugar de utilizar un entero para la clave principal de la tabla, este método utiliza una columna `timestamped` para buscar nuevas filas.
 
-Cuando una tabla utiliza la replicación `Add Date`, se detectan nuevos datos al buscar valores con marca de tiempo mayores que la última fecha sincronizada con la Data Warehouse. Por ejemplo, si una actualización se ejecutó por última vez el 20/12/2015 09:00:00, todas las filas con una marca de tiempo mayor que esta se marcarán como datos nuevos y se replicarán.
+Cuando una tabla utiliza la replicación `Add Date`, se detectan nuevos datos al buscar valores con marca de tiempo mayores que la última fecha sincronizada con su Data Warehouse. Por ejemplo, si una actualización se ejecutó por última vez el 20/12/2015 09:00:00, todas las filas con una marca de tiempo mayor que esta se marcarán como datos nuevos y se replicarán.
 
 >[!NOTE]
 >
@@ -97,13 +97,13 @@ Este método está diseñado para replicar datos de tablas que cumplan los sigui
 * claves compuestas (varias columnas que comprenden la clave principal): tenga en cuenta que las columnas utilizadas en una clave principal compuesta nunca pueden tener valores nulos; o
 * valores de clave principal de una sola columna, enteros, sin aumento automático.
 
-Este método no es ideal, ya que es increíblemente lento debido a la cantidad de procesamiento que debe ocurrir para examinar los lotes y encontrar cambios. El Adobe recomienda no utilizar este método a menos que sea imposible realizar las modificaciones necesarias para admitir los demás métodos de replicación. Espere que los tiempos de actualización aumenten si se debe utilizar este método.
+Este método no es ideal, ya que es increíblemente lento debido a la cantidad de procesamiento que debe ocurrir para examinar los lotes y encontrar cambios. Adobe recomienda no utilizar este método a menos que sea imposible realizar las modificaciones necesarias para admitir los demás métodos de replicación. Espere que los tiempos de actualización aumenten si se debe utilizar este método.
 
 ## Estableciendo métodos de replicación
 
-Los métodos de replicación se establecen tabla por tabla. Para establecer un método de replicación para una tabla, necesita [`Admin`](../../administrator/user-management/user-management.md) permisos para poder tener acceso al Administrador de Datas Warehouse.
+Los métodos de replicación se establecen tabla por tabla. Para establecer un método de replicación para una tabla, necesita [`Admin`](../../administrator/user-management/user-management.md) permisos para poder acceder al Administrador de Data Warehouse.
 
-1. Una vez en el Administrador de Datas Warehouse, seleccione la tabla de la lista `Synced Tables` para mostrar el esquema de la tabla.
+1. Una vez en el Administrador de Data Warehouse, seleccione la tabla de la lista `Synced Tables` para mostrar el esquema de la tabla.
 1. El método de replicación actual aparece debajo del nombre de la tabla. Para cambiarlo, haga clic en el vínculo.
 1. En la ventana emergente que se muestra, haga clic en el botón de opción situado junto a `Incremental` o `Full Table` replicación para seleccionar un tipo de replicación.
 1. A continuación, haga clic en el menú desplegable **[!UICONTROL Replication Method]** para seleccionar un método. Por ejemplo, `Paused` o `Modified At`.
@@ -122,7 +122,7 @@ Observe todo el proceso:
 
 ## Ajuste
 
-Para terminar, ha creado esta tabla que compara los distintos métodos de replicación. Es increíblemente práctico al seleccionar un método para las tablas de la Data Warehouse.
+Para terminar, ha creado esta tabla que compara los distintos métodos de replicación. Es increíblemente práctico al seleccionar un método para las tablas de su Data Warehouse.
 
 | **`Method`** | **`Syncing New Data`** | **`Processing Rechecks on Large Data Sets`** | **`Handle Composite Keys?`** | **`Handle Non-Integer PKs?`** | **`Handle Non-Sequential PK Population?`** | **`Handle Row Deletion?`** |
 |-----|-----|-----|-----|-----|-----|-----|

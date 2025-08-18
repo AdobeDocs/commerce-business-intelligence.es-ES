@@ -1,5 +1,5 @@
 ---
-title: Report Builder visual
+title: Visual Report Builder
 description: Aprenda a utilizar Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
@@ -27,7 +27,7 @@ En el ejemplo siguiente se muestra cómo crear un informe simple, agrupar los da
 
      Las métricas disponibles pueden enumerarse alfabéticamente o por tabla.
 
-     ![Report Builder visual](../../assets/magento-bi-visual-report-builder-add-metric.png)
+     ![Visual Report Builder](../../assets/magento-bi-visual-report-builder-add-metric.png)
 
    * Elija la [métrica](../../data-user/reports/ess-manage-data-metrics.md) que describe el conjunto de datos que desea utilizar para el informe.
 
@@ -35,7 +35,7 @@ En el ejemplo siguiente se muestra cómo crear un informe simple, agrupar los da
 
      El resumen de la izquierda muestra el nombre de la métrica actual, seguido del resultado de cualquier cálculo de los datos de columna especificados en la métrica. En este ejemplo, el resumen muestra el recuento total de clientes.
 
-     ![Report Builder visual](../../assets/magento-bi-report-builder-untitled.png)
+     ![Visual Report Builder](../../assets/magento-bi-report-builder-untitled.png)
 
 1. En el gráfico, pase el ratón sobre cada punto de datos de la línea. Cada punto de datos muestra la cantidad total de clientes nuevos que se registraron durante ese mes.
 
@@ -43,7 +43,7 @@ En el ejemplo siguiente se muestra cómo crear un informe simple, agrupar los da
 
    **`Group By`**
 
-   El control `Group By` le permite agregar varias dimensiones por grupo o segmento. Los Dimension son columnas de la tabla que se pueden utilizar para agrupar los datos.
+   El control `Group By` le permite agregar varias dimensiones por grupo o segmento. Las dimensiones son columnas de la tabla que se pueden utilizar para agrupar los datos.
 
    * Elija una de las dimensiones disponibles de la lista de opciones de `Group By`.
 
@@ -55,7 +55,7 @@ En el ejemplo siguiente se muestra cómo crear un informe simple, agrupar los da
 
    * Haga clic en **[!UICONTROL Apply]** para cerrar el grupo por detalles.
 
-     ![Varios Dimension](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
+     ![Varias dimensiones](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
    * Pase el ratón sobre unos pocos puntos de datos de cada línea para ver el número de clientes durante el mes que utilizaron ese cupón al realizar su primer pedido.
 

@@ -101,11 +101,11 @@ Si decide que la métrica ya no es necesaria, vuelva a la página **[!UICONTROL 
 
 El último paso es evaluar las columnas que se están sincronizando en la Data Warehouse. La dessincronización de columnas no solo puede desorganizar la cuenta, sino que también puede reducir el tiempo de actualización.
 
-Si desea continuar, póngase en contacto con el [!DNL Commerce Intelligence] [Soporte técnico](../guide-overview.md#Submitting-a-Support-Ticket). El equipo de asistencia puede crear un informe que incluya todas las columnas que no se utilicen en ningún tablero para ningún usuario y que no se utilicen en resúmenes de correo electrónico, excepto los informes SQL. A continuación, puede utilizar este informe como guía para seleccionar columnas que desea desincronizar mediante el Administrador de Datas Warehouse.
+Si desea continuar, póngase en contacto con el [!DNL Commerce Intelligence] [Soporte técnico](../guide-overview.md#Submitting-a-Support-Ticket). El equipo de asistencia puede crear un informe que incluya todas las columnas que no se utilicen en ningún tablero para ningún usuario y que no se utilicen en resúmenes de correo electrónico, excepto los informes SQL. A continuación, puede utilizar este informe como guía para seleccionar columnas para desincronizarlas mediante el Administrador de Data Warehouse.
 
 >[!NOTE]
 >
->Siempre puede volver a sincronizar estas columnas en el futuro. Al anular la sincronización de una columna, se eliminan los datos de la Data Warehouse; solo significa que no se comprobará si hay valores nuevos o actualizados en esta columna durante el ciclo de actualización.
+>Siempre puede volver a sincronizar estas columnas en el futuro. Al anular la sincronización de una columna, se eliminan los datos de su Data Warehouse; solo significa que esta columna no se comprueba para ver si hay valores nuevos o actualizados durante el ciclo de actualización.
 
 **Para desincronizar una columna (o columnas)**
 

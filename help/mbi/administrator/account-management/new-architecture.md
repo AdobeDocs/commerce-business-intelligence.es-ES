@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # Nueva arquitectura
 
-[!DNL Adobe Commerce Intelligence] equipos de productos e ingeniería se han enfocado en lograr las mejoras más amplias y solicitadas posibles durante el último año. A Adobe le complace anunciar la disponibilidad de la nueva arquitectura de productos [!DNL Commerce Intelligence] que hará realidad estas mejoras.
+[!DNL Adobe Commerce Intelligence] equipos de productos e ingeniería se han enfocado en lograr las mejoras más amplias y solicitadas posibles durante el último año. Adobe está encantado de anunciar la disponibilidad de la nueva arquitectura de productos [!DNL Commerce Intelligence] que hará realidad estas mejoras.
 
 ## Ventajas de la nueva arquitectura
 
-* Cree tipos de columnas en la Data Warehouse, incluidas columnas calculadas con SQL.
+* Cree tipos de columnas en Data Warehouse, incluidas columnas calculadas con SQL.
 * Las nuevas columnas están disponibles inmediatamente.
 * La latencia de datos ha mejorado considerablemente.
 
 ## Ventajas técnicas
 
-Las principales diferencias se enumeran anteriormente, pero el cambio principal es la forma en que se realizan los cálculos durante el ciclo de actualización. Los cálculos ya no se ejecutan en cada columna durante cada actualización; en su lugar, se ejecutan bajo demanda desde el Report Builder visual.
+Las principales diferencias se enumeran anteriormente, pero el cambio principal es la forma en que se realizan los cálculos durante el ciclo de actualización. Los cálculos ya no se ejecutan en todas las columnas durante cada actualización; en su lugar, se ejecutan bajo demanda desde Visual Report Builder.
 
 ### Migración a la nueva arquitectura
 
-Como las cuentas se crean de forma fundamentalmente diferente, no hay ningún proceso automático para migrar la Data Warehouse o los informes a una nueva cuenta de arquitectura. El paso a la nueva arquitectura requiere la reimplementación de la cuenta existente.
+Como las cuentas están fundamentalmente creadas de forma diferente, no hay ningún proceso automático para migrar los informes o Data Warehouse a una nueva cuenta de arquitectura. El paso a la nueva arquitectura requiere la reimplementación de la cuenta existente.
 
 ### Costo de traslado a la nueva arquitectura
 
@@ -41,12 +41,12 @@ Los tiempos de reimplementación varían según lo que desee reconstruir. Adobe 
 * Identifique las métricas y dimensiones necesarias para crear esos informes.
 * Identifique las columnas necesarias para volver a crear esas métricas y dimensiones.
 
-Cuando se complete, sabrá qué datos necesita sincronizar con la nueva Data Warehouse de arquitectura para reconstruir esos informes principales.
+Cuando se complete, sabrá qué datos necesita sincronizar con la nueva arquitectura de Data Warehouse para reconstruir esos informes principales.
 
 ### Obtención de ayuda
 
-El [!DNL Adobe Commerce Intelligence] [equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) puede realizar la reimplementación por un costo adicional. Póngase en contacto con su [equipo de cuenta de Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) y asegúrese de proporcionar una lista de tableros o informes que desee priorizar al crear en la nueva cuenta
+El [!DNL Adobe Commerce Intelligence] [equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) puede realizar la reimplementación por un costo adicional. Póngase en contacto con su [equipo de cuenta de Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) y asegúrese de proporcionar una lista de tableros o informes que desee priorizar en la creación de la nueva cuenta
 
 ### Permanecer con la arquitectura existente
 
-Si estas funciones no son importantes para usted, puede mantener su cuenta existente. No hay costo adicional para mantener su cuenta existente. El Adobe sigue admitiendo esas cuentas sin realizar cambios.
+Si estas funciones no son importantes para usted, puede mantener su cuenta existente. No hay costo adicional para mantener su cuenta existente. Adobe sigue admitiendo estas cuentas sin realizar cambios.

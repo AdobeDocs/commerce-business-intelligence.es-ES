@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 * [Mapa de referencia útil](#map)
 * [Columnas calculadas avanzadas](#advanced)
 
-En el [Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md), puede crear columnas para aumentar y optimizar los datos para su análisis. [Se puede acceder a esta funcionalidad](../data-warehouse-mgr/creating-calculated-columns.md) seleccionando cualquier tabla en el Administrador de Datas Warehouse y haciendo clic en **[!UICONTROL Create New Column]**.
+En [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md), puede crear columnas para aumentar y optimizar los datos para su análisis. [Se puede acceder a esta funcionalidad](../data-warehouse-mgr/creating-calculated-columns.md) seleccionando cualquier tabla en el Administrador de Data Warehouse y haciendo clic en **[!UICONTROL Create New Column]**.
 
-En este tema se describen los tipos de columnas que se pueden crear con el Administrador de Datas Warehouse. También cubre la descripción, un recorrido visual de esa columna y un [mapa de referencia](#map) de todas las entradas necesarias para crear una columna. Existen tres formas de crear columnas calculadas:
+En este tema se describen los tipos de columnas que se pueden crear con el Administrador de Data Warehouse. También cubre la descripción, un recorrido visual de esa columna y un [mapa de referencia](#map) de todas las entradas necesarias para crear una columna. Existen tres formas de crear columnas calculadas:
 
 1. [Mismas columnas calculadas de tabla](#sametable)
 1. [Columnas calculadas de uno a varios](#onetomany)
@@ -71,7 +71,7 @@ Este tipo de columna calculada devuelve el recuento de valores de la tabla de va
 
 En el ejemplo siguiente, la dimensión `Customer's lifetime number of canceled orders` se crea en la tabla `customers` (con un filtro para `orders.status`).
 
-![](../../assets/many_to_one.gif){: width=&quot;699&quot; height=&quot;351&quot;}
+![](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Sum {#sum}
 
@@ -101,7 +101,7 @@ Si tiene problemas para recordar cuáles son todas las entradas al crear una col
 
 En su búsqueda para analizar y responder preguntas sobre su negocio, puede encontrarse con una situación en la que no puede crear la columna exacta que desea.
 
-Para garantizar un giro rápido, Adobe recomienda revisar la guía [Tipos de columnas calculadas avanzadas](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) para ver qué tipo de columnas puede generar el equipo de soporte de Adobe. Ese tema también cubre la información que necesita de usted para crear la columna: inclúyala en su solicitud.
+Para garantizar un cambio rápido, Adobe recomienda consultar la guía [Tipos de columnas calculadas avanzadas](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) para ver qué tipo de columnas puede generar el equipo de asistencia de Adobe. Ese tema también cubre la información que necesita de usted para crear la columna: inclúyala en su solicitud.
 
 ## Documentación relacionada
 

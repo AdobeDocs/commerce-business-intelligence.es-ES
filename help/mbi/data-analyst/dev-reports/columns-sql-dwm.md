@@ -1,6 +1,6 @@
 ---
-title: Diferencias entre SQL y el Administrador de Datas Warehouse
-description: Conozca las diferencias entre SQL y el Administrador de Datas Warehouse.
+title: Diferencias entre SQL y Data Warehouse Manager
+description: Conozca las diferencias entre SQL y Data Warehouse Manager.
 exl-id: 31dd7a04-5c03-4399-b67e-f51703eb9fea
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
@@ -21,8 +21,8 @@ Las columnas no dependen de los ciclos de actualización, por lo que ya no tiene
 
 >[!IMPORTANT]
 >
->Las columnas que cree con el editor [!DNL SQL] no se guardarán en la Data Warehouse. Siempre tiene acceso a la consulta que contiene la columna, pero si desea utilizar la columna en más de un informe, debe volver a crearla en la consulta de cada informe. Esto significa que las columnas creadas con el editor [!DNL SQL] no se pueden usar en el editor [!DNL Report Builder] tradicional.
+>Las columnas que cree con el editor [!DNL SQL] no se guardarán en el Data Warehouse. Siempre tiene acceso a la consulta que contiene la columna, pero si desea utilizar la columna en más de un informe, debe volver a crearla en la consulta de cada informe. Esto significa que las columnas creadas con el editor [!DNL SQL] no se pueden usar en el editor [!DNL Report Builder] tradicional.
 
-## Columnas del Administrador de Datas Warehouse
+## Columnas en el Administrador de Data Warehouse
 
-Las columnas dependen de los ciclos de actualización, por lo que se debe completar un ciclo completo antes de poder editarlas. Estas columnas se guardan en el Administrador de Datas Warehouse y se pueden usar en el [!DNL Report Builder] o [!DNL SQL Report Builder] tradicional.
+Las columnas dependen de los ciclos de actualización, por lo que se debe completar un ciclo completo antes de poder editarlas. Estas columnas se guardan en el Administrador de Data Warehouse y se pueden usar en el [!DNL Report Builder] o [!DNL SQL Report Builder] tradicional.

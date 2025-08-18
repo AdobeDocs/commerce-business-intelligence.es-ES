@@ -1,6 +1,6 @@
 ---
-title: Datos Almacenados De Google Analytics Esperados
-description: Aprenda a interactuar con los datos almacenados de los Google Analytics.
+title: Datos esperados del Google Analytics Warehouse
+description: Aprenda a interactuar con los datos almacenados en Google Analytics.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -27,11 +27,11 @@ La integración de [!DNL Google Analytics Warehoused] en [!DNL Commerce Intellig
 >
 >Para evitar resultados inesperados o sin sentido, confirme que las dimensiones que utilice son [compatibles con una o más métricas](https://ga-dev-tools.google/dimensions-metrics-explorer/) que utilice en `Report Builder`.
 
-Se crea una sola tabla denominada `report` en la Data Warehouse.
+Se crea una sola tabla denominada `report` en su Data Warehouse.
 
-El esquema de esta tabla está compuesto por las métricas y los Dimension seleccionados durante el proceso de configuración y otras dos columnas: `start-date` y `end-date`.
+El esquema de esta tabla está compuesto por las métricas y dimensiones seleccionadas durante el proceso de configuración y otras dos columnas: `start-date` y `end-date`.
 
-Si, por ejemplo, seleccionó las siguientes métricas y Dimension durante la configuración:
+Por ejemplo, si seleccionó las siguientes métricas y dimensiones durante la configuración:
 
 * `Metrics`: `ga:users`
 * `Dimensions`: `ga:month`

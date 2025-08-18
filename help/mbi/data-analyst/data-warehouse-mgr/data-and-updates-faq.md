@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## ¿Por qué han cambiado mis datos? {#datachange}
 
-Los valores de los gráficos pueden cambiar durante el día debido a que los nuevos datos se sincronizan con la Data Warehouse. Además, los valores de las columnas de datos existentes pueden cambiar debido a [nuevas comprobaciones](../data-warehouse-mgr/cfg-data-rechecks.md). Una nueva comprobación es un proceso que busca valores modificados en columnas de datos, como un estado de pedido que se mueve de `open` a `shipped`.
+Los valores de los gráficos pueden cambiar a lo largo del día debido a que los nuevos datos se sincronizan con su Data Warehouse. Además, los valores de las columnas de datos existentes pueden cambiar debido a [nuevas comprobaciones](../data-warehouse-mgr/cfg-data-rechecks.md). Una nueva comprobación es un proceso que busca valores modificados en columnas de datos, como un estado de pedido que se mueve de `open` a `shipped`.
 
 Existen varias formas [de comprobar el estado del ciclo de actualización](../../best-practices/check-update-cycle.md), según la configuración de permisos del usuario.
 
@@ -32,7 +32,7 @@ Las actualizaciones regulares son **procesos programados**, mientras que las act
 
 ## ¿Por qué el ciclo de actualización tarda mucho tiempo? {#updatecycletime}
 
-Numerosos factores pueden añadir a un tiempo de actualización ya largo. Algunos [métodos de replicación](../data-warehouse-mgr/cfg-replication-methods.md), [frecuencias de comprobación más altas](../data-warehouse-mgr/cfg-data-rechecks.md), y el número de paneles y gráficos son sólo algunos factores que contribuyen. El Adobe recomienda [reconfigurar algunos de tus ajustes](../../best-practices/reduce-update-cycle-time.md) y [optimizar tu base de datos para el análisis](../../best-practices/opt-db-analysis.md) para reducir los tiempos de actualización.
+Numerosos factores pueden añadir a un tiempo de actualización ya largo. Algunos [métodos de replicación](../data-warehouse-mgr/cfg-replication-methods.md), [frecuencias de comprobación más altas](../data-warehouse-mgr/cfg-data-rechecks.md), y el número de paneles y gráficos son sólo algunos factores que contribuyen. Adobe recomienda [reconfigurar algunos de tus ajustes](../../best-practices/reduce-update-cycle-time.md) y [optimizar tu base de datos para el análisis](../../best-practices/opt-db-analysis.md) para reducir los tiempos de actualización.
 
 ## ¿Se me puede notificar cuando se completa un ciclo de actualización? {#notifyupdate}
 
@@ -40,8 +40,8 @@ Si hay una actualización en curso, hay un vínculo en la página `Connections` 
 
 ## ¿Por qué hay [!DNL Google ECommerce]datos diferentes de mi base de datos? {#ecommdatabase}
 
-Las discrepancias entre [!DNL Google Analytics] y la base de datos pueden producirse por varios motivos. El seguimiento no se ha habilitado correctamente, los usuarios que visitan incógnito y los eventos de clic no funcionan correctamente son solo algunos ejemplos. Si los ingresos y los pedidos no se ven correctamente, [vea este tema](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=es) para diagnosticar un problema.
+Las discrepancias entre [!DNL Google Analytics] y la base de datos pueden producirse por varios motivos. El seguimiento no se ha habilitado correctamente, los usuarios que visitan incógnito y los eventos de clic no funcionan correctamente son solo algunos ejemplos. Si los ingresos y los pedidos no se ven correctamente, [vea este tema](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) para diagnosticar un problema.
 
 ## ¿Cómo puedo solucionar problemas de discrepancia de datos? {#datadiscrepancy}
 
-El Adobe sabe que ver datos incoherentes puede ser una experiencia frustrante. Intente usar la [lista de comprobación de discrepancias de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=es) o el [tutorial de exportaciones de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=es) para diagnosticar el problema. Si sigues con errores, [ponte en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Adobe sabe que ver datos incoherentes puede ser una experiencia frustrante. Intente usar la [lista de comprobación de discrepancias de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) o el [tutorial de exportaciones de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) para diagnosticar el problema. Si sigues con errores, [ponte en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

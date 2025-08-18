@@ -51,7 +51,7 @@ En este ejemplo, la probabilidad inicial de que un cliente repita una compra es 
 
 ### Probabilidad de repetición de pedido dada meses desde el pedido
 
-Este informe muestra la probabilidad de que un cliente vuelva a realizar un pedido, ya que han transcurrido algunos meses desde su último pedido. Aunque no hay una definición única para el umbral de pérdida según este informe, el Adobe recomienda definir la pérdida como el punto en el que la caída de probabilidad cruza el valor que es la mitad de la tasa de probabilidad de repetición inicial.
+Este informe muestra la probabilidad de que un cliente vuelva a realizar un pedido, ya que han transcurrido algunos meses desde su último pedido. Aunque no hay una definición única para el umbral de pérdida según este informe, Adobe recomienda definir la pérdida como el punto en el que la caída de probabilidad cruza el valor que es la mitad de la tasa de probabilidad de repetición inicial.
 
 Dado que la tasa de probabilidad de repetición inicial para este ejemplo es del 60 %, la fecha de pérdida sería el momento en el que la probabilidad de orden repetido cae por debajo del 60 %/2 = 30 % o a los 6 meses aproximadamente. Del 60% de los pedidos que se esperaba seguir con otro pedido, la mitad de ellos se realizaron dentro de los primeros 6 meses.
 
@@ -63,7 +63,7 @@ En última instancia, el objetivo es seleccionar el umbral en el que tiene senti
 
 ## ¿Qué preguntas debo tener en cuenta?
 
-Para ayudarle a comprender la probabilidad de que se repitan pedidos en su empresa, Adobe le sugiere tener en cuenta estas preguntas cuando explore sus propios datos:
+Para ayudarle a comprender la probabilidad de que se repitan pedidos en su empresa, Adobe le sugiere tener en cuenta estas preguntas al explorar sus propios datos:
 
 * ¿Se espera la probabilidad inicial de pedido repetido? Si no es así, ¿por qué cree que debería ser mayor o menor?
 * ¿Hay grandes disminuciones en la probabilidad de pedidos repetidos para meses específicos desde el último pedido? En caso afirmativo, ¿se esperan estos cambios?
@@ -78,7 +78,7 @@ Después de crear el análisis anterior y determinar un umbral de pérdida, pued
 
 Si ofrece más de un producto, probablemente se pregunte cómo los clientes que compran un producto específico se comportan de forma diferente a lo largo del tiempo en comparación con otros clientes. ¿Quiere saber más? Consulte este tutorial para explorar el comportamiento de compra de por vida de las cohortes de clientes en función de los productos específicos que han comprado.
 
-Esta práctica recomendada la proporciona [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para obtener más información.
+Esta práctica recomendada la proporciona [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obtener más información.
 
 ### Relacionado
 

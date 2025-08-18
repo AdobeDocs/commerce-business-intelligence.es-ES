@@ -21,7 +21,7 @@ Después de activar tu cuenta de [!DNL Commerce Intelligence] para [on-premise o
 
    ![iniciar sesión en adobe](../assets/sign-in-adobe.png)
 
-1. Escriba la dirección de correo electrónico que utilizó al crear su cuenta de [!DNL Commerce Intelligence]. Si todavía no tiene una cuenta de Adobe, haga clic en **[!UICONTROL Create an account]** e introduzca su información. Recuerde usar la dirección de correo electrónico que utilizó al crear su cuenta de [!DNL Commerce Intelligence]. La dirección de correo electrónico es la clave que necesita para acceder a su cuenta de Adobe.
+1. Escriba la dirección de correo electrónico que utilizó al crear su cuenta de [!DNL Commerce Intelligence]. Si todavía no tiene una cuenta de Adobe, haga clic en **[!UICONTROL Create an account]** e introduzca su información. Recuerde usar la dirección de correo electrónico que utilizó al crear su cuenta de [!DNL Commerce Intelligence]. La dirección de correo electrónico es la clave para acceder a la cuenta de Adobe.
 
 >[!NOTE]
 >

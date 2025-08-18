@@ -7,13 +7,13 @@ feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '77'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 # [!DNL Commerce Intelligence Essentials] frente a [!DNL Commerce Intelligence Pro]
 
-En la tabla siguiente se describen los elementos incluidos con una cuenta heredada de `Essentials` en comparación con una cuenta actual de Commerce Intelligence. El Adobe ya no ofrece `Essentials`.
+En la tabla siguiente se describen los elementos incluidos con una cuenta heredada de `Essentials` en comparación con una cuenta actual de Commerce Intelligence. Adobe ya no ofrece `Essentials`.
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|

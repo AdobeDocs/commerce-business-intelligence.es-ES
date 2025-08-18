@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Activación de la exportación de datos
 
-La exportación de datos no está habilitada actualmente para todas las cuentas de [!DNL Zendesk]. Para activar esta característica, [envía un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es), mencionando tu nombre de subdominio [!DNL Zendesk].
+La exportación de datos no está habilitada actualmente para todas las cuentas de [!DNL Zendesk]. Para activar esta característica, [envía un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), mencionando tu nombre de subdominio [!DNL Zendesk].
 
 >[!NOTE]
 >
@@ -38,6 +38,6 @@ Una vez habilitada la exportación de datos, solamente los administradores de un
 
    Este vínculo de descarga es válido durante al menos tres días.
 
-Este proceso genera un archivo XML que contiene toda la información almacenada en su cuenta actual de [!DNL Zendesk], incluidos los datos de vales (con comentarios), los datos de usuario y los datos de cuenta. En este momento, puede [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) (asegúrese de adjuntar este archivo). para que pueda ver más de cerca sus datos. Si el archivo es demasiado grande, compártalo con el equipo [!DNL Commerce Intelligence] a través de [!DNL Dropbox] o [!DNL Google Drive].
+Este proceso genera un archivo XML que contiene toda la información almacenada en su cuenta actual de [!DNL Zendesk], incluidos los datos de vales (con comentarios), los datos de usuario y los datos de cuenta. En este punto, puede [enviar un vale de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (asegúrese de adjuntar este archivo) para que pueda ver más de cerca sus datos. Si el archivo es demasiado grande, compártalo con el equipo [!DNL Commerce Intelligence] a través de [!DNL Dropbox] o [!DNL Google Drive].
 
 Para obtener más información sobre las exportaciones de archivos de [!DNL Zendesk], consulte la [[!DNL Zendesk] documentación de exportación](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file) oficial.

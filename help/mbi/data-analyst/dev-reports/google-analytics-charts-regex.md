@@ -1,6 +1,6 @@
 ---
 title: Creación de gráficos de Google Analytics
-description: Aprenda a crear gráficos a partir de los datos de los Google Analytics.
+description: Aprenda a crear gráficos a partir de los datos de Google Analytics.
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports

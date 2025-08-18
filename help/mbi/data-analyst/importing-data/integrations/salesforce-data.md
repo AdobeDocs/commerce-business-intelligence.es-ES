@@ -1,5 +1,5 @@
 ---
-title: Datos previstos de Salesforce
+title: Datos Salesforce esperados
 description: Obtenga información sobre los objetos admitidos y no admitidos en los datos de Salesforce.
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
 role: Admin, Data Architect, Data Engineer, User
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Se esperaban [!DNL Salesforce] datos
 
-Una vez completada la instalación de [[!DNL Salesforce] setup](../integrations/salesforce.md), se creará en la Data Warehouse una tabla para cada [objeto](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) que se pueda consultar, denominado `sf_/\{sobject-name}`.
+Una vez completada la instalación de [[!DNL Salesforce] setup](../integrations/salesforce.md), se creará en su Data Warehouse una tabla para cada [objeto](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) que se pueda consultar, denominada `sf_/\{sobject-name}`.
 
 >[!NOTE]
 >
@@ -50,4 +50,4 @@ Actualmente, [!DNL Salesforce] no expone los siguientes objetos en su API:
 ## Relacionado:
 
 * [Conectando [!DNL Salesforce]](../integrations/salesforce.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

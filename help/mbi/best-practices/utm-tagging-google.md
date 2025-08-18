@@ -21,23 +21,23 @@ El seguimiento de `UTM` es una convención de etiquetado de direcciones URL que 
 
 A continuación se enumeran las cinco cosas más importantes que deben tenerse en cuenta al configurar las direcciones URL con el etiquetado `UTM`.
 
-### 1. Intente etiquetar todas las direcciones URL que puede controlar cuando llegue al sitio
+### &#x200B;1. Intente etiquetar todas las direcciones URL que puede controlar cuando llegue al sitio
 
 Cada vez que pida a otras personas que hagan clic en un vínculo, debe configurar el etiquetado `UTM`. Esto incluye todos los vínculos de correo electrónico (es probable que el proveedor de servicios de correo electrónico tenga una forma de etiquetar automáticamente las direcciones URL), vínculos de publicidad, artículos de prensa y publicaciones de blog.
 
-### 2. Utilice una herramienta para crear la dirección URL
+### &#x200B;2. Utilice una herramienta para crear la dirección URL
 
 Las direcciones URL etiquetadas con `UTM` pueden ser engorrosas. En lugar de intentar escribirlas manualmente, use una herramienta [como esta](https://support.google.com/analytics/answer/1033867?hl=en) para ayudarle. Esto garantiza que está pensando en añadir todos los parámetros razonables a la dirección URL y que obtiene la dirección URL que copia y pega directamente de ella. Para administrar vínculos sociales, herramientas como [!DNL Hootsuite] incluyen la opción de agregar parámetros de URL personalizados a todos los vínculos.
 
-### 3. Asegúrese de que distingue entre mayúsculas y minúsculas en los valores de parámetros
+### &#x200B;3. Asegúrese de que distingue entre mayúsculas y minúsculas en los valores de parámetros
 
 Es importante recordar que la etiqueta `utm\_source=adwords` es diferente a `utm\_source=Adwords`. Considere la posibilidad de ponerlo todo en minúsculas.
 
-### 4. Almacene los valores de parámetros de UTM en la base de datos
+### &#x200B;4. Almacene los valores de parámetros de UTM en la base de datos
 
 Cada vez que se produce una transacción o un evento, se desea evaluar el rendimiento de las actividades de marketing. Puede hacerlo leyendo los valores de los valores de los parámetros de UTM de la cookie [[!DNL Google Analytics] en su base de datos](../data-analyst/analysis/google-track-user-acq.md).
 
-### 5. Piense en cómo nombra las campañas
+### &#x200B;5. Piense en cómo nombra las campañas
 
 Para realizar un seguimiento de cómo mejoran los esfuerzos de marketing con el paso del tiempo, deberá ser inteligente con respecto a las convenciones de nomenclatura. Simplifique y minimice lo máximo posible. Los sistemas de nombres complicados son más difíciles de mantener.
 

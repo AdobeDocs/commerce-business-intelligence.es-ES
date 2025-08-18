@@ -1,6 +1,6 @@
 ---
-title: Datos de Stripe esperados
-description: Explore las tablas de datos principales que puede importar de Stripe a Commerce Intelligence.
+title: Datos Stripe esperados
+description: Explore las tablas de datos principales que se pueden importar desde Stripe a Commerce Intelligence.
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Se esperaban [!DNL Stripe] datos
 
-Después de [haber conectado tu [!DNL Stripe] cuenta](../integrations/stripe.md), puedes usar el [Administrador de Datas Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear fácilmente los campos de datos relevantes para el análisis.
+Después de [haber conectado tu [!DNL Stripe] cuenta](../integrations/stripe.md), puedes usar [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear fácilmente los campos de datos relevantes para el análisis.
 
-En este tema se exploran las tablas de datos principales que se pueden importar de [!DNL Stripe] a [!DNL Commerce Intelligence]. Una vez completada la configuración, se crearán las siguientes tablas en la Data Warehouse. Haga clic en los vínculos de la columna Nombre de tabla para obtener más información sobre los atributos de cada tabla.
+En este tema se exploran las tablas de datos principales que se pueden importar de [!DNL Stripe] a [!DNL Commerce Intelligence]. Una vez completada la configuración, se crearán las siguientes tablas en el Data Warehouse. Haga clic en los vínculos de la columna Nombre de tabla para obtener más información sobre los atributos de cada tabla.
 
 | **Nombre de tabla** | **Descripción** |
 |-----|-----|
@@ -36,4 +36,4 @@ En este tema se exploran las tablas de datos principales que se pueden importar 
 ## Relacionado:
 
 * [Conectando [!DNL Stripe]](../integrations/stripe.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

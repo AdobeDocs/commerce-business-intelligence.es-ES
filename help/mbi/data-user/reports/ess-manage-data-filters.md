@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Si tiene varias métricas en [!DNL Commerce Intelligence] que necesitan filtrarse de manera similar (por ejemplo, filtrar los pedidos de prueba), puede crear conjuntos de filtros guardados y aplicarlos a las métricas. Esto le ahorra tiempo, ya que no tiene que añadir filtros individuales al crear o editar una métrica.
 
-Consulte el [vídeo de formación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=es) para obtener más información.
+Consulte el [vídeo de formación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) para obtener más información.
 
 >[!NOTE]
 >

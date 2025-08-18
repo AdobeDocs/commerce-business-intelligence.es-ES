@@ -55,7 +55,7 @@ Es posible que tenga varios sitios web conectados a una sola cuenta de [!DNL Goo
 
 ## Relacionado
 
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Rastrear origen de referencia de pedido mediante  [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Rastrear origen de referencia de usuario en la base de datos](../../analysis/google-track-user-acq.md)
 * [Descubra sus fuentes y canales de adquisición más valiosos](../../analysis/most-value-source-channel.md)

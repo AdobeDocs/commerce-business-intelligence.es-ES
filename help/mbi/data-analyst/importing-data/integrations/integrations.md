@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # Conexión de datos externos mediante una integración
 
-Una integración es una fuente de datos. Las integraciones son aplicaciones y bases de datos que se pueden conectar a la Data Warehouse.
+Una integración es una fuente de datos. Las integraciones son aplicaciones y bases de datos que se pueden conectar a Data Warehouse.
 
 Esta sección presenta las integraciones disponibles que puede utilizar para conectar varios orígenes de datos externos a [!DNL Commerce Intelligence].
 
-Para eliminar una conexión o integración, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) e incluya el nombre de la conexión o integración que desea eliminar.
+Para eliminar una conexión o integración, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) e incluya el nombre de la conexión o integración que desea eliminar.

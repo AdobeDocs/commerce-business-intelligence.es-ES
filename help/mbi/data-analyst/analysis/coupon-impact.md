@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Impacto de cupón
 
-Analizar cómo los clientes utilizan sus cupones puede proporcionar una perspectiva significativa de su negocio. Específicamente, analizando cómo adquiere y retiene clientes a través de cupones. En este tema se exploran los análisis que pueden ayudarle a responder a los siguientes tipos de preguntas:
+Analizar cómo los clientes utilizan sus cupones puede proporcionar insight significativo en su negocio. Específicamente, analizando cómo adquiere y retiene clientes a través de cupones. En este tema se exploran los análisis que pueden ayudarle a responder a los siguientes tipos de preguntas:
 
 * ¿Cuántos clientes adquiere mediante cupones?
 * ¿Los clientes con cupones adquiridos tienen más probabilidades de realizar compras repetidas que los clientes no adquiridos a través de cupones?
@@ -129,7 +129,7 @@ Ahora, observe un ejemplo que incluye tres cupones diferentes utilizados para el
 
   **Ejemplo:** el cupón de &quot;10% de descuento&quot; solo se ofrece a los clientes que compren un abrigo de invierno en el mismo pedido.
 
-Los **ingresos brutos** del cupón &quot;25% de descuento de 100 dólares o más&quot; son mucho más altos que los ingresos brutos del cupón &quot;10 dólares de descuento&quot;. Sin embargo, el cupón de &quot;$10 off&quot; tiene un **número de pedidos** mucho mayor. Analizar el **valor de pedido promedio** proporciona una perspectiva de estas diferencias. A pesar de que el cupón de &quot;25% de descuento de 100 dólares o más&quot; tenía menos número de pedidos, el valor de pedido promedio es más del triple que el cupón de &quot;$10 de descuento&quot;. Por lo tanto, se atribuye un mayor ingreso bruto al cupón de &quot;25% de descuento de 100 dólares o más&quot;.
+Los **ingresos brutos** del cupón &quot;25% de descuento de 100 dólares o más&quot; son mucho más altos que los ingresos brutos del cupón &quot;10 dólares de descuento&quot;. Sin embargo, el cupón de &quot;$10 off&quot; tiene un **número de pedidos** mucho mayor. Analizar el **valor de pedido promedio** proporciona a insight estas diferencias. A pesar de que el cupón de &quot;25% de descuento de 100 dólares o más&quot; tenía menos número de pedidos, el valor de pedido promedio es más del triple que el cupón de &quot;$10 de descuento&quot;. Por lo tanto, se atribuye un mayor ingreso bruto al cupón de &quot;25% de descuento de 100 dólares o más&quot;.
 
 Los **descuentos** y **ingresos netos** para los cupones de &quot;25% de descuento en 100 dólares o más&quot; y &quot;20% de descuento&quot; tienen un valor cercano. Aunque el valor de pedido promedio para &quot;25% de descuento de 100 dólares o más&quot; está cerca del doble del valor de pedido promedio para &quot;20% de descuento&quot;, este último cupón tiene un poco menos del triple del número de pedidos.
 
@@ -151,4 +151,4 @@ El mayor número de clientes se adquirió a través del cupón de &quot;20% de d
 
 ## Ajuste {#wrapup}
 
-Puede crear multitud de análisis para comprender mejor cómo utilizan los cupones sus clientes. ¿Ha pensado alguna vez en analizar cómo utilizan sus clientes los cupones o el tiempo que tardan en utilizarlos? ¿Qué sucede si se busca la cantidad de descuento óptima: qué cantidad anima a los compradores que repiten, un valor de pedido promedio más alto y mayores ingresos por duración? Para obtener ayuda con este tipo de preguntas, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Puede crear multitud de análisis para comprender mejor cómo utilizan los cupones sus clientes. ¿Ha pensado alguna vez en analizar cómo utilizan sus clientes los cupones o el tiempo que tardan en utilizarlos? ¿Qué sucede si se busca la cantidad de descuento óptima: qué cantidad anima a los compradores que repiten, un valor de pedido promedio más alto y mayores ingresos por duración? Para obtener ayuda con este tipo de preguntas, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

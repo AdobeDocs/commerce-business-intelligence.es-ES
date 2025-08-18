@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Se esperaban [!DNL Zendesk] datos
 
-Después de [haber conectado tu [!DNL Zendesk] cuenta](../integrations/zendesk.md), puedes usar el [Administrador de Datas Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear fácilmente los campos de datos relevantes para el análisis.
+Después de [haber conectado tu [!DNL Zendesk] cuenta](../integrations/zendesk.md), puedes usar [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear fácilmente los campos de datos relevantes para el análisis.
 
 En este tema se exploran las tablas de datos principales que se pueden importar de [!DNL Zendesk] a [!DNL Adobe Commerce Intelligence], incluidos los vínculos a documentación adicional sobre los datos de [!DNL Zendesk].
 
@@ -35,4 +35,4 @@ En este tema se exploran las tablas de datos principales que se pueden importar 
 ## Relacionado
 
 * [Conectando Zendesk](../integrations/zendesk.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

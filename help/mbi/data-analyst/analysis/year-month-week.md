@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este tema contiene instrucciones para los clientes que utilizan la arquitectura original y la nueva arquitectura. Se encuentra en la [nueva arquitectura](../../administrator/account-management/new-architecture.md) si tiene disponible la sección [!DNL _Vistas de la Data Warehouse_] después de seleccionar [!DNL Manage Data] en la barra de herramientas principal.
+>Este tema contiene instrucciones para los clientes que utilizan la arquitectura original y la nueva arquitectura. Se encuentra en la [nueva arquitectura](../../administrator/account-management/new-architecture.md) si tiene disponible la sección [!DNL _Vistas de Data Warehouse_] después de seleccionar [!DNL Manage Data] en la barra de herramientas principal.
 
 Report Builder le permite ver fácilmente las tendencias a lo largo del tiempo y cambiar la perspectiva de los períodos de tiempo que desee comparar. En este tema se muestra cómo configurar un tablero para que profundice un nivel y le permita crear informes para el análisis semana tras semana, mes tras mes y año tras año.
 
@@ -40,8 +40,7 @@ Este análisis contiene [columnas calculadas avanzadas](../data-warehouse-mgr/ad
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-mes&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char(A, &#39;hh24&#39;)**
-
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
      ![](../../assets/new-arch-create-calc.png)
 
 ## Métricas
@@ -65,10 +64,10 @@ Ninguna.
 * Métrica `A`: `This year`
 * Métrica `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **Gráfico MoM**
@@ -82,10 +81,10 @@ Ninguna.
 * Métrica `A`: este mes*
 * Métrica `B`: mes pasado*
 * [!UICONTROL Time period]: hace un mes hasta hace 0 meses
-* &#x200B;
+* 
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: Line
 
 * **Gráfico WoW**
@@ -99,10 +98,10 @@ Ninguna.
 * Métrica `A`: `This week`
 * Métrica `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **Gráfico DoD**
@@ -116,10 +115,10 @@ Ninguna.
 * Métrica `A`: `Today`
 * Métrica B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar a la imagen de la parte superior de esta página.

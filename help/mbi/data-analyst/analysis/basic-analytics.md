@@ -34,7 +34,7 @@ Esta tabla contiene la información clave sobre cada cliente, como un ID de clie
 
 Si algunos de estos cálculos no existen actualmente en la base de datos, cualquier usuario administrador de la cuenta puede crearlos. Además, debe asegurarse de que estas dimensiones se puedan agrupar para todas las métricas aplicables.
 
-**Dimension**
+**Dimensiones**
 
 * **[!UICONTROL Entity_id]**: un identificador único para cada cliente. También puede ser un número de cliente único o una dirección de correo electrónico de cliente, y debe actuar como una clave de referencia para la tabla del pedido.
 * **[!UICONTROL Created_at]**: la fecha en la que se creó la cuenta del cliente y se agregó a la base de datos.
@@ -46,7 +46,7 @@ Si algunos de estos cálculos no existen actualmente en la base de datos, cualqu
 
 **¿Aceptas pedidos de invitado?**
 
-*Si es así, es posible que esta tabla no contenga a todos sus clientes. Póngase en contacto con el [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para asegurarse de que los análisis de clientes incluyan a todos los clientes.*
+*Si es así, es posible que esta tabla no contenga a todos sus clientes. Póngase en contacto con el [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para asegurarse de que los análisis de clientes incluyan a todos los clientes.*
 
 *¿No está seguro de si acepta pedidos de invitado? Consulte [este tema](../data-warehouse-mgr/guest-orders.md) para obtener más información!*
 
@@ -54,13 +54,13 @@ Si algunos de estos cálculos no existen actualmente en la base de datos, cualqu
 
 En esta tabla, cada fila representa un orden. Las columnas de esta tabla contienen información básica sobre cada pedido, como el ID del pedido, la fecha de creación, el estado, el ID del cliente que realizó el pedido, etc. Los ejemplos siguientes utilizan **[!UICONTROL sales_flat_order]** como nombre de una tabla de pedidos de ejemplo.
 
-**Dimension**
+**Dimensiones**
 
 * **[!UICONTROL Customer_id]**: Un identificador único del cliente que realizó el pedido. Esto se utiliza a menudo para mover información entre las tablas cliente y pedidos. En estos ejemplos, se espera que customer_id de la tabla **[!UICONTROL sales_flat_order]** se alinee con **[!UICONTROL entitiy_id]** de la tabla **[!UICONTROL customer_entity]**.
 * **[!UICONTROL Created_at]**: la fecha en que se creó o colocó el pedido.
 * **[!UICONTROL Customer_email]**: la dirección de correo electrónico del cliente que realizó el pedido. También puede ser el identificador único del cliente.
 * **[!UICONTROL Customer's lifetime number of orders]**: una copia de la columna con el mismo nombre en la tabla `Customers`.
-* **[!UICONTROL Customer's order number]**: número de pedido secuencial del cliente asociado con el pedido. Por ejemplo, si la fila que está viendo es el primer pedido de un cliente, esta columna es &quot;1&quot;; pero, si era el 15º pedido del cliente, en esta columna se muestra &quot;15&quot; para este pedido. Si esta dimensión no existe en su tabla `Customers`, pídale al [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) que le ayude a crearla.
+* **[!UICONTROL Customer's order number]**: número de pedido secuencial del cliente asociado con el pedido. Por ejemplo, si la fila que está viendo es el primer pedido de un cliente, esta columna es &quot;1&quot;; pero, si era el 15º pedido del cliente, en esta columna se muestra &quot;15&quot; para este pedido. Si esta dimensión no existe en su tabla `Customers`, pídale al [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) que le ayude a crearla.
 * **[!UICONTROL Customer's order number (previous-current)]**: una concatenación de dos valores en la columna **[!UICONTROL Customer's order number]**. Se utiliza en un informe de ejemplo a continuación para mostrar el tiempo transcurrido entre dos pedidos cualesquiera. Por ejemplo, el tiempo entre la primera fecha de pedido de un cliente y su segunda fecha de pedido se representa como &quot;1-2&quot; con este cálculo.
 * **[!UICONTROL Coupon_code]**: Muestra qué cupones se utilizaron en cada pedido.
 * **[!UICONTROL Seconds since previous order]**: tiempo (en segundos) entre los pedidos de un cliente.
@@ -69,7 +69,7 @@ En esta tabla, cada fila representa un orden. Las columnas de esta tabla contien
 
 En esta tabla, cada fila representa un artículo que se vendió. Esta tabla contiene información sobre los artículos vendidos en cada pedido, como el número de referencia del pedido, el número de producto, la cantidad, etc. Los ejemplos siguientes utilizan `sales_flat_order_item` como nombre de una tabla de elementos de pedidos de ejemplo.
 
-**Dimension**
+**Dimensiones**
 
 * **[!UICONTROL Item_id]**: el identificador único de cada fila de la tabla.
 * **[!UICONTROL Order_id]**: la clave de referencia de la tabla `Orders` que indica qué artículos se compraron en el mismo pedido. Si un pedido contiene varios elementos, este valor se repite.
@@ -81,7 +81,7 @@ En esta tabla, cada fila representa un artículo que se vendió. Esta tabla cont
 
 Esta tabla se utiliza para administrar la información de suscripción, como el ID de suscripción, la dirección de correo electrónico del suscriptor, la fecha de inicio de la suscripción, etc.
 
-**Dimension**
+**Dimensiones**
 
 * **[!UICONTROL Customer_id]**: Un identificador único del cliente que realizó el pedido. Esta es una forma común de crear una ruta entre la tabla Customers y la tabla Orders. En estos ejemplos, espera que customer_id de la tabla **sales_flat_order** se alinee con `entitiy_id` de la tabla `customer_entity`.
 * **[!UICONTROL Start date]**: la fecha en la que comenzó la suscripción de un cliente.
@@ -90,7 +90,7 @@ Esta tabla se utiliza para administrar la información de suscripción, como el 
 
 Al analizar el gasto en marketing, puede incluir [!DNL Facebook], [!DNL Google AdWords] u otras fuentes en los análisis. Si tiene varias fuentes de gasto de marketing, póngase en contacto con el [equipo de Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) para que le ayuden a configurar una tabla consolidada para sus campañas de marketing.
 
-**Dimension**
+**Dimensiones**
 
 * **[!UICONTROL Spend]**: el gasto total en publicidad. En [!DNL Facebook], esta sería la columna de gasto en la tabla `facebook_ads_insights_####`. Para [!DNL Google AdWords], esta sería la columna `adCost` de la tabla `campaigns####`.
 * El `####` que se anexa a cada una de estas tablas se relaciona con el identificador de cuenta específico de su cuenta de [!DNL Facebook] o [!DNL Google AdWords].
@@ -343,7 +343,7 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 
 ### Productos más comprados con cupones
 
-* **Descripción**: Este informe proporciona una perspectiva de los productos que se venden cuando ofrece promociones o cupones.
+* **Descripción**: Este informe proporciona a insight en qué productos se venden cuando ofrece promociones o cupones.
 * **Métrica utilizada**: productos pedidos
 * **Ejemplo de informe**: Productos más comprados con cupones
    * **[!UICONTROL Metric]**: `Products ordered`
@@ -357,7 +357,7 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 
 ### Tiempo entre pedidos
 
-* **Descripción**: Pruebe sus suposiciones y expectativas sobre los ciclos de compra de sus clientes con un análisis de **tiempo entre pedidos** que observa el promedio (¡o la mediana!) cantidad de tiempo entre compras. En la tabla siguiente, puede ver que sus mejores clientes (aquellos que realizan más de tres pedidos) realizan su segunda compra en menos de seis meses. Los clientes que no hayan realizado un cuarto pedido esperan 14 meses antes de realizar una segunda compra.
+* **Descripción**: pruebe sus suposiciones y expectativas sobre los ciclos de compra de sus clientes con un análisis de **tiempo entre pedidos** que observa la cantidad promedio (o mediana) de tiempo entre compras. En la tabla siguiente, puede ver que sus mejores clientes (aquellos que realizan más de tres pedidos) realizan su segunda compra en menos de seis meses. Los clientes que no hayan realizado un cuarto pedido esperan 14 meses antes de realizar una segunda compra.
 * **Definición de métrica**: Esta métrica realiza un **promedio** de `Time since previous order` de `sales_flat_order` ordenado por `created_at`.
 * **Ejemplo de informe**:
    * **Métrica 1**: ≤ 3 pedidos

@@ -78,7 +78,7 @@ Para eliminar una o más dimensiones de varias métricas:
 
 >[!NOTE]
 >
->Incluso después de eliminar una dimensión, sigue existiendo como una columna en la tabla de la Data Warehouse. Puede volver a agregarlo a cualquier métrica y crear nuevas métricas con estas dimensiones. Para quitar la columna de datos a la que corresponde una dimensión de [!DNL Commerce Intelligence], simplemente quite el seguimiento de la columna de datos a través de la página [Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
+>Incluso después de eliminar una dimensión, sigue existiendo como una columna en la tabla de Data Warehouse. Puede volver a agregarlo a cualquier métrica y crear nuevas métricas con estas dimensiones. Para quitar la columna de datos a la que corresponde una dimensión de [!DNL Commerce Intelligence], simplemente quite el seguimiento de la columna de datos a través de la página [Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
 
 ## Documentación relacionada
 

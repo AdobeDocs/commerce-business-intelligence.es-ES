@@ -19,13 +19,13 @@ ht-degree: 0%
 >
 >La disponibilidad de algunos paneles depende del conjunto de datos.
 
-Si tiene preguntas o está interesado en agregar un paquete a su cuenta, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para obtener ayuda.
+Si tiene preguntas o está interesado en agregar un paquete a su cuenta, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obtener ayuda.
 
 ## Información general ejecutiva
 
 El tablero `executive overview` se ha creado a partir de gráficos de otros tableros. Este tablero es una descripción general de alto nivel de los datos y contiene gráficos que se revisarían diariamente, mientras que otros tableros contenían información más detallada. Inicialmente, se establece como el panel predeterminado en cada cuenta.
 
-Se incluye un conjunto general de gráficos para usted. Adobe recomienda adaptar este tablero a sus necesidades añadiendo otros que utilice con más frecuencia.
+Se incluye un conjunto general de gráficos para usted. Adobe recomienda adaptar este tablero a sus necesidades añadiendo otros gráficos que utilice con más frecuencia.
 
 ## Análisis de cohorte
 

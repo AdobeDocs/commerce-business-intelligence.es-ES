@@ -48,14 +48,13 @@ Una vez creada la métrica, puede **crear un tablero** haciendo lo siguiente:
 
 >[!NOTE]
 >
->El **[!UICONTROL Time Period:]**, el período de tiempo de cada informe se muestra como `All-time`. No dude en modificar esto para adaptarlo a sus necesidades de análisis. El Adobe recomienda que todos los informes de este tablero abarquen el mismo período de tiempo, como `All time`, `Year-to-date` o `Last 365 days`.
+>El **[!UICONTROL Time Period:]**, el período de tiempo de cada informe se muestra como `All-time`. No dude en modificar esto para adaptarlo a sus necesidades de análisis. Adobe recomienda que todos los informes de este tablero abarquen el mismo período de tiempo, como `All time`, `Year-to-date` o `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
-     [!UICONTROL INTERVALO]: `None`
+   * 
+     [!INTERVALO UICONTROL]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
@@ -65,9 +64,8 @@ Una vez creada la métrica, puede **crear un tablero** haciendo lo siguiente:
          * [`B`] `Customer's lifetime number of orders` **Mayor Que**`0`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
-     [!UICONTROL INTERVALO]: `None`
+   * 
+     [!INTERVALO UICONTROL]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
@@ -75,8 +73,7 @@ Una vez creada la métrica, puede **crear un tablero** haciendo lo siguiente:
    * Métrica `2`: `Median lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
-   * &#x200B;
-
+   * 
      [!UICONTROL Tipo de gráfico]: `Line`
    * Desmarcar `Multiple Y-Axes`
 
@@ -84,12 +81,10 @@ Una vez creada la métrica, puede **crear un tablero** haciendo lo siguiente:
    * Métrica `1`: `Avg lifetime revenue`
    * Métrica `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
-     [!UICONTROL INTERVALO]: `None`
+   * 
+     [!INTERVALO UICONTROL]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * &#x200B;
-
+   * 
      [!UICONTROL Tipo de gráfico]: `Line`
 
   >[!NOTE]

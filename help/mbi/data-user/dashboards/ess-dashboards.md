@@ -21,7 +21,7 @@ Es fácil crear un informe, agregarlo a un panel y exportar los datos a Excel. S
 
 ## Creación de paneles {#createdash}
 
-Los paneles se pueden compartir, son bloques temáticos para los análisis que cree en los Report Builder. Así puede animar a su equipo a colaborar y mantener una única fuente fiable en toda la organización.
+Los paneles se pueden compartir, son bloques de temas para los análisis que cree en Report Builder. Así puede animar a su equipo a colaborar y mantener una única fuente fiable en toda la organización.
 
 *Si es administrador o un usuario estándar*, puede crear un tablero si hace clic en el menú desplegable `Dashboard Options` y elige `Create New dashboard`.
 
@@ -77,7 +77,7 @@ En **[!DNL Manage Data** > **Dashboards]**, puede administrar los permisos de us
 
 ### Uso compartido de paneles {#sharingdash}
 
-Para escalar realmente [!DNL Commerce Intelligence] en toda la organización y proporcionar información valiosa, el Adobe le recomienda compartir los paneles que cree con otros integrantes del equipo. *Puede compartir los tableros que posee* si hace clic en la opción `Share Dashboard` en la parte superior de la página.
+Para escalar realmente [!DNL Commerce Intelligence] en toda la organización y proporcionar información valiosa, Adobe le recomienda compartir los paneles que cree con otros integrantes del equipo. *Puede compartir los tableros que posee* si hace clic en la opción `Share Dashboard` en la parte superior de la página.
 
 Al compartir un tablero, puede asignar permisos en toda la organización O de forma individual, lo que significa que puede decidir quién puede ver y editar los informes.
 

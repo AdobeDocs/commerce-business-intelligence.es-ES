@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Al evaluar la relación entre dos tablas determinadas, debe comprender cuántas ocurrencias posibles de una tabla podrían pertenecer a una entidad en otra y viceversa. Por ejemplo, use una tabla `users` y una tabla `orders`. En este caso, desea saber cuántos **pedidos** ha realizado un **usuario** determinado y a cuántos posibles **usuarios** podría pertenecer un **pedido**.
 
-Entender las relaciones es vital para mantener la integridad de los datos, ya que afecta la precisión de las [columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) y [dimensiones](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Para obtener más información, vea [tipos de relación](#types) y [cómo evaluar las tablas en la Data Warehouse.](#eval)
+Entender las relaciones es vital para mantener la integridad de los datos, ya que afecta la precisión de las [columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) y [dimensiones](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Para obtener más información, consulte [tipos de relación](#types) y [cómo evaluar las tablas en su Data Warehouse.](#eval)
 
 ## Tipos de relaciones {#types}
 
@@ -49,9 +49,9 @@ Piense en la relación entre **productos** y **categorías**: un producto puede 
 
 ## Evaluación de las tablas {#eval}
 
-Dados los tipos de relaciones que existen entre las tablas, puede aprender a evaluar las tablas en la Data Warehouse. A medida que estas relaciones determinan cómo se definen las columnas calculadas de varias tablas, es importante que entienda cómo identificar las relaciones de tabla y a qué lado - `one` o `many` - pertenece la tabla.
+Dados los tipos de relaciones que existen entre las tablas, puede aprender a evaluar las tablas en su Data Warehouse. A medida que estas relaciones determinan cómo se definen las columnas calculadas de varias tablas, es importante que entienda cómo identificar las relaciones de tabla y a qué lado - `one` o `many` - pertenece la tabla.
 
-Puede utilizar dos métodos para evaluar las relaciones de un par determinado de tablas dentro de la Data Warehouse. El primer método emplea un [marco conceptual](#concept) que tiene en cuenta cómo interactúan las entidades de la tabla entre sí. El segundo método usa el esquema [table](#schema).
+Existen dos métodos que puede utilizar para evaluar las relaciones de un par determinado de tablas dentro de Data Warehouse. El primer método emplea un [marco conceptual](#concept) que tiene en cuenta cómo interactúan las entidades de la tabla entre sí. El segundo método usa el esquema [table](#schema).
 
 ### Uso del marco conceptual {#concept}
 
@@ -65,7 +65,7 @@ Para utilizar este método:
 
 1. Identifique uno o más verbos que describan cómo interactúan estas entidades. Por ejemplo, al comparar usuarios con pedidos, los usuarios &quot;realizan&quot; pedidos. En la otra dirección, los pedidos &quot;pertenecen&quot; a los usuarios.
 
-Este tipo de marco de trabajo se puede aplicar a cualquier emparejamiento de tablas en la Data Warehouse. Esto le permite identificar fácilmente el tipo de relación y qué tabla es un lado uno y qué tabla es un lado varios.
+Este tipo de marco de trabajo se puede aplicar a cualquier emparejamiento de tablas en Data Warehouse. Esto le permite identificar fácilmente el tipo de relación y qué tabla es un lado uno y qué tabla es un lado varios.
 
 Una vez identificada la terminología que describe cómo interactúan las dos tablas, enmarque la interacción en ambas direcciones teniendo en cuenta cómo se relaciona una instancia determinada de la primera entidad con la segunda. Estos son algunos ejemplos de cada relación:
 
@@ -129,4 +129,4 @@ Si alguna de las siguientes opciones es verdadera, la relación es `many-to-many
 
 ## Pasos siguientes
 
-La evaluación correcta de las relaciones de tabla es crucial para modelar los datos con precisión. Ahora que comprende cómo se relacionan las tablas, vea [lo que puede hacer con el Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md).
+La evaluación correcta de las relaciones de tabla es crucial para modelar los datos con precisión. Ahora que comprende cómo están relacionadas las tablas entre sí, vea [lo que puede hacer con Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md).

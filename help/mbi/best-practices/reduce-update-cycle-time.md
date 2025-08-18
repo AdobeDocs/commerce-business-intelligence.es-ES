@@ -19,7 +19,7 @@ Muchos factores pueden agregar a un tiempo de actualización ya largo. Algunos m
 
 ## Reducir frecuencia de comprobación
 
-En una tabla de base de datos, puede haber columnas de datos con valores modificables. Por ejemplo, en una tabla **orders** puede haber una columna llamada **status**. Cuando se escribe inicialmente un pedido en la base de datos, la columna de estado puede contener el valor `pending`. El pedido se replica en su [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) con este valor `pending`.
+En una tabla de base de datos, puede haber columnas de datos con valores modificables. Por ejemplo, en una tabla **orders** puede haber una columna llamada **status**. Cuando se escribe inicialmente un pedido en la base de datos, la columna de estado puede contener el valor `pending`. El pedido se replica en su [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) con este valor de `pending`.
 
 Se deben [volver a comprobar las columnas modificables en busca de valores actualizados](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) con el tiempo. De manera predeterminada, [!DNL Commerce Intelligence] vuelve a comprobar estas columnas durante cada actualización, pero si hay una gran cantidad de datos que volver a comprobar y replicar, puede afectar negativamente al tiempo de actualización. En lugar de ejecutar comprobaciones nuevas durante cada actualización, Adobe recomienda establecer la frecuencia de las comprobaciones en diaria, semanal o mensual.
 
@@ -43,4 +43,4 @@ Además de volver a evaluar las frecuencias de comprobación, los métodos de re
 
 ## Ajuste
 
-Si el tiempo de actualización parece lento incluso después de implementar estas recomendaciones, [comuníquese con el equipo de atención](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si el tiempo de actualización parece lento incluso después de implementar estas recomendaciones, [comuníquese con el equipo de atención](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

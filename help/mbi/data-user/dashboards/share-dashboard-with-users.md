@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # Uso compartido de paneles con otros usuarios
 
-Compartir tableros es una buena manera de mantener a su equipo al tanto y fomentar el debate colaborativo. Al crear y compartir un tablero central, puede proporcionar a su equipo la información que necesita y, al mismo tiempo, mantener el control. [[!DNL Adobe] recomienda](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} que conceda derechos de `Edit` a algunos seleccionados para minimizar los cambios accidentales.
+Compartir tableros es una buena manera de mantener a su equipo al tanto y fomentar el debate colaborativo. Al crear y compartir un tablero central, puede proporcionar a su equipo la información que necesita y, al mismo tiempo, mantener el control. [[!DNL Adobe] recomienda](../../best-practices/share-dashboard-best-practice.md){: target="_blank"} que conceda derechos de `Edit` a algunos seleccionados para minimizar los cambios accidentales.
 
 >[!NOTE]
 >

@@ -20,7 +20,7 @@ Antes de empezar a generar en [!DNL Adobe Commerce Intelligence], Adobe desea co
 La forma en que asigne nombres a las columnas calculadas, las métricas y los informes dicta la facilidad con que los distintos usuarios pueden navegar por la cuenta de [!DNL Commerce Intelligence]. Al nombrar estas funciones, tenga en cuenta las tres C:
 
 * **CLARIDAD**: de este modo podrá saber de un vistazo qué está mostrando un informe, qué hace una métrica, etc.
-* **COHERENCIA**: para que usted (y el equipo de soporte técnico de Adobe) puedan encontrar y comprender fácilmente los elementos e informes de su cuenta.
+* **COHERENCIA**: para que usted (y el equipo de asistencia de Adobe) puedan encontrar y comprender fácilmente los elementos e informes de su cuenta.
 * **CREDIBILIDAD**: para inspirar y empoderar a otros usuarios de [!DNL Commerce Intelligence] impulsados por datos, debe infundir confianza en cómo entienden y utilizan los datos.
 
 Sigue leyendo para consejos de nomenclatura probados y verdaderos!
@@ -80,7 +80,7 @@ Los paneles deben nombrarse de manera que representen temáticamente los informe
 
 Por el contrario, si el tablero es un lugar en el que experimenta con distintos informes, considere la posibilidad de ponerle el nombre **Espacio aislado de su nombre** para saber que los informes contenidos en él son borradores.
 
-## Dimension (Columnas calculadas) {#dimensions}
+## Dimensiones (Columnas calculadas) {#dimensions}
 
 Al nombrar las nuevas [dimensiones](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md), es muy útil seguir esta fórmula: **(Entidad) + (Nth) + (lapso de tiempo) + (cálculo) + (comentarios)**. Por ejemplo:
 

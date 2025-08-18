@@ -55,13 +55,13 @@ Demasiadas empresas se centran únicamente en encontrar canales que proporcionen
 
 Una [clave principal](https://en.wikipedia.org/wiki/Unique_key) es una columna (o conjunto de columnas) que no cambia y que produce valores únicos dentro de una tabla. Las claves principales son muy importantes, ya que garantizan que las tablas se replican correctamente en [!DNL Commerce Intelligence].
 
-Cuando cree claves principales, utilice un tipo de datos de número entero para la columna que aumenta automáticamente. El Adobe recomienda evitar el uso de claves principales de varias columnas siempre que sea posible.
+Cuando cree claves principales, utilice un tipo de datos de número entero para la columna que aumenta automáticamente. Adobe recomienda evitar utilizar claves principales de varias columnas siempre que sea posible.
 
 Si la tabla es una vista SQL, agregue una columna que pueda actuar como clave principal. [!DNL Commerce Intelligence] puede identificar automáticamente esta columna como clave principal.
 
 ### Asignar un tipo de datos a su columna de datos
 
-Si una columna de datos no tiene un tipo de datos [asignado](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] adivina qué tipo de datos usar. Si el sistema no lo adivina correctamente, es posible que no pueda realizar los análisis relevantes hasta que el equipo de soporte de Adobe ajuste la columna al tipo de datos adecuado. Por ejemplo, si una columna de fecha se adivina como un tipo de datos numérico, puede generar tendencias a lo largo del tiempo utilizando esa dimensión de fecha.
+Si una columna de datos no tiene un tipo de datos [asignado](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] adivina qué tipo de datos usar. Si el sistema no lo adivina correctamente, es posible que no pueda realizar los análisis relevantes hasta que el equipo de asistencia de Adobe ajuste la columna al tipo de datos adecuado. Por ejemplo, si una columna de fecha se adivina como un tipo de datos numérico, puede generar tendencias a lo largo del tiempo utilizando esa dimensión de fecha.
 
 ### Agregar prefijos a las tablas de datos si tiene varias bases de datos
 

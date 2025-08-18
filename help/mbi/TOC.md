@@ -16,7 +16,7 @@ ht-degree: 0%
 
 - [Guía del usuario de [!DNL Commerce Intelligence]](guide-overview.md)
 - [Introducción a [!DNL Commerce Intelligence]](getting-started/getting-started.md)
-- Introducción {#start}
+- Primeros pasos {#start}
    - [Incorporación](getting-started/onboarding.md)
    - [Activar tu cuenta de  [!DNL Commerce Intelligence] ](getting-started/onpremise-activation.md)
    - [Inicia sesión en tu cuenta de  [!DNL Commerce Intelligence] ](getting-started/sign-in.md)
@@ -36,7 +36,7 @@ ht-degree: 0%
       - [Administración de usuarios avanzada](../mbi/administrator/user-management/advanced.md)
 - Analizar datos {#analyze}
    - [Analista de datos](data-analyst.md)
-   - Administrador de Data Warehouse {#warehouse-manager}
+   - Data Warehouse Manager {#warehouse-manager}
       - [Introducción](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [Tipos de columnas calculadas avanzadas](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
       - [Creando [!DNL Google Ecommerce] dimensiones](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
@@ -71,7 +71,7 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - SQL Report Builder {#sql}
+   - SQL REPORT BUILDER {#sql}
       - [Usando  [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [Uso de  [!DNL Cohort Report Builder]  para cohortes no basadas en fecha](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [Creación de un análisis de cohorte cualitativo](data-analyst/dev-reports/create-qual-cohort-analysis.md)
@@ -86,7 +86,7 @@ ht-degree: 0%
       - [Explicación de  [!DNL Repeat Order Probability Report]](data-analyst/dev-reports/repeat-order-probability.md)
       - [Auditando métricas usando  [!DNL SQL Report Builder]](data-analyst/dev-reports/audit-metrics-sql.md)
       - [Diferencias en columnas entre  [!DNL SQL]  y  [!DNL Data Warehouse Manager]](data-analyst/dev-reports/columns-sql-dwm.md)
-   - Conectando datos {#connecting}
+   - Conexión de datos {#connecting}
       - [Introducción](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [Formato e importación de datos de comercio electrónico](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
       - [Importando  [!DNL Bing Ad Spend] datos](data-analyst/importing-data/connecting-data/import-bing-ad-data.md)
@@ -173,7 +173,7 @@ ht-degree: 0%
       - [Informes de un calendario comercial](data-analyst/analysis/report-retail-calendar.md)
    - Previsión {#forecasting}
       - [Introducción](data-analyst/analysis/forecasting.md)
-- Generar informes y compartir datos {#build}
+- Creación de informes y uso compartido de datos {#build}
    - [Usuario de datos](../mbi/data-user.md)
    - Informes {#reports}
       - [Aspectos básicos del informe](data-user/reports/rpt-fundamentals.md)
@@ -209,12 +209,12 @@ ht-degree: 0%
       - [Acceso a paneles compartidos](data-user/dashboards/access-shared-dashboard.md)
       - [Cambio del acceso a los paneles compartidos](data-user/dashboards/change-access-dashboard.md)
       - [Dejar (dejar de compartir) un panel](data-user/dashboards/leave-dashboard.md)
-   - Compartiendo datos {#share}
+   - Compartir datos {#share}
       - [Compartir datos](data-user/export-data/share-data.md)
       - [Exportación de datos de gráfico](data-user/export-data/exp-chart-dash.md)
       - [Resúmenes de correo electrónico automatizados](data-user/export-data/email-summaries.md)
 - Prácticas recomendadas {#best-practices}
-   - Trabajando con datos {#data}
+   - Uso de datos {#data}
       - [Uso de datos](best-practices/work-data.md)
       - [Etiquetado de UTM en  [!DNL Google Analytics]](best-practices/utm-tagging-google.md)
       - [Formato e importación de datos financieros](best-practices/format-import-financial-data.md)
@@ -229,7 +229,7 @@ ht-degree: 0%
       - [Nombrar informes y elementos en  [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [Consolidación de tablas](best-practices/consolidating-your-tables.md)
       - [Anular la duplicación de su cuenta de  [!DNL Commerce Intelligence] ](best-practices/declutter-account.md)
-   - Trabajando con paneles {#working-dashboards}
+   - Uso de paneles {#working-dashboards}
       - [Compartir paneles](best-practices/share-dashboard-best-practice.md)
       - [Creación de un panel para inversores](best-practices/build-investor-dashboard.md)
 - Tutoriales {#tutorials}

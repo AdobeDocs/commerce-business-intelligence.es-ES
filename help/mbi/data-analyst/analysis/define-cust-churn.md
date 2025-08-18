@@ -69,27 +69,27 @@ No hay métricas nuevas.
 * [!UICONTROL Metric]: número de pedidos
 
 * [!UICONTROL Formula]: probabilidad de orden repetido inicial
-* &#x200B;
+* 
   [!UICONTROL Fórmula]: `A/B`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Scalar`
 
 * **Probabilidad de repetición de pedido dada meses desde la solicitud**
 * Métrica A: Repetir pedidos por meses desde el pedido anterior (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
-* &#x200B;
+* 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Métrica B: últimos pedidos por meses desde el pedido (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
-* &#x200B;
+* 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +97,29 @@ No hay métricas nuevas.
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Independent`
 
 * ID de métrica: últimos pedidos permanentes (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Independent`
 
 * [!UICONTROL Formula]: probabilidad de orden repetido inicial
-* &#x200B;
+* 
   [!UICONTROL Fórmula]: `(C-A)/(C+D-A-B)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Mostrar top.bottom: Las 24 categorías principales, ordenadas por nombre de categoría
 
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 El informe de probabilidad de pedido repetido inicial representa el total de pedidos repetidos/total de pedidos. Cada pedido es una oportunidad para hacer un pedido repetido; el número de pedidos repetidos es el subconjunto de los que realmente lo hacen.
@@ -128,8 +128,8 @@ La fórmula que utiliza simplifica a (Total de pedidos repetidos que se produjer
 
 Una vez que haya creado su panel, la pregunta más común es: ¿Cómo utilizo esto para determinar un umbral de pérdida?
 
-**No hay &quot;una respuesta correcta&quot; para esto.** Sin embargo, Adobe recomienda encontrar el punto donde la línea cruza el valor que es la mitad de la tasa de probabilidad de repetición inicial. Este es el punto en el que puede decir &quot;Si un usuario va a hacer un pedido repetido, probablemente ya lo habría hecho&quot;. En última instancia, el objetivo es seleccionar el umbral en el que tiene sentido cambiar de los esfuerzos de &quot;retención&quot; a &quot;reactivación&quot;.
+**No hay &quot;una respuesta correcta&quot; para esto.** Sin embargo, Adobe recomienda encontrar el punto en el que la línea cruza el valor que es la mitad de la tasa de probabilidad de repetición inicial. Este es el punto en el que puede decir &quot;Si un usuario va a hacer un pedido repetido, probablemente ya lo habría hecho&quot;. En última instancia, el objetivo es seleccionar el umbral en el que tiene sentido cambiar de los esfuerzos de &quot;retención&quot; a &quot;reactivación&quot;.
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar a la imagen de la parte superior de la página
 
-Si tiene alguna pregunta al generar este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si tiene alguna pregunta al generar este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

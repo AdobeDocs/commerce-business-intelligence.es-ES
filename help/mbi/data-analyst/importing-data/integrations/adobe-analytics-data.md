@@ -35,7 +35,7 @@ La tabla contendría estas columnas:
 | `_item_hash` | [!DNL Commerce Intelligence] identificador único. Esta columna la creó [!DNL Commerce Intelligence]. |
 | `_updated_at` | Esta columna contiene la última vez que se actualizó la fila de datos. Se creó por [!DNL Commerce Intelligence]. |
 | `start_date` | Fecha de inicio de los datos incluidos para la fila. `start_date` siempre es 00:00 del mismo día dentro de una fila. |
-| `end_date` | Fecha de finalización de los datos incluidos para la fila. `end_date` siempre a las 23:59 del mismo día dentro de una fila. |
+| `end_date` | Fecha de finalización de los datos incluidos para la fila. `end_date` siempre es 23:59 del mismo día dentro de una fila. |
 | `page_views` | Métrica seleccionada: número total de vistas de página para el período de tiempo identificado. |
 | `page` | Dimensión seleccionada: nombres de página individuales con vistas rastreadas. |
 
@@ -48,6 +48,6 @@ Esta sección describe las limitaciones de la integración de [!DNL Adobe Analyt
 | Limitación | Descripción |
 | --- | --- |
 | `Historical data period` | Al igual que con otras integraciones de terceros, la integración de [!DNL Adobe Analytics] extrae una cantidad limitada de datos históricos y, a continuación, continúa manteniendo los datos actualizados. El periodo histórico se configura en 2 semanas. |
-| `Empty component combinations` | Algunas combinaciones de métricas y dimensiones no contienen datos. Si se selecciona una combinación de este tipo para la replicación, [!DNL Commerce Intelligence] excluye la columna de la tabla replicada. Para evitar seleccionar una combinación de este tipo, primero puede crear un informe en [[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=es) para comprobar que obtiene los datos esperados. |
+| `Empty component combinations` | Algunas combinaciones de métricas y dimensiones no contienen datos. Si se selecciona una combinación de este tipo para la replicación, [!DNL Commerce Intelligence] excluye la columna de la tabla replicada. Para evitar seleccionar una combinación de este tipo, primero puede crear un informe en [[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) para comprobar que obtiene los datos esperados. |
 | `Re-authorization cadence` | Se requiere la reautorización de la integración de [!DNL Adobe Analytics] cada dos semanas. Para volver a autorizar, vaya a la página Editar de la integración y haga clic en **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**. |
 | `One dimension per row` | [!DNL Adobe Analytics] proporciona datos de métrica para una dimensión a la vez. Si selecciona varias dimensiones durante la configuración, cada fila de la tabla [!DNL Commerce Intelligence] contendrá un solo valor de dimensión y valores nulos para cada otra dimensión. |

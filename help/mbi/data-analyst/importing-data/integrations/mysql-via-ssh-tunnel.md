@@ -50,7 +50,7 @@ A continuación se indica cómo navegar por [!DNL Commerce Intelligence] para re
 
 ## Permitir acceso a la dirección IP [!DNL Commerce Intelligence] {#allowlist}
 
-Para que la conexión se realice correctamente, debe configurar el cortafuegos para permitir el acceso desde las direcciones IP. Son `54.88.76.97` y `34.250.211.151`, pero también se encuentran en la página `MySQL credentials`. Consulte el cuadro azul en el GIF de arriba.
+Para que la conexión se realice correctamente, debe configurar el cortafuegos para permitir el acceso desde las direcciones IP. Son `54.88.76.97` y `34.250.211.151`, pero también se encuentran en la página `MySQL credentials`. Consulte el cuadro azul en la sección GIF anterior.
 
 ## Creando un usuario [!DNL Linux] para [!DNL Commerce Intelligence] {#linux}
 
@@ -120,4 +120,4 @@ Cuando termine, haga clic en **[!UICONTROL Save & Test]** para completar la inst
 
 ## Relacionado:
 
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

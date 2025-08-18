@@ -25,11 +25,11 @@ Si agregó un filtro que utiliza una dimensión que no es igual para todos los p
 
 En determinados casos, es posible que pueda convertir una dimensión `order-specific` en una dimensión `user-specific` para agregarla como filtro en el gráfico `Repeat Order Probability`. En estos casos, se devuelve el atributo order del primer pedido o del último pedido de un usuario (por ejemplo, el nombre de región de primer pedido del usuario).
 
-Si desea crear una dimensión nueva de este tipo, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si desea crear una dimensión nueva de este tipo, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Comparación de la probabilidad de repetición de pedidos con atributos diferentes
 
-Para comparar el número de compras repetidas para diferentes atributos de pedidos (por ejemplo, `region` del pedido), Adobe recomienda crear un  similar a `Users by lifetime number of orders`. Esto muestra el número de usuarios que realizaron 1, 2, 3,... un número de duración de pedidos y agregan el filtro de nivel de pedido. (en otras palabras, Esto puede mostrar si los usuarios realizan compras más o menos repetidas en una región u otra).
+Para comparar el número de compras repetidas para diferentes atributos de pedido (por ejemplo, `region` de pedido), Adobe recomienda crear un gráfico similar a `Users by lifetime number of orders`. Esto muestra el número de usuarios que realizaron 1, 2, 3,... un número de duración de pedidos y agregan el filtro de nivel de pedido. (en otras palabras, Esto puede mostrar si los usuarios realizan compras más o menos repetidas en una región u otra).
 
 Los números que componen un gráfico de este tipo se pueden exportar a Excel para calcular la proporción de probabilidad de pedidos repetidos. Para ver la probabilidad de que los clientes que realizaron `(x)` pedidos realicen `(x+1)`, simplemente ` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` compras.
 

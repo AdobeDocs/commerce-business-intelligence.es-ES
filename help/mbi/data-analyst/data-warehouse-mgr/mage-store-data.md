@@ -21,7 +21,7 @@ La plataforma [!DNL Adobe Commerce] registra y organiza una amplia variedad de v
 
 Para discutir estos conceptos, consulte el siguiente ejemplo:
 
-`Clothes4U` es un minorista de ropa con presencia tanto en línea como física. Utiliza [!DNL Magento Open Source] detrás de su sitio web para recopilar y organizar los datos.
+`Clothes4U` es un retailer de ropa con presencia en línea y presencias físicas. Utiliza [!DNL Magento Open Source] detrás de su sitio web para recopilar y organizar los datos.
 
 ## `catalog\_product\_entity`
 

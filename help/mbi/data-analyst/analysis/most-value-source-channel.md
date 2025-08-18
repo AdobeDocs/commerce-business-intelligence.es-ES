@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Investigaste tu audiencia, creaste tu campaña, invertiste en algunos canales de marketing. Ahora que ha pasado algún tiempo, ¿cómo van esos canales? ¿Qué canal ha atraído a la mayoría de los usuarios nuevos? ¿Qué fuente ha contribuido más a sus ingresos totales?
 
-Con [!DNL Adobe Commerce Intelligence], puede segmentar fácilmente sus ingresos y usuarios por origen de referencia, ya corresponda a [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) o a campos de datos personalizados. Esta segmentación le permite encontrar los canales con mejor rendimiento e invertir mejor su presupuesto de marketing.
+Con [!DNL Adobe Commerce Intelligence], puede segmentar fácilmente sus ingresos y usuarios por origen de referencia, ya corresponda a [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) o a campos de datos personalizados. Esta segmentación le permite encontrar los canales con mejor rendimiento e invertir mejor su presupuesto de marketing.
 
 En este tema se exploran algunos informes que puede utilizar para descubrir los canales de marketing más valiosos:
 
@@ -33,7 +33,7 @@ Para generar los análisis de este tema, necesita acceder a los datos de adquisi
 
 La evaluación del rendimiento de las fuentes de referencia es clave para determinar los canales más valiosos. Este informe muestra el número de usuarios recién registrados, por fuente de adquisición, a lo largo del tiempo, lo que le permite realizar un seguimiento del rendimiento de las fuentes de referencia al adquirir nuevos usuarios registrados.
 
-Para crear este informe en el [Report Builder](../../tutorials/using-visual-report-builder.md), agregue la métrica **Nuevos usuarios** (o una métrica equivalente que cuente el número de nuevos usuarios a lo largo del tiempo) al informe. A continuación, haga lo siguiente:
+Para crear este informe en [Report Builder](../../tutorials/using-visual-report-builder.md), agregue la métrica **Nuevos usuarios** (o una métrica equivalente que cuente el número de nuevos usuarios a lo largo del tiempo) al informe. A continuación, haga lo siguiente:
 
 1. Establezca [!UICONTROL Time Period] en el período de registro que desee analizar.
 1. Establezca [!UICONTROL Interval] en mensual.
@@ -48,7 +48,7 @@ Este es un tutorial visual:
 
 Encontrar los canales que atraen a nuevos usuarios es importante, pero ¿cuán valiosas son esas referencias en general? Este informe muestra los ingresos promedio por duración de usuarios de fuentes de adquisición específicas a lo largo del tiempo. En otras palabras, esto le permite ver si los usuarios adquiridos de una fuente concreta gastan más con usted a lo largo de su vida que un grupo de usuarios adquiridos de una fuente diferente.
 
-Para crear este informe en el Report Builder, agregue la métrica **Ingresos promedio por duración** al informe. A continuación, haga lo siguiente:
+Para crear este informe en Report Builder, agregue la métrica **Ingresos promedio por duración** al informe. A continuación, haga lo siguiente:
 
 1. Establezca [!UICONTROL Time Period] en el período de tiempo que desee analizar.
 1. Establezca [!UICONTROL Interval] en mensual.
@@ -65,7 +65,7 @@ Este ejemplo solo observa los ingresos por duración, pero también puede replic
 
 Para obtener una mejor idea de cuánto dinero gastan los usuarios de una fuente de adquisición específica, puede crear un informe que observe su valor de pedido promedio. Esto le permite rastrear si los usuarios adquiridos de una fuente en particular gastan más por pedido que los usuarios de otra fuente.
 
-Para crear este informe en el Report Builder, agregue la métrica **Valor de pedido promedio** y, a continuación, haga lo siguiente:
+Para crear este informe en Report Builder, agregue la métrica **Valor de pedido promedio** y, a continuación, haga lo siguiente:
 
 1. Establezca [!UICONTROL Time Period] en el período de registro que desee analizar.
 1. Establezca [!UICONTROL Time Interval] en mensual.
@@ -80,7 +80,7 @@ Este es un tutorial visual:
 
 El análisis de ingresos de duración que se ha cubierto anteriormente le permite observar los ingresos promedio de duración de los usuarios adquiridos de diferentes fuentes, pero ¿qué sucede con los ingresos totales de duración? Este informe permite identificar cuántos ingresos generales generan los usuarios que se registraron durante un tiempo específico y que proceden de una fuente específica.
 
-Para crear este informe en el Report Builder, agregue la métrica `Revenue by user registration date`. Si aún no ha [creado esta métrica](../../data-user/reports/ess-manage-data-metrics.md), puede hacerlo replicando la métrica `Revenue` y cambiando `time stamp` a `creation date` del usuario. Después de agregar la métrica, haga lo siguiente:
+Para crear este informe en Report Builder, agregue la métrica `Revenue by user registration date`. Si aún no ha [creado esta métrica](../../data-user/reports/ess-manage-data-metrics.md), puede hacerlo replicando la métrica `Revenue` y cambiando `time stamp` a `creation date` del usuario. Después de agregar la métrica, haga lo siguiente:
 
 1. Establezca [!UICONTROL Time Period] en el período de registro que desee analizar.
 1. Establezca [!UICONTROL Time Interval] en mensual.
@@ -95,7 +95,7 @@ Este es un tutorial visual:
 
 El informe Valor de pedido promedio muestra, de media, cuántos usuarios adquiridos de un origen determinado invierten al realizar un pedido. Sin embargo, este informe no muestra si esos mismos usuarios son clientes repetidos. Sin embargo, con las fuentes de Repetir pedidos de los usuarios, puede ver si los usuarios de una fuente en particular realizan compras más o menos repetidas.
 
-Para crear este informe en el [Report Builder](../../tutorials/using-visual-report-builder.md), agregue la métrica **Número de pedidos** y haga lo siguiente:
+Para crear este informe en [Report Builder](../../tutorials/using-visual-report-builder.md), agregue la métrica **Número de pedidos** y haga lo siguiente:
 
 1. Establezca [!UICONTROL Time Period] en el período de registro que desee analizar.
 1. Establezca [!UICONTROL Time Interval] en mensual.

@@ -94,7 +94,7 @@ Simplemente, ve a cualquier panel y [crea un informe](../../data-user/reports/es
 
 ### `Visual Report Builder` {#visualrb}
 
-[El `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) es la forma más sencilla de visualizar los datos. Si no está familiarizado con SQL o desea crear rápidamente un informe, lo mejor es utilizar el Report Builder visual. Con solo unos clics, puede agregar métricas, segmentar los datos y crear informes en toda la organización. Esta opción es perfecta tanto para principiantes como para expertos, ya que no requiere ninguna experiencia técnica.
+[El `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) es la forma más sencilla de visualizar los datos. Si no está familiarizado con SQL o desea crear rápidamente un informe, Visual Report Builder es la mejor opción. Con solo unos clics, puede agregar métricas, segmentar los datos y crear informes en toda la organización. Esta opción es perfecta tanto para principiantes como para expertos, ya que no requiere ninguna experiencia técnica.
 
 |  |  |
 |--- |--- |

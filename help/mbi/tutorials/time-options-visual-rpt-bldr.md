@@ -1,5 +1,5 @@
 ---
-title: Usar opciones de tiempo en el Report Builder visual
+title: Usar opciones de hora en Visual Report Builder
 description: Obtenga información sobre cómo analizar los datos del informe durante un período de tiempo específico.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Data Architect, Data Engineer, User
@@ -41,7 +41,7 @@ Este tipo de informe puede resultar útil si desea comparar los ingresos generad
 1. Haga clic **[!UICONTROL Duplicate]** para hacer una copia de la métrica.
 1. Haga clic en la opción global **[!UICONTROL Time Range]** y luego en **[!UICONTROL Moving Time Range]**. Establezca esto en `Last Year`.
 1. Haga clic en la opción global **[!UICONTROL Time Interval]** y configúrela en `Monthly`.
-1. El Report Builder añade automáticamente un segundo eje Y para una segunda métrica. Anule la selección del cuadro `Multiple Y-Axes`.
+1. Report Builder agrega automáticamente un segundo eje Y para una segunda métrica. Anule la selección del cuadro `Multiple Y-Axes`.
 1. A continuación, aplique un(a) `Time Interval` independiente a la primera métrica. Haga clic en **[!UICONTROL Time Options]** (icono de reloj) a la derecha de `first Revenue metric`.
 1. Haga clic en **[!UICONTROL Time Options]** en la ventana expandida que aparece sobre el informe.
 1. En el menú desplegable, establezca lo siguiente:
@@ -66,7 +66,7 @@ Ahora puede ver el impacto que tuvo cada mes el año pasado:
 
 ## Comparación de la misma métrica en diferentes intervalos de tiempo {#difftimerange}
 
-Este ejemplo utiliza una dimensión personalizada denominada `Day number of the month`. Si desea crear este informe y aún no tiene esta dimensión en su Data Warehouse, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para obtener ayuda.
+Este ejemplo utiliza una dimensión personalizada denominada `Day number of the month`. Si deseas crear este informe y aún no tienes esta dimensión en tu Data Warehouse, [ponte en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obtener ayuda.
 
 Los dos ejemplos más comunes en esta categoría son (1) la comparación de métricas de crecimiento (ingresos año tras año o mes tras mes) y (2) una mejor comprensión de las tendencias recientes de ventas de artículos o inventarios.
 

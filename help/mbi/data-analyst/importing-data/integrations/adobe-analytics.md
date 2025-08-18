@@ -57,6 +57,6 @@ Se necesita la siguiente información para conectarse:
 
 1. El grupo de informes seleccionado se muestra en una tabla. Haga clic en **[!UICONTROL Save]** para confirmar la selección.
 
-1. Informe al [!DNL Commerce Intelligence] [equipo de atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) de que su integración está autorizada y que ejecuta el proceso de conexión inicial por usted.
+1. Informe al [!DNL Commerce Intelligence] [equipo de atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) de que su integración está autorizada y que ejecuta el proceso de conexión inicial por usted.
 
 Una vez que se ejecute el proceso de conexión inicial, la tabla estará disponible en la página Data Warehouse, en la pestaña `All Tables`. Seleccione las columnas que desea duplicar y los datos aparecerán después de la siguiente actualización completa.

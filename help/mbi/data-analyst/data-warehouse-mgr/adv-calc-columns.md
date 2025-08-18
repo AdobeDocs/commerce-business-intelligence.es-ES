@@ -1,22 +1,22 @@
 ---
 title: Tipos de columnas calculadas avanzadas
-description: Aprenda los conceptos básicos de la mayoría de los casos de columnas de uso, pero es posible que desee una columna calculada que sea un poco más compleja de lo que puede crear el Administrador de Datas Warehouse.
+description: Aprenda los conceptos básicos de la mayoría de los casos de columnas de uso, pero es posible que desee una columna calculada que sea un poco más compleja de lo que puede crear el Administrador de Data Warehouse.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 2%
 
 ---
 
 # Tipos de columnas calculadas avanzadas
 
-Muchos de los análisis que podría querer crear implican el uso de una **nueva columna** que desea `group by` o `filter by`. El tutorial [Creación de columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) cubre los conceptos básicos de la mayoría de los casos de uso, pero puede que desee una columna calculada que sea un poco más compleja de lo que puede crear el Administrador de Datas Warehouse.
+Muchos de los análisis que podría querer crear implican el uso de una **nueva columna** que desea `group by` o `filter by`. El tutorial [Creación de columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) cubre los conceptos básicos de la mayoría de los casos de uso, pero puede que desee una columna calculada que sea un poco más compleja de lo que puede crear el Administrador de Data Warehouse.
 {: #top}
 
-El equipo de Adobe de analistas de Datas Warehouse puede crear estos tipos de columnas. Para definir una nueva columna calculada, proporciónenos la siguiente información:
+El equipo de Adobe de analistas de Data Warehouse puede crear estos tipos de columnas. Para definir una nueva columna calculada, proporciónenos la siguiente información:
 
 1. El **`definition`** de esta columna (incluyendo entradas, fórmulas o formato)
 1. El **`table`** en el que desea crear la columna
@@ -161,7 +161,7 @@ Para crear este tipo de columna calculada, debe saber:
 
 No te preocupes. El hecho de que no aparezca en la lista no significa que no sea posible. El equipo de Adobe de analistas de Data Warehouse puede ayudarle.
 
-Para definir una nueva columna calculada, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) con detalles sobre exactamente lo que desea generar.
+Para definir una nueva columna calculada, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) con detalles sobre exactamente lo que desea generar.
 
 ## Documentación relacionada
 

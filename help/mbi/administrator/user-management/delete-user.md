@@ -26,5 +26,5 @@ Puede reactivar el usuario creando un usuario con la misma dirección de correo 
 Si solo necesita que los tableros de ese usuario se inserten en una cuenta de usuario diferente, haga lo siguiente:
 
 1. Utilice la dirección de correo electrónico del usuario eliminado para crear un nuevo usuario [!DNL Commerce Intelligence].
-1. [Notificar al servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) después de crear al usuario. La compatibilidad transfiere los paneles a su cuenta de.
-1. Una vez que la Asistencia técnica de Adobe le haya notificado la transferencia, podrá volver a eliminar el usuario.
+1. [Notificar al servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) después de crear al usuario. La compatibilidad transfiere los paneles a su cuenta de.
+1. Una vez que el Soporte técnico de Adobe le haya notificado la transferencia, podrá eliminar de nuevo al usuario.

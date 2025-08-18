@@ -40,4 +40,4 @@ Si necesita reenviar la invitación, en la [página de inicio de sesión](https:
 
 >[!IMPORTANT]
 >
->Cada cuenta tiene un número contratado de licencias o puestos. Si llegas al límite o deseas obtener más información, [envía un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+>Cada cuenta tiene un número contratado de licencias o puestos. Si llegas al límite o deseas obtener más información, [envía un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

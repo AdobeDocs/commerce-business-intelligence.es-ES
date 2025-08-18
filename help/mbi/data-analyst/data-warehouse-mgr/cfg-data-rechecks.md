@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Configuración de comprobaciones de datos
 
-En una tabla de base de datos, puede haber columnas de datos con valores modificables. Por ejemplo, en una tabla `orders` puede haber una columna llamada `status`. Cuando un pedido se escribe inicialmente en la base de datos, la columna de estado puede contener el valor _pending_. El pedido se replica en su [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) con este valor `pending`.
+En una tabla de base de datos, puede haber columnas de datos con valores modificables. Por ejemplo, en una tabla `orders` puede haber una columna llamada `status`. Cuando un pedido se escribe inicialmente en la base de datos, la columna de estado puede contener el valor _pending_. El pedido se replica en su [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) con este valor de `pending`.
 
-Los estados de los pedidos pueden cambiar, aunque no siempre se encuentran en un estado `pending`. Finalmente podría convertirse en `complete` o `cancelled`. Para asegurarse de que la Data Warehouse sincronice este cambio, se debe volver a comprobar la columna para ver si hay nuevos valores.
+Los estados de los pedidos pueden cambiar, aunque no siempre se encuentran en un estado `pending`. Finalmente podría convertirse en `complete` o `cancelled`. Para asegurarse de que Data Warehouse sincronice este cambio, se debe volver a comprobar la columna para ver si hay nuevos valores.
 
 ¿Cómo encaja esto con los [métodos de replicación](../data-warehouse-mgr/cfg-replication-methods.md) que se discutieron? El procesamiento de las comprobaciones varía en función del método de replicación elegido. El método de replicación `Modified\_At` es la mejor opción para procesar valores cambiantes, ya que no es necesario configurar las comprobaciones de nuevo. Los métodos `Auto-Incrementing Primary Key` y `Primary Key Batch Monitoring` requieren volver a comprobar la configuración.
 
@@ -27,14 +27,14 @@ Al utilizar cualquiera de estos métodos, las columnas modificables deben marcar
    >
    >El auditor se basa en un proceso de muestreo y las columnas que cambian pueden no detectarse inmediatamente.
 
-1. Puede configurarlos usted mismo seleccionando la casilla de verificación que hay junto a la columna en el administrador de Datas Warehouse, haciendo clic en **[!UICONTROL Set Recheck Frequency]** y eligiendo un intervalo de tiempo apropiado para el momento en el que debería comprobar si hay cambios.
+1. Puede configurarlos usted mismo seleccionando la casilla de verificación que hay junto a la columna en el administrador de Data Warehouse, haciendo clic en **[!UICONTROL Set Recheck Frequency]** y eligiendo un intervalo de tiempo apropiado para el momento en el que debe comprobar si hay cambios.
 
-1. Un miembro del equipo de Data Warehouse [!DNL Adobe Commerce Intelligence] puede marcar manualmente las columnas para volver a comprobar la Data Warehouse. Si tiene conocimiento de columnas que se pueden cambiar, póngase en contacto con el equipo de para solicitar que se vuelvan a configurar las comprobaciones. Incluya una lista de columnas, junto con la frecuencia, con la solicitud.
+1. Un miembro del equipo de Data Warehouse [!DNL Adobe Commerce Intelligence] puede marcar manualmente las columnas para volver a comprobar en Data Warehouse. Si tiene conocimiento de columnas que se pueden cambiar, póngase en contacto con el equipo de para solicitar que se vuelvan a configurar las comprobaciones. Incluya una lista de columnas, junto con la frecuencia, con la solicitud.
 
 ## Volver a comprobar frecuencias {#frequency}
 
 **¿Lo sabías?**
-Al establecer una nueva comprobación en una columna `primary key`, no se comprueba si hay valores modificados en la columna. Se comprueban las filas eliminadas de la tabla y las eliminaciones se depuran de la Data Warehouse.
+Al establecer una nueva comprobación en una columna `primary key`, no se comprueba si hay valores modificados en la columna. Se comprueba la existencia de filas eliminadas en la tabla y todas las eliminaciones se depuran de Data Warehouse.
 
 Cuando se marca una columna para volver a comprobarla, también puede establecer la frecuencia con la que se realiza una nueva comprobación. Si una columna en particular no cambia con frecuencia, elegir una nueva comprobación menos frecuente puede [optimizar el ciclo de actualización](../../best-practices/reduce-update-cycle-time.md).
 
@@ -50,7 +50,7 @@ Como los tiempos de actualización están correlacionados con la cantidad de dat
 
 ## Administración de frecuencias de repetición {#manage}
 
-Para volver a comprobar las frecuencias en la Data Warehouse, haga clic en el nombre de la tabla y marque las columnas individuales. El estado de sincronización y la frecuencia de repetición de comprobación (**¿Cambios?** (columna) se muestra para cada columna de la tabla.
+Para volver a comprobar las frecuencias, en Data Warehouse, haga clic en el nombre de la tabla y marque las columnas individuales. El estado de sincronización y la frecuencia de repetición de comprobación (**¿Cambios?** (columna) se muestra para cada columna de la tabla.
 
 Para cambiar la frecuencia de repetición de la comprobación, haga clic en la casilla de verificación situada junto a las columnas que desee cambiar. A continuación, haga clic en el menú desplegable **[!UICONTROL Set Recheck Frequency]** y establezca la frecuencia que desee.
 

@@ -1,5 +1,5 @@
 ---
-title: Conectar Google Analytics Almacenados
+title: Conectar Google Analytics Warehouse
 description: Obtenga información sobre cómo los visitantes utilizan el sitio, qué contenido es atractivo, dónde salen y mucho más.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Data Architect, Data Engineer, User
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/google-analytics-logo.png)
 
-[!DNL Google Analytics] es el servicio de análisis web más utilizado en Internet. La implementación de [!DNL Google Analytics] en el sitio web permite rastrear cómo los visitantes utilizan el sitio, qué contenido es atractivo, de dónde salen los visitantes, etc. [!DNL Google Analytics Warehoused] es una integración independiente de su integración de [!DNL Google Analytics] existente. Permite un mejor análisis debido a que tiene los datos de [!DNL Google Analytics] en la Data Warehouse, que es diferente de la fuente activa de la integración de [!DNL Google Analytics] existente. El análisis de estas métricas en [!DNL Commerce Intelligence], junto con otros datos, mejora el estado general y la facilidad de uso del sitio.
+[!DNL Google Analytics] es el servicio de análisis web más utilizado en Internet. La implementación de [!DNL Google Analytics] en el sitio web permite rastrear cómo los visitantes utilizan el sitio, qué contenido es atractivo, de dónde salen los visitantes, etc. [!DNL Google Analytics Warehoused] es una integración independiente de su integración de [!DNL Google Analytics] existente. Permite un mejor análisis debido a que tiene los datos de [!DNL Google Analytics] en su Data Warehouse, que es diferente de la fuente activa de la integración de [!DNL Google Analytics] existente. El análisis de estas métricas en [!DNL Commerce Intelligence], junto con otros datos, mejora el estado general y la facilidad de uso del sitio.
 
 ## Diferencia entre GA Warehouse e integración en directo
 
@@ -29,13 +29,13 @@ Consulte [!DNL Google Analytics] campañas de publicidad para ver un ejemplo de 
 
 El aspecto de combinación permite que los datos de [!DNL Google Analytics] se unan a otros datos para realizar análisis. Por ejemplo, tome `Total Time On Site By Ad Campaign` datos de [!DNL Google Analytics] y únase a ellos con `Total Spent Per Campaign` datos de [!DNL Facebook Ads] para obtener una idea completa de cuánto le está costando la participación.
 
-Con la integración de [!DNL Google Analytics Live] por otro lado, cada gráfico de [!DNL Google Analytics] es como un pequeño silo que no se almacena en su Data Warehouse.
+Con la integración de [!DNL Google Analytics Live] por otro lado, cada gráfico de [!DNL Google Analytics] es como un pequeño silo que no está almacenado en su Data Warehouse.
 
 ## Conectando [!DNL Google Analytics Warehoused]
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] es una integración de `Premium`. [Póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) si tiene interés en agregar esta integración a su suscripción.
+>[!DNL Google Analytics Warehoused] es una integración de `Premium`. [Póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si tiene interés en agregar esta integración a su suscripción.
 
 1. Vaya a la página `Connections` en **[!UICONTROL Admin** > **Integrations]**.
 1. Haga clic en **[!UICONTROL Add an Integration]**, ubicado en el lado derecho.
@@ -63,7 +63,7 @@ Para identificar el identificador de perfil [!DNL Google Analytics] de un sitio 
 
 ## Documentación relacionada
 
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Conectando [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Análisis de la actividad del sitio web y las tasas de conversión de clientes](../../analysis/web-act-cust-conversion.md)
 * [Rastrear datos de adquisición de usuarios con  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

@@ -46,7 +46,7 @@ Ahora que sabe que los canales son solo combinaciones de fuentes y medios, es un
 
 1. **Habilitar su[!DNL Google ECommerce]integración**
 
-   [Cuando esté habilitado](../importing-data/integrations/google-ecommerce.md), asegúrate de [sincronizar](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) los campos **medio** y **origen** de tu Data Warehouse. Una vez finalizado, los datos de adquisición de medio y origen se incluirán en la Data Warehouse.
+   [Cuando esté habilitado](../importing-data/integrations/google-ecommerce.md), asegúrate de [sincronizar]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) los campos **medio** y **origen** de tu Data Warehouse. Una vez finalizado, los datos de adquisición de medio y origen se incluirán en el Data Warehouse.
 
 1. **Cargar una asignación de agrupaciones de canales de Google**
 
@@ -54,7 +54,7 @@ Ahora que sabe que los canales son solo combinaciones de fuentes y medios, es un
 
    Si es un profesional de [!DNL Google Analytics] y ha creado sus propios canales, quiere agregar las reglas específicas a la tabla de asignación antes de cargar el archivo en [!DNL Commerce Intelligence].
 
-   Llévelo a su Data Warehouse como [Carga de archivos](../importing-data/connecting-data/using-file-uploader.md).
+   Llévelo a su Data Warehouse como [carga de archivo](../importing-data/connecting-data/using-file-uploader.md).
 
    ![](../../assets/Setting_Primary_Keys.png)
 
@@ -62,7 +62,7 @@ Ahora que sabe que los canales son solo combinaciones de fuentes y medios, es un
 
    Para establecer una relación entre [!DNL Google ECommerce] y la tabla de asignación, [envíe una solicitud de soporte técnico](../../guide-overview.md#Submitting-a-Support-Ticket) a su equipo de analista de datos y haga referencia a este tema. El analista crea una nueva columna calculada llamada **Canal** en la tabla de comercio electrónico. **Después de un ciclo de actualización completo**, esta columna estará lista para usar en un `Filter` o `Group by`.
 
-Ahora tiene [!DNL Google Analytics Channel] agrupaciones en la Data Warehouse, lo que significa que puede analizar los datos desde una nueva perspectiva:
+Ahora tiene [!DNL Google Analytics Channel] agrupaciones en su Data Warehouse, lo que significa que puede analizar los datos desde una nueva perspectiva:
 
 ![Segmentación de la métrica Número de pedidos por canal](../../assets/GA_Channel_Gif.gif)
 
@@ -70,7 +70,7 @@ En este ejemplo, ha comenzado de forma sencilla segmentando la métrica **Númer
 
 ## Documentación relacionada
 
-* [Uso del Report Builder](../../tutorials/using-visual-report-builder.md)
+* [Uso de Report Builder](../../tutorials/using-visual-report-builder.md)
 * [Se esperaban [!DNL Google ECommerce]datos](../importing-data/integrations/google-ecommerce-data.md)
 * [Creando [!DNL Google ECommerce]dimensiones con datos de pedidos y clientes](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [¿Cuáles son sus fuentes y canales de adquisición más valiosos?](../analysis/most-value-source-channel.md)

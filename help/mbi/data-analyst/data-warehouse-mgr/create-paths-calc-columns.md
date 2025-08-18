@@ -15,12 +15,12 @@ ht-degree: 0%
 
 ## Actualizador de columnas calculadas
 
-Al [crear columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) en la Data Warehouse, se le pide que defina una ruta que describa cómo la tabla en la que está creando una columna está relacionada con la tabla de la que está extrayendo información. Para crear correctamente una ruta, debe saber dos cosas:
+Al [crear columnas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) en su Data Warehouse, se le pide que defina una ruta que describa cómo la tabla en la que está creando una columna está relacionada con la tabla de la que está extrayendo información. Para crear correctamente una ruta, debe saber dos cosas:
 
 1. Cómo se relacionan entre sí las tablas de las bases de datos
 1. Las claves principales y externas que definen esta relación
 
-Si conoce esta información, puede crear fácilmente una ruta siguiendo las instrucciones de este tema. Es posible que desee preguntar a un experto técnico de su organización o ponerse en contacto con el [equipo de Servicios profesionales](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si conoce esta información, puede crear fácilmente una ruta siguiendo las instrucciones de este tema. Es posible que desee preguntar a un experto técnico de su organización o ponerse en contacto con el [equipo de Servicios profesionales](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Actualizadores en relaciones de tabla y tipos de clave {#refresher}
 
@@ -48,7 +48,7 @@ Un `Foreign Key` es una columna creada dentro de una tabla que se vincula a la c
 
 ## Creación de una ruta {#createpath}
 
-Al crear una columna en la Data Warehouse, debe definir la ruta que lleva la información de una tabla a otra. A veces, las rutas se rellenan previamente porque existe una ruta entre las tablas, pero si esto no sucede, debe crear una.
+Al crear una columna en Data Warehouse, debe definir la ruta que lleva la información de una tabla a otra. A veces, las rutas se rellenan previamente porque existe una ruta entre las tablas, pero si esto no sucede, debe crear una.
 
 Use la relación entre **clientes** y **pedidos** para mostrarle cómo se hace. Desglosado:
 
@@ -79,7 +79,7 @@ Ahora puede crear la ruta.
 
 * **[!DNL Commerce Intelligence]no puede adivinar las relaciones de clave principal/externa**. No desea introducir datos incorrectos en su cuenta, por lo que la creación de rutas debe realizarse manualmente.
 
-* **Actualmente, las rutas sólo se pueden especificar entre dos tablas diferentes**. ¿La lógica que intenta volver a crear implica más de dos tablas? Entonces puede tener sentido (1) unir las columnas a una tabla intermedia primero, luego a la tabla de &quot;destino final&quot;, o (2) consultar con el equipo de [Servicios profesionales](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para encontrar el mejor enfoque a sus objetivos.
+* **Actualmente, las rutas sólo se pueden especificar entre dos tablas diferentes**. ¿La lógica que intenta volver a crear implica más de dos tablas? Entonces puede tener sentido (1) unir las columnas a una tabla intermedia primero, luego a la tabla de &quot;destino final&quot;, o (2) consultar con el equipo de [Servicios profesionales](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para encontrar el mejor enfoque a sus objetivos.
 
 * **Una columna solo puede ser la referencia de clave externa para una ruta de acceso al mismo tiempo**. Por ejemplo, si `order_items.order_id` señala a `orders.id`, entonces `order_items.order_id` no puede señalar a nada más.
 
@@ -89,11 +89,11 @@ Si no puede crear una columna calculada debido a una o más de las limitaciones 
 
 ## Eliminar una ruta de columna calculada {#delete}
 
-¿Ha creado una ruta incorrecta en su Data Warehouse? ¿O tal vez estás haciendo una pequeña limpieza de primavera y quieres ordenarlo? Si necesitas eliminar una ruta de acceso de tu cuenta, [puedes enviar un ticket a los analistas de soporte de Adobe](../../guide-overview.md#Submitting-a-Support-Ticket). **¡Asegúrese de incluir el nombre de la ruta de acceso!**
+¿Ha creado una ruta incorrecta en su Data Warehouse? ¿O tal vez estás haciendo una pequeña limpieza de primavera y quieres ordenarlo? Si necesitas eliminar una ruta de acceso de tu cuenta, [puedes enviar un ticket a los analistas de asistencia de Adobe](../../guide-overview.md#Submitting-a-Support-Ticket). **¡Asegúrese de incluir el nombre de la ruta de acceso!**
 
 ## Ajuste {#wrapup}
 
-Ahora que se siente cómodo creando rutas para las columnas calculadas en su Data Warehouse. Si aún no está seguro de una ruta de acceso determinada, recuerde que siempre puede hacer clic en **[!UICONTROL Support]** en su cuenta de [!DNL Commerce Intelligence] para obtener ayuda.
+Ahora que se siente cómodo creando rutas para columnas calculadas en su Data Warehouse. Si aún no está seguro de una ruta de acceso determinada, recuerde que siempre puede hacer clic en **[!UICONTROL Support]** en su cuenta de [!DNL Commerce Intelligence] para obtener ayuda.
 
 ## Relacionado
 

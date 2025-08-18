@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Generar [!DNL Google ECommerce] Dimension
+# Generar [!DNL Google ECommerce] dimensiones
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Las dimensiones que cubre le permiten generar análisis que [responden a pregunt
 
 ## Requisitos previos e información general
 
-Para crear las dimensiones en este tema, necesita una tabla [!DNL Google ECommerce], una tabla `orders` y una tabla `customers`. Esas tablas deben estar [sincronizadas con su Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) para poder crear dimensiones. Las tablas sincronizadas se muestran en la sección `Synced Tables` de `Data Warehouse Manager`.
+Para crear las dimensiones en este tema, necesita una tabla [!DNL Google ECommerce], una tabla `orders` y una tabla `customers`. Esas tablas deben [sincronizarse con su Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) para poder crear las dimensiones. Las tablas sincronizadas se muestran en la sección `Synced Tables` de `Data Warehouse Manager`.
 
 A continuación se muestra un vistazo rápido a la sincronización de tablas y columnas si necesita un repaso:
 
@@ -50,13 +50,13 @@ Estas son las dimensiones que se tratan:
 
 ## Creación de dimensiones
 
-Para crear dimensiones, abra el [Administrador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md) haciendo clic en **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**.
+Para crear dimensiones, abra [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) haciendo clic en **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**.
 
 ### Tabla de pedidos, ronda 1
 
-En este ejemplo se crea la dimensión [!DNL Google Analytics] Source **del pedido** Order.
+En este ejemplo se crea la dimensión **Source[!DNL Google Analytics] del pedido** Order.
 
-1. En la lista de tablas de la Data Warehouse, haga clic en la tabla (en este caso, `orders`) que contenga la información del pedido.
+1. En la lista de tablas de Data Warehouse, haga clic en la tabla (en este caso, `orders`) que contenga la información del pedido.
 1. Haga clic en **[!UICONTROL Create a Column]**.
 1. Asigne un nombre a la columna
 1. Seleccione `Joined Column` de la lista desplegable [definición](../data-warehouse-mgr/calc-column-types.md). Este ejemplo funciona con una [relación uno a uno](../data-warehouse-mgr/table-relationships.md), que coincide con la columna `eCommerce.transactionID` exactamente con una fila de la tabla `orders`.
@@ -80,9 +80,9 @@ A continuación, intente crear **el medio [!DNL Google Analytics] del pedido** y
 
 ### Tabla Customers {#customers}
 
-En este ejemplo se crea la dimensión [!DNL Google Analytics] de origen **del primer pedido de** Customer.
+En este ejemplo se crea la dimensión **de origen[!DNL Google Analytics] del primer pedido de** Customer.
 
-1. En la lista de tablas de la Data Warehouse, haga clic en la tabla (en este caso, `customers`) que contenga la información del cliente.
+1. En la lista de tablas de Data Warehouse, haga clic en la tabla (en este caso, `customers`) que contenga la información del cliente.
 1. Haga clic en **[!UICONTROL Create a Column]**.
 1. Asigne un nombre a la columna
 1. Para este ejemplo, seleccione la definición `is MAX` de la lista desplegable [definición](../../data-analyst/data-warehouse-mgr/calc-column-types.md). La definición de `is MIN` también podría funcionar si se aplica a una columna de texto con un solo valor posible. La parte importante es garantizar que se establecen los filtros adecuados, cosa que hará más adelante.
@@ -97,15 +97,15 @@ En este ejemplo se crea la dimensión [!DNL Google Analytics] de origen **del pr
    _
 1. Haga clic en **[!UICONTROL Save]** para crear la dimensión.
 
-A continuación, intente crear [!DNL Google Analytics] medio **y `campaign` del primer pedido de** cliente. No hay muchos cambios en estas dimensiones, así que pruébelo. Pero si se queda atascado, puede revisar [el final de este artículo](#stuck) para ver qué es diferente.
+A continuación, intente crear **medio[!DNL Google Analytics] y** del primer pedido de `campaign`cliente. No hay muchos cambios en estas dimensiones, así que pruébelo. Pero si se queda atascado, puede revisar [el final de este artículo](#stuck) para ver qué es diferente.
 
 ### Bonus: mesa de pedidos, ronda 2
 
-Puede detenerse aquí si lo desea, pero esta sección permite un análisis más detallado al incluir las [!DNL Google Analytics] dimensiones **del primer pedido del** cliente que creó en la [última sección](#customers) en la tabla `orders`. La creación de las dimensiones en esta sección le permite analizar todas las métricas creadas en la tabla `orders` - `Revenue`, `Number of orders`, `Distinct buyers`, etc. - mediante los atributos [!DNL Google Analytics] del primer pedido de un cliente.
+Puede detenerse aquí si lo desea, pero esta sección permite un análisis más detallado al incluir las **dimensiones[!DNL Google Analytics] del primer pedido del** cliente que creó en la [última sección](#customers) en la tabla `orders`. La creación de las dimensiones en esta sección le permite analizar todas las métricas creadas en la tabla `orders` - `Revenue`, `Number of orders`, `Distinct buyers`, etc. - mediante los atributos [!DNL Google Analytics] del primer pedido de un cliente.
 
 Este ejemplo une la dimensión `Customer's first order's [!DNL Google Analytics] source` a la tabla `orders`.
 
-1. En la lista de tablas de la Data Warehouse, haga clic en la tabla (en este caso, `orders`) que contenga la información del pedido.
+1. En la lista de tablas de Data Warehouse, haga clic en la tabla (en este caso, `orders`) que contenga la información del pedido.
 1. Haga clic en **[!UICONTROL Create a Column]**.
 1. Asigne un nombre a la columna
 1. Seleccione `Joined Column` de la lista desplegable de definiciones. Esto une las dimensiones de cliente que creó en la sección anterior a la tabla `orders`.

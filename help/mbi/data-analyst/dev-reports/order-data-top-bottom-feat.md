@@ -17,7 +17,7 @@ Puede hacer más en `Visual Report Builder` que crear análisis que reflejen la 
 
 Este tipo de ordenación y ordenación de datos se puede realizar en informes que utilizan `Group By` y `Time Interval of None`. Cuando ambos elementos están en un informe, la característica `Show Top/Bottom` se muestra encima de la vista previa del gráfico. Esta función le permite ver los puntos de datos superiores (de mayor a menor) e inferiores (de menor a mayor) en función de los parámetros configurados.
 
-![Mostrar característica superior/inferior en el Report Builder visual.](../../assets/Show_Top_Bottom.png)
+![Mostrar característica superior/inferior en Visual Report Builder.](../../assets/Show_Top_Bottom.png)
 
 ## ¿Cómo se usa esto? {#how}
 

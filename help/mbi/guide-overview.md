@@ -35,27 +35,27 @@ Esta guía contiene las siguientes secciones organizadas según la función que 
 Además de los flujos de trabajo basados en funciones anteriores, esta guía también contiene lo siguiente:
 
 - Prácticas recomendadas: [!UICONTROL Commerce Intelligence] es una plataforma sólida y flexible, lo que significa que hay muchas maneras diferentes de realizar tareas similares. Esta sección reúne los [!DNL Commerce Intelligence] métodos recomendados para capturar, analizar y ver sus datos.
-- Tutorials: siga estos tutoriales autoguiados para conocer el poder de [!DNL Commerce Intelligence].
+- Tutoriales: siga estos tutoriales autoguiados para conocer el poder de [!DNL Commerce Intelligence].
 
 ## Cómo obtener ayuda
 
-Póngase en contacto con el [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) si tiene preguntas y desea aprovechar algunos de los servicios profesionales o si tiene problemas con su cuenta.
+Póngase en contacto con el [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si tiene preguntas y desea aprovechar algunos de los servicios profesionales o si tiene problemas con su cuenta.
 
 ### Políticas de servicio
 
-Ver una [lista de los servicios que proporciona el equipo de atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Ver una [lista de los servicios que proporciona el equipo de atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### Envío de un vale de asistencia
 
-¿Necesita ayuda para crear una columna calculada avanzada? ¿Ha encontrado un defecto o un problema de conexión? Si necesita ponerse en contacto con el equipo de asistencia, el Adobe le pide que utilice las [directrices de vale de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es). Estas directrices describen el Adobe de información necesario para resolver el problema.
+¿Necesita ayuda para crear una columna calculada avanzada? ¿Ha encontrado un defecto o un problema de conexión? Si necesita ponerse en contacto con el equipo de asistencia, Adobe le pide que utilice las [directrices de vale de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Estas directrices describen la información que Adobe necesita para resolver el problema.
 
 ## Documentación disponible
 
 | Recurso de documentación | Descripción |
 |----------------------- | ----------- |
-| [Documentación de Adobe Commerce 2.4 Merchant](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=es) | Documentación centrada en el comerciante para Adobe Commerce y Magento Open Source |
-| [Servicios para la documentación de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=es) | Documentación para ofrecer compatibilidad con una colección de servicios que ayudan a los comerciantes a integrar componentes clave de su negocio en su tienda. |
-| [Guías operativas de Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es) | Documentación del sistema sobre los conceptos, procesos, herramientas y prácticas recomendadas para desarrollar, implementar y mantener proyectos implementados en plataformas Adobe Commerce y de Magento Open Source. |
+| [Documentación de Adobe Commerce 2.4 Merchant](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentación centrada en el comerciante para Adobe Commerce y Magento Open Source |
+| [Servicios para la documentación de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) | Documentación para ofrecer compatibilidad con una colección de servicios que ayudan a los comerciantes a integrar componentes clave de su negocio en su tienda. |
+| [Guías operativas de Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Documentación del sistema sobre los conceptos, procesos, herramientas y prácticas recomendadas para desarrollar, implementar y mantener proyectos implementados en plataformas Adobe Commerce y Magento Open Source. |
 | [Documentación para desarrolladores de Adobe Commerce 2.4](https://developer.adobe.com/commerce/) | Documentación centrada en el desarrollador que se utiliza para crear y personalizar Adobe Commerce o Magento Open Source |
 
 {style="table-layout:auto"}

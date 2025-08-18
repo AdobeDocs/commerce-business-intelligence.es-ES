@@ -1,6 +1,6 @@
 ---
-title: Uso del Report Builder SQL
-description: Obtenga información sobre cómo auditar datos y métricas con el Report Builder SQL para poder comparar los resultados con los datos de la base de datos local.
+title: Uso de SQL Report Builder
+description: Obtenga información sobre cómo auditar datos y métricas mediante SQL Report Builder para poder comparar los resultados con los datos de la base de datos local.
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
@@ -48,4 +48,4 @@ También puede escribir consultas personalizadas y exportar los resultados para 
 
 >[!NOTE]
 >
->Si encuentra alguna discrepancia después de auditar sus datos, consulte el tema de soporte técnico de [Contacto con el soporte técnico: Discrepancias de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=es) para obtener más información sobre qué hacer a continuación.
+>Si encuentra alguna discrepancia después de auditar sus datos, consulte el tema de soporte técnico de [Contacto con el soporte técnico: Discrepancias de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) para obtener más información sobre qué hacer a continuación.

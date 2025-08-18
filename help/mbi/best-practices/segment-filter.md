@@ -1,5 +1,5 @@
 ---
-title: Dimension de datos recomendados para la segmentación y el filtrado
+title: Dimensiones de datos recomendadas para la segmentación y el filtrado
 description: Conozca las prácticas recomendadas para la segmentación y el filtrado.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Data Architect, Data Engineer, User
@@ -71,7 +71,7 @@ Este tipo de análisis es lo que los especialistas en marketing de las empresas 
 
 El primer paso para segmentar las métricas por las dimensiones anteriores es asegurarse de que está realizando un seguimiento de estos datos en la base de datos. Si no se rastrea, reúna con su equipo técnico y encuentre una manera de empezar a rastrear estos datos.
 
-Después de confirmar que los datos se rastrean en la base de datos, [póngase en contacto con el equipo de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para insertar las dimensiones en las métricas y gráficos de [!DNL Commerce Intelligence]. También puede usar la herramienta *Administración de campos* para rastrear estos campos en [!DNL Commerce Intelligence].
+Después de confirmar que los datos se rastrean en la base de datos, [póngase en contacto con el equipo de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para insertar las dimensiones en las métricas y gráficos de [!DNL Commerce Intelligence]. También puede usar la herramienta *Administración de campos* para rastrear estos campos en [!DNL Commerce Intelligence].
 
 ## Relacionado
 

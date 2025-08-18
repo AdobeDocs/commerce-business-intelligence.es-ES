@@ -66,7 +66,7 @@ En la sección `Filter Logic` puede definir más detalladamente cómo debe compo
 * &quot;\[`A`\] y \[`B`\]&quot; solo permiten datos que cumplan los filtros \[`A`\] y \[`B`\]
 * &quot;(\[`A`\] y \[`B`\]) O \[`C`\]&quot; solo permite datos que cumplan los filtros \[`A`\] y \[`B`\], o que satisfagan el filtro \[`C`\] solo
 
-## Añadir Dimension {#dimensions}
+## Adición de dimensiones {#dimensions}
 
 La sección [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) muestra todas las dimensiones de datos disponibles para filtrar o agrupar; de forma predeterminada, todas las columnas de datos disponibles se muestran como dimensiones. Continuando con el ejemplo, si desea segmentar los ingresos por fuente de referencia, puede hacerlo aquí.
 

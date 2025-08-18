@@ -61,9 +61,9 @@ Columnas para crear
 * **`Order's created at`**
 * Seleccione una definición: `Joined Column`
 * [!UICONTROL Create Path]:
-* &#x200B;
+* 
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* &#x200B;
+* 
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * Seleccionar un(a) [!UICONTROL table]: `sales_flat_order`
@@ -82,11 +82,9 @@ Columnas para crear
 * **`return_date_requested`**
 * Seleccione una definición: `Joined Column`
 * [!UICONTROL Create Path]:
-   * &#x200B;
-
+   * 
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * &#x200B;
-
+   * 
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * Seleccionar un(a) [!UICONTROL table]: `enterprise_rma`
@@ -159,14 +157,14 @@ Columnas para crear
 
 * Fórmula: Probabilidad de orden de repetición
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
-  [!UICONTROL INTERVALO]: `None`
+* 
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
-* &#x200B;
+* 
   [!UICONTROL Tipo de gráfico]: `Bar`
 
 * **Tiempo promedio para regresar (todo el tiempo)**
@@ -174,9 +172,9 @@ Columnas para crear
 * [!UICONTROL Metric]: `Avg time between order and return`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
-  [!UICONTROL INTERVALO]: `None`
-* &#x200B;
+* 
+  [!INTERVALO UICONTROL]: `None`
+* 
   [!UICONTROL Tipo de gráfico]: `Number`
 
 * **Porcentaje de pedidos con devolución**
@@ -190,12 +188,12 @@ Columnas para crear
 
 * Fórmula: % de pedidos con devolución
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
-  [!UICONTROL INTERVALO]: `None`
+* 
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
 * **Ingresos devueltos por mes**
@@ -204,7 +202,7 @@ Columnas para crear
 
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
-* &#x200B;
+* 
   [!UICONTROL Tipo de gráfico]: `Line`
 
 * **Clientes que han realizado una devolución y no han comprado de nuevo**
@@ -215,11 +213,11 @@ Columnas para crear
    * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
-  [!UICONTROL INTERVALO]: `None`
-* &#x200B;
+* 
+  [!INTERVALO UICONTROL]: `None`
+* 
   [!UICONTROL Agrupar por]: `Customer_email`
-* &#x200B;
+* 
   [!UICONTROL Tipo de gráfico]: `Table`
 
 * **Tasa de retorno por elemento**
@@ -232,16 +230,16 @@ Columnas para crear
 
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
-  [!UICONTROL INTERVALO]: `None`
+* 
+  [!INTERVALO UICONTROL]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
-* &#x200B;
+* 
   [!UICONTROL Tipo de gráfico]: `Table`
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar al panel de muestra anterior.
 
-Si tiene alguna pregunta al generar este análisis o quiere contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si tiene alguna pregunta al generar este análisis o quiere contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

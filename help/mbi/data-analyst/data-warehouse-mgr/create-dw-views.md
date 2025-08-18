@@ -11,19 +11,19 @@ ht-degree: 6%
 
 ---
 
-# Uso de vistas de Data Warehouse
+# Uso de las vistas de Data Warehouse
 
 Este documento describe el propósito y los usos de `Data Warehouse Views` a los que se puede acceder navegando hasta **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. A continuación se explica qué hace y cómo crear vistas, así como un ejemplo de cómo usar `Data Warehouse Views` para consolidar los datos de gasto de [!DNL Facebook] y [!DNL AdWords].
 
 ## Finalidad general
 
-La característica `Data Warehouse Views` es un método para crear nuevas tablas almacenadas modificando una tabla existente o uniendo o consolidando varias tablas mediante SQL. Una vez que un ciclo de actualización ha creado y procesado un `Data Warehouse View`, se rellena en la Data Warehouse como una nueva tabla en el menú desplegable `Data Warehouse Views`, como se muestra a continuación:
+La característica `Data Warehouse Views` es un método para crear nuevas tablas almacenadas modificando una tabla existente o uniendo o consolidando varias tablas mediante SQL. Una vez que un ciclo de actualización ha creado y procesado un `Data Warehouse View`, se rellena en su Data Warehouse como una nueva tabla en el menú desplegable `Data Warehouse Views`, como se muestra a continuación:
 
 ![](../../assets/Data_Warehouse.png)
 
 Desde aquí, la nueva vista funciona como cualquier otra tabla, lo que le permite crear nuevas columnas calculadas o crear métricas e informes sobre ella.
 
-`Data Warehouse Views` se utilizan principalmente para consolidar varias tablas similares pero dispares juntas, de manera que todos los informes se puedan crear en una sola tabla nueva. Algunos ejemplos comunes incluyen consolidar las tablas de una base de datos heredada y una base de datos activa para combinar datos históricos y actuales, o combinar varios orígenes de anuncios como Facebook y AdWords en una tabla `Consolidated ad spend` singular.
+`Data Warehouse Views` se utilizan principalmente para consolidar varias tablas similares pero dispares juntas, de manera que todos los informes se puedan crear en una sola tabla nueva. Algunos ejemplos comunes incluyen la consolidación de las tablas de una base de datos heredada y una base de datos activa para combinar datos históricos y actuales, o la combinación de varias fuentes de anuncios como Facebook y AdWords en una tabla `Consolidated ad spend` singular.
 
 Si está familiarizado con SQL, ambos ejemplos de consolidación utilizan la función `UNION`, pero puede utilizar cualquier sintaxis y función de PostgreSQL al crear una nueva vista.
 
@@ -36,7 +36,7 @@ Se puede crear un(a) nuevo(a) `Data Warehouse Views` y eliminar las vistas exist
 Desde aquí puede crear una vista siguiendo las instrucciones de ejemplo siguientes:
 
 1. Si observa una vista existente, haga clic en **[!UICONTROL New Data Warehouse View]** para abrir una ventana de consulta en blanco. Si ya está abierta una ventana de consulta en blanco, continúe con el paso siguiente.
-1. Asigne un nombre a la vista escribiendo en el campo `View Name`. El nombre proporcionado aquí determina el nombre para mostrar de la vista en la Data Warehouse. `View names` se limitan a letras minúsculas, números y guiones bajos (_). Todos los demás caracteres están prohibidos.
+1. Asigne un nombre a la vista escribiendo en el campo `View Name`. El nombre proporcionado aquí determina el nombre para mostrar de la vista en Data Warehouse. `View names` se limitan a letras minúsculas, números y guiones bajos (_). Todos los demás caracteres están prohibidos.
 1. Escriba la consulta en la ventana denominada `Select Query`, utilizando la sintaxis estándar de PostgreSQL.
 
    >[!NOTE]
@@ -45,7 +45,7 @@ Desde aquí puede crear una vista siguiendo las instrucciones de ejemplo siguien
 
 1. Cuando termine, haga clic en **[!UICONTROL Save]** para guardar la vista. La vista tiene temporalmente un estado `Pending` hasta que se procese en el siguiente ciclo de actualización completo, momento en el cual el estado cambia a `Active`. Después de ser procesada por una actualización, la vista está lista para utilizarse en los informes.
 
-Es importante mencionar que después de guardar, la consulta subyacente utilizada para generar un `Data Warehouse View` no se puede editar. Si necesita ajustar la estructura de un(a) `Data Warehouse View`, debe crear una vista y migrar manualmente cualquier columna, métrica o informe calculado de la vista original a la nueva. Una vez completada la migración, puede eliminar con seguridad la vista original. Dado que `Data Warehouse Views` no se pueden editar, Adobe recomienda probar el resultado de la consulta con el `SQL Report Builder` antes de guardar la consulta como una vista de Data Warehouse.
+Es importante mencionar que después de guardar, la consulta subyacente utilizada para generar un `Data Warehouse View` no se puede editar. Si necesita ajustar la estructura de un(a) `Data Warehouse View`, debe crear una vista y migrar manualmente cualquier columna, métrica o informe calculado de la vista original a la nueva. Una vez completada la migración, puede eliminar con seguridad la vista original. Como `Data Warehouse Views` no se pueden editar, Adobe recomienda probar el resultado de la consulta con `SQL Report Builder` antes de guardar la consulta como una vista de Data Warehouse.
 
 ## Ejemplo: datos de [!DNL Facebook] y [!DNL Google AdWords]
 
@@ -136,11 +136,11 @@ En lugar de crear un conjunto independiente de métricas de marketing para cada 
 
 **¿Busca ayuda adicional?**
 
-La escritura de SQL y la creación de `Data Warehouse Views` no se incluyen en el soporte técnico. Sin embargo, el [equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) ofrece asistencia en la creación de vistas. El equipo de asistencia puede ayudarle con todo tipo de tareas, desde migrar una base de datos heredada con una nueva base de datos para crear una única vista de Data Warehouse con el fin de realizar un análisis específico.
+La escritura de SQL y la creación de `Data Warehouse Views` no se incluyen en el soporte técnico. Sin embargo, el [equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ofrece asistencia en la creación de vistas. Desde migrar una base de datos heredada con una nueva base de datos hasta crear una única vista de Data Warehouse para realizar un análisis específico, el equipo de asistencia puede ayudarle.
 
 Normalmente, la creación de un nuevo(a) `Data Warehouse View` con el fin de consolidar de 2 a 3 tablas de estructura similar requiere cinco horas de tiempo de servicio, lo que se traduce en aproximadamente 1.250 $ de trabajo. Sin embargo, a continuación se presentan algunos factores comunes que pueden aumentar la inversión esperada requerida:
 
 * Consolidación de más de tres tablas en una sola vista
-* Creación de más de una vista de Data Warehouse
+* Creación de varias vistas de Data Warehouse
 * Lógica de unión compleja o condiciones de filtrado
 * Consolidación de dos o más tablas con estructuras de datos diferentes

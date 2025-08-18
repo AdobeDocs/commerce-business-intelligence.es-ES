@@ -58,7 +58,7 @@ Columnas para crear
 * Percentil de ingresos del cliente
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **caso cuando A es nulo entonces nulo más (A/B)* 100 fin &#x200B;**
+* [!UICONTROL Calculation]: - **caso cuando A es nulo entonces nulo más (A/B)* 100 fin **
 * [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order` tabla
@@ -76,7 +76,7 @@ Columnas para crear
 * Percentil de ingresos del cliente
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **caso cuando A es nulo entonces nulo más (A/B)* 100 fin &#x200B;**
+* [!UICONTROL Calculation]: - **caso cuando A es nulo entonces nulo más (A/B)* 100 fin **
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -100,16 +100,16 @@ Columnas para crear
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Independent`
 * Métrica `A`: `Total customer lifetime revenue by percentile`
 * Métrica `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * Mostrar arriba/abajo: `100% of Customer's revenue percentile Name`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 * **Concentración del 10% superior**
@@ -117,12 +117,12 @@ Columnas para crear
 
 * Métrica `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Ocultar gráfico
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **Concentración inferior del 50% con una sola compra**
@@ -133,12 +133,12 @@ Columnas para crear
 * [!UICONTROL Filter]:
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Ocultar gráfico
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **Concentración inferior del 10%**
@@ -146,14 +146,14 @@ Columnas para crear
 
 * Métrica `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Ocultar gráfico
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar al panel de muestra anterior.
 
-Si tiene alguna pregunta al generar este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si tiene alguna pregunta al generar este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
