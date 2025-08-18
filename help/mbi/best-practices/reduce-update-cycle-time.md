@@ -43,4 +43,4 @@ Además de volver a evaluar las frecuencias de comprobación, los métodos de re
 
 ## Ajuste
 
-Si el tiempo de actualización parece lento incluso después de implementar estas recomendaciones, [comuníquese con el equipo de atención](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si el tiempo de actualización parece lento incluso después de implementar estas recomendaciones, [comuníquese con el equipo de atención](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).

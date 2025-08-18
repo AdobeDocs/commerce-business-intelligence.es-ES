@@ -82,4 +82,4 @@ Además de analizar el comportamiento de recompra de sus clientes, también pued
 
 Una vez que haya identificado por qué se produce la pérdida, puede utilizar el análisis para generar una campaña `reactivation`. Con estos datos, puede identificar a los usuarios que se han vuelto inactivos, cuánto tiempo ha pasado desde su última visita, cuál fue su última compra, etc. Esto le permite tomar decisiones procesables que atraen a sus clientes a regresar.
 
-Para obtener ayuda con el análisis, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Para obtener ayuda con el análisis, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).

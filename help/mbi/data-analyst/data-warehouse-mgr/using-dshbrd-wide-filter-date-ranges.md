@@ -43,11 +43,11 @@ Cuando se especifica un filtro de fecha para un panel, ese filtro se aplica solo
 
 ## Filtros de tienda
 
-Para analizar el rendimiento de un almacén específico, haga clic en el icono Almacenes en la esquina superior derecha (![Filtro de almacén](../../assets/store-filter.png)). De manera predeterminada, `Store Filter` está establecido en `All Stores`, que muestra los datos de todas las [vistas de tiendas](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) disponibles en su sitio de Commerce.
+Para analizar el rendimiento de un almacén específico, haga clic en el icono Almacenes en la esquina superior derecha (![Filtro de almacén](../../assets/store-filter.png)). De manera predeterminada, `Store Filter` está establecido en `All Stores`, que muestra los datos de todas las [vistas de tiendas](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=es) disponibles en su sitio de Commerce.
 
 >[!NOTE]
 >
->Se habilitó o deshabilitó un filtro de almacén para toda una cuenta de [!DNL Commerce Intelligence]. Si un tablero contiene informes que no se ven afectados por el filtro (como los informes que no están creados en ningún dato de [!DNL Adobe Commerce]), esos informes no se actualizan cuando se aplica el filtro de almacén. Puedes [ponerte en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si crees que un informe debería actualizarse en función de la selección de la tienda o si crees que el filtro de la tienda de cuentas se ha deshabilitado por error.
+>Se habilitó o deshabilitó un filtro de almacén para toda una cuenta de [!DNL Commerce Intelligence]. Si un tablero contiene informes que no se ven afectados por el filtro (como los informes que no están creados en ningún dato de [!DNL Adobe Commerce]), esos informes no se actualizan cuando se aplica el filtro de almacén. Puedes [ponerte en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) si crees que un informe debería actualizarse en función de la selección de la tienda o si crees que el filtro de la tienda de cuentas se ha deshabilitado por error.
 
 Cuando selecciona un almacén de `Store Filter`, el filtro conserva su selección cuando navega entre paneles. Conservar la selección le permite ver los datos del almacén seleccionado en todas partes hasta que seleccione `All Stores`.
 

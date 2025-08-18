@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Analizar niveles de inventario
 
-En este tema se muestra cómo configurar un tablero que proporciona información sobre el inventario actual y contiene instrucciones para los clientes sobre la arquitectura heredada o la nueva arquitectura. Se encuentra en la arquitectura heredada si no tiene la opción **[!UICONTROL Data Warehouse Views]** en el menú **[!UICONTROL Manage Data]**. Si usa la arquitectura heredada, envíe una [nueva solicitud de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) con el asunto **[!UICONTROL INVENTORY ANALYSIS]** una vez que llegue a la sección designada en las instrucciones de _Columnas calculadas_ a continuación.
+En este tema se muestra cómo configurar un tablero que proporciona información sobre el inventario actual y contiene instrucciones para los clientes sobre la arquitectura heredada o la nueva arquitectura. Se encuentra en la arquitectura heredada si no tiene la opción **[!UICONTROL Data Warehouse Views]** en el menú **[!UICONTROL Manage Data]**. Si usa la arquitectura heredada, envíe una [nueva solicitud de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) con el asunto **[!UICONTROL INVENTORY ANALYSIS]** una vez que llegue a la sección designada en las instrucciones de _Columnas calculadas_ a continuación.
 
 ## Columnas para rastrear:
 
@@ -242,4 +242,4 @@ En este tema se muestra cómo configurar un tablero que proporciona información
    * &#x200B;
      [!UICONTROL Chart type]: `Table`
 
-Si tiene alguna pregunta al generar este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Si tiene alguna pregunta al generar este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
