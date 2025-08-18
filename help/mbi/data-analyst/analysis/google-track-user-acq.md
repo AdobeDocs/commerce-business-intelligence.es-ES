@@ -27,7 +27,7 @@ Si aún no está realizando el seguimiento de los orígenes de adquisición de u
 
 ### (Opción 1) Rastrear datos de origen de referencia de pedidos a través de [!DNL Google Analytics E-Commerce]
 
-Si usa [!DNL Google Analytics E-Commerce] para realizar el seguimiento de los datos de pedidos y ventas, puede usar [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) para sincronizar los datos de origen de referencia de cada pedido. Esto le permite segmentar los ingresos y pedidos por origen de referencia (por ejemplo, `utm_source` o `utm_medium`). También puede hacerse una idea de las fuentes de adquisición de clientes a través de [!DNL Commerce Intelligence] dimensiones personalizadas como `User's first order source`.
+Si usa [!DNL Google Analytics E-Commerce] para realizar el seguimiento de los datos de pedidos y ventas, puede usar [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) para sincronizar los datos de origen de referencia de cada pedido. Esto le permite segmentar los ingresos y pedidos por origen de referencia (por ejemplo, `utm_source` o `utm_medium`). También puede hacerse una idea de las fuentes de adquisición de clientes a través de [!DNL Commerce Intelligence] dimensiones personalizadas como `User's first order source`.
 
 ### (Opción 2) Guardar los datos de origen de adquisición de [!DNL Google Analytics] en la base de datos
 

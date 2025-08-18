@@ -19,7 +19,7 @@ En este tema se muestra cómo configurar un tablero que realice un seguimiento d
 
 ## Requisitos previos
 
-**Importe sus datos de costos de publicidad** - Conecte [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) a [!DNL Adobe Commerce Intelligence] - esto sincroniza automáticamente su gasto de [!DNL AdWords] en Commerce Intelligence.
+**Importe sus datos de costos de publicidad** - Conecte [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md) a [!DNL Adobe Commerce Intelligence] - esto sincroniza automáticamente su gasto de [!DNL AdWords] en Commerce Intelligence.
 
 **Rastrear datos del canal de adquisición de usuarios** - Para enlazar los datos de [!DNL Google AdWords] con pedidos específicos de la base de datos, debe [rastrear la adquisición de usuarios](../analysis/google-track-user-acq.md) a través de [!DNL Google Analytics E-commerce]. Esto le permite conectar cada pedido con una fuente y un medio de utm.
 

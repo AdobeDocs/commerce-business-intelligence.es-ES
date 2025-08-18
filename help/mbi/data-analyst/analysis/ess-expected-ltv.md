@@ -53,8 +53,8 @@ Una vez creada la métrica, puede **crear un tablero** haciendo lo siguiente:
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!INTERVALO UICONTROL]: `None`
+   * &#x200B;
+     [!UICONTROL INTERVALO]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
@@ -64,8 +64,8 @@ Una vez creada la métrica, puede **crear un tablero** haciendo lo siguiente:
          * [`B`] `Customer's lifetime number of orders` **Mayor Que**`0`
 
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!INTERVALO UICONTROL]: `None`
+   * &#x200B;
+     [!UICONTROL INTERVALO]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
@@ -73,7 +73,7 @@ Una vez creada la métrica, puede **crear un tablero** haciendo lo siguiente:
    * Métrica `2`: `Median lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
-   * 
+   * &#x200B;
      [!UICONTROL Tipo de gráfico]: `Line`
    * Desmarcar `Multiple Y-Axes`
 
@@ -81,10 +81,10 @@ Una vez creada la métrica, puede **crear un tablero** haciendo lo siguiente:
    * Métrica `1`: `Avg lifetime revenue`
    * Métrica `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
-   * 
-     [!INTERVALO UICONTROL]: `None`
+   * &#x200B;
+     [!UICONTROL INTERVALO]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Tipo de gráfico]: `Line`
 
   >[!NOTE]
