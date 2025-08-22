@@ -10,9 +10,10 @@ feature-set: Commerce Intelligence
 level: Beginner, Intermediate
 topic: Commerce
 index: true
-source-git-commit: c212256ff32e308cb67a84afd3fd86b0f756ae24
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+source-git-commit: aae7508da07dcf464401a4e5681f76cee20f01c9
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 # Metadatos para uso interno
 
-El `metadata.md` el archivo incluye metadatos de repositorios que pasan a la guía del usuario `TOC.md` archivos en el repositorio. Si desea cambiar el contenido de metadata.md para cualquier guía del usuario, hágalo en cualquier `TOC.md` archivo.
+El archivo `metadata.md` incluye metadatos de nivel de repositorio que pasan a los archivos de la guía del usuario `TOC.md` en el repositorio. Si desea cambiar el contenido de metadata.md para cualquier guía del usuario, hágalo en cualquier archivo de `TOC.md`.
 
 | metadatos | lo que hace |
 |--- |--- |
