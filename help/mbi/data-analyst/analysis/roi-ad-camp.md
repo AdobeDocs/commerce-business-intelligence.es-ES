@@ -135,6 +135,6 @@ Antes de comenzar, [envíe un vale de soporte técnico](https://experienceleague
 * [Rastrear origen de referencia de usuario en la base de datos](../analysis/google-track-user-acq.md)
 * [Seguimiento de los datos de dispositivos de usuario, exploradores y SO en la base de datos](../analysis/track-usr-dev-browser.md)
 * [Descubra sus fuentes y canales de adquisición más valiosos](../analysis/most-value-source-channel.md)
-* [Conecta tu cuenta de  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Conecta tu cuenta de  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [¿Cómo funciona la atribución de  [!DNL Google Analytics] UTM?](../analysis/utm-attributes.md)
 * [Cinco prácticas recomendadas para el etiquetado UTM en  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
