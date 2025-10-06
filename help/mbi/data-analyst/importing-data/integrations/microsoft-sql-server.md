@@ -4,9 +4,9 @@ description: Aprenda a conectar su base de datos SQL de Microsoft a  [!DNL Comme
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 >
 >Requiere [permisos de administrador](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/MicrosoftSQLServer-logo.png)
+![Logotipo de Microsoft SQL Server](../../../assets/MicrosoftSQLServer-logo.png)
 
 En este tema se explica cómo conectar la base de datos [!DNL Microsoft SQL] a [!DNL Commerce Intelligence] en un proceso de cuatro pasos. Este proceso requiere cierta experiencia técnica relacionada con las conexiones de servidor y SQL, y puede requerir el apoyo de los desarrolladores de su equipo.
 
-[!DNL Commerce Intelligence] admite [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] y la mayoría de los demás proveedores de servidores en la nube. Si tiene alguna pregunta sobre su host en particular, [envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) pidiéndonos que proporcionemos esta información.
+[!DNL Commerce Intelligence] admite [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] y la mayoría de los demás proveedores de servidores en la nube. Si tiene alguna pregunta sobre su host en particular, [envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pidiéndonos que proporcionemos esta información.
 
 El sistema debe ejecutar consultas SELECT en la base de datos. Esto se realiza inicialmente para obtener una instantánea de la estructura de la base de datos y, a continuación, con regularidad para mantener los datos actualizados. Las actualizaciones son graduales y Adobe restringe la frecuencia y el tiempo de las actualizaciones para evitar que se produzca una carga no deseada en el servidor.
 
@@ -41,7 +41,7 @@ La mejor manera de hacerlo es conectarnos al servidor de su base de datos a trav
 
 1. Escriba la dirección IP del servidor, el nombre de usuario y la contraseña en [!DNL Commerce Intelligence] en **[!UICONTROL Manage Data** > **Connections]**.
 
-   ![](../../../assets/manage-data-connections.png)
+   ![Página Administrar conexiones de datos que muestra las integraciones de base de datos](../../../assets/manage-data-connections.png)
 
 1. Haga clic en **[!UICONTROL Add a Data Source]**.
 

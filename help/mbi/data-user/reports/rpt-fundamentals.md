@@ -4,9 +4,9 @@ description: Aprenda a utilizar los datos del informe.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Es hora de identificar una lista de posibles análisis y mediciones que ayuden a
 
 * Tiempo promedio desde el registro hasta la primera fecha de compra por uso.
 
-Esto revela el tiempo promedio que transcurre entre la fecha de registro y la primera fecha de compra de los usuarios, y da una idea de cómo se comportan los usuarios en este paso final del canal de conversión.
+Esto revela el tiempo promedio que transcurre entre la fecha de registro y la primera fecha de compra de los usuarios, y da una idea de cómo se comportan los usuarios en este paso final de la conversión a funnel.
 
 ## Búsqueda de los datos
 
@@ -128,4 +128,4 @@ Consulte lo siguiente:
 
 Consulte lo siguiente:
 
-![](../../assets/exp-rep-as-image.gif)
+![Demostración animada de la exportación de un informe como archivo de imagen](../../assets/exp-rep-as-image.gif)

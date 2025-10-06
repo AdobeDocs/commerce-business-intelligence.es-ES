@@ -4,9 +4,9 @@ description: Aprenda a crear columnas para aumentar y optimizar los datos para e
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Una columna calculada de edad devuelve el número de segundos entre la hora actu
 
 El ejemplo siguiente crea `Seconds since customer's most recent order` en la tabla `customers`. Esto se puede usar para construir listas de usuarios de clientes que no han hecho compras (a veces denominadas pérdidas) en `X days`.
 
-![](../../assets/age.gif)
+![Demostración animada de la creación de la columna de cálculo de edad](../../assets/age.gif)
 
 ### Conversor de moneda
 
@@ -47,7 +47,7 @@ El ejemplo siguiente crea `base\_grand\_total In AED`, convirtiendo el `base\_gr
 
 Para los clientes de Commerce, el campo `base\_currency\_code` generalmente almacena monedas nativas. El campo `Spot Time` debe coincidir con la fecha utilizada en las métricas.
 
-![](../../assets/currency_converter.png)
+![Configuración de columna calculada del convertidor de moneda](../../assets/currency_converter.png)
 
 ## Columnas calculadas de uno a varios {#onetomany}
 
@@ -59,7 +59,7 @@ Una columna unida reubica un atributo de la tabla *a* la tabla varios. El ejempl
 
 En el ejemplo siguiente, la dimensión `Customer's group\_id` se une en la tabla `orders`.
 
-![](../../assets/joined_column.gif)
+![Demostración animada de la creación de tablas de vinculación de columnas combinadas](../../assets/joined_column.gif)
 
 ## Columnas calculadas varios a uno {#manytoone}
 
@@ -71,7 +71,7 @@ Este tipo de columna calculada devuelve el recuento de valores de la tabla de va
 
 En el ejemplo siguiente, la dimensión `Customer's lifetime number of canceled orders` se crea en la tabla `customers` (con un filtro para `orders.status`).
 
-![](../../assets/many_to_one.gif){: width="699" height="351"}
+![Demostración animada de la agregación de columnas varios a uno](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Sum {#sum}
 
@@ -95,7 +95,7 @@ Este tipo de dimensión podría determinar, por ejemplo, si un cliente ha compra
 
 Si tiene problemas para recordar cuáles son todas las entradas al crear una columna calculada, tenga a mano este mapa de referencia al crear:
 
-![](../../assets/merged_reference_map.png)
+![Mapa de referencia que muestra la configuración de columna calculada combinada](../../assets/merged_reference_map.png)
 
 ## Columnas calculadas avanzadas {#advanced}
 

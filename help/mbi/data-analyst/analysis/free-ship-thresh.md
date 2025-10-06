@@ -4,9 +4,9 @@ description: Aprenda a configurar un tablero que realice un seguimiento del rend
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
 role: Admin,  User
 feature: Data Warehouse Manager, Dashboards, Reports
-source-git-commit: 6bdbdbcc652d476fa2a22589ac99678d5855e6fe
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ En este tema se muestra cómo configurar un tablero que realice un seguimiento d
 
 Antes de comenzar, debes identificar dos periodos de tiempo diferentes en los que has tenido valores diferentes para el umbral de envío gratuito de tu tienda.
 
-![](../../assets/free_shipping_threshold.png)
+![Gráfico que muestra el análisis del umbral de envío gratuito y la distribución del valor del pedido](../../assets/free_shipping_threshold.png)
 
 Este análisis contiene [columnas calculadas avanzadas](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -66,9 +66,9 @@ No hay métricas nuevas!!!
 
 * Métrica `A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Número de pedidos por bloques de subtotales con regla de envío A**
@@ -80,53 +80,53 @@ No hay métricas nuevas!!!
 
 * Métrica `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Column`
 
 * **Porcentaje de pedidos por subtotal con regla de envío A**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL Agrupar por]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `%`
 
 * Métrica `A`: `Number of orders by subtotal (hide)`
 * Métrica `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **Porcentaje de pedidos con un subtotal que supera la regla de envío A**
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
+   * 
      [!UICONTROL Agrupar por]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `%`
 
 * Métrica `A`: `Number of orders by subtotal`
 * Métrica `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 

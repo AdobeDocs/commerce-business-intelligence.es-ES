@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo comprobar el estado del ciclo de a
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Cuando inicia sesión en su panel de [!DNL Adobe Commerce Intelligence], existen
 
 ## ¿Por qué debería comprobar el estado del ciclo de actualización?
 
-La comprobación del ciclo de actualización de estado resulta útil cuando está auditando los datos de su cuenta de [!DNL Commerce Intelligence]. Si ve [resultados que no cumplen con sus expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por ejemplo, las ventas diarias en [!DNL Commerce Intelligence] no coinciden con lo que está viendo en su plataforma de comercio electrónico o en sus [[!DNL Google] ingresos de comercio electrónico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=es), puede comprobar el último punto de datos para ver si el problema se resuelve una vez que se completa una actualización.
+La comprobación del ciclo de actualización de estado resulta útil cuando está auditando los datos de su cuenta de [!DNL Commerce Intelligence]. Si ve [resultados que no cumplen con sus expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por ejemplo, las ventas diarias en [!DNL Commerce Intelligence] no coinciden con lo que está viendo en su plataforma de comercio electrónico o en sus [[!DNL Google] ingresos de comercio electrónico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), puede comprobar el último punto de datos para ver si el problema se resuelve una vez que se completa una actualización.
 
 ## [!UICONTROL Read-Only] y [!UICONTROL Standard] usuarios
 
 Los usuarios de `Read-only` pueden iniciar sesión en su panel y ver la actualización reciente de los datos pasando el puntero sobre el icono en la parte superior derecha de la página. Esto muestra cuándo se extrajo el último punto de datos.
 
-![](../../mbi/assets/last-success-data.png)
+![Última marca de tiempo de actualización de datos correcta mostrada en la interfaz](../../mbi/assets/last-success-data.png)
 
 ## [!UICONTROL Admin] usuarios
 
@@ -31,7 +31,7 @@ Los usuarios de `Admin` pueden iniciar sesión en el panel y ver el último punt
 
 Para obtener más información, los usuarios administradores pueden hacer clic en **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**.
 
-![](../../mbi/assets/detail-manage-data-integrations.png)
+![Página Administrar integraciones de datos que muestra detalles de conexión y estado de actualización](../../mbi/assets/detail-manage-data-integrations.png)
 
 Esta página muestra el estado actual de la actualización y la hora de la última actualización completada.
 

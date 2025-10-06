@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo auditar datos y métricas mediante
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ Para empezar, abra [!DNL SQL Report Builder] navegando hasta **[!UICONTROL Repor
 
 Para tener una vista más clara de la consulta, puede cambiar el formato de su visualización en el campo de consulta. Cuando esté listo, seleccione `Run Query`. Los resultados se rellenan como una tabla en el panel de informe debajo de la consulta.
 
-![](../../assets/run-query-results.gif)
+![Demostración animada de la ejecución de una consulta SQL y de la visualización de resultados](../../assets/run-query-results.gif)
 
 ## Restricción de la consulta
 
 Si intenta localizar una discrepancia o un conjunto de datos específicos, debe restringir la consulta a un ejemplo específico para comprobarlo con la base de datos local. Para ello, edite la consulta para que coincida con las restricciones que desee. En el ejemplo siguiente, se restringe la consulta para incluir solo los ingresos a partir del 1 de enero de 2013. Después de actualizar la consulta, vuelva a seleccionar **[!UICONTROL Run Query]** para actualizar los resultados.
 
-![](../../assets/restricting-query.gif)
+![Demostración animada de restricción de consulta con filtros](../../assets/restricting-query.gif)
 
 ## Guardado y exportación
 
@@ -40,7 +40,7 @@ Cuando el informe satisfaga sus necesidades, asígnele un nombre distinto, haga 
 
 Una vez guardado el informe, vaya a ese panel seleccionando `Go to Dashboard`. Desde allí, puede exportar los datos buscando el informe y seleccionando **[!UICONTROL Options gear > Full `.csv`Export]** o **[!UICONTROL Full Excel Export]**.
 
-![](../../assets/export-dboard-data.gif)
+![Demostración animada de exportación de datos de tablero](../../assets/export-dboard-data.gif)
 
 ## Consultas personalizadas
 
@@ -48,4 +48,4 @@ También puede escribir consultas personalizadas y exportar los resultados para 
 
 >[!NOTE]
 >
->Si encuentra alguna discrepancia después de auditar sus datos, consulte el tema de soporte técnico de [Contacto con el soporte técnico: Discrepancias de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=es) para obtener más información sobre qué hacer a continuación.
+>Si encuentra alguna discrepancia después de auditar sus datos, consulte el tema de soporte técnico de [Contacto con el soporte técnico: Discrepancias de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) para obtener más información sobre qué hacer a continuación.

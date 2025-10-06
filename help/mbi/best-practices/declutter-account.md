@@ -4,9 +4,9 @@ description: Aprenda a limpiar su cuenta de  [!DNL Commerce Intelligence] .
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Después de acceder a los paneles e informes, puede empezar a limpiar la cuenta.
 
 También puede seleccionar **[!UICONTROL Dashboard Options]** y luego **[!UICONTROL Delete]** en el propio tablero.
 
-![](../../mbi/assets/Delete_from_dashboard.png)
+![Eliminar opción en el menú de engranajes del panel](../../mbi/assets/Delete_from_dashboard.png)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ También puede seleccionar **[!UICONTROL Dashboard Options]** y luego **[!UICONT
 
 Aquí tiene un vistazo al proceso de eliminación de informes no utilizado:
 
-![](../../mbi/assets/unused_reports.png)
+![Lista de informes sin usar que muestra informes que no se encuentran en ningún tablero](../../mbi/assets/unused_reports.png)
 
 ## Paso 3: Eliminar Métricas No Utilizadas
 
@@ -93,7 +93,7 @@ Después de haber limpiado la lista de usuarios, los paneles y los informes, pue
 1. En la parte inferior de la página, verá una sección llamada **[!UICONTROL Dependent Charts]**. Haga clic en el vínculo para generar una lista de informes dependientes para esta métrica.
 1. Una vez que el sistema completa la comprobación, [!DNL Commerce Intelligence] muestra una lista de paneles, informes y usuarios que utilizan esta métrica.
 
-![](../../mbi/assets/report_dependecies.png)
+![Cuadro de diálogo de dependencias del informe que muestra qué informes utilizan la columna seleccionada](../../mbi/assets/report_dependecies.png)
 
 Si decide que la métrica ya no es necesaria, vuelva a la página **[!UICONTROL Metrics]** haciendo clic en **[!UICONTROL Back to Metric List]** para buscar la métrica que desea eliminar. Haga clic en **[!UICONTROL Delete]**.
 
@@ -112,6 +112,7 @@ Si desea continuar, póngase en contacto con el [!DNL Commerce Intelligence] [So
 1. Vaya a **[!DNL Manage Data]** y después a **[!UICONTROL Data Warehouse]**.
 1. En la lista **[!UICONTROL Synced Tables]**, vaya a la tabla que contiene la columna.
 1. Marque una o más casillas junto a una o más columnas que desee desincronizar.
+
    >[!NOTE]
    >
    >No se puede anular la sincronización de una columna de clave principal sin soltar toda la tabla.
@@ -120,7 +121,7 @@ Si desea continuar, póngase en contacto con el [!DNL Commerce Intelligence] [So
 
 A continuación se muestra un vistazo a todo el proceso:
 
-![](../../mbi/assets/drop_column.png)
+![Opción de soltar columna en Data Warehouse Manager](../../mbi/assets/drop_column.png)
 
 ## Ajuste
 

@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo administrar los usuarios de Commer
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Estos permisos permiten a los usuarios realizar determinadas acciones o acceder 
 
 >[!NOTE]
 >
->_Puede limitar el acceso de **[!UICONTROL Standard]**&#x200B;un usuario de [ a métricas específicas](../../administrator/user-management/restrict-metric-access.md)._
+>_Puede limitar el acceso de **[!UICONTROL Standard]**un usuario de [ a métricas específicas](../../administrator/user-management/restrict-metric-access.md)._
 >
 >**[!UICONTROL Standard] _los usuarios pueden acceder a Facturación con una configuración de permiso adicional._
 >
@@ -66,7 +66,7 @@ Además de los niveles generales de permisos, existen otras dos designaciones de
 
 Los usuarios de `Admin` tienen acceso a la ficha `Billing` de manera predeterminada, pero los usuarios de `Standard` también pueden obtener acceso si tienen seleccionada la casilla de verificación `Billing` en su perfil.
 
-![facturación](../../assets/billing.png)<!--{: width="550" height="363"}-->
+![Página de facturación](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### Técnico
 

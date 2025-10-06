@@ -4,9 +4,9 @@ description: Aprenda a colocar todos los datos en una sola Data Warehouse.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Utilice campañas de publicidad como ejemplo. Si está ejecutando campañas en l
 ## Restricciones y requisitos {#require}
 
 1. **El único formato admitido para las cargas de archivos es `CSV` o`comma separated values`**. Si está trabajando en Excel, puede utilizar la función Guardar como para guardar el archivo en formato `.csv`.
-1. **`CSV`archivos deben usar`UTF-8 encoding`**. La mayoría de las veces, esto no es un problema. Si encuentra este error al cargar un archivo, [consulte este artículo de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=es).
+1. **`CSV`archivos deben usar`UTF-8 encoding`**. La mayoría de las veces, esto no es un problema. Si encuentra este error al cargar un archivo, [consulte este artículo de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Los archivos no pueden tener más de 100 MB**. Si el archivo es más grande que este, separe la tabla en fragmentos y guárdela como archivos individuales. Puede anexar los datos después de cargar el archivo inicial.
 1. **Todas las tablas deben tener`primary key`**. Debe haber al menos una columna en la tabla que se pueda usar como `primary key` o un identificador único para cada fila de la tabla. Cualquier columna designada como `primary key` puede *nunca* ser nula. Un `primary key` puede ser tan simple como agregar una columna que da un número a cada fila, o puede ser dos columnas concatenadas para crear una columna de valores únicos (por ejemplo, `campaign name` y `date`).
 
@@ -105,11 +105,11 @@ Ahora que la hoja de cálculo tiene el formato correcto y es compatible con [!DN
 
 Si necesita una imagen, observe todo el proceso:
 
-![](../../../assets/fileupload.gif)
+![Demostración animada del proceso de carga de archivos que muestra los datos que se agregan](../../../assets/fileupload.gif)
 
 Las tablas cargadas se muestran en la sección **Cargas de archivos** de la lista de tablas (en las opciones Todas las tablas y Tablas sincronizadas) del Administrador de Data Warehouse:
 
-![](../../../assets/upload-tables.png)
+![Interfaz de tablas de carga que muestra las tablas disponibles para la importación de datos](../../../assets/upload-tables.png)
 
 ## Actualización o adición de datos a una tabla existente {#appending}
 

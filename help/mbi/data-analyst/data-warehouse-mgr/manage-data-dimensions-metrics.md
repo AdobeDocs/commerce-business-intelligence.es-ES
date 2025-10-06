@@ -4,9 +4,9 @@ description: Descubra qué es una dimensión y cómo se puede utilizar para filt
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Para agregar una o más dimensiones a varias métricas a la vez:
 
 1. En la columna `Choose Metric(s) to Add Dimensions`, seleccione las métricas a las que desee agregar dimensiones. Una vez seleccionada, la columna `Choose Dimensions to Add` aparece a la derecha. Compruebe las dimensiones que desea agregar a la métrica seleccionada.
 
-   ![](../../assets/Add_Dimensions.png)
+   ![Cuadro de diálogo Agregar dimensiones que muestra las opciones de dimensión disponibles](../../assets/Add_Dimensions.png)
 
 1. Si desea segmentar o agrupar por cualquiera de las dimensiones de datos en los informes, asegúrese de indicar que se pueden _agrupar_.
 

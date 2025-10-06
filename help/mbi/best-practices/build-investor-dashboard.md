@@ -4,9 +4,9 @@ description: Aprenda a crear un tablero para los inversores.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Esto es lo que necesita para crear informes para su tablero de inversores:
    * Métrica - Ingresos
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
    * Métrica: ingresos por primer pedido
-   * Filtro: el número de pedido del usuario es igual a 1
+      * Filtro: el número de pedido del usuario es igual a 1
    * Métrica 2: Ingresos de pedidos repetidos
       * Filtro: el número de pedido del usuario es mayor que 1
    * Desmarque la casilla de verificación de Varios ejes Y
@@ -77,4 +77,4 @@ Con los [servicios de enriquecimiento de datos de Commerce](https://business.ado
 
 Organice sus informes cuidadosamente y preste atención a los detalles. Una vez finalizado, el tablero tiene un aspecto similar al siguiente:
 
-![](../../mbi/assets/investor-dboard-example.png)
+![Crear tablero de inversores](../../mbi/assets/investor-dboard-example.png)

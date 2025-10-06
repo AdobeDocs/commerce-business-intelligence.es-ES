@@ -4,9 +4,9 @@ description: Obtenga información acerca de algunos diagramas ER para ayudarle a
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Un cliente puede realizar muchos pedidos. La relación entre estas dos tablas es
 
 En [!DNL Commerce Intelligence], si la ruta entre estas dos tablas no existe, puede [crear la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse. Cuando esté listo para crear la ruta, se define de la siguiente manera:
 
-![](../../assets/SFO___CE_path.png)
+![Diagrama de relación de entidad que muestra la ruta de sales_plain_order a customer_entity](../../assets/SFO___CE_path.png)
 
 ## `sales\_flat\_order & sales\_flat\_order\_item`
 
@@ -49,7 +49,7 @@ Un pedido puede contener muchos elementos. La relación entre estas dos tablas e
 
 En [!DNL Commerce Intelligence], si la ruta entre estas dos tablas no existe, puede [crear la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse. Cuando esté listo para crear la ruta, defina la ruta como se muestra a continuación.
 
-![](../../assets/SFOI___SFO_path.png)
+![Diagrama de relación de entidad que muestra la ruta de sales_flat_order_item a sales_flat_order](../../assets/SFOI___SFO_path.png)
 
 ## `catalog\_product\_entity & sales\_flat\_order\_item`
 
@@ -59,4 +59,4 @@ Un producto se puede comprar muchos artículos. La relación entre estas dos tab
 
 En [!DNL Commerce Intelligence], si la ruta entre estas dos tablas no existe, puede [crear la ruta](../data-warehouse-mgr/create-paths-calc-columns.md) en la pestaña Data Warehouse. Cuando esté listo para crear la ruta, defina la ruta como se muestra a continuación.
 
-![](../../assets/SFOI___CPE_path.png)
+![Diagrama de relación de entidad que muestra la ruta de sales_plain_order_item a catalog_product_entity](../../assets/SFOI___CPE_path.png)

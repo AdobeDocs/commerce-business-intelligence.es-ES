@@ -4,9 +4,9 @@ description: Aprenda a comprender y crear análisis básicos.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '3120'
+source-wordcount: '3130'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Si algunos de estos cálculos no existen actualmente en la base de datos, cualqu
 
 **¿Aceptas pedidos de invitado?**
 
-*Si es así, es posible que esta tabla no contenga a todos sus clientes. Póngase en contacto con el [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para asegurarse de que los análisis de clientes incluyan a todos los clientes.*
+*Si es así, es posible que esta tabla no contenga a todos sus clientes. Póngase en contacto con el [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para asegurarse de que los análisis de clientes incluyan a todos los clientes.*
 
 *¿No está seguro de si acepta pedidos de invitado? Consulte [este tema](../data-warehouse-mgr/guest-orders.md) para obtener más información!*
 
@@ -60,7 +60,7 @@ En esta tabla, cada fila representa un orden. Las columnas de esta tabla contien
 * **[!UICONTROL Created_at]**: la fecha en que se creó o colocó el pedido.
 * **[!UICONTROL Customer_email]**: la dirección de correo electrónico del cliente que realizó el pedido. También puede ser el identificador único del cliente.
 * **[!UICONTROL Customer's lifetime number of orders]**: una copia de la columna con el mismo nombre en la tabla `Customers`.
-* **[!UICONTROL Customer's order number]**: número de pedido secuencial del cliente asociado con el pedido. Por ejemplo, si la fila que está viendo es el primer pedido de un cliente, esta columna es &quot;1&quot;; pero, si era el 15º pedido del cliente, en esta columna se muestra &quot;15&quot; para este pedido. Si esta dimensión no existe en su tabla `Customers`, pídale al [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) que le ayude a crearla.
+* **[!UICONTROL Customer's order number]**: número de pedido secuencial del cliente asociado con el pedido. Por ejemplo, si la fila que está viendo es el primer pedido de un cliente, esta columna es &quot;1&quot;; pero, si era el 15º pedido del cliente, en esta columna se muestra &quot;15&quot; para este pedido. Si esta dimensión no existe en su tabla `Customers`, pídale al [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) que le ayude a crearla.
 * **[!UICONTROL Customer's order number (previous-current)]**: una concatenación de dos valores en la columna **[!UICONTROL Customer's order number]**. Se utiliza en un informe de ejemplo a continuación para mostrar el tiempo transcurrido entre dos pedidos cualesquiera. Por ejemplo, el tiempo entre la primera fecha de pedido de un cliente y su segunda fecha de pedido se representa como &quot;1-2&quot; con este cálculo.
 * **[!UICONTROL Coupon_code]**: Muestra qué cupones se utilizaron en cada pedido.
 * **[!UICONTROL Seconds since previous order]**: tiempo (en segundos) entre los pedidos de un cliente.
@@ -155,7 +155,7 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Group By]**: `Customer's Order Number`, luego seleccione `2` y `3`
 
-  ![](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![Gráfico que muestra el segundo y tercer análisis de compra del último año](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **Ejemplo de informe 2**: El número de clientes repetidos los últimos años
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -244,9 +244,9 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: El promedio de la cantidad de ingresos generados por los clientes en sus primeros 30 días como clientes.
 * **Descripción de métrica**: Esta métrica realiza un **Promedio** de `Customer's First 30 Day Revenue` de `customer_entity` tabla ordenada por `created_at`.
 * **Descripción del informe**: Promedio histórico de los ingresos de los primeros 30 días del cliente
-* **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
-* **[!UICONTROL Time Range]**: `All Time`
-* **[!UICONTROL Time Interval]**: `None`
+   * **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
+   * **[!UICONTROL Time Range]**: `All Time`
+   * **[!UICONTROL Time Interval]**: `None`
 
 ![Ingresos promedio de los primeros 30 días](../../assets/Avg_first_30_day_revenue.png)<!--{: width="929"}-->
 

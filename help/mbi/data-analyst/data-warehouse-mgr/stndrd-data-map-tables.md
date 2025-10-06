@@ -4,9 +4,9 @@ description: Aprenda a trabajar con tablas de asignación.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Imagine que está en el `Report Builder` creando un informe de `Revenue by State`. Todo va bien hasta que intente agregar una agrupación `billing state` al informe y vea lo siguiente:
 
-![](../../assets/Messy_State_Segments.png)
+![Gráfico que muestra segmentos de estado desordenados con nombres incoherentes](../../assets/Messy_State_Segments.png)
 
 ## ¿Cómo pudo pasar esto?
 
@@ -45,7 +45,7 @@ En la primera columna, escriba los valores almacenados en la base de datos con *
 
 En la segunda columna, escriba cuáles son estos valores **debería ser**. Continuando con el ejemplo del estado de facturación, si desea que `pa`, `PA`, `Pennsylvania` y `pennsylvania` sean simplemente `PA`, debe escribir `PA` en esta columna para cada valor de entrada.
 
-![](../../assets/Mapping_table_examples.jpg)
+![Tabla de asignación de ejemplo que muestra valores originales y valores estandarizados](../../assets/Mapping_table_examples.jpg)
 
 ## ¿Qué debo hacer en [!DNL Commerce Intelligence] para utilizarlo? {#use}
 
@@ -66,7 +66,7 @@ Para crear la columna `joined`, vaya a la tabla a la que se reubicará el campo 
    * En el lado `One`, seleccione la tabla `mapping` y la columna `Primary key`. En este caso, seleccionaría la columna `state_input` de la tabla `mapping_state`.
    * Este es un vistazo a la apariencia de la ruta:
 
-     ![](../../assets/State_Mapping_Path.png)
+     ![Administrador de Data Warehouse que muestra la ruta de cálculo de asignación de estado](../../assets/State_Mapping_Path.png)
 
 1. Cuando termine, haga clic en **[!UICONTROL Save]** para crear la ruta.
 1. Es posible que la ruta de acceso no se rellene inmediatamente después de guardar. Si esto sucede, haga clic en el cuadro `Path` y seleccione la ruta de acceso que ha creado.
@@ -76,7 +76,7 @@ Para crear la columna `joined`, vaya a la tabla a la que se reubicará el campo 
 
 Una vez completado el ciclo de actualización, podrá utilizar la nueva columna combinada para segmentar correctamente los datos en lugar de la columna desordenada de la base de datos. Mira tus opciones de agrupación ahora - no más líos de estrés:
 
-![](../../assets/Clean_State_Segments.png)
+![Gráfico que muestra segmentos de estado limpios después de la estandarización](../../assets/Clean_State_Segments.png)
 
 Las tablas de asignación son útiles para cualquier momento en el que desee limpiar algunos datos potencialmente desordenados en Data Warehouse. Sin embargo, las tablas de asignación también se pueden usar para otros casos de uso interesantes, como [replicar su [!DNL Google Analytics channels] en [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 

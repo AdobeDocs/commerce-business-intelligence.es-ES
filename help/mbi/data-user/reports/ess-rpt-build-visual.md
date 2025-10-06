@@ -4,9 +4,9 @@ description: Aprenda a utilizar Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ En el ejemplo siguiente se muestra cómo crear un informe simple, agrupar los da
 
      ![Agrupar por datos de tabla](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * Haga clic en el control Transponer (![](../../assets/magento-bi-btn-transpose.png)) en la esquina superior derecha de la tabla para cambiar la orientación de los datos.
+   * Haga clic en el control Transponer (![Icono Transponer](../../assets/magento-bi-btn-transpose.png)) en la esquina superior derecha de la tabla para cambiar la orientación de los datos.
 
      El eje de los datos se voltea y la tabla ahora tiene una columna para cada código de cupón y una fila para cada mes. Esta orientación podría resultar más fácil de leer.
 
@@ -95,14 +95,14 @@ En el ejemplo siguiente se muestra cómo crear un informe simple, agrupar los da
 
      | | |
      |-----|-----|
-     | ![](../../assets/magento-bi-btn-chart-line.png) | Gráfico de líneas |
-     | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | Barra horizontal |
-     | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Barra horizontal apilada |
-     | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | Barra vertical |
-     | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Barra apilada vertical |
-     | ![](../../assets/magento-bi-btn-chart-pie.png) | Circular |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | Área |
-     | ![](../../assets/magento-bi-btn-chart-funnel.png) | Canal |
+     | ![Icono de gráfico de líneas](../../assets/magento-bi-btn-chart-line.png) | Gráfico de líneas |
+     | ![Icono de barra horizontal](../../assets/magento-bi-btn-chart-horz-bar.png) | Barra horizontal |
+     | ![Icono de barra apilada horizontal](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Barra horizontal apilada |
+     | ![Icono de barra vertical](../../assets/magento-bi-btn-chart-vert-bar.png) | Barra vertical |
+     | ![Icono de barra apilada vertical](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Barra apilada vertical |
+     | ![Icono de gráfico circular](../../assets/magento-bi-btn-chart-pie.png) | Circular |
+     | ![Icono de gráfico de área](../../assets/magento-bi-btn-chart-area.png) | Área |
+     | ![Icono de gráfico de Funnel](../../assets/magento-bi-btn-chart-funnel.png) | Canal |
 
      {style="table-layout:auto"}
 

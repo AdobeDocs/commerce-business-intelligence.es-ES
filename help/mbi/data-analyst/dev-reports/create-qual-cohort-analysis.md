@@ -4,9 +4,9 @@ description: Descubra qué es una cohorte cualitativa, por qué podría estar in
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Sin embargo, si desea analizar el comportamiento de la cohorte de varios segment
 
 Crear un informe `qualitative cohort` en `Report Builder` implica que el equipo de analistas de Adobe cree [columnas calculadas avanzadas](../data-warehouse-mgr/creating-calculated-columns.md) en las tablas necesarias.
 
-Para compilarlos, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) (y mencione este artículo). Esto es lo que debe saber:
+Para compilarlos, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (y mencione este artículo). Esto es lo que debe saber:
 
 * `metric` con el que desea realizar el análisis de cohorte y qué tabla utiliza (ejemplo: `Revenue`, creado en la tabla `orders`).
 
@@ -55,7 +55,7 @@ Una vez que el equipo de analistas de Adobe responda a lo anterior, tendrá un p
 
 En primer lugar, desea agregar la métrica que le interesa codificar, una vez por cada `cohort` que esté analizando. En este ejemplo, desea ver los `Revenue` acumulativos realizados en los meses posteriores al primer pedido de un cliente, segmentados por el `User's referral source`. Esto significa que, para cada segmento, agrega una métrica `Revenue` y un filtro para el segmento específico:
 
-![](../../assets/qualcohort1.gif)
+![Demostración animada de la creación de un análisis de cohorte cualitativo](../../assets/qualcohort1.gif)
 
 En segundo lugar, debe realizar dos cambios en las opciones de tiempo del informe:
 
@@ -65,7 +65,7 @@ En segundo lugar, debe realizar dos cambios en las opciones de tiempo del inform
 
 En este ejemplo, observa una vista `all time` de `Revenue`. Después de esto, debería terminar con una serie de puntos:
 
-![](../../assets/qualcohort2.gif)
+![Demostración animada de las opciones de análisis y agrupación de cohortes](../../assets/qualcohort2.gif)
 
 En tercer lugar, debe ajustar para configurar `cohorts`. En función de `cohort date` y `time interval` que especificó para el equipo de analistas de Adobe, tiene una dimensión en su cuenta que realiza las citas de `cohort`. En este ejemplo, esa dimensión personalizada se llama `Months between this order and customer's first order date`. Con esta dimensión, debería:
 

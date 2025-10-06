@@ -4,9 +4,9 @@ description: Aprenda a elegir su Report Builder.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Elija un Report Builder
 
 >[!NOTE]
->&#x200B;>Requiere [permisos de administrador](../../administrator/user-management/user-management.md).
+>>Requiere [permisos de administrador](../../administrator/user-management/user-management.md).
 
 Ahora que tiene más opciones para crear análisis, a veces es difícil saber con exactitud qué sabor del Report Builder se adapta a sus necesidades. Este tema le guía a través de la elección de la mejor manera de generar su análisis.
 
@@ -53,7 +53,7 @@ En ocasiones, la estructura de los datos podría hacer que [!DNL SQL Report Buil
 
 Supongamos que un solo producto se considera parte de varias categorías de productos y que desea ver los ingresos asociados con cada categoría de cada producto. Intentar crear esta relación con el DWM puede ser tedioso y difícil, pero escribir una consulta [!DNL SQL] puede ser un poco más sencillo:
 
-![](../../assets/When_should_I_use_the_RB_2.png)
+![Consulta SQL que muestra los ingresos por categoría de producto con relaciones &quot;uno a varios&quot;](../../assets/When_should_I_use_the_RB_2.png)
 
 ## ¿Cuándo debo usar la versión tradicional de Report Builder? {#whentraditionalrb}
 

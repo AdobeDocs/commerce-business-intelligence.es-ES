@@ -4,9 +4,9 @@ description: Descubra cómo se pueden crear columnas avanzadas en forma de colum
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Las diferentes columnas que se pueden crear con la columna `Calculation` son cas
 
 La mayoría de las cuentas tienen una columna denominada `Is customer's last order?` en su tabla `orders` para realizar análisis sobre las tasas de compra repetidas y los clientes perdidos. Si su cuenta se encuentra en la nueva arquitectura, esta columna se crea usando una columna `Calculation` y se puede ver en la captura de pantalla siguiente:
 
-![](../../assets/Is_customer_s_last_order.png)
+![Definición de columna calculada SQL para identificar el último pedido del cliente](../../assets/Is_customer_s_last_order.png)
 
 La columna `Is customer's last order?` utiliza las entradas `Customer's lifetime number of orders` y `Customer's order number` con los alias `A` y `B`, respectivamente.
 
@@ -47,7 +47,7 @@ A muchos clientes les gusta analizar los ingresos en el nivel de artículo, divi
 
 Para habilitar los análisis de ingresos de productos, la mayoría de las cuentas tienen una columna denominada `Order item total value (quantity * price)` en su tabla `Orders Items`. Si su cuenta se encuentra en la nueva arquitectura, esta columna también se crea usando una columna `Calculation` y se puede ver en la captura de pantalla siguiente:
 
-![](../../assets/Order_item_total_value.png)
+![Definición de columna calculada SQL para el valor total del elemento de pedido](../../assets/Order_item_total_value.png)
 
 En el esquema de Commerce, la columna `Order item total value (quantity * price)` utiliza las entradas `qty ordered` y `base price` con los alias `A` y `B` respectivamente.
 
@@ -57,7 +57,7 @@ Los valores devueltos por esta nueva columna se expresan en dólares y centavos,
 
 Se puede agregar una nueva columna `Calculation` a una tabla navegando a **[!DNL Manage Data > Data Warehouse]** como se muestra a continuación:
 
-![](../../assets/blobid2.png)
+![Vista de tabla que muestra resultados de columnas calculadas](../../assets/blobid2.png)
 
 Desde aquí puede crear una columna `Calculation` siguiendo los pasos a continuación:
 

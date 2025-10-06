@@ -4,9 +4,9 @@ description: Aprenda a reunir el enfoque de recorrido integral del cliente de  [
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Requiere [permisos de administrador](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/adobe-analytic-slogo.png)
+![logotipo de Adobe Analytics](../../../assets/adobe-analytic-slogo.png)
 
 La integración de [!DNL Adobe Analytics] para [!DNL Adobe Commerce Intelligence] le permite reunir el enfoque de recorrido de cliente de extremo a extremo de [!DNL Adobe Analytics] y el enfoque de comercio electrónico en el que confía de [!DNL Commerce Intelligence]. Esto le ofrece una imagen completa del rendimiento general de su tienda.
 
@@ -57,6 +57,6 @@ Se necesita la siguiente información para conectarse:
 
 1. El grupo de informes seleccionado se muestra en una tabla. Haga clic en **[!UICONTROL Save]** para confirmar la selección.
 
-1. Informe al [!DNL Commerce Intelligence] [equipo de atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) de que su integración está autorizada y que ejecuta el proceso de conexión inicial por usted.
+1. Informe al [!DNL Commerce Intelligence] [equipo de atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) de que su integración está autorizada y que ejecuta el proceso de conexión inicial por usted.
 
 Una vez que se ejecute el proceso de conexión inicial, la tabla estará disponible en la página Data Warehouse, en la pestaña `All Tables`. Seleccione las columnas que desea duplicar y los datos aparecerán después de la siguiente actualización completa.

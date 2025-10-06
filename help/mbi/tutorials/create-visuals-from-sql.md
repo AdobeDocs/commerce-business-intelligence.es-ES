@@ -4,9 +4,9 @@ description: Aprenda a familiarizarse con la terminología utilizada en SQL Repo
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Por ejemplo, considere esta consulta que devuelve el número total mensual de ar
 
 Esta consulta devuelve esta tabla de resultados:
 
-![](../assets/SQL_results_table.png)
+![Tabla que muestra resultados de consultas SQL con elementos vendidos por producto, año y mes](../assets/SQL_results_table.png)
 
 ## Paso 2: Crear la visualización
 
@@ -66,7 +66,7 @@ Con estos resultados, *¿cómo se crea la visualización?* Para comenzar, haga c
 
 Cuando se ejecuta una consulta por primera vez, el informe puede parecer inescrutable porque todas las columnas de la consulta se trazan como una serie:
 
-![](../assets/SQL_initial_report_results.png)
+![Informe SQL inicial con todas las columnas trazadas como series](../assets/SQL_initial_report_results.png)
 
 Para este ejemplo, desea que sea un gráfico de líneas que siga la tendencia a lo largo del tiempo. Para crearlo, utilice esta configuración:
 
@@ -82,13 +82,13 @@ Para este ejemplo, desea que sea un gráfico de líneas que siga la tendencia a 
 
 A continuación se muestra una breve descripción de cómo creó esta visualización, desde la ejecución de la consulta hasta la configuración del informe:
 
-![](../assets/SQL_report_settings.gif)
+![Demostración animada de la configuración de visualización de informes SQL](../assets/SQL_report_settings.gif)
 
 ## Paso 3: Seleccionar un(a) `Chart Type`
 
 Este ejemplo utiliza el tipo de gráfico `Line`. Para usar un(a) `chart type` diferente(a), haga clic en los iconos de la sección de opciones del gráfico para cambiarlo:
 
-![](../assets/Chart_types.png)
+![Iconos de tipo de gráfico disponibles que incluyen línea, barra, área y otras opciones de visualización](../assets/Chart_types.png)
 
 ## Paso 4: Guardar la visualización
 

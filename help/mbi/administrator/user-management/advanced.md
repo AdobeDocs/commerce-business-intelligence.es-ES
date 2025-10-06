@@ -4,9 +4,9 @@ description: Mejore la visibilidad de los datos, optimice los informes, adapte e
 role: Admin, User
 feature: User Management
 exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
-source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -460,7 +460,7 @@ Los usuarios administradores pueden ver los datos del tablero con acceso a todas
 
 Sin embargo, los usuarios pueden ver los datos del panel filtrados según los almacenes asignados a ellos durante la configuración del usuario.
 
-![Ver administrador de tablero](../../assets/view-dashboard-user.png)
+![Ver administrador filtrado del tablero](../../assets/view-dashboard-user.png)
 
 >[!TIP]
 >

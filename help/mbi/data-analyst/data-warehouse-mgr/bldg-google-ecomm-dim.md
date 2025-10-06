@@ -4,9 +4,9 @@ description: Aprenda a crear dimensiones que vinculen los datos de comercio elec
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Para crear las dimensiones en este tema, necesita una tabla [!DNL Google ECommer
 
 A continuación se muestra un vistazo rápido a la sincronización de tablas y columnas si necesita un repaso:
 
-![](../../assets/Syncing_New_Columns.gif)
+![Demostración animada de la sincronización de nuevas columnas en Data Warehouse](../../assets/Syncing_New_Columns.gif)
 
 Después de crear una unión desde la tabla `orders` a la tabla [!DNL Google eCommerce], se crean las tres primeras dimensiones en la lista siguiente. A continuación, utilice esas dimensiones para crear tres dimensiones usuario/cliente en la tabla `customers`. Para terminar, una esas columnas a la tabla `orders`.
 
@@ -65,7 +65,7 @@ En este ejemplo se crea la dimensión **Source[!DNL Google Analytics] del pedido
 1. En la ventana que se muestra, establezca el lado `Many` en `orders.order\_id` o la columna de la tabla `orders` que contiene el identificador de pedido.
 1. En el lado `One`, busque la tabla `Google ECommerce` y establezca la columna en `transactionID`.
 
-   ![](../../assets/google-ecommerce-table.png)
+   ![Estructura de la tabla de Google eCommerce que muestra las dimensiones disponibles](../../assets/google-ecommerce-table.png)
 
 1. Haga clic en **[!UICONTROL Save]** para crear la ruta.
 1. Una vez agregada la ruta de acceso, haga clic de nuevo en el menú desplegable **[!UICONTROL Select table and column]**.
@@ -74,7 +74,7 @@ En este ejemplo se crea la dimensión **Source[!DNL Google Analytics] del pedido
 
 A continuación se muestra un vistazo a todo el proceso:
 
-![](../../assets/help_center.gif)
+![Demostración animada de la creación de la dimensión de origen de Google Analytics](../../assets/help_center.gif)
 
 A continuación, intente crear **el medio [!DNL Google Analytics] del pedido** y `campaign`. No hay muchos cambios en estas dimensiones, así que pruébelo. Pero si se queda atascado, puede revisar [el final de este artículo](#stuck) para ver qué es diferente.
 
@@ -115,7 +115,7 @@ Este ejemplo une la dimensión `Customer's first order's [!DNL Google Analytics]
 
 A continuación se muestra un vistazo a todo el proceso:
 
-![](../../assets/help_center2.gif)
+![Demostración animada de la creación de dimensiones de adquisición de clientes](../../assets/help_center2.gif)
 
 Termine uniendo el medio `Customer's first order's` y las dimensiones `campaign` a la tabla `orders`. Únase a las dimensiones y, si hay problemas, consulte [el final del artículo](#stuck) si necesita ayuda.
 

@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo analizar los datos del informe dur
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Algunas métricas simplemente no pueden generar tendencias a lo largo del tiempo
 
 Al usar una métrica de este tipo en su informe, observa que al agregar esta métrica a un informe se establece automáticamente un(a) `Time Interval` independiente de `None` y `Time Range` de `Global`:
 
-![](../assets/Metrics_without_timestamps.gif)
+![Informe que muestra la métrica con el intervalo de tiempo establecido en Ninguno y el intervalo de tiempo establecido en Global](../assets/Metrics_without_timestamps.gif)
 
 ## Concesión de un intervalo de tiempo independiente a una métrica {#independenttimeinterval}
 
@@ -62,11 +62,11 @@ Este tipo de informe puede resultar útil si desea comparar los ingresos generad
 
 Ahora puede ver el impacto que tuvo cada mes el año pasado:
 
-![](../assets/Independent_Time_Int.png)
+![Gráfico que muestra el porcentaje de ingresos por mes del año anterior](../assets/Independent_Time_Int.png)
 
 ## Comparación de la misma métrica en diferentes intervalos de tiempo {#difftimerange}
 
-Este ejemplo utiliza una dimensión personalizada denominada `Day number of the month`. Si deseas crear este informe y aún no tienes esta dimensión en tu Data Warehouse, [ponte en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para obtener ayuda.
+Este ejemplo utiliza una dimensión personalizada denominada `Day number of the month`. Si deseas crear este informe y aún no tienes esta dimensión en tu Data Warehouse, [ponte en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obtener ayuda.
 
 Los dos ejemplos más comunes en esta categoría son (1) la comparación de métricas de crecimiento (ingresos año tras año o mes tras mes) y (2) una mejor comprensión de las tendencias recientes de ventas de artículos o inventarios.
 
@@ -87,7 +87,7 @@ Para demostrar este caso de uso, observe los ingresos diarios del mes anterior e
 
    No se preocupe si la métrica desaparece del informe: al establecer una opción de tiempo independiente, se oculta automáticamente la métrica del informe. Para volver a mostrarla, haga clic en **[!UICONTROL Show]** junto a la métrica.
 
-   ![](../assets/Different_Time_Ranges.gif)
+   ![Demostración de cómo se establecen intervalos de tiempo diferentes para las métricas de un informe](../assets/Different_Time_Ranges.gif)
 
    * Haga clic en **[!UICONTROL Apply]** para guardar la configuración del intervalo y el intervalo.
 
@@ -95,7 +95,7 @@ Para demostrar este caso de uso, observe los ingresos diarios del mes anterior e
 
    * En el menú desplegable `Group By`, seleccione `Show All` y haga clic en **[!UICONTROL Apply]**. Esto crea los valores del eje X para el informe:
 
-   ![](../assets/TO4.png)
+   ![Informe que muestra la comparación de ingresos agrupados por número de día del mes](../assets/TO4.png)
 
    * Cambie el nombre de las métricas. En el ejemplo, la primera métrica es `Revenue - 2015` y la segunda es `Revenue - 2014`.
 
@@ -136,7 +136,7 @@ Para crear las fórmulas, haga clic en **[!UICONTROL Add Formula]**. Escriba las
 
 * Para `last promo period`, escriba `D / C` en el campo `Formula`.
 
-  ![](../assets/Different_Time_Ranges_2.png)
+  ![Informe que muestra semanas de cálculos de aprovisionamiento para diferentes períodos de tiempo](../assets/Different_Time_Ranges_2.png)
 
 * Por último, personalice el informe ocultando las métricas y agregando `SKU` o una dimensión similar al informe como `Group By`.
 

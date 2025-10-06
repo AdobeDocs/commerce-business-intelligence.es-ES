@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo analizar los datos del informe dur
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,13 @@ Puede agregar métricas adicionales después de seleccionar la métrica inicial 
 
 Supongamos que desea crear un informe que muestre los ingresos medios por pedido. En este caso, dividiría la métrica `Revenue` por la métrica `Number of orders`.
 
-![](../assets/ave-rev-per-order.png)
+![Usar Visual Report Builder](../assets/ave-rev-per-order.png)
 
 ## Paso 4: Configuración de `Time Period` y `Interval of Analysis` {#time}
 
 Para centrarse en un periodo de tiempo determinado, se puede definir el periodo de tiempo del análisis. También puede elegir intervalos de tiempo para segmentar los datos (por ejemplo, por año, trimestre o mes). Utilice los menús de la esquina superior derecha del gráfico para establecer el período de tiempo y el intervalo.
 
-![](../assets/Time_Options_Report_Builder.png)
+![Usar Visual Report Builder](../assets/Time_Options_Report_Builder.png)
 
 Al establecer un intervalo de fechas específico para el período de tiempo, asegúrese de que la fecha de inicio sea al principio del intervalo y la fecha de finalización al final del intervalo.
 
@@ -57,17 +57,17 @@ Puede elegir `None` para evitar que una métrica se segmente. Por ejemplo, es po
 
 Vuelva al ejemplo de ingresos promedio por pedido y establezca Agrupar por en el código de promoción. Esto muestra el promedio de ingresos por pedido para pedidos con y sin código de promoción.
 
-![](../assets/Group_By_Report_Builder.png)
+![Usar Visual Report Builder](../assets/Group_By_Report_Builder.png)
 
 Si las métricas incluidas en el análisis se crean en distintas tablas de datos, una ventana emergente le permite seleccionar la dimensión de datos coincidente en cada tabla. El objetivo aquí es encontrar dimensiones que compartan un tipo de valores para la segmentación:
 
-![](../assets/Dimension_Editor.png)
+![Usar Visual Report Builder](../assets/Dimension_Editor.png)
 
 ## Paso 6: Configuración `Metric Filters`, `Perspective` y `Time Interval` {#metric-specific}
 
-Para cada métrica agregada al análisis, puede agregar filtros, seleccionar la perspectiva de datos relevante y establecer las opciones de `time interval`. Para obtener acceso a estas características, haga clic en los iconos de embudo (`Filter`), ojo (`Perspective`) y reloj (`Time`) situados junto a las métricas incluidas en el informe.
+Para cada métrica agregada al análisis, puede agregar filtros, seleccionar la perspectiva de datos relevante y establecer las opciones de `time interval`. Para obtener acceso a estas características, haga clic en los iconos de funnel (`Filter`), ojo (`Perspective`) y reloj (`Time`) que se encuentran junto a las métricas incluidas en el informe.
 
-![](../assets/Filters_Perspective_Interval_Report_builder.png)
+![Usar Visual Report Builder](../assets/Filters_Perspective_Interval_Report_builder.png)
 
 ### `Filters`
 
@@ -83,7 +83,7 @@ Se admite el uso de caracteres comodín (`%` o `_`) con instrucciones `LIKE`. El
 
 Añadir varios filtros permite un control estricto de los datos del gráfico. De forma predeterminada, todas las condiciones de filtro deben ser verdaderas para que se incluya un fragmento de datos, pero puede crear relaciones O editando el cuadro de texto Reglas de filtro.
 
-![](../assets/edit-filter-rules.png)
+![Usar Visual Report Builder](../assets/edit-filter-rules.png)
 
 ### `Perspectives`
 
@@ -91,23 +91,23 @@ Añadir varios filtros permite un control estricto de los datos del gráfico. De
 
 - `Standard perspective`: la perspectiva estándar muestra el resultado de la fecha coincidente en el eje x (por ejemplo, ingresos en enero). Esta es la perspectiva que utiliza en el ejemplo Ingresos promedio por pedidos.
 
-![](../assets/Standard.png)
+![Usar Visual Report Builder](../assets/Standard.png)
 
 - Perspectiva de `Amount` O `Percent Change` frente a `Previous Period`: esta perspectiva muestra la cantidad o el porcentaje de cambio de un intervalo a otro y es útil para medir la tasa de cambio en las métricas de cambio rápido. También existe una perspectiva para comparar el intervalo con el mismo período de tiempo del año pasado y mostrar el crecimiento interanual.
 
-![](../assets/Amt_or_Percent_Change.png)
+![Usar Visual Report Builder](../assets/Amt_or_Percent_Change.png)
 
 - `Cumulative perspective`: `cumulative perspective` muestra la suma acumulada o en curso de la métrica durante el período de tiempo. Esto se utiliza a menudo para analizar el total de clientes y planificar la capacidad futura.
 
-![](../assets/Cumulative_Perspective.png)
+![Usar Visual Report Builder](../assets/Cumulative_Perspective.png)
 
 - `Percent of First Value perspective`: esta perspectiva muestra los datos como un porcentaje del primer intervalo de tiempo incluido en el análisis. Esto resulta útil para medir la eficacia de acciones específicas en relación con el rendimiento del primer periodo.
 
-![](../assets/Percent_of_First_Value.png)
+![Usar Visual Report Builder](../assets/Percent_of_First_Value.png)
 
 - `Rolling averages window perspective`: la perspectiva de la ventana de promedios móviles muestra el valor promedio móvil de una métrica en el intervalo de tiempo especificado. El intervalo debe ser el mismo que el establecido en el nivel de informe. Por ejemplo, si el informe muestra el último trimestre completo de Ingresos por semana, puede establecer el intervalo de tiempo de la ventana promedio móvil en cuatro semanas. Esto hace que los tres primeros valores sean nulos y el cuarto valor representa el promedio de las primeras cuatro semanas de ingresos. Para mayor claridad, asegúrese de desactivar la casilla de verificación `Multiple Y-Axes` si está viendo la misma métrica con un promedio móvil, como en el ejemplo siguiente.
 
-![](../assets/rolling_avg_window.png)
+![Usar Visual Report Builder](../assets/rolling_avg_window.png)
 
 ### Opciones de tiempo específicas de la métrica
 
@@ -131,7 +131,7 @@ Puede elegir guardar un gráfico, tabla o número (`scalar`) mediante la lista d
 
 Luego puede guardar el informe haciendo clic en **[!UICONTROL Save to Dashboard]**.
 
-![](../assets/save-to-dashboard.png)
+![Usar Visual Report Builder](../assets/save-to-dashboard.png)
 
 ## Salidas de informe
 
@@ -139,14 +139,14 @@ Para ayudarle a decidir qué resultado del informe elegir, consulte lo siguiente
 
 ### Gráfico
 
-![](../assets/RB_Chart.png)
+![Usar Visual Report Builder](../assets/RB_Chart.png)
 
 ### Tabla
 
-![](../assets/RB_Table.png)
+![Usar Visual Report Builder](../assets/RB_Table.png)
 
 ### Número (`scalar`)
 
-![](../assets/RB_Scalar.png)
+![Usar Visual Report Builder](../assets/RB_Scalar.png)
 
 ¡Felicidades! Ha terminado.

@@ -4,9 +4,9 @@ description: Aprenda a trabajar con sus paneles y a compartirlos.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: d40a04cedb3aee3385a8c34e0919f954431e0897
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ A veces, es posible que encuentre varios paneles con el mismo nombre; esto suele
 
 Para ver a quién pertenece un panel, haga clic en el menú desplegable del panel situado en la esquina superior izquierda. Los tableros que no tengan un nombre debajo le pertenecen.
 
-![](../../mbi/assets/Dash_ownership.png)
+![Indicador de propiedad del panel que muestra el creador y los permisos](../../mbi/assets/Dash_ownership.png)
 
 Para quitar todos los paneles duplicados:
 

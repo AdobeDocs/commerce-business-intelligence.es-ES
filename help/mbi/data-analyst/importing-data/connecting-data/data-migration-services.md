@@ -4,16 +4,16 @@ description: Aprenda todo lo que necesita para enviar una solicitud y comenzar l
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
 # Migración de datos
 
-La migración a un nuevo esquema de base de datos, servidor o base de datos de informes no tiene por qué ser estresante. El [[!DNL Adobe] equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) ofrece asistencia para la migración.
+La migración a un nuevo esquema de base de datos, servidor o base de datos de informes no tiene por qué ser estresante. El [[!DNL Adobe] equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ofrece asistencia para la migración.
 
 Para garantizar que la transición sea lo más fluida posible, debe ser lo más detallado posible al enviar la solicitud de migración. Este tema tiene todo lo que necesita para enviar una solicitud y comenzar la migración. Proporcionarnos una imagen completa de sus necesidades garantiza que su proyecto tenga un alcance adecuado y que la estimación sea precisa.
 
@@ -59,7 +59,7 @@ Si se siente cómodo haciendo la coincidencia usted mismo, siga estas instruccio
 
 A continuación, se muestra un ejemplo:
 
-![](../../../assets/Migration_Spreadsheet.png)
+![Plantilla de hoja de cálculo de migración con esquema de base de datos y estructura de tabla](../../../assets/Migration_Spreadsheet.png)
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ A continuación, se muestra un ejemplo:
 
 ## ¿Cómo envío una solicitud? {#submitreq}
 
-Póngase en contacto con nosotros al [enviar una solicitud de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Póngase en contacto con nosotros al [enviar una solicitud de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Si ha seguido los pasos de la sección anterior para crear la hoja de cálculo que coincide con la columna, no olvide adjuntarla.
 

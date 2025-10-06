@@ -4,9 +4,9 @@ description: Descubra cómo se pueden utilizar las fórmulas en Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ En [`Report Builder`](../../tutorials/using-visual-report-builder.md), puede cre
 
 En `Report Builder`, un `formula` es solo una combinación de una o más métricas basadas en alguna lógica matemática. Un ejemplo típico tiene este aspecto:
 
-![](../../assets/formula-example.png)
+![Ejemplo de fórmula que muestra el cálculo en Report Builder](../../assets/formula-example.png)
 
 En este ejemplo, utilizas un `Number of orders metric (A)` y un `Distinct buyers metric (B)`, y el objetivo es responder a la pregunta: ¿cuál es el número promedio de pedidos que mis compradores realizan cada mes? Los parámetros de la fórmula son:
 
@@ -65,4 +65,4 @@ En este ejemplo, utilizó la perspectiva `Stacked Columns` para mostrar los resu
 
 ¿Ha notado en los ejemplos anteriores que `timestamp`, `groupings`, `perspectives` y `filters` de la fórmula se heredan de sus métricas de entrada? Tenga en cuenta que las fórmulas se pueden usar para usar `perspectives` y [opciones de tiempo independientes](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}, al igual que las métricas.
 
-Si tiene alguna pregunta adicional acerca del uso de fórmulas en `Report Builder`, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si tiene alguna pregunta adicional acerca del uso de fórmulas en `Report Builder`, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

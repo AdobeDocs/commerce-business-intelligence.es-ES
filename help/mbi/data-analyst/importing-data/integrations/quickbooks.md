@@ -4,9 +4,9 @@ description: Descubra cómo las finanzas de su empresa ahora pueden estar al lad
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 32b1e1be4e372164da757cb339ba1618d33a75ea
+source-git-commit: b6f8a4f533286fad67dc875ebb6f4f3b7022ca5b
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Requiere [permisos de administrador](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Quickbooks.png)
+![Logotipo de QuickBooks](../../../assets/Quickbooks.png)
 
 Con la integración de [!DNL QuickBooks], las finanzas de su empresa ahora pueden estar al lado de los datos de ventas y marketing, lo que le permite supervisar sus gastos de forma rápida y sencilla, identificar gastos excesivos y mucho más.
 
@@ -36,7 +36,7 @@ Con la integración de [!DNL QuickBooks], las finanzas de su empresa ahora puede
 
 Después de hacer clic en **[!UICONTROL Connect to Quickbooks]**, inicie sesión en su cuenta de [!DNL Intuit] y autorice la conexión:
 
-![](../../../assets/QuickBooks_App_Store_1.jpg)
+![Página de integración de QuickBooks App Store](../../../assets/QuickBooks_App_Store_1.jpg)
 
 1. En el menú desplegable `Search for a company`, seleccione su empresa.
 1. Haga clic en **[!UICONTROL Next]**. ¡Se le redirige a [!DNL Commerce Intelligence] y la conexión a *se ha realizado correctamente!* mensaje se muestra en la parte superior de la pantalla.
@@ -44,4 +44,4 @@ Después de hacer clic en **[!UICONTROL Connect to Quickbooks]**, inicie sesión
 ## Relacionado
 
 * [Se esperaban  [!DNL QuickBooks] datos](../integrations/quickbooks-data.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

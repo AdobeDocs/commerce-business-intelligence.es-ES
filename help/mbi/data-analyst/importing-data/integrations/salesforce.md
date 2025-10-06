@@ -4,16 +4,16 @@ description: Descubra cómo los datos de Salesforce permiten una amplia gama de 
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
 
 # Conectar [!DNL Salesforce]
 
-![](../../../assets/Salesforce_Logo.png)
+![logotipo de Salesforce](../../../assets/Salesforce_Logo.png)
 
 >[!NOTE]
 >
@@ -36,4 +36,4 @@ Al conectar los datos de [!DNL Salesforce], se permite una amplia gama de análi
 Si eres un poco más experto en tecnología, la [[!DNL Salesforce] Documentación de la API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) puede ser un recurso útil para obtener más información sobre cómo Salesforce está integrado con [!DNL Commerce Intelligence].
 
 * [Se esperaban  [!DNL Salesforce] datos](../integrations/salesforce-data.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

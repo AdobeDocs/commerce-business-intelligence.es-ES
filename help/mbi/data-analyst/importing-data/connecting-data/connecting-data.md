@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo examinar las tablas disponibles pa
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Según el método de conexión y el tipo de base de datos, puede ser necesario c
 
 ## Integraciones de `SaaS`
 
-![](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
+![Iconos de integración de SaaS que muestran varias plataformas compatibles](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
 
 `SaaS` integraciones son servicios como [[!DNL Google Adwords]](../integrations/google-adwords.md), [[!DNL Salesforce]](../integrations/salesforce.md) y [[!DNL Zendesk]](../integrations/zendesk.md). Como los datos de terceros residen en el servidor del proveedor, no puede acceder a ellos directamente como lo haría con los datos de la base de datos.
 
@@ -70,6 +70,6 @@ Para agregar una integración, haga clic en **[!UICONTROL Manage Data** > **Conn
 * [Consolidación de tablas](../../../best-practices/consolidating-your-tables.md)
 * [Restricción del acceso a la base de datos](../../../administrator/account-management/restrict-db-access.md)
 
-**¿No ve la integración que desea?** Algunas integraciones deben activarse para que sean visibles en su cuenta. Si está buscando algo como [!DNL Facebook] pero no aparece en la lista, [envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+**¿No ve la integración que desea?** Algunas integraciones deben activarse para que sean visibles en su cuenta. Si está buscando algo como [!DNL Facebook] pero no aparece en la lista, [envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Si ves un estado de error para una integración**, consulta la [sección de solución de problemas](https://support.magento.com/hc/en-us/sections/360003078151) para obtener ayuda.

@@ -4,9 +4,9 @@ description: Aprenda a dar formato e importar datos financieros.
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ En este tema se describe la mejor manera de importar datos financieros para su a
 
 Una tabla de datos bidimensional entre pestañas suele ser el formato utilizado para los datos financieros. Con valores clasificados por etiquetas tanto en columnas como en filas, este tipo de diseño puede ser fácil de ver con ojos humanos y herramientas de hoja de cálculo, pero no es sencillo para las bases de datos.
 
-![](../../mbi/assets/crosstab.png)
+![Formato de tabla cruzada que muestra datos en el diseño de tabla dinámica](../../mbi/assets/crosstab.png)
 
 Para importar y analizar estos datos en [!DNL Commerce Intelligence], la tabla debe acoplarse a una lista unidimensional. Cuando se acopla, cada valor de datos se clasifica por varias etiquetas que se encuentran todas en una sola fila, donde cada fila es única o tendría un identificador único, por ejemplo una columna de clave principal.
 
-![](../../mbi/assets/flattened.png)
+![Formato plano que muestra datos en diseño de columnas](../../mbi/assets/flattened.png)
 
 ## Formato de archivos de Excel para importar
 
@@ -35,7 +35,7 @@ Para acoplar una tabla bidimensional con una tabla dinámica [!DNL Excel]:
 1. Cree la tabla dinámica en una hoja nueva y haga clic en **[!UICONTROL Finish]**.
 1. Anule la selección de los campos de columna y fila de la lista de campos.
 1. Haga doble clic en el valor numérico resultante para mostrar los datos de origen aplanados en una hoja nueva.
-   ![](../../mbi/assets/pivot-table-double-click.png)
+   ![Lista de campos de tabla dinámica de Excel que muestra doble clic para expandir](../../mbi/assets/pivot-table-double-click.png)
 1. Guardar como archivo de `CSV`.
 
 ## Ajuste

@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo analizar cómo navegan y utilizan 
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Requiere [permisos de administrador](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Mixpanel_logo.png)
+![Logotipo de Mixpanel](../../../assets/Mixpanel_logo.png)
 
 Con [!DNL Mixpanel], puedes analizar cómo navegan y usan tus sitios web y aplicaciones los usuarios. Echar un vistazo a los datos de comportamiento de los usuarios conduce a decisiones de diseño y desarrollo más inteligentes, lo que significa un mejor producto en general. Conectar [!DNL Mixpanel] a [!DNL Commerce Intelligence] le permite analizar el comportamiento de los usuarios y cómo ese comportamiento se traduce en ingresos.
 
@@ -65,4 +65,4 @@ Si la conexión se ha realizado correctamente, _¡Correcto!_ mensaje se muestra 
 ### Relacionado
 
 * [Se esperaban  [!DNL Mixpanel] datos](../integrations/mixpanel-data.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -4,9 +4,9 @@ description: Aprenda cómo se traducen las consultas SQL en las columnas calcula
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Observe un ejemplo específico de cómo se puede definir una métrica de `Total 
 | `email NOT LIKE '%@magento.com'` | Métrica `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Métrica `timestamp` (y sistema de informes `time range`) |
 
-Vaya al generador de métricas haciendo clic en **[!UICONTROL Manage Data** > **&#x200B; Métricas &#x200B;**> **Crear nueva métrica]**; primero debe seleccionar la tabla `source` adecuada, que en este caso es la tabla `orders`. A continuación, la métrica se configuraría como se muestra a continuación:
+Vaya al generador de métricas haciendo clic en **[!UICONTROL Manage Data** > ** Métricas **> **Crear nueva métrica]**; primero debe seleccionar la tabla `source` adecuada, que en este caso es la tabla `orders`. A continuación, la métrica se configuraría como se muestra a continuación:
 
 ![Agregación de métrica](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ La consulta de esta agregación puede tener un aspecto similar al siguiente:
 
 La configuración de esto en [!DNL Commerce Intelligence] requiere el uso de su administrador de Data Warehouse, donde creará una ruta de acceso entre las tablas `orders` y `customers` y, a continuación, creará una columna denominada `Customer LTV` en la tabla del cliente.
 
-Observe cómo establecer una nueva ruta de acceso entre `customers` y `orders`. El objetivo final es crear una nueva columna agregada en la tabla `customers`, así que primero vaya a la tabla `customers` en su Data Warehouse y, a continuación, haga clic en **[!UICONTROL Create a Column** > **&#x200B; Seleccionar una definición &#x200B;**> **SUMA]**.
+Observe cómo establecer una nueva ruta de acceso entre `customers` y `orders`. El objetivo final es crear una nueva columna agregada en la tabla `customers`, así que primero vaya a la tabla `customers` en su Data Warehouse y, a continuación, haga clic en **[!UICONTROL Create a Column** > ** Seleccionar una definición **> **SUMA]**.
 
 A continuación, debe seleccionar la tabla de origen. Si existe una ruta de acceso a la tabla `orders`, simplemente selecciónela en la lista desplegable. Sin embargo, si está creando una nueva ruta, haga clic en **[!UICONTROL Create new path]** y aparecerá la siguiente pantalla:
 
@@ -89,7 +89,7 @@ Aquí debe considerar cuidadosamente la relación entre las dos tablas que está
 
 Una vez guardada la ruta, puede crear la columna `Customer LTV`. Consulte lo siguiente:
 
-![](../../assets/Customer_LTV.gif)
+![Demostración animada del análisis de valor de duración de clientes mediante SQL](../../assets/Customer_LTV.gif)
 
 Ahora que ha creado la nueva columna `Customer LTV` en su tabla `customers`, está listo para crear una [agregación de métrica](#aggregate) con esta columna (por ejemplo, para encontrar el LTV promedio por cliente). También puede `group by` o `filter` por la columna calculada en un informe usando las métricas existentes creadas en la tabla `customers`.
 

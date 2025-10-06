@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo generar y analizar la tasa de pér
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '338'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 En este tema se muestra cómo calcular una **tasa de pérdida** para sus **clientes de comercio**. A diferencia de SaaS o de las empresas de suscripción tradicionales, los clientes de comercio generalmente no tienen un &quot;evento de pérdida&quot; **concreto** que le muestre que ya no deben contar en sus clientes activos. Por este motivo, las siguientes instrucciones le permiten definir un cliente como &quot;perdido&quot; en función de un tiempo determinado transcurrido desde su último pedido.
 
-![](../../assets/Churn_rate_image.png)
+![Visualización de tasa de pérdida que muestra la retención de clientes a lo largo del tiempo](../../assets/Churn_rate_image.png)
 
 Muchos clientes quieren ayuda para empezar a conceptualizar qué **periodo de tiempo** deben usar en función de sus datos. Si desea usar el comportamiento histórico del cliente para definir este **periodo de tiempo de pérdida**, quizá quiera familiarizarse con el tema [definición de cancelación](../analysis/define-cust-churn.md). A continuación, puede utilizar los resultados en la fórmula para la tasa de pérdida en las instrucciones siguientes.
 
@@ -76,19 +76,19 @@ Columnas para crear
 * **Tasa de pérdida**
    * [!UICONTROL Metric]: nuevos clientes (por fecha de primer pedido)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * Segundos transcurridos desde la última fecha de pedido del cliente >= [Su límite autodefinido para los clientes perdidos ]&#x200B;**`^`**
+   * Segundos transcurridos desde la última fecha de pedido del cliente >= [Su límite autodefinido para los clientes perdidos ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: Percentage
 
 * *Métrica `A`:`New customers cumulative`*

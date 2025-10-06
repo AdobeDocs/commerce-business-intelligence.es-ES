@@ -4,9 +4,9 @@ description: Aprenda a utilizar la característica de edición en lotes en  [!DN
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Dicho esto, considere esto - *¿Es necesario que estos cambios sean permanentes?
 
 ## Usando [!DNL Find/Replace] {#findreplace}
 
-1. Haga clic en el icono de engranaje (![](../../assets/gear-icon.png)) junto al nombre del panel y, a continuación, en la ventana [!UICONTROL Bulk Edit Reports].
+1. Haga clic en el icono de engranaje (![Icono de engranaje](../../assets/gear-icon.png)) junto al nombre del panel y, a continuación, en la ventana [!UICONTROL Bulk Edit Reports].
 
 1. Haga clic en **[!UICONTROL Chart Title Find and Replace]** en la ventana emergente.
 
@@ -45,7 +45,7 @@ Ejemplo:
 
 ## Anteponiendo `Chart Names` {#prepend}
 
-1. Haga clic en el icono de engranaje (![](../../assets/gear-icon.png)) junto al nombre del panel y, a continuación, en la ventana [!UICONTROL Bulk Edit Reports].
+1. Haga clic en el icono de engranaje (![Icono de engranaje](../../assets/gear-icon.png)) junto al nombre del panel y, a continuación, en la ventana [!UICONTROL Bulk Edit Reports].
 
 1. Haga clic en **[!UICONTROL Prepend Report Names]** en la ventana emergente.
 
@@ -59,7 +59,7 @@ Ejemplo:
 
 ## Cambiando `Dates` {#dates}
 
-1. Haga clic en el icono de engranaje (![](../../assets/gear-icon.png)) junto al nombre del panel y, a continuación, seleccione la ventana [!UICONTROL Bulk Edit Reports].
+1. Haga clic en el icono de engranaje (![Icono de engranaje](../../assets/gear-icon.png)) junto al nombre del panel y, a continuación, seleccione la ventana [!UICONTROL Bulk Edit Reports].
 
 1. Haga clic en **[!UICONTROL Change Dates]** en la ventana emergente.
 

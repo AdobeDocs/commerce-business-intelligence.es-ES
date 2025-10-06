@@ -4,9 +4,9 @@ description: Obtenga información sobre el impacto que tienen los pedidos de inv
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ En la base de datos de comercio típica, hay una tabla `orders` que se une a una
 
 * **Si todos los clientes están registrados** y no se permiten pedidos de invitado, significa que cada registro de la tabla `orders` tiene un valor en la columna `customer\_id`. Como resultado, cada pedido se vuelve a unir a la tabla `customers`.
 
-  ![](../../assets/guest-orders-4.png)
+  ![Tabla de datos de pedidos de invitado que muestra información de clientes](../../assets/guest-orders-4.png)
 
 * **Si se permiten pedidos de invitado**, significa que algunos pedidos no tienen un valor en la columna `customer\_id`. Solo los clientes registrados reciben un valor para la columna `customer\_id` en la tabla `orders`. Los clientes que no están registrados reciben un valor `NULL` (o en blanco) para esta columna. Como resultado, no todos los registros de pedidos tienen registros coincidentes en la tabla `customers`.
 
@@ -39,7 +39,7 @@ La forma más óptima de tener en cuenta los pedidos de invitados es basar todas
 
 Observará que el filtro `Customers we count` establecido en este tipo de configuración tiene un filtro para `Customer's order number = 1`.
 
-![](../../assets/guest-orders-filter-set.png)
+![Configuración del conjunto de filtros para excluir pedidos de invitado](../../assets/guest-orders-filter-set.png)
 
 En una situación sin pedidos de invitado, cada cliente existe como una fila única en la tabla de clientes (consulte la imagen 1). Una métrica como `New customers` puede simplemente contar el ID de esta tabla en función de la fecha `created\_at` para comprender a los nuevos clientes en función de la fecha de registro.
 
