@@ -15,7 +15,7 @@ ht-degree: 0%
 
 El [!DNL SQL Report Builder] le permite ejecutar y cambiar las consultas cuando lo desee. Esta capacidad es útil si necesita actualizar una consulta de inmediato, en lugar de esperar a que termine un ciclo de actualización antes de corregir una columna o un informe.
 
-Antes de ejecutar una consulta, [[!DNL Commerce Intelligence] calcula su costo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). El coste tiene en cuenta el tiempo y el número de recursos necesarios para ejecutar una consulta. Si se considera que ese costo es demasiado alto o si el número de filas devueltas supera los límites de [!DNL Commerce Intelligence], la consulta falla. Para consultar [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), que te asegura que escribes las consultas más optimizadas posibles, Adobe recomienda lo siguiente.
+Antes de ejecutar una consulta, [[!DNL Commerce Intelligence] calcula su costo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=es). El coste tiene en cuenta el tiempo y el número de recursos necesarios para ejecutar una consulta. Si se considera que ese costo es demasiado alto o si el número de filas devueltas supera los límites de [!DNL Commerce Intelligence], la consulta falla. Para consultar [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), que te asegura que escribes las consultas más optimizadas posibles, Adobe recomienda lo siguiente.
 
 ## Uso de SELECT o Selección de todas las columnas
 
