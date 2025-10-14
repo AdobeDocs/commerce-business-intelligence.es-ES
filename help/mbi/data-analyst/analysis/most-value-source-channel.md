@@ -118,6 +118,6 @@ En este tema se han mencionado algunos análisis que puede utilizar para analiza
 ## Relacionado {#related}
 
 * [Origen de referencia de pedido de seguimiento mediante  [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)
-* [Conectando tu cuenta de  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Conectando tu cuenta de  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Creando  [!DNL Google ECommerce] dimensiones con pedidos y datos de clientes](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Prácticas recomendadas para el etiquetado UTM en  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

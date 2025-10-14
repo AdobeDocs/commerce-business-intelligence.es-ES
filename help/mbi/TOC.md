@@ -18,8 +18,8 @@ ht-degree: 0%
 - [Introducción a [!DNL Commerce Intelligence]](getting-started/getting-started.md)
 - Primeros pasos {#start}
    - [Incorporación](getting-started/onboarding.md)
-   - [Activar tu cuenta de  [!DNL Commerce Intelligence] ](getting-started/onpremise-activation.md)
-   - [Inicia sesión en tu cuenta de  [!DNL Commerce Intelligence] ](getting-started/sign-in.md)
+   - [Activar tu cuenta de  [!DNL Commerce Intelligence] &#x200B;](getting-started/onpremise-activation.md)
+   - [Inicia sesión en tu cuenta de  [!DNL Commerce Intelligence] &#x200B;](getting-started/sign-in.md)
    - [Commerce Intelligence Essentials y Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
 - Administrador {#administrator}
    - Administración de cuentas {#acct-mgmt}
@@ -80,7 +80,7 @@ ht-degree: 0%
       - [Uso de fórmulas en [Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [Crear [!DNL Google Analytics] gráficos](data-analyst/dev-reports/google-analytics-charts-regex.md)
       - [Importancia de  [!DNL Lifetime Revenue Cohort Analysis]](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
-      - [Ordenar datos mediante la función  [!DNL Show Top/Bottom] ](data-analyst/dev-reports/order-data-top-bottom-feat.md)
+      - [Ordenar datos mediante la función  [!DNL Show Top/Bottom] &#x200B;](data-analyst/dev-reports/order-data-top-bottom-feat.md)
       - [Usando  [!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
       - [Primer informe de compra](data-analyst/dev-reports/time-first-purchase-slope-dwnwrd.md)
       - [Explicación de  [!DNL Repeat Order Probability Report]](data-analyst/dev-reports/repeat-order-probability.md)
@@ -228,7 +228,7 @@ ht-degree: 0%
    - Organización del proyecto {#project}
       - [Nombrar informes y elementos en  [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [Consolidación de tablas](best-practices/consolidating-your-tables.md)
-      - [Anular la duplicación de su cuenta de  [!DNL Commerce Intelligence] ](best-practices/declutter-account.md)
+      - [Anular la duplicación de su cuenta de  [!DNL Commerce Intelligence] &#x200B;](best-practices/declutter-account.md)
    - Uso de paneles {#working-dashboards}
       - [Compartir paneles](best-practices/share-dashboard-best-practice.md)
       - [Creación de un panel para inversores](best-practices/build-investor-dashboard.md)

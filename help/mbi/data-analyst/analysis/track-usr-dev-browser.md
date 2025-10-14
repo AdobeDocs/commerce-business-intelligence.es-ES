@@ -48,6 +48,6 @@ Con esta nueva información, puede comprender mejor cómo acceden los usuarios a
 * [Rastrear origen de referencia de pedidos a través de  [!DNL Google Anaytics] E-Commerce](../importing-data/integrations/google-ecommerce.md)
 * [Rastrear origen de referencia de usuario en la base de datos](../analysis/google-track-user-acq.md)
 * [Descubra sus fuentes y canales de adquisición más valiosos](../analysis/most-value-source-channel.md)
-* [Conecta tu cuenta de  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Conecta tu cuenta de  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Aumente el retorno de la inversión en sus campañas publicitarias](../analysis/roi-ad-camp.md)
 * [¿Cómo funciona la atribución de  [!DNL Google Analytics] UTM?](../analysis/utm-attributes.md)

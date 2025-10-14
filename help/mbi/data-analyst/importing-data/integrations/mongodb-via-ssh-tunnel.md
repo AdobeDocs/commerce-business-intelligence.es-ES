@@ -15,8 +15,8 @@ ht-degree: 0%
 
 Para conectar la base de datos [!DNL MongoDB] a [!DNL Commerce Intelligence] a través de un túnel SSH, debe hacer lo siguiente:
 
-1. [Recuperar la clave pública  [!DNL Commerce Intelligence] ](#retrieve)
-1. [Permitir el acceso a la dirección IP  [!DNL Commerce Intelligence] ](#allowlist)
+1. [Recuperar la clave pública  [!DNL Commerce Intelligence] &#x200B;](#retrieve)
+1. [Permitir el acceso a la dirección IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
 1. [Creación de un usuario de Linux para Commerce Intelligence](#linux)
 1. [Crear un usuario  [!DNL MongoDB] para Commerce Intelligence](#mongodb)
 1. [Escriba la conexión y la información de usuario en  [!DNL Commerce Intelligence]](#finish)
