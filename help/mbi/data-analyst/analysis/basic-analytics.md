@@ -88,7 +88,7 @@ Esta tabla se utiliza para administrar la información de suscripción, como el 
 
 ## Tabla de gasto de marketing
 
-Al analizar el gasto en marketing, puede incluir [!DNL Facebook], [!DNL Google AdWords] u otras fuentes en los análisis. Si tiene varias fuentes de gasto de marketing, póngase en contacto con el [equipo de Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) para que le ayuden a configurar una tabla consolidada para sus campañas de marketing.
+Al analizar el gasto en marketing, puede incluir [!DNL Facebook], [!DNL Google AdWords] u otras fuentes en los análisis. Si tiene varias fuentes de gasto de marketing, póngase en contacto con el [equipo de Managed Services](https://business.adobe.com/es/products/magento/fully-managed-service.html) para que le ayuden a configurar una tabla consolidada para sus campañas de marketing.
 
 **Dimensiones**
 

@@ -64,7 +64,7 @@ Con una integración de [!DNL Google Analytics], puede incluir informes sobre:
 * Visitas al sitio
 * Tasa de conversión
 
-Con los [servicios de enriquecimiento de datos de Commerce](https://business.adobe.com/products/magento/magento-commerce.html), puede incluir informes sobre:
+Con los [servicios de enriquecimiento de datos de Commerce](https://business.adobe.com/es/products/magento/magento-commerce.html), puede incluir informes sobre:
 
 * Clientes únicos por estado/región, edad, sexo.
 
