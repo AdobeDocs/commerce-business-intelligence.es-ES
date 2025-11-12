@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo duplicar canales de Google Analyti
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Ahora que sabe que los canales son solo combinaciones de fuentes y medios, es un
 
 1. **Habilitar su[!DNL Google ECommerce]integración**
 
-   [Cuando esté habilitado](../importing-data/integrations/google-ecommerce.md), asegúrate de [sincronizar]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) los campos **medio** y **origen** de tu Data Warehouse. Una vez finalizado, los datos de adquisición de medio y origen se incluirán en el Data Warehouse.
+   [Cuando esté habilitado](../importing-data/integrations/google-ecommerce.md), asegúrate de [sincronizar](tour-dwm.md#syncing) los campos **medio** y **origen** de tu Data Warehouse. Una vez finalizado, los datos de adquisición de medio y origen se incluirán en el Data Warehouse.
 
 1. **Cargar una asignación de agrupaciones de canales de Google**
 
