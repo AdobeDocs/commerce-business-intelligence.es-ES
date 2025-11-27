@@ -4,9 +4,9 @@ description: Descubra qué es una cohorte cualitativa, por qué podría estar in
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,6 @@ En este tema se explica en detalle qué es una cohorte cualitativa, por qué pod
 ## ¿Cuáles son `qualitative cohorts`, de todos modos? {#whatare}
 
 El análisis de `Cohort` en general se puede definir, en términos generales, como el análisis de grupos de usuarios que comparten características similares a lo largo de sus ciclos de vida. Permite identificar tendencias de comportamiento entre diferentes grupos de usuarios.
-
-Consulte [análisis de cohorte](https://www.cohortanalysis.com/).
 
 La mayoría de los análisis `cohort` de [!DNL Commerce Intelligence] agrupan a los usuarios según una fecha común (por ejemplo, el conjunto de todos los clientes que realizaron su primera compra en un mes determinado). Un `qualitative cohort` es un poco diferente: es un grupo de usuarios definido por una característica que no está basada en el tiempo. Algunos ejemplos son:
 
@@ -39,7 +37,7 @@ Sin embargo, si desea analizar el comportamiento de la cohorte de varios segment
 
 Crear un informe `qualitative cohort` en `Report Builder` implica que el equipo de analistas de Adobe cree [columnas calculadas avanzadas](../data-warehouse-mgr/creating-calculated-columns.md) en las tablas necesarias.
 
-Para compilarlos, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) (y mencione este artículo). Esto es lo que debe saber:
+Para compilarlos, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (y mencione este artículo). Esto es lo que debe saber:
 
 * `metric` con el que desea realizar el análisis de cohorte y qué tabla utiliza (ejemplo: `Revenue`, creado en la tabla `orders`).
 

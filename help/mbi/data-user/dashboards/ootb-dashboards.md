@@ -4,9 +4,9 @@ description: Aprenda a comprobar el estado de las métricas esenciales, como los
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >La disponibilidad de algunos paneles depende del conjunto de datos.
 
-Si tiene preguntas o está interesado en agregar un paquete a su cuenta, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para obtener ayuda.
+Si tiene preguntas o está interesado en agregar un paquete a su cuenta, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obtener ayuda.
 
 ## Información general ejecutiva
 
@@ -45,7 +45,7 @@ El panel `Email Summary` incluye un conjunto de gráficos de ejemplo que se pued
 
 El panel `Retention health` revela el comportamiento de compra repetida de su base de usuarios.
 
-El gráfico `Time between orders` muestra el tiempo promedio o la mediana transcurrido entre el primer y el segundo orden de un usuario, el segundo y el tercer orden, etc. Puede [considerar el uso de estos datos para configurar sus campañas de marketing por correo electrónico](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/).
+El gráfico `Time between orders` muestra el tiempo promedio o la mediana transcurrido entre el primer y el segundo orden de un usuario, el segundo y el tercer orden, etc. Considere la posibilidad de utilizar estos datos para configurar sus campañas de marketing por correo electrónico.
 
 El gráfico `Users by lifetime number of orders` enumera la cantidad total de usuarios para cada número de pedidos de por vida a fin de proporcionar una visión general del comportamiento de compra repetida.  
 
@@ -89,7 +89,7 @@ El panel `Users to target` incluye gráficos de estilo tabla que enumeran usuari
 
 * Lista de los principales gastadores que han estado activos en los últimos `X` días (a quienes quizá desee recompensar)
 
-Con sus herramientas de exportación de datos, es fácil [crear listas de correo electrónico de usuarios con un comportamiento de compra similar para el marketing de destino](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/).
+Puede utilizar las herramientas de exportación de datos para crear listas de correo electrónico de usuarios con un comportamiento de compra similar para el marketing de destino.
 
 ## Actividad del usuario
 
@@ -97,4 +97,4 @@ El panel `User activity` incluye gráficos que segmentan a los usuarios según v
 
 El gráfico `% of cohort members who have purchased` es valioso, ya que muestra la proporción de conversión (de 0 a 1) de los usuarios en función del momento de registro (cada línea representa una cohorte de usuarios). También muestra cuándo realizan su primera compra (por ejemplo, en el mes 1, 2, 3... después del registro). Esto puede mostrarle que el 10% de los usuarios se activaron en el mes 1, mientras que este número crece en el mes 2, 3, 4... y puede estabilizarse más adelante.
 
-Normalmente, las líneas de este gráfico se vuelven horizontales después de algún período de tiempo. Esto indica que pocos miembros de cohorte adicionales se están convirtiendo de forma orgánica después de ese punto: la mayoría de los usuarios que van a realizar una compra ya lo han hecho. En este punto, es muy poco probable que estos miembros se conviertan en compradores sin intervención. [Ponerse en contacto con ellos mediante promociones personalizadas o correos electrónicos dirigidos es una forma de bajo riesgo de iniciar la conversión de esta población.](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)
+Normalmente, las líneas de este gráfico se vuelven horizontales después de algún período de tiempo. Esto indica que pocos miembros de cohorte adicionales se están convirtiendo de forma orgánica después de ese punto: la mayoría de los usuarios que van a realizar una compra ya lo han hecho. En este punto, es muy poco probable que estos miembros se conviertan en compradores sin intervención. Ponerse en contacto con ellos mediante promociones personalizadas o correos electrónicos dirigidos es una forma de bajo riesgo de impulsar la conversión de esta población.

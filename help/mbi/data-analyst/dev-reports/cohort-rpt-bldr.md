@@ -4,9 +4,9 @@ description: Obtenga información acerca del análisis de grupos de usuarios que
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1597'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ ht-degree: 0%
 ## ¿Qué es el análisis de cohorte? {#what}
 
 El análisis `Cohort` se puede definir, en términos generales, como el análisis de grupos de usuarios que comparten características similares a lo largo de sus ciclos de vida. Permite identificar tendencias de comportamiento entre diferentes grupos de usuarios.
-
-Para obtener un manual detallado sobre el análisis de `cohort`, revise [esta página](https://www.cohortanalysis.com/).
 
 En su tablero [!DNL Commerce Intelligence], es fácil crear el usuario `cohorts` en función de una fecha `cohort` y una métrica en su cuenta.
 
