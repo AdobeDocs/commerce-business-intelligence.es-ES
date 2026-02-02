@@ -1,7 +1,7 @@
 ---
-source-git-commit: 199353c57dd1ca316c2a8b76fee1148d0e342299
+source-git-commit: 98e0c5dbd61d6d0f8d1a6e09d239cb25cbab8f81
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Este directorio contiene enlaces previos a la confirmación que optimizan autom�
 
 ## Qué hacen los ganchos
 
-- **Detectar automáticamente** archivos de imagen clasificados (PNG, JPG, JPEG, GIF, SVG)
+- **Detectar automáticamente** archivos de imagen clasificados (PNG, JPG, JPEG, GIF)
 - **Ejecutar`image_optim`** para comprimir y optimizar imágenes
 - **Volver a almacenar en zona intermedia las imágenes optimizadas** automáticamente
 - **Asegúrese de que todas las imágenes confirmadas** estén optimizadas correctamente
@@ -85,11 +85,11 @@ Image optimization complete!
 ## Directrices de imagen
 
 - **PNG**: se usará para capturas de pantalla y elementos de la interfaz de usuario (se optimizará automáticamente)
-- **SVG**: se usa para iconos y gráficos simples (la optimización está deshabilitada de forma predeterminada)
+- **SVG**: se usa para iconos y gráficos simples (no optimizados automáticamente por el vínculo previo a la confirmación)
 - **JPEG**: se usará para fotografías (se optimizará automáticamente)
 - **GIF**: úselo para animaciones (se optimizará automáticamente)
 
-Los enlaces previos a la confirmación optimizarán automáticamente todas las imágenes en la confirmación.
+Los enlaces previos a la confirmación optimizan automáticamente las imágenes PNG, JPEG y GIF en la confirmación.
 
 ## Optimización manual
 
@@ -138,10 +138,13 @@ Los vínculos utilizan el archivo de configuración `_jekyll/.image_optim.yml` p
 
 ## Formatos de imagen compatibles
 
+El vínculo previo a la confirmación procesa automáticamente lo siguiente:
+
 - **PNG** (`.png`): compresión sin pérdidas y con pérdidas
 - **JPEG** (`.jpg`, `.jpeg`): compresión con pérdidas con limpieza de metadatos
 - **GIF** (`.gif`): animación y optimización estática
-- **SVG** (`.svg`): optimización de vectores (deshabilitada de forma predeterminada)
+
+**Nota**: la optimización de SVG está deshabilitada de manera predeterminada (puede romper animaciones y gráficos vectoriales complejos). El vínculo previo a la confirmación no procesa automáticamente los archivos SVG.
 
 ## Prácticas recomendadas
 
