@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo comprobar el estado del ciclo de a
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: db93e5284950fa9336d0833af24589754c94a8b3
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,13 @@ ht-degree: 0%
 
 Los valores de los gráficos pueden cambiar a lo largo del día debido a que los nuevos datos se sincronizan con su Data Warehouse. Además, los valores de las columnas de datos existentes pueden cambiar debido a [nuevas comprobaciones](../data-warehouse-mgr/cfg-data-rechecks.md). Una nueva comprobación es un proceso que busca valores modificados en columnas de datos, como un estado de pedido que se mueve de `open` a `shipped`.
 
-Existen varias formas [de comprobar el estado del ciclo de actualización](../../best-practices/check-update-cycle.md), según la configuración de permisos del usuario.
+Existen varias formas [de comprobar el estado del ciclo de actualización](../../best-practices/check-update-cycle.md), según la configuración de permisos del usuario:
+
+* Usuarios **[!UICONTROL Read-Only]y [!UICONTROL Standard]**: pueden pasar el ratón sobre el icono situado en la parte superior derecha de la página para ver cuándo se extrajo el último punto de datos.
+* **[!UICONTROL Admin]usuarios**: pueden ver el último icono de estado de integraciones de cuentas y puntos de datos. Para obtener más información, vaya a **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]** para ver el estado de la actualización actual y la hora de la última actualización completada.
+* **Método de API**: puede recuperar el ciclo de actualización completado más reciente mediante la API Actualizar estado del ciclo.
+
+Para obtener información detallada sobre la comprobación del estado del ciclo de actualización, consulte [Comprobación del estado del ciclo de actualización](../../best-practices/check-update-cycle.md).
 
 ## ¿Cuál es la diferencia entre una actualización regular y forzada? {#regularforcedupdates}
 
@@ -36,12 +42,12 @@ Numerosos factores pueden añadir a un tiempo de actualización ya largo. Alguno
 
 ## ¿Se me puede notificar cuando se completa un ciclo de actualización? {#notifyupdate}
 
-Si hay una actualización en curso, hay un vínculo en la página `Connections` que puede usar para solicitar una notificación por correo electrónico una vez que finalice el ciclo.
+Si hay una actualización en curso, hay un vínculo en la página **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]** que puede usar para solicitar una notificación por correo electrónico una vez que finalice el ciclo. Si una actualización no está en curso, verá un vínculo para forzar el inicio de una actualización.
 
 ## ¿Por qué hay [!DNL Google ECommerce]datos diferentes de mi base de datos? {#ecommdatabase}
 
-Las discrepancias entre [!DNL Google Analytics] y la base de datos pueden producirse por varios motivos. El seguimiento no se ha habilitado correctamente, los usuarios que visitan incógnito y los eventos de clic no funcionan correctamente son solo algunos ejemplos. Si los ingresos y los pedidos no se ven correctamente, [vea este tema](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=es) para diagnosticar un problema.
+Las discrepancias entre [!DNL Google Analytics] y la base de datos pueden producirse por varios motivos. El seguimiento no se ha habilitado correctamente, los usuarios que visitan incógnito y los eventos de clic no funcionan correctamente son solo algunos ejemplos. Si los ingresos y los pedidos no se ven correctamente, [vea este tema](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) para diagnosticar un problema.
 
 ## ¿Cómo puedo solucionar problemas de discrepancia de datos? {#datadiscrepancy}
 
-Adobe sabe que ver datos incoherentes puede ser una experiencia frustrante. Intente usar la [lista de comprobación de discrepancias de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=es) o el [tutorial de exportaciones de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=es) para diagnosticar el problema. Si sigues con errores, [ponte en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Adobe sabe que ver datos incoherentes puede ser una experiencia frustrante. Intente usar la [lista de comprobación de discrepancias de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) o el [tutorial de exportaciones de datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) para diagnosticar el problema. Si sigues con errores, [ponte en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
