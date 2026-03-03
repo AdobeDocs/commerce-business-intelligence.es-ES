@@ -69,27 +69,27 @@ No hay métricas nuevas.
 * [!UICONTROL Metric]: número de pedidos
 
 * [!UICONTROL Formula]: probabilidad de orden repetido inicial
-* 
+* &#x200B;
   [!UICONTROL Fórmula]: `A/B`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Scalar`
 
 * **Probabilidad de repetición de pedido dada meses desde la solicitud**
 * Métrica A: Repetir pedidos por meses desde el pedido anterior (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Métrica B: últimos pedidos por meses desde el pedido (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +97,29 @@ No hay métricas nuevas.
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* 
+* &#x200B;
   [!UICONTROL Agrupar por]: `Independent`
 
 * ID de métrica: últimos pedidos permanentes (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* 
+* &#x200B;
   [!UICONTROL Agrupar por]: `Independent`
 
 * [!UICONTROL Formula]: probabilidad de orden repetido inicial
-* 
+* &#x200B;
   [!UICONTROL Fórmula]: `(C-A)/(C+D-A-B)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Mostrar top.bottom: Las 24 categorías principales, ordenadas por nombre de categoría
 
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 El informe de probabilidad de pedido repetido inicial representa el total de pedidos repetidos/total de pedidos. Cada pedido es una oportunidad para hacer un pedido repetido; el número de pedidos repetidos es el subconjunto de los que realmente lo hacen.

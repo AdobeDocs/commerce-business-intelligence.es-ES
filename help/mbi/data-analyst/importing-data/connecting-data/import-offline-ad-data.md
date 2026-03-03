@@ -19,7 +19,7 @@ La carga de los datos de gasto en publicidad le permite medir el retorno de la i
 
 El primer paso para analizar los datos de gasto en publicidad es obtener los datos. Dado que la mayoría de las plataformas de publicidad le permiten exportar informes, Adobe recomienda exportar los datos sin procesar de su plataforma de publicidad y cargarlos directamente en [!DNL Commerce Intelligence] sin ninguna manipulación. Puede realizar operaciones en los datos de su Data Warehouse, por lo que no es necesario duplicar los esfuerzos.
 
-Después de haber exportado los datos de gasto en publicidad, use la característica [`File Upload` ](../connecting-data/using-file-uploader.md) para llevar los datos a Data Warehouse. Con el tiempo, puede cargar nuevos datos en la misma tabla [!DNL Commerce Intelligence].
+Después de haber exportado los datos de gasto en publicidad, use la característica [`File Upload` &#x200B;](../connecting-data/using-file-uploader.md) para llevar los datos a Data Warehouse. Con el tiempo, puede cargar nuevos datos en la misma tabla [!DNL Commerce Intelligence].
 
 ## Fuentes sin conexión
 

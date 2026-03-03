@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Investigaste tu audiencia, creaste tu campaña, invertiste en algunos canales de marketing. Ahora que ha pasado algún tiempo, ¿cómo van esos canales? ¿Qué canal ha atraído a la mayoría de los usuarios nuevos? ¿Qué fuente ha contribuido más a sus ingresos totales?
 
-Con [!DNL Adobe Commerce Intelligence], puede segmentar fácilmente sus ingresos y usuarios por origen de referencia, ya corresponda a [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) o a campos de datos personalizados. Esta segmentación le permite encontrar los canales con mejor rendimiento e invertir mejor su presupuesto de marketing.
+Con [!DNL Adobe Commerce Intelligence], puede segmentar fácilmente sus ingresos y usuarios por origen de referencia, ya corresponda a [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) o a campos de datos personalizados. Esta segmentación le permite encontrar los canales con mejor rendimiento e invertir mejor su presupuesto de marketing.
 
 En este tema se exploran algunos informes que puede utilizar para descubrir los canales de marketing más valiosos:
 
@@ -118,6 +118,6 @@ En este tema se han mencionado algunos análisis que puede utilizar para analiza
 ## Relacionado {#related}
 
 * [Origen de referencia de pedido de seguimiento mediante  [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)
-* [Conectando tu cuenta de  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Conectando tu cuenta de  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Creando  [!DNL Google ECommerce] dimensiones con pedidos y datos de clientes](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Prácticas recomendadas para el etiquetado UTM en  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

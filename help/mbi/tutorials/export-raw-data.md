@@ -34,7 +34,7 @@ Existen dos maneras de exportar datos sin procesar en [!DNL Commerce Intelligenc
 
 Si desea exportar la tabla desde la ficha [!UICONTROL Manage Data], necesita los permisos de [Admin](../administrator/user-management/user-management.md).
 
-1. Haga clic en **[!UICONTROL Manage Data** > ** Exportar datos **> **Exportación de datos sin procesar]**.
+1. Haga clic en **[!UICONTROL Manage Data** > **&#x200B; Exportar datos &#x200B;**> **Exportación de datos sin procesar]**.
 1. Verá un(a) `Export List` de exportaciones de datos creadas recientemente, si las hay. Haga clic en **[!UICONTROL Add Export]** para crear una exportación.
 1. Se muestra el cuadro de diálogo `New Raw Data Export`. Aquí puede personalizar la exportación seleccionando o anulando la selección de columnas y filtros:
 
