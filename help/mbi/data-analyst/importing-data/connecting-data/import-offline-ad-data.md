@@ -2,9 +2,9 @@
 title: Importar otros datos de gasto en publicidad
 description: Aprenda a importar datos de gasto en publicidad sin conexión o de otro tipo en  [!DNL Commerce Intelligence].
 exl-id: 6f12a397-0927-4e87-95ff-3a55ccc9e14b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

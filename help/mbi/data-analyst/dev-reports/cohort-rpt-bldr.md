@@ -2,9 +2,9 @@
 title: Report Builder de cohorte
 description: Obtenga información acerca del análisis de grupos de usuarios que comparten características similares a lo largo de sus ciclos de vida.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1597'
 ht-degree: 0%

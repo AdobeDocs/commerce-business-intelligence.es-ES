@@ -2,9 +2,9 @@
 title: Conectar Google Analytics
 description: Aprenda a conectar Google Analytics con  [!DNL Commerce Intelligence].
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 0%

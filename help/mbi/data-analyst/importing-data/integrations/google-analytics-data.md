@@ -2,9 +2,9 @@
 title: Datos Google Analytics esperados
 description: Aprenda a interactuar con las métricas de Google Analytics.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%

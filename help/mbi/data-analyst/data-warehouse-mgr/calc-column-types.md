@@ -2,9 +2,9 @@
 title: Tipos de columnas calculadas
 description: Aprenda a crear columnas para aumentar y optimizar los datos para el análisis.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 0%

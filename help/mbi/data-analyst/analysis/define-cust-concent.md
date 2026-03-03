@@ -2,9 +2,9 @@
 title: Definir la concentración de clientes
 description: Aprenda a configurar un tablero que le ayude a medir cómo se distribuyen los ingresos totales entre la base de clientes.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%

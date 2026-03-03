@@ -2,9 +2,9 @@
 title: Validación de datos en Mixpanel
 description: Aprenda a confirmar que ha sincronizado los mismos datos que están disponibles directamente en Mixpanel.
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 0%

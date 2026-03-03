@@ -2,9 +2,9 @@
 title: Informe de tiempo promedio hasta la primera compra
 description: Aprenda a utilizar el informe Promedio de tiempo para la primera compra.
 exl-id: c18734ce-0ae0-4e84-b9d0-eb2c21a5c3a5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 330832e2668024b00edb2b7c49b92bb042bd004a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%

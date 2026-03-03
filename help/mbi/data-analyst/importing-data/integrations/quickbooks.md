@@ -2,9 +2,9 @@
 title: Conectar QuickBooks
 description: Descubra cómo las finanzas de su empresa ahora pueden estar al lado de los datos de ventas y marketing, lo que le permite controlar rápida y fácilmente sus gastos, identificar gastos excesivos y mucho más.
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: b6f8a4f533286fad67dc875ebb6f4f3b7022ca5b
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%

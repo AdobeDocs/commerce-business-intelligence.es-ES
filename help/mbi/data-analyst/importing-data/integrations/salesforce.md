@@ -2,9 +2,9 @@
 title: Conectar Salesforce
 description: Descubra cómo los datos de Salesforce permiten una amplia gama de análisis, desde puntuar y optimizar posibles clientes hasta alcanzar sus objetivos en busca de oportunidades convertidas.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
