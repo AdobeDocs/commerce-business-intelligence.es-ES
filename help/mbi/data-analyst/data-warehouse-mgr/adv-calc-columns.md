@@ -161,7 +161,7 @@ Para crear este tipo de columna calculada, debe saber:
 
 No te preocupes. El hecho de que no aparezca en la lista no significa que no sea posible. El equipo de Adobe de analistas de Data Warehouse puede ayudarle.
 
-Para definir una nueva columna calculada, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) con detalles sobre exactamente lo que desea generar.
+Para definir una nueva columna calculada, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) con detalles sobre exactamente lo que desea generar.
 
 ## Documentación relacionada
 

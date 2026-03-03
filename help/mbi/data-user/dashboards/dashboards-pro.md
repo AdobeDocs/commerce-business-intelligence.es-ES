@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->El acceso a estos paneles depende del tipo de cuenta y del nivel de acceso. Si no ve estos paneles, comuníquese con [soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>El acceso a estos paneles depende del tipo de cuenta y del nivel de acceso. Si no ve estos paneles, comuníquese con [soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
 
 ## Disponibilidad del informe
 
@@ -133,7 +133,7 @@ El panel Pedidos proporciona información sobre el volumen transaccional de pedi
 
 ## Productos
 
-El panel Productos muestra el rendimiento general del producto en términos de productos pedidos, su valor bruto de mercancía (GMV) y los principales productos comprados y reembolsados. Puede ayudarle a equilibrar las compras y las devoluciones, así como a determinar el éxito y la popularidad del producto. Su tienda debe estar [configurada para hacer un seguimiento de los reembolsos](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) para que se rellenen esos gráficos.
+El panel Productos muestra el rendimiento general del producto en términos de productos pedidos, su valor bruto de mercancía (GMV) y los principales productos comprados y reembolsados. Puede ayudarle a equilibrar las compras y las devoluciones, así como a determinar el éxito y la popularidad del producto. Su tienda debe estar [configurada para hacer un seguimiento de los reembolsos](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=es) para que se rellenen esos gráficos.
 
 >[!NOTE]
 >
