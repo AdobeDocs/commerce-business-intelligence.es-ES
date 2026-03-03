@@ -2,9 +2,9 @@
 title: Conectar Adobe Analytics
 description: Aprenda a reunir el enfoque de recorrido integral del cliente de  [!DNL Adobe Analytics] y el enfoque de comercio electrónico en el que confía desde [!DNL Commerce Intelligence].
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
@@ -57,6 +57,6 @@ Se necesita la siguiente información para conectarse:
 
 1. El grupo de informes seleccionado se muestra en una tabla. Haga clic en **[!UICONTROL Save]** para confirmar la selección.
 
-1. Informe al [!DNL Commerce Intelligence] [equipo de atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) de que su integración está autorizada y que ejecuta el proceso de conexión inicial por usted.
+1. Informe al [!DNL Commerce Intelligence] [equipo de atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) de que su integración está autorizada y que ejecuta el proceso de conexión inicial por usted.
 
 Una vez que se ejecute el proceso de conexión inicial, la tabla estará disponible en la página Data Warehouse, en la pestaña `All Tables`. Seleccione las columnas que desea duplicar y los datos aparecerán después de la siguiente actualización completa.

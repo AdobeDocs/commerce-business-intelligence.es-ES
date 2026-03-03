@@ -2,9 +2,9 @@
 title: Comprenda su  [!DNL Commerce Intelligence] entorno
 description: Aprenda a trabajar con su entorno  [!DNL Commerce Intelligence] y a mejorarlo.
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Su entorno [!DNL Adobe Commerce Intelligence]
 
-A medida que analiza los datos de comercio, tenga en cuenta estos factores y las ideas erróneas comunes. Si necesita ayuda para asegurarse de que está usando correctamente el esquema de Commerce, no dude en [ponerse en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+A medida que analiza los datos de comercio, tenga en cuenta estos factores y las ideas erróneas comunes. Si necesita ayuda para asegurarse de que está usando correctamente el esquema de Commerce, no dude en [ponerse en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## [!DNL entity\_id]
 

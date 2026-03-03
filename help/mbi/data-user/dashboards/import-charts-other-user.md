@@ -2,9 +2,9 @@
 title: Importar gráficos de otro usuario
 description: Obtenga información sobre cómo editar un gráfico que otro usuario posee o crear algo similar.
 exl-id: defcb72d-6027-4ae7-b974-e2f39773fe32
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%

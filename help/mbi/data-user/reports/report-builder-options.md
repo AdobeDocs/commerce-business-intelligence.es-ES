@@ -2,9 +2,9 @@
 title: Elija un Report Builder
 description: Aprenda a elegir su Report Builder.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Elija un Report Builder
 
 >[!NOTE]
->&#x200B;>Requiere [permisos de administrador](../../administrator/user-management/user-management.md).
+>>Requiere [permisos de administrador](../../administrator/user-management/user-management.md).
 
 Ahora que tiene más opciones para crear análisis, a veces es difícil saber con exactitud qué sabor del Report Builder se adapta a sus necesidades. Este tema le guía a través de la elección de la mejor manera de generar su análisis.
 

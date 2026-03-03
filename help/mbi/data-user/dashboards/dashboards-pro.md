@@ -2,9 +2,9 @@
 title: Paneles integrados en el producto
 description: Obtenga información acerca de los paneles predeterminados para proporcionar insight a su empresa.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->El acceso a estos paneles depende del tipo de cuenta y del nivel de acceso. Si no ve estos paneles, comuníquese con [soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+>El acceso a estos paneles depende del tipo de cuenta y del nivel de acceso. Si no ve estos paneles, comuníquese con [soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Disponibilidad del informe
 
@@ -133,7 +133,7 @@ El panel Pedidos proporciona información sobre el volumen transaccional de pedi
 
 ## Productos
 
-El panel Productos muestra el rendimiento general del producto en términos de productos pedidos, su valor bruto de mercancía (GMV) y los principales productos comprados y reembolsados. Puede ayudarle a equilibrar las compras y las devoluciones, así como a determinar el éxito y la popularidad del producto. Su tienda debe estar [configurada para hacer un seguimiento de los reembolsos](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=es) para que se rellenen esos gráficos.
+El panel Productos muestra el rendimiento general del producto en términos de productos pedidos, su valor bruto de mercancía (GMV) y los principales productos comprados y reembolsados. Puede ayudarle a equilibrar las compras y las devoluciones, así como a determinar el éxito y la popularidad del producto. Su tienda debe estar [configurada para hacer un seguimiento de los reembolsos](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) para que se rellenen esos gráficos.
 
 >[!NOTE]
 >

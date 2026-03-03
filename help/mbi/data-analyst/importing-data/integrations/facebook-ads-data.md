@@ -2,9 +2,9 @@
 title: Datos previstos de Facebook Ads
 description: Obtenga información general breve sobre las tablas que se recomiendan para sincronizar con su Data Warehouse
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -60,4 +60,4 @@ Esta tabla incluye la misma información que la tabla `facebook_ads_insights_{ac
 ## Relacionado
 
 * [Conectando [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

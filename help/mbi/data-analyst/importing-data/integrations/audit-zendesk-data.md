@@ -2,9 +2,9 @@
 title: Auditoría de datos de Zendesk
 description: Conozca los pasos para exportar sus datos de Zendesk.
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Activación de la exportación de datos
 
-La exportación de datos no está habilitada actualmente para todas las cuentas de [!DNL Zendesk]. Para activar esta característica, [envía un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es), mencionando tu nombre de subdominio [!DNL Zendesk].
+La exportación de datos no está habilitada actualmente para todas las cuentas de [!DNL Zendesk]. Para activar esta característica, [envía un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), mencionando tu nombre de subdominio [!DNL Zendesk].
 
 >[!NOTE]
 >
@@ -38,6 +38,6 @@ Una vez habilitada la exportación de datos, solamente los administradores de un
 
    Este vínculo de descarga es válido durante al menos tres días.
 
-Este proceso genera un archivo XML que contiene toda la información almacenada en su cuenta actual de [!DNL Zendesk], incluidos los datos de vales (con comentarios), los datos de usuario y los datos de cuenta. En este punto, puede [enviar un vale de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) (asegúrese de adjuntar este archivo) para que pueda ver más de cerca sus datos. Si el archivo es demasiado grande, compártalo con el equipo [!DNL Commerce Intelligence] a través de [!DNL Dropbox] o [!DNL Google Drive].
+Este proceso genera un archivo XML que contiene toda la información almacenada en su cuenta actual de [!DNL Zendesk], incluidos los datos de vales (con comentarios), los datos de usuario y los datos de cuenta. En este punto, puede [enviar un vale de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (asegúrese de adjuntar este archivo) para que pueda ver más de cerca sus datos. Si el archivo es demasiado grande, compártalo con el equipo [!DNL Commerce Intelligence] a través de [!DNL Dropbox] o [!DNL Google Drive].
 
 Para obtener más información sobre las exportaciones de archivos de [!DNL Zendesk], consulte la [[!DNL Zendesk] documentación de exportación](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file) oficial.

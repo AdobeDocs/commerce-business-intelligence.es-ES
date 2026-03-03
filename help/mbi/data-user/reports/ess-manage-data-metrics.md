@@ -2,9 +2,9 @@
 title: Creación de métricas
 description: Aprenda a utilizar las métricas para crear gráficos.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: Creación de conjuntos de filtros para métricas
 description: Obtenga información sobre cómo crear conjuntos de filtros guardados y aplicarlos a las métricas.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Si tiene varias métricas en [!DNL Commerce Intelligence] que necesitan filtrarse de manera similar (por ejemplo, filtrar los pedidos de prueba), puede crear conjuntos de filtros guardados y aplicarlos a las métricas. Esto le ahorra tiempo, ya que no tiene que añadir filtros individuales al crear o editar una métrica.
 
-Consulte el [vídeo de formación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=es) para obtener más información.
+Consulte el [vídeo de formación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) para obtener más información.
 
 >[!NOTE]
 >

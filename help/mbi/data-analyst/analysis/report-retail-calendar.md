@@ -2,9 +2,9 @@
 title: Creación de informes en un calendario comercial
 description: Aprenda a configurar la estructura para utilizar un calendario de ventas minoristas 4-5-4 en su cuenta de  [!DNL Commerce Intelligence] Debugger.
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Puede [descargar](../../assets/454-calendar.csv) una versión `.csv` del calenda
    * **Fecha actual**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
-      * &#x200B;
+      * 
         [!UICONTROL Tipo de datos]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
@@ -62,7 +62,7 @@ Puede [descargar](../../assets/454-calendar.csv) una versión `.csv` del calenda
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
-      * &#x200B;
+      * 
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **Incluido en el año comercial actual? (Sí/No)**
@@ -70,7 +70,7 @@ Puede [descargar](../../assets/454-calendar.csv) una versión `.csv` del calenda
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
+      * 
         [!UICONTROL Tipo de datos]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **Incluido en el año comercial anterior? (Sí/No)**
@@ -78,7 +78,7 @@ Puede [descargar](../../assets/454-calendar.csv) una versión `.csv` del calenda
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
+      * 
         [!UICONTROL Tipo de datos]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
@@ -139,62 +139,62 @@ Nota: No se necesitan métricas nuevas para este análisis. Sin embargo, asegúr
       * [!UICONTROL Filter]:
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Line`
       * Desactivar `multiple Y-axes`
 
 * **Resumen del calendario comercial (año comercial actual por mes)**
    * Métrica `A`: `Revenue`
-      * &#x200B;
+      * 
         [!UICONTROL Métrica]: `Revenue`
       * [!UICONTROL Filter]:
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Métrica `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Métrica `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Line`
 
 * **Resumen del calendario comercial (año comercial anterior por mes)**
    * Métrica `A`: `Revenue`
-      * &#x200B;
+      * 
         [!UICONTROL Métrica]: `Revenue`
       * [!UICONTROL Filter]:
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Métrica `B`: `Orders`
       * [!UICONTROL Metric]: número de pedidos
       * [!UICONTROL Filter]:
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Métrica `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Line`
 
 ## Pasos siguientes

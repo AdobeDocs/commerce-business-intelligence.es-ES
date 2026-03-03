@@ -2,9 +2,9 @@
 title: Estandarización de datos con tablas de asignación
 description: Aprenda a trabajar con tablas de asignación.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%

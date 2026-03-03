@@ -2,9 +2,9 @@
 title: Análisis de Niveles de Inventario
 description: Obtenga información sobre cómo analizar los niveles de inventario.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Dashboards, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Analizar niveles de inventario
 
-En este tema se muestra cómo configurar un tablero que proporciona información sobre el inventario actual y contiene instrucciones para los clientes sobre la arquitectura heredada o la nueva arquitectura. Se encuentra en la arquitectura heredada si no tiene la opción **[!UICONTROL Data Warehouse Views]** en el menú **[!UICONTROL Manage Data]**. Si usa la arquitectura heredada, envíe una [nueva solicitud de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) con el asunto **[!UICONTROL INVENTORY ANALYSIS]** una vez que llegue a la sección designada en las instrucciones de _Columnas calculadas_ a continuación.
+En este tema se muestra cómo configurar un tablero que proporciona información sobre el inventario actual y contiene instrucciones para los clientes sobre la arquitectura heredada o la nueva arquitectura. Se encuentra en la arquitectura heredada si no tiene la opción **[!UICONTROL Data Warehouse Views]** en el menú **[!UICONTROL Manage Data]**. Si usa la arquitectura heredada, envíe una [nueva solicitud de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) con el asunto **[!UICONTROL INVENTORY ANALYSIS]** una vez que llegue a la sección designada en las instrucciones de _Columnas calculadas_ a continuación.
 
 ## Columnas para rastrear:
 
@@ -36,7 +36,7 @@ En este tema se muestra cómo configurar un tablero que proporciona información
 * **[!UICONTROL catalog_product_entity]** tabla:
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `created_at`
@@ -45,7 +45,7 @@ En este tema se muestra cómo configurar un tablero que proporciona información
 
    * **`Product's first order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `created_at`
@@ -54,13 +54,13 @@ En este tema se muestra cómo configurar un tablero que proporciona información
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `Same Table`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `AGE`
       * Seleccionar [!UICONTROL DATETIME column]: `Product's most recent order date`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `qty_ordered`
@@ -69,12 +69,12 @@ En este tema se muestra cómo configurar un tablero que proporciona información
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `Same Table`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] entradas:
          * A: `Product's lifetime number of items sold`
          * B: `Product's first order date`
-      * &#x200B;
+      * 
         [!UICONTROL Datatype]: `Decimal`
       * Definición:
          * Caso de uso cuando A es nulo o B es nulo y luego nulo más redondo(A::decimal/(extract(epoch from (current_timestamp - B))::decimal/604800.0),2) final
@@ -82,40 +82,40 @@ En este tema se muestra cómo configurar un tablero que proporciona información
 * **[!UICONTROL cataloginventory_stock_item]** tabla:
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
       * [!UICONTROL Column type]: `Same Table`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] entradas:
          * A: `qty`
          * B: `Avg products sold per week (all time)`
-      * &#x200B;
+      * 
         [!UICONTROL Datatype]: `Decimal`
       * Definición:
          * caso cuando A es nulo o B es nulo o B = 0,0 entonces nulo otro redondeo (A::decimal/B,2) fin
@@ -126,7 +126,7 @@ En este tema se muestra cómo configurar un tablero que proporciona información
 * **[!UICONTROL catalog_product_entity]** tabla:
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `created_at`
@@ -135,7 +135,7 @@ En este tema se muestra cómo configurar un tablero que proporciona información
 
    * **`Product's first order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `created_at`
@@ -144,13 +144,13 @@ En este tema se muestra cómo configurar un tablero que proporciona información
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `Same Table`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `AGE`
       * Seleccionar columna DATETIME: **`Product's most recent order date`**
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
       * Seleccionar un(a) [!UICONTROL column]: **`qty_ordered`**
@@ -163,28 +163,28 @@ En este tema se muestra cómo configurar un tablero que proporciona información
 * **[!UICONTROL cataloginventory_stock_item]** tabla:
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleccionar un(a) [!UICONTROL column]: `Avg products sold per week (all time)`
@@ -215,7 +215,7 @@ En este tema se muestra cómo configurar un tablero que proporciona información
    * [!UICONTROL Group by]:
       * `Sku`
       * `Weeks on hand`
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with less than 2 weeks on hand (order now)`**
@@ -225,9 +225,9 @@ En este tema se muestra cómo configurar un tablero que proporciona información
 
    * [!UICONTROL Time period]: `All time`
    * Intervalo de tiempo: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Agrupar por]: `Sku`
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with more than 26 weeks on hand (put on sale)`**
@@ -237,9 +237,9 @@ En este tema se muestra cómo configurar un tablero que proporciona información
 
    * [!UICONTROL Time period]: `All time`
    * Intervalo de tiempo: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Agrupar por]: `Sku`
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Table`
 
-Si tiene alguna pregunta al generar este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si tiene alguna pregunta al generar este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

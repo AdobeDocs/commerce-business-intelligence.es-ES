@@ -2,9 +2,9 @@
 title: Diagramas de relación de entidad
 description: Obtenga información acerca de algunos diagramas ER para ayudarle a visualizar la relación entre un puñado de tablas comunes de bases de datos de Commerce.
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%

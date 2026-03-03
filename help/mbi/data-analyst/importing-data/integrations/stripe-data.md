@@ -2,9 +2,9 @@
 title: Datos Stripe esperados
 description: Explore las tablas de datos principales que se pueden importar desde Stripe a Commerce Intelligence.
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
@@ -36,4 +36,4 @@ En este tema se exploran las tablas de datos principales que se pueden importar 
 ## Relacionado:
 
 * [Conectando [!DNL Stripe]](../integrations/stripe.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

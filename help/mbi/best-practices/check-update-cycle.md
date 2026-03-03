@@ -2,9 +2,9 @@
 title: Comprobación del estado del ciclo de actualización
 description: Obtenga información sobre cómo comprobar el estado del ciclo de actualización.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Dashboards
-source-git-commit: 776b4b666c47775a7b883a3a6f71c16b4b3bfbad
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Cuando inicia sesión en su panel de [!DNL Adobe Commerce Intelligence], existen
 
 ## ¿Por qué debería comprobar el estado del ciclo de actualización?
 
-La comprobación del ciclo de actualización de estado resulta útil cuando está auditando los datos de su cuenta de [!DNL Commerce Intelligence]. Si ve [resultados que no cumplen con sus expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por ejemplo, las ventas diarias en [!DNL Commerce Intelligence] no coinciden con lo que está viendo en su plataforma de comercio electrónico o en sus [[!DNL Google] ingresos de comercio electrónico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=es), puede comprobar el último punto de datos para ver si el problema se resuelve una vez que se completa una actualización.
+La comprobación del ciclo de actualización de estado resulta útil cuando está auditando los datos de su cuenta de [!DNL Commerce Intelligence]. Si ve [resultados que no cumplen con sus expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por ejemplo, las ventas diarias en [!DNL Commerce Intelligence] no coinciden con lo que está viendo en su plataforma de comercio electrónico o en sus [[!DNL Google] ingresos de comercio electrónico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), puede comprobar el último punto de datos para ver si el problema se resuelve una vez que se completa una actualización.
 
 ## [!UICONTROL Read-Only] y [!UICONTROL Standard] usuarios
 

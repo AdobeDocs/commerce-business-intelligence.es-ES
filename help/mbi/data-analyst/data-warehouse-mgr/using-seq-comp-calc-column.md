@@ -2,9 +2,9 @@
 title: Columna calculada de comparación secuencial
 description: Conozca el propósito y los usos de la columna calculada Comparación secuencial.
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

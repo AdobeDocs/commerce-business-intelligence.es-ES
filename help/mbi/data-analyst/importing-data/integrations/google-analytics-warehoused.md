@@ -2,9 +2,9 @@
 title: Conectar Google Analytics Warehouse
 description: Obtenga información sobre cómo los visitantes utilizan el sitio, qué contenido es atractivo, dónde salen y mucho más.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Con la integración de [!DNL Google Analytics Live] por otro lado, cada gráfico
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] es una integración de `Premium`. [Póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) si tiene interés en agregar esta integración a su suscripción.
+>[!DNL Google Analytics Warehoused] es una integración de `Premium`. [Póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si tiene interés en agregar esta integración a su suscripción.
 
 1. Vaya a la página `Connections` en **[!UICONTROL Admin** > **Integrations]**.
 1. Haga clic en **[!UICONTROL Add an Integration]**, ubicado en el lado derecho.
@@ -63,7 +63,7 @@ Para identificar el identificador de perfil [!DNL Google Analytics] de un sitio 
 
 ## Documentación relacionada
 
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Conectando [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Análisis de la actividad del sitio web y las tasas de conversión de clientes](../../analysis/web-act-cust-conversion.md)
 * [Rastrear datos de adquisición de usuarios con  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

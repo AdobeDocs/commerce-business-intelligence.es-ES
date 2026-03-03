@@ -2,9 +2,9 @@
 title: Cambio de la tabla operativa de una métrica
 description: Aprenda a cambiar la tabla de datos que utiliza una métrica para realizar su operación.
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%
@@ -25,6 +25,6 @@ En determinados casos, puede decidir cambiar la tabla de datos que utiliza una m
 
    ![Menú desplegable de selección de tabla que muestra las tablas disponibles](../../assets/change-metrics-2.png)
 
-1. Si no tiene una columna coincidente en la nueva tabla, puede **crearla en la tabla de datos** o [ponerse en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) si es una columna de cálculo o dimensión creada por [!DNL Commerce Intelligence]. También puede **eliminar la dimensión de la métrica**. Para eliminar una dimensión que ya no necesite, simplemente vuelva al editor de la métrica y seleccione las dimensiones que desea eliminar en `Dimensions`.
+1. Si no tiene una columna coincidente en la nueva tabla, puede **crearla en la tabla de datos** o [ponerse en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) si es una columna de cálculo o dimensión creada por [!DNL Commerce Intelligence]. También puede **eliminar la dimensión de la métrica**. Para eliminar una dimensión que ya no necesite, simplemente vuelva al editor de la métrica y seleccione las dimensiones que desea eliminar en `Dimensions`.
 
    ![Menú desplegable de selección de columna operativa](../../assets/change-metrics-3.png)

@@ -2,9 +2,9 @@
 title: Conectar PostgreSQL mediante el túnel SSH
 description: Aprenda a conectar la base de datos PostgreSQL a Commerce Intelligence a través de un túnel SSH.
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 Para conectar la base de datos [!DNL PostgreSQL] a [!DNL Commerce Intelligence] a través de un `SSH tunnel`, debe hacer algunas cosas:
 
-1. [Recuperar la clave pública  [!DNL Commerce Intelligence] &#x200B;](#retrieve)
-1. [Permitir el acceso a la dirección IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+1. [Recuperar la clave pública  [!DNL Commerce Intelligence] ](#retrieve)
+1. [Permitir el acceso a la dirección IP  [!DNL Commerce Intelligence] ](#allowlist)
 1. [Crear un [!DNL Linux] usuario para [!DNL Commerce Intelligence]](#linux)
 1. [Crear un [!DNL PostgreSQL] usuario para [!DNL Commerce Intelligence]](#postgres)
 1. [Escriba la conexión y la información de usuario en  [!DNL Commerce Intelligence]](#finish)
@@ -105,4 +105,4 @@ Cuando termine, haga clic en **Guardar y probar** para completar la configuraci�
 
 ### Relacionado
 
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

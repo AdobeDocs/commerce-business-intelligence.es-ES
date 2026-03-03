@@ -2,9 +2,9 @@
 title: Conectar Mixpanel
 description: Obtenga información sobre cómo analizar cómo navegan y utilizan los usuarios sus sitios web y aplicaciones.
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -65,4 +65,4 @@ Si la conexión se ha realizado correctamente, _¡Correcto!_ mensaje se muestra 
 ### Relacionado
 
 * [Se esperaban  [!DNL Mixpanel] datos](../integrations/mixpanel-data.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -2,9 +2,9 @@
 title: Administración de dimensiones de datos
 description: Descubra qué es una dimensión y cómo se puede utilizar para filtrar o segmentar gráficos basados en una métrica.
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

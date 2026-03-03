@@ -2,9 +2,9 @@
 title: Conectar Google ECommerce
 description: Obtenga información sobre los canales de referencia más valorados.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Para identificar el identificador de perfil [!DNL Google Analytics] de un sitio 
 ## Relacionado:
 
 * [Se esperaban  [!DNL Google ECommerce] datos](../integrations/google-ecommerce-data.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Configurando [!DNL Google ECommerce] seguimiento](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Descubra sus fuentes y canales de adquisición más valiosos](../../analysis/most-value-source-channel.md)
 * [Aumente el retorno de la inversión en sus campañas publicitarias](../../analysis/roi-ad-camp.md)

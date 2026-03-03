@@ -2,9 +2,9 @@
 title: Operadores de filtros especiales
 description: Obtenga información sobre algunos operadores especiales que se utilizan en los filtros al crear un informe o una métrica.
 exl-id: 12837490-b9ca-4040-bb71-8988b5dde485
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%

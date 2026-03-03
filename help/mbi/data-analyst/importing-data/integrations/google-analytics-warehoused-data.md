@@ -2,9 +2,9 @@
 title: Datos esperados del Google Analytics Warehouse
 description: Aprenda a interactuar con los datos almacenados en Google Analytics.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%

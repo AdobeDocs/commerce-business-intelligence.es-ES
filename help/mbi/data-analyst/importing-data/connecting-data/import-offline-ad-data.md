@@ -2,9 +2,9 @@
 title: Importar otros datos de gasto en publicidad
 description: Aprenda a importar datos de gasto en publicidad sin conexión o de otro tipo en  [!DNL Commerce Intelligence].
 exl-id: 6f12a397-0927-4e87-95ff-3a55ccc9e14b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
@@ -19,7 +19,7 @@ La carga de los datos de gasto en publicidad le permite medir el retorno de la i
 
 El primer paso para analizar los datos de gasto en publicidad es obtener los datos. Dado que la mayoría de las plataformas de publicidad le permiten exportar informes, Adobe recomienda exportar los datos sin procesar de su plataforma de publicidad y cargarlos directamente en [!DNL Commerce Intelligence] sin ninguna manipulación. Puede realizar operaciones en los datos de su Data Warehouse, por lo que no es necesario duplicar los esfuerzos.
 
-Después de haber exportado los datos de gasto en publicidad, use la característica [`File Upload` &#x200B;](../connecting-data/using-file-uploader.md) para llevar los datos a Data Warehouse. Con el tiempo, puede cargar nuevos datos en la misma tabla [!DNL Commerce Intelligence].
+Después de haber exportado los datos de gasto en publicidad, use la característica [`File Upload` ](../connecting-data/using-file-uploader.md) para llevar los datos a Data Warehouse. Con el tiempo, puede cargar nuevos datos en la misma tabla [!DNL Commerce Intelligence].
 
 ## Fuentes sin conexión
 

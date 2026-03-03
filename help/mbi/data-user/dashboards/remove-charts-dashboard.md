@@ -2,9 +2,9 @@
 title: Quitar gráfico del panel
 description: Obtenga información sobre cómo quitar un gráfico de un panel.
 exl-id: 44116f15-92a5-43c9-8808-7902742508c9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: Datos de Spree esperados
 description: Explore las tablas de datos principales que puede importar desde Spree a su cuenta de  [!DNL Commerce Intelligence] name.
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -30,4 +30,4 @@ En este tema se exploran las tablas de datos principales que puede importar de [
 ## Relacionado:
 
 * [Conectando [!DNL Spree]](../integrations/spree.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

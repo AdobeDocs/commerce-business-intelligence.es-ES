@@ -2,9 +2,9 @@
 title: Almacenamiento de datos en Adobe Commerce
 description: Descubra cómo se generan los datos, qué hace que se inserte una nueva fila y cómo se registran las acciones en la base de datos de Adobe Commerce.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 2%

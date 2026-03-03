@@ -2,9 +2,9 @@
 title: Edición masiva de gráficos en paneles
 description: Aprenda a utilizar la característica de edición en lotes en  [!DNL Commerce Intelligence].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 La función de edición masiva facilita el cambio de nombres y fechas de gráficos en los paneles. Por ejemplo, desea que todos los gráficos de un tablero específico hagan referencia a un único almacén e informe con periodicidad mensual en lugar de trimestral. En lugar de cambiar todo manualmente, deje que la característica `bulk-editing` haga el trabajo. En este tema, aprenderá a utilizar lo siguiente:
 
-* [Función  [!DNL Find/Replace] &#x200B;](#findreplace)
+* [Función  [!DNL Find/Replace] ](#findreplace)
 
-* [Función  [!DNL Prepend Name] &#x200B;](#prepend)
+* [Función  [!DNL Prepend Name] ](#prepend)
 
-* [Función  [!DNL Change Dates] &#x200B;](#dates)
+* [Función  [!DNL Change Dates] ](#dates)
 
 Dicho esto, considere esto - *¿Es necesario que estos cambios sean permanentes?* Si no es así, considere la posibilidad de clonar el tablero y, a continuación, cambiar las fechas en el tablero nuevo. Esto le permite conservar su panel original mientras realiza los cambios que necesita.
 

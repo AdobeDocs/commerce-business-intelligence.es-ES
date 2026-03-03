@@ -2,9 +2,9 @@
 title: Datos esperados de Google Adwords
 description: Aprenda a utilizar el Administrador de Data Warehouse para rastrear fácilmente campos de datos relevantes para su análisis.
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
@@ -89,4 +89,4 @@ Con estos datos, puedes empezar a crear [métricas](../../../data-user/reports/e
 
 Si no tiene una tabla consolidada y crea un tablero hermoso en la tabla `adwords`, debe replicar el sistema de informes o crear métricas duplicadas para comparar esos datos con los datos de [!DNL Facebook Ads]. El uso de una tabla consolidada le permite incorporar sin problemas los datos de [!DNL Facebook Ads] con los informes de [!DNL Adwords] existentes. También puede segmentar por plataforma de publicidad.
 
-Si ya ha sincronizado los campos anteriores, [póngase en contacto con nosotros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para consolidar la inversión en publicidad.
+Si ya ha sincronizado los campos anteriores, [póngase en contacto con nosotros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para consolidar la inversión en publicidad.

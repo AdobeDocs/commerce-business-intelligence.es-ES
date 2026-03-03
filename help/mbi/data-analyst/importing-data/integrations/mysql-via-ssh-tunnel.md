@@ -2,9 +2,9 @@
 title: Conectando  [!DNL MySQL] a través del túnel SSH
 description: Aprenda a conectar  [!DNL MySQL] mediante el túnel SSH.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Conectar [!DNL MySQL] a través de [!DNL SSH Tunnel]
 
-* [Recuperar la clave pública  [!DNL Commerce Intelligence] &#x200B;](#retrieve)
-* [Permitir el acceso a la dirección IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+* [Recuperar la clave pública  [!DNL Commerce Intelligence] ](#retrieve)
+* [Permitir el acceso a la dirección IP  [!DNL Commerce Intelligence] ](#allowlist)
 * [Crear un usuario Linux para  [!DNL Commerce Intelligence]](#linux)
 * [Crear un [!DNL MySQL] usuario para [!DNL Commerce Intelligence]](#mysql)
 * [Escriba la conexión y la información de usuario en  [!DNL Commerce Intelligence]](#finish)
 
 ## SALTAR A
 
-* [[!DNL MySQL] mediante &#x200B;](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] mediante ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] a través de  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 Para conectar la base de datos [!DNL MySQL] a [!DNL Commerce Intelligence] a través de un `SSH tunnel`, debe hacer algunas cosas:
@@ -120,4 +120,4 @@ Cuando termine, haga clic en **[!UICONTROL Save & Test]** para completar la inst
 
 ## Relacionado:
 
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -2,9 +2,9 @@
 title: Información de datos del gráfico
 description: Aprenda a utilizar las opciones de Visualización en Visual Report Builder.
 exl-id: 865efc8b-1e1a-4033-9e42-cbd03b220260
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 0%

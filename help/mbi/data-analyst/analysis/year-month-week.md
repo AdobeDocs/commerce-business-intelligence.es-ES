@@ -2,9 +2,9 @@
 title: Informes anuales, mensuales y semanales
 description: Aprenda a ver fácilmente las tendencias a lo largo del tiempo y a cambiar la perspectiva de los períodos de tiempo que desee comparar.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Reports, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Este análisis contiene [columnas calculadas avanzadas](../data-warehouse-mgr/ad
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-mes&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char(A, &#39;hh24&#39;)**
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
      ![Crear interfaz de columna calculada en Data Warehouse Manager](../../assets/new-arch-create-calc.png)
 
 ## Métricas
@@ -64,10 +64,10 @@ Ninguna.
 * Métrica `A`: `This year`
 * Métrica `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **Gráfico MoM**
@@ -81,10 +81,10 @@ Ninguna.
 * Métrica `A`: este mes*
 * Métrica `B`: mes pasado*
 * [!UICONTROL Time period]: hace un mes hasta hace 0 meses
-* &#x200B;
+* 
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: Line
 
 * **Gráfico WoW**
@@ -98,10 +98,10 @@ Ninguna.
 * Métrica `A`: `This week`
 * Métrica `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **Gráfico DoD**
@@ -115,10 +115,10 @@ Ninguna.
 * Métrica `A`: `Today`
 * Métrica B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar a la imagen de la parte superior de esta página.

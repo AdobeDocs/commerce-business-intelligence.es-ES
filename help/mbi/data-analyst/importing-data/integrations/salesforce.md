@@ -2,9 +2,9 @@
 title: Conectar Salesforce
 description: Descubra cómo los datos de Salesforce permiten una amplia gama de análisis, desde puntuar y optimizar posibles clientes hasta alcanzar sus objetivos en busca de oportunidades convertidas.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
@@ -36,4 +36,4 @@ Al conectar los datos de [!DNL Salesforce], se permite una amplia gama de análi
 Si eres un poco más experto en tecnología, la [[!DNL Salesforce] Documentación de la API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) puede ser un recurso útil para obtener más información sobre cómo Salesforce está integrado con [!DNL Commerce Intelligence].
 
 * [Se esperaban  [!DNL Salesforce] datos](../integrations/salesforce-data.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
