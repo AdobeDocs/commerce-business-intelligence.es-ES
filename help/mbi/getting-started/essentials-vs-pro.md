@@ -1,10 +1,10 @@
 ---
 title: Commerce Intelligence Essentials frente a Pro
-description: Descubra en qué se diferencia Commerce Intelligence Essentials de Commerce Intelligence Pro.
+description: Aprenda cómo Commerce Intelligence Essentials difiere de Commerce Intelligence Pro.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+source-git-commit: ba64de148ad5b3fc44591a10531244cfe670a728
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 5%
@@ -20,13 +20,13 @@ En la tabla siguiente se describen los elementos incluidos con una cuenta hereda
 | `Pre-Defined Reports` | Hasta 100 | Personalizado |
 | `Pre-Defined Dashboards` | 5-6 | Personalizado |
 | `New Custom Report Creation` | Sí | Sí |
-| `Commerce Tables` | 4-6 | Ilimitado |
+| `Commerce Tables` | 4-6 | Sin límite |
 | `Log-ins/User Accounts` | 10 | 20 |
 | `User Permissions` | Sí | Sí |
 | `Data Warehouse Manager` | No disponible | Disponible |
 | `Email Reports` | Sí | Sí |
 | `Cohort Report Builder` | Sí | Sí |
-| `Google Analytics Live Integration` | Sí | Ilimitado |
+| `Google Analytics Live Integration` | Sí | Sin límite |
 | `3rd Party Integrations` | No disponible | Disponible |
 | `Full API Access` | No | Sí |
 | `Access to CS, AM, or Analysts` | No | Sí |
@@ -36,7 +36,7 @@ En la tabla siguiente se describen los elementos incluidos con una cuenta hereda
 
 >[!NOTE]
 >
->El número de mesas depende del pago y envío de los invitados.
+>El número de tablas depende de la desprotección de los invitados.
 
 **Tablas incluidas**
 
@@ -47,7 +47,7 @@ En la tabla siguiente se describen los elementos incluidos con una cuenta hereda
 * `customer\_group`
 * `store`
 
-<!---
+<!--
 ## Columns Included in Essentials
 
 Items in _italics_ are calculated fields.

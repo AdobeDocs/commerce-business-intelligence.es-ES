@@ -4,7 +4,7 @@ description: Aprenda con quién ponerse en contacto para activar su cuenta de  [
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+source-git-commit: ba64de148ad5b3fc44591a10531244cfe670a728
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Para crear su cuenta, póngase en contacto con el equipo de cuenta de Adobe o co
 
 Una vez creada la cuenta, busque en su correo electrónico un mensaje de notificación de cuenta de [!DNL The Magento BI Team@rjmetrics.com]. Use el vínculo proporcionado en el correo electrónico para obtener acceso a su cuenta de [!DNL Commerce Intelligence] y crear su contraseña. Vaya a la bandeja de entrada y verifique su dirección de correo electrónico.
 
-Si no recibió un correo electrónico, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si no recibió un correo electrónico, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ![Crear pantalla de contraseña para la nueva cuenta de Commerce Intelligence](../assets/create-account-4.png)
 
@@ -31,7 +31,7 @@ Si no recibió un correo electrónico, [comuníquese con la atención al cliente
 
 Antes de configurar la conexión a la base de datos, complete el formulario de información de almacenamiento. Esta información es necesaria para completar la configuración de **[!UICONTROL Connect your Database]**.
 
-![Almacenar formulario de información con campos de nombre de empresa, moneda y zona horaria](../assets/create-account-6.png)
+![Almacena información en el formulario con los campos de nombre de empresa, moneda y zona horaria](../assets/create-account-6.png)
 
 ## Agregar [!DNL Commerce Intelligence] usuarios
 
@@ -72,9 +72,9 @@ Después de crear el usuario dedicado para [!DNL Commerce Intelligence] en el Ad
 
 1. Desplácese hacia abajo y expanda la lista desplegable **[!UICONTROL SSH Keys]**. A continuación, seleccione **[!UICONTROL Add a public key]**.
 
-   ![Página de configuración de la cuenta con la sección Claves SSH y el botón Agregar clave pública](../assets/add-public-key.png)
+   ![Página de configuración de la cuenta con la sección Claves SSH y el botón Agregar una clave pública](../assets/add-public-key.png)
 
-1. Pegue la clave pública que copió en el paso [!DNL Encryption Type] anterior.
+1. Pegue la clave pública que copió en el paso anterior de [!DNL Encryption Type].
 
    ![Agregar formulario de clave pública con campo de texto de clave y botón Enviar](../assets/paste-public-key.png)
 
@@ -160,18 +160,20 @@ La IU del proyecto proporciona una cadena de acceso SSH. Esta cadena se puede us
 
 Después de completar los pasos de configuración, aplique los cambios seleccionando [!UICONTROL **Guardar integración**].
 
-Ahora ha conectado correctamente su base de datos [!DNL Commerce] a su cuenta [!DNL Commerce Intelligence].
+Ya ha conectado correctamente su base de datos de [!DNL Commerce] a su cuenta de [!DNL Commerce Intelligence].
 
 >[!NOTE]
 >
->Si es cliente de [!DNL Adobe Commerce Intelligence Pro], póngase en contacto con el administrador de éxito de los clientes o con el asesor técnico del cliente para coordinar los siguientes pasos.
+>Si es cliente de [!DNL Adobe Commerce Intelligence Pro], póngase en contacto con su administrador de éxito de clientes o con el asesor técnico del cliente para coordinar los pasos siguientes.
 
 Después de completar la configuración, [inicia sesión](../getting-started/sign-in.md) en tu cuenta de [!DNL Commerce Intelligence].
 
-<!---# Activate your [!DNL Commerce Intelligence] Account
+<!--
+# Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >
->Adobe no longer supports new `Cloud Starter` subscriptions.--->
+>Adobe no longer supports new `Cloud Starter` subscriptions.
+-->
