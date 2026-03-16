@@ -4,7 +4,7 @@ description: Aprenda con quién ponerse en contacto para activar su cuenta de  [
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+source-git-commit: ba64de148ad5b3fc44591a10531244cfe670a728
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
@@ -168,10 +168,12 @@ Ahora ha conectado correctamente su base de datos [!DNL Commerce] a su cuenta [!
 
 Después de completar la configuración, [inicia sesión](../getting-started/sign-in.md) en tu cuenta de [!DNL Commerce Intelligence].
 
-<!---# Activate your [!DNL Commerce Intelligence] Account
+<!--
+# Activate your [!DNL Commerce Intelligence] Account
 
 To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
 
 >[!NOTE]
 >
->Adobe no longer supports new `Cloud Starter` subscriptions.--->
+>Adobe no longer supports new `Cloud Starter` subscriptions.
+-->
