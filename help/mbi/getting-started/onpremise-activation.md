@@ -23,7 +23,7 @@ Para crear su cuenta, póngase en contacto con el equipo de cuenta de Adobe o co
 
 Una vez creada la cuenta, busque en su correo electrónico un mensaje de notificación de cuenta de [!DNL The Magento BI Team@rjmetrics.com]. Use el vínculo proporcionado en el correo electrónico para obtener acceso a su cuenta de [!DNL Commerce Intelligence] y crear su contraseña. Vaya a la bandeja de entrada y verifique su dirección de correo electrónico.
 
-Si no recibió un correo electrónico, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si no recibió un correo electrónico, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ![Crear pantalla de contraseña para la nueva cuenta de Commerce Intelligence](../assets/create-account-4.png)
 
@@ -31,7 +31,7 @@ Si no recibió un correo electrónico, [comuníquese con la atención al cliente
 
 Antes de configurar la conexión a la base de datos, complete el formulario de información de almacenamiento. Esta información es necesaria para completar la configuración de **[!UICONTROL Connect your Database]**.
 
-![Almacena información en el formulario con los campos de nombre de empresa, moneda y zona horaria](../assets/create-account-6.png)
+![Almacenar formulario de información con campos de nombre de empresa, moneda y zona horaria](../assets/create-account-6.png)
 
 ## Agregar [!DNL Commerce Intelligence] usuarios
 
@@ -72,9 +72,9 @@ Después de crear el usuario dedicado para [!DNL Commerce Intelligence] en el Ad
 
 1. Desplácese hacia abajo y expanda la lista desplegable **[!UICONTROL SSH Keys]**. A continuación, seleccione **[!UICONTROL Add a public key]**.
 
-   ![Página de configuración de la cuenta con la sección Claves SSH y el botón Agregar una clave pública](../assets/add-public-key.png)
+   ![Página de configuración de la cuenta con la sección Claves SSH y el botón Agregar clave pública](../assets/add-public-key.png)
 
-1. Pegue la clave pública que copió en el paso anterior de [!DNL Encryption Type].
+1. Pegue la clave pública que copió en el paso [!DNL Encryption Type] anterior.
 
    ![Agregar formulario de clave pública con campo de texto de clave y botón Enviar](../assets/paste-public-key.png)
 
@@ -160,18 +160,18 @@ La IU del proyecto proporciona una cadena de acceso SSH. Esta cadena se puede us
 
 Después de completar los pasos de configuración, aplique los cambios seleccionando [!UICONTROL **Guardar integración**].
 
-Ya ha conectado correctamente su base de datos de [!DNL Commerce] a su cuenta de [!DNL Commerce Intelligence].
+Ahora ha conectado correctamente su base de datos [!DNL Commerce] a su cuenta [!DNL Commerce Intelligence].
 
 >[!NOTE]
 >
->Si es cliente de [!DNL Adobe Commerce Intelligence Pro], póngase en contacto con su administrador de éxito de clientes o con el asesor técnico del cliente para coordinar los pasos siguientes.
+>Si es cliente de [!DNL Adobe Commerce Intelligence Pro], póngase en contacto con el administrador de éxito de los clientes o con el asesor técnico del cliente para coordinar los siguientes pasos.
 
 Después de completar la configuración, [inicia sesión](../getting-started/sign-in.md) en tu cuenta de [!DNL Commerce Intelligence].
 
 <!--
 # Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >
