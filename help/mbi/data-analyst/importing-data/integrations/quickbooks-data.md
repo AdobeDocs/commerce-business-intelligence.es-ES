@@ -79,4 +79,4 @@ Para ver todos los campos disponibles para el seguimiento, haga clic en los vín
 ## Relacionado:
 
 * [Conectando [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
