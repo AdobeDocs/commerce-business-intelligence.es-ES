@@ -4,9 +4,15 @@ description: Aprenda a importar los datos de gasto de publicidad de Bing en  [!D
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/66UAmNWDCkiflHxsq9X1MlkwEgzC5Cl1HfRirNd8AHM
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: 131
 ht-degree: 0%
 
 ---
@@ -26,4 +32,4 @@ Para exportar los datos de [!DNL Bing Ads], debe tener [!DNL Bing Ads Editor] in
 1. En el cuadro de diálogo `Save As`, haga clic en la carpeta en la que desea guardar el archivo de exportación.
 1. En el cuadro `File name`, elija un nombre para la exportación de archivos.
 1. Haga clic en **[!UICONTROL Save]**.
-1. Una vez descargado el archivo, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para realizar una primera carga en su nombre y configurar las dimensiones de back-end necesarias.
+1. Una vez descargado el archivo, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para realizar una primera carga en su nombre y configurar las dimensiones de back-end necesarias.

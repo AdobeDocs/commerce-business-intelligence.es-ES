@@ -4,9 +4,15 @@ description: Aprenda a configurar un tablero que le ayude a definir la pérdida 
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/eDJBh7FlhuKjBa5ft4sqAfZavmBk4V9m-Iu-26cG2VI
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: 482
 ht-degree: 0%
 
 ---
@@ -69,27 +75,27 @@ No hay métricas nuevas.
 * [!UICONTROL Metric]: número de pedidos
 
 * [!UICONTROL Formula]: probabilidad de orden repetido inicial
-* &#x200B;
+* 
   [!UICONTROL Fórmula]: `A/B`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Scalar`
 
 * **Probabilidad de repetición de pedido dada meses desde la solicitud**
 * Métrica A: Repetir pedidos por meses desde el pedido anterior (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
-* &#x200B;
+* 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Métrica B: últimos pedidos por meses desde el pedido (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
-* &#x200B;
+* 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +103,29 @@ No hay métricas nuevas.
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Independent`
 
 * ID de métrica: últimos pedidos permanentes (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Independent`
 
 * [!UICONTROL Formula]: probabilidad de orden repetido inicial
-* &#x200B;
+* 
   [!UICONTROL Fórmula]: `(C-A)/(C+D-A-B)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Mostrar top.bottom: Las 24 categorías principales, ordenadas por nombre de categoría
 
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 El informe de probabilidad de pedido repetido inicial representa el total de pedidos repetidos/total de pedidos. Cada pedido es una oportunidad para hacer un pedido repetido; el número de pedidos repetidos es el subconjunto de los que realmente lo hacen.
@@ -132,4 +138,4 @@ Una vez que haya creado su panel, la pregunta más común es: ¿Cómo utilizo es
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar a la imagen de la parte superior de la página
 
-Si tiene alguna pregunta al generar este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si tiene alguna pregunta al generar este análisis o simplemente desea contactar con el equipo de Servicios profesionales, [póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

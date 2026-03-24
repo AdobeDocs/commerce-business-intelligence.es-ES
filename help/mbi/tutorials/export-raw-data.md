@@ -4,16 +4,22 @@ description: Aprenda a exportar registros de su  [!DNL Commerce Intelligence] Da
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/8n0DUwkiI1BVF5612vCd4jFWx7jwWlfOHg2K3hgWkco
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: 491
 ht-degree: 0%
 
 ---
 
 # Exportar datos sin procesar
 
-Con las exportaciones de datos sin procesar, puede exportar registros de su Data Warehouse para obtener una visión más detallada de lo que alimenta su panel. Además, las exportaciones de datos sin procesar pueden ayudarle a [identificar discrepancias en los datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=es).
+Con las exportaciones de datos sin procesar, puede exportar registros de su Data Warehouse para obtener una visión más detallada de lo que alimenta su panel. Además, las exportaciones de datos sin procesar pueden ayudarle a [identificar discrepancias en los datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
 Las exportaciones de datos sin procesar proporcionan acceso a columnas y dimensiones adicionales generadas mediante la desnormalización y la agregación previa de métricas relevantes. Por ejemplo, `User's first order date` es una dimensión que puede exportar para cada usuario en [!DNL Commerce Intelligence], aunque es posible que no esté disponible en la base de datos.
 
@@ -34,7 +40,7 @@ Existen dos maneras de exportar datos sin procesar en [!DNL Commerce Intelligenc
 
 Si desea exportar la tabla desde la ficha [!UICONTROL Manage Data], necesita los permisos de [Admin](../administrator/user-management/user-management.md).
 
-1. Haga clic en **[!UICONTROL Manage Data** > **&#x200B; Exportar datos &#x200B;**> **Exportación de datos sin procesar]**.
+1. Haga clic en **[!UICONTROL Manage Data** > ** Exportar datos **> **Exportación de datos sin procesar]**.
 1. Verá un(a) `Export List` de exportaciones de datos creadas recientemente, si las hay. Haga clic en **[!UICONTROL Add Export]** para crear una exportación.
 1. Se muestra el cuadro de diálogo `New Raw Data Export`. Aquí puede personalizar la exportación seleccionando o anulando la selección de columnas y filtros:
 

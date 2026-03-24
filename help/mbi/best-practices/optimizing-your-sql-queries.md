@@ -4,9 +4,15 @@ description: Aprenda a optimizar las consultas SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/wYrIvoh63fWYcfJZ-JyesyNzaYNExbBnHE3-JnvJ0FQ
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: 826
 ht-degree: 0%
 
 ---
@@ -15,7 +21,7 @@ ht-degree: 0%
 
 El [!DNL SQL Report Builder] le permite ejecutar y cambiar las consultas cuando lo desee. Esta capacidad es útil si necesita actualizar una consulta de inmediato, en lugar de esperar a que termine un ciclo de actualización antes de corregir una columna o un informe.
 
-Antes de ejecutar una consulta, [[!DNL Commerce Intelligence] calcula su costo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=es). El coste tiene en cuenta el tiempo y el número de recursos necesarios para ejecutar una consulta. Si se considera que ese costo es demasiado alto o si el número de filas devueltas supera los límites de [!DNL Commerce Intelligence], la consulta falla. Para consultar [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), que te asegura que escribes las consultas más optimizadas posibles, Adobe recomienda lo siguiente.
+Antes de ejecutar una consulta, [[!DNL Commerce Intelligence] calcula su costo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). El coste tiene en cuenta el tiempo y el número de recursos necesarios para ejecutar una consulta. Si se considera que ese costo es demasiado alto o si el número de filas devueltas supera los límites de [!DNL Commerce Intelligence], la consulta falla. Para consultar [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), que te asegura que escribes las consultas más optimizadas posibles, Adobe recomienda lo siguiente.
 
 ## Uso de SELECT o Selección de todas las columnas
 

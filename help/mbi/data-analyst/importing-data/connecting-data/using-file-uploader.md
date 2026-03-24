@@ -4,9 +4,15 @@ description: Aprenda a colocar todos los datos en una sola Data Warehouse.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/pdmp5wyeWdjrebZlZ9j4u3OJBb-LpADk6Uib-bWy1Vc
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: 1293
 ht-degree: 0%
 
 ---
@@ -24,7 +30,7 @@ Utilice campañas de publicidad como ejemplo. Si está ejecutando campañas en l
 ## Restricciones y requisitos {#require}
 
 1. **El único formato admitido para las cargas de archivos es `CSV` o`comma separated values`**. Si está trabajando en Excel, puede utilizar la función Guardar como para guardar el archivo en formato `.csv`.
-1. **`CSV`archivos deben usar`UTF-8 encoding`**. La mayoría de las veces, esto no es un problema. Si encuentra este error al cargar un archivo, [consulte este artículo de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=es).
+1. **`CSV`archivos deben usar`UTF-8 encoding`**. La mayoría de las veces, esto no es un problema. Si encuentra este error al cargar un archivo, [consulte este artículo de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Los archivos no pueden tener más de 100 MB**. Si el archivo es más grande que este, separe la tabla en fragmentos y guárdela como archivos individuales. Puede anexar los datos después de cargar el archivo inicial.
 1. **Todas las tablas deben tener`primary key`**. Debe haber al menos una columna en la tabla que se pueda usar como `primary key` o un identificador único para cada fila de la tabla. Cualquier columna designada como `primary key` puede *nunca* ser nula. Un `primary key` puede ser tan simple como agregar una columna que da un número a cada fila, o puede ser dos columnas concatenadas para crear una columna de valores únicos (por ejemplo, `campaign name` y `date`).
 

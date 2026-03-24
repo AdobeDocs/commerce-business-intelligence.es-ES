@@ -4,9 +4,14 @@ description: Obtenga información sobre algunos informes que puede utilizar para
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/aV7qVf-LREVyXEtR2EMJqRSTo-rvfzLIwuulccXrqzE
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: 974
 ht-degree: 0%
 
 ---
@@ -15,7 +20,7 @@ ht-degree: 0%
 
 Investigaste tu audiencia, creaste tu campaña, invertiste en algunos canales de marketing. Ahora que ha pasado algún tiempo, ¿cómo van esos canales? ¿Qué canal ha atraído a la mayoría de los usuarios nuevos? ¿Qué fuente ha contribuido más a sus ingresos totales?
 
-Con [!DNL Adobe Commerce Intelligence], puede segmentar fácilmente sus ingresos y usuarios por origen de referencia, ya corresponda a [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) o a campos de datos personalizados. Esta segmentación le permite encontrar los canales con mejor rendimiento e invertir mejor su presupuesto de marketing.
+Con [!DNL Adobe Commerce Intelligence], puede segmentar fácilmente sus ingresos y usuarios por origen de referencia, ya corresponda a [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) o a campos de datos personalizados. Esta segmentación le permite encontrar los canales con mejor rendimiento e invertir mejor su presupuesto de marketing.
 
 En este tema se exploran algunos informes que puede utilizar para descubrir los canales de marketing más valiosos:
 
@@ -118,6 +123,6 @@ En este tema se han mencionado algunos análisis que puede utilizar para analiza
 ## Relacionado {#related}
 
 * [Origen de referencia de pedido de seguimiento mediante  [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)
-* [Conectando tu cuenta de  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
+* [Conectando tu cuenta de  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
 * [Creando  [!DNL Google ECommerce] dimensiones con pedidos y datos de clientes](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Prácticas recomendadas para el etiquetado UTM en  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

@@ -4,9 +4,15 @@ description: Conozca y comprenda los lapsos de tiempo entre pedidos y cuándo se
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/p0WjloeysJZRLnR9F4CoYLXcNP9AGmfW-D56T0N3jjU
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: 952
 ht-degree: 0%
 
 ---
@@ -78,7 +84,7 @@ Después de crear el análisis anterior y determinar un umbral de pérdida, pued
 
 Si ofrece más de un producto, probablemente se pregunte cómo los clientes que compran un producto específico se comportan de forma diferente a lo largo del tiempo en comparación con otros clientes. ¿Quiere saber más? Consulte este tutorial para explorar el comportamiento de compra de por vida de las cohortes de clientes en función de los productos específicos que han comprado.
 
-Esta práctica recomendada la proporciona [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para obtener más información.
+Esta práctica recomendada la proporciona [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obtener más información.
 
 ### Relacionado
 

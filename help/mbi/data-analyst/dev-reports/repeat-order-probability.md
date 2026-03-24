@@ -4,9 +4,15 @@ description: Conozca y comprenda el Informe de Probabilidad de Pedidos Repetidos
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/MW9jxiwitZyjc6-woelN-FOAmvEFPCWDt01wyTOX16k
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: 343
 ht-degree: 0%
 
 ---
@@ -25,7 +31,7 @@ Si agregó un filtro que utiliza una dimensión que no es igual para todos los p
 
 En determinados casos, es posible que pueda convertir una dimensión `order-specific` en una dimensión `user-specific` para agregarla como filtro en el gráfico `Repeat Order Probability`. En estos casos, se devuelve el atributo order del primer pedido o del último pedido de un usuario (por ejemplo, el nombre de región de primer pedido del usuario).
 
-Si desea crear una dimensión nueva de este tipo, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si desea crear una dimensión nueva de este tipo, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Comparación de la probabilidad de repetición de pedidos con atributos diferentes
 

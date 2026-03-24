@@ -4,9 +4,15 @@ description: Obtenga información sobre cómo analizar el impacto de los cupones
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+TQID: https://experienceleague.adobe.com/eILs8O8m45IOVLRYERopvcugIawdQ3c1YGTxr11W3mo
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: 1382
 ht-degree: 1%
 
 ---
@@ -151,4 +157,4 @@ El mayor número de clientes se adquirió a través del cupón de &quot;20% de d
 
 ## Ajuste {#wrapup}
 
-Puede crear multitud de análisis para comprender mejor cómo utilizan los cupones sus clientes. ¿Ha pensado alguna vez en analizar cómo utilizan sus clientes los cupones o el tiempo que tardan en utilizarlos? ¿Qué sucede si se busca la cantidad de descuento óptima: qué cantidad anima a los compradores que repiten, un valor de pedido promedio más alto y mayores ingresos por duración? Para obtener ayuda con este tipo de preguntas, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Puede crear multitud de análisis para comprender mejor cómo utilizan los cupones sus clientes. ¿Ha pensado alguna vez en analizar cómo utilizan sus clientes los cupones o el tiempo que tardan en utilizarlos? ¿Qué sucede si se busca la cantidad de descuento óptima: qué cantidad anima a los compradores que repiten, un valor de pedido promedio más alto y mayores ingresos por duración? Para obtener ayuda con este tipo de preguntas, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

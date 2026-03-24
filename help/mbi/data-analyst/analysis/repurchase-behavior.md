@@ -4,9 +4,15 @@ description: Obtenga información sobre cómo analizar el comportamiento de las 
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+TQID: https://experienceleague.adobe.com/AM-l7yCwm00r5uqmqD-z34GN3rubycbTnWeTQ4oHI8k
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: 849
 ht-degree: 0%
 
 ---
@@ -82,4 +88,4 @@ Además de analizar el comportamiento de recompra de sus clientes, también pued
 
 Una vez que haya identificado por qué se produce la pérdida, puede utilizar el análisis para generar una campaña `reactivation`. Con estos datos, puede identificar a los usuarios que se han vuelto inactivos, cuánto tiempo ha pasado desde su última visita, cuál fue su última compra, etc. Esto le permite tomar decisiones procesables que atraen a sus clientes a regresar.
 
-Para obtener ayuda con el análisis, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Para obtener ayuda con el análisis, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
