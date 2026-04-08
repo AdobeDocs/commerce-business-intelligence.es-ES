@@ -5,21 +5,12 @@ exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/ofPlk5xNr8aspjFlpzEtDtjcOPm9DrQFYX9-vPDfK6w
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: ad4dda927f0b1b2eba9596d7adfd1419676cf03d
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -38,11 +29,11 @@ Cada fila de la tabla `enterprise_rma` (denominada a menudo `magento_rma` en Ado
 
 | **Nombre de columna** | **Descripción** |
 |---|---|
-| `entity\_id` | Identificador único de la tabla. Cada `entity\_id` representa una solicitud de retorno. |
-| `date\_requested` | La fecha en la que se solicitó la devolución. |
+| `entity_id` | Identificador único de la tabla. Cada `entity_id` representa una solicitud de retorno. |
+| `date_requested` | La fecha en la que se solicitó la devolución. |
 | `status` | El estado de la devolución. Los valores incluyen &quot;recibido&quot;, &quot;pendiente&quot;, &quot;autorizado&quot;, entre otros. |
-| `order\_id` | Clave externa asociada con la tabla `sales\_flat\_order`. |
-| `customer\_id` | Clave externa asociada con la tabla `customer\_entity`. |
+| `order_id` | Clave externa asociada con la tabla `sales_flat_order`. |
+| `customer_id` | Clave externa asociada con la tabla `customer_entity`. |
 
 {style="table-layout:auto"}
 
@@ -50,9 +41,9 @@ Cada fila de la tabla `enterprise_rma` (denominada a menudo `magento_rma` en Ado
 
 | **Nombre de columna** | **Descripción** |
 |---|---|
-| `Order's created\_at` | Esta es la fecha del pedido original. Esto se puede utilizar para obtener el tiempo entre el pedido y la solicitud de devolución. |
+| `Order's created_at` | Esta es la fecha del pedido original. Esto se puede utilizar para obtener el tiempo entre el pedido y la solicitud de devolución. |
 | `Customer's order number` | Número de pedido del cliente asociado con el pedido original. |
-| `Seconds between order's created\_at and return's date\_requested` | El número de segundos desde la fecha de pedido hasta la solicitud de devolución. |
+| `Seconds between order's created_at and return's date_requested` | El número de segundos desde la fecha de pedido hasta la solicitud de devolución. |
 | `Return's total value` | Es la cantidad monetaria total que se devuelve. Es la suma del importe de devolución individual de cada artículo de devolución. |
 
 {style="table-layout:auto"}
@@ -61,9 +52,9 @@ Cada fila de la tabla `enterprise_rma` (denominada a menudo `magento_rma` en Ado
 
 | **Nombre de métrica** | **Descripción** | **Construcción** |
 |---|---|---|
-| `Number of returns` | El número de devoluciones solicitadas. | `Operation` columna: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Columna: `date requested` |
+| `Number of returns` | El número de devoluciones solicitadas. | `Operation` columna: `entity_id`<br>`Operation`: `Count`<br>`Timestamp` Columna: `date requested` |
 | `Total returned amount` | El importe monetario total devuelto. | `Operation `Columna: `Return's total value`<br>`Operation`: Sum<br>`Timestamp` Columna: fecha solicitada |
-| `Average returned amount` | El importe monetario promedio devuelto. | `Operation` ` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Columna: `date requested` |
+| `Average returned amount` | El importe monetario promedio devuelto. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Columna: `date requested` |
 | `Average time to return` | El tiempo promedio desde el pedido hasta la devolución. | Columna `Operation`: segundos entre la fecha de creación del pedido y la fecha de devolución solicitada<br>`Operation`: `Average`<br>`Timestamp` Columna: `date requested` |
 
 {style="table-layout:auto"}
