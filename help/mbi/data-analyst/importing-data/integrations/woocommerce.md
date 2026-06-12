@@ -40,5 +40,5 @@ La base de datos [!DNL WooCommerce] se basa en [!DNL MySQL], puede conectarla a 
 
 ## Relacionado:
 
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
 * [Dimensiones de datos recomendadas para la segmentación y el filtrado](../../../best-practices/segment-filter.md)

@@ -124,4 +124,4 @@ Incluya el nombre de la conexión, la hora aproximada del último **[!UICONTROL 
 * [Conectar MySQL a través del túnel SSH](mysql-via-ssh-tunnel.md)
 * [Conexión de MongoDB a través del túnel SSH](mongodb-via-ssh-tunnel.md)
 * [Conectar PostgreSQL a través del túnel SSH](postgresql.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
