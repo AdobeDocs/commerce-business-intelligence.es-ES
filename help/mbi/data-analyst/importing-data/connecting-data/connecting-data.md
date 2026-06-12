@@ -5,27 +5,14 @@ exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 TQID: https://experienceleague.adobe.com/WwUCbK9dC39RSVL8Nf0PdL10wAdxje-9deR20JScqj0
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 567
+source-wordcount: 628
 ht-degree: 0%
 
 ---
@@ -56,7 +43,7 @@ Hay cuatro maneras de obtener los datos en [!DNL Commerce Intelligence]: conecta
 
 [!DNL Commerce Intelligence] admite bases de datos basadas en SQL y NoSQL como [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [Microsoft SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md) y [PostgreSQL](../integrations/postgresql.md).
 
-Aunque puede conectar directamente la base de datos a [!DNL Commerce Intelligence] mediante las credenciales de la base de datos, Adobe recomienda utilizar un método de cifrado probado, como un túnel SSH. Esto garantiza que los datos permanezcan seguros a medida que avanzan hacia el Data Warehouse.
+Aunque puede conectar directamente la base de datos a [!DNL Commerce Intelligence] mediante las credenciales de la base de datos, Adobe recomienda utilizar un método de cifrado probado, como un túnel SSH. Esto garantiza que los datos permanezcan seguros a medida que avanzan hacia el Data Warehouse. Para obtener información sobre la inscripción, los errores y la solución de problemas en la clave de host SSH, consulte [Verificación de la clave de host SSH](../integrations/ssh-host-key-verification.md).
 
 Según el método de conexión y el tipo de base de datos, puede ser necesario contar con algunos conocimientos técnicos para completar la configuración.
 
@@ -84,12 +71,12 @@ Para obtener más información sobre cómo empezar a usar `Import API`, consulte
 
 Para agregar una integración, haga clic en **[!UICONTROL Manage Data** > **Connections]** y luego en **[!UICONTROL Add a New Data Source]**. Haga clic en el icono de la integración que desee añadir y siga las instrucciones de los temas de ayuda para configurar las cosas:
 
-* [Preguntas frecuentes sobre la integración](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [Disponible &#x200B;](../integrations/integrations.md)
+* [Preguntas frecuentes sobre integración](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
+* [Integraciones disponibles de `SaaS` y `database`](../integrations/integrations.md)
 * [Consolidación de tablas](../../../best-practices/consolidating-your-tables.md)
 * [Restricción del acceso a la base de datos](../../../administrator/account-management/restrict-db-access.md)
 
-**¿No ve la integración que desea?** Algunas integraciones deben activarse para que sean visibles en su cuenta. Si está buscando algo como [!DNL Facebook] pero no aparece en la lista, [envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+**¿No ve la integración que desea?** Algunas integraciones deben activarse para que sean visibles en su cuenta. Si está buscando algo como [!DNL Facebook] pero no aparece en la lista, [envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Si ves un estado de error para una integración**, consulta la [sección de solución de problemas](https://support.magento.com/hc/en-us/sections/360003078151) para obtener ayuda.
 
