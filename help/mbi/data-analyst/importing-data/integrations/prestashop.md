@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 87
+source-wordcount: 97
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ¿Quiere ver el rendimiento de su empresa o encontrar las fuentes y canales de adquisición más valiosos? Si conecta sus datos de [!DNL PrestaShop] a [!DNL Commerce Intelligence], podrá responder a estas preguntas y mucho más.
 
-La base de datos [!DNL PrestaShop] se basa en [!DNL MySQL], puede conectarla a [!DNL Commerce Intelligence] a través de una [conexión directa](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) o [a través de un `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobe recomienda utilizar el método `SSH`, ya que es el más seguro.
+La base de datos [!DNL PrestaShop] se basa en [!DNL MySQL], puede conectarla a [!DNL Commerce Intelligence] a través de una [conexión directa](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) o [a través de un `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobe recomienda utilizar el método `SSH`, ya que es el más seguro. Para la verificación de la clave de host SSH, consulte [Verificación de la clave de host SSH](../integrations/ssh-host-key-verification.md).
 
 ## Documentación relacionada
 

@@ -22,9 +22,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: b6ae8fb1a1a7f30e3d56740986f9366e7d1e7f1a
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 732
+source-wordcount: 761
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Obtener la información de conexión de base de datos a la base de datos [!DNL C
 
 >[!NOTE]
 >
->Adobe recomienda encarecidamente que utilice un túnel [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) para establecer la conexión con la base de datos. Sin embargo, si este método no es una opción, aún puede vincular [!DNL Commerce Intelligence] a su base de datos con un [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md).
+>Adobe recomienda encarecidamente que utilice un túnel [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) para establecer la conexión con la base de datos. Para obtener información sobre la inscripción, los errores y la solución de problemas en la clave de host SSH, consulte [Verificación de la clave de host SSH](../data-analyst/importing-data/integrations/ssh-host-key-verification.md). Sin embargo, si este método no es una opción, aún puede vincular [!DNL Commerce Intelligence] a su base de datos con un [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md).
 
 Escriba su información de [!DNL Commerce Intelligence] en la pantalla de [!UICONTROL Connect your Magento Database].
 

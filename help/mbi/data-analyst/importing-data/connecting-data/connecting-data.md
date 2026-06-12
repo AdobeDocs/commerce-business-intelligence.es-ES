@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 567
+source-wordcount: 628
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Hay cuatro maneras de obtener los datos en [!DNL Commerce Intelligence]: conecta
 
 [!DNL Commerce Intelligence] admite bases de datos basadas en SQL y NoSQL como [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [Microsoft SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md) y [PostgreSQL](../integrations/postgresql.md).
 
-Aunque puede conectar directamente la base de datos a [!DNL Commerce Intelligence] mediante las credenciales de la base de datos, Adobe recomienda utilizar un método de cifrado probado, como un túnel SSH. Esto garantiza que los datos permanezcan seguros a medida que avanzan hacia el Data Warehouse.
+Aunque puede conectar directamente la base de datos a [!DNL Commerce Intelligence] mediante las credenciales de la base de datos, Adobe recomienda utilizar un método de cifrado probado, como un túnel SSH. Esto garantiza que los datos permanezcan seguros a medida que avanzan hacia el Data Warehouse. Para obtener información sobre la inscripción, los errores y la solución de problemas en la clave de host SSH, consulte [Verificación de la clave de host SSH](../integrations/ssh-host-key-verification.md).
 
 Según el método de conexión y el tipo de base de datos, puede ser necesario contar con algunos conocimientos técnicos para completar la configuración.
 
@@ -84,8 +84,8 @@ Para obtener más información sobre cómo empezar a usar `Import API`, consulte
 
 Para agregar una integración, haga clic en **[!UICONTROL Manage Data** > **Connections]** y luego en **[!UICONTROL Add a New Data Source]**. Haga clic en el icono de la integración que desee añadir y siga las instrucciones de los temas de ayuda para configurar las cosas:
 
-* [Preguntas frecuentes sobre la integración](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [Disponible &#x200B;](../integrations/integrations.md)
+* [Preguntas frecuentes sobre integración](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
+* [Integraciones disponibles de `SaaS` y `database`](../integrations/integrations.md)
 * [Consolidación de tablas](../../../best-practices/consolidating-your-tables.md)
 * [Restricción del acceso a la base de datos](../../../administrator/account-management/restrict-db-access.md)
 

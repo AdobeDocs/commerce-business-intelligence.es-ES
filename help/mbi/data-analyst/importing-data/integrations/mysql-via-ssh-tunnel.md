@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 615
+source-wordcount: 642
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## SALTAR A
 
-* [[!DNL MySQL] mediante &#x200B;](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] a través de `direct connection`](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] a través de  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 Para conectar la base de datos [!DNL MySQL] a [!DNL Commerce Intelligence] a través de un `SSH tunnel`, debe hacer algunas cosas:
@@ -133,6 +133,11 @@ En la sección `SSH Connection`:
 
 Cuando termine, haga clic en **[!UICONTROL Save & Test]** para completar la instalación.
 
-## Relacionado:
+>[!NOTE]
+>
+>Para la inscripción, actualización, mensajes de error y solución de problemas de la clave de host SSH, consulte [Verificación de la clave de host SSH](ssh-host-key-verification.md).
 
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+## Relacionado {#related}
+
+* [Verificación de la clave del host SSH](ssh-host-key-verification.md)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
