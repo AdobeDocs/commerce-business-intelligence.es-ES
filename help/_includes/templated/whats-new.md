@@ -1,8 +1,8 @@
 ---
-source-git-commit: 1d032e6adcc2034188ac0623a1da6a9bd61c4b5b
+source-git-commit: 93cbb095917b7c150295f7da32fc5aaed31db4b2
 workflow-type: tm+mt
-source-wordcount: '34'
-ht-degree: 5%
+source-wordcount: '84'
+ht-degree: 3%
 
 ---
 # Novedades de la plantilla
@@ -11,4 +11,24 @@ ht-degree: 5%
 
 Esta sección contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
 
-__No hay actualizaciones de documentación significativas hasta el momento.__
+### 12 de junio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Nuevos documentos sobre el tema <a href="https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">Verificación de la clave de host SSH</a>: guardar y probar la inscripción, actualizar las claves de host SSH, el comportamiento de la migración, la resolución de errores y cuándo ponerse en contacto con el soporte técnico. Los temas sobre la integración del túnel SSH ahora se vinculan a esta guía.</p>
+</td>
+      <td>
+        Comentarios
+      </td>
+      <td><a href="enterprise:Adobe-Enterprise-Docs/commerce-business-intelligence.en/pull/119">solicitud de extracción</a></td>
+    </tr>
+  </tbody>
+</table>
