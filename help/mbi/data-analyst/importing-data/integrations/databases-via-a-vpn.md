@@ -5,22 +5,12 @@ exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/0B7swwGIgBemitnx8Q4tyN8VtqwzcA-DYZdXHqzyNAk
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
 source-wordcount: 414
 ht-degree: 0%
@@ -31,9 +21,9 @@ ht-degree: 0%
 
 Aunque Adobe recomienda conectar las bases de datos mediante `SSH tunnel`, también puede usar una conexión cifrada de `VPN` para mantener las cosas seguras. Para la inscripción de claves de host SSH, los errores y la solución de problemas en las conexiones de túnel SSH, consulte [Verificación de la clave de host SSH](ssh-host-key-verification.md). Se puede usar un `VPN` para cualquiera de las integraciones de la base de datos y, para que todo sea sencillo, el proceso es casi el mismo que configurar un `SSH tunnel`:
 
-1. [Crear un usuario de base de datos  [!DNL Commerce Intelligence] &#x200B;](#database)
+1. [Crear un usuario de base de datos  [!DNL Commerce Intelligence] ](#database)
 1. [Crear un usuario de  [!DNL Commerce Intelligence] VPN](#vpn)
-1. [Permitir el acceso a la dirección IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+1. [Permitir el acceso a la dirección IP  [!DNL Commerce Intelligence] ](#allowlist)
 1. [Introduzca la conexión y la información de usuario de VPN en Commerce Intelligence](#finish)
 
 Además de las credenciales de la base de datos, debe introducir las credenciales de un usuario de VPN para ajustar las cosas. Cualquier usuario de VPN funciona, pero Adobe recomienda crear un usuario de [!DNL Commerce Intelligence], ya que le facilita el seguimiento de los usuarios de su cuenta.
@@ -83,3 +73,4 @@ En la sección `Encryption Connection`:
 * `Password`: la contraseña de usuario [!DNL Commerce Intelligence] `VPN`
 
 Cuando termine, haga clic en **[!UICONTROL Save & Test]** para completar la instalación.
+
