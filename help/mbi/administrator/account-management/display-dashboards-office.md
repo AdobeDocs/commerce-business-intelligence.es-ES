@@ -18,9 +18,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 220
+source-wordcount: 229
 ht-degree: 0%
 
 ---
@@ -40,3 +40,4 @@ Esta es la lista recomendada de las cosas que necesita para la opción:
 1. **Extensión de explorador que gira entre varias fichas a la vez.** Esto le permite configurar cualquier panel seleccionado que se muestre en una pestaña única. Adobe recomienda la extensión [Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) si usa [!DNL Chrome].
 
 Una vez que tenga el hardware anterior, puede abrir una ventana del explorador en la pantalla con un tablero específico que desee mostrar en cada pestaña. Finalmente, configure el explorador para que gire a través de cada panel con la frecuencia deseada.
+
