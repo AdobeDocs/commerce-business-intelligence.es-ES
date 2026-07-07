@@ -23,7 +23,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
 workflow-type: tm+mt
 source-wordcount: 877
 ht-degree: 0%
@@ -490,4 +490,5 @@ Sin embargo, los usuarios pueden ver los datos del panel filtrados según los al
 [!DNL Advanced User Management] amplía las capacidades de filtrado de datos a los resúmenes de correo electrónico. Según la audiencia, los usuarios administradores pueden especificar grupos de usuarios para los que se deben filtrar los informes seleccionados.
 
 ![Programar resumen de correo electrónico](../../assets/schedule-email-summary.png)
+
 
