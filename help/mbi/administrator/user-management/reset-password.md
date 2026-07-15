@@ -1,7 +1,6 @@
 ---
 title: Restablecer contraseña
 description: Obtenga información sobre cómo restablecer la contraseña de un usuario.
-exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
 role: Admin, User
 feature: User Management
 product_v2:
@@ -19,12 +18,14 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
-source-wordcount: 88
+source-wordcount: 89
 ht-degree: 0%
 
 ---
+
 
 # Restablecer la contraseña
 
@@ -32,6 +33,4 @@ Para restablecer su contraseña, haga clic en **[!UICONTROL Reset Password]** de
 
 Además, puede cambiar la contraseña dentro de [!DNL Commerce Intelligence] mediante la página **[!UICONTROL Personal Settings]**.
 
-Si restableces tu contraseña y permaneces bloqueado en tu cuenta, sigue [estas sugerencias](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=es) para ayudar a identificar el problema.
-
-
+Si restableces tu contraseña y permaneces bloqueado en tu cuenta, sigue [estas sugerencias](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout) para ayudar a identificar el problema.

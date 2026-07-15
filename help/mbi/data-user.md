@@ -1,7 +1,6 @@
 ---
 title: Usuario de datos
 description: Aprenda a utilizar los datos para tomar decisiones comerciales más informadas, así como a crear informes y paneles.
-exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/-sqS1qaDbWwGY2Hy13sSqw4sdnxZYGQqiEn5wVcF5lo
@@ -20,18 +19,21 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
+source-git-commit: 1e8d1a7b6807eb23a7784133ca2d1aea219386b7
 workflow-type: tm+mt
 source-wordcount: 86
 ht-degree: 0%
 
 ---
 
+
 # Usuario de datos
 
 Los datos se utilizan para tomar decisiones comerciales. Puede recibir informes y paneles de un analista de datos de su equipo, pero también desea aprender a crear esos informes y paneles.
 
 Esta sección muestra cómo:
+
 * adquirir y mostrar datos en [!DNL Commerce Intelligence] mediante informes y paneles
 * compartir esos datos con las partes interesadas mediante correo electrónico y `.csv` archivos
 
@@ -40,5 +42,3 @@ Esta sección muestra cómo:
 * [Creación de informes](../mbi/data-user/reports/rpt-fundamentals.md)
 * [Generación de paneles](../mbi/data-user/dashboards/ess-dashboards.md)
 * [Compartir datos](../mbi/data-user/export-data/share-data.md)
-
-
