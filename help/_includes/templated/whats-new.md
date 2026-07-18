@@ -23,7 +23,7 @@ Esta sección contiene los cambios realizados en los últimos 60 días. Excluimo
   </thead>
   <tbody>
     <tr>
-      <td><p>Nuevos documentos sobre el tema <a href="https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">Verificación de la clave de host SSH</a>: guardar y probar la inscripción, actualizar las claves de host SSH, el comportamiento de la migración, la resolución de errores y cuándo ponerse en contacto con el soporte técnico. Los temas sobre la integración del túnel SSH ahora se vinculan a esta guía.</p>
+      <td><p>Nuevos documentos sobre el tema <a href="https://experienceleague.adobe.com/es/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">Verificación de la clave de host SSH</a>: guardar y probar la inscripción, actualizar las claves de host SSH, el comportamiento de la migración, la resolución de errores y cuándo ponerse en contacto con el soporte técnico. Los temas sobre la integración del túnel SSH ahora se vinculan a esta guía.</p>
 </td>
       <td>
         Comentarios
