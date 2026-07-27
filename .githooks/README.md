@@ -1,7 +1,7 @@
 ---
-source-git-commit: 98e0c5dbd61d6d0f8d1a6e09d239cb25cbab8f81
+source-git-commit: aa7acd0d863a3cd48ff83675b72c2a96eae02b4d
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -11,10 +11,11 @@ Este directorio contiene enlaces previos a la confirmación que optimizan autom�
 
 ## Qué hacen los ganchos
 
-- **Detectar automáticamente** archivos de imagen clasificados (PNG, JPG, JPEG, GIF)
-- **Ejecutar`image_optim`** para comprimir y optimizar imágenes
+- **Detectar automáticamente** archivos de imagen clasificados (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`)
+- **Ejecute`image_optim`** para comprimir y optimizar imágenes rasterizadas (`.png`, `.jpeg`, `.jpg`, `.gif`)
 - **Volver a almacenar en zona intermedia las imágenes optimizadas** automáticamente
-- **Asegúrese de que todas las imágenes confirmadas** estén optimizadas correctamente
+- **Asegúrese de que todas las imágenes rasterizadas confirmadas** estén optimizadas correctamente
+- **Compruebe los SVG clasificados** con un límite de tamaño y anule la confirmación si se hace referencia a un SVG sobredimensionado desde cualquier archivo en `help/` (de lo contrario, solo advierta)
 
 ## Ventajas
 
@@ -77,19 +78,37 @@ chmod +x .githooks/*
 
 ```bash
 Found 1 staged image(s). Running optimization...
-Optimizing: path/to/your/image.png
-Re-staged optimized image: path/to/your/image.png
-Image optimization complete!
+
+Checking images ...
+path/to/your/image.png    100.00%
+Pre-commit image checks complete!
+```
+
+### Pruebas unitarias
+
+La lógica de detección de vínculos de SVG del gancho (que decide si se hace referencia a un SVG de gran tamaño desde `help/`) está cubierta por pruebas unitarias que solo necesitan el paquete de Ruby `minitest` — sin gemas o configuración de `_jekyll`:
+
+```bash
+ruby .githooks/test/svg_link_checker_test.rb
 ```
 
 ## Directrices de imagen
 
 - **PNG**: se usará para capturas de pantalla y elementos de la interfaz de usuario (se optimizará automáticamente)
-- **SVG**: se usa para iconos y gráficos simples (no optimizados automáticamente por el vínculo previo a la confirmación)
 - **JPEG**: se usará para fotografías (se optimizará automáticamente)
 - **GIF**: úselo para animaciones (se optimizará automáticamente)
+- **SVG**: se usa para iconos y gráficos simples (no optimizados, pero contrastados con un límite de tamaño; la confirmación falla solo si el SVG sobredimensionado está vinculado desde `help/`)
 
-Los enlaces previos a la confirmación optimizan automáticamente las imágenes PNG, JPEG y GIF en la confirmación.
+Los vínculos previos a la confirmación optimizarán automáticamente las imágenes de `.png`, `.jpeg`/`.jpg` y `.gif` en la confirmación, y comprobarán los SVG clasificados con un límite de tamaño (140 KB).
+
+Si una SVG preconfigurada supera el límite y se hace referencia a ella desde un archivo de `help/`, se anula la confirmación. Si no se hace referencia al SVG de gran tamaño en `help/`, el vínculo solo imprime una advertencia y la confirmación continúa. Convierta SVG de gran tamaño a PNG en su lugar:
+
+```bash
+cd _jekyll
+bundle exec rake images:svg_to_png path=../help/assets/image.svg
+```
+
+La ruta de acceso es relativa a `_jekyll`, por lo que se hace referencia a las imágenes de menos de `help/` como `../help/...`.
 
 ## Optimización manual
 
@@ -107,7 +126,7 @@ Los vínculos utilizan el archivo de configuración `_jekyll/.image_optim.yml` p
 - **PNG**: Utiliza `advpng`, `optipng` y `pngquant`
 - **JPEG**: Utiliza `jhead`, `jpegoptim` y `jpegtran`
 - **GIF**: Utiliza `gifsicle`
-- **SVG**: la optimización de SVG está deshabilitada de manera predeterminada (puede romper animaciones y gráficos vectoriales complejos)
+- **SVG**: no optimizado (excluido de `image_optim` para conservar gráficos vectoriales y animaciones), pero comparado con un límite de tamaño de 140 KB
 
 ## Resolución de problemas
 
@@ -120,8 +139,14 @@ Los vínculos utilizan el archivo de configuración `_jekyll/.image_optim.yml` p
 ### Errores de optimización
 
 - Verificar que `bundle install` se haya ejecutado en el directorio `_jekyll`
-- Compruebe que la joya `adobe-comdox-exl-rake-tasks` esté instalada (proporciona `image_optim`)
+- Compruebe que la joya `adobe-comdox-exl-rake-tasks` esté instalada (proporciona las tareas de rastrillo `images:optimize`, `images:check_size` y `images:svg_to_png` en las que se ejecuta el enlace)
 - Revisar el archivo de configuración `.image_optim.yml`
+
+### SVG supera el límite de tamaño
+
+- La confirmación se anula si un SVG de ensayo excede los 140 KB y se hace referencia a él desde un archivo de `help/` (de lo contrario, el vínculo solo advierte y la confirmación continúa)
+- Convertir el SVG a PNG: `cd _jekyll && bundle exec rake images:svg_to_png path=../help/assets/image.svg` (la ruta de acceso es relativa a `_jekyll`, por lo que las imágenes de menos de `help/` son referenciadas como `../help/...`)
+- A continuación, coloque en zona intermedia el PNG en lugar del SVG y confirme de nuevo
 
 ### Problemas de rendimiento
 
@@ -132,19 +157,17 @@ Los vínculos utilizan el archivo de configuración `_jekyll/.image_optim.yml` p
 
 1. **déclencheur previo a la confirmación**: Cuando ejecuta `git commit`, el vínculo se ejecuta automáticamente
 2. **Detección de imágenes**: analiza los archivos clasificados en busca de extensiones de imagen
-3. **Optimización**: Ejecuta `image_optim` en cada imagen preconfigurada
+3. **Optimización**: Ejecuta `image_optim` en cada PNG, JPEG o GIF clasificados
 4. **Reensayo**: vuelve a agregar automáticamente las imágenes optimizadas al área de ensayo
-5. **Procedimientos de confirmación**: Si la optimización se realiza correctamente, la confirmación continúa de forma normal
+5. **Comprobación de tamaño de SVG**: comprueba cada SVG ensayado con respecto al límite de tamaño de 140 KB
+6. **Confirmar ganancias**: Si la optimización se realiza correctamente y no se hace referencia a un SVG sobredimensionado desde `help/`, la confirmación continúa normalmente; de lo contrario, se anula la confirmación (un SVG sobredimensionado al que no se hace referencia desde `help/` solo genera un déclencheur de advertencia)
 
 ## Formatos de imagen compatibles
-
-El vínculo previo a la confirmación procesa automáticamente lo siguiente:
 
 - **PNG** (`.png`): compresión sin pérdidas y con pérdidas
 - **JPEG** (`.jpg`, `.jpeg`): compresión con pérdidas con limpieza de metadatos
 - **GIF** (`.gif`): animación y optimización estática
-
-**Nota**: la optimización de SVG está deshabilitada de manera predeterminada (puede romper animaciones y gráficos vectoriales complejos). El vínculo previo a la confirmación no procesa automáticamente los archivos SVG.
+- **SVG** (`.svg`) - No optimizado (confirmar tal cual para conservar la calidad), pero comparado con un límite de tamaño de 140 KB; la confirmación se anula si se supera el límite y se hace referencia a SVG desde `help/` (de lo contrario, el vínculo solo lo advierte)
 
 ## Prácticas recomendadas
 
