@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4557430537492370a52030b60750950db8b245da
+source-git-commit: aa7acd0d863a3cd48ff83675b72c2a96eae02b4d
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 6%
+source-wordcount: '692'
+ht-degree: 0%
 
 ---
 # Documentación técnica de Adobe Commerce Intelligence
@@ -11,7 +11,7 @@ Agradecemos las contribuciones de la comunidad, así como de los empleados de Ad
 
 ## Código de conducta de Adobe Open Source
 
-Este proyecto ha adoptado el [Código de conducta de código abierto de Adobe](code-of-conduct.md) o el [Código de conducta de la Fundación .NET](https://dotnetfoundation.org/code-of-conduct). Para obtener más información, consulte el artículo [Colaboración](contributing.md).
+Este proyecto ha adoptado el [Código de conducta de Adobe Open Source](code-of-conduct.md) o el Código de conducta de [.NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obtener más información, consulte el artículo [Contribución](contributing.md).
 
 ## Acerca de sus contribuciones al contenido de Adobe
 
@@ -31,7 +31,7 @@ Si forma parte de la comunidad de Adobe y desea crear un nuevo artículo o envia
 
 ### Cambios importantes de los empleados de Adobe
 
-Si es redactor técnico, administrador de programa o desarrollador del equipo de producto para una solución de Adobe Experience Cloud y su trabajo consiste en colaborar en artículos técnicos o crearlos, debe utilizar el repositorio privado en GHEC.
+Si es redactor técnico, administrador de programa o desarrollador del equipo de producto para una solución de Adobe Experience Cloud y su trabajo consiste en contribuir a artículos técnicos o crearlos, debe utilizar el repositorio privado en GHEC.
 
 ## Herramientas y configuración
 
@@ -44,7 +44,7 @@ Consulte la [Guía para colaboradores de Adobe Docs](https://experienceleague.ad
 Todos los artículos de este repositorio utilizan GitHub Flavored Markdown. Si no está familiarizado con el uso de markdown, consulte:
 
 - [Guía de sintaxis de Markdown](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/markdown-syntax)
-- [Hoja de referencia de sintaxis de Markdown](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
+- [Hoja de pruebas de sintaxis de Markdown](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
 
 ## Enlaces previos a la confirmación para la optimización de imágenes
 
@@ -60,10 +60,11 @@ Después de clonar el repositorio, ejecute:
 
 ### Qué hacen los ganchos
 
-- Detectar automáticamente archivos de imagen clasificados (PNG, JPG, JPEG, GIF, SVG)
-- Ejecutar `image_optim` para comprimir y optimizar imágenes
+- Detectar automáticamente archivos de imagen clasificados (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`)
+- Ejecute `image_optim` para comprimir y optimizar las imágenes rasterizadas (`.png`, `.jpeg`, `.jpg`, `.gif`)
 - Volver a almacenar automáticamente las imágenes optimizadas
-- Asegúrese de que todas las imágenes confirmadas estén optimizadas correctamente
+- Asegúrese de que todas las imágenes rasterizadas confirmadas estén optimizadas correctamente
+- Comprobar los SVG clasificados con un límite de tamaño y anular la confirmación si se hace referencia a un SVG de gran tamaño desde `help/` (de lo contrario, advertir)
 
 ### Ventajas
 
@@ -92,7 +93,7 @@ Para obtener instrucciones de instalación, solución de problemas y configuraci
 
 - [Prácticas recomendadas de creación](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/authoring-best-practices)
 - [Guía de sintaxis de Markdown](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/markdown-syntax)
-- [Hoja de referencia de sintaxis de Markdown](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
-- [Trabajando con tablas](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/tables)
-- [Agregando vínculos](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/linking)
+- [Hoja de pruebas de sintaxis de Markdown](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
+- [Uso de tablas](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/tables)
+- [Adición de vínculos](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/linking)
 - [Mover y reestructurar contenido](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/restructure-new)
