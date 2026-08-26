@@ -82,4 +82,4 @@ En este ejemplo, utilizó la perspectiva `Stacked Columns` para mostrar los resu
 
 ¿Ha notado en los ejemplos anteriores que `timestamp`, `groupings`, `perspectives` y `filters` de la fórmula se heredan de sus métricas de entrada? Tenga en cuenta que las fórmulas se pueden usar para usar `perspectives` y [opciones de tiempo independientes](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}, al igual que las métricas.
 
-Si tiene alguna pregunta adicional acerca del uso de fórmulas en `Report Builder`, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Si tiene alguna pregunta adicional acerca del uso de fórmulas en `Report Builder`, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

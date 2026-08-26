@@ -46,4 +46,4 @@ En este tema se exploran las tablas de datos principales que puede importar de [
 ## Relacionado:
 
 * [Conectando [!DNL Spree]](../integrations/spree.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

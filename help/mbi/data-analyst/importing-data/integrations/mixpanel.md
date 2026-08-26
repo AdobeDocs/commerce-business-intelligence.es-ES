@@ -80,4 +80,4 @@ Si la conexión se realiza correctamente, _se realizó correctamente_ El mensaje
 ### Relacionado
 
 * [Se esperaban  [!DNL Mixpanel] datos](../integrations/mixpanel-data.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

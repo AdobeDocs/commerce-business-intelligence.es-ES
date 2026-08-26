@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >La disponibilidad de algunos paneles depende del conjunto de datos.
 
-Si tiene preguntas o está interesado en agregar un paquete a su cuenta, envíe un [ticket de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para obtener ayuda.
+Si tiene preguntas o está interesado en agregar un paquete a su cuenta, envíe un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para obtener ayuda.
 
 ## Información general ejecutiva
 

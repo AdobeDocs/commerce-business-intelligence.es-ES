@@ -41,7 +41,7 @@ Si agregó un filtro que utiliza una dimensión que no es igual para todos los p
 
 En determinados casos, es posible que pueda convertir una dimensión `order-specific` en una dimensión `user-specific` para agregarla como filtro en el gráfico `Repeat Order Probability`. En estos casos, se devuelve el atributo order del primer pedido o del último pedido de un usuario (por ejemplo, el nombre de región de primer pedido del usuario).
 
-Si desea crear una dimensión nueva de este tipo, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Si desea crear una dimensión nueva de este tipo, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Comparación de la probabilidad de repetición de pedidos con atributos diferentes
 

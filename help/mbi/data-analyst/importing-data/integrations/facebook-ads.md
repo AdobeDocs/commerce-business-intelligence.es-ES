@@ -74,7 +74,7 @@ Asegúrese de realizar el seguimiento de [!DNL Facebook] campañas en [!DNL Goog
 
 ## Relacionado
 
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [Conecta tu cuenta de  [!DNL Google Adwords] &#x200B;](../integrations/google-ecommerce.md)
 * [Rastrear origen de referencia de pedido mediante  [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Rastrear origen de referencia de usuario en la base de datos](../../analysis/google-track-user-acq.md)

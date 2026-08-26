@@ -65,4 +65,4 @@ Actualmente, [!DNL Salesforce] no expone los siguientes objetos en su API:
 ## Relacionado:
 
 * [Conectando [!DNL Salesforce]](../integrations/salesforce.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

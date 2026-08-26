@@ -71,4 +71,4 @@ Para completar este proceso, debe abrir dos ventanas o fichas del explorador: un
 ## Relacionado:
 
 * [Se esperaban  [!DNL Zendesk] datos](../integrations/exp-zendesk-data.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

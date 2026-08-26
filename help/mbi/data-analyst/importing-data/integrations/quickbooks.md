@@ -59,4 +59,4 @@ Después de hacer clic en **[!UICONTROL Connect to Quickbooks]**, inicie sesión
 ## Relacionado
 
 * [Se esperaban  [!DNL QuickBooks] datos](../integrations/quickbooks-data.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
