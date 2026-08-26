@@ -5,11 +5,21 @@ exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
 role: Admin, User
 feature: Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/uqVpwXs8XHpiPpXHmTgItkhDsHAGs-Ty5NSBK8KtO7s
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
 source-wordcount: 1948
@@ -39,25 +49,25 @@ Columnas que se van a crear independientemente de la directiva de pedidos de inv
 
 * `sales\_flat\_order` tabla
 * **El pedido tiene un cupón aplicado?**
-  * [!UICONTROL Column type]: `Same Table => CALCULATION`
+  * [!UICONTROL Column type]&#x200B;: `Same Table => CALCULATION`
   * [!UICONTROL Inputs]:
     * `A`: `coupon\_code`
 
-  * 
-    [!UICONTROL Tipo de datos]: `String`
+  * &#x200B;
+    [!UICONTROL Tipo de datos]&#x200B;: `String`
   * [!UICONTROL Calculation]: caso en el que `A` es nulo, entonces `No coupon` más `Coupon` finalizarán
 
 * **\[INPUT\] customer\_id - código de cupón**
-  * [!UICONTROL Column type]: `Same Table => CALCULATION`
+  * [!UICONTROL Column type]&#x200B;: `Same Table => CALCULATION`
   * [!UICONTROL Inputs]:
     * `A`: `customer\_id`
     * `B`: `coupon\_code`
 
   * [!UICONTROL Datatype] cadena
-  * [!UICONTROL Calculation]: `concat(A,' - ',B)`
+  * [!UICONTROL Calculation]&#x200B;: `concat(A,' - ',B)`
 
 * **Número de pedidos con este cupón**
-  * [!UICONTROL Column type]: `Same Table => EVENT\_NUMBER`
+  * [!UICONTROL Column type]&#x200B;: `Same Table => EVENT\_NUMBER`
   * Propietario del evento:`INPUT customer_id - coupon code`
   * Clasificación del evento: `created\_at`
   * [!UICONTROL Filters]: conjunto de filtros `Orders we count`
@@ -66,101 +76,101 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 
 * `customer\_entity` tabla
   * ¿El primer pedido de **cliente incluyó un cupón? (Cupón/Sin cupón)**
-  * [!UICONTROL Column type]: `Many to One => MAX`
-  * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
+  * [!UICONTROL Column type]&#x200B;: `Many to One => MAX`
+  * [!UICONTROL Path]&#x200B;: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
   * Seleccionar un(a) [!UICONTROL column]: `Order has coupon applied? (Coupon/No coupon)`
   * [!UICONTROL Filters]:
     * `A`: `Orders we count`
     * `B`: `Customer's order number = 1`
 
   * **Cupón del primer pedido del cliente**
-    * [!UICONTROL Column type]: `Many to One => MAX`
-    * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
+    * [!UICONTROL Column type]&#x200B;: `Many to One => MAX`
+    * [!UICONTROL Path]&#x200B;: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
     * Seleccionar un(a) [!UICONTROL column]: `coupon\_code`
     * [!UICONTROL Filter]:
       * `A`: `Orders we count`
       * `B`: `Customer's order number = 1`
 
   * **Número de cupones utilizados por el cliente durante toda la vida**
-    * [!UICONTROL Column type]: `Many to One => COUNT`
-    * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
+    * [!UICONTROL Column type]&#x200B;: `Many to One => COUNT`
+    * [!UICONTROL Path]&#x200B;: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
     * [!UICONTROL Filter]:
       * `A`: `Orders we count`
       * `B`: `Order has coupon applied? (Coupon/No coupon) = Coupon`
 
   * **Cliente de adquisición de cupón o cliente de adquisición sin cupón**
-    * [!UICONTROL Column type]: `Same Table => CALCULATION`
+    * [!UICONTROL Column type]&#x200B;: `Same Table => CALCULATION`
     * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
 
-    * 
-      [!UICONTROL Tipo de datos]: `String`
+    * &#x200B;
+      [!UICONTROL Tipo de datos]&#x200B;: `String`
     * [!UICONTROL Calculation]: **caso cuando A=&#39;Coupon&#39; then &#39;Coupon acquisition customer&#39; else &#39;Non-coupon acquisition customer&#39; end**
 
   * **Porcentaje de pedidos del cliente con cupón**
-    * [!UICONTROL Column type]: `Same Table => CALCULATION`
+    * [!UICONTROL Column type]&#x200B;: `Same Table => CALCULATION`
     * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
 
-    * 
-      [!UICONTROL Tipo de datos]: `Decimal`
+    * &#x200B;
+      [!UICONTROL Tipo de datos]&#x200B;: `Decimal`
     * [!UICONTROL Calculation]: **caso cuando A es nulo o B es nulo o B=0 entonces nulo otro extremo A/B**
 
   * **Uso del cupón del cliente**
-    * [!UICONTROL Column type]: `Same Table => Calculation`
+    * [!UICONTROL Column type]&#x200B;: `Same Table => Calculation`
     * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
 
-    * 
-      [!UICONTROL Tipo de datos]: `String`
+    * &#x200B;
+      [!UICONTROL Tipo de datos]&#x200B;: `String`
     * [!UICONTROL Calculation]: **caso cuando A es nulo entonces nulo cuando A=0 entonces &#39;Cupón nunca usado&#39; cuando A&lt;0.5 entonces &#39;Precio mayormente completo&#39; cuando A=0.5 entonces &#39;50/50&#39; cuando A=1 entonces &#39;Solo cupones&#39; cuando A>0.5 entonces &#39;Cupón mayoritario&#39; o &#39;Indefinido&#39; terminan**
 
 * `sales\_flat\_order` tabla
   * ¿El primer cupón incluido del cliente es **? (Cupón/Sin cupón)**
-    * [!UICONTROL Column type]: `One to Many => JOINED\_COLUMN`
-    * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
+    * [!UICONTROL Column type]&#x200B;: `One to Many => JOINED\_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
     * Seleccionar un [!UICONTROL column]: `Customer's first order included a coupon? (Coupon/No coupon)`
       ^
 
   * **Cupón del primer pedido del cliente**
-    * [!UICONTROL Column type]: `One to Many => JOINED\_COLUMN`
-    * [!UICONTROL Path]: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
+    * [!UICONTROL Column type]&#x200B;: `One to Many => JOINED\_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `sales\_flat\_order.customer\_id = customer\_entity.entity\_id`
     * Seleccionar un(a) [!UICONTROL column]: `Customer's first order coupon?`
 
 Columnas adicionales para crear si NO se admiten pedidos de invitado:
 
 * `sales\_flat\_order` tabla
   * ¿El primer pedido de **cliente incluyó un cupón? (Cupón/Sin cupón)** **-** creado por el analista como parte de su vale \[COUPON ANALYSIS\]
-  * **Cupón del primer pedido del cliente **{::}**-** creado por el analista como parte de su ticket \[COUPON ANALYSIS\]
+  * **Cupón del primer pedido del cliente &#x200B;**{::}**-** creado por el analista como parte de su ticket \[COUPON ANALYSIS\]
 
-* Número de cupones de por vida de **cliente utilizado **{::}**-** creado por el analista como parte de su vale \[COUPON ANALYSIS\]
+* Número de cupones de por vida de **cliente utilizado &#x200B;**{::}**-** creado por el analista como parte de su vale \[COUPON ANALYSIS\]
 * **Cliente de adquisición de cupón o cliente de adquisición sin cupón**
-  * [!UICONTROL Column type]: `Same Table => CALCULATION`
+  * [!UICONTROL Column type]&#x200B;: `Same Table => CALCULATION`
   * [!UICONTROL Inputs]:
     * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
 
-  * 
-    [!UICONTROL Tipo de datos]: `String`
+  * &#x200B;
+    [!UICONTROL Tipo de datos]&#x200B;: `String`
   * [!UICONTROL Calculation]: **caso cuando A=&#39;Coupon&#39; then &#39;Coupon acquisition customer&#39; else &#39;Non-coupon acquisition customer&#39; end**
 
 * **Porcentaje de pedidos del cliente con cupón**
-  * [!UICONTROL Column type]: `Same Table => CALCULATION`
+  * [!UICONTROL Column type]&#x200B;: `Same Table => CALCULATION`
   * [!UICONTROL Inputs]:
     * `A`: `User's lifetime number of coupons used`
     * `B`: `User's lifetime number of orders`
 
-  * 
-    [!UICONTROL Tipo de datos]: `Decimal`
+  * &#x200B;
+    [!UICONTROL Tipo de datos]&#x200B;: `Decimal`
   * [!UICONTROL Calculation]: **caso cuando A es nulo o B es nulo o B=0 entonces nulo otro extremo A/B**
 
 * **Uso del cupón del cliente**
-  * [!UICONTROL Column type]: `Same Table => Calculation`
+  * [!UICONTROL Column type]&#x200B;: `Same Table => Calculation`
   * [!UICONTROL Inputs]:
     * `A`: `Percent of customer's orders with coupon`
 
-  * 
-    [!UICONTROL Tipo de datos]: `String`
+  * &#x200B;
+    [!UICONTROL Tipo de datos]&#x200B;: `String`
   * [!UICONTROL Calculation]: **caso cuando A es nulo entonces nulo cuando A=0 entonces &#39;Cupón nunca usado&#39; cuando A&lt;0.5 entonces &#39;Precio mayormente completo&#39; cuando A=0.5 entonces &#39;50/50&#39; cuando A=1 entonces &#39;Solo cupones&#39; cuando A>0.5 entonces &#39;Cupón mayoritario&#39; o &#39;Indefinido&#39; terminan**
 
 ## Métricas
@@ -192,36 +202,36 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 ## Informes
 
 * **% de clientes adquiridos con cupones y no adquiridos con cupones**
-  * [!UICONTROL Metric]: `New customers`
+  * [!UICONTROL Metric]&#x200B;: `New customers`
 
 * Métrica `A`: `Coupon acquisitions`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
 * [!UICONTROL Group by]: `Coupon acquisitions customer` o `Non coupon acquisition customer`
-* 
-  [!UICONTROL Tipo de gráfico]: `Pie`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Pie`
 
 * **Número de clientes adquiridos con cupones y no adquiridos con cupones**
-  * [!UICONTROL Metric]: `New customers`
+  * [!UICONTROL Metric]&#x200B;: `New customers`
 
 * Métrica A: `Coupon acquisitions`
-* [!UICONTROL Time period]: `All time`
-* [!UICONTROL Interval]: `By Month`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* [!UICONTROL Interval]&#x200B;: `By Month`
 * [!UICONTROL Group by]: `Coupon acquisitions customer` o `Non coupon acquisition customer`
-* [!UICONTROL Chart type]: `Stacked column`
+* [!UICONTROL Chart type]&#x200B;: `Stacked column`
 
 * **Ingresos promedio por vida útil: Cupón Acq. (edad superior a 90 días)**
-  * [!UICONTROL Metric]: `Average lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Average lifetime revenue`
   * [!UICONTROL Filter]:
     * El primer pedido del cliente incluía un cupón (Cupón/Sin cupón) = Cupón
 
 * Métrica `A`: `Average lifetime revenue (at least 3 months age)`
-* [!UICONTROL Time period]: `X years ago to 90 days ago`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* 
-  [!UICONTROL Tipo de gráfico]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `X years ago to 90 days ago`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Scalar`
 
 * **Ingresos promedio de por vida: Cuenta acumulada sin cupón. (edad superior a 90 días)**
   * [!UICONTROL Metric]: ingresos promedio de por vida
@@ -229,158 +239,158 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
     * El primer pedido del cliente incluía un cupón (Cupón/Sin cupón) = Sin cupón
 
 * Métrica `A`: `Average lifetime revenue (at least 3 months age)`
-* [!UICONTROL Time period]: `X years ago to 90 days ago`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* 
-  [!UICONTROL Tipo de gráfico]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `X years ago to 90 days ago`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Scalar`
 
 * **Ingresos promedio por vida útil por cupón de primer pedido**
-  * [!UICONTROL Metric]: `Average lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Average lifetime revenue`
 
 * Métrica `A`: `Average lifetime revenue`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* [!UICONTROL Group by]: `Customer's first order's coupon`
-* 
-  [!UICONTROL Tipo de gráfico]: `Column`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Customer's first order's coupon`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Column`
 
 >[!NOTE]
 >
 >Si tiene muchos códigos de cupón, como muchos clientes, desea aplicar un Top/Bottom como Top 10 ordenado por ingresos medios de duración
 
 * **Probabilidad de repetición de pedidos: Adquisiciones de cupones**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Filter]:
     * El primer pedido del cliente incluía un cupón (Cupón/Sin cupón) = Cupón
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Filter]:
     * El primer pedido del cliente incluía un cupón (Cupón/Sin cupón) = Cupón
     * ¿Es el último pedido del cliente? = No
-  * 
-    [!UICONTROL Fórmula]: `B/A`
-  * [!UICONTROL Format]: `Percentage %`
+  * &#x200B;
+    [!UICONTROL Fórmula]&#x200B;: `B/A`
+  * [!UICONTROL Format]&#x200B;: `Percentage %`
 
   * Seleccione un número estadísticamente significativo del gráfico `Customer's by lifetime orders`. Cuando se mira el gráfico, una buena regla es buscar números de pedidos con 30 o más clientes en el bloque. Según el conjunto de datos, puede ser un número elevado, por lo que puede añadir del 1 al 10.
 
 * Métrica `A`: `Number of orders`
 * Métrica `B`: `Number of non last orders`
-* [!UICONTROL Formula]: `Repeat order probability`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* [!UICONTROL Group by]: `Customer's order number`
-* [!UICONTROL Chart type]: `Bar chart`
+* [!UICONTROL Formula]&#x200B;: `Repeat order probability`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Customer's order number`
+* [!UICONTROL Chart type]&#x200B;: `Bar chart`
 
 * **Probabilidad de repetición de pedido: adquisiciones sin cupones**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Filter]:
     * El primer pedido del cliente incluía un cupón (Cupón/Sin cupón) = Sin cupón
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Filter]:
     * El primer pedido del cliente incluía un cupón (Cupón/Sin cupón) = Sin cupón
     * ¿Es el último pedido del cliente? = No
 
-  * 
-    [!UICONTROL Fórmula]: `B/A`
-  * [!UICONTROL Format]: `Percentage %`
+  * &#x200B;
+    [!UICONTROL Fórmula]&#x200B;: `B/A`
+  * [!UICONTROL Format]&#x200B;: `Percentage %`
 
   * Seleccione un número estadísticamente significativo del gráfico `Customer's by lifetime orders` o del 1 al 5.
 
 * Métrica `A`: `Number of orders`
 * Métrica `B`: `Number of non last orders`
-* [!UICONTROL Formula]: `Repeat order probability`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* [!UICONTROL Group by]: `Customer's order number`
-* [!UICONTROL Chart type]: `Bar chart`
+* [!UICONTROL Formula]&#x200B;: `Repeat order probability`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Customer's order number`
+* [!UICONTROL Chart type]&#x200B;: `Bar chart`
 
 * **Tasa de uso de cupones de clientes adquiridos con cupones (pedidos repetidos)**
-  * [!UICONTROL Metric]: `New customers`
+  * [!UICONTROL Metric]&#x200B;: `New customers`
   * [!UICONTROL Filter]:
     * Adquisición de cupón cliente o adquisición no de cupón cliente = Adquisición de cupón
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Filter]:
     * Número de pedido del cliente > 1
     * ¿El primer pedido del cliente incluía un cupón? (Cupón/Sin cupón) = Cupón
 
-  * [!UICONTROL Metric]:`Number of orders`
+  * [!UICONTROL Metric]&#x200B;:`Number of orders`
   * [!UICONTROL Filter]:
     * Número de pedido del cliente > 1
     * ¿El primer pedido del cliente incluía un cupón? (Cupón/Sin cupón) = Cupón
     * ¿Se ha aplicado el cupón del pedido? (Cupón/Sin cupón) = Cupón
 
-  * 
-    [!UICONTROL Fórmula]: `C/B`
-  * [!UICONTROL Format]: `Percentage %`
+  * &#x200B;
+    [!UICONTROL Fórmula]&#x200B;: `C/B`
+  * [!UICONTROL Format]&#x200B;: `Percentage %`
 
 * Métrica `A`: `Coupon-acquired customers`
 * Métrica `B`: `Number of repeat orders`
 * Métrica `C`: `Number of repeat orders with coupon`
-* [!UICONTROL Formula]: `% of repeat orders with coupon`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* 
+* [!UICONTROL Formula]&#x200B;: `% of repeat orders with coupon`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* &#x200B;
   [!UICONTROL Tipo de gráfico]: `Table` (puede transponer esta tabla para una mejor visualización)
 
 * **Tasa de uso de cupones de clientes no adquiridos con cupones (pedidos repetidos)**
-  * [!UICONTROL Metric]: `New customers`
+  * [!UICONTROL Metric]&#x200B;: `New customers`
   * [!UICONTROL Filter]:
     * Adquisición de cupón cliente o cliente de adquisición no de cupón = Adquisición no de cupón
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Filter]:
     * Número de pedido del cliente > 1
     * ¿El primer pedido del cliente incluía un cupón? (Cupón/Sin cupón) = Sin cupón
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Filter]:
     * Número de pedido del cliente > 1
     * ¿El primer pedido del cliente incluía un cupón? (Cupón/Sin cupón) = Sin cupón
     * ¿Se ha aplicado el cupón del pedido? (Cupón/Sin cupón) = Cupón
 
-  * 
-    [!UICONTROL Fórmula]: `C/B`
-  * [!UICONTROL Format]: `Percentage %`
+  * &#x200B;
+    [!UICONTROL Fórmula]&#x200B;: `C/B`
+  * [!UICONTROL Format]&#x200B;: `Percentage %`
 
 * Métrica `A`: `Non-coupon-acquired customers`
 * Métrica `B`: `Number of repeat orders`
 * Métrica `C`: `Number of repeat orders with coupon`
-* [!UICONTROL Formula]: `% of repeat orders with coupon`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* 
+* [!UICONTROL Formula]&#x200B;: `% of repeat orders with coupon`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* &#x200B;
   [!UICONTROL Tipo de gráfico]: `Table` (puede transponer esta tabla para una mejor visualización)
 
 * **Detalles de uso del cupón (pedidos por primera vez)**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Filter]:
     * Número de pedido del cliente = 1
     * Número de pedidos con este cupón > 10
 
-  * 
-    [!UICONTROL Métrica]: `Revenue`
+  * &#x200B;
+    [!UICONTROL Métrica]&#x200B;: `Revenue`
   * [!UICONTROL Filter]:
     * Número de pedido del cliente = 1
     * Número de pedidos con este cupón > 10
 
-  * [!UICONTROL Metric]: `Coupon discount amount`
+  * [!UICONTROL Metric]&#x200B;: `Coupon discount amount`
   * [!UICONTROL Filter]:
     * Número de pedido del cliente = 1
     * Número de pedidos con este cupón > 10
 
   * [!UICONTROL Formula]: `B-C` (si C es negativo); B+C (si C es positivo)
-  * 
-    [!UICONTROL Formato]: `Currency`
+  * &#x200B;
+    [!UICONTROL Formato]&#x200B;: `Currency`
 
-  * [!UICONTROL Metric]: `Average order value`
+  * [!UICONTROL Metric]&#x200B;: `Average order value`
   * [!UICONTROL Filter]:
     * Número de pedido del cliente = 1
     * Número de pedidos con este cupón > 10
@@ -388,123 +398,123 @@ Columnas adicionales para crear si NO se admiten pedidos de invitado:
 * Métrica `A`: `First time orders (FTO)`
 * Métrica `B`: `Revenue from FTO`
 * Métrica `C`: `Discounts applied to FTO`
-* [!UICONTROL Formula]: `Gross revenue from FTO`
+* [!UICONTROL Formula]&#x200B;: `Gross revenue from FTO`
 * Métrica `E`: `Average order value for FTO`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* [!UICONTROL Group by]: `coupon code`
-* 
-  [!UICONTROL Tipo de gráfico]: `Table`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `coupon code`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Table`
 >[!NOTE]
 >
 >La cantidad de 10 para &quot;Número de pedidos con este cupón&quot; es arbitraria. No dude en utilizar la cantidad más adecuada para este filtro.
 
 * **Número de pedidos con cupón (todo el tiempo)**
-  * [!UICONTROL Metric]: `Number of coupons used`
+  * [!UICONTROL Metric]&#x200B;: `Number of coupons used`
 
 * Métrica `A`: `Number or orders with coupon`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* 
-  [!UICONTROL Tipo de gráfico]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Scalar`
 
 * **Ingresos netos de pedidos con cupones (todo el tiempo)**
-  * 
-    [!UICONTROL Métrica]: `Revenue`
+  * &#x200B;
+    [!UICONTROL Métrica]&#x200B;: `Revenue`
   * [!UICONTROL Filter]:
     * ¿Se ha aplicado el cupón del pedido? (Cupón/Sin cupón) = Cupón
 
 * Métrica `A`: `Net revenue from orders with coupons`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* 
-  [!UICONTROL Tipo de gráfico]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Scalar`
 
 * **Descuentos de cupones (todo el tiempo)**
-  * [!UICONTROL Metric]: `Number of coupons used`
+  * [!UICONTROL Metric]&#x200B;: `Number of coupons used`
 
 * Métrica `A`: `Coupon discount amount`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* 
-  [!UICONTROL Tipo de gráfico]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Scalar`
 
 * **Número de pedidos con y sin cupones**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
 * Métrica `A`: `Number of orders`
-* [!UICONTROL Time period]: `Last 24 months`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* [!UICONTROL Group by]: `Order has coupon applied? (Coupon/No coupon)`
-* [!UICONTROL Chart type]: `Stacked column`
+* [!UICONTROL Time period]&#x200B;: `Last 24 months`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order has coupon applied? (Coupon/No coupon)`
+* [!UICONTROL Chart type]&#x200B;: `Stacked column`
 
 * **Uso de cupones entre usuarios repetidos**
-  * [!UICONTROL Metric]: `New customers`
+  * [!UICONTROL Metric]&#x200B;: `New customers`
   * [!UICONTROL Filter]:
     * Número de pedidos > 1 de duración del cliente
 
 * Métrica `A`: `New customers`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* [!UICONTROL Group by]: `Customer's coupon usage`
-* 
-  [!UICONTROL Tipo de gráfico]: `Pie`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Customer's coupon usage`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Pie`
 
 * **Detalles de uso del cupón**
-  * [!UICONTROL Metric]: `Number of orders with coupon`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders with coupon`
   * [!UICONTROL Filter]:
     * Número de pedidos con este cupón > 10
 
-  * 
-    [!UICONTROL Métrica]: `Revenue`
+  * &#x200B;
+    [!UICONTROL Métrica]&#x200B;: `Revenue`
   * [!UICONTROL Filter]:
     * Número de pedidos con este cupón > 10
 
-  * [!UICONTROL Metric]: `Coupon discount amount`
+  * [!UICONTROL Metric]&#x200B;: `Coupon discount amount`
   * [!UICONTROL Filter]:
     * Número de pedidos con este cupón > 10
 
   * [!UICONTROL Formula]: `B-C` (si `C` es negativo); `B+C` (si `C` es positivo)
-  * 
-    [!UICONTROL Formato]: `Currency`
+  * &#x200B;
+    [!UICONTROL Formato]&#x200B;: `Currency`
 
   * [!UICONTROL Formula]: `C/(B-C)` (si `C` es negativo); `C/(B+C)` (si `C` es positivo)
-  * 
-    [!UICONTROL Formato]: `Percentage`
+  * &#x200B;
+    [!UICONTROL Formato]&#x200B;: `Percentage`
 
-  * [!UICONTROL Metric]: `Average order value`
+  * [!UICONTROL Metric]&#x200B;: `Average order value`
   * [!UICONTROL Filter]:
     * Número de pedidos con este cupón > 10
 
-  * 
-    [!UICONTROL Fórmula]: `C/A`
-  * 
-    [!UICONTROL Formato]: `Currency`
+  * &#x200B;
+    [!UICONTROL Fórmula]&#x200B;: `C/A`
+  * &#x200B;
+    [!UICONTROL Formato]&#x200B;: `Currency`
 
-  * [!UICONTROL Metric]: `Distinct buyers`
+  * [!UICONTROL Metric]&#x200B;: `Distinct buyers`
   * [!UICONTROL Filter]:
     * Número de pedidos con este cupón > 10
 
 * Métrica `A`: `Number of orders`
 * Métrica `B`: `Net revenue from orders`
 * Métrica `C`: `Total discounts applied`
-* [!UICONTROL Formula]: `Gross revenue`
-* [!UICONTROL Formula]: `% discounted`
+* [!UICONTROL Formula]&#x200B;: `Gross revenue`
+* [!UICONTROL Formula]&#x200B;: `% discounted`
 * Métrica `F`: `Average net order value`
-* [!UICONTROL Formula]: `Average order discount`
+* [!UICONTROL Formula]&#x200B;: `Average order discount`
 * Métrica `H`: `Distinct buyers`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* [!UICONTROL Group by]: `coupon code`
-* 
-  [!UICONTROL Tipo de gráfico]: `Table`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `coupon code`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Table`
 
 >[!NOTE]
 >
