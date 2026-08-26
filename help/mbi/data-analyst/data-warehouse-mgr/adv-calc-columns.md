@@ -5,27 +5,15 @@ exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/X0eHrn1HpOnwDENUnnBphaBBJxfZCymDeySTznBipMU
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 2%
+source-wordcount: 962
+ht-degree: 11%
 
 ---
 
@@ -57,11 +45,11 @@ A continuación se muestra un ejemplo:
 
 | **`event\_id`** | **`owner\_id`** | **`timestamp`** | **`Owner's event number`** |
 |-----|-----|-----|-----|
-| 1 | `A` | 00:00:00 del 01-01-2015 | 1 |
-| 2 | `B` | 00:30:00 del 01-01-2015 | 1 |
-| 3 | `A` | 01-01-2015 02:00:00 | 2 |
-| 4 | `A` | 02-01-2015 13:00:00 | 3 |
-| 5 | `B` | 03-01-2015 13:00:00 | 2 |
+| 1 | `A` | 2015-01-01 00:00:00 | 1 |
+| 2 | `B` | 2015-01-01 00:30:00 | 1 |
+| 3 | `A` | 2015-01-01 02:00:00 | 2 |
+| 4 | `A` | 2015-01-02 13:00:00 | 3 |
+| 5 | `B` | 2015-01-03 13:00:00 | 2 |
 
 {style="table-layout:auto"}
 
@@ -87,8 +75,8 @@ A continuación se muestra un ejemplo:
 
 | `id` | `timestamp\_1` | `timestamp\_2` | `Seconds between timestamp\_2 and timestamp\_1` |
 |-----|-----|-----|-----|
-| `A` | 00:00:00 del 01-01-2015 | 01-01-2015 12:30:00 | 45000 |
-| `B` | 08:00:00 de enero de 2015 | 01-01-2015 10:00:00 | 7200 |
+| `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
+| `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
 {style="table-layout:auto"}
 
@@ -111,11 +99,11 @@ A continuación se muestra un ejemplo:
 
 | **`event\_id`** | **`owner\_id`** | **`timestamp`** | **`Seconds since owner's previous event`** |
 |-----|-----|-----|-----|
-| 1 | `A` | 00:00:00 del 01-01-2015 | NULL |
-| 2 | `B` | 00:30:00 del 01-01-2015 | NULL |
-| 3 | `A` | 01-01-2015 02:00:00 | 7720 |
-| 4 | `A` | 02-01-2015 13:00:00 | 126000 |
-| 5 | `B` | 03-01-2015 13:00:00 | 217800 |
+| 1 | `A` | 2015-01-01 00:00:00 | NULL |
+| 2 | `B` | 2015-01-01 00:30:00 | NULL |
+| 3 | `A` | 2015-01-01 02:00:00 | 7720 |
+| 4 | `A` | 2015-01-02 13:00:00 | 126000 |
+| 5 | `B` | 2015-01-03 13:00:00 | 217800 |
 
 {style="table-layout:auto"}
 
@@ -139,8 +127,8 @@ A continuación se muestra un ejemplo:
 
 | **`id`** | **`timestamp`** | **`transaction\_value\_EUR`** | **`transaction\_value\_USD`** |
 |-----|-----|-----|-----|
-| `1` | 00:00:00 del 01-01-2015 | 30 | 33,57 |
-| `2` | 00:00:00 de enero de 2015 | 50 | 55,93 |
+| `1` | 2015-01-01 00:00:00 | 30 | 33,57 |
+| `2` | 2015-01-02 00:00:00 | 50 | 55,93 |
 
 {style="table-layout:auto"}
 
@@ -161,8 +149,8 @@ A continuación se muestra un ejemplo:
 
 | **`id`** | **`timestamp\_UTC`** | **`timestamp\_ET`** |
 |-----|-----|-----|
-| `1` | 00:00:00 del 01-01-2015 | 31-12-2014 19:00:00 |
-| `2` | 01-01-2015 12:00:00 | 01-01-2015 07:00:00 |
+| `1` | 2015-01-01 00:00:00 | 2014-12-31 19:00:00 |
+| `2` | 2015-01-01 12:00:00 | 2015-01-01 07:00:00 |
 
 {style="table-layout:auto"}
 
@@ -179,7 +167,7 @@ Para crear este tipo de columna calculada, debe saber:
 
 No te preocupes. El hecho de que no aparezca en la lista no significa que no sea posible. El equipo de Adobe de analistas de Data Warehouse puede ayudarle.
 
-Para definir una nueva columna calculada, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) con detalles sobre exactamente lo que desea generar.
+Para definir una nueva columna calculada, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) con detalles sobre exactamente lo que desea generar.
 
 ## Documentación relacionada
 

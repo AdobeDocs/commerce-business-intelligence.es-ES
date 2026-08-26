@@ -1,32 +1,18 @@
 ---
 title: tabla sales_order
-description: Aprenda a trabajar con la tabla sales_order.
+description: Explore la estructura de la tabla sales_order en Data Warehouse de Commerce Intelligence. Comprenda cómo cada fila representa un pedido y dónde se producen las divisiones personalizadas.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/zdxIx9qHzEyoCbFzh0EBv1BKJEWiShtAt33-dtkEGNo
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 1200
+source-wordcount: 1215
 ht-degree: 0%
 
 ---
@@ -68,7 +54,7 @@ Esta tabla incluye todos los pedidos de clientes, independientemente de si el pe
 | `Billing address city` | Ciudad de facturación del pedido. Calculado uniéndose a `sales_order`.`billing_address_id` a `sales_order_address`.`entity_id` y devolviendo el campo `city` |
 | `Billing address country` | Código de país de facturación del pedido. Calculado uniéndose a `sales_order`.`billing_address_id` a `sales_order_address`.`entity_id` y devolviendo `country_id` |
 | `Billing address region` | Región de facturación (generalmente, estado o provincia) del pedido. Calculado uniéndose a `sales_order`.`billing_address_id` a `sales_order_address`.`entity_id` y devolviendo el campo `region` |
-| `Customer's first order date` | Marca de tiempo del primer pedido realizado por este cliente. A menudo se considera la &quot;fecha de adquisición&quot; de un cliente. Calculado devolviendo el mínimo `sales_order`.Valor de `created_at` para cada cliente único |
+| `Customer's first order date` | Marca de tiempo del primer pedido realizado por este cliente. A menudo se considera la &quot;fecha de adquisición&quot; de un cliente. Calculado devolviendo el mínimo `sales_order`.`created_at` valor para cada cliente único |
 | `Customer's first order's billing region` | Región de facturación de adquisición del cliente que realizó el pedido. Se calcula devolviendo el `Billing address region` asociado con el primer pedido del cliente |
 | `Customer's first order's coupon_code` | Código de cupón de adquisición del cliente que realizó este pedido. Se calcula devolviendo el `coupon_code` asociado con el primer pedido del cliente |
 | `Customer's group code` | Nombre del grupo del cliente que realizó este pedido. Calculado uniéndose a `sales_order`.`customer_group_id` a `customer_group`.`customer_group_id` y devolviendo el campo `customer_group_code` |
@@ -105,21 +91,21 @@ Esta tabla incluye todos los pedidos de clientes, independientemente de si el pe
 `customer_entity`
 
 * Únase a la tabla `customer_entity` para crear nuevas columnas de nivel de cliente asociadas al cliente que realizó el pedido.
-   * Ruta de acceso: `sales_order.customer_id` (varios) => `customer_entity.entity_id` (uno)
+  * Ruta de acceso: `sales_order.customer_id` (varios) => `customer_entity.entity_id` (uno)
 
 `customer_group`
 
 * Únase a la tabla `customer_group` para crear columnas que devuelvan el nombre del grupo de clientes del cliente que realizó el pedido.
-   * Ruta de acceso: `sales_order.customer_group_id` (varios) => `customer_group.customer_group_id` (uno)
+  * Ruta de acceso: `sales_order.customer_group_id` (varios) => `customer_group.customer_group_id` (uno)
 
 `sales_order_address`
 
 * Únase a la tabla `sales_order_address` para crear columnas que devuelvan ubicaciones de facturación y envío asociadas con el pedido. Se pueden unir dos rutas, en función de si se requieren los detalles de facturación o envío.
-   * Rutas:
-      * Envío: `sales_order.shipping_address_id`(varios) => `sales_order_address.entity_id` (uno)
-      * Facturación: `sales_order.billing_address_id`(muchos) => `sales_order_address.entity_id` (uno)
+  * Rutas:
+    * Envío: `sales_order.shipping_address_id`(varios) => `sales_order_address.entity_id` (uno)
+    * Facturación: `sales_order.billing_address_id`(muchos) => `sales_order_address.entity_id` (uno)
 
 `store`
 
 * Únase a la tabla `store` para crear columnas que devuelvan detalles relacionados con el almacén de Commerce asociado al pedido.
-   * Ruta de acceso: `sales_order.store_id` (varios) => `store.store_id` (uno)
+  * Ruta de acceso: `sales_order.store_id` (varios) => `store.store_id` (uno)

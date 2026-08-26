@@ -5,27 +5,14 @@ exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/pdmp5wyeWdjrebZlZ9j4u3OJBb-LpADk6Uib-bWy1Vc
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 32bcb9f48faa4e766972b0690f86c9813c6a9d53
 workflow-type: tm+mt
-source-wordcount: 1293
+source-wordcount: 1370
 ht-degree: 0%
 
 ---
@@ -43,7 +30,7 @@ Utilice campañas de publicidad como ejemplo. Si está ejecutando campañas en l
 ## Restricciones y requisitos {#require}
 
 1. **El único formato admitido para las cargas de archivos es `CSV` o`comma separated values`**. Si está trabajando en Excel, puede utilizar la función Guardar como para guardar el archivo en formato `.csv`.
-1. **`CSV`archivos deben usar`UTF-8 encoding`**. La mayoría de las veces, esto no es un problema. Si encuentra este error al cargar un archivo, [consulte este artículo de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=es).
+1. **`CSV`archivos deben usar`UTF-8 encoding`**. La mayoría de las veces, esto no es un problema.
 1. **Los archivos no pueden tener más de 100 MB**. Si el archivo es más grande que este, separe la tabla en fragmentos y guárdela como archivos individuales. Puede anexar los datos después de cargar el archivo inicial.
 1. **Todas las tablas deben tener`primary key`**. Debe haber al menos una columna en la tabla que se pueda usar como `primary key` o un identificador único para cada fila de la tabla. Cualquier columna designada como `primary key` puede *nunca* ser nula. Un `primary key` puede ser tan simple como agregar una columna que da un número a cada fila, o puede ser dos columnas concatenadas para crear una columna de valores únicos (por ejemplo, `campaign name` y `date`).
 
@@ -90,7 +77,7 @@ Los porcentajes deben introducirse como decimales. Por ejemplo:
 
 Algunos valores del archivo, como los códigos postales y los ID, pueden comenzar o finalizar con ceros. Para asegurarse de que los ceros se retienen y cargan correctamente, puede cambiar el tipo de formato (por ejemplo, [de número a texto](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us)) o aplicar formato de número.
 
-Use `US ZIP codes` como ejemplo de cómo cambiar el formato de número. En [!DNL Excel], resalte la columna que contiene `ZIP codes` y [cambie el formato de número](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) a `ZIP code`. También puede seleccionar un formato de número personalizado y escribir `Type` en la ventana `00000`. Tenga en cuenta que este método podría presentar problemas si algunos códigos tienen el formato `00000` y otros el formato `00000-0000`.
+Use `US ZIP codes` como ejemplo de cómo cambiar el formato de número. En [!DNL Excel], resalte la columna que contiene `ZIP codes` y [cambie el formato de número](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) a `ZIP code`. También puede seleccionar un formato de número personalizado y escribir `00000` en la ventana `Type`. Tenga en cuenta que este método podría presentar problemas si algunos códigos tienen el formato `00000` y otros el formato `00000-0000`.
 
 El `Type` puede tener un [formato diferente para dar cabida a otros tipos de datos](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us), como identificadores. Si un `ID` tiene nueve dígitos de longitud, por ejemplo, el `Type` podría ser `000000000` o `000-000-000`. Esto cambiaría `123456` a `000-123-456`.
 
@@ -120,7 +107,7 @@ Ahora que la hoja de cálculo tiene el formato correcto y es compatible con [!DN
 
 1. Haga clic en **[!UICONTROL Save Table]**.
 
-¡Un *Correcto!El mensaje* aparece en la parte superior de la pantalla después de guardar la tabla.
+¡Un *Éxito!* El mensaje aparece en la parte superior de la pantalla después de guardar la tabla.
 
 Si necesita una imagen, observe todo el proceso:
 
@@ -152,7 +139,7 @@ Las tablas cargadas se muestran en la sección **Cargas de archivos** de la list
 
 1. Haga clic en **[!UICONTROL Open]** para iniciar la carga.
 
-   Una vez completada la carga, [!DNL Commerce Intelligence] validará la estructura de datos del archivo. ¡Un *Correcto!El mensaje* aparece en la parte superior de la pantalla después de guardar la tabla.
+   Una vez completada la carga, [!DNL Commerce Intelligence] validará la estructura de datos del archivo. ¡Un *Éxito!* El mensaje aparece en la parte superior de la pantalla después de guardar la tabla.
 
 ## Disponibilidad de datos {#availability}
 
@@ -172,4 +159,4 @@ Además, la carga de archivos no es la única manera de obtener los datos en [!D
 
 ## Recurso de terceros
 
-* [[!DNL Google Docs] Guía de formato de datos](https://support.google.com/docs/answer/56470?hl=en)
+* [Guía de formato de datos de [!DNL Google Docs]](https://support.google.com/docs/answer/56470?hl=en)
