@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1397
+source-wordcount: 1448
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ ht-degree: 0%
 >
 >Requiere [permisos de administración](../../administrator/user-management/user-management.md) para crear y editar gráficos SQL. `Standard` usuarios pueden reorganizar estos gráficos en los paneles y `Read-only` usuarios tienen la misma experiencia que tienen con los gráficos tradicionales. Además, `Read-only` usuarios no tienen acceso al texto de la consulta.
 
-Vea el [vídeo de formación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=es) para obtener más información.
+Vea el [vídeo de formación](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/mbi/sql-report-builder) para obtener más información.
 
 [!DNL SQL], o Lenguaje de consulta estructurado, es un lenguaje de programación utilizado para comunicarse con bases de datos. En [!DNL Commerce Intelligence], [!DNL SQL] se usa para consultar o recuperar datos de su Data Warehouse. Observe los informes en su tablero; entre bastidores, cada uno de ellos funciona con una consulta [!DNL SQL].
 
 Puede usar [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) para consultar directamente su Data Warehouse, ver los resultados y transformarlos en un gráfico. Puede empezar a crear un informe con [!DNL SQL Report Builder] haciendo clic en **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
 
-Vea el [vídeo de formación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=es) para obtener más información.
+Vea el [vídeo de formación](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/mbi/sql-report-builder) para obtener más información.
 
 El [!DNL SQL Report Builder] le permite consultar directamente su Data Warehouse, ver los resultados y transformarlos rápidamente en un gráfico. La mejor parte de usar [!DNL SQL] para generar informes es que no necesita esperar en ciclos de actualización para iterar en las columnas que cree. Si los resultados no son correctos, puede editar y volver a ejecutar rápidamente la consulta hasta que las cosas coincidan con sus expectativas.
 
@@ -149,7 +149,7 @@ Las columnas calculadas creadas con [!DNL SQL] no dependen de los ciclos de actu
 
 La mayoría de las veces, las diferencias en los resultados pueden atribuirse a ciclos de actualización. Si [!DNL Commerce Intelligence] está replicando datos de su base de datos en su Data Warehouse, es posible que vea resultados diferentes incluso cuando utilice la misma consulta.
 
-Los problemas de conexión también pueden provocar discrepancias. Vaya a la página `Connections` haciendo clic en **[!DNL Manage Data** > **Connections]** para desprotegerla. ¿Hay algún error en la integración de la base de datos en cuestión? Si es así, es posible que tenga que [volver a autenticar la integración](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es) para que las cosas se vuelvan a ejecutar.
+Los problemas de conexión también pueden provocar discrepancias. Vaya a la página `Connections` haciendo clic en **[!DNL Manage Data** > **Connections]** para desprotegerla. ¿Hay algún error en la integración de la base de datos en cuestión? Si es así, es posible que tenga que [volver a autenticar la integración](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations) para que las cosas se vuelvan a ejecutar.
 
 Si todas las integraciones están conectadas correctamente y no se encuentra en medio de un ciclo de actualización, puede que haya algún otro problema.
 

@@ -1,6 +1,6 @@
 ---
 title: Uso compartido de paneles con otros usuarios
-description: Obtenga información sobre cómo compartir tableros con otros usuarios.
+description: Comparta un tablero de Commerce Intelligence con su equipo para mantener a todos alineados. Conozca las recomendaciones de Adobe para conceder derechos de edición a algunos usuarios seleccionados.
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 269
+source-wordcount: 287
 ht-degree: 0%
 
 ---

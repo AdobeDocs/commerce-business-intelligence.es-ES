@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 246
+source-wordcount: 256
 ht-degree: 0%
 
 ---
@@ -75,9 +75,9 @@ Mantén esto abierto, lo necesitas para terminar esto.
 1. Copie `API Key` y `Secret` en la página de credenciales de [!DNL Mixpanel] en [!DNL Commerce Intelligence].
 1. Haga clic en **[!UICONTROL Connect to Mixpanel]** para completar la instalación.
 
-Si la conexión se ha realizado correctamente, _¡Correcto!_ mensaje se muestra en la parte superior de la página.
+Si la conexión se realiza correctamente, _se realizó correctamente_ El mensaje se muestra en la parte superior de la página.
 
 ### Relacionado
 
 * [Se esperaban  [!DNL Mixpanel] datos](../integrations/mixpanel-data.md)
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

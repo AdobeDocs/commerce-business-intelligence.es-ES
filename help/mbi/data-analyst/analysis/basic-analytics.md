@@ -22,10 +22,10 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 3130
-ht-degree: 0%
+source-wordcount: 3891
+ht-degree: 18%
 
 ---
 
@@ -64,7 +64,7 @@ Si algunos de estos cálculos no existen actualmente en la base de datos, cualqu
 
 **¿Aceptas pedidos de invitado?**
 
-*Si es así, es posible que esta tabla no contenga a todos sus clientes. Póngase en contacto con el [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para asegurarse de que los análisis de clientes incluyan a todos los clientes.*
+*Si es así, es posible que esta tabla no contenga a todos sus clientes. Póngase en contacto con el [equipo de soporte](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para asegurarse de que los análisis de clientes incluyan a todos los clientes.*
 
 *¿No está seguro de si acepta pedidos de invitado? Consulte [este tema](../data-warehouse-mgr/guest-orders.md) para obtener más información!*
 
@@ -78,7 +78,7 @@ En esta tabla, cada fila representa un orden. Las columnas de esta tabla contien
 * **[!UICONTROL Created_at]**: la fecha en que se creó o colocó el pedido.
 * **[!UICONTROL Customer_email]**: la dirección de correo electrónico del cliente que realizó el pedido. También puede ser el identificador único del cliente.
 * **[!UICONTROL Customer's lifetime number of orders]**: una copia de la columna con el mismo nombre en la tabla `Customers`.
-* **[!UICONTROL Customer's order number]**: número de pedido secuencial del cliente asociado con el pedido. Por ejemplo, si la fila que está viendo es el primer pedido de un cliente, esta columna es &quot;1&quot;; pero, si era el 15º pedido del cliente, en esta columna se muestra &quot;15&quot; para este pedido. Si esta dimensión no existe en su tabla `Customers`, pídale al [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) que le ayude a crearla.
+* **[!UICONTROL Customer's order number]**: número de pedido secuencial del cliente asociado con el pedido. Por ejemplo, si la fila que está viendo es el primer pedido de un cliente, esta columna es &quot;1&quot;; pero, si era el 15º pedido del cliente, en esta columna se muestra &quot;15&quot; para este pedido. Si esta dimensión no existe en su tabla `Customers`, pídale al [equipo de soporte](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) que le ayude a crearla.
 * **[!UICONTROL Customer's order number (previous-current)]**: una concatenación de dos valores en la columna **[!UICONTROL Customer's order number]**. Se utiliza en un informe de ejemplo a continuación para mostrar el tiempo transcurrido entre dos pedidos cualesquiera. Por ejemplo, el tiempo entre la primera fecha de pedido de un cliente y su segunda fecha de pedido se representa como &quot;1-2&quot; con este cálculo.
 * **[!UICONTROL Coupon_code]**: Muestra qué cupones se utilizaron en cada pedido.
 * **[!UICONTROL Seconds since previous order]**: tiempo (en segundos) entre los pedidos de un cliente.
@@ -135,9 +135,9 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: un recuento del número total de usuarios recién adquiridos durante un período determinado. `New Users` es diferente de `Unique Customers`, porque `New Users` tiene la marca de tiempo de que se creó una cuenta con su servicio (esto no significa que necesariamente hayan realizado un pedido) mientras que `Unique Customers` ha realizado al menos un pedido.
 * **Definición de métrica**: Esta métrica realiza un **Recuento** de `entity_id` de `customer_entity` tabla ordenada por `created_at`.
 * **Ejemplo de informe**: Número de usuarios nuevos creados el mes pasado
-   * **[!UICONTROL Metric]**: `New Users`
-   * **[!UICONTROL Time Range]**: `Last Month`
-   * **[!UICONTROL Time Interval]**: `By Day`
+  * **[!UICONTROL Metric]**: `New Users`
+  * **[!UICONTROL Time Range]**: `Last Month`
+  * **[!UICONTROL Time Interval]**: `By Day`
 
 ![Nuevos usuarios](../../assets/New_Users_Last_Month.png)<!--{: width="929"}-->
 
@@ -146,9 +146,9 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: un recuento de la cantidad total de clientes distintos durante un período determinado. Esto es diferente de `New Users`, ya que solo realiza el seguimiento de los clientes que han realizado al menos un pedido. Un informe de cliente distinto solo realiza el seguimiento de un cliente una vez en un intervalo de tiempo determinado. Si establece el intervalo de tiempo en `By Day` y un cliente realiza más de una compra en ese día, el cliente solo se contará una vez. Si desea ver un número total de compras en general, observe `Number of Orders`.
 * **Definición de métrica**: Esta métrica realiza un **Recuento distinto** de `customer_id` de `sales_flat_order` tabla ordenada por `created_at`.
 * **Ejemplo de informe**: Clientes distintos por semana durante los últimos 90 días
-   * **[!UICONTROL Metric]**: `Distinct Customers`
-   * **[!UICONTROL Time Range]**: `Moving range > Last 90 Days`
-   * **[!UICONTROL Time Interval]**: `By Day`
+  * **[!UICONTROL Metric]**: `Distinct Customers`
+  * **[!UICONTROL Time Range]**: `Moving range > Last 90 Days`
+  * **[!UICONTROL Time Interval]**: `By Day`
 
 ![Clientes únicos.](../../assets/Unique_customers_last_7_days.png)<!--{: width="929"}-->
 
@@ -157,9 +157,9 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: Un recuento del número total de nuevos suscriptores adquiridos durante un período determinado.
 * **Definición de métrica**: Esta métrica realiza un **Recuento distinto** de `customer_id` de `subscriptions` tabla ordenada por `start_date`.
 * **Ejemplo de informe**: Nuevos suscriptores este año por mes
-   * **[!UICONTROL Metric]**: `New Subscribers`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 0 Days Ago`
-   * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Metric]**: `New Subscribers`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 0 Days Ago`
+  * **[!UICONTROL Time Interval]**: `By Month`
 
 ![Suscriptores](../../assets/New_Subscribers_This_Year_by_Month.png)<!--{: width="929"}-->
 
@@ -168,18 +168,18 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: El número total de clientes que realizaron más de un pedido durante un período. En un informe de clientes repetidos, puede usar la métrica `Distinct Customers` y la dimensión `Customer's Order Number` de la tabla `orders`.
 * **Métrica usada**: `Distinct Customers`
 * **Ejemplo de informe**: número de compras segunda y tercera realizadas el año pasado
-   * **[!UICONTROL Metric]**: `Distinct Customers`
-   * **[!UICONTROL Time Range]**: `Moving Range > Last Year`
-   * **[!UICONTROL Time Interval]**: `By Month`
-   * **[!UICONTROL Group By]**: `Customer's Order Number`, luego seleccione `2` y `3`
+  * **[!UICONTROL Metric]**: `Distinct Customers`
+  * **[!UICONTROL Time Range]**: `Moving Range > Last Year`
+  * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Group By]**: `Customer's Order Number`, luego seleccione `2` y `3`
 
   ![Gráfico que muestra el segundo y tercer análisis de compra del último año](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **Ejemplo de informe 2**: El número de clientes repetidos los últimos años
-   * **[!UICONTROL Metric]**: `Distinct Customers`
-   * **[!UICONTROL Filters]**: `Customer's Order Number Greater Than 1`
-   * **[!UICONTROL Time Range]**: `Moving range > Last Year`
-   * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Metric]**: `Distinct Customers`
+  * **[!UICONTROL Filters]**: `Customer's Order Number Greater Than 1`
+  * **[!UICONTROL Time Range]**: `Moving range > Last Year`
+  * **[!UICONTROL Time Interval]**: `By Month`
 
   ![Clientes que repiten el año pasado](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
 
@@ -188,11 +188,11 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: Una lista de los clientes principales basada en su número total de pedidos. Esto le proporciona una lista directa de sus compradores más frecuentes.
 * **Métrica usada**: `Orders`
 * **Ejemplo de informe**: 25 clientes principales por número de pedidos de duración
-   * **[!UICONTROL Metric]**: `Orders`
-   * **[!UICONTROL Time Range]**: `All Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By]**: `customer_email`
-   * **[!UICONTROL Show Top/Bottom]**: los 25 principales ordenados por pedidos
+  * **[!UICONTROL Metric]**: `Orders`
+  * **[!UICONTROL Time Range]**: `All Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By]**: `customer_email`
+  * **[!UICONTROL Show Top/Bottom]**: los 25 principales ordenados por pedidos
 
   ![Principales 25 clientes por pedidos](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
 
@@ -201,11 +201,11 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: Una lista de los clientes principales basada en los ingresos de duración.
 * **Métrica usada**: `Average Lifetime Revenue`
 * **Ejemplo de informe**: 25 clientes principales por ingresos de por vida
-   * **[!UICONTROL Metric]**: `Average Lifetime Revenue`
-   * **[!UICONTROL Time Range]**: `All time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By]**: `customer_email`
-   * **[!UICONTROL Show Top Bottom]**: los 25 principales clasificados por ingresos por duración
+  * **[!UICONTROL Metric]**: `Average Lifetime Revenue`
+  * **[!UICONTROL Time Range]**: `All time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By]**: `customer_email`
+  * **[!UICONTROL Show Top Bottom]**: los 25 principales clasificados por ingresos por duración
 
   ![Principales 25 clientes por ingresos](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
 
@@ -214,13 +214,13 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: haga un seguimiento de [ingresos promedio de por vida de distintas cohortes](../dev-reports/lifetime-rev-cohort-analysis.md) de usuarios a lo largo del tiempo para identificar las cohortes de mayor rendimiento. Las cohortes se agrupan por una fecha común, como la fecha de primer orden o la fecha de creación.
 * **Métrica usada**: `Revenue`
 * **Ejemplo de informe**: Ingresos promedio por duración de cliente por cohorte
-   * **[!UICONTROL Metric]**: `Revenue`
-   * **[!UICONTROL Cohort Date]**: `Customer's first order date`
-   * **[!UICONTROL Time Interval]**: `Month`
-   * **[!UICONTROL Time Period]**: conjunto móvil de cohortes de las ocho cohortes más recientes con al menos cuatro meses de datos
-   * **[!UICONTROL Duration]**: `12 Month(s)`
-   * **[!UICONTROL Table]**: `Customer_entity`
-   * **[!UICONTROL Perspective]**: Valor Promedio Acumulado Por Miembro De Cohorte
+  * **[!UICONTROL Metric]**: `Revenue`
+  * **[!UICONTROL Cohort Date]**: `Customer's first order date`
+  * **[!UICONTROL Time Interval]**: `Month`
+  * **[!UICONTROL Time Period]**: conjunto móvil de cohortes de las ocho cohortes más recientes con al menos cuatro meses de datos
+  * **[!UICONTROL Duration]**: `12 Month(s)`
+  * **[!UICONTROL Table]**: `Customer_entity`
+  * **[!UICONTROL Perspective]**: Valor Promedio Acumulado Por Miembro De Cohorte
 
   ![Ingresos por duración de cliente por cohorte](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
 
@@ -229,27 +229,27 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: Un recuento del número de clientes adquiridos que han utilizado un código de cupón/descuento. Esto puede ayudarle a obtener una visión clara de los solicitantes de descuentos frente a los compradores a precio completo.
 * **Métrica usada**: `New Users`
 * **Ejemplo de informe**: Clientes con cupones y sin cupones por mes
-   * **[!UICONTROL Metric A]**: `Non coupon customers`
-   * **[!UICONTROL Metric]**: `New Users`
-   * **[!UICONTROL Filters]**: Número de pedidos superiores a 0 de por vida del cliente y Número de cupones de por vida del cliente igual a 0
-   * **[!UICONTROL Metric B]**: `Coupon customers`
-   * **[!UICONTROL Metric]**: `New Users`
-   * **[!UICONTROL Filters]**: Número de pedidos superiores a 0 de por vida de clientes y número de cupones superiores a 0 de por vida de clientes
-   * **[!UICONTROL Time range]**: `All Time`
-   * **[!UICONTROL Time interval]**: `By Month`
+  * **[!UICONTROL Metric A]**: `Non coupon customers`
+  * **[!UICONTROL Metric]**: `New Users`
+  * **[!UICONTROL Filters]**: Número de pedidos superiores a 0 de por vida del cliente y Número de cupones de por vida del cliente igual a 0
+  * **[!UICONTROL Metric B]**: `Coupon customers`
+  * **[!UICONTROL Metric]**: `New Users`
+  * **[!UICONTROL Filters]**: Número de pedidos superiores a 0 de por vida de clientes y número de cupones superiores a 0 de por vida de clientes
+  * **[!UICONTROL Time range]**: `All Time`
+  * **[!UICONTROL Time interval]**: `By Month`
 
   ![Clientes por uso de cupones](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
 
 * **Ejemplo de informe 2**: Porcentaje de clientes con y sin cupones por mes
-   * **[!UICONTROL Metric A]**: `Non coupon customers` (ocultar métrica)
-      * **[!UICONTROL Metric]**: `New Users`
-      * **[!UICONTROL Filters]**: `Customer's Lifetime Number of Orders Greater Than 0` y `Customer's Lifetime Number of Coupons Equal to 0`
-   * **[!UICONTROL Metric B]**: `Coupon customers`
-      * **[!UICONTROL Metric]**: `New Users`
-      * **[!UICONTROL Filters]**: `Customers Lifetime Number of Orders Greater Than 0` y `Customer's Lifetime Number of Coupons Greater Than 0`
-   * **[!UICONTROL Time Range]**: `All Time`
-   * **[!UICONTROL Time Interval]**: `By Month`
-   * **[!UICONTROL Formula]**: `B/(A+B)`
+  * **[!UICONTROL Metric A]**: `Non coupon customers` (ocultar métrica)
+    * **[!UICONTROL Metric]**: `New Users`
+    * **[!UICONTROL Filters]**: `Customer's Lifetime Number of Orders Greater Than 0` y `Customer's Lifetime Number of Coupons Equal to 0`
+  * **[!UICONTROL Metric B]**: `Coupon customers`
+    * **[!UICONTROL Metric]**: `New Users`
+    * **[!UICONTROL Filters]**: `Customers Lifetime Number of Orders Greater Than 0` y `Customer's Lifetime Number of Coupons Greater Than 0`
+  * **[!UICONTROL Time Range]**: `All Time`
+  * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Formula]**: `B/(A+B)`
 
 >[!NOTE]
 >
@@ -262,9 +262,9 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: El promedio de la cantidad de ingresos generados por los clientes en sus primeros 30 días como clientes.
 * **Descripción de métrica**: Esta métrica realiza un **Promedio** de `Customer's First 30 Day Revenue` de `customer_entity` tabla ordenada por `created_at`.
 * **Descripción del informe**: Promedio histórico de los ingresos de los primeros 30 días del cliente
-   * **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
-   * **[!UICONTROL Time Range]**: `All Time`
-   * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
+  * **[!UICONTROL Time Range]**: `All Time`
+  * **[!UICONTROL Time Interval]**: `None`
 
 ![Ingresos promedio de los primeros 30 días](../../assets/Avg_first_30_day_revenue.png)<!--{: width="929"}-->
 
@@ -273,9 +273,9 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: Cantidad promedio de ingresos generados por sus clientes durante su vida útil.
 * **Descripción de métrica**: Esta métrica realiza un **Promedio** de la columna `Customer's Lifetime Revenue` en la tabla `customer_entity` en función de `created_at`.
 * **Descripción del informe**: Promedio de todo el tiempo de los ingresos del cliente durante toda la vida útil
-   * **[!UICONTROL Metric]**: `Average Customer Lifetime Revenue`
-   * **[!UICONTROL Time Range]**: `All Time`
-   * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Metric]**: `Average Customer Lifetime Revenue`
+  * **[!UICONTROL Time Range]**: `All Time`
+  * **[!UICONTROL Time Interval]**: `None`
 
 ![Ingresos por duración de cliente](../../assets/Avd_customer_lifetime_revenue_.png)<!--{: width="929"}-->
 
@@ -286,9 +286,9 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: la métrica de ingresos muestra los ingresos totales obtenidos en un período de tiempo seleccionado.
 * Esta métrica realiza una **suma** de `grand_total` de `sales_flat_order` tabla ordenada por `created_at`.
 * **Ejemplo de informe**: Ingresos por mes, hasta la fecha
-   * **[!UICONTROL Metric]**: `Revenue`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
-   * **Intervalo de tiempo**: `By Month`
+  * **[!UICONTROL Metric]**: `Revenue`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
+  * **Intervalo de tiempo**: `By Month`
 
 >[!TIP]
 >
@@ -301,9 +301,9 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: un recuento del número total de pedidos durante un período determinado. Un informe Pedidos realiza un seguimiento de los cambios en el volumen de pedidos causados por nuevas ofertas de productos, promociones o cualquier otra cosa que pueda aumentar (o disminuir) el volumen de transacciones. Es posible que a menudo quiera segmentar esta métrica según algunas variables para responder a sus preguntas.
 * **Definición de métrica**: Esta métrica realiza un **Recuento** de `entity_id` de `sales_flat_order` tabla ordenada por `created_at`.
 * **Ejemplo de informe**: pedidos por mes, hasta la fecha
-   * **[!UICONTROL Metric]**: `number of orders`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
-   * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Metric]**: `number of orders`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
+  * **[!UICONTROL Time Interval]**: `By Month`
 
 >[!TIP]
 >
@@ -316,30 +316,30 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: la métrica de productos pedidos indica la cantidad de artículos vendidos durante un período de tiempo específico.
 * **Definición de métrica**: Esta métrica realiza una **suma** de `qty_ordered` de `sales_flat_order_item` tabla ordenada por `created_at`.
 * **Ejemplo de informe**: Artículos vendidos por mes, hasta la fecha
-   * **[!UICONTROL Metric]**: `Products ordered`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
-   * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Metric]**: `Products ordered`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
+  * **[!UICONTROL Time Interval]**: `By Month`
 
   ![Productos pedidos](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
 
 * Combine esta métrica con la métrica número de pedidos para calcular el número de artículos por pedido. A continuación, añada códigos de cupones al informe para determinar cómo afectan las promociones al tamaño del carro de compras o segmente los pedidos nuevos frente a los repetidos para comprender mejor el comportamiento de sus clientes.
 * **Ejemplo de informe**: Productos por pedido: primer pedido frente a pedidos repetidos
-   * **[!UICONTROL Metric A]**: productos pedidos: primer pedido
-      * **[!UICONTROL Metric]**: `Products ordered`
-      * **[!UICONTROL Filter]**: `Customer's order number = 1`
-   * **[!UICONTROL Metric B]**: pedidos: primer pedido
-      * **[!UICONTROL Metric]**: `Orders`
-      * **[!UICONTROL Filter]**: `Customer's order number = 1`
-   * **[!UICONTROL Metric C]**: productos pedidos: repetir pedidos
-      * **[!UICONTROL Metric]**: `Products ordered`
-      * **[!UICONTROL Filter]**: `Customer's order number > 1`
-   * **[!UICONTROL Metric D]**: Pedidos: Repetir pedidos
-      * **[!UICONTROL Metric]**: `Orders`
-      * **[!UICONTROL Filter]**: `Customer's order number > 1`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
-   * **[!UICONTROL Time Interval]**: `By Week`
-   * **[!UICONTROL Formula 1]**: `A/B`
-   * **[!UICONTROL Formula 2]**: `C/D`
+  * **[!UICONTROL Metric A]**: productos pedidos: primer pedido
+    * **[!UICONTROL Metric]**: `Products ordered`
+    * **[!UICONTROL Filter]**: `Customer's order number = 1`
+  * **[!UICONTROL Metric B]**: pedidos: primer pedido
+    * **[!UICONTROL Metric]**: `Orders`
+    * **[!UICONTROL Filter]**: `Customer's order number = 1`
+  * **[!UICONTROL Metric C]**: productos pedidos: repetir pedidos
+    * **[!UICONTROL Metric]**: `Products ordered`
+    * **[!UICONTROL Filter]**: `Customer's order number > 1`
+  * **[!UICONTROL Metric D]**: Pedidos: Repetir pedidos
+    * **[!UICONTROL Metric]**: `Orders`
+    * **[!UICONTROL Filter]**: `Customer's order number > 1`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
+  * **[!UICONTROL Time Interval]**: `By Week`
+  * **[!UICONTROL Formula 1]**: `A/B`
+  * **[!UICONTROL Formula 2]**: `C/D`
 
 >[!NOTE]
 >
@@ -352,10 +352,10 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: rastrea el valor promedio de los pedidos realizados durante un período. Utilice esta métrica para determinar rápidamente cómo ha fluctuado el valor de pedido promedio (AOV) como resultado de sus esfuerzos de marketing, oferta de productos y otros cambios en su negocio.
 * **Definición de métrica**: Esta métrica realiza un **promedio** de `grand_total` de `sales_flat_order` tabla ordenada por `created_at`.
 * **Ejemplo de informe**: AOV frente al año anterior, hasta la fecha
-   * **[!UICONTROL Metric]**: `Average order value`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
-   * **[!UICONTROL Time Interval]**: `By Month`
-   * **[!UICONTROL Perspective]**: `Amount Change vs Previous Year`
+  * **[!UICONTROL Metric]**: `Average order value`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
+  * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Perspective]**: `Amount Change vs Previous Year`
 
   ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
 
@@ -364,29 +364,29 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: Este informe proporciona a insight en qué productos se venden cuando ofrece promociones o cupones.
 * **Métrica utilizada**: productos pedidos
 * **Ejemplo de informe**: Productos más comprados con cupones
-   * **[!UICONTROL Metric]**: `Products ordered`
-   * **[!UICONTROL Filter]**: `Order's coupon_code Is Not \[NULL\]`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By**]: `name` (o `SKU`, o cualquier otro identificador de producto)
-   * **[!UICONTROL Show top/bottom]**: los 25 principales ordenados por productos
+  * **[!UICONTROL Metric]**: `Products ordered`
+  * **[!UICONTROL Filter]**: `Order's coupon_code Is Not \[NULL\]`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By**]: `name` (o `SKU`, o cualquier otro identificador de producto)
+  * **[!UICONTROL Show top/bottom]**: los 25 principales ordenados por productos
 
   ![Productos con cupones](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
 
 ### Tiempo entre pedidos
 
-* **Descripción**: pruebe sus suposiciones y expectativas sobre los ciclos de compra de sus clientes con un análisis de **tiempo entre pedidos** que observa la cantidad promedio (o mediana) de tiempo entre compras. En la tabla siguiente, puede ver que sus mejores clientes (aquellos que realizan más de tres pedidos) realizan su segunda compra en menos de seis meses. Los clientes que no hayan realizado un cuarto pedido esperan 14 meses antes de realizar una segunda compra.
+* **Descripción**: Pruebe sus suposiciones y expectativas sobre los ciclos de compra de sus clientes con un análisis de **tiempo entre pedidos** que observa el promedio (¡o la mediana!) cantidad de tiempo entre compras. En la tabla siguiente, puede ver que sus mejores clientes (aquellos que realizan más de tres pedidos) realizan su segunda compra en menos de seis meses. Los clientes que no hayan realizado un cuarto pedido esperan 14 meses antes de realizar una segunda compra.
 * **Definición de métrica**: Esta métrica realiza un **promedio** de `Time since previous order` de `sales_flat_order` ordenado por `created_at`.
 * **Ejemplo de informe**:
-   * **Métrica 1**: ≤ 3 pedidos
-      * **[!UICONTROL Metric]**: `Average time between orders`
-      * **[!UICONTROL Filter]**: `Customer's lifetime number of orders ≤ 3`
-   * **Métrica 2**: > 3 pedidos
-      * **[!UICONTROL Metric]**: `Average time between orders`
-      * **[!UICONTROL Filter]**: `Customer's lifetime number of orders > 3`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By]**:` Customer's order number (previous-current)`
+  * **Métrica 1**: ≤ 3 pedidos
+    * **[!UICONTROL Metric]**: `Average time between orders`
+    * **[!UICONTROL Filter]**: `Customer's lifetime number of orders ≤ 3`
+  * **Métrica 2**: > 3 pedidos
+    * **[!UICONTROL Metric]**: `Average time between orders`
+    * **[!UICONTROL Filter]**: `Customer's lifetime number of orders > 3`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By]**:` Customer's order number (previous-current)`
 
 >[!NOTE]
 >
@@ -401,10 +401,10 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: puedes analizar tu gasto en mercadotecnia en varios periodos de tiempo e intervalos, por campañas o conjuntos de anuncios u otras segmentaciones.
 * **Definición de métrica**: Esta métrica realiza una Suma en la columna de gasto de la tabla `Marketing Spend` ordenada por la columna `date`.
 * **Ejemplo de informe**: Gasto en publicidad por campaña
-   * **[!UICONTROL Metric]**: `Ad spend`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By]**: `campaign`
+  * **[!UICONTROL Metric]**: `Ad spend`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By]**: `campaign`
 
 ![Gasto en publicidad](../../assets/ad_spend.png)<!--{: width="929"}-->
 
@@ -413,10 +413,10 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 * **Descripción**: además de analizar la inversión en publicidad, puede analizar las impresiones de anuncios y los clics en anuncios.
 * **Definición de métrica**: Esta métrica realiza una Suma en la columna de impresiones (o clics) de la tabla `Marketing Spend` ordenada por la columna de fecha.
 * **Ejemplo de informe**: Agregue impresiones y clics de publicidad por día
-   * **[!UICONTROL Metric A]**: `Ad impressions`
-   * **[!UICONTROL Metric B]**: `Ad clicks`
-   * **[!UICONTROL Time Range]**: `1 Year Ago to 3 Months Ago`
-   * **[!UICONTROL Time Interval]**: `By Day`
+  * **[!UICONTROL Metric A]**: `Ad impressions`
+  * **[!UICONTROL Metric B]**: `Ad clicks`
+  * **[!UICONTROL Time Range]**: `1 Year Ago to 3 Months Ago`
+  * **[!UICONTROL Time Interval]**: `By Day`
 
   ![Impresiones de anuncios](../../assets/ad_impressions.png)<!--{: width="929"}-->
 
@@ -424,13 +424,13 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 
 * **Descripción**: con las métricas de impresiones de anuncios y clics en anuncios que creaste anteriormente, puedes analizar la tasa de clics según las diferentes campañas a lo largo del tiempo.
 * **Ejemplo de informe**: CTR por campaña
-   * **[!UICONTROL Metric A]**: `Ad impressions`
-   * **[!UICONTROL Metric B]**: `Ad clicks`
-   * **[!UICONTROL Time Range]**:`All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Formula]**: `B/A`
-   * Seleccione la opción `%`.
-   * **[!UICONTROL Group By]**: `campaign`
+  * **[!UICONTROL Metric A]**: `Ad impressions`
+  * **[!UICONTROL Metric B]**: `Ad clicks`
+  * **[!UICONTROL Time Range]**:`All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Formula]**: `B/A`
+  * Seleccione la opción `%`.
+  * **[!UICONTROL Group By]**: `campaign`
 
 >[!NOTE]
 >
@@ -442,13 +442,13 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 
 * **Descripción**: con las métricas de gasto por anuncio y clics en publicidad que creó anteriormente, puede analizar el costo por clic en diferentes campañas a lo largo del tiempo.
 * **Ejemplo de informe**: CPC por campaña
-   * **[!UICONTROL Metric A]**: `Ad spend`
-   * **[!UICONTROL Metric B]**: `Ad clicks`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Formula]**: `A/B`
-   * Seleccione la opción `currency`
-   * **[!UICONTROL Group By]**: `campaign`
+  * **[!UICONTROL Metric A]**: `Ad spend`
+  * **[!UICONTROL Metric B]**: `Ad clicks`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Formula]**: `A/B`
+  * Seleccione la opción `currency`
+  * **[!UICONTROL Group By]**: `campaign`
 
 >[!NOTE]
 >
@@ -460,10 +460,10 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 
 * **Descripción**: si realiza el seguimiento del origen, el medio y la campaña de un pedido con [!DNL Google eCommerce], puede analizar a los clientes por su origen de adquisición. Esto le ayuda a identificar qué fuentes de marketing están adquiriendo clientes y a responder preguntas como &quot;¿la mayoría de sus clientes están realizando sus primeros pedidos a través de [!DNL Google], [!DNL Facebook] o alguna otra fuente?&quot;
 * **Ejemplo de informe**: Clientes por origen de adquisición
-   * **[!UICONTROL Metric Used]**: `New Customers`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `By Month`
-   * **[!UICONTROL Group By]**: `Customer's first order's source`
+  * **[!UICONTROL Metric Used]**: `New Customers`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `By Month`
+  * **[!UICONTROL Group By]**: `Customer's first order's source`
 
 >[!NOTE]
 >
@@ -475,11 +475,11 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 
 * **Descripción**: de manera similar a analizar los clientes por origen de adquisición, también puede analizar a los clientes por medio y campaña de su primer pedido. Esto puede ayudarle a responder preguntas como &quot;¿qué campañas están atrayendo nuevos clientes?&quot;
 * **Ejemplo de informe**: Clientes por campaña de adquisición con medio de pago
-   * **[!UICONTROL Metric Used]**: `New customers`
-   * **[!UICONTROL Filter]**: `Customer's first order's medium IN ppc`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By]**: `Customer's first order's campaign`
+  * **[!UICONTROL Metric Used]**: `New customers`
+  * **[!UICONTROL Filter]**: `Customer's first order's medium IN ppc`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By]**: `Customer's first order's campaign`
 
 >[!NOTE]
 >
@@ -491,16 +491,16 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 
 * **Descripción**: una manera de analizar el costo de una campaña es atribuir todos los costos únicamente a los clientes que adquirió a través de la campaña.
 * **Ejemplo de informe**: CAC por campaña
-   * **[!UICONTROL Metric A]**: `New customers`
-   * **[!UICONTROL Filter]**: `Customer's first order's medium IN ppc`
-   * **[!UICONTROL Metric B]**: `Ad Spend`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Formula]**: `B/A`
-   * Seleccione la opción `currency`
-   * **[!UICONTROL Group By]**:
-      * Para la métrica `A`, seleccione `Customer's first order's campaign`
-      * Para la métrica `B`, seleccione `campaign`
+  * **[!UICONTROL Metric A]**: `New customers`
+  * **[!UICONTROL Filter]**: `Customer's first order's medium IN ppc`
+  * **[!UICONTROL Metric B]**: `Ad Spend`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Formula]**: `B/A`
+  * Seleccione la opción `currency`
+  * **[!UICONTROL Group By]**:
+    * Para la métrica `A`, seleccione `Customer's first order's campaign`
+    * Para la métrica `B`, seleccione `campaign`
 
   ![Nuevos usuarios.](../../assets/New_Users_Last_Month.png)
 
@@ -515,18 +515,18 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 ### Valor de duración por fuente de adquisición, medio y campaña
 
 * **Descripción**: Además de analizar el número de clientes adquiridos por cada campaña, puede analizar los ingresos promedio de duración de estos clientes. Esto le ayuda a identificar:
-   * Si determinadas campañas atraen a un gran volumen de clientes, pero estos tienen un valor bajo a largo plazo.
-   * Si determinadas campañas atraen un volumen bajo de clientes, pero esos clientes tienen un valor alto a largo plazo.
+  * Si determinadas campañas atraen a un gran volumen de clientes, pero estos tienen un valor bajo a largo plazo.
+  * Si determinadas campañas atraen un volumen bajo de clientes, pero esos clientes tienen un valor alto a largo plazo.
 * **Ejemplo de informe**: Primero agregue la métrica `New customers`. A continuación, agregue la métrica `Average lifetime revenue`. Seleccione el lapso de tiempo deseado y elija `interval` como `None`. Finalmente, seleccione la opción `group by` como `Customer's first order's campaign`.
-   * **[!UICONTROL Metric A]**: `New Customers`
-   * **[!UICONTROL Filter A]**: `Customer's first order's source` COMO &#39;%google%&#39;
-   * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
-   * **[!UICONTROL Metric B]**: `Average lifetime revenue`
-   * **[!UICONTROL Filter A]**: `Customer's first order's source` COMO &#39;%google%&#39;
-   * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Group By]**: `Customer's first order's campaign`
+  * **[!UICONTROL Metric A]**: `New Customers`
+  * **[!UICONTROL Filter A]**: `Customer's first order's source` COMO &#39;%google%&#39;
+  * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
+  * **[!UICONTROL Metric B]**: `Average lifetime revenue`
+  * **[!UICONTROL Filter A]**: `Customer's first order's source` COMO &#39;%google%&#39;
+  * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Group By]**: `Customer's first order's campaign`
 
 >[!NOTE]
 >
@@ -538,20 +538,20 @@ Estos son algunos ejemplos comunes de informes y métricas que pueden resultar �
 
 * **Descripción**: una forma de calcular el retorno de la inversión por campaña es analizar todos los pedidos realizados a través de la campaña. Sin embargo, hay un método alternativo que analiza el valor de duración de los clientes adquiridos a través de una campaña. Para analizar el retorno de la inversión, es importante que los nombres de las campañas sean coherentes en los datos de gasto y en los datos transaccionales. Si crea el siguiente informe y no existen valores de ROI debido a que los nombres de campaña no coinciden, es posible que tenga que buscar en el [etiquetado UTM](../../best-practices/utm-tagging-google.md) que ha implementado.
 * **Ejemplo de informe**: ROI por campaña
-   * **[!UICONTROL Metric A]**: `New Customers`
-   * **[!UICONTROL Filter A]**: `Customer's first order's source` COMO &#39;%google%&#39;
-   * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
-   * **[!UICONTROL Metric B]**: `Average lifetime revenue`
-   * **[!UICONTROL Filter A]**: `Customer's first order's source` COMO &#39;%google%&#39;
-   * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
-   * **[!UICONTROL Metric C]**: `Ad spend`
-   * **[!UICONTROL Time Range]**: `All-Time`
-   * **[!UICONTROL Time Interval]**: `None`
-   * **[!UICONTROL Formula]**: `(B-(C/A))/(C/A)`
-   * Seleccione la opción `% `
-   * **[!UICONTROL Group By]**:
-      * Para la métrica `A` y `B`, seleccione `Customer's first order's campaign`
-      * Para la métrica `C`, seleccione `campaign`
+  * **[!UICONTROL Metric A]**: `New Customers`
+  * **[!UICONTROL Filter A]**: `Customer's first order's source` COMO &#39;%google%&#39;
+  * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
+  * **[!UICONTROL Metric B]**: `Average lifetime revenue`
+  * **[!UICONTROL Filter A]**: `Customer's first order's source` COMO &#39;%google%&#39;
+  * **[!UICONTROL Filter B]**: `Customer's first order's medium IN ppc`
+  * **[!UICONTROL Metric C]**: `Ad spend`
+  * **[!UICONTROL Time Range]**: `All-Time`
+  * **[!UICONTROL Time Interval]**: `None`
+  * **[!UICONTROL Formula]**: `(B-(C/A))/(C/A)`
+  * Seleccione la opción `% `
+  * **[!UICONTROL Group By]**:
+    * Para la métrica `A` y `B`, seleccione `Customer's first order's campaign`
+    * Para la métrica `C`, seleccione `campaign`
 
 >[!NOTE]
 >

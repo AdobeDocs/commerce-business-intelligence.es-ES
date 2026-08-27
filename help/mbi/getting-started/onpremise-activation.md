@@ -22,9 +22,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 761
+source-wordcount: 767
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Para crear su cuenta, póngase en contacto con el equipo de cuenta de Adobe o co
 
 Una vez creada la cuenta, busque en su correo electrónico un mensaje de notificación de cuenta de [!DNL The Magento BI Team@rjmetrics.com]. Use el vínculo proporcionado en el correo electrónico para obtener acceso a su cuenta de [!DNL Commerce Intelligence] y crear su contraseña. Vaya a la bandeja de entrada y verifique su dirección de correo electrónico.
 
-Si no recibió un correo electrónico, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si no recibió un correo electrónico, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ![Crear pantalla de contraseña para la nueva cuenta de Commerce Intelligence](../assets/create-account-4.png)
 
@@ -132,15 +132,15 @@ Escriba su información de [!DNL Commerce Intelligence] en la pantalla de [!UICO
 
 [!UICONTROL Integration Name]: [elija un nombre para su instancia de [!DNL Commerce Intelligence]]
 
-[!UICONTROL Host]: `mbi.internal`
+[!UICONTROL Host]&#x200B;: `mbi.internal`
 
-[!UICONTROL Port]: `3306`
+[!UICONTROL Port]&#x200B;: `3306`
 
-[!UICONTROL Nombre de usuario]: `mbi`
+[!UICONTROL Nombre de usuario]&#x200B;: `mbi`
 
 [!UICONTROL Password]: [contraseña de entrada mostrada en la sección anterior]
 
-[!UICONTROL Database Name]: `main`
+[!UICONTROL Database Name]&#x200B;: `main`
 
 [!UICONTROL Table Prefixes]: [dejar en blanco si no hay prefijos de tabla]
 
@@ -150,7 +150,7 @@ Escriba su información de [!DNL Commerce Intelligence] en la pantalla de [!UICO
 
 **Entradas:**
 
-[!UICONTROL Database Timezone]: `UTC`
+[!UICONTROL Database Timezone]&#x200B;: `UTC`
 
 [!UICONTROL Desired Timezone]: [elija la zona horaria para la cual desea que se muestren sus datos]
 
@@ -166,13 +166,13 @@ La IU del proyecto proporciona una cadena de acceso SSH. Esta cadena se puede us
 
 **Entradas:**
 
-[!UICONTROL Encryption Type]: `SSH Tunnel`
+[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
 
 [!UICONTROL Remote Address]: `ssh.us-3.magento.cloud` [del paso anterior]
 
 [!UICONTROL Username]: `vfbfui4vmfez6-master-7rqtwti—mymagento` [del paso anterior]
 
-[!UICONTROL Port]: `22`
+[!UICONTROL Port]&#x200B;: `22`
 
 ## Guarde la integración.
 
@@ -189,7 +189,7 @@ Después de completar la configuración, [inicia sesión](../getting-started/sig
 <!--
 # Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 >[!NOTE]
 >

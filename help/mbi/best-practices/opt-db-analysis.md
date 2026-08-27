@@ -1,6 +1,6 @@
 ---
 title: Optimización de la base de datos para análisis
-description: Aprenda a optimizar la base de datos para realizar análisis.
+description: Optimizar la base de datos operativa para su uso con Commerce Intelligence. Desbloquee los datos valiosos que ya existen sin crear ni modificar nuevas fuentes.
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
 role: Admin, Developer, User
 feature: Business Performance, Data Integration, Data Import/Export, Data Warehouse Manager
@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 864
+source-wordcount: 885
 ht-degree: 0%
 
 ---

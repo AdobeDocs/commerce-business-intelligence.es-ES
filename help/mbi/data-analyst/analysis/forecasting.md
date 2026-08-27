@@ -1,6 +1,6 @@
 ---
 title: Previsión
-description: Previsión
+description: Prever el valor de duración del cliente y los pedidos futuros en Commerce Intelligence. Consulte cómo la previsión le ayuda a planificar con confianza las estrategias de ingresos y crecimiento.
 exl-id: 61e0516a-941c-4e32-b051-6ff664962198
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
@@ -21,9 +21,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 58
+source-wordcount: 79
 ht-degree: 0%
 
 ---

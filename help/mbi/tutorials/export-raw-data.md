@@ -20,23 +20,23 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 491
+source-wordcount: 511
 ht-degree: 0%
 
 ---
 
 # Exportar datos sin procesar
 
-Con las exportaciones de datos sin procesar, puede exportar registros de su Data Warehouse para obtener una visión más detallada de lo que alimenta su panel. Además, las exportaciones de datos sin procesar pueden ayudarle a [identificar discrepancias en los datos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=es).
+Con las exportaciones de datos sin procesar, puede exportar registros de su Data Warehouse para obtener una visión más detallada de lo que alimenta su panel. Además, las exportaciones de datos sin procesar pueden ayudarle a [identificar discrepancias en los datos](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies).
 
 Las exportaciones de datos sin procesar proporcionan acceso a columnas y dimensiones adicionales generadas mediante la desnormalización y la agregación previa de métricas relevantes. Por ejemplo, `User's first order date` es una dimensión que puede exportar para cada usuario en [!DNL Commerce Intelligence], aunque es posible que no esté disponible en la base de datos.
 
 Este tutorial abarca lo siguiente:
 
 * [Selección de datos para exportar](#select)
-* [Descarga de la exportación (](#download)
+* [Descargando la exportación (archivo `.csv`)](#download)
 * [Acceso a exportaciones históricas](#historical)
 
 ## Paso 1: Selección de datos para exportar {#select}

@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1032
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Al [crear columnas calculadas](../data-warehouse-mgr/creating-calculated-columns
 1. Cómo se relacionan entre sí las tablas de las bases de datos
 1. Las claves principales y externas que definen esta relación
 
-Si conoce esta información, puede crear fácilmente una ruta siguiendo las instrucciones de este tema. Es posible que desee preguntar a un experto técnico de su organización o ponerse en contacto con el [equipo de Servicios profesionales](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Si conoce esta información, puede crear fácilmente una ruta siguiendo las instrucciones de este tema. Es posible que desee preguntar a un experto técnico de su organización o ponerse en contacto con el [equipo de Servicios profesionales](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Actualizadores en relaciones de tabla y tipos de clave {#refresher}
 
@@ -96,7 +96,7 @@ Ahora puede crear la ruta.
 
 * **[!DNL Commerce Intelligence]no puede adivinar las relaciones de clave principal/externa**. No desea introducir datos incorrectos en su cuenta, por lo que la creación de rutas debe realizarse manualmente.
 
-* **Actualmente, las rutas sólo se pueden especificar entre dos tablas diferentes**. ¿La lógica que intenta volver a crear implica más de dos tablas? Entonces puede tener sentido (1) unir las columnas a una tabla intermedia primero, luego a la tabla de &quot;destino final&quot;, o (2) consultar con el equipo de [Servicios profesionales](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para encontrar el mejor enfoque a sus objetivos.
+* **Actualmente, las rutas sólo se pueden especificar entre dos tablas diferentes**. ¿La lógica que intenta volver a crear implica más de dos tablas? Entonces puede tener sentido (1) unir las columnas a una tabla intermedia primero, luego a la tabla de &quot;destino final&quot;, o (2) consultar con el equipo de [Servicios profesionales](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para encontrar el mejor enfoque a sus objetivos.
 
 * **Una columna solo puede ser la referencia de clave externa para una ruta de acceso al mismo tiempo**. Por ejemplo, si `order_items.order_id` señala a `orders.id`, entonces `order_items.order_id` no puede señalar a nada más.
 

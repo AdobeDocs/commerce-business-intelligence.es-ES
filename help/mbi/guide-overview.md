@@ -25,9 +25,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 last-update: 2026-08-14
-source-git-commit: a02a389e329acf9bf10b85687e5f877cab992337
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 492
 ht-degree: 2%
 
 ---
@@ -58,15 +58,15 @@ Además de los flujos de trabajo basados en funciones anteriores, esta guía tam
 
 ## Cómo obtener ayuda
 
-Póngase en contacto con el [equipo de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) si tiene preguntas y desea aprovechar algunos de los servicios profesionales o si tiene problemas con su cuenta.
+Póngase en contacto con el [equipo de soporte](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) si tiene preguntas y desea aprovechar algunos de los servicios profesionales o si tiene problemas con su cuenta.
 
 ### Políticas de servicio
 
-Ver una [lista de los servicios que proporciona el equipo de atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Ver una [lista de los servicios que proporciona el equipo de atención al cliente](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ### Envío de un vale de asistencia
 
-¿Necesita ayuda para crear una columna calculada avanzada? ¿Ha encontrado un defecto o un problema de conexión? Si necesita ponerse en contacto con el equipo de asistencia, Adobe le pide que utilice las [directrices de vale de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es). Estas directrices describen la información que Adobe necesita para resolver el problema.
+¿Necesita ayuda para crear una columna calculada avanzada? ¿Ha encontrado un defecto o un problema de conexión? Si necesita ponerse en contacto con el equipo de asistencia, Adobe le pide que utilice las [directrices de vale de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies). Estas directrices describen la información que Adobe necesita para resolver el problema.
 
 ## Documentación disponible
 

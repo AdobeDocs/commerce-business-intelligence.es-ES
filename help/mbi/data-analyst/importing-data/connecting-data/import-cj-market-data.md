@@ -16,16 +16,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 141
+source-wordcount: 155
 ht-degree: 0%
 
 ---
 
 # Importar datos de [!DNL CJ Affiliate]
 
-Para importar datos de [!DNL CJ Affiliate (Commission Junction)] en [!DNL Adobe Commerce Intelligence], simplemente siga los pasos a continuación y adjunte el archivo resultante a un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es). Adobe configurará la tabla de datos en su cuenta y le permitirá continuar cargando datos de forma independiente.
+Para importar datos de [!DNL CJ Affiliate (Commission Junction)] en [!DNL Adobe Commerce Intelligence], simplemente siga los pasos a continuación y adjunte el archivo resultante a un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies). Adobe configurará la tabla de datos en su cuenta y le permitirá continuar cargando datos de forma independiente.
 
 ## Exportar [!DNL CJ Affiliate] datos
 

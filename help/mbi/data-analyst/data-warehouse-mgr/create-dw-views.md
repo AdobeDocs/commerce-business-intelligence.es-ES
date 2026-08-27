@@ -24,10 +24,10 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1120
-ht-degree: 6%
+source-wordcount: 1156
+ht-degree: 13%
 
 ---
 
@@ -79,11 +79,11 @@ Observe con más detalle uno de los ejemplos mencionados anteriormente en este a
 
 | **`_id`** | **`campaign`** | **`adClicks`** | **`date`** | **`impressions`** | **`adCost`** |
 |--- |--- |--- |--- |--- |--- |
-| 1 | eee | 60 | 00:00:00 de mayo de 2017-05-05 | 2000 | 10,2 |
+| 1 | eee | 60 | 2017-05-05 00:00:00 | 2000 | 10,2 |
 | 2 | ggg | 40 | 2017-05-23 00:00:00 | 900 | 4,6 |
-| 3 | aaa | 22 | 00:00:00 del 12-06-2017 | 400 | 2,5 |
-| 4 | eee | 350 | 00:00:00 del 30-06-2017 | 14500 | 35 |
-| 5 | fff | 280 | 00:00:00 del 10-07-2017 | 10200 | 28,5 |
+| 3 | aaa | 22 | 2017-06-12 00:00:00 | 400 | 2,5 |
+| 4 | eee | 350 | 2017-06-30 00:00:00 | 14500 | 35 |
+| 5 | fff | 280 | 2017-07-10 00:00:00 | 10200 | 28,5 |
 
 `Ad source: Facebook`
 
@@ -93,11 +93,11 @@ Observe con más detalle uno de los ejemplos mencionados anteriormente en este a
 
 | **`_id`** | **`campaign`** | **`adClicks`** | **`date`** | **`impressions`** | **`adCost`** |
 |--- |--- |--- |--- |--- |--- |
-| 1 | aaa | 25 | 00:00:00 de mayo de 2017-05-01 | 1200 | 5 |
-| 2 | ddd | 12 | 00:00:00 del 15-05-2017 | 800 | 2,5 |
+| 1 | aaa | 25 | 2017-05-01 00:00:00 | 1200 | 5 |
+| 2 | ddd | 12 | 2017-05-15 00:00:00 | 800 | 2,5 |
 | 3 | aaa | 40 | 2017-05-22 00:00:00 | 2000 | 7 |
-| 4 | aaa | 110 | 00:00:00 de 08-06-2017 | 6000 | 10 |
-| 5 | ccc | 5 | 00:00:00 de 06-07-2017 | 300 | 1,2 |
+| 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
+| 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1,2 |
 
 Para crear una sola tabla de gasto de anuncios que contenga las campañas [!DNL Facebook] y [!DNL Google AdWords], debe escribir una consulta SQL y utilizar la función `UNION ALL`. La instrucción `UNION ALL` se utiliza con mayor frecuencia para combinar varias consultas SQL distintas y anexar los resultados de cada consulta a un único resultado.
 
@@ -141,22 +141,22 @@ Si guarda la consulta anterior como `Data Warehouse View`, se creará una tabla 
 
 | **`id`** | **`ad_source`** | **`date`** | **`campaign`** | **`spend`** | **`impressions`** | **`clicks`** |
 |--- |--- |--- |--- |--- |--- |--- |
-| **1** | [!DNL Facebook] | 00:00:00 de mayo de 2017-05-01 | aaa | 5 | 1200 | 25 |
-| **1** | [!DNL Google AdWords] | 00:00:00 de mayo de 2017-05-05 | eee | 10,2 | 2000 | 60 |
-| **2** | [!DNL Facebook] | 00:00:00 del 15-05-2017 | ddd | 2,5 | 800 | 12 |
+| **1** | [!DNL Facebook] | 2017-05-01 00:00:00 | aaa | 5 | 1200 | 25 |
+| **1** | [!DNL Google AdWords] | 2017-05-05 00:00:00 | eee | 10,2 | 2000 | 60 |
+| **2** | [!DNL Facebook] | 2017-05-15 00:00:00 | ddd | 2,5 | 800 | 12 |
 | **2** | [!DNL Google AdWords] | 2017-05-23 00:00:00 | ggg | 4,6 | 900 | 40 |
 | **3** | [!DNL Facebook] | 2017-05-22 00:00:00 | aaa | 7 | 2000 | 40 |
-| **3** | [!DNL Google AdWords] | 00:00:00 del 12-06-2017 | aaa | 2,5 | 400 | 22 |
-| **4** | [!DNL Facebook] | 00:00:00 de 08-06-2017 | aaa | 10 | 6000 | 110 |
-| **4** | [!DNL Google AdWords] | 00:00:00 del 30-06-2017 | eee | 35 | 14500 | 350 |
-| **5** | [!DNL Facebook] | 00:00:00 de 06-07-2017 | ccc | 1,2 | 300 | 5 |
-| **5** | [!DNL Google AdWords] | 00:00:00 del 10-07-2017 | fff | 28,5 | 10200 | 280 |
+| **3** | [!DNL Google AdWords] | 2017-06-12 00:00:00 | aaa | 2,5 | 400 | 22 |
+| **4** | [!DNL Facebook] | 2017-06-08 00:00:00 | aaa | 10 | 6000 | 110 |
+| **4** | [!DNL Google AdWords] | 2017-06-30 00:00:00 | eee | 35 | 14500 | 350 |
+| **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1,2 | 300 | 5 |
+| **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28,5 | 10200 | 280 |
 
 En lugar de crear un conjunto independiente de métricas de marketing para cada fuente de publicidad, puede crear un único conjunto de métricas utilizando la tabla anterior para capturar todos los anuncios.
 
 **¿Busca ayuda adicional?**
 
-La escritura de SQL y la creación de `Data Warehouse Views` no se incluyen en el soporte técnico. Sin embargo, el [equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) ofrece asistencia en la creación de vistas. Desde migrar una base de datos heredada con una nueva base de datos hasta crear una única vista de Data Warehouse para realizar un análisis específico, el equipo de asistencia puede ayudarle.
+La escritura de SQL y la creación de `Data Warehouse Views` no se incluyen en el soporte técnico. Sin embargo, el [equipo de servicios](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) ofrece asistencia en la creación de vistas. Desde migrar una base de datos heredada con una nueva base de datos hasta crear una única vista de Data Warehouse para realizar un análisis específico, el equipo de asistencia puede ayudarle.
 
 Normalmente, la creación de un nuevo(a) `Data Warehouse View` con el fin de consolidar de 2 a 3 tablas de estructura similar requiere cinco horas de tiempo de servicio, lo que se traduce en aproximadamente 1.250 $ de trabajo. Sin embargo, a continuación se presentan algunos factores comunes que pueden aumentar la inversión esperada requerida:
 

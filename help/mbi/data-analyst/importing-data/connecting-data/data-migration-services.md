@@ -22,16 +22,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 685
+source-wordcount: 711
 ht-degree: 0%
 
 ---
 
 # Migración de datos
 
-La migración a un nuevo esquema de base de datos, servidor o base de datos de informes no tiene por qué ser estresante. El [[!DNL Adobe] equipo de servicios](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) ofrece asistencia para la migración.
+La migración a un nuevo esquema de base de datos, servidor o base de datos de informes no tiene por qué ser estresante. El [[!DNL Adobe] equipo de servicios](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) ofrece asistencia para la migración.
 
 Para garantizar que la transición sea lo más fluida posible, debe ser lo más detallado posible al enviar la solicitud de migración. Este tema tiene todo lo que necesita para enviar una solicitud y comenzar la migración. Proporcionarnos una imagen completa de sus necesidades garantiza que su proyecto tenga un alcance adecuado y que la estimación sea precisa.
 
@@ -39,9 +39,9 @@ Para garantizar que la transición sea lo más fluida posible, debe ser lo más 
 
 Antes de empezar, debe conocer las respuestas a estas preguntas:
 
-* **¿La nueva base de datos se encuentra en un servidor nuevo?** Antes de enviar una solicitud, actualice la configuración de la conexión de datos en **[!UICONTROL Manage Data** > **Connections]**. Si necesita un actualizador sobre cómo hacerlo, vaya a la sección [`Integrations`](../integrations/integrations.md) y busque las instrucciones para el tipo de base de datos que está utilizando.
+* **¿Está la nueva base de datos en un nuevo servidor?** Antes de enviar una solicitud, actualice la configuración de la conexión de datos en **[!UICONTROL Manage Data** > **Connections]**. Si necesita un actualizador sobre cómo hacerlo, vaya a la sección [`Integrations`](../integrations/integrations.md) y busque las instrucciones para el tipo de base de datos que está utilizando.
 
-* **¿Todos los datos históricos existen en la nueva base de datos o es necesario migrarlos?**: puede consolidar los datos nuevos e históricos durante el proceso de migración. Aunque no necesite una consolidación, háganoslo saber en su solicitud.
+* **¿Todos los datos históricos existen en la nueva base de datos o es necesario migrarlos?** Puede consolidar los datos nuevos e históricos durante el proceso de migración. Aunque no necesite una consolidación, háganoslo saber en su solicitud.
 
 Una vez que tenga las respuestas a lo anterior, debe saber el tipo de migración. ¿Tendrá la nueva base de datos el esquema [`same`](#sameschema) o tendrá un esquema [`different`](#newschema)? En las discusiones que se describen a continuación, encontrará instrucciones detalladas para cada tipo de migración.
 
@@ -85,7 +85,7 @@ A continuación, se muestra un ejemplo:
 
 ## ¿Cómo envío una solicitud? {#submitreq}
 
-Póngase en contacto con nosotros al [enviar una solicitud de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Póngase en contacto con nosotros al [enviar una solicitud de soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 Si ha seguido los pasos de la sección anterior para crear la hoja de cálculo que coincide con la columna, no olvide adjuntarla.
 

@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 231
+source-wordcount: 244
 ht-degree: 0%
 
 ---
@@ -41,6 +41,6 @@ En determinados casos, puede decidir cambiar la tabla de datos que utiliza una m
 
    ![Menú desplegable de selección de tabla que muestra las tablas disponibles](../../assets/change-metrics-2.png)
 
-1. Si no tiene una columna coincidente en la nueva tabla, puede **crearla en la tabla de datos** o [ponerse en contacto con el soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) si es una columna de cálculo o dimensión creada por [!DNL Commerce Intelligence]. También puede **eliminar la dimensión de la métrica**. Para eliminar una dimensión que ya no necesite, simplemente vuelva al editor de la métrica y seleccione las dimensiones que desea eliminar en `Dimensions`.
+1. Si no tiene una columna coincidente en la nueva tabla, puede **crearla en la tabla de datos** o [ponerse en contacto con el soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) si es una columna de cálculo o dimensión creada por [!DNL Commerce Intelligence]. También puede **eliminar la dimensión de la métrica**. Para eliminar una dimensión que ya no necesite, simplemente vuelva al editor de la métrica y seleccione las dimensiones que desea eliminar en `Dimensions`.
 
    ![Menú desplegable de selección de columna operativa](../../assets/change-metrics-3.png)

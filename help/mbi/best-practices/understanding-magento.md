@@ -21,16 +21,16 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 749
+source-wordcount: 770
 ht-degree: 0%
 
 ---
 
 # Su entorno [!DNL Adobe Commerce Intelligence]
 
-A medida que analiza los datos de comercio, tenga en cuenta estos factores y las ideas erróneas comunes. Si necesita ayuda para asegurarse de que está usando correctamente el esquema de Commerce, no dude en [ponerse en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+A medida que analiza los datos de comercio, tenga en cuenta estos factores y las ideas erróneas comunes. Si necesita ayuda para asegurarse de que está usando correctamente el esquema de Commerce, no dude en [ponerse en contacto con el servicio de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## [!DNL entity\_id]
 

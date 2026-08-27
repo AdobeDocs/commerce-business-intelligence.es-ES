@@ -1,6 +1,6 @@
 ---
 title: Cambiar nombre de paneles
-description: Obtenga información sobre cómo quitar un gráfico de un panel.
+description: Cambie el nombre de un panel de Commerce Intelligence desde el menú Opciones del panel cuando su nombre actual ya no quepa, actualizándolo en solo unos pasos rápidos.
 exl-id: 45c67f3c-4660-4bb5-ba10-55ed666525f4
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,14 +17,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 9ebcff62d51b4f2c7885abd4705870a5428c08ef
 workflow-type: tm+mt
-source-wordcount: 84
+source-wordcount: 97
 ht-degree: 0%
 
 ---
 
-# Quitar un gráfico de un panel
+# Cambiar el nombre de un panel
 
 >[!NOTE]
 >

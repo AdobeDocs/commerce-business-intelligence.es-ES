@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 131
+source-wordcount: 151
 ht-degree: 0%
 
 ---
@@ -42,4 +42,4 @@ Para exportar los datos de [!DNL Bing Ads], debe tener [!DNL Bing Ads Editor] in
 1. En el cuadro de diálogo `Save As`, haga clic en la carpeta en la que desea guardar el archivo de exportación.
 1. En el cuadro `File name`, elija un nombre para la exportación de archivos.
 1. Haga clic en **[!UICONTROL Save]**.
-1. Una vez descargado el archivo, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para realizar una primera carga en su nombre y configurar las dimensiones de back-end necesarias.
+1. Una vez descargado el archivo, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para realizar una primera carga en su nombre y configurar las dimensiones de back-end necesarias.

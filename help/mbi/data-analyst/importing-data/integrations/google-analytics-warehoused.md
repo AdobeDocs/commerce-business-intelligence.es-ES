@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 514
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Con la integración de [!DNL Google Analytics Live] por otro lado, cada gráfico
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] es una integración de `Premium`. [Póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) si tiene interés en agregar esta integración a su suscripción.
+>[!DNL Google Analytics Warehoused] es una integración de `Premium`. [Póngase en contacto con el servicio de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) si tiene interés en agregar esta integración a su suscripción.
 
 1. Vaya a la página `Connections` en **[!UICONTROL Admin** > **Integrations]**.
 1. Haga clic en **[!UICONTROL Add an Integration]**, ubicado en el lado derecho.
@@ -83,7 +83,7 @@ Para identificar el identificador de perfil [!DNL Google Analytics] de un sitio 
 
 ## Documentación relacionada
 
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [Conectando [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Análisis de la actividad del sitio web y las tasas de conversión de clientes](../../analysis/web-act-cust-conversion.md)
 * [Rastrear datos de adquisición de usuarios con  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

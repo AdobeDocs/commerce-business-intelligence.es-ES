@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1950
+source-wordcount: 1989
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->El acceso a estos paneles depende del tipo de cuenta y del nivel de acceso. Si no ve estos paneles, comuníquese con [soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+>El acceso a estos paneles depende del tipo de cuenta y del nivel de acceso. Si no ve estos paneles, comuníquese con [soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Disponibilidad del informe
 
@@ -152,7 +152,7 @@ El panel Pedidos proporciona información sobre el volumen transaccional de pedi
 
 ## Productos
 
-El panel Productos muestra el rendimiento general del producto en términos de productos pedidos, su valor bruto de mercancía (GMV) y los principales productos comprados y reembolsados. Puede ayudarle a equilibrar las compras y las devoluciones, así como a determinar el éxito y la popularidad del producto. Su tienda debe estar [configurada para hacer un seguimiento de los reembolsos](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=es) para que se rellenen esos gráficos.
+El panel Productos muestra el rendimiento general del producto en términos de productos pedidos, su valor bruto de mercancía (GMV) y los principales productos comprados y reembolsados. Puede ayudarle a equilibrar las compras y las devoluciones, así como a determinar el éxito y la popularidad del producto. Su tienda debe estar [configurada para hacer un seguimiento de los reembolsos](https://experienceleague.adobe.com/es/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure) para que se rellenen esos gráficos.
 
 >[!NOTE]
 >

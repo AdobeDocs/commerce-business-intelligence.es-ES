@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 436
+source-wordcount: 603
 ht-degree: 0%
 
 ---
@@ -107,4 +107,4 @@ Con estos datos, puedes empezar a crear [métricas](../../../data-user/reports/e
 
 Si no tiene una tabla consolidada y crea un tablero hermoso en la tabla `adwords`, debe replicar el sistema de informes o crear métricas duplicadas para comparar esos datos con los datos de [!DNL Facebook Ads]. El uso de una tabla consolidada le permite incorporar sin problemas los datos de [!DNL Facebook Ads] con los informes de [!DNL Adwords] existentes. También puede segmentar por plataforma de publicidad.
 
-Si ya ha sincronizado los campos anteriores, [póngase en contacto con nosotros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para consolidar la inversión en publicidad.
+Si ya ha sincronizado los campos anteriores, [póngase en contacto con nosotros](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para consolidar la inversión en publicidad.

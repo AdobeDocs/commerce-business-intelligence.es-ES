@@ -1,6 +1,6 @@
 ---
 title: Tabla de presupuesto
-description: Aprenda a trabajar con la tabla de presupuestos.
+description: Revise el esquema de tabla de presupuesto en Commerce Intelligence, que realiza un seguimiento de cada carro de compras. Conozca las recomendaciones de Adobe para administrar el tamaño de la tabla a lo largo del tiempo.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -22,9 +22,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -81,14 +81,14 @@ La tabla `quote` (`sales_flat_quote` en M1) contiene registros en cada carro de 
 `customer_entity`
 
 * Únase a la tabla `customer_entity` para crear nuevas columnas de nivel de cliente asociadas con el cliente que creó el carro de compras.
-   * Ruta de acceso: `quote.customer_id` (varios) => `customer_entity.entity_id` (uno)
+  * Ruta de acceso: `quote.customer_id` (varios) => `customer_entity.entity_id` (uno)
 
 `sales_order`
 
 * Únase a la tabla `sales_order` para crear columnas que devuelvan detalles de pedido asociados con un carro de compras convertido.
-   * Ruta de acceso: `quote.reserved_order_id` (varios) => `sales_order.increment_id` (uno)
+  * Ruta de acceso: `quote.reserved_order_id` (varios) => `sales_order.increment_id` (uno)
 
 `store`
 
 * Únase a la tabla `store` para crear columnas que devuelvan detalles relacionados con el almacén de Commerce asociado al carro de compras.
-   * Ruta de acceso: `quote.store_id` (varios) => `store.store_id` (uno)
+  * Ruta de acceso: `quote.store_id` (varios) => `store.store_id` (uno)

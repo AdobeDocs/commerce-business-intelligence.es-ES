@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 306
+source-wordcount: 319
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 En este tema se explica cómo conectar la base de datos [!DNL Microsoft SQL] a [!DNL Commerce Intelligence] en un proceso de cuatro pasos. Este proceso requiere cierta experiencia técnica relacionada con las conexiones de servidor y SQL, y puede requerir el apoyo de los desarrolladores de su equipo.
 
-[!DNL Commerce Intelligence] admite [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] y la mayoría de los demás proveedores de servidores en la nube. Si tiene alguna pregunta sobre su host en particular, [envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) pidiéndonos que proporcionemos esta información.
+[!DNL Commerce Intelligence] admite [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] y la mayoría de los demás proveedores de servidores en la nube. Si tiene alguna pregunta sobre su host en particular, [envíe un ticket de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) pidiéndonos que proporcionemos esta información.
 
 El sistema debe ejecutar consultas SELECT en la base de datos. Esto se realiza inicialmente para obtener una instantánea de la estructura de la base de datos y, a continuación, con regularidad para mantener los datos actualizados. Las actualizaciones son graduales y Adobe restringe la frecuencia y el tiempo de las actualizaciones para evitar que se produzca una carga no deseada en el servidor.
 

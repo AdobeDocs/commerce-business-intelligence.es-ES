@@ -1,6 +1,6 @@
 ---
 title: Optimización de las consultas SQL
-description: Aprenda a optimizar las consultas SQL.
+description: Optimizar consultas SQL en Commerce Intelligence SQL Report Builder. Conozca las prácticas recomendadas para reducir el coste de las consultas y evitar errores producidos por resultados sobredimensionados.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 826
+source-wordcount: 847
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 El [!DNL SQL Report Builder] le permite ejecutar y cambiar las consultas cuando lo desee. Esta capacidad es útil si necesita actualizar una consulta de inmediato, en lugar de esperar a que termine un ciclo de actualización antes de corregir una columna o un informe.
 
-Antes de ejecutar una consulta, [[!DNL Commerce Intelligence] calcula su costo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=es). El coste tiene en cuenta el tiempo y el número de recursos necesarios para ejecutar una consulta. Si se considera que ese costo es demasiado alto o si el número de filas devueltas supera los límites de [!DNL Commerce Intelligence], la consulta falla. Para consultar [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), que te asegura que escribes las consultas más optimizadas posibles, Adobe recomienda lo siguiente.
+Antes de ejecutar una consulta, [!DNL Commerce Intelligence] calcula su costo. El coste tiene en cuenta el tiempo y el número de recursos necesarios para ejecutar una consulta. Si se considera que ese costo es demasiado alto o si el número de filas devueltas supera los límites de [!DNL Commerce Intelligence], la consulta falla. Para consultar [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), que te asegura que escribes las consultas más optimizadas posibles, Adobe recomienda lo siguiente.
 
 ## Uso de SELECT o Selección de todas las columnas
 

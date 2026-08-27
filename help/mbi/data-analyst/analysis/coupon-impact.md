@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1382
-ht-degree: 1%
+source-wordcount: 1422
+ht-degree: 2%
 
 ---
 
@@ -63,8 +63,8 @@ Observe algunos datos de ejemplo para métricas de adquisición de cupones frent
 
 | **Adquisición de cliente** | **Número de clientes nuevos** | **Ingresos promedio de por vida** | **Número de pedidos repetidos** | **Número de pedidos repetidos con cupón** | **% de pedidos repetidos con cupón** |
 |-----|-----|-----|-----|-----|-----|
-| Cupón | 1.206 | 356,91 $ | 2.570 | 1.248 | 48,56 % |
-| Sin cupón | 11.561 | 498,30 $ | 20.145 | 3.251 | 16,14 % |
+| Cupón | 1.206 | $356.91 | 2.570 | 1.248 | 48.56% |
+| Sin cupón | 11.561 | $498.30 | 20.145 | 3.251 | 16.14% |
 
 {style="table-layout:auto"}
 
@@ -92,7 +92,7 @@ Los clientes sin cupón adquirido tienen un porcentaje mucho menor de pedidos re
 
 ## Análisis de los detalles del primer pedido de las adquisiciones de cupones {#firstorder}
 
-Esta sección se centra solamente en **primeros pedidos de adquisiciones de cupones, segmentados por cupón.** Use estas métricas en el análisis:
+Esta sección se centra solamente en **primeros pedidos de adquisiciones de cupones, segmentados por cupones.** Utilice estas métricas en el análisis:
 
 ### Número de pedidos/clientes
 
@@ -126,9 +126,9 @@ Ahora, observe un ejemplo que incluye tres cupones diferentes utilizados para el
 
 | **Cupón** | **Pedidos por primera vez (FTO)** | **Ingresos brutos de FTO** | **Descuentos aplicados a FTO** | **Ingresos netos de FTO** | **Valor de pedido promedio para FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25% de descuento de $100 o más** | 56 | 8.531,04 $ | 2.132,76 $ | 6.398,28 $ | 152,34 $ |
-| **$10 de descuento** | 87 | 3.707,07 $ | 426,10 $ | 3.280,97 $ | 42,61 $ |
-| **20% de descuento** | 145 | 10.975,05 $ | 2.195,01 $ | 8.780,04 $ | 75,69 USD |
+| **25% de descuento de $100 o más** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
+| **$10 de descuento** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
+| **20% de descuento** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
 
 {style="table-layout:auto"}
 
@@ -154,9 +154,9 @@ Ahora que ha visto los pedidos en sí, observe a los clientes que utilizan cupon
 
 | **Cupón de primer pedido del cliente** | **Cantidad de clientes** | **Número promedio de pedidos durante toda la vida** | **Ingresos promedio de por vida** |
 |-----|-----|-----|-----|
-| **25% de descuento de $100 o más** | 56 | 2,8 | 554,54 $ |
-| **$10 de descuento** | 87 | 1,9 | 115,50 $ |
-| **20% de descuento** | 145 | 1,3 | 103,75 $ |
+| **25% de descuento de $100 o más** | 56 | 2,8 | $554.54 |
+| **$10 de descuento** | 87 | 1,9 | $115.50 |
+| **20% de descuento** | 145 | 1,3 | $103.75 |
 
 {style="table-layout:auto"}
 
@@ -166,4 +166,4 @@ El mayor número de clientes se adquirió a través del cupón de &quot;20% de d
 
 ## Ajuste {#wrapup}
 
-Puede crear multitud de análisis para comprender mejor cómo utilizan los cupones sus clientes. ¿Ha pensado alguna vez en analizar cómo utilizan sus clientes los cupones o el tiempo que tardan en utilizarlos? ¿Qué sucede si se busca la cantidad de descuento óptima: qué cantidad anima a los compradores que repiten, un valor de pedido promedio más alto y mayores ingresos por duración? Para obtener ayuda con este tipo de preguntas, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Puede crear multitud de análisis para comprender mejor cómo utilizan los cupones sus clientes. ¿Ha pensado alguna vez en analizar cómo utilizan sus clientes los cupones o el tiempo que tardan en utilizarlos? ¿Qué sucede si se busca la cantidad de descuento óptima: qué cantidad anima a los compradores que repiten, un valor de pedido promedio más alto y mayores ingresos por duración? Para obtener ayuda con este tipo de preguntas, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

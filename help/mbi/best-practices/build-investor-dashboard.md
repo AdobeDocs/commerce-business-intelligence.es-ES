@@ -1,6 +1,6 @@
 ---
 title: Creación de un tablero para inversores
-description: Aprenda a crear un tablero para los inversores.
+description: Cree un tablero listo para el inversor en Commerce Intelligence. Conozca las prácticas recomendadas para obtener una vista clara y completa, distinta de los paneles de operaciones diarias.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Developer, User
 feature: Dashboards, Data Integration
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: 315
 ht-degree: 0%
 
 ---
@@ -43,34 +43,34 @@ Esto es lo que necesita para crear informes para su tablero de inversores:
 ## Informes visuales
 
 * **[!UICONTROL Revenue by quarter]**
-   * Métrica - Ingresos
+  * Métrica - Ingresos
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
-   * Métrica: ingresos por primer pedido
-      * Filtro: el número de pedido del usuario es igual a 1
-   * Métrica 2: Ingresos de pedidos repetidos
-      * Filtro: el número de pedido del usuario es mayor que 1
-   * Desmarque la casilla de verificación de Varios ejes Y
-   * Cambiar a gráfico de columnas apiladas
+  * Métrica: ingresos por primer pedido
+    * Filtro: el número de pedido del usuario es igual a 1
+  * Métrica 2: Ingresos de pedidos repetidos
+    * Filtro: el número de pedido del usuario es mayor que 1
+  * Desmarque la casilla de verificación de Varios ejes Y
+  * Cambiar a gráfico de columnas apiladas
 * **[!UICONTROL AOV by quarter]**
-   * Métrica 1 - Ingresos
-      * Ocultar esta métrica
-   * Métrica 2: número de pedidos
-      * Ocultar esta métrica
-   * Fórmula: AOV
-      * A/B
+  * Métrica 1 - Ingresos
+    * Ocultar esta métrica
+  * Métrica 2: número de pedidos
+    * Ocultar esta métrica
+  * Fórmula: AOV
+    * A/B
 * **[!UICONTROL All-time revenue by source]**
-   * Métrica - Ingresos
-   * Agrupar por `utm_source` del cliente
+  * Métrica - Ingresos
+  * Agrupar por `utm_source` del cliente
 * **[!UICONTROL Revenue from top 10 products]**
-   * Métrica: ingresos de productos
-      * Ocultar el gráfico
-      * Agrupar por nombre de producto. Seleccione todos los productos.
-      * Establezca el intervalo de tiempo en Todo el tiempo
-      * Establezca el intervalo de tiempo en Ninguno
-      * En &quot;Mostrar arriba/abajo&quot;, mostrar solo los 10 principales clasificados por Beneficio del producto
+  * Métrica: ingresos de productos
+    * Ocultar el gráfico
+    * Agrupar por nombre de producto. Seleccione todos los productos.
+    * Establezca el intervalo de tiempo en Todo el tiempo
+    * Establezca el intervalo de tiempo en Ninguno
+    * En &quot;Mostrar arriba/abajo&quot;, mostrar solo los 10 principales clasificados por Beneficio del producto
 * **[!UICONTROL Cumulative distinct buyers by quarter]**
-   * Métrica: compradores diferentes
-      * Perspectiva: acumulativa
+  * Métrica: compradores diferentes
+    * Perspectiva: acumulativa
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * Sesiones
 

@@ -1,6 +1,6 @@
 ---
 title: Creación de una copia de un informe
-description: Obtenga información sobre cómo crear una copia de un informe.
+description: Cree una copia de un informe de Commerce Intelligence cuando necesite un gráfico similar con un pequeño cambio, como un filtro diferente o una configuración de agrupación.
 exl-id: c57783b4-32ae-4054-a85a-5ddf63cfd34b
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 101
+source-wordcount: 119
 ht-degree: 0%
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: Comprobación del estado del ciclo de actualización
-description: Obtenga información sobre cómo comprobar el estado del ciclo de actualización.
+description: Compruebe el estado del último ciclo de actualización de Commerce Intelligence directamente desde el panel. Consulte cómo afectan los permisos de cuenta a lo que puede ver.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Developer, User
 feature: Dashboards
@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 336
+source-wordcount: 373
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Cuando inicia sesión en su panel de [!DNL Adobe Commerce Intelligence], existen
 
 ## ¿Por qué debería comprobar el estado del ciclo de actualización?
 
-La comprobación del ciclo de actualización de estado resulta útil cuando está auditando los datos de su cuenta de [!DNL Commerce Intelligence]. Si ve [resultados que no cumplen con sus expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por ejemplo, las ventas diarias en [!DNL Commerce Intelligence] no coinciden con lo que está viendo en su plataforma de comercio electrónico o en sus [[!DNL Google] ingresos de comercio electrónico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=es), puede comprobar el último punto de datos para ver si el problema se resuelve una vez que se completa una actualización.
+La comprobación del ciclo de actualización de estado resulta útil cuando está auditando los datos de su cuenta de [!DNL Commerce Intelligence]. Si ve [resultados que no cumplen con sus expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por ejemplo, las ventas diarias en [!DNL Commerce Intelligence] no coinciden con lo que está viendo en su plataforma de comercio electrónico o en sus [[!DNL Google] ingresos de comercio electrónico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies), puede comprobar el último punto de datos para ver si el problema se resuelve una vez que se completa una actualización.
 
 ## [!UICONTROL Read-Only] y [!UICONTROL Standard] usuarios
 

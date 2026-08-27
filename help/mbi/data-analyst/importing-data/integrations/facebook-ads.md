@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 313
+source-wordcount: 321
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Sigue una serie de pasos para permitir que [!DNL Commerce Intelligence] tenga ac
 
 1. Haga clic en **[!UICONTROL Save Connections]**.
 
-   Si la conexión se ha realizado correctamente, se ha realizado correctamente una conexión de *.* mensaje se muestra en la parte superior de la página.
+   Si la conexión se ha realizado correctamente, *Conexión correcta.* El mensaje se muestra en la parte superior de la página.
 
 ## ¿Cuál es el siguiente paso? {#next}
 
@@ -74,7 +74,7 @@ Asegúrese de realizar el seguimiento de [!DNL Facebook] campañas en [!DNL Goog
 
 ## Relacionado
 
-* [Reautenticando integraciones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=es)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [Conecta tu cuenta de  [!DNL Google Adwords] &#x200B;](../integrations/google-ecommerce.md)
 * [Rastrear origen de referencia de pedido mediante  [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Rastrear origen de referencia de usuario en la base de datos](../../analysis/google-track-user-acq.md)

@@ -22,9 +22,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 911
+source-wordcount: 927
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Este tipo de análisis es lo que los especialistas en marketing de las empresas 
 
 El primer paso para segmentar las métricas por las dimensiones anteriores es asegurarse de que está realizando un seguimiento de estos datos en la base de datos. Si no se rastrea, reúna con su equipo técnico y encuentre una manera de empezar a rastrear estos datos.
 
-Después de confirmar que los datos se rastrean en la base de datos, [póngase en contacto con el equipo de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es) para insertar las dimensiones en las métricas y gráficos de [!DNL Commerce Intelligence]. También puede usar la herramienta *Administración de campos* para rastrear estos campos en [!DNL Commerce Intelligence].
+Después de confirmar que los datos se rastrean en la base de datos, [póngase en contacto con el equipo de soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para insertar las dimensiones en las métricas y gráficos de [!DNL Commerce Intelligence]. También puede usar la herramienta *Administración de campos* para rastrear estos campos en [!DNL Commerce Intelligence].
 
 ## Relacionado
 

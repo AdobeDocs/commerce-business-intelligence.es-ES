@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 0%
+source-wordcount: 866
+ht-degree: 1%
 
 ---
 
@@ -63,9 +63,9 @@ Con las métricas anteriores en mente, observe un ejemplo que implica productos 
 
 | **Nombre del producto** | **Probabilidad de repetición de pedido** | **Número promedio de pedidos durante toda la vida** | **Ingresos promedio por duración** | **Mediana de tiempo hasta el siguiente pedido** |
 |-----|-----|-----|-----|-----|
-| Cervecero de una taza | 94,98 % | 7,92 | 549,82 $ | 57,01 días |
-| Cápsulas de café | 93,82 % | 8,68 | 479,98 $ | 63,48 días |
-| Granos de café | 41,92 % | 6,07 | 99,82 $ | 27,31 días |
+| Cervecero de una taza | 94.98% | 7,92 | $549.82 | 57,01 días |
+| Cápsulas de café | 93.82% | 8,68 | $479.98 | 63,48 días |
+| Granos de café | 41.92% | 6,07 | $99.82 | 27,31 días |
 
 {style="table-layout:auto"}
 
@@ -97,4 +97,4 @@ Además de analizar el comportamiento de recompra de sus clientes, también pued
 
 Una vez que haya identificado por qué se produce la pérdida, puede utilizar el análisis para generar una campaña `reactivation`. Con estos datos, puede identificar a los usuarios que se han vuelto inactivos, cuánto tiempo ha pasado desde su última visita, cuál fue su última compra, etc. Esto le permite tomar decisiones procesables que atraen a sus clientes a regresar.
 
-Para obtener ayuda con el análisis, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=es).
+Para obtener ayuda con el análisis, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
