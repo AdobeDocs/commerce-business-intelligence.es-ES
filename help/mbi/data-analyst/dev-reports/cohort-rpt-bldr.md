@@ -7,26 +7,35 @@ feature: Commerce Tables, Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/SJ-Wbd0AU-cmliKRZgK4g60KuhVRIP9LfAEJ--IyugY
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: 5f3efe67f45baea20445cc78e12cf6d0d2b59563
 workflow-type: tm+mt
-source-wordcount: 1597
+source-wordcount: '1604'
 ht-degree: 0%
-
 ---
-
 # Report Builder de cohorte
 
 ¿Alguna vez ha querido estudiar cómo se comportan los distintos subconjuntos de los usuarios a lo largo del tiempo? Por ejemplo, ¿se ha preguntado alguna vez si los usuarios que se registran durante un periodo de promoción tienen unos ingresos medios a largo plazo más altos que los que no lo tienen? Si la respuesta es `Yes`, entonces `Cohort Report Builder` es la herramienta perfecta para usted. [!DNL Adobe Commerce Intelligence] está optimizado para realizar este análisis y hacerlo relevante para su negocio.
@@ -81,7 +90,7 @@ Esto abre una nueva ventana para configurar los detalles del informe `Cohort`.
 >
 >No puede usar la misma marca de tiempo en la que está generada la métrica para la fecha `cohort`. Para un análisis que requiera esto, puede usar `Standard report builder` en su lugar.
 
-#### &#x200B;2. Período de tiempo de `Cohort`
+#### &#x200B;2. `Cohort` período de tiempo
 
 Elija el período de tiempo para agrupar `cohorts` por. En otras palabras, ¿qué parte de la marca de tiempo que seleccionó arriba es la más importante; la `week`, `month`, `quarter` o `year`? El informe muestra los datos en el intervalo que seleccione aquí
 
@@ -91,7 +100,7 @@ Estos parámetros le ayudan a ver solamente los `cohorts` que le interesan, y el
 
 De manera predeterminada, el objeto `cohort` actual no se incluye a menos que cambie la cantidad mínima de datos necesarios para cada `cohort` a `0`. En este caso, `cohort` para el período de tiempo actual solo incluye datos parciales.
 
-#### &#x200B;5. Intervalo De Tiempo Después De `Cohort` Ocurrencia
+#### &#x200B;5. Intervalo De Tiempo Después De La Ocurrencia `Cohort`
 
 Esta característica le permite establecer el intervalo de tiempo de los datos que visualiza para el(la) `cohorts` seleccionado(a). Por ejemplo, si desea ver 24 `cohorts` mensuales basados en `customer's first order date`, pero sólo está interesado en los primeros 3 meses de datos para cada `cohort`, puede establecer `number of cohorts to view` en `24` y `time range after cohort occurrence` en `3`.
 
