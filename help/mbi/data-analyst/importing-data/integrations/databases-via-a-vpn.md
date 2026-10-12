@@ -45,9 +45,9 @@ ht-degree: 1%
 
 Aunque Adobe recomienda conectar las bases de datos mediante `SSH tunnel`, también puede usar una conexión cifrada de `VPN` para mantener las cosas seguras. Para la inscripción de claves de host SSH, los errores y la solución de problemas en las conexiones de túnel SSH, consulte [Verificación de la clave de host SSH](ssh-host-key-verification.md). Se puede usar un `VPN` para cualquiera de las integraciones de la base de datos y, para que todo sea sencillo, el proceso es casi el mismo que configurar un `SSH tunnel`:
 
-1. [Crear un usuario de base de datos  [!DNL Commerce Intelligence] ](#database)
+1. [Crear un usuario de base de datos  [!DNL Commerce Intelligence] &#x200B;](#database)
 1. [Crear un usuario de  [!DNL Commerce Intelligence] VPN](#vpn)
-1. [Permitir el acceso a la dirección IP  [!DNL Commerce Intelligence] ](#allowlist)
+1. [Permitir el acceso a la dirección IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
 1. [Introduzca la conexión y la información de usuario de VPN en Commerce Intelligence](#finish)
 
 Además de las credenciales de la base de datos, debe introducir las credenciales de un usuario de VPN para ajustar las cosas. Cualquier usuario de VPN funciona, pero Adobe recomienda crear un usuario de [!DNL Commerce Intelligence], ya que le facilita el seguimiento de los usuarios de su cuenta.

@@ -93,7 +93,7 @@ Poco después de la adición de los tres nuevos productos, un nuevo cliente, `Sa
 
 Una vez finalizada la creación de la cuenta, `Sammy Customer` está listo para comenzar a realizar una compra. En el sitio web, el cliente agrega dos pares de `Throwback Bellbottoms` y uno `V-Neck T-Shirt` al carro de compras. Satisfecho con las selecciones, el cliente pasa al cierre de compra y envía el pedido, creando la siguiente entrada en la [tabla de pedidos planos de ventas](../data-warehouse-mgr/sales-flat-order-table.md):
 
-| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
+| **`entity id`** | **`customer id**` | &#x200B;**`subtotal`**&#x200B; | &#x200B;**`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94,85 | 2016/09/23 15:41:39 |
 

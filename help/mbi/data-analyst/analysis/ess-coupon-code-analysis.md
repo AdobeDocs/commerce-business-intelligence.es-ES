@@ -88,64 +88,64 @@ El primer paso es construir una nueva métrica con los siguientes pasos:
 >El [!UICONTROL Time Period]** de cada informe se muestra como `All-time`. No dude en modificar esto para adaptarlo a sus necesidades de análisis. Adobe recomienda que todos los informes de este tablero abarquen el mismo período de tiempo, como `All time`, `Year-to-date` o `Last 365 days`.
 
 * **Pedidos con cupones**
-  * 
-    [!UICONTROL Métrica]: `Orders`
+  * &#x200B;
+    [!UICONTROL Métrica]&#x200B;: `Orders`
     * Añadir filtro:
       * [`A`] `coupon_code` **NO ES** `[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!INTERVALO UICONTROL]: `None`
-  * [!UICONTROL Chart type]:`Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL INTERVALO]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;:`Number (scalar)`
 
 * **Pedidos sin cupones**
-  * 
-    [!UICONTROL Métrica]: `Orders`
+  * &#x200B;
+    [!UICONTROL Métrica]&#x200B;: `Orders`
     * Añadir filtro:
       * [`A`] `coupon_code` **ES** `[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!INTERVALO UICONTROL]: `None`
-  * [!UICONTROL Chart type]:`Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL INTERVALO]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;:`Number (scalar)`
 
 * **Ingresos netos de pedidos con cupones**
-  * 
-    [!UICONTROL Métrica]: `Revenue`
+  * &#x200B;
+    [!UICONTROL Métrica]&#x200B;: `Revenue`
     * Añadir filtro:
       * [`A`] `coupon_code` **NO ES** `[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!INTERVALO UICONTROL]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL INTERVALO]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **Descuentos de cupones**
-  * [!UICONTROL Metric]: `Coupon discount amount`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!INTERVALO UICONTROL]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Metric]&#x200B;: `Coupon discount amount`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL INTERVALO]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **Ingresos promedio por vida útil: Clientes adquiridos con cupones**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * Añadir filtro:
       * [`A`] `Customer's first order's coupon_code` **NO ES** `[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!INTERVALO UICONTROL]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL INTERVALO]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **Ingresos promedio de por vida: clientes adquiridos sin cupón**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * Añadir filtro:
       * [A] `Customer's first order's coupon_code` **ES**`[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!INTERVALO UICONTROL]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL INTERVALO]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **Detalles de uso del cupón (pedidos por primera vez)**
   * Métrica `1`: `Orders`
@@ -166,64 +166,64 @@ El primer paso es construir una nueva métrica con los siguientes pasos:
       * [`B`] `Customer's order number` **Igual a** `1`
 
   * Crear fórmula: `Gross revenue`
-    * [!UICONTROL Formula]: `(B – C)`
-    * 
-      [!UICONTROL Format]: `Currency`
+    * [!UICONTROL Formula]&#x200B;: `(B – C)`
+    * &#x200B;
+      [!UICONTROL Format]&#x200B;: `Currency`
 
   * Crear fórmula:**% con descuento**
     * Fórmula: `(C / (B - C))`
-    * 
-      [!UICONTROL Format]: `Percentage`
+    * &#x200B;
+      [!UICONTROL Format]&#x200B;: `Percentage`
 
   * Crear fórmula: `Average order discount`
-    * [!UICONTROL Formula]: `(C / A)`
-    * 
-      [!UICONTROL Format]: `Percentage`
+    * [!UICONTROL Formula]&#x200B;: `(C / A)`
+    * &#x200B;
+      [!UICONTROL Format]&#x200B;: `Percentage`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!INTERVALO UICONTROL]: `None`
-  * 
-    [!UICONTROL Tipo de gráfico]: `Table`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL INTERVALO]&#x200B;: `None`
+  * &#x200B;
+    [!UICONTROL Tipo de gráfico]&#x200B;: `Table`
 
 * **Ingresos promedio por vida útil por cupón de primer pedido**
   * [!UICONTROL Metric]:**Ingresos promedio por duración**
     * Añadir filtro:
       * [`A`] `coupon_code` **ES**`[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!INTERVALO UICONTROL]: `None`
-  * [!UICONTROL Chart type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL INTERVALO]&#x200B;: `None`
+  * [!UICONTROL Chart type]&#x200B;: `Number (scalar)`
 
 * **Detalles de uso del cupón (pedidos por primera vez)**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * Añadir filtro:
       * [`A`] `Customer's first order's coupon_code` **NO ES** `[NULL]`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!INTERVALO UICONTROL]: `None`
-  * [!UICONTROL Group by]: `Customer's first order's coupon_code`
-  * 
-    [!UICONTROL Tipo de gráfico]: **Column**
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL INTERVALO]&#x200B;: `None`
+  * [!UICONTROL Group by]&#x200B;: `Customer's first order's coupon_code`
+  * &#x200B;
+    [!UICONTROL Tipo de gráfico]&#x200B;: **Column**
 
 * **Nuevos clientes por adquisición de cupones / no cupones**
   * Métrica `1`: `New customers`
     * Añadir filtro:
       * [`A`] `Customer's first order's coupon_code` **NO ES** `[NULL]`
 
-    * [!UICONTROL Rename]: `Coupon acquisition customer`
+    * [!UICONTROL Rename]&#x200B;: `Coupon acquisition customer`
 
   * Métrica `2`: `New customers`
     * Añadir filtro:
       * [`A`] `coupon_code` **ES**`[NULL]`
 
-    * [!UICONTROL Rename]: `Non-coupon acquisition customer`
+    * [!UICONTROL Rename]&#x200B;: `Non-coupon acquisition customer`
 
-  * [!UICONTROL Time period]: `All time`
-  * [!UICONTROL Interval]: `By Month`
-  * [!UICONTROL Chart type]: `Stacked Column`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * [!UICONTROL Interval]&#x200B;: `By Month`
+  * [!UICONTROL Chart type]&#x200B;: `Stacked Column`
 
 Después de crear los informes, consulte la imagen de la parte superior de este tema para saber cómo organizar los informes en el panel.
 

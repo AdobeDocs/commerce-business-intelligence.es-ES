@@ -87,10 +87,10 @@ Columnas para crear
 * **`Order's created at`**
 * Seleccione una definición: `Joined Column`
 * [!UICONTROL Create Path]:
-* 
-  [!UICONTROL Many]: `enterprise_rma.order_id`
-* 
-  [!UICONTROL One]: `sales_flat_order.entity_id`
+* &#x200B;
+  [!UICONTROL Many]&#x200B;: `enterprise_rma.order_id`
+* &#x200B;
+  [!UICONTROL One]&#x200B;: `sales_flat_order.entity_id`
 
 * Seleccionar un(a) [!UICONTROL table]: `sales_flat_order`
 * Seleccionar un(a) [!UICONTROL column]: `created_at`
@@ -108,10 +108,10 @@ Columnas para crear
 * **`return_date_requested`**
 * Seleccione una definición: `Joined Column`
 * [!UICONTROL Create Path]:
-  * 
-    [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-  * 
-    [!UICONTROL One]: `enterprise_rma.entity_id`
+  * &#x200B;
+    [!UICONTROL Many]&#x200B;: `enterprise_rma_item_entity.rma_entity_id`
+  * &#x200B;
+    [!UICONTROL One]&#x200B;: `enterprise_rma.entity_id`
 
 * Seleccionar un(a) [!UICONTROL table]: `enterprise_rma`
 * Seleccionar un(a) [!UICONTROL column]: `date_requested`
@@ -139,28 +139,28 @@ Columnas para crear
 * Esta métrica realiza **Count**
 * En la columna **`entity_id`**
 * Ordenado por **`date_requested`**
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 * **Elementos devueltos**
 * En la tabla **`enterprise_rma_item_entity`**
 * Esta métrica arroja una **Sum**
 * En la columna **`qty_approved`**
 * Ordenado por **`return date_requested`**
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 * **Valor total del elemento devuelto**
 * En la tabla **`enterprise_rma_item_entity`**
 * Esta métrica arroja una **Sum**
 * En la columna **`Returned item total value (qty_returned * price)`**
 * Ordenado por **`return date_requested`**
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 * **Tiempo promedio entre el pedido y la devolución**
 * En la tabla **`enterprise_rma`**
 * Esta métrica realiza un **Average**
 * En la columna **`Time between order's created_at and date_requested`**
 * Ordenado por **`date_requested`**
-* [!UICONTROL Filter]: `Returns we count`
+* [!UICONTROL Filter]&#x200B;: `Returns we count`
 
 >[!NOTE]
 >
@@ -170,101 +170,101 @@ Columnas para crear
 
 * **Probabilidad de repetir el pedido después de realizar una devolución**
 * Métrica `A`: `Number of orders with returns`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
   * `Is in current month? = No`
 
 * Métrica `B`: `Non-last orders with returns`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
   * `Is customer's last order? (1=yes/0=no) = 0`
   * `Order contains a return? (1=yes/0=No) = 1`
 
 * Fórmula: Probabilidad de orden de repetición
-* [!UICONTROL Formula]: `B / A`
-* 
-  [!UICONTROL Format]: `Percentage`
+* [!UICONTROL Formula]&#x200B;: `B / A`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percentage`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* [!UICONTROL Group by]: `Customer's order number`
-* 
-  [!UICONTROL Tipo de gráfico]: `Bar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Customer's order number`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Bar`
 
 * **Tiempo promedio para regresar (todo el tiempo)**
 * Métrica `A`: `Avg time between order and return`
-* [!UICONTROL Metric]: `Avg time between order and return`
+* [!UICONTROL Metric]&#x200B;: `Avg time between order and return`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* 
-  [!UICONTROL Tipo de gráfico]: `Number`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Number`
 
 * **Porcentaje de pedidos con devolución**
 * Métrica `A`: `Number of orders`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 
 * Métrica `B`: `Orders w/ return`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
 
 * Fórmula: % de pedidos con devolución
-* [!UICONTROL Formula]: `B / A`
-* 
-  [!UICONTROL Format]: `Percentage`
+* [!UICONTROL Formula]&#x200B;: `B / A`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percentage`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* [!UICONTROL Chart Type]: `Number - % of orders with return`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* [!UICONTROL Chart Type]&#x200B;: `Number - % of orders with return`
 
 * **Ingresos devueltos por mes**
 * Métrica `A`: `Returned item total value`
-* [!UICONTROL Metric]: `Returned item total value`
+* [!UICONTROL Metric]&#x200B;: `Returned item total value`
 
-* [!UICONTROL Time period]: `All time`
-* [!UICONTROL Interval]: `By month`
-* 
-  [!UICONTROL Tipo de gráfico]: `Line`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* [!UICONTROL Interval]&#x200B;: `By month`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Line`
 
 * **Clientes que han realizado una devolución y no han comprado de nuevo**
 * Métrica `A`: `Number of orders with returns`
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
   * `Is customer's last order? (1=yes/0=no) = 1`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* 
-  [!UICONTROL Agrupar por]: `Customer_email`
-* 
-  [!UICONTROL Tipo de gráfico]: `Table`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Agrupar por]&#x200B;: `Customer_email`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Table`
 
 * **Tasa de retorno por elemento**
 * Métrica `A`: `Returned items` (Ocultar)
 * [!UICONTROL Metric]: elementos devueltos
 
 * Métrica `B`: `Items sold` (Ocultar)
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Formula]: `Return %`
-* [!UICONTROL Formula]: `B / A`
-* 
-  [!UICONTROL Format]: `Percentage`
+* [!UICONTROL Formula]&#x200B;: `Return %`
+* [!UICONTROL Formula]&#x200B;: `B / A`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percentage`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!INTERVALO UICONTROL]: `None`
-* [!UICONTROL Group by]: `product_sku AND/OR product_name`
-* 
-  [!UICONTROL Tipo de gráfico]: `Table`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL INTERVALO]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `product_sku AND/OR product_name`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Table`
 
 Después de compilar todos los informes, puede organizarlos en el panel según lo desee. El resultado puede ser similar al panel de muestra anterior.
 

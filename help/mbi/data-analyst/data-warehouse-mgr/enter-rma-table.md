@@ -76,7 +76,7 @@ Cada fila de la tabla `enterprise_rma` (denominada a menudo `magento_rma` en Ado
 |---|---|---|
 | `Number of returns` | El número de devoluciones solicitadas. | `Operation` columna: `entity_id`<br>`Operation`: `Count`<br>`Timestamp` Columna: `date requested` |
 | `Total returned amount` | El importe monetario total devuelto. | `Operation `Columna: `Return's total value`<br>`Operation`: Sum<br>`Timestamp` Columna: fecha solicitada |
-| `Average returned amount` | El importe monetario promedio devuelto. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Columna: `date requested` |
+| `Average returned amount` | El importe monetario promedio devuelto. | `Operation`&#x200B;` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Columna: `date requested` |
 | `Average time to return` | El tiempo promedio desde el pedido hasta la devolución. | Columna `Operation`: segundos entre la fecha de creación del pedido y la fecha de devolución solicitada<br>`Operation`: `Average`<br>`Timestamp` Columna: `date requested` |
 
 {style="table-layout:auto"}

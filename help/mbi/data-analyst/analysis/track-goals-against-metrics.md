@@ -80,48 +80,48 @@ Es útil tener una combinación de valores estáticos y gráficos visuales al an
 
 * Quedan **ingresos para alcanzar el objetivo**
 * Métrica `A`: `Revenue`
-* 
-  [!UICONTROL Métrica]: `Revenue`
+* &#x200B;
+  [!UICONTROL Métrica]&#x200B;: `Revenue`
 
 * Métrica `B`: `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
-* [!UICONTROL Formula]: `Revenue left to achieve target`
-* 
-  [!UICONTROL Fórmula]: `(B-A)`
-* 
-  [!UICONTROL Format]: `Number`
+* [!UICONTROL Formula]&#x200B;: `Revenue left to achieve target`
+* &#x200B;
+  [!UICONTROL Fórmula]&#x200B;: `(B-A)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Number`
 
 * [!UICONTROL Time period]: (el período de tiempo relevante que desee)
-* 
-  [!UICONTROL Interval]: `Month`
-* 
-  [!UICONTROL Tipo de gráfico]: `Scalar`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `Month`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Scalar`
 
 * **Destinos de ingresos**
 * Métrica `A`: `Revenue`
-* 
-  [!UICONTROL Métrica]: `Revenue`
+* &#x200B;
+  [!UICONTROL Métrica]&#x200B;: `Revenue`
 
 * Métrica `B`: `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
 * Métrica `C`: `Revenue (amount change since previous year)` (ocultar)
-* 
-  [!UICONTROL Métrica]: `Revenue`
-* [!UICONTROL Perspective]: `Amount change vs. Previous year`
+* &#x200B;
+  [!UICONTROL Métrica]&#x200B;: `Revenue`
+* [!UICONTROL Perspective]&#x200B;: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Este mes del año pasado)
-* 
-  [!UICONTROL Fórmula]: `(A-C)`
-* 
-  [!UICONTROL Format]: `Currency`
+* &#x200B;
+  [!UICONTROL Fórmula]&#x200B;: `(A-C)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Currency`
 
 * Desactivar `Multiple Y-Axes`
 * [!UICONTROL Time period]: (el período de tiempo relevante que desee)*
-* 
-  [!UICONTROL Interval]: `Month`
-* [!UICONTROL Chart Type]: `Line Chart`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `Month`
+* [!UICONTROL Chart Type]&#x200B;: `Line Chart`
 
 Una vez completados los informes anteriores para los objetivos de ingresos, puede crear informes idénticos para los objetivos relacionados con pedidos, cuentas registradas o cualquier otro valor que haya incluido en la carga del archivo de objetivos.
 

@@ -68,4 +68,4 @@ Para incluir los datos de [!DNL Linkshare] en [!DNL Adobe Commerce Intelligence]
 
    En este punto, seleccione un archivo de `.csv` y descárguelo.
 
-Una vez descargado el archivo, puede cargarlo en [!DNL Commerce Intelligence] mediante la característica [`File Upload` ](../connecting-data/using-file-uploader.md).
+Una vez descargado el archivo, puede cargarlo en [!DNL Commerce Intelligence] mediante la característica [`File Upload` &#x200B;](../connecting-data/using-file-uploader.md).
