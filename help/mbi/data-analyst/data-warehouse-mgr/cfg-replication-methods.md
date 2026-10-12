@@ -4,29 +4,41 @@ description: Conozca cómo se organizan las tablas y cómo se comportan los dato
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-TQID: https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE
+TQID: 'https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1442
+source-wordcount: '1464'
 ht-degree: 0%
-
 ---
-
 # Configuración de métodos de replicación
 
 Se utilizan `Replication` métodos y [comprobaciones nuevas](../data-warehouse-mgr/cfg-data-rechecks.md) para identificar datos nuevos o actualizados en las tablas de la base de datos. Configurarlos correctamente es crucial para garantizar tanto la precisión de los datos como los tiempos de actualización optimizados. Este tema se centra en los métodos de replicación.
@@ -60,7 +72,7 @@ Cuando se ejecuta la actualización, los datos nuevos o modificados se identific
 Por ejemplo, una tabla puede tener una columna llamada `modified\_at` que indica la última vez que se cambiaron los datos. Si la actualización más reciente se ejecutó el martes a mediodía, la actualización buscará todas las filas que tengan un valor de `modified\_at` mayor que el martes a mediodía. Las filas detectadas que se hayan creado o modificado desde el mediodía del martes se replican en Data Warehouse.
 
 **¿Lo sabías?**
-Aunque su base de datos no admita actualmente un método de replicación de `Incremental`, es posible que pueda [realizar cambios en su base de datos](../../best-practices/mod-db-inc-replication.md) que permitan el uso de `Modified At` o `Single Auto Incrementing PK`.
+Aunque su base de datos no admita actualmente un método de replicación de `Incremental`, es posible que pueda [realizar cambios en la base de datos](../../best-practices/mod-db-inc-replication.md) que permitan el uso de `Modified At` o `Single Auto Incrementing PK`.
 
 `Modified At` no solo es el método de replicación más ideal, sino también el más rápido. Este método no solo produce incrementos de velocidad notables con grandes conjuntos de datos, sino que tampoco requiere la configuración de una opción de nueva comprobación. Otros métodos deben iterar a través de una tabla completa para identificar los cambios, incluso si ha cambiado un pequeño subconjunto de datos. `Modified At` se repite solamente en ese pequeño subconjunto.
 
@@ -151,6 +163,6 @@ Para terminar, ha creado esta tabla que compara los distintos métodos de replic
 ## Documentación relacionada
 
 * [Explicación de las comprobaciones de datos](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [Modificación de la base de datos para admitir &#x200B;](../../best-practices/mod-db-inc-replication.md)
+* [Modificando la base de datos para admitir la replicación de `Incremental`](../../best-practices/mod-db-inc-replication.md)
 * [Optimización de la base de datos para el análisis](../../best-practices/opt-db-analysis.md)
 * [Reducción de los tiempos de actualización](../../best-practices/reduce-update-cycle-time.md)

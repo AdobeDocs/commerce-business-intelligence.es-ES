@@ -4,27 +4,36 @@ description: Aprenda a crear análisis para comprender el valor de duración de 
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/bGbpknj6UfM8k995EnptIRfwZsvYTNo8-kzF9HrALQk
+TQID: 'https://experienceleague.adobe.com/bGbpknj6UfM8k995EnptIRfwZsvYTNo8-kzF9HrALQk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 338
-ht-degree: 0%
-
+source-wordcount: '392'
+ht-degree: 13%
 ---
-
 # Análisis de valor de duración esperada
 
 Pronosticar el valor de vida útil de los clientes a medida que realizan más pedidos es uno de los aspectos más importantes de cualquier negocio de cualquier tamaño.
@@ -37,18 +46,18 @@ A continuación se indican los pasos para crear análisis con el fin de comprend
 
 El primer paso es construir una nueva métrica con los siguientes pasos:
 * Navegar a **[!UICONTROL Manage Data > Metrics]**
-   * Ver los(as) **[!UICONTROL Avg lifetime revenue]** existentes.
+  * Ver los(as) **[!UICONTROL Avg lifetime revenue]** existentes.
 
   >[!NOTE]
   >
   >La tabla en la que se construye esta métrica (probablemente `customer_entity` o `sales_order` según la capacidad de su tienda para aceptar el pago y envío de invitados).
 
-   * Haga clic en **[!UICONTROL Create New Metric]** y seleccione la tabla de arriba.
-   * Esta métrica realiza una **Mediana** en la columna `Customer's lifetime revenue`, ordenada por `created_at`.
-      * [!UICONTROL Filters]:
-         * Agregar `Customers we count (Saved Filter Set)` (o `Registered accounts we count`)
+  * Haga clic en **[!UICONTROL Create New Metric]** y seleccione la tabla de arriba.
+  * Esta métrica realiza una **Mediana** en la columna `Customer's lifetime revenue`, ordenada por `created_at`.
+    * [!UICONTROL Filters]:
+      * Agregar `Customers we count (Saved Filter Set)` (o `Registered accounts we count`)
 
-   * Asigne un nombre a la métrica, como `Median lifetime revenue`.
+  * Asigne un nombre a la métrica, como `Median lifetime revenue`.
 
 ## Creación del tablero
 
@@ -65,41 +74,41 @@ Una vez creada la métrica, puede **crear un tablero** haciendo lo siguiente:
 >El **[!UICONTROL Time Period:]**, el período de tiempo de cada informe se muestra como `All-time`. No dude en modificar esto para adaptarlo a sus necesidades de análisis. Adobe recomienda que todos los informes de este tablero abarquen el mismo período de tiempo, como `All time`, `Year-to-date` o `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
-   * [!UICONTROL Metric]: `Avg lifetime revenue`
-   * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-     [!UICONTROL INTERVALO]: `None`
-   * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL INTERVALO]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
-   * [!UICONTROL Metric]: `Avg lifetime revenue`
-      * Agregar [!UICONTROL filters]:
-         * [`A`] `Customer's group code` **No Igual A** `Not Logged In`
-         * [`B`] `Customer's lifetime number of orders` **Mayor Que**`0`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
+    * Agregar [!UICONTROL filters]:
+      * [`A`] `Customer's group code` **No Igual A** `Not Logged In`
+      * [`B`] `Customer's lifetime number of orders` **Mayor Que**`0`
 
-   * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-     [!UICONTROL INTERVALO]: `None`
-   * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL INTERVALO]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
-   * Métrica `1`: `Avg lifetime revenue`
-   * Métrica `2`: `Median lifetime revenue`
-   * [!UICONTROL Time period]: `All time`
-   * [!UICONTROL Interval]: `By Month`
-   * &#x200B;
-     [!UICONTROL Tipo de gráfico]: `Line`
-   * Desmarcar `Multiple Y-Axes`
+  * Métrica `1`: `Avg lifetime revenue`
+  * Métrica `2`: `Median lifetime revenue`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * [!UICONTROL Interval]&#x200B;: `By Month`
+  * &#x200B;
+    [!UICONTROL Tipo de gráfico]&#x200B;: `Line`
+  * Desmarcar `Multiple Y-Axes`
 
 * **LTV por número de pedidos**
-   * Métrica `1`: `Avg lifetime revenue`
-   * Métrica `2`: `New customers`
-   * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-     [!UICONTROL INTERVALO]: `None`
-   * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * &#x200B;
-     [!UICONTROL Tipo de gráfico]: `Line`
+  * Métrica `1`: `Avg lifetime revenue`
+  * Métrica `2`: `New customers`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL INTERVALO]&#x200B;: `None`
+  * [!UICONTROL Group by]&#x200B;: `Customer's lifetime number of orders`
+  * &#x200B;
+    [!UICONTROL Tipo de gráfico]&#x200B;: `Line`
 
   >[!NOTE]
   >

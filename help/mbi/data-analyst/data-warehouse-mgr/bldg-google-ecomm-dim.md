@@ -4,29 +4,39 @@ description: Aprenda a crear dimensiones que vinculen los datos de comercio elec
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Developer, User
 feature: Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/K5PKexwI5oIb0WFtT47gQ2wEuF-TYUQrntRq1yJ4Vlc
+TQID: 'https://experienceleague.adobe.com/K5PKexwI5oIb0WFtT47gQ2wEuF-TYUQrntRq1yJ4Vlc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1023
+source-wordcount: '1024'
 ht-degree: 0%
-
 ---
-
 # Generar [!DNL Google ECommerce] dimensiones
 
 >[!NOTE]
@@ -70,7 +80,7 @@ Para crear dimensiones, abra [Data Warehouse Manager](../data-warehouse-mgr/tour
 
 ### Tabla de pedidos, ronda 1
 
-En este ejemplo se crea la dimensión **Source[!DNL Google Analytics] del pedido** Order.
+En este ejemplo se crea la dimensión [!DNL Google Analytics] Source **del pedido** Order.
 
 1. En la lista de tablas de Data Warehouse, haga clic en la tabla (en este caso, `orders`) que contenga la información del pedido.
 1. Haga clic en **[!UICONTROL Create a Column]**.
@@ -96,7 +106,7 @@ A continuación, intente crear **el medio [!DNL Google Analytics] del pedido** y
 
 ### Tabla Customers {#customers}
 
-En este ejemplo se crea la dimensión **de origen[!DNL Google Analytics] del primer pedido de** Customer.
+En este ejemplo se crea la dimensión [!DNL Google Analytics] de origen **del primer pedido de** Customer.
 
 1. En la lista de tablas de Data Warehouse, haga clic en la tabla (en este caso, `customers`) que contenga la información del cliente.
 1. Haga clic en **[!UICONTROL Create a Column]**.
@@ -113,11 +123,11 @@ En este ejemplo se crea la dimensión **de origen[!DNL Google Analytics] del pri
    _
 1. Haga clic en **[!UICONTROL Save]** para crear la dimensión.
 
-A continuación, intente crear **medio[!DNL Google Analytics] y** del primer pedido de `campaign`cliente. No hay muchos cambios en estas dimensiones, así que pruébelo. Pero si se queda atascado, puede revisar [el final de este artículo](#stuck) para ver qué es diferente.
+A continuación, intente crear [!DNL Google Analytics] medio **y `campaign` del primer pedido de** cliente. No hay muchos cambios en estas dimensiones, así que pruébelo. Pero si se queda atascado, puede revisar [el final de este artículo](#stuck) para ver qué es diferente.
 
 ### Bonus: mesa de pedidos, ronda 2
 
-Puede detenerse aquí si lo desea, pero esta sección permite un análisis más detallado al incluir las **dimensiones[!DNL Google Analytics] del primer pedido del** cliente que creó en la [última sección](#customers) en la tabla `orders`. La creación de las dimensiones en esta sección le permite analizar todas las métricas creadas en la tabla `orders` - `Revenue`, `Number of orders`, `Distinct buyers`, etc. - mediante los atributos [!DNL Google Analytics] del primer pedido de un cliente.
+Puede detenerse aquí si lo desea, pero esta sección permite un análisis más detallado al incluir las [!DNL Google Analytics] dimensiones **del primer pedido del** cliente que creó en la [última sección](#customers) en la tabla `orders`. La creación de las dimensiones en esta sección le permite analizar todas las métricas creadas en la tabla `orders` - `Revenue`, `Number of orders`, `Distinct buyers`, etc. - mediante los atributos [!DNL Google Analytics] del primer pedido de un cliente.
 
 Este ejemplo une la dimensión `Customer's first order's [!DNL Google Analytics] source` a la tabla `orders`.
 

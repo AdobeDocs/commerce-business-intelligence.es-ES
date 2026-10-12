@@ -4,28 +4,41 @@ description: Conozca el propósito y los usos de la columna calculada Número de
 exl-id: c234621e-2e68-4e63-8b0d-7034d1b5fe1f
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/vLN8AubwPn0Cq0CmmVq4nHbWNjWrCZNBvfhSDsE6lBw
+TQID: 'https://experienceleague.adobe.com/vLN8AubwPn0Cq0CmmVq4nHbWNjWrCZNBvfhSDsE6lBw'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 399
-ht-degree: 1%
-
+source-wordcount: '401'
+ht-degree: 7%
 ---
-
 # Columna calculada de número de evento
 
 Este tema describe el propósito y los usos de la columna calculada `Event Number` disponible en la página **[!DNL Manage Data > Data Warehouse]**. A continuación se explica lo que hace, seguido de un ejemplo, y la mecánica de crearlo.
@@ -42,11 +55,11 @@ El caso de uso más común de esta columna es analizar los compradores nuevos y 
 
 | **`event_id`** | **`owner_id`** | **`timestamp`** | **`Owner's event number`** |
 |--- |--- |--- |--- |
-| **1 | A | 00:00:00 del 01-01-2015 | 1 |
-| **2 | B | 00:30:00 del 01-01-2015 | 1 |
-| **3 | A | 01-01-2015 02:00:00 | 2 |
-| **4 | A | 02-01-2015 13:00:00 | 3 |
-| **5 | B | 03-01-2015 13:00:00 | 2 |
+| **1 | A | 2015-01-01 00:00:00 | 1 |
+| **2 | B | 2015-01-01 00:30:00 | 1 |
+| **3 | A | 2015-01-01 02:00:00 | 2 |
+| **4 | A | 2015-01-02 13:00:00 | 3 |
+| **5 | B | 2015-01-03 13:00:00 | 2 |
 
 En el ejemplo anterior, la columna `Owner's event number` es una columna `Event Number`. Clasifica los eventos del propietario en el orden en que se produjeron (según la columna `timestamp`).
 
