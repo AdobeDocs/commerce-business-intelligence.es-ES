@@ -63,4 +63,4 @@ En este tema se exploran las tablas de datos principales que se pueden importar 
 ## Relacionado
 
 * [Conectando Zendesk](../integrations/zendesk.md)
-* [Volver a autenticar integraciones](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Volver a autenticar integraciones](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
