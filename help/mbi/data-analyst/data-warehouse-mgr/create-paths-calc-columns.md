@@ -4,30 +4,43 @@ description: Aprenda a definir una ruta que describa cómo la tabla en la que es
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/UXIfQT9NxvKnefTMVWxjTYEMDpmCRITyzlFpNcU-y90
+TQID: 'https://experienceleague.adobe.com/UXIfQT9NxvKnefTMVWxjTYEMDpmCRITyzlFpNcU-y90'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1032
+source-wordcount: '1032'
 ht-degree: 0%
-
 ---
-
 # Crear o eliminar rutas para columnas calculadas
 
 ## Actualizador de columnas calculadas
@@ -37,7 +50,7 @@ Al [crear columnas calculadas](../data-warehouse-mgr/creating-calculated-columns
 1. Cómo se relacionan entre sí las tablas de las bases de datos
 1. Las claves principales y externas que definen esta relación
 
-Si conoce esta información, puede crear fácilmente una ruta siguiendo las instrucciones de este tema. Es posible que desee preguntar a un experto técnico de su organización o ponerse en contacto con el [equipo de Servicios profesionales](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Si conoce esta información, puede crear fácilmente una ruta siguiendo las instrucciones de este tema. Es posible que desee preguntar a un experto técnico de su organización o ponerse en contacto con el [equipo de Servicios profesionales](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Actualizadores en relaciones de tabla y tipos de clave {#refresher}
 
@@ -96,7 +109,7 @@ Ahora puede crear la ruta.
 
 * **[!DNL Commerce Intelligence]no puede adivinar las relaciones de clave principal/externa**. No desea introducir datos incorrectos en su cuenta, por lo que la creación de rutas debe realizarse manualmente.
 
-* **Actualmente, las rutas sólo se pueden especificar entre dos tablas diferentes**. ¿La lógica que intenta volver a crear implica más de dos tablas? Entonces puede tener sentido (1) unir las columnas a una tabla intermedia primero, luego a la tabla de &quot;destino final&quot;, o (2) consultar con el equipo de [Servicios profesionales](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para encontrar el mejor enfoque a sus objetivos.
+* **Actualmente, las rutas sólo se pueden especificar entre dos tablas diferentes**. ¿La lógica que intenta volver a crear implica más de dos tablas? Entonces puede tener sentido (1) unir las columnas a una tabla intermedia primero, luego a la tabla de &quot;destino final&quot;, o (2) consultar con el equipo de [Servicios profesionales](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para encontrar el mejor enfoque a sus objetivos.
 
 * **Una columna solo puede ser la referencia de clave externa para una ruta de acceso al mismo tiempo**. Por ejemplo, si `order_items.order_id` señala a `orders.id`, entonces `order_items.order_id` no puede señalar a nada más.
 

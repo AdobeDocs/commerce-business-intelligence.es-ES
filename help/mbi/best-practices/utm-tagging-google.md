@@ -4,29 +4,41 @@ description: Conozca las prácticas recomendadas para el seguimiento de UTM (eti
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/IX5oaIr8tbUUeA3ZrIQNUMnG8ApXMBS1hcpecqFW8kg
+TQID: 'https://experienceleague.adobe.com/IX5oaIr8tbUUeA3ZrIQNUMnG8ApXMBS1hcpecqFW8kg'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 450
-ht-degree: 0%
-
+source-wordcount: '461'
+ht-degree: 1%
 ---
-
 # Seguimiento de UTM
 
 El seguimiento de `UTM` es una convención de etiquetado de direcciones URL que le permite analizar de dónde provienen los usuarios. Si mira las direcciones URL en las que hace clic desde la mayoría de los correos electrónicos de marketing o anuncios de banners, verá el etiquetado UTM. Son esos vínculos largos los que terminan con cosas como `utm\_source` y `utm\_medium`.
@@ -41,7 +53,7 @@ A continuación se enumeran las cinco cosas más importantes que deben tenerse e
 
 Cada vez que pida a otras personas que hagan clic en un vínculo, debe configurar el etiquetado `UTM`. Esto incluye todos los vínculos de correo electrónico (es probable que el proveedor de servicios de correo electrónico tenga una forma de etiquetar automáticamente las direcciones URL), vínculos de publicidad, artículos de prensa y publicaciones de blog.
 
-### &#x200B;2. Utilice una herramienta para crear la dirección URL
+### &#x200B;2. Uso de una herramienta para crear la dirección URL
 
 Las direcciones URL etiquetadas con `UTM` pueden ser engorrosas. En lugar de intentar escribirlas manualmente, use una herramienta [como esta](https://support.google.com/analytics/answer/1033867?hl=en) para ayudarle. Esto garantiza que está pensando en añadir todos los parámetros razonables a la dirección URL y que obtiene la dirección URL que copia y pega directamente de ella. Para administrar vínculos sociales, herramientas como [!DNL Hootsuite] incluyen la opción de agregar parámetros de URL personalizados a todos los vínculos.
 
@@ -49,7 +61,7 @@ Las direcciones URL etiquetadas con `UTM` pueden ser engorrosas. En lugar de int
 
 Es importante recordar que la etiqueta `utm\_source=adwords` es diferente a `utm\_source=Adwords`. Considere la posibilidad de ponerlo todo en minúsculas.
 
-### &#x200B;4. Almacene los valores de parámetros de UTM en la base de datos
+### &#x200B;4. Almacenar los valores de parámetros de UTM en la base de datos
 
 Cada vez que se produce una transacción o un evento, se desea evaluar el rendimiento de las actividades de marketing. Puede hacerlo leyendo los valores de los valores de los parámetros de UTM de la cookie [[!DNL Google Analytics] en su base de datos](../data-analyst/analysis/google-track-user-acq.md).
 

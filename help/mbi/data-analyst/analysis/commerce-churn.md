@@ -4,27 +4,36 @@ description: Obtenga información sobre cómo generar y analizar la tasa de pér
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/jtS4f7MMpKa8LrKDOvGOqNJfrl-MhR9vhEMQZa-B42o
+TQID: 'https://experienceleague.adobe.com/jtS4f7MMpKa8LrKDOvGOqNJfrl-MhR9vhEMQZa-B42o'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 338
-ht-degree: 2%
-
+source-wordcount: '409'
+ht-degree: 19%
 ---
-
 # Tasa de pérdida
 
 En este tema se muestra cómo calcular una **tasa de pérdida** para sus **clientes de comercio**. A diferencia de SaaS o de las empresas de suscripción tradicionales, los clientes de comercio generalmente no tienen un &quot;evento de pérdida&quot; **concreto** que le muestre que ya no deben contar en sus clientes activos. Por este motivo, las siguientes instrucciones le permiten definir un cliente como &quot;perdido&quot; en función de un tiempo determinado transcurrido desde su último pedido.
@@ -39,15 +48,15 @@ Columnas para crear
 
 * **`customer_entity`** tabla
 * **`Customer's last order date`**
-   * Seleccionar un(a) [!UICONTROL definition]: `Max`
-   * Seleccionar [!UICONTROL table]: `sales_flat_order`
-   * Seleccionar [!UICONTROL column]: `created_at`
-   * `sales_flat_order.customer_id = customer_entity.entity_id`
-   * [!UICONTROL Filter]: `Orders we count`
+  * Seleccionar un(a) [!UICONTROL definition]: `Max`
+  * Seleccionar [!UICONTROL table]: `sales_flat_order`
+  * Seleccionar [!UICONTROL column]: `created_at`
+  * `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Filter]: `Orders we count`
 
 * **`Seconds since customer's last order date`**
-   * Seleccionar un(a) [!UICONTROL definition]: `Age`
-   * Seleccionar [!UICONTROL column]: `Customer's last order date`
+  * Seleccionar un(a) [!UICONTROL definition]: `Age`
+  * Seleccionar [!UICONTROL column]: `Customer's last order date`
 
 >[!NOTE]
 >
@@ -56,7 +65,7 @@ Columnas para crear
 ## Métricas
 
 * **Clientes nuevos (por fecha de primer pedido)**
-   * Clientes que se cuentan
+  * Clientes que se cuentan
 
 >[!NOTE]
 >
@@ -69,7 +78,7 @@ Columnas para crear
 * [!UICONTROL Filter]:
 
 * **Clientes nuevos (por fecha de último pedido)**
-   * Clientes que se cuentan
+  * Clientes que se cuentan
 
   >[!NOTE]
   >
@@ -88,22 +97,22 @@ Columnas para crear
 ## Informes
 
 * **Tasa de pérdida**
-   * [!UICONTROL Metric]: nuevos clientes (por fecha de primer pedido)
-   * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-     [!UICONTROL Perspective]: `Cumulative`
-   * [!UICONTROL Metric]: `New customers (by last order date)`
-   * [!UICONTROL Filter]:
-   * Segundos transcurridos desde la última fecha de pedido del cliente >= [Su límite autodefinido para los clientes perdidos ]&#x200B;**`^`**
-   * `Lifetime number of orders Greater Than 0`
+  * [!UICONTROL Metric]: nuevos clientes (por fecha de primer pedido)
+  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
+  * 
+    [!UICONTROL Perspective]: `Cumulative`
+  * [!UICONTROL Metric]: `New customers (by last order date)`
+  * [!UICONTROL Filter]:
+  * Segundos transcurridos desde la última fecha de pedido del cliente >= [Su límite autodefinido para los clientes perdidos ]**`^`**
+  * `Lifetime number of orders Greater Than 0`
 
-   * [!UICONTROL Metric]: `New customers (by last order date)`
-   * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-     [!UICONTROL Perspective]: Cumulative
-   * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * &#x200B;
-     [!UICONTROL Format]: Percentage
+  * [!UICONTROL Metric]: `New customers (by last order date)`
+  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
+  * 
+    [!UICONTROL Perspective]: Cumulative
+  * [!UICONTROL Formula]: `(B / ((A + B) - C)`
+  * 
+    [!UICONTROL Format]: Percentage
 
 * *Métrica `A`:`New customers cumulative`*
 * *Métrica `B`:`Churned customers by last order date`*

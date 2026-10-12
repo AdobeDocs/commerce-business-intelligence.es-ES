@@ -1,28 +1,35 @@
 ---
 title: Asignar nombres a informes y elementos en Commerce Intelligence
-description: Conozca las prácticas recomendadas para nombrar informes y elementos en  [!DNL Commerce Intelligence].
+description: Conozca las prácticas recomendadas para nombrar informes y elementos en [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
 role: Admin, User
 feature: Reports
-TQID: https://experienceleague.adobe.com/qa6daoMCZ4amPkvXatm77q-wwLpzweOQS5aGVYccqLU
+TQID: 'https://experienceleague.adobe.com/qa6daoMCZ4amPkvXatm77q-wwLpzweOQS5aGVYccqLU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 725
+source-wordcount: '728'
 ht-degree: 0%
-
 ---
-
 # Nombrar informes y elementos
 
 Antes de empezar a generar en [!DNL Adobe Commerce Intelligence], Adobe desea compartir algunos secretos para tener éxito. Saber cómo crear métricas, filtros, etc., es importante, pero todo su trabajo puede ser en vano si no encuentra lo que necesita o si hay ambigüedad.

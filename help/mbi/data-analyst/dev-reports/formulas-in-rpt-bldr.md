@@ -4,30 +4,43 @@ description: Descubra cómo se pueden utilizar las fórmulas en Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/XxqMoKRPIKcRgh8HKa6z2IMp6WkiCVp2jhIbXFqcraU
+TQID: 'https://experienceleague.adobe.com/XxqMoKRPIKcRgh8HKa6z2IMp6WkiCVp2jhIbXFqcraU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 560
+source-wordcount: '560'
 ht-degree: 0%
-
 ---
-
 # Fórmulas en `Report Builder`
 
 En [`Report Builder`](../../tutorials/using-visual-report-builder.md), puede crear visualizaciones útiles usando las [métricas definidas](../../data-user/reports/ess-manage-data-metrics.md) de su cuenta. La combinación de estas métricas en una fórmula le permite obtener información adicional de los datos. Este tema explora cómo se pueden utilizar las fórmulas en `Report Builder`: ¡vamos a saltar!
@@ -82,4 +95,4 @@ En este ejemplo, utilizó la perspectiva `Stacked Columns` para mostrar los resu
 
 ¿Ha notado en los ejemplos anteriores que `timestamp`, `groupings`, `perspectives` y `filters` de la fórmula se heredan de sus métricas de entrada? Tenga en cuenta que las fórmulas se pueden usar para usar `perspectives` y [opciones de tiempo independientes](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}, al igual que las métricas.
 
-Si tiene alguna pregunta adicional acerca del uso de fórmulas en `Report Builder`, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Si tiene alguna pregunta adicional acerca del uso de fórmulas en `Report Builder`, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

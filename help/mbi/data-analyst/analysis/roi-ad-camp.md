@@ -4,29 +4,41 @@ description: Obtenga información sobre distintos métodos para evaluar el rendi
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-TQID: https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU
+TQID: 'https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 1cf9e104-5756-5a15-85a5-38be6a065d7f
+    internal-label: Campaigns
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1265
+source-wordcount: '1265'
 ht-degree: 0%
-
 ---
-
 # Campañas de Advertising y ROI
 
 [!DNL Adobe Commerce Intelligence] le permite [combinar fácilmente los datos de costos de publicidad con los datos de ingresos](../../data-analyst/importing-data/integrations/google-adwords.md) de su base de datos. Esto le ayuda a identificar qué campañas tienen el retorno de la inversión (ROI) más alto. En este tema se exploran varios métodos diferentes para evaluar el rendimiento de la campaña.
@@ -115,7 +127,7 @@ Los análisis (1) y (2) anteriores se exploran en un tutorial independiente sobr
 >
 >En este ejemplo se supone que todos los costes de campaña se utilizaron exclusivamente para generar compras de productos específicos. Suponiendo que todo el coste se haya gastado en la generación de compras, el ROI resultante corresponde al peor escenario (el coste por compra más alto). Puede estar seguro de que el ROI real es mayor que este cálculo. Ejemplo: suponiendo que gastó 20 $ en una campaña que generó 10 usuarios nuevos y 10 compras, el coste real por compra es de 1 $. Suponiendo que todo el coste se destina a adquirir nuevos usuarios, el coste por compra es de 2 dólares.
 
-Antes de comenzar, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para unir las siguientes dimensiones a la tabla de elementos de línea (`sales\_flat\_order\_item, order\_item`):
+Antes de comenzar, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para unir las siguientes dimensiones a la tabla de elementos de línea (`sales\_flat\_order\_item, order\_item`):
 
 * Origen del pedido (si solo realiza el seguimiento del origen de referencia a nivel de usuario, únase al origen del usuario)
 * Campaña del pedido (si solo rastrea el origen de referencia en el nivel de usuario, únase a la campaña del usuario)
@@ -151,6 +163,6 @@ Antes de comenzar, [envíe un vale de soporte técnico](https://experienceleague
 * [Rastrear origen de referencia de usuario en la base de datos](../analysis/google-track-user-acq.md)
 * [Seguimiento de los datos de dispositivos de usuario, exploradores y SO en la base de datos](../analysis/track-usr-dev-browser.md)
 * [Descubra sus fuentes y canales de adquisición más valiosos](../analysis/most-value-source-channel.md)
-* [Conecta tu cuenta de  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
+* [Conecta tu cuenta de  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
 * [¿Cómo funciona la atribución de  [!DNL Google Analytics] UTM?](../analysis/utm-attributes.md)
 * [Cinco prácticas recomendadas para el etiquetado UTM en  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

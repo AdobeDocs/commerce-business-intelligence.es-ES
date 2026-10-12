@@ -4,33 +4,51 @@ description: Obtenga información sobre cómo acceder a los registros de todas l
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys
+TQID: 'https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: '604'
 ht-degree: 0%
-
 ---
-
 # Tabla customer_entity
 
 La tabla `customer_entity` contiene registros de todas las cuentas registradas. Una cuenta se considera registrada si se inscribe en una cuenta, independientemente de si alguna vez completa una compra. Cada fila corresponde a una cuenta registrada única, identificada por el `entity_id` de esa cuenta.
@@ -54,10 +72,10 @@ Esta tabla no contiene registros de clientes que realizan un pedido a través de
 | **Nombre de columna** | **Descripción** |
 |---|---|
 | `Customer's first 30 day revenue` | Suma total de ingresos para todos los pedidos realizados por este cliente en un plazo de 30 días a partir de la primera fecha de pedido del cliente. Se calcula uniendo `customer_entity.entity_id` a `sales_order.customer_id` y sumando el campo `base_grand_total` para todos los pedidos en los que `sales_order.Seconds between customer's first order date and this order` ≤ 2592000, que es el número de segundos en 30 días |
-| `Customer's first order date` | Marca de tiempo del primer pedido realizado por este cliente. Se calcula uniendo `customer_entity.entity_id` a `sales_order.customer_id` y devolviendo el mínimo `sales_order`.Valor `created_at` |
+| `Customer's first order date` | Marca de tiempo del primer pedido realizado por este cliente. Se calcula uniendo `customer_entity.entity_id` a `sales_order.customer_id` y devolviendo el mínimo `sales_order`.`created_at` valor |
 | `Customer's first order's billing region` | Región de facturación asociada al primer pedido del cliente. Se calcula uniendo `customer_entity.entity_id` a `sales_order.customer_id` y devolviendo `Billing address region` donde `sales_order.Customer's order number` = 1 |
 | `Customer's first order's coupon_code` | Código de cupón asociado con el primer pedido del cliente. Se calcula uniendo `customer_entity.entity_id` a `sales_order.customer_id` y devolviendo `sales_order.coupon_code` donde `sales_order.Customer's order number` = 1 |
-| `Customer's group code` | Nombre del grupo del cliente registrado. Se calcula uniendo `customer_entity.group_id` a `customer_group`.`customer_group_id` y devolviendo el campo `customer_group_code` |
+| `Customer's group code` | Nombre del grupo del cliente registrado. Calculado uniendo `customer_entity.group_id` a `customer_group`.`customer_group_id` y devolviendo el campo `customer_group_code` |
 | `Customer's lifetime number of coupons` | Número total de cupones aplicados a todos los pedidos realizados por este cliente. Se calcula uniendo `customer_entity.entity_id` a `sales_order.customer_id` y contando el número de pedidos donde `sales_order.coupon_code` no es `NULL` |
 | `Customer's lifetime number of orders` | Recuento total de pedidos realizados por este cliente. Se calcula uniendo `customer_entity.entity_id` a `sales_order.customer_id` y contando el número de filas de la tabla `sales_order` |
 | `Customer's lifetime revenue` | Suma del total de ingresos de todos los pedidos realizados por este cliente. Se calcula uniendo `customer_entity.entity_id` a `sales_order.customer_id` y sumando el campo `base_grand_total` para todos los pedidos realizados por este cliente |
@@ -84,9 +102,9 @@ Esta tabla no contiene registros de clientes que realizan un pedido a través de
 `customer_group`
 
 * Únase a la tabla `customer_group` para crear columnas que devuelvan el nombre de grupo de clientes de la cuenta registrada.
-   * Ruta de acceso: `customer_entity.group_id` (varios) => `customer_group.customer_group_id` (uno)
+  * Ruta de acceso: `customer_entity.group_id` (varios) => `customer_group.customer_group_id` (uno)
 
 `store`
 
 * Únase a la tabla `store` para crear columnas que devuelvan detalles relacionados con el almacén asociado a la cuenta registrada.
-   * Ruta de acceso: `customer_entity.store_id` (varios) => `store.store_id` (uno)
+  * Ruta de acceso: `customer_entity.store_id` (varios) => `store.store_id` (uno)
