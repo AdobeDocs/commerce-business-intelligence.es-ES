@@ -2,7 +2,9 @@
 solution: Commerce, Commerce Intelligence
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: "Commerce"
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: "Commerce Intelligence"
 usetq: true
 landing-page-name: commerce
 landing-page-breadcrumb-title: Commerce
@@ -10,20 +12,18 @@ product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.es-ES
+git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.en
 role: User
 feature-set: Commerce Intelligence
 level: Beginner, Intermediate
 topic: Commerce
 index: true
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 source-git-commit: f229139f3710766875e6778ea3d04221ffc2d2bf
 workflow-type: tm+mt
-source-wordcount: 173
+source-wordcount: '167'
 ht-degree: 0%
-
 ---
-
 
 # Metadatos para uso interno
 
